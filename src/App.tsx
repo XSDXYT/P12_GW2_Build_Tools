@@ -4,10 +4,13 @@ import { accents, professions, type PickerRequest } from "./editor";
 import { useWorkspace } from "./hooks/useWorkspace";
 import { GearPanel } from "./components/GearPanel";
 import { TraitsPanel } from "./components/TraitsPanel";
+import { BuildDescription } from "./components/BuildDescription";
 import { Picker } from "./components/Picker";
 import { BuildLibrary } from "./components/BuildLibrary";
 import { AttributePreviewProvider } from "./hooks/useAttributePreview";
 import { appVersion, releaseCommit } from "./release";
+import { BuildFolder } from "./components/BuildFolder";
+import { PublishedLibrary } from "./components/PublishedLibrary";
 export function App() {
   const work = useWorkspace();
   const [catalog, setCatalog] = useState<Catalog | null>(null),
@@ -15,7 +18,8 @@ export function App() {
     [picker, setPicker] = useState<(PickerRequest & { token: string }) | null>(
       null,
     ),
-    [libraryOpen, setLibraryOpen] = useState(false);
+    [libraryOpen, setLibraryOpen] = useState(false),
+    [publishedOpen, setPublishedOpen] = useState(false);
   const file = useRef<HTMLInputElement>(null);
   async function load() {
     setLoading(true);
@@ -111,6 +115,7 @@ export function App() {
             <button onClick={() => setLibraryOpen(true)}>
               我的配装 <span className="count">{work.library.length}</span>
             </button>
+            <button onClick={() => setPublishedOpen(true)}>公开 BD 库</button>
             <button onClick={work.newBuild}>新建</button>
             {work.readonly ? (
               <button onClick={work.copy}>复制编辑</button>
@@ -128,6 +133,13 @@ export function App() {
             </button>
           </div>
         </div>
+        <BuildFolder
+          build={work.build}
+          catalog={catalog}
+          notify={work.setMessage}
+          open={work.replace}
+          saved={work.markFileSaved}
+        />
         <div className="context-bar">
           <label>
             职业
@@ -217,6 +229,7 @@ export function App() {
               <GearPanel {...props} />
               <TraitsPanel {...props} />
             </div>
+            <BuildDescription key={props.build.id} {...props} />
           </AttributePreviewProvider>
         ) : (
           <div className="loading">
@@ -239,6 +252,9 @@ export function App() {
           </span>
           <p>80 级升华槽位 · 含属性预览，职业专属机制仍在完善</p>
           <div>
+            {work.readonly && (
+              <button onClick={work.cacheBuild}>存到浏览器</button>
+            )}
             <button onClick={work.exportFile}>导出 JSON</button>
             <button onClick={() => file.current?.click()}>导入 JSON</button>
           </div>
@@ -294,6 +310,12 @@ export function App() {
             setLibraryOpen(false);
             file.current?.click();
           }}
+        />
+      )}
+      {publishedOpen && (
+        <PublishedLibrary
+          close={() => setPublishedOpen(false)}
+          open={work.openPublished}
         />
       )}
     </div>

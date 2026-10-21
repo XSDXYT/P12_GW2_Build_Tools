@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { readPublishedBuild } from "../collection";
 import {
   createBuild,
   decodeShare,
@@ -23,6 +24,7 @@ import {
 } from "../library";
 import type { Edit } from "../editor";
 export function useWorkspace() {
+  const loadSequence = useRef(0);
   const [build, setBuild] = useState<Build>(createBuild),
     [readonly, setReadonly] = useState(false),
     [dirty, setDirty] = useState(false),
@@ -35,6 +37,8 @@ export function useWorkspace() {
       dirty: boolean;
       label: string;
     } | null>(null);
+  const latestBuild = useRef(build);
+  latestBuild.current = build;
   useEffect(() => {
     try {
       const saved = readLibrary();
@@ -49,6 +53,32 @@ export function useWorkspace() {
       setMessage("分类资料读取失败，原始分类仍保留，配装可继续使用。");
     }
     const onHash = () => {
+      const sequence = ++loadSequence.current;
+      if (location.hash.startsWith("#bd=")) {
+        let id: string;
+        try {
+          id = decodeURIComponent(location.hash.slice(4));
+          if (id.length > 80) throw Error();
+        } catch {
+          setMessage("公开 BD 链接格式错误，当前配装保留。");
+          return;
+        }
+        void readPublishedBuild(id)
+          .then((next) => {
+            if (loadSequence.current !== sequence) return;
+            setBuild(next);
+            setReadonly(true);
+            setDirty(false);
+            setUndo(null);
+            setShareLink("");
+            setMessage("");
+          })
+          .catch(() => {
+            if (loadSequence.current === sequence)
+              setMessage("无法读取公开 BD，当前配装保留。请在公开 BD 库重试。");
+          });
+        return;
+      }
       if (location.hash.startsWith("#build=")) {
         try {
           setBuild(decodeShare(location.hash.slice(7)));
@@ -63,7 +93,10 @@ export function useWorkspace() {
     };
     onHash();
     window.addEventListener("hashchange", onHash);
-    return () => window.removeEventListener("hashchange", onHash);
+    return () => {
+      ++loadSequence.current;
+      window.removeEventListener("hashchange", onHash);
+    };
   }, []);
   useEffect(() => {
     const prevent = (event: BeforeUnloadEvent) => {
@@ -77,6 +110,7 @@ export function useWorkspace() {
   }, [dirty]);
   const edit: Edit = (change, label) => {
     if (readonly) return;
+    ++loadSequence.current;
     const next = structuredClone(build);
     change(next);
     setUndo(label ? { build: structuredClone(build), dirty, label } : null);
@@ -92,6 +126,7 @@ export function useWorkspace() {
       !confirm("当前修改尚未保存，仍要切换配装吗？")
     )
       return false;
+    ++loadSequence.current;
     setBuild(structuredClone(next));
     setReadonly(false);
     setDirty(markDirty);
@@ -100,6 +135,42 @@ export function useWorkspace() {
     setMessage("");
     history.replaceState(null, "", location.pathname + location.search);
     return true;
+  }
+  async function openPublished(id: string): Promise<boolean> {
+    if (dirty && !confirm("当前修改尚未保存，仍要打开公开 BD 吗？"))
+      return false;
+    const sequence = ++loadSequence.current;
+    setMessage("正在读取公开 BD…");
+    try {
+      const next = await readPublishedBuild(id);
+      if (loadSequence.current !== sequence) return false;
+      setBuild(next);
+      setReadonly(true);
+      setDirty(false);
+      setUndo(null);
+      setShareLink("");
+      setMessage("");
+      history.replaceState(
+        null,
+        "",
+        location.pathname + location.search + "#bd=" + encodeURIComponent(id),
+      );
+      return true;
+    } catch {
+      if (loadSequence.current === sequence)
+        setMessage("公开 BD 读取失败，当前配装保留。请重试或导入本地 JSON。");
+      return false;
+    }
+  }
+  function cacheBuild() {
+    try {
+      setLibrary(saveBuild({ ...build, id: crypto.randomUUID() }));
+      setMessage(
+        "已将此 BD 作为独立记录存到当前浏览器。可在“我的配装”打开或下载到本地。",
+      );
+    } catch {
+      setMessage("浏览器缓存失败，当前 BD 仍可下载 JSON。");
+    }
   }
   function save() {
     try {
@@ -157,7 +228,7 @@ export function useWorkspace() {
     }
   }
   async function share(catalog: Catalog) {
-    const errors = issues(build, catalog, true);
+    const errors = issues(build, catalog);
     if (errors.length) {
       setMessage("请先修正：" + errors.join("；"));
       return;
@@ -196,6 +267,7 @@ export function useWorkspace() {
   }
   function undoEdit() {
     if (!undo) return;
+    ++loadSequence.current;
     setBuild(undo.build);
     setDirty(undo.dirty);
     setMessage(`已撤销${undo.label}。`);
@@ -223,6 +295,12 @@ export function useWorkspace() {
     copy,
     undoEdit,
     newBuild: () => replace(createBuild(build.profession)),
+    openPublished,
+    cacheBuild,
+    markFileSaved: (saved: Build) => {
+      if (JSON.stringify(latestBuild.current) === JSON.stringify(saved))
+        setDirty(false);
+    },
     exportFile: () => downloadBuild(build),
   };
 }

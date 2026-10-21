@@ -238,7 +238,10 @@ export function TraitsPanel({
                                       }
                                       edit((b) => {
                                         b.specs[line].traits[tier - 1] =
-                                          trait.id;
+                                          b.specs[line].traits[tier - 1] ===
+                                          trait.id
+                                            ? null
+                                            : trait.id;
                                       });
                                     }}
                                   >

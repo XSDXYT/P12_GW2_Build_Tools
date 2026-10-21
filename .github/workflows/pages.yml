@@ -27,9 +27,11 @@ jobs:
       - run: npm run build
         env:
           VITE_RELEASE_COMMIT: ${{ github.sha }}
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium firefox webkit
       - run: npm run test:e2e -- --workers=2
+      - run: npm run test:compat -- --workers=2
       - run: node scripts/verify-build.mjs
+      - run: npm run test:workflow
       - uses: actions/configure-pages@v5
         if: github.event_name != 'pull_request'
       - uses: actions/upload-pages-artifact@v3

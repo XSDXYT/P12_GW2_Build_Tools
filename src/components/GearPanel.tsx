@@ -222,29 +222,63 @@ export function GearPanel({
           </h2>
         </div>
         {!readonly && (
-          <button
-            className="batch-stats"
-            onClick={(event) =>
-              pick({
-                title: "整套装备词条",
-                options: commonStatOptions(catalog),
-                selected: null,
-                namesOnly: true,
-                anchor: event.currentTarget,
-                onSelect: (id) => {
-                  if (!id) return;
-                  edit((b) => {
-                    const total = applyEquipmentStat(b, catalog, id);
+          <div className="gear-batch-actions">
+            <button
+              className="batch-stats"
+              onClick={(event) =>
+                pick({
+                  title: "整套装备词条",
+                  options: commonStatOptions(catalog),
+                  selected: null,
+                  namesOnly: true,
+                  anchor: event.currentTarget,
+                  onSelect: (id) => {
+                    if (!id) return;
+                    edit((b) => {
+                      const total = applyEquipmentStat(b, catalog, id);
+                      notify(
+                        `已为 ${total} 个装备槽位设置${catalog.stats.find((s) => s.id === id)?.name}。`,
+                      );
+                    }, "整套词条设置");
+                  },
+                })
+              }
+            >
+              整套词条 <span>⌄</span>
+            </button>
+            <button
+              type="button"
+              className="batch-stats"
+              onClick={(event) =>
+                pick({
+                  title: "整套护甲符文",
+                  options: runes,
+                  selected: armorSlots.every(
+                    (key) =>
+                      build.equipment[key].runeId ===
+                      build.equipment.head.runeId,
+                  )
+                    ? build.equipment.head.runeId
+                    : null,
+                  clearLabel: "清空六件护甲符文",
+                  anchor: event.currentTarget,
+                  onSelect: (id) => {
+                    edit((b) => {
+                      for (const key of armorSlots)
+                        b.equipment[key].runeId = id;
+                    }, "整套符文设置");
                     notify(
-                      `已为 ${total} 个装备槽位设置${catalog.stats.find((s) => s.id === id)?.name}。`,
+                      id
+                        ? `已为 6 件护甲设置${entityName(id, runes)}。`
+                        : "已清空六件护甲符文。",
                     );
-                  }, "整套词条设置");
-                },
-              })
-            }
-          >
-            整套词条 <span>⌄</span>
-          </button>
+                  },
+                })
+              }
+            >
+              整套符文 <span>⌄</span>
+            </button>
+          </div>
         )}
       </header>
       <div className="gear-grid">

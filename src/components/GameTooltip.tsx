@@ -272,7 +272,13 @@ export function useGameTooltip(
         <div className="game-tooltip-heading">
           {current.entity.icon && <img src={current.entity.icon} alt="" />}
           <div>
-            <small>{current.kind === "trait" ? "特性" : "技能"}</small>
+            <small>
+              {current.kind === "trait"
+                ? "特性"
+                : current.kind === "item"
+                  ? "物品"
+                  : "技能"}
+            </small>
             <h3 id={`${id}-heading`}>{current.entity.name}</h3>
           </div>
           <button
@@ -439,7 +445,8 @@ export function useGameTooltip(
           在中文维基查看 ↗
         </a>
       </div>,
-      document.body,
+      // Native modal dialogs are above body portals and make them inert.
+      current.anchor.closest("dialog[open]") || document.body,
     );
   return { bind, content, dismiss, show };
 }

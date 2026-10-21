@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { buildSchema, type Build } from "./domain";
+import { matchesBuild } from "./build-classification";
 
 export const metadataSchema = z
   .object({
@@ -54,16 +55,20 @@ export function filterLibrary(
     profession: string;
     tag: string;
     favorites: boolean;
+    instance?: string;
+    boss?: string;
+    encounterMode?: string;
   },
 ) {
-  const query = filter.query.trim().toLocaleLowerCase();
   return builds.filter((b) => {
     const info = buildMetadata(metadata, b.id);
     return (
-      (!filter.profession || b.profession === filter.profession) &&
       (!filter.favorites || info.favorite) &&
-      (!filter.tag || info.tags.includes(filter.tag)) &&
-      (!query || b.name.toLocaleLowerCase().includes(query))
+      matchesBuild(
+        b,
+        { ...filter, instance: filter.instance || "", boss: filter.boss || "" },
+        info.tags,
+      )
     );
   });
 }

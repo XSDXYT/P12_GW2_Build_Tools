@@ -2,6 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { professions } from "../editor";
 import type { Build } from "../domain";
 import {
+  BuildBadges,
+  BuildGroups,
+  EncounterFilters,
+  GroupMode,
+} from "./BuildBrowse";
+import {
   buildMetadata,
   filterLibrary,
   parseTags,
@@ -35,17 +41,29 @@ export function BuildLibrary({
   const [profession, setProfession] = useState("");
   const [tag, setTag] = useState("");
   const [favorites, setFavorites] = useState(false);
+  const [instance, setInstance] = useState("");
+  const [boss, setBoss] = useState("");
+  const [encounterMode, setEncounterMode] = useState("");
+  const [mode, setMode] = useState<"encounter" | "profession">("encounter");
   const [editing, setEditing] = useState<string | null>(null);
   const [draft, setDraft] = useState("");
   const [error, setError] = useState("");
   const tags = [
-    ...new Set(entries.flatMap((b) => buildMetadata(metadata, b.id).tags)),
+    ...new Set(
+      entries.flatMap((b) => [
+        ...(b.tags || []),
+        ...buildMetadata(metadata, b.id).tags,
+      ]),
+    ),
   ].sort((a, b) => a.localeCompare(b, "zh-CN"));
   const filtered = filterLibrary(entries, metadata, {
     query,
     profession,
     tag,
     favorites,
+    instance,
+    boss,
+    encounterMode,
   });
   useEffect(() => {
     ref.current?.showModal();
@@ -76,13 +94,13 @@ export function BuildLibrary({
       </p>
       <div className="library-filters">
         <label>
-          名称搜索
+          关键词搜索
           <input
             type="search"
             aria-label="搜索配装名称"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="输入配装名称"
+            placeholder="标题、标签、职业、副本、BOSS"
           />
         </label>
         <label>
@@ -115,6 +133,18 @@ export function BuildLibrary({
             ))}
           </select>
         </label>
+        <EncounterFilters
+          mode={encounterMode}
+          changeMode={setEncounterMode}
+          entries={entries}
+          instance={instance}
+          boss={boss}
+          change={(next, target) => {
+            setInstance(next);
+            setBoss(target);
+          }}
+        />
+        <GroupMode value={mode} change={setMode} />
         <label className="library-favorite-filter">
           <input
             type="checkbox"
@@ -133,119 +163,129 @@ export function BuildLibrary({
         </p>
       )}
       <div className="library-list">
-        {filtered.map((build) => {
-          const info = buildMetadata(metadata, build.id);
-          return (
-            <div className="library-card" key={build.id}>
-              <div className="library-row">
-                <button className="library-open" onClick={() => onOpen(build)}>
-                  <strong>{build.name}</strong>
-                  <small>{professions[build.profession]} · 陆地 PvE</small>
-                </button>
-                <button
-                  aria-label={`${info.favorite ? "取消收藏" : "收藏"}${build.name}`}
-                  aria-pressed={info.favorite}
-                  className="library-star"
-                  onClick={() => {
-                    setError(
-                      onMetadata(build.id, {
-                        ...info,
-                        favorite: !info.favorite,
-                      })
-                        ? ""
-                        : "收藏保存失败，请检查浏览器存储。",
-                    );
-                  }}
-                >
-                  {info.favorite ? "★" : "☆"}
-                </button>
-                <button
-                  aria-label={`编辑标签${build.name}`}
-                  onClick={() => {
-                    setEditing(build.id);
-                    setDraft(info.tags.join("，"));
-                    setError("");
-                  }}
-                >
-                  标签
-                </button>
-                <button
-                  onClick={() => onCopy(build)}
-                  aria-label={`复制${build.name}`}
-                >
-                  复制
-                </button>
-                <button
-                  onClick={() => {
-                    if (confirm(`删除“${build.name}”？建议先导出备份。`))
-                      onRemove(build.id);
-                  }}
-                  aria-label={`删除${build.name}`}
-                >
-                  删除
-                </button>
-              </div>
-              {!!info.tags.length && (
-                <div className="library-tags">
-                  {info.tags.map((t) => (
-                    <button
-                      key={t}
-                      onClick={() => setTag(t)}
-                      aria-label={`筛选标签${t}`}
-                    >
-                      {t}
-                    </button>
-                  ))}
-                </div>
-              )}
-              {editing === build.id && (
-                <form
-                  className="library-tag-editor"
-                  onSubmit={(event) => {
-                    event.preventDefault();
-                    try {
-                      const tags = parseTags(draft);
-                      if (!onMetadata(build.id, { ...info, tags })) {
-                        setError(
-                          "标签保存失败，输入仍保留，请检查浏览器存储。",
-                        );
-                        return;
-                      }
-                      setEditing(null);
-                      setError("");
-                    } catch (error) {
-                      setError(
-                        error instanceof Error ? error.message : "标签无效。",
-                      );
-                    }
-                  }}
-                >
-                  <label>
-                    标签（逗号分隔，最多 8 个）
-                    <input
-                      aria-label={`${build.name}的标签`}
-                      value={draft}
-                      onChange={(e) => setDraft(e.target.value)}
-                      placeholder="例如：碎层，直伤，日常"
-                      maxLength={256}
-                      autoFocus
-                    />
-                  </label>
-                  <button type="submit">保存标签</button>
+        <BuildGroups
+          entries={filtered}
+          mode={mode}
+          filter={{ instance, boss, encounterMode }}
+        >
+          {(build, cardKey) => {
+            const info = buildMetadata(metadata, build.id);
+            return (
+              <div className="library-card" key={build.id}>
+                <div className="library-row">
                   <button
-                    type="button"
+                    className="library-open"
+                    onClick={() => onOpen(build)}
+                  >
+                    <strong>{build.name}</strong>
+                    <small>{professions[build.profession]} · 陆地 PvE</small>
+                  </button>
+                  <button
+                    aria-label={`${info.favorite ? "取消收藏" : "收藏"}${build.name}`}
+                    aria-pressed={info.favorite}
+                    className="library-star"
                     onClick={() => {
-                      setEditing(null);
+                      setError(
+                        onMetadata(build.id, {
+                          ...info,
+                          favorite: !info.favorite,
+                        })
+                          ? ""
+                          : "收藏保存失败，请检查浏览器存储。",
+                      );
+                    }}
+                  >
+                    {info.favorite ? "★" : "☆"}
+                  </button>
+                  <button
+                    aria-label={`编辑标签${build.name}`}
+                    onClick={() => {
+                      setEditing(cardKey);
+                      setDraft(info.tags.join("，"));
                       setError("");
                     }}
                   >
-                    取消
+                    个人标签
                   </button>
-                </form>
-              )}
-            </div>
-          );
-        })}
+                  <button
+                    onClick={() => onCopy(build)}
+                    aria-label={`复制${build.name}`}
+                  >
+                    复制
+                  </button>
+                  <button
+                    onClick={() => {
+                      if (confirm(`删除“${build.name}”？建议先导出备份。`))
+                        onRemove(build.id);
+                    }}
+                    aria-label={`删除${build.name}`}
+                  >
+                    删除
+                  </button>
+                </div>
+                <BuildBadges build={build} />
+                {!!info.tags.length && (
+                  <div className="library-tags">
+                    {info.tags.map((t) => (
+                      <button
+                        key={t}
+                        onClick={() => setTag(t)}
+                        aria-label={`筛选标签${t}`}
+                      >
+                        {t}
+                      </button>
+                    ))}
+                  </div>
+                )}
+                {editing === cardKey && (
+                  <form
+                    className="library-tag-editor"
+                    onSubmit={(event) => {
+                      event.preventDefault();
+                      try {
+                        const tags = parseTags(draft);
+                        if (!onMetadata(build.id, { ...info, tags })) {
+                          setError(
+                            "标签保存失败，输入仍保留，请检查浏览器存储。",
+                          );
+                          return;
+                        }
+                        setEditing(null);
+                        setError("");
+                      } catch (error) {
+                        setError(
+                          error instanceof Error ? error.message : "标签无效。",
+                        );
+                      }
+                    }}
+                  >
+                    <label>
+                      个人标签（仅浏览器内，逗号分隔，最多 8 个）
+                      <input
+                        aria-label={`${build.name}的标签`}
+                        value={draft}
+                        onChange={(e) => setDraft(e.target.value)}
+                        placeholder="例如：碎层，直伤，日常"
+                        maxLength={256}
+                        autoFocus
+                      />
+                    </label>
+                    <button type="submit">保存标签</button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setEditing(null);
+                        setError("");
+                      }}
+                    >
+                      取消
+                    </button>
+                  </form>
+                )}
+              </div>
+            );
+          }}
+        </BuildGroups>
         {!filtered.length && (
           <div className="empty-library">
             {entries.length ? "没有匹配的配装" : "还没有保存的配装"}
@@ -261,6 +301,9 @@ export function BuildLibrary({
                   setProfession("");
                   setTag("");
                   setFavorites(false);
+                  setInstance("");
+                  setBoss("");
+                  setEncounterMode("");
                 }}
               >
                 清除筛选

@@ -1,4 +1,5 @@
 import { parseBuild, type Build } from "./domain";
+import { jsonFilename } from "./build-filename";
 import {
   metadataFileSchema,
   metadataSchema,
@@ -72,7 +73,7 @@ export function downloadJson(value: unknown, filename: string) {
   );
   const anchor = document.createElement("a");
   anchor.href = url;
-  anchor.download = `${filename.replace(/[\\/:*?"<>|]/g, "_") || "build"}.json`;
+  anchor.download = jsonFilename(filename);
   anchor.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }

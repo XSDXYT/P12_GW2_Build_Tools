@@ -1,0 +1,834 @@
+{
+  "updated": "2026-10-21",
+  "sources": [
+    "https://api.guildwars2.com/v2/raids?ids=all",
+    "https://api.guildwars2.com/v2/achievements/categories?ids=all&lang=zh",
+    "https://api.guildwars2.com/v2/achievements?lang=zh&ids="
+  ],
+  "instances": [
+    {
+      "id": "spirit_vale",
+      "name": "灵魂山谷",
+      "kind": "团队副本",
+      "aliases": ["W1", "1区", "Spirit Vale"],
+      "sourceIds": [124],
+      "bosses": [
+        {
+          "name": "山谷守护者",
+          "aliases": ["VG", "Vale Guardian", "老一"],
+          "sourceIds": [2654]
+        },
+        {
+          "name": "戈瑟瓦尔",
+          "aliases": ["Gorseval", "多变藤"],
+          "sourceIds": [2667]
+        },
+        {
+          "name": "萨蓓莎",
+          "aliases": ["Sabetha", "火炮"],
+          "sourceIds": [2659]
+        }
+      ],
+      "sourceKind": "achievement-category"
+    },
+    {
+      "id": "salvation_pass",
+      "name": "救赎小道",
+      "kind": "团队副本",
+      "aliases": ["W2", "2区", "Salvation Pass"],
+      "sourceIds": [134],
+      "bosses": [
+        {
+          "name": "斯洛萨索",
+          "aliases": ["Slothasor", "蘑菇"],
+          "sourceIds": [2835]
+        },
+        {
+          "name": "囚犯集中营",
+          "aliases": ["Bandit Trio", "强盗三人组"],
+          "sourceIds": [2830]
+        },
+        {
+          "name": "马蒂亚斯",
+          "aliases": ["Matthias"],
+          "sourceIds": [2836]
+        }
+      ],
+      "sourceKind": "achievement-category"
+    },
+    {
+      "id": "stronghold_of_the_faithful",
+      "name": "信仰要塞",
+      "kind": "团队副本",
+      "aliases": ["W3", "3区", "Stronghold of the Faithful"],
+      "sourceIds": [138],
+      "bosses": [
+        {
+          "name": "护送格里娜",
+          "aliases": ["Escort"],
+          "sourceIds": [9199]
+        },
+        {
+          "name": "要塞构造体",
+          "aliases": ["KC", "Keep Construct"],
+          "sourceIds": [3014]
+        },
+        {
+          "name": "琦拉",
+          "aliases": ["Xera"],
+          "sourceIds": [3017]
+        }
+      ],
+      "sourceKind": "achievement-category"
+    },
+    {
+      "id": "bastion_of_the_penitent",
+      "name": "忏悔者堡垒",
+      "kind": "团队副本",
+      "aliases": ["W4", "4区", "赎罪堡垒", "Bastion of the Penitent"],
+      "sourceIds": [155],
+      "bosses": [
+        {
+          "name": "不屈的凯玲",
+          "aliases": ["Cairn", "凯玲"],
+          "sourceIds": [3349]
+        },
+        {
+          "name": "末世魔监工",
+          "aliases": ["MO", "Mursaat Overseer"],
+          "sourceIds": [3321]
+        },
+        {
+          "name": "萨玛洛格",
+          "aliases": ["Samarog"],
+          "sourceIds": [3347]
+        },
+        {
+          "name": "戴莫斯",
+          "aliases": ["Deimos"],
+          "sourceIds": [9166]
+        }
+      ],
+      "sourceKind": "achievement-category"
+    },
+    {
+      "id": "hall_of_chains",
+      "name": "锁链殿堂",
+      "kind": "团队副本",
+      "aliases": ["W5", "5区", "Hall of Chains"],
+      "sourceIds": [195],
+      "bosses": [
+        {
+          "name": "无魂惧魔",
+          "aliases": ["SH", "Soulless Horror"],
+          "sourceIds": [4004]
+        },
+        {
+          "name": "魂河",
+          "aliases": ["River of Souls"],
+          "sourceIds": [4010]
+        },
+        {
+          "name": "雕像事件",
+          "aliases": ["Statues of Grenth", "格兰斯雕像"],
+          "sourceIds": [4036]
+        },
+        {
+          "name": "虚空之声",
+          "aliases": ["Dhuum", "德姆"],
+          "sourceIds": [4016]
+        }
+      ],
+      "sourceKind": "achievement-category"
+    },
+    {
+      "id": "mythwright_gambit",
+      "name": "秘法对决",
+      "kind": "团队副本",
+      "aliases": ["W6", "6区", "Mythwright Gambit"],
+      "sourceIds": [215],
+      "bosses": [
+        {
+          "name": "咒术融合体",
+          "aliases": ["CA", "Conjured Amalgamate"],
+          "sourceIds": [4423]
+        },
+        {
+          "name": "孪生蝶翼人",
+          "aliases": ["Twin Largos", "双生蝶翼人"],
+          "sourceIds": [9100]
+        },
+        {
+          "name": "卡迪姆",
+          "aliases": ["Qadim"],
+          "sourceIds": [4396]
+        }
+      ],
+      "sourceKind": "achievement-category"
+    },
+    {
+      "id": "the_key_of_ahdashim",
+      "name": "阿达西姆之钥",
+      "kind": "团队副本",
+      "aliases": ["W7", "7区", "The Key of Ahdashim"],
+      "sourceIds": [229],
+      "bosses": [
+        {
+          "name": "基石守护者艾迪娜",
+          "aliases": ["Adina", "艾迪娜"],
+          "sourceIds": [4796]
+        },
+        {
+          "name": "基石守护者萨比尔",
+          "aliases": ["Sabir", "萨比尔"],
+          "sourceIds": [4801]
+        },
+        {
+          "name": "无可匹敌的卡迪姆",
+          "aliases": ["Qadim the Peerless", "QTP"],
+          "sourceIds": [4799]
+        }
+      ],
+      "sourceKind": "achievement-category"
+    },
+    {
+      "id": "mount_balrior",
+      "name": "巴里尔山",
+      "kind": "团队副本",
+      "aliases": ["W8", "8区", "Mount Balrior"],
+      "sourceIds": [438],
+      "bosses": [
+        {
+          "name": "瘟疫使者格里尔",
+          "aliases": ["Greer", "格里尔"],
+          "sourceIds": [8454]
+        },
+        {
+          "name": "风暴歌手迪西玛",
+          "aliases": ["Decima", "迪西玛"],
+          "sourceIds": [8485]
+        },
+        {
+          "name": "蒸汽尖啸者厄拉",
+          "aliases": ["Ura", "厄拉"],
+          "sourceIds": [8472]
+        }
+      ],
+      "sourceKind": "achievement-category"
+    },
+    {
+      "id": "shiverpeaks_pass",
+      "name": "席瓦雪山小径",
+      "kind": "进攻任务",
+      "aliases": ["Shiverpeaks Pass"],
+      "sourceIds": [4979],
+      "bosses": [
+        {
+          "name": "冰巢构造体",
+          "aliases": ["Icebrood Construct"],
+          "sourceIds": [4925]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "voice_and_claw",
+      "name": "亡者之音和亡者之爪",
+      "kind": "进攻任务",
+      "aliases": ["Voice and Claw", "熊兄弟"],
+      "sourceIds": [5023],
+      "bosses": [
+        {
+          "name": "亡者之音和亡者之爪",
+          "aliases": [],
+          "sourceIds": [5023]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "fraenir",
+      "name": "卓玛爪牙法兰涅尔",
+      "kind": "进攻任务",
+      "aliases": ["Fraenir of Jormag"],
+      "sourceIds": [5137],
+      "bosses": [
+        {
+          "name": "卓玛爪牙法兰涅尔",
+          "aliases": [],
+          "sourceIds": [5137]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "boneskinner",
+      "name": "骸骨剥皮怪",
+      "kind": "进攻任务",
+      "aliases": ["Boneskinner", "骨皮"],
+      "sourceIds": [5099],
+      "bosses": [
+        {
+          "name": "骸骨剥皮怪",
+          "aliases": [],
+          "sourceIds": [5099]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "whisper",
+      "name": "卓玛低语",
+      "kind": "进攻任务",
+      "aliases": ["Whisper of Jormag"],
+      "sourceIds": [5118],
+      "bosses": [
+        {
+          "name": "卓玛低语",
+          "aliases": [],
+          "sourceIds": [5118]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "cold_war",
+      "name": "冷战",
+      "kind": "进攻任务",
+      "aliases": ["Cold War"],
+      "sourceIds": [5247],
+      "bosses": [
+        {
+          "name": "士气大臣",
+          "aliases": [],
+          "sourceIds": [5247]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "aetherblade_hideout",
+      "name": "以太之刃藏身处",
+      "kind": "进攻任务",
+      "aliases": ["AH", "Aetherblade Hideout"],
+      "sourceIds": [6354],
+      "bosses": [
+        {
+          "name": "美琴",
+          "aliases": ["Mai Trin"],
+          "sourceIds": [6550]
+        },
+        {
+          "name": "魔音幻像",
+          "aliases": ["Echo of Scarlet Briar"],
+          "sourceIds": [6527]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "xunlai_jade_junkyard",
+      "name": "桑莱玉场废料场",
+      "kind": "进攻任务",
+      "aliases": ["XJJ", "Ankka", "安卡", "Xunlai Jade Junkyard"],
+      "sourceIds": [6084],
+      "bosses": [
+        {
+          "name": "安卡",
+          "aliases": ["Ankka"],
+          "sourceIds": [6526]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "kaineng_overlook",
+      "name": "凯宁瞭望点",
+      "kind": "进攻任务",
+      "aliases": ["KO", "Kaineng Overlook", "李部长"],
+      "sourceIds": [6243],
+      "bosses": [
+        {
+          "name": "狙击手",
+          "aliases": [],
+          "sourceIds": [6546]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "harvest_temple",
+      "name": "丰收神殿",
+      "kind": "进攻任务",
+      "aliases": ["HT", "Harvest Temple", "虚空融合体"],
+      "sourceIds": [6513],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "old_lions_court",
+      "name": "旧雄狮广场",
+      "kind": "进攻任务",
+      "aliases": ["OLC", "Old Lion's Court"],
+      "sourceIds": [6797],
+      "bosses": [
+        {
+          "name": "三人组",
+          "aliases": ["原型三人组"],
+          "sourceIds": [6778]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "cosmic_observatory",
+      "name": "宇宙观测台",
+      "kind": "进攻任务",
+      "aliases": ["CO", "Cosmic Observatory", "达格达"],
+      "sourceIds": [7163],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "temple_of_febe",
+      "name": "菲勃神殿",
+      "kind": "进攻任务",
+      "aliases": ["ToF", "Temple of Febe"],
+      "sourceIds": [7116],
+      "bosses": [
+        {
+          "name": "塞鲁斯",
+          "aliases": ["Cerus"],
+          "sourceIds": [7820]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "volcanic",
+      "name": "火山碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [381],
+      "bosses": [
+        {
+          "name": "注魔萨满",
+          "aliases": [],
+          "sourceIds": [2158]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "cliffside",
+      "name": "崖壁碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [386],
+      "bosses": [
+        {
+          "name": "传奇大神谕者",
+          "aliases": [],
+          "sourceIds": [2344]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "aquatic",
+      "name": "水域残迹碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [389],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "urban",
+      "name": "城市战场碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [390],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "thaumanova",
+      "name": "奇术新星反应堆碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [1194],
+      "bosses": [
+        {
+          "name": "奇术新星异能体",
+          "aliases": [],
+          "sourceIds": [2346]
+        },
+        {
+          "name": "6号实验体",
+          "aliases": [],
+          "sourceIds": [1190]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "underground",
+      "name": "地下设施碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [383],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "uncategorized",
+      "name": "未识别碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [387],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "snowblind",
+      "name": "雪盲碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [388],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "solid_ocean",
+      "name": "石海碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [384],
+      "bosses": [
+        {
+          "name": "翠玉巨颚",
+          "aliases": [],
+          "sourceIds": [2475]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "swamp",
+      "name": "沼泽碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [385],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "aetherblade",
+      "name": "以太之刃碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [1195],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "mai_trin",
+      "name": "美琴船长的碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [1197],
+      "bosses": [
+        {
+          "name": "美琴",
+          "aliases": ["Mai Trin"],
+          "sourceIds": [1197]
+        },
+        {
+          "name": "霍瑞克",
+          "aliases": [],
+          "sourceIds": [1191]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "molten_boss",
+      "name": "熔火头目碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [1198],
+      "bosses": [
+        {
+          "name": "熔火狂战士",
+          "aliases": [],
+          "sourceIds": [2206]
+        },
+        {
+          "name": "熔火焰暴机甲",
+          "aliases": [],
+          "sourceIds": [2567]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "molten_furnace",
+      "name": "熔火熔炉碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [1196],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "chaos",
+      "name": "混沌碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [3080],
+      "bosses": [
+        {
+          "name": "混沌异常体",
+          "aliases": [],
+          "sourceIds": [3051]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "twilight_oasis",
+      "name": "暮光绿洲碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [4024],
+      "bosses": [
+        {
+          "name": "阿玛拉",
+          "aliases": [],
+          "sourceIds": [3971]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "deepstone",
+      "name": "深石坑碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [4184],
+      "bosses": [
+        {
+          "name": "育母女王",
+          "aliases": [],
+          "sourceIds": [4197]
+        },
+        {
+          "name": "深石哨兵",
+          "aliases": [],
+          "sourceIds": [4197]
+        },
+        {
+          "name": "深石之音",
+          "aliases": [],
+          "sourceIds": [4221]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "siren_reef",
+      "name": "海妖暗礁碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [4509],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "nightmare",
+      "name": "噩梦碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [3209],
+      "bosses": [
+        {
+          "name": "不净者西亚克斯",
+          "aliases": ["Siax"],
+          "sourceIds": [3218]
+        },
+        {
+          "name": "恩索利斯",
+          "aliases": ["Ensolyss"],
+          "sourceIds": [3180]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "shattered",
+      "name": "破碎观测台碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [3513],
+      "bosses": [
+        {
+          "name": "斯科瓦德",
+          "aliases": ["Skorvald"],
+          "sourceIds": [3540]
+        },
+        {
+          "name": "策划者",
+          "aliases": ["Arkk"],
+          "sourceIds": [3465]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "sunqua",
+      "name": "桑泉峰碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [5438],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "silent_surf",
+      "name": "寂静之浪碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [6952],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "lonely_tower",
+      "name": "孤高尖塔碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [8042],
+      "bosses": [
+        {
+          "name": "埃帕奇",
+          "aliases": ["Eparch"],
+          "sourceIds": [7946]
+        },
+        {
+          "name": "塞鲁斯",
+          "aliases": ["Cerus"],
+          "sourceIds": [8051]
+        },
+        {
+          "name": "戴莫斯",
+          "aliases": ["Deimos"],
+          "sourceIds": [8051]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "kinfall",
+      "name": "族亲陨落碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [8762],
+      "bosses": [
+        {
+          "name": "低语暗影",
+          "aliases": [],
+          "sourceIds": [8711]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "lonely_throne",
+      "name": "孤独王座碎层",
+      "kind": "迷雾碎层",
+      "aliases": [],
+      "sourceIds": [9352],
+      "bosses": [
+        {
+          "name": "伊斯加然",
+          "aliases": ["Isgarren"],
+          "sourceIds": [9449]
+        }
+      ],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "ascalon",
+      "name": "阿斯卡隆墓穴",
+      "kind": "地下城",
+      "aliases": [],
+      "sourceIds": [186],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "manor",
+      "name": "考迪克斯庄园",
+      "kind": "地下城",
+      "aliases": [],
+      "sourceIds": [185],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "twilight_arbor",
+      "name": "暮光之根",
+      "kind": "地下城",
+      "aliases": [],
+      "sourceIds": [189],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "sorrows_embrace",
+      "name": "悲伤之拥",
+      "kind": "地下城",
+      "aliases": [],
+      "sourceIds": [188],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "citadel",
+      "name": "烈焰壁垒",
+      "kind": "地下城",
+      "aliases": [],
+      "sourceIds": [191],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "honor_waves",
+      "name": "海浪之誉",
+      "kind": "地下城",
+      "aliases": [],
+      "sourceIds": [190],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "crucible",
+      "name": "永恒熔炉",
+      "kind": "地下城",
+      "aliases": [],
+      "sourceIds": [192],
+      "bosses": [],
+      "sourceKind": "achievement"
+    },
+    {
+      "id": "arah",
+      "name": "亚拉城废墟",
+      "kind": "地下城",
+      "aliases": [],
+      "sourceIds": [187],
+      "bosses": [],
+      "sourceKind": "achievement"
+    }
+  ]
+}

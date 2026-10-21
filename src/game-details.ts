@@ -9,7 +9,7 @@ import {
 import { pveSources, pveTrait } from "./pve-traits";
 import { wikiDetails } from "./wiki-details";
 
-export type DetailKind = "trait" | "skill";
+export type DetailKind = "trait" | "skill" | "item";
 export type GameFact = {
   type?: string;
   text?: string;
@@ -388,6 +388,7 @@ export function gameDetails(
   selectedTraits: ReadonlySet<number>,
   context: { healingPower?: number } = {},
 ): GameDetails {
+  if (kind === "item") return itemDetails(entity);
   // overrides addresses the ORIGINAL facts array, before filtering, grouping, or appending.
   const base: { fact: GameFact; modified: boolean }[] = (
     entity.facts || []
@@ -474,6 +475,56 @@ export function gameDetails(
     facts,
     unresolved,
     reviewed: false,
+    sources: [],
+  };
+}
+
+export function itemDetails(entity: Entity): GameDetails {
+  const details = entity.details || {};
+  const facts: DetailFact[] = [];
+  for (const attribute of details.infix_upgrade?.attributes || [])
+    facts.push({
+      label:
+        attributeLabels[attribute.attribute as keyof typeof attributeLabels] ||
+        (
+          { Ferocity: "暴击效果", AgonyResistance: "痛苦抗性" } as Record<
+            string,
+            string
+          >
+        )[attribute.attribute] ||
+        attribute.attribute,
+      detail: `${attribute.modifier >= 0 ? "+" : ""}${attribute.modifier}`,
+      modified: false,
+    });
+  for (const [index, bonus] of (details.bonuses || []).entries())
+    facts.push({
+      label: details.type === "Rune" ? `${index + 1} 件套` : "效果",
+      detail: gameText(bonus),
+      modified: false,
+    });
+  const duration =
+    details.duration_ms != null ? details.duration_ms / 1000 : details.duration;
+  if (duration)
+    facts.push({
+      label: "持续时间",
+      detail: `${duration} 秒`,
+      modified: false,
+    });
+  return {
+    description: [
+      ...new Set(
+        [
+          entity.description,
+          details.description,
+          details.infix_upgrade?.buff?.description,
+        ].filter(Boolean),
+      ),
+    ]
+      .map((value) => gameText(value as string))
+      .join("\n"),
+    facts,
+    unresolved: [],
+    reviewed: true,
     sources: [],
   };
 }

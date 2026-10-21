@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { encounterModes } from "./encounter-modes";
 import { zlibSync, Unzlib, strToU8, strFromU8 } from "fflate";
 export const armorSlots = [
   "head",
@@ -58,11 +59,40 @@ const slotSchema = z
 const shape = Object.fromEntries(
   allSlots.map((s) => [s, slotSchema]),
 ) as Record<(typeof allSlots)[number], typeof slotSchema>;
+export const buildTagsSchema = z
+  .array(z.string().trim().min(1).max(24))
+  .max(8)
+  .transform((tags) => [...new Set(tags)]);
+export const encountersSchema = z
+  .array(
+    z
+      .object({
+        instance: z.string().trim().min(1).max(60),
+        boss: z.string().trim().max(60).optional(),
+        mode: z.enum(encounterModes).optional(),
+      })
+      .strict(),
+  )
+  .max(20)
+  .transform((encounters) =>
+    encounters.filter(
+      (entry, index) =>
+        encounters.findIndex(
+          (other) =>
+            other.instance === entry.instance &&
+            (other.boss || "") === (entry.boss || "") &&
+            other.mode === entry.mode,
+        ) === index,
+    ),
+  );
 export const buildSchema = z
   .object({
     version: z.literal(1),
     id: z.string().max(80),
     name: z.string().max(80),
+    description: z.string().max(60000).optional(),
+    tags: buildTagsSchema.optional(),
+    encounters: encountersSchema.optional(),
     profession: z.enum([
       "Guardian",
       "Warrior",
@@ -126,6 +156,7 @@ export function createBuild(profession: Build["profession"] = "Mesmer"): Build {
 }
 export function encodeShare(b: Build) {
   const bytes = zlibSync(strToU8(JSON.stringify(buildSchema.parse(b))));
+  if (bytes.length > 9000) throw Error("链接过长，请导出 JSON 文件。");
   const encoded = btoa(String.fromCharCode(...bytes))
     .replaceAll("+", "-")
     .replaceAll("/", "_")
@@ -200,9 +231,6 @@ export function statOptions(catalog: Catalog, slot: string): Entity[] {
       );
     });
 }
-function isWeaponKey(key: string) {
-  return key.startsWith("weapon") || key.startsWith("offhand");
-}
 export const twoHanded = new Set([
   "Greatsword",
   "Hammer",
@@ -212,7 +240,7 @@ export const twoHanded = new Set([
   "Staff",
   "Spear",
 ]);
-export function issues(b: Build, c: Catalog, complete = false): string[] {
+export function issues(b: Build, c: Catalog, _complete = false): string[] {
   const errors: string[] = [];
   const p = c.professions.find((p) => p.id === b.profession);
   const specs = b.specs.map((s) => c.specs.find((x) => x.id === s.id));
@@ -237,18 +265,12 @@ export function issues(b: Build, c: Catalog, complete = false): string[] {
           errors.push(`特性线 ${i + 1} 第 ${t + 1} 阶选择无效。`);
       }
     });
-    if (complete && (!s.id || s.traits.some((x) => !x)))
-      errors.push(`请完成第 ${i + 1} 条特性线。`);
   });
   const kinds = ["Heal", "Utility", "Utility", "Utility", "Elite"];
   const skillIds = b.skills.filter(Boolean);
   if (new Set(skillIds).size !== skillIds.length) errors.push("技能不能重复。");
   b.skills.forEach((id, i) => {
     if (!id) {
-      if (complete)
-        errors.push(
-          `请选择${i === 0 ? "治疗" : i === 4 ? "精英" : "通用"}技能。`,
-        );
       return;
     }
     const s = c.skills.find((s) => s.id === id);
@@ -272,13 +294,6 @@ export function issues(b: Build, c: Catalog, complete = false): string[] {
       errors.push(
         `${labels[key]}的“${selectedStat.name}”不是当前可选配装词条，请重新选择。`,
       );
-    if (
-      complete &&
-      !s.statId &&
-      !key.startsWith("offhand") &&
-      key !== "weapon2"
-    )
-      errors.push(`请选择${labels[key]}属性。`);
     const validItem = (id: number | null, check: (e: Entity) => boolean) =>
       !id || c.items.some((x) => x.id === id && check(x));
     if (
@@ -319,8 +334,6 @@ export function issues(b: Build, c: Catalog, complete = false): string[] {
             : 1;
     if (s.infusions.length > max) errors.push(`${labels[key]}灌注槽过多。`);
     if (weaponSlots.includes(key as never)) {
-      if (s.statId && isWeaponKey(key) && !s.weapon)
-        errors.push(`${labels[key]}请选择武器类型。`);
       if (
         s.weapon &&
         (!p?.weapons[s.weapon] ||
@@ -330,8 +343,6 @@ export function issues(b: Build, c: Catalog, complete = false): string[] {
             !p.weapons[s.weapon].flags.includes("TwoHand")))
       )
         errors.push(`${labels[key]}武器不可用。`);
-      if (complete && key === "weapon1" && !s.weapon)
-        errors.push(`请选择${labels[key]}武器类型。`);
       if (s.sigils.filter(Boolean).length > (twoHanded.has(s.weapon) ? 2 : 1))
         errors.push(`${labels[key]}法印槽过多。`);
     }

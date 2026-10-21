@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "73228fe6-3dad-47d1-87c1-0c3a77061b9f",
+  "name": "卡迪姆2.0 奶吟游T",
+  "encounters": [
+    {
+      "instance": "阿达西姆之钥",
+      "boss": "无可匹敌的卡迪姆",
+      "mode": "normal"
+    }
+  ],
+  "profession": "Mesmer",
+  "equipment": {
+    "head": {
+      "statId": 1123,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "shoulders": {
+      "statId": 628,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "chest": {
+      "statId": 628,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "hands": {
+      "statId": 628,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "legs": {
+      "statId": 628,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "feet": {
+      "statId": 628,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "back": {
+      "statId": 1430,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "accessory1": {
+      "statId": 1430,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "accessory2": {
+      "statId": 1430,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "amulet": {
+      "statId": 1430,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [],
+      "weapon": ""
+    },
+    "ring1": {
+      "statId": 1430,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "ring2": {
+      "statId": 1430,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "weapon1": {
+      "statId": 628,
+      "runeId": null,
+      "sigils": [
+        24639,
+        74326
+      ],
+      "infusions": [
+        null,
+        null
+      ],
+      "weapon": "Rifle"
+    },
+    "offhand1": {
+      "statId": null,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [],
+      "weapon": ""
+    },
+    "weapon2": {
+      "statId": 628,
+      "runeId": null,
+      "sigils": [
+        24639,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": "Sword"
+    },
+    "offhand2": {
+      "statId": 628,
+      "runeId": null,
+      "sigils": [
+        74326,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": "Pistol"
+    }
+  },
+  "relic": 101116,
+  "food": 91690,
+  "utility": 99842,
+  "skills": [
+    76695,
+    76850,
+    77066,
+    10237,
+    29519
+  ],
+  "specs": [
+    {
+      "id": 23,
+      "traits": [
+        738,
+        740,
+        1866
+      ]
+    },
+    {
+      "id": 45,
+      "traits": [
+        675,
+        669,
+        1687
+      ]
+    },
+    {
+      "id": 73,
+      "traits": [
+        2326,
+        2367,
+        2441
+      ]
+    }
+  ]
+}

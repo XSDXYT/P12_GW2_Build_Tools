@@ -50,6 +50,11 @@ try {
     "1,000",
   );
   assert.equal(await page.locator("section.panel").count(), 2);
+  const collectionResponse = await page.request.get(base + "bd/index.json");
+  assert.equal(collectionResponse.status(), 200);
+  const collection = await collectionResponse.json();
+  assert.equal(collection.schema, 1);
+  assert.ok(Array.isArray(collection.builds));
   assert.deepEqual(errors, []);
   console.log(
     "生产构建仓库子路径验证通过：HTML、脚本、样式、资料与两个面板均正常。",

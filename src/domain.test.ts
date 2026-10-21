@@ -74,10 +74,14 @@ test("双手武器冲突及非法灌注引用被发现", () => {
   assert.ok(issues(b, c).some((s) => s.includes("不能同时配置副手")));
   assert.ok(issues(b, c).some((s) => s.includes("灌注无效")));
 });
-test("空草稿允许保存，但不通过完整分享校验", () => {
+test("有意留空的草稿允许保存和分享，实际冲突仍检查", () => {
   const b = createBuild();
   assert.deepEqual(issues(b, c), []);
-  assert.ok(issues(b, c, true).length > 0);
+  assert.deepEqual(issues(b, c, true), []);
+  b.specs[0] = { id: 1, traits: [11, null, null] };
+  assert.deepEqual(issues(b, c, true), []);
+  b.skills[1] = 10;
+  assert.ok(issues(b, c, true).some((error) => error.includes("技能槽")));
 });
 
 test("现代词条来源于传奇装备选择集合，去重且不包含基础属性", async () => {

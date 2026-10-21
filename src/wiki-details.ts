@@ -95,6 +95,7 @@ export function wikiDetails(
   selectedTraits: ReadonlySet<number>,
   context: { healingPower?: number } = {},
 ) {
+  if (kind === "item") return;
   const entry =
     wikiSnapshot.entries[kind === "trait" ? "traits" : "skills"][id];
   if (!entry) return;

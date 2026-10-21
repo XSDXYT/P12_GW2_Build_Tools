@@ -7,6 +7,7 @@ export type PickerRequest = {
   onSelect: (id: number | null) => void;
   anchor: HTMLElement;
   namesOnly?: boolean;
+  clearLabel?: string;
   icons?: boolean;
   disabledIds?: number[];
 };

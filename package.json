@@ -1,15 +1,20 @@
 {
   "name": "p12-gw2-build-tools",
-  "version": "0.4.0",
+  "version": "0.6.5",
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "npm run data:builds",
+    "prebuild": "npm run data:builds",
+    "data:builds": "tsx scripts/build-collection.ts",
     "dev": "vite --host 127.0.0.1",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "tsx --test src/domain.test.ts src/attributes.test.ts src/game-details.test.ts src/library.test.ts scripts/catalog-transforms.test.mjs scripts/wiki-details.test.mjs",
+    "test": "tsx --test src/domain.test.ts src/attributes.test.ts src/game-details.test.ts src/library.test.ts src/build-description.test.ts src/collection.test.ts scripts/catalog-transforms.test.mjs scripts/wiki-details.test.mjs",
     "data:update": "node scripts/update-data.mjs",
     "test:e2e": "playwright test",
+    "test:compat": "playwright test --config playwright.compat.config.ts",
+    "test:workflow": "tsx scripts/verify-bd-workflow.ts",
     "release:check": "node scripts/check-release.mjs",
     "format": "prettier --write src tests scripts *.ts *.json .github/workflows/pages.yml",
     "data:localize": "node scripts/sync-consumable-names.mjs",
@@ -23,6 +28,8 @@
     "fflate": "^0.8.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
     "zod": "^4.1.0"
   },
   "devDependencies": {

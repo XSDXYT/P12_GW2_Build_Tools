@@ -75,6 +75,8 @@ export function Picker({
       observer.disconnect();
       window.removeEventListener("resize", position);
       window.removeEventListener("scroll", position, true);
+      // Release the native modal before focusing its previously inert trigger.
+      if (compact) element.close();
       if (request.anchor.isConnected)
         request.anchor.focus({ preventScroll: true });
     };
@@ -189,7 +191,7 @@ export function Picker({
               className="option clear"
               onClick={() => select(null)}
             >
-              清除此槽位
+              {request.clearLabel || "清除此槽位"}
             </button>
             {matches.slice(0, limit).map((item) => {
               const disabled = request.disabledIds?.includes(item.id);

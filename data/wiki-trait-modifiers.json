@@ -1,0 +1,651 @@
+{
+  "schema": 1,
+  "professions": [
+    "Mesmer",
+    "Guardian",
+    "Warrior"
+  ],
+  "rules": [
+    {
+      "id": "blurred-inscriptions-distortion",
+      "trait": 752,
+      "revision": 3107747,
+      "evidence": "activating one grants you distortion.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 21750,
+          "revision": 2937050,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 10236,
+          "revision": 2888185,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 10232,
+          "revision": 3171622,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 10234,
+          "revision": 2888186,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 10247,
+          "revision": 3115829,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 29519,
+          "revision": 3199892,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "失真",
+            "detail": "1 秒",
+            "trigger": "激活纹章时"
+          }
+        }
+      ]
+    },
+    {
+      "id": "blurred-inscriptions-heal",
+      "trait": 752,
+      "revision": 3107747,
+      "evidence": "Healing: 6,600 (0.85)",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 21750,
+          "revision": 2937050,
+          "guards": [
+            {
+              "label": "治疗",
+              "detail": "5560 + 0.85 × 治疗效果"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "replace",
+          "label": "治疗",
+          "row": {
+            "label": "治疗",
+            "detail": "6600 + 0.85 × 治疗效果",
+            "healing": {
+              "base": 6600,
+              "coefficient": 0.85
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "blurred-inscriptions-targets",
+      "trait": 752,
+      "revision": 3107747,
+      "evidence": "Number of Targets: 5",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10236,
+          "revision": 2888185,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "主动效果 · 目标数",
+            "detail": "5",
+            "trigger": "激活纹章时"
+          }
+        }
+      ]
+    },
+    {
+      "id": "blurred-inscriptions-cleanse",
+      "trait": 752,
+      "revision": 3107747,
+      "evidence": "Conditions Removed: 5",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10234,
+          "revision": 2888186,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "症状移除",
+            "detail": "5",
+            "trigger": "激活纹章时"
+          }
+        }
+      ]
+    },
+    {
+      "id": "blurred-inscriptions-vulnerability",
+      "trait": 752,
+      "revision": 3107747,
+      "evidence": "10 Vulnerability (6s)",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 29519,
+          "revision": 3199892,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "易伤",
+            "detail": "6 秒 · 10 层",
+            "stacks": 10,
+            "trigger": "激活纹章时"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prismatic-stealth-duration",
+      "trait": 674,
+      "revision": 3171783,
+      "evidence": "Duration Increase: 50%",
+      "priority": 20,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10201,
+          "revision": 2838932,
+          "guards": [
+            {
+              "label": "潜行",
+              "detail": "3 秒"
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 10187,
+          "revision": 3171630,
+          "guards": [
+            {
+              "label": "潜行",
+              "detail": "2 秒"
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 10234,
+          "revision": 2888186,
+          "guards": [
+            {
+              "label": "潜行",
+              "detail": "2 秒"
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 10245,
+          "revision": 2882535,
+          "guards": [
+            {
+              "label": "潜行",
+              "detail": "6 秒"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "潜行",
+          "factor": 1.5
+        }
+      ]
+    },
+    {
+      "id": "cry-of-pain-confusion",
+      "trait": 734,
+      "revision": 3113109,
+      "evidence": "Increases Confusion duration from 3s to 4s; increases stacks inflicted per strike from 1 to 2.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10190,
+          "revision": 3188698,
+          "guards": [
+            {
+              "label": "困惑",
+              "detail": "3 秒"
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 56928,
+          "revision": 3188692,
+          "guards": [
+            {
+              "label": "困惑",
+              "detail": "3 秒"
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 62616,
+          "revision": 3188695,
+          "guards": [
+            {
+              "label": "困惑",
+              "detail": "3 秒"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "replace",
+          "label": "困惑",
+          "row": {
+            "label": "困惑",
+            "detail": "4 秒 · 2 层",
+            "stacks": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "cry-of-pain-flute",
+      "trait": 734,
+      "revision": 3113109,
+      "evidence": "Additional Stacks: 2 Duration Increase: 50%",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 76746,
+          "revision": 3188691,
+          "guards": [
+            {
+              "label": "困惑",
+              "detail": "4 秒 · 3 层"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "replace",
+          "label": "困惑",
+          "row": {
+            "label": "困惑",
+            "detail": "6 秒 · 5 层",
+            "stacks": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "fragmentation-critical",
+      "trait": 2035,
+      "revision": 3087267,
+      "evidence": "Increased critical-hit chance by 25%.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10191,
+          "revision": 3173330,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 56930,
+          "revision": 3174056,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 62617,
+          "revision": 3173322,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 76552,
+          "revision": 3173326,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "暴击率提高",
+            "detail": "25%",
+            "trigger": "此技能命中时"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fragmentation-cripple",
+      "trait": 2035,
+      "revision": 3087267,
+      "evidence": "Inflicts Crippled for 3s per hit.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10190,
+          "revision": 3188698,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 56928,
+          "revision": 3188692,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 62616,
+          "revision": 3188695,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "致残",
+            "detail": "3 秒",
+            "trigger": "每次命中时"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fragmentation-targets",
+      "trait": 2035,
+      "revision": 3087267,
+      "evidence": "Strikes up to five targets within range.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10287,
+          "revision": 3069398,
+          "guards": [
+            {
+              "label": "目标数",
+              "detail": "1"
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 56873,
+          "revision": 3210681,
+          "guards": [
+            {
+              "label": "目标数",
+              "detail": "1"
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 62602,
+          "revision": 3173324,
+          "guards": [
+            {
+              "label": "目标数",
+              "detail": "1"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "replace",
+          "label": "目标数",
+          "row": {
+            "label": "目标数",
+            "detail": "5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fragmentation-reflect",
+      "trait": 2035,
+      "revision": 3087267,
+      "evidence": "Applies Reflection to any source of Distortion.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10192,
+          "revision": 3116043,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 68273,
+          "revision": 2840148,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "反射投射物",
+            "detail": "",
+            "trigger": "失真期间"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fragmentation-continuum",
+      "trait": 2035,
+      "revision": 3087267,
+      "evidence": "Base duration increased by 1 second.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 29830,
+          "revision": 3194266,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "基础持续时间增加",
+            "detail": "1 秒"
+          }
+        }
+      ]
+    },
+    {
+      "id": "perfect-inscriptions-9093",
+      "trait": 579,
+      "revision": 3202239,
+      "evidence": "Bonus Power increased to 216",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 9093,
+          "revision": 2843968,
+          "guards": [
+            {
+              "label": "纹章被动",
+              "detail": "180 威力"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "replace",
+          "label": "纹章被动",
+          "row": {
+            "label": "纹章被动",
+            "detail": "216 威力"
+          }
+        }
+      ]
+    },
+    {
+      "id": "perfect-inscriptions-9151",
+      "trait": 579,
+      "revision": 3202239,
+      "evidence": "Bonus Condition Damage increased to 216",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 9151,
+          "revision": 2993072,
+          "guards": [
+            {
+              "label": "纹章被动",
+              "detail": "180 症状伤害"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "replace",
+          "label": "纹章被动",
+          "row": {
+            "label": "纹章被动",
+            "detail": "216 症状伤害"
+          }
+        }
+      ]
+    },
+    {
+      "id": "perfect-inscriptions-9163",
+      "trait": 579,
+      "revision": 3202239,
+      "evidence": "Bonus Concentration increased to 144",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 9163,
+          "revision": 2843969,
+          "guards": [
+            {
+              "label": "纹章被动",
+              "detail": "120 增益效果"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "replace",
+          "label": "纹章被动",
+          "row": {
+            "label": "纹章被动",
+            "detail": "144 增益效果"
+          }
+        }
+      ]
+    },
+    {
+      "id": "perfect-inscriptions-9158",
+      "trait": 579,
+      "revision": 3202239,
+      "evidence": "Interval of cleansing conditions reduced to 4 seconds.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 9158,
+          "revision": 2843941,
+          "guards": [
+            {
+              "label": "间隔",
+              "detail": "5 秒"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "replace",
+          "label": "间隔",
+          "row": {
+            "label": "间隔",
+            "detail": "4 秒"
+          }
+        }
+      ]
+    },
+    {
+      "id": "perfect-inscriptions-9150",
+      "trait": 579,
+      "revision": 3202239,
+      "evidence": "Damage Reduction increased to -12%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 9150,
+          "revision": 3036829,
+          "guards": [
+            {
+              "label": "纹章被动",
+              "detail": "-10% 受到的伤害, -10% 受到的症状伤害"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "replace",
+          "label": "纹章被动",
+          "row": {
+            "label": "纹章被动",
+            "detail": "-12% 受到的伤害, -12% 受到的症状伤害"
+          }
+        }
+      ]
+    }
+  ]
+}

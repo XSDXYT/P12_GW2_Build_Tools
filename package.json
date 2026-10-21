@@ -1,0 +1,39 @@
+{
+  "name": "p12-gw2-build-tools",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "tsx --test src/domain.test.ts src/attributes.test.ts src/game-details.test.ts src/library.test.ts scripts/catalog-transforms.test.mjs scripts/wiki-details.test.mjs",
+    "data:update": "node scripts/update-data.mjs",
+    "test:e2e": "playwright test",
+    "release:check": "node scripts/check-release.mjs",
+    "format": "prettier --write src tests scripts *.ts *.json .github/workflows/pages.yml",
+    "data:localize": "node scripts/sync-consumable-names.mjs",
+    "data:stats": "node scripts/sync-stat-choices.mjs",
+    "data:attributes": "node scripts/update-attribute-data.mjs",
+    "data:pve": "node scripts/sync-pve-traits.mjs",
+    "data:descriptions": "node scripts/sync-game-descriptions.mjs",
+    "data:wiki": "node scripts/sync-wiki-details.mjs"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "cheerio": "^1.2.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.0"
+  }
+}

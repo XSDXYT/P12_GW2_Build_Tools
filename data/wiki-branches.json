@@ -1,0 +1,2407 @@
+{
+  "schema": 1,
+  "parents": {
+    "5502": {
+      "profession": "Elementalist",
+      "revision": 2649734,
+      "sources": [
+        {
+          "title": "Glyph_of_Lesser_Elementals",
+          "revision": 2649734
+        }
+      ],
+      "branches": [
+        {
+          "title": "Glyph_of_Lesser_Elementals_(fire)",
+          "id": 25486,
+          "context": "火焰协调"
+        },
+        {
+          "title": "Glyph_of_Lesser_Elementals_(water)",
+          "id": 25487,
+          "context": "流水协调"
+        },
+        {
+          "title": "Glyph_of_Lesser_Elementals_(air)",
+          "id": 25495,
+          "context": "空气协调"
+        },
+        {
+          "title": "Glyph_of_Lesser_Elementals_(earth)",
+          "id": 25497,
+          "context": "大地协调"
+        }
+      ]
+    },
+    "5506": {
+      "profession": "Elementalist",
+      "revision": 3184529,
+      "sources": [
+        {
+          "title": "Glyph_of_Elemental_Power",
+          "revision": 3184529
+        }
+      ],
+      "branches": [
+        {
+          "title": "Glyph_of_Elemental_Power_(fire)",
+          "id": 34736,
+          "context": "火焰协调"
+        },
+        {
+          "title": "Glyph_of_Elemental_Power_(water)",
+          "id": 34772,
+          "context": "流水协调"
+        },
+        {
+          "title": "Glyph_of_Elemental_Power_(air)",
+          "id": 34637,
+          "context": "空气协调"
+        },
+        {
+          "title": "Glyph_of_Elemental_Power_(earth)",
+          "id": 34714,
+          "context": "大地协调"
+        }
+      ]
+    },
+    "5516": {
+      "profession": "Elementalist",
+      "revision": 3036498,
+      "sources": [
+        {
+          "title": "Conjure_Fiery_Greatsword",
+          "revision": 3036498
+        }
+      ],
+      "branches": [
+        {
+          "title": "Flame_Wave",
+          "id": 5532
+        },
+        {
+          "title": "Fiery_Eruption",
+          "id": 5533
+        },
+        {
+          "title": "Fiery_Whirl",
+          "id": 5697
+        },
+        {
+          "title": "Fiery_Rush",
+          "id": 5517
+        },
+        {
+          "title": "Firestorm",
+          "id": 5531
+        }
+      ]
+    },
+    "5534": {
+      "profession": "Elementalist",
+      "revision": 2998630,
+      "sources": [
+        {
+          "title": "Tornado",
+          "revision": 2998630
+        }
+      ],
+      "branches": [
+        {
+          "title": "Electrified_Tornado",
+          "id": 5752
+        },
+        {
+          "title": "Dust_Tornado",
+          "id": 5753
+        },
+        {
+          "title": "Debris_Tornado",
+          "id": 5754
+        },
+        {
+          "title": "Elemental_Requiem",
+          "id": 35224
+        },
+        {
+          "title": "Dust_Charge",
+          "id": 35304
+        }
+      ]
+    },
+    "5540": {
+      "profession": "Elementalist",
+      "revision": 3036495,
+      "sources": [
+        {
+          "title": "Conjure_Flame_Axe",
+          "revision": 3036495
+        }
+      ],
+      "branches": [
+        {
+          "title": "Lava_Axe",
+          "id": 5541
+        },
+        {
+          "title": "Double_Lava_Axe",
+          "id": 40229
+        },
+        {
+          "title": "Explosive_Lava_Axe",
+          "id": 5593
+        },
+        {
+          "title": "Burning_Retreat_(Lava_Axe_skill)",
+          "id": 5717
+        },
+        {
+          "title": "Ring_of_Fire_(Lava_Axe_skill)",
+          "id": 5718
+        },
+        {
+          "title": "Flame_Leap",
+          "id": 5719
+        }
+      ]
+    },
+    "5546": {
+      "profession": "Elementalist",
+      "revision": 3036494,
+      "sources": [
+        {
+          "title": "Conjure_Earth_Shield",
+          "revision": 3036494
+        }
+      ],
+      "branches": [
+        {
+          "title": "Shield_Smack",
+          "id": 5621
+        },
+        {
+          "title": "Shield_Smash",
+          "id": 21646
+        },
+        {
+          "title": "Crippling_Shield",
+          "id": 5746
+        },
+        {
+          "title": "Stone_Sheath",
+          "id": 21647
+        },
+        {
+          "title": "Magnetic_Surge",
+          "id": 5547
+        },
+        {
+          "title": "Magnetic_Shield_(elementalist_skill)",
+          "id": 5747
+        },
+        {
+          "title": "Fortify",
+          "id": 5623
+        }
+      ]
+    },
+    "5567": {
+      "profession": "Elementalist",
+      "revision": 3036496,
+      "sources": [
+        {
+          "title": "Conjure_Frost_Bow",
+          "revision": 3036496
+        }
+      ],
+      "branches": [
+        {
+          "title": "Water_Arrow",
+          "id": 5595
+        },
+        {
+          "title": "Frost_Volley",
+          "id": 5720
+        },
+        {
+          "title": "Frost_Fan",
+          "id": 5568
+        },
+        {
+          "title": "Frost_Storm",
+          "id": 5723
+        },
+        {
+          "title": "Deep_Freeze",
+          "id": 5721
+        }
+      ]
+    },
+    "5569": {
+      "profession": "Elementalist",
+      "revision": 2998596,
+      "sources": [
+        {
+          "title": "Glyph_of_Elemental_Harmony",
+          "revision": 2998596
+        }
+      ],
+      "branches": [
+        {
+          "title": "Glyph_of_Elemental_Harmony_(fire)",
+          "id": 34743,
+          "context": "火焰协调"
+        },
+        {
+          "title": "Glyph_of_Elemental_Harmony_(water)",
+          "id": 34651,
+          "context": "流水协调"
+        },
+        {
+          "title": "Glyph_of_Elemental_Harmony_(air)",
+          "id": 34724,
+          "context": "空气协调"
+        },
+        {
+          "title": "Glyph_of_Elemental_Harmony_(earth)",
+          "id": 34609,
+          "context": "大地协调"
+        }
+      ]
+    },
+    "5573": {
+      "profession": "Elementalist",
+      "revision": 2894988,
+      "sources": [
+        {
+          "title": "Glyph_of_Renewal",
+          "revision": 2894988
+        }
+      ],
+      "branches": [
+        {
+          "title": "Renewal_of_Fire",
+          "id": 24407,
+          "context": "火焰协调"
+        },
+        {
+          "title": "Renewal_of_Water",
+          "id": 24410,
+          "context": "流水协调"
+        },
+        {
+          "title": "Renewal_of_Air",
+          "id": 24409,
+          "context": "空气协调"
+        },
+        {
+          "title": "Renewal_of_Earth",
+          "id": 24411,
+          "context": "大地协调"
+        }
+      ]
+    },
+    "5624": {
+      "profession": "Elementalist",
+      "revision": 3036497,
+      "sources": [
+        {
+          "title": "Conjure_Lightning_Hammer",
+          "revision": 3036497
+        }
+      ],
+      "branches": [
+        {
+          "title": "Lightning_Swing",
+          "id": 5726
+        },
+        {
+          "title": "Static_Swing",
+          "id": 5727
+        },
+        {
+          "title": "Thunderclap_(Lightning_Hammer_skill)",
+          "id": 5728
+        },
+        {
+          "title": "Lightning_Leap",
+          "id": 5625
+        },
+        {
+          "title": "Wind_Blast",
+          "id": 5733
+        },
+        {
+          "title": "Invoke_Lightning",
+          "id": 5725
+        },
+        {
+          "title": "Static_Field_(Lightning_Hammer_skill)",
+          "id": 5732
+        }
+      ]
+    },
+    "5666": {
+      "profession": "Elementalist",
+      "revision": 2736814,
+      "sources": [
+        {
+          "title": "Glyph_of_Elementals",
+          "revision": 2736814
+        }
+      ],
+      "branches": [
+        {
+          "title": "Glyph_of_Elementals_(fire)",
+          "id": 25488,
+          "context": "火焰协调"
+        },
+        {
+          "title": "Flame_Barrage",
+          "id": 25499
+        },
+        {
+          "title": "Glyph_of_Elementals_(water)",
+          "id": 25491,
+          "context": "流水协调"
+        },
+        {
+          "title": "Crashing_Waves",
+          "id": 25492
+        },
+        {
+          "title": "Glyph_of_Elementals_(air)",
+          "id": 25490,
+          "context": "空气协调"
+        },
+        {
+          "title": "Shocking_Bolt",
+          "id": 25480
+        },
+        {
+          "title": "Glyph_of_Elementals_(earth)",
+          "id": 25489,
+          "context": "大地协调"
+        },
+        {
+          "title": "Stomp_(Glyph_of_Elementals_skill)",
+          "id": 25498
+        }
+      ]
+    },
+    "5734": {
+      "profession": "Elementalist",
+      "revision": 2649934,
+      "sources": [
+        {
+          "title": "Glyph_of_Storms",
+          "revision": 2649934
+        }
+      ],
+      "branches": [
+        {
+          "title": "Firestorm_(Glyph_of_Storms_skill)",
+          "id": 5736,
+          "context": "火焰协调"
+        },
+        {
+          "title": "Ice_Storm_(Glyph_of_Storms_skill)",
+          "id": 5735,
+          "context": "流水协调"
+        },
+        {
+          "title": "Lightning_Storm_(Glyph_of_Storms_skill)",
+          "id": 5737,
+          "context": "空气协调"
+        },
+        {
+          "title": "Sandstorm",
+          "id": 5738,
+          "context": "大地协调"
+        }
+      ]
+    },
+    "5802": {
+      "profession": "Engineer",
+      "revision": 3194523,
+      "sources": [
+        {
+          "title": "Med_Kit",
+          "revision": 3194523
+        }
+      ],
+      "branches": [
+        {
+          "title": "Med_Blaster",
+          "id": 58090
+        },
+        {
+          "title": "Bandage_Blast",
+          "id": 29547
+        },
+        {
+          "title": "Cleansing_Field",
+          "id": 49045
+        },
+        {
+          "title": "Vital_Burst",
+          "id": 49082
+        },
+        {
+          "title": "Infusion_Bomb",
+          "id": 50444
+        }
+      ]
+    },
+    "5805": {
+      "profession": "Engineer",
+      "revision": 3194526,
+      "sources": [
+        {
+          "title": "Grenade_Kit",
+          "revision": 3194526
+        }
+      ],
+      "branches": [
+        {
+          "title": "Grenade",
+          "id": 5882
+        },
+        {
+          "title": "Shrapnel_Grenade",
+          "id": 5807
+        },
+        {
+          "title": "Flash_Grenade",
+          "id": 5808
+        },
+        {
+          "title": "Freeze_Grenade",
+          "id": 5809
+        },
+        {
+          "title": "Poison_Grenade",
+          "id": 5806
+        }
+      ]
+    },
+    "5812": {
+      "profession": "Engineer",
+      "revision": 3194520,
+      "sources": [
+        {
+          "title": "Bomb_Kit",
+          "revision": 3194520
+        }
+      ],
+      "branches": [
+        {
+          "title": "Bomb",
+          "id": 5842
+        },
+        {
+          "title": "Fire_Bomb",
+          "id": 5823
+        },
+        {
+          "title": "Galvanic_Bomb",
+          "id": 5822
+        },
+        {
+          "title": "Magnetic_Bomb",
+          "id": 76530
+        },
+        {
+          "title": "Big_Ol'_Bomb",
+          "id": 5813
+        }
+      ]
+    },
+    "5832": {
+      "profession": "Engineer",
+      "revision": 2882042,
+      "sources": [
+        {
+          "title": "Elixir_X",
+          "revision": 2882042
+        },
+        {
+          "title": "Rampage",
+          "revision": 3165096
+        },
+        {
+          "title": "Tornado",
+          "revision": 2998630
+        },
+        {
+          "title": "Whirlpool",
+          "revision": 2767626
+        }
+      ],
+      "branches": [
+        {
+          "title": "Smash_(Rampage)",
+          "context": "怒神附体",
+          "id": 14485
+        },
+        {
+          "title": "Bash_(Rampage)",
+          "context": "怒神附体",
+          "id": 14486
+        },
+        {
+          "title": "Uppercut",
+          "context": "怒神附体",
+          "id": 14487
+        },
+        {
+          "title": "Kick_(Rampage)",
+          "context": "怒神附体",
+          "id": 14488
+        },
+        {
+          "title": "Dash_(Rampage)",
+          "context": "怒神附体",
+          "id": 14489
+        },
+        {
+          "title": "Throw_Boulder",
+          "context": "怒神附体",
+          "id": 14556
+        },
+        {
+          "title": "Seismic_Leap",
+          "context": "怒神附体",
+          "id": 14490
+        },
+        {
+          "title": "Electrified_Tornado",
+          "context": "飓风形态",
+          "id": 5752
+        },
+        {
+          "title": "Dust_Tornado",
+          "context": "飓风形态",
+          "id": 5753
+        },
+        {
+          "title": "Debris_Tornado",
+          "context": "飓风形态",
+          "id": 5754
+        },
+        {
+          "title": "Elemental_Requiem",
+          "context": "飓风形态",
+          "id": 35224
+        },
+        {
+          "title": "Dust_Charge",
+          "context": "飓风形态",
+          "id": 35304
+        },
+        {
+          "title": "Whirlpool",
+          "context": "漩涡形态 · 水下",
+          "id": 5602
+        }
+      ]
+    },
+    "5904": {
+      "profession": "Engineer",
+      "revision": 3194522,
+      "sources": [
+        {
+          "title": "Tool_Kit",
+          "revision": 3194522
+        }
+      ],
+      "branches": [
+        {
+          "title": "Smack",
+          "id": 5992
+        },
+        {
+          "title": "Whack",
+          "id": 5993
+        },
+        {
+          "title": "Thwack",
+          "id": 5994
+        },
+        {
+          "title": "Box_of_Nails",
+          "id": 5995
+        },
+        {
+          "title": "Pry_Bar",
+          "id": 5905
+        },
+        {
+          "title": "Gear_Shield",
+          "id": 5998
+        },
+        {
+          "title": "Magnet",
+          "id": 5996
+        }
+      ]
+    },
+    "5927": {
+      "profession": "Engineer",
+      "revision": 3194525,
+      "sources": [
+        {
+          "title": "Flamethrower",
+          "revision": 3194525
+        }
+      ],
+      "branches": [
+        {
+          "title": "Flame_Jet",
+          "id": 5928
+        },
+        {
+          "title": "Flame_Blast",
+          "id": 5931
+        },
+        {
+          "title": "Air_Blast",
+          "id": 5930
+        },
+        {
+          "title": "Stoke_the_Flames",
+          "id": 76493
+        },
+        {
+          "title": "Napalm",
+          "id": 5929
+        }
+      ]
+    },
+    "5933": {
+      "profession": "Engineer",
+      "revision": 3194524,
+      "sources": [
+        {
+          "title": "Elixir_Gun",
+          "revision": 3194524
+        }
+      ],
+      "branches": [
+        {
+          "title": "Tranquilizer_Dart",
+          "id": 5934
+        },
+        {
+          "title": "Glob_Shot",
+          "id": 5935
+        },
+        {
+          "title": "Fumigate",
+          "id": 5965
+        },
+        {
+          "title": "Acid_Bomb",
+          "id": 5936
+        },
+        {
+          "title": "Super_Elixir",
+          "id": 5937
+        }
+      ]
+    },
+    "10533": {
+      "profession": "Necromancer",
+      "revision": 2993797,
+      "sources": [
+        {
+          "title": "Summon_Bone_Fiend",
+          "revision": 2993797
+        }
+      ],
+      "branches": [
+        {
+          "title": "Rigor_Mortis",
+          "context": "召唤物指令",
+          "id": 10570
+        }
+      ]
+    },
+    "10541": {
+      "profession": "Necromancer",
+      "revision": 2993804,
+      "sources": [
+        {
+          "title": "Summon_Bone_Minions",
+          "revision": 2993804
+        }
+      ],
+      "branches": [
+        {
+          "title": "Putrid_Explosion",
+          "context": "召唤物指令",
+          "id": 10540
+        }
+      ]
+    },
+    "10543": {
+      "profession": "Necromancer",
+      "revision": 2993799,
+      "sources": [
+        {
+          "title": "Summon_Flesh_Wurm",
+          "revision": 2993799
+        }
+      ],
+      "branches": [
+        {
+          "title": "Necrotic_Traversal",
+          "context": "召唤物指令",
+          "id": 10600
+        }
+      ]
+    },
+    "10547": {
+      "profession": "Necromancer",
+      "revision": 2993796,
+      "sources": [
+        {
+          "title": "Summon_Blood_Fiend",
+          "revision": 2993796
+        }
+      ],
+      "branches": [
+        {
+          "title": "Taste_of_Death",
+          "context": "召唤物指令",
+          "id": 10577
+        }
+      ]
+    },
+    "10549": {
+      "profession": "Necromancer",
+      "revision": 2998602,
+      "sources": [
+        {
+          "title": "Plaguelands",
+          "revision": 2998602
+        }
+      ],
+      "branches": []
+    },
+    "10550": {
+      "profession": "Necromancer",
+      "revision": 2990335,
+      "sources": [
+        {
+          "title": "Lich_Form",
+          "revision": 2990335
+        }
+      ],
+      "branches": [
+        {
+          "title": "Deathly_Claws",
+          "id": 10634
+        },
+        {
+          "title": "Lich's_Gaze",
+          "id": 10635
+        },
+        {
+          "title": "Ripple_of_Horror",
+          "id": 10633
+        },
+        {
+          "title": "March_of_Undeath",
+          "id": 45780
+        },
+        {
+          "title": "Summon_Madness",
+          "id": 10636
+        },
+        {
+          "title": "Grim_Specter",
+          "id": 10632
+        }
+      ]
+    },
+    "10574": {
+      "profession": "Necromancer",
+      "revision": 3187405,
+      "sources": [
+        {
+          "title": "Death_Shroud",
+          "revision": 3187405
+        }
+      ],
+      "branches": [
+        {
+          "title": "Life_Blast",
+          "context": "陆地",
+          "id": 10554
+        },
+        {
+          "title": "Dhuumfire_(death_shroud_skill)",
+          "context": "陆地",
+          "requiresTrait": 905,
+          "id": 18504
+        },
+        {
+          "title": "Dark_Path",
+          "context": "陆地",
+          "id": 10604
+        },
+        {
+          "title": "Dark_Pursuit",
+          "context": "陆地",
+          "id": 56916
+        },
+        {
+          "title": "Doom",
+          "context": "陆地",
+          "id": 10588
+        },
+        {
+          "title": "Life_Transfer",
+          "context": "陆地",
+          "id": 10594
+        },
+        {
+          "title": "Tainted_Shackles",
+          "context": "陆地",
+          "id": 19504
+        },
+        {
+          "title": "Plague_Blast",
+          "context": "水下",
+          "id": 10690
+        },
+        {
+          "title": "Dhuumfire_(underwater_death_shroud_skill)",
+          "context": "水下",
+          "requiresTrait": 905,
+          "id": 24287
+        },
+        {
+          "title": "Dark_Water",
+          "context": "水下",
+          "id": 10644
+        },
+        {
+          "title": "Wave_of_Fear",
+          "context": "水下",
+          "id": 10645
+        },
+        {
+          "title": "Gathering_Plague",
+          "context": "水下",
+          "id": 10643
+        },
+        {
+          "title": "Tainted_Shackles",
+          "context": "水下",
+          "id": 19504
+        }
+      ]
+    },
+    "10589": {
+      "profession": "Necromancer",
+      "revision": 3033168,
+      "sources": [
+        {
+          "title": "Summon_Shadow_Fiend",
+          "revision": 3033168
+        }
+      ],
+      "branches": [
+        {
+          "title": "Haunt",
+          "context": "召唤物指令",
+          "id": 10590
+        }
+      ]
+    },
+    "10646": {
+      "profession": "Necromancer",
+      "revision": 3194269,
+      "sources": [
+        {
+          "title": "Summon_Flesh_Golem",
+          "revision": 3194269
+        }
+      ],
+      "branches": [
+        {
+          "title": "Charge_(necromancer_skill)",
+          "context": "召唤物指令",
+          "id": 10647
+        }
+      ]
+    },
+    "14483": {
+      "profession": "Warrior",
+      "revision": 3165096,
+      "sources": [
+        {
+          "title": "Rampage",
+          "revision": 3165096
+        }
+      ],
+      "branches": [
+        {
+          "title": "Smash_(Rampage)",
+          "id": 14485
+        },
+        {
+          "title": "Bash_(Rampage)",
+          "id": 14486
+        },
+        {
+          "title": "Uppercut",
+          "id": 14487
+        },
+        {
+          "title": "Kick_(Rampage)",
+          "id": 14488
+        },
+        {
+          "title": "Dash_(Rampage)",
+          "id": 14489
+        },
+        {
+          "title": "Throw_Boulder",
+          "id": 14556
+        },
+        {
+          "title": "Seismic_Leap",
+          "id": 14490
+        }
+      ]
+    },
+    "29519": {
+      "profession": "Mesmer",
+      "revision": 3199892,
+      "sources": [
+        {
+          "title": "Signet_of_Humility",
+          "revision": 3199892
+        }
+      ],
+      "branches": [
+        {
+          "title": "Claw_(Moa_Morph)",
+          "id": 10183,
+          "audience": "变形目标"
+        },
+        {
+          "title": "Kick_(Moa_Morph)",
+          "id": 10180,
+          "audience": "变形目标"
+        },
+        {
+          "title": "Peck_(Moa_Morph)",
+          "id": 10181,
+          "audience": "变形目标"
+        },
+        {
+          "title": "Screech_(Moa_Morph)",
+          "id": 10182,
+          "audience": "变形目标"
+        },
+        {
+          "title": "Flee_(Moa_Morph)",
+          "id": 15863,
+          "audience": "变形目标"
+        },
+        {
+          "title": "Bite_(Tuna_Morph)",
+          "id": 10372,
+          "audience": "变形目标"
+        },
+        {
+          "title": "Chomp_(Tuna_Morph)",
+          "id": 10373,
+          "audience": "变形目标"
+        },
+        {
+          "title": "Frenzy_(Tuna_Morph)",
+          "id": 10374,
+          "audience": "变形目标"
+        },
+        {
+          "title": "Spit_(Tuna_Morph)",
+          "id": 10376,
+          "audience": "变形目标"
+        },
+        {
+          "title": "Flee_(Tuna_Morph)",
+          "id": 10375,
+          "audience": "变形目标"
+        }
+      ]
+    },
+    "30238": {
+      "profession": "Ranger",
+      "revision": 3171096,
+      "sources": [
+        {
+          "title": "Glyph_of_the_Tides",
+          "revision": 3171096
+        }
+      ],
+      "branches": [
+        {
+          "title": "Glyph_of_the_Tides_(non-celestial)",
+          "id": 30448,
+          "context": "非天界化身形态"
+        },
+        {
+          "title": "Glyph_of_the_Tides_(Celestial_Avatar)",
+          "id": 29558,
+          "context": "天界化身形态"
+        }
+      ]
+    },
+    "30792": {
+      "profession": "Necromancer",
+      "revision": 2968772,
+      "sources": [
+        {
+          "title": "Reaper's_Shroud",
+          "revision": 2968772
+        }
+      ],
+      "branches": [
+        {
+          "title": "Life_Rend",
+          "id": 29442
+        },
+        {
+          "title": "Life_Slash",
+          "id": 29458
+        },
+        {
+          "title": "Life_Reap",
+          "id": 30278
+        },
+        {
+          "title": "Death's_Charge",
+          "id": 30825
+        },
+        {
+          "title": "Infusing_Terror",
+          "id": 29958
+        },
+        {
+          "title": "Terrify",
+          "id": 29709
+        },
+        {
+          "title": "Soul_Spiral",
+          "id": 30504
+        },
+        {
+          "title": "Executioner's_Scythe",
+          "id": 30557
+        }
+      ]
+    },
+    "30800": {
+      "profession": "Engineer",
+      "revision": 3194080,
+      "sources": [
+        {
+          "title": "Elite_Mortar_Kit",
+          "revision": 3194080
+        }
+      ],
+      "branches": [
+        {
+          "title": "Mortar_Shot",
+          "id": 30371
+        },
+        {
+          "title": "Poison_Gas_Shell",
+          "id": 30885
+        },
+        {
+          "title": "Endothermic_Shell",
+          "id": 30307
+        },
+        {
+          "title": "Flash_Shell",
+          "id": 30121
+        },
+        {
+          "title": "Elixir_Shell",
+          "id": 30032
+        }
+      ]
+    },
+    "31322": {
+      "profession": "Ranger",
+      "revision": 3170414,
+      "sources": [
+        {
+          "title": "Glyph_of_Alignment",
+          "revision": 3170414
+        }
+      ],
+      "branches": [
+        {
+          "title": "Glyph_of_Alignment_(non-celestial)",
+          "id": 31607,
+          "context": "非天界化身形态"
+        },
+        {
+          "title": "Glyph_of_Alignment_(Celestial_Avatar)",
+          "id": 31348,
+          "context": "天界化身形态"
+        }
+      ]
+    },
+    "31407": {
+      "profession": "Ranger",
+      "revision": 3170413,
+      "sources": [
+        {
+          "title": "Glyph_of_Rejuvenation",
+          "revision": 3170413
+        }
+      ],
+      "branches": [
+        {
+          "title": "Glyph_of_Rejuvenation_(non-celestial)",
+          "id": 31819,
+          "context": "非天界化身形态"
+        },
+        {
+          "title": "Glyph_of_Rejuvenation_(Celestial_Avatar)",
+          "id": 31867,
+          "context": "天界化身形态"
+        }
+      ]
+    },
+    "31582": {
+      "profession": "Ranger",
+      "revision": 3189021,
+      "sources": [
+        {
+          "title": "Glyph_of_Burgeoning",
+          "revision": 3189021
+        }
+      ],
+      "branches": [
+        {
+          "title": "Glyph_of_Burgeoning_(non-celestial)",
+          "id": 31888,
+          "context": "非天界化身形态"
+        },
+        {
+          "title": "Glyph_of_Burgeoning_(Celestial_Avatar)",
+          "id": 31740,
+          "context": "天界化身形态"
+        }
+      ]
+    },
+    "31677": {
+      "profession": "Ranger",
+      "revision": 2932819,
+      "sources": [
+        {
+          "title": "Glyph_of_the_Stars",
+          "revision": 2932819
+        }
+      ],
+      "branches": [
+        {
+          "title": "Glyph_of_the_Stars_(non-celestial)",
+          "id": 55046,
+          "context": "非天界化身形态"
+        },
+        {
+          "title": "Glyph_of_the_Stars_(Celestial_Avatar)",
+          "id": 55024,
+          "context": "天界化身形态"
+        }
+      ]
+    },
+    "31746": {
+      "profession": "Ranger",
+      "revision": 3171106,
+      "sources": [
+        {
+          "title": "Glyph_of_Equality",
+          "revision": 3171106
+        }
+      ],
+      "branches": [
+        {
+          "title": "Glyph_of_Equality_(non-celestial)",
+          "id": 31658,
+          "context": "非天界化身形态"
+        },
+        {
+          "title": "Glyph_of_Equality_(Celestial_Avatar)",
+          "id": 31401,
+          "context": "天界化身形态"
+        }
+      ]
+    },
+    "31869": {
+      "profession": "Ranger",
+      "revision": 3170328,
+      "sources": [
+        {
+          "title": "Celestial_Avatar",
+          "revision": 3170328
+        }
+      ],
+      "branches": [
+        {
+          "title": "Cosmic_Ray",
+          "context": "陆地",
+          "id": 31796
+        },
+        {
+          "title": "Seed_of_Life",
+          "context": "陆地",
+          "id": 31406
+        },
+        {
+          "title": "Lunar_Impact",
+          "context": "陆地",
+          "id": 31318
+        },
+        {
+          "title": "Rejuvenating_Tides",
+          "context": "陆地",
+          "id": 31894
+        },
+        {
+          "title": "Natural_Convergence",
+          "context": "陆地",
+          "id": 31503
+        },
+        {
+          "title": "Cosmic_Ray_(underwater)",
+          "context": "水下",
+          "id": 33387
+        },
+        {
+          "title": "Seed_of_Life_(underwater)",
+          "context": "水下",
+          "id": 32242
+        },
+        {
+          "title": "Lunar_Impact_(underwater)",
+          "context": "水下",
+          "id": 32364
+        },
+        {
+          "title": "Rejuvenating_Tides_(underwater)",
+          "context": "水下",
+          "id": 32253
+        },
+        {
+          "title": "Natural_Convergence_(underwater)",
+          "context": "水下",
+          "id": 34070
+        }
+      ]
+    },
+    "42938": {
+      "profession": "Engineer",
+      "revision": 2690606,
+      "sources": [
+        {
+          "title": "Engage_Photon_Forge",
+          "revision": 2690606
+        },
+        {
+          "title": "Photon_Forge",
+          "revision": 3120354
+        }
+      ],
+      "branches": [
+        {
+          "title": "Deactivate_Photon_Forge",
+          "context": "光子熔炉 · 未满热量",
+          "id": 41123
+        },
+        {
+          "title": "Deactivate_Photon_Forge_(hot)",
+          "context": "光子熔炉 · 满热量",
+          "id": 45219
+        },
+        {
+          "title": "Holoforge_Overheated",
+          "context": "光子熔炉",
+          "id": 44386
+        },
+        {
+          "title": "Light_Strike",
+          "context": "光子熔炉",
+          "id": 44588
+        },
+        {
+          "title": "Bright_Slash",
+          "context": "光子熔炉",
+          "id": 45756
+        },
+        {
+          "title": "Flash_Cutter",
+          "context": "光子熔炉",
+          "id": 45890
+        },
+        {
+          "title": "Holo_Leap",
+          "context": "光子熔炉",
+          "id": 42965
+        },
+        {
+          "title": "Corona_Burst",
+          "context": "光子熔炉",
+          "id": 44530
+        },
+        {
+          "title": "Photon_Blitz",
+          "context": "光子熔炉",
+          "id": 45783
+        },
+        {
+          "title": "Holographic_Shockwave",
+          "context": "光子熔炉",
+          "id": 42521
+        }
+      ]
+    },
+    "62567": {
+      "profession": "Necromancer",
+      "revision": 3163145,
+      "sources": [
+        {
+          "title": "Harbinger_Shroud",
+          "revision": 3163145
+        }
+      ],
+      "branches": [
+        {
+          "title": "Tainted_Bolts",
+          "id": 62611
+        },
+        {
+          "title": "Dark_Barrage",
+          "id": 62621
+        },
+        {
+          "title": "Devouring_Cut",
+          "id": 62672
+        },
+        {
+          "title": "Voracious_Arc",
+          "id": 62539
+        },
+        {
+          "title": "Vital_Draw",
+          "id": 62563
+        }
+      ]
+    },
+    "77238": {
+      "profession": "Necromancer",
+      "revision": 3201643,
+      "sources": [
+        {
+          "title": "Ritualist's_Shroud",
+          "revision": 3201643
+        }
+      ],
+      "branches": [
+        {
+          "title": "Essence_Blast",
+          "id": 77061
+        },
+        {
+          "title": "Anguish",
+          "id": 76864
+        },
+        {
+          "title": "Wanderlust",
+          "id": 76741
+        },
+        {
+          "title": "Preservation",
+          "id": 76684
+        },
+        {
+          "title": "Summon_Spirits",
+          "id": 76607
+        }
+      ]
+    }
+  },
+  "pages": {
+    "Glyph_of_Rejuvenation_(non-celestial)": {
+      "id": 31819,
+      "ids": [31819],
+      "revision": 3170411
+    },
+    "Glyph_of_Rejuvenation_(Celestial_Avatar)": {
+      "id": 31867,
+      "ids": [31867],
+      "revision": 3170408
+    },
+    "Glyph_of_Alignment_(non-celestial)": {
+      "id": 31607,
+      "ids": [31607],
+      "revision": 2691110
+    },
+    "Glyph_of_Alignment_(Celestial_Avatar)": {
+      "id": 31348,
+      "ids": [31348],
+      "revision": 3170401
+    },
+    "Glyph_of_Equality_(non-celestial)": {
+      "id": 31658,
+      "ids": [31658],
+      "revision": 3170407
+    },
+    "Glyph_of_Equality_(Celestial_Avatar)": {
+      "id": 31401,
+      "ids": [31401],
+      "revision": 3170404
+    },
+    "Glyph_of_Burgeoning_(non-celestial)": {
+      "id": 31888,
+      "ids": [31888],
+      "revision": 3189023
+    },
+    "Glyph_of_Burgeoning_(Celestial_Avatar)": {
+      "id": 31740,
+      "ids": [31740],
+      "revision": 3189022
+    },
+    "Glyph_of_the_Tides_(non-celestial)": {
+      "id": 30448,
+      "ids": [30448],
+      "revision": 3171092
+    },
+    "Glyph_of_the_Tides_(Celestial_Avatar)": {
+      "id": 29558,
+      "ids": [29558],
+      "revision": 3171093
+    },
+    "Glyph_of_the_Stars_(non-celestial)": {
+      "id": 55046,
+      "ids": [55046],
+      "revision": 2935532
+    },
+    "Glyph_of_the_Stars_(Celestial_Avatar)": {
+      "id": 55024,
+      "ids": [55024],
+      "revision": 2932311
+    },
+    "Cosmic_Ray": {
+      "id": 31796,
+      "ids": [31796],
+      "revision": 2690715
+    },
+    "Seed_of_Life": {
+      "id": 31406,
+      "ids": [31406],
+      "revision": 3205684
+    },
+    "Lunar_Impact": {
+      "id": 31318,
+      "ids": [31318],
+      "revision": 2605127
+    },
+    "Rejuvenating_Tides": {
+      "id": 31894,
+      "ids": [31894],
+      "revision": 3171136
+    },
+    "Natural_Convergence": {
+      "id": 31503,
+      "ids": [31503],
+      "revision": 3098786
+    },
+    "Cosmic_Ray_(underwater)": {
+      "id": 33387,
+      "ids": [33387],
+      "revision": 3017837
+    },
+    "Seed_of_Life_(underwater)": {
+      "id": 32242,
+      "ids": [32242],
+      "revision": 3205686
+    },
+    "Lunar_Impact_(underwater)": {
+      "id": 32364,
+      "ids": [32364],
+      "revision": 3017836
+    },
+    "Rejuvenating_Tides_(underwater)": {
+      "id": 32253,
+      "ids": [32253],
+      "revision": 2590170
+    },
+    "Natural_Convergence_(underwater)": {
+      "id": 34070,
+      "ids": [34070],
+      "revision": 2841435
+    },
+    "Glyph_of_Elemental_Harmony_(fire)": {
+      "id": 34743,
+      "ids": [34743],
+      "revision": 2773723
+    },
+    "Glyph_of_Elemental_Harmony_(water)": {
+      "id": 34651,
+      "ids": [34651],
+      "revision": 2773738
+    },
+    "Glyph_of_Elemental_Harmony_(air)": {
+      "id": 34724,
+      "ids": [34724],
+      "revision": 2773740
+    },
+    "Glyph_of_Elemental_Harmony_(earth)": {
+      "id": 34609,
+      "ids": [34609],
+      "revision": 2773743
+    },
+    "Glyph_of_Elemental_Power_(fire)": {
+      "id": 34736,
+      "ids": [34736],
+      "revision": 2990444
+    },
+    "Glyph_of_Elemental_Power_(water)": {
+      "id": 34772,
+      "ids": [34772],
+      "revision": 2990446
+    },
+    "Glyph_of_Elemental_Power_(air)": {
+      "id": 34637,
+      "ids": [34637],
+      "revision": 2990457
+    },
+    "Glyph_of_Elemental_Power_(earth)": {
+      "id": 34714,
+      "ids": [34714],
+      "revision": 2992514
+    },
+    "Firestorm_(Glyph_of_Storms_skill)": {
+      "id": 5736,
+      "ids": [5736],
+      "revision": 3021124
+    },
+    "Ice_Storm_(Glyph_of_Storms_skill)": {
+      "id": 5735,
+      "ids": [5735],
+      "revision": 3021135
+    },
+    "Lightning_Storm_(Glyph_of_Storms_skill)": {
+      "id": 5737,
+      "ids": [5737],
+      "revision": 3021322
+    },
+    "Sandstorm": {
+      "id": 5738,
+      "ids": [5738],
+      "revision": 3182387
+    },
+    "Glyph_of_Lesser_Elementals_(fire)": {
+      "id": 25486,
+      "ids": [25486],
+      "revision": 2573660
+    },
+    "Glyph_of_Lesser_Elementals_(water)": {
+      "id": 25487,
+      "ids": [25487],
+      "revision": 2573652
+    },
+    "Glyph_of_Lesser_Elementals_(air)": {
+      "id": 25495,
+      "ids": [25495],
+      "revision": 2630366
+    },
+    "Glyph_of_Lesser_Elementals_(earth)": {
+      "id": 25497,
+      "ids": [25497],
+      "revision": 2630367
+    },
+    "Renewal_of_Fire": {
+      "id": 24407,
+      "ids": [5762, 24407],
+      "revision": 2370026
+    },
+    "Renewal_of_Water": {
+      "id": 24410,
+      "ids": [5763, 24410],
+      "revision": 2370027
+    },
+    "Renewal_of_Air": {
+      "id": 24409,
+      "ids": [5760, 24409],
+      "revision": 3140095
+    },
+    "Renewal_of_Earth": {
+      "id": 24411,
+      "ids": [5761, 24411],
+      "revision": 2370024
+    },
+    "Lava_Axe": {
+      "id": 5541,
+      "ids": [5541],
+      "revision": 3021148
+    },
+    "Double_Lava_Axe": {
+      "id": 40229,
+      "ids": [40229],
+      "revision": 3021146
+    },
+    "Explosive_Lava_Axe": {
+      "id": 5593,
+      "ids": [5593],
+      "revision": 3021147
+    },
+    "Burning_Retreat_(Lava_Axe_skill)": {
+      "id": 5717,
+      "ids": [5717],
+      "revision": 2887316
+    },
+    "Ring_of_Fire_(Lava_Axe_skill)": {
+      "id": 5718,
+      "ids": [5718],
+      "revision": 3021150
+    },
+    "Flame_Leap": {
+      "id": 5719,
+      "ids": [5719],
+      "revision": 2633061
+    },
+    "Water_Arrow": {
+      "id": 5595,
+      "ids": [5595],
+      "revision": 3021141
+    },
+    "Frost_Volley": {
+      "id": 5720,
+      "ids": [5720],
+      "revision": 3021140
+    },
+    "Frost_Fan": {
+      "id": 5568,
+      "ids": [5568],
+      "revision": 3208951
+    },
+    "Frost_Storm": {
+      "id": 5723,
+      "ids": [5723],
+      "revision": 3021144
+    },
+    "Deep_Freeze": {
+      "id": 5721,
+      "ids": [5721],
+      "revision": 3021145
+    },
+    "Lightning_Swing": {
+      "id": 5726,
+      "ids": [5726],
+      "revision": 2360493
+    },
+    "Static_Swing": {
+      "id": 5727,
+      "ids": [5727],
+      "revision": 2362363
+    },
+    "Thunderclap_(Lightning_Hammer_skill)": {
+      "id": 5728,
+      "ids": [5728],
+      "revision": 2362976
+    },
+    "Lightning_Leap": {
+      "id": 5625,
+      "ids": [5625],
+      "revision": 2623649
+    },
+    "Wind_Blast": {
+      "id": 5733,
+      "ids": [5733],
+      "revision": 2398967
+    },
+    "Invoke_Lightning": {
+      "id": 5725,
+      "ids": [5725],
+      "revision": 2814404
+    },
+    "Static_Field_(Lightning_Hammer_skill)": {
+      "id": 5732,
+      "ids": [5732],
+      "revision": 2847533
+    },
+    "Shield_Smack": {
+      "id": 5621,
+      "ids": [5621],
+      "revision": 3194521
+    },
+    "Shield_Smash": {
+      "id": 21646,
+      "ids": [21646],
+      "revision": 3194512
+    },
+    "Crippling_Shield": {
+      "id": 5746,
+      "ids": [5746],
+      "revision": 3194513
+    },
+    "Stone_Sheath": {
+      "id": 21647,
+      "ids": [21647, 21648],
+      "revision": 2655415
+    },
+    "Magnetic_Surge": {
+      "id": 5547,
+      "ids": [5547],
+      "revision": 2838419
+    },
+    "Magnetic_Shield_(elementalist_skill)": {
+      "id": 5747,
+      "ids": [5747],
+      "revision": 2618586
+    },
+    "Fortify": {
+      "id": 5623,
+      "ids": [5623],
+      "revision": 2618589
+    },
+    "Glyph_of_Elementals_(fire)": {
+      "id": 25488,
+      "ids": [25488],
+      "revision": 2630364
+    },
+    "Flame_Barrage": {
+      "id": 25499,
+      "ids": [25499],
+      "revision": 3021349
+    },
+    "Glyph_of_Elementals_(water)": {
+      "id": 25491,
+      "ids": [25491],
+      "revision": 2573768
+    },
+    "Crashing_Waves": {
+      "id": 25492,
+      "ids": [25492],
+      "revision": 3021350
+    },
+    "Glyph_of_Elementals_(air)": {
+      "id": 25490,
+      "ids": [25490],
+      "revision": 2628819
+    },
+    "Shocking_Bolt": {
+      "id": 25480,
+      "ids": [25480],
+      "revision": 3107778
+    },
+    "Glyph_of_Elementals_(earth)": {
+      "id": 25489,
+      "ids": [25489],
+      "revision": 2630365
+    },
+    "Stomp_(Glyph_of_Elementals_skill)": {
+      "id": 25498,
+      "ids": [25498],
+      "revision": 2695068
+    },
+    "Flame_Wave": {
+      "id": 5532,
+      "ids": [5532],
+      "revision": 3021317
+    },
+    "Fiery_Eruption": {
+      "id": 5533,
+      "ids": [5533],
+      "revision": 3021318
+    },
+    "Fiery_Whirl": {
+      "id": 5697,
+      "ids": [5697],
+      "revision": 2677028
+    },
+    "Fiery_Rush": {
+      "id": 5517,
+      "ids": [5517],
+      "revision": 3021319
+    },
+    "Firestorm": {
+      "id": 5531,
+      "ids": [5531],
+      "revision": 3021320
+    },
+    "Electrified_Tornado": {
+      "id": 5752,
+      "ids": [5752],
+      "revision": 2359070
+    },
+    "Dust_Tornado": {
+      "id": 5753,
+      "ids": [5753],
+      "revision": 2359023
+    },
+    "Debris_Tornado": {
+      "id": 5754,
+      "ids": [5754],
+      "revision": 2413839
+    },
+    "Elemental_Requiem": {
+      "id": 35224,
+      "ids": [35224],
+      "revision": 2630358
+    },
+    "Dust_Charge": {
+      "id": 35304,
+      "ids": [35304],
+      "revision": 3069393
+    },
+    "Smash_(Rampage)": {
+      "id": 14485,
+      "ids": [14485],
+      "revision": 2932375
+    },
+    "Bash_(Rampage)": {
+      "id": 14486,
+      "ids": [14486],
+      "revision": 2932376
+    },
+    "Uppercut": {
+      "id": 14487,
+      "ids": [14487],
+      "revision": 2932377
+    },
+    "Kick_(Rampage)": {
+      "id": 14488,
+      "ids": [14488],
+      "revision": 2932378
+    },
+    "Dash_(Rampage)": {
+      "id": 14489,
+      "ids": [14489],
+      "revision": 2932379
+    },
+    "Throw_Boulder": {
+      "id": 14556,
+      "ids": [14556],
+      "revision": 2932380
+    },
+    "Seismic_Leap": {
+      "id": 14490,
+      "ids": [14490],
+      "revision": 2932381
+    },
+    "Med_Blaster": {
+      "id": 58090,
+      "ids": [30521, 58090],
+      "revision": 2810159
+    },
+    "Bandage_Blast": {
+      "id": 29547,
+      "ids": [29547],
+      "revision": 3205581
+    },
+    "Cleansing_Field": {
+      "id": 49045,
+      "ids": [49045],
+      "revision": 2603717
+    },
+    "Vital_Burst": {
+      "id": 49082,
+      "ids": [49082],
+      "revision": 2707837
+    },
+    "Infusion_Bomb": {
+      "id": 50444,
+      "ids": [50444],
+      "revision": 2811045
+    },
+    "Grenade": {
+      "id": 5882,
+      "ids": [5882],
+      "revision": 3123237
+    },
+    "Shrapnel_Grenade": {
+      "id": 5807,
+      "ids": [5807],
+      "revision": 3128690
+    },
+    "Flash_Grenade": {
+      "id": 5808,
+      "ids": [5808],
+      "revision": 2777029
+    },
+    "Freeze_Grenade": {
+      "id": 5809,
+      "ids": [5809],
+      "revision": 2840067
+    },
+    "Poison_Grenade": {
+      "id": 5806,
+      "ids": [5806],
+      "revision": 2969635
+    },
+    "Bomb": {
+      "id": 5842,
+      "ids": [5842],
+      "revision": 2990793
+    },
+    "Fire_Bomb": {
+      "id": 5823,
+      "ids": [5823],
+      "revision": 2990790
+    },
+    "Galvanic_Bomb": {
+      "id": 5822,
+      "ids": [5822],
+      "revision": 3205774
+    },
+    "Magnetic_Bomb": {
+      "id": 76530,
+      "ids": [76530],
+      "revision": 2991200
+    },
+    "Big_Ol'_Bomb": {
+      "id": 5813,
+      "ids": [5813],
+      "revision": 3154425
+    },
+    "Flame_Jet": {
+      "id": 5928,
+      "ids": [5928],
+      "revision": 3087889
+    },
+    "Flame_Blast": {
+      "id": 5931,
+      "ids": [5931],
+      "revision": 3206136
+    },
+    "Air_Blast": {
+      "id": 5930,
+      "ids": [5930],
+      "revision": 3035573
+    },
+    "Stoke_the_Flames": {
+      "id": 76493,
+      "ids": [76493],
+      "revision": 3206251
+    },
+    "Napalm": {
+      "id": 5929,
+      "ids": [5929],
+      "revision": 3206138
+    },
+    "Tranquilizer_Dart": {
+      "id": 5934,
+      "ids": [5934],
+      "revision": 2363068
+    },
+    "Glob_Shot": {
+      "id": 5935,
+      "ids": [5935],
+      "revision": 2932034
+    },
+    "Fumigate": {
+      "id": 5965,
+      "ids": [5965],
+      "revision": 3010991
+    },
+    "Acid_Bomb": {
+      "id": 5936,
+      "ids": [5936],
+      "revision": 3110849
+    },
+    "Super_Elixir": {
+      "id": 5937,
+      "ids": [5937],
+      "revision": 2956317
+    },
+    "Smack": {
+      "id": 5992,
+      "ids": [5992],
+      "revision": 2475057
+    },
+    "Whack": {
+      "id": 5993,
+      "ids": [5993],
+      "revision": 2475058
+    },
+    "Thwack": {
+      "id": 5994,
+      "ids": [5994],
+      "revision": 2475059
+    },
+    "Box_of_Nails": {
+      "id": 5995,
+      "ids": [5995],
+      "revision": 3094905
+    },
+    "Pry_Bar": {
+      "id": 5905,
+      "ids": [5905],
+      "revision": 3171241
+    },
+    "Gear_Shield": {
+      "id": 5998,
+      "ids": [5998],
+      "revision": 2710433
+    },
+    "Magnet": {
+      "id": 5996,
+      "ids": [5996],
+      "revision": 2956313
+    },
+    "Mortar_Shot": {
+      "id": 30371,
+      "ids": [30371],
+      "revision": 2801050
+    },
+    "Poison_Gas_Shell": {
+      "id": 30885,
+      "ids": [30885],
+      "revision": 2361187
+    },
+    "Endothermic_Shell": {
+      "id": 30307,
+      "ids": [30307],
+      "revision": 2969641
+    },
+    "Flash_Shell": {
+      "id": 30121,
+      "ids": [30121],
+      "revision": 2622728
+    },
+    "Elixir_Shell": {
+      "id": 30032,
+      "ids": [30032],
+      "revision": 2690111
+    },
+    "Deactivate_Photon_Forge": {
+      "id": 41123,
+      "ids": [41123],
+      "revision": 2695016
+    },
+    "Deactivate_Photon_Forge_(hot)": {
+      "id": 45219,
+      "ids": [45219],
+      "revision": 2695017
+    },
+    "Holoforge_Overheated": {
+      "id": 44386,
+      "ids": [44386],
+      "revision": 2282071
+    },
+    "Light_Strike": {
+      "id": 44588,
+      "ids": [44588],
+      "revision": 3194272
+    },
+    "Bright_Slash": {
+      "id": 45756,
+      "ids": [45756],
+      "revision": 2363550
+    },
+    "Flash_Cutter": {
+      "id": 45890,
+      "ids": [45890],
+      "revision": 2690609
+    },
+    "Holo_Leap": {
+      "id": 42965,
+      "ids": [42965],
+      "revision": 2690610
+    },
+    "Corona_Burst": {
+      "id": 44530,
+      "ids": [44530],
+      "revision": 3128700
+    },
+    "Photon_Blitz": {
+      "id": 45783,
+      "ids": [45783],
+      "revision": 3128701
+    },
+    "Holographic_Shockwave": {
+      "id": 42521,
+      "ids": [42521],
+      "revision": 2991438
+    },
+    "Claw_(Moa_Morph)": {
+      "id": 10183,
+      "ids": [10183],
+      "revision": 2358358
+    },
+    "Kick_(Moa_Morph)": {
+      "id": 10180,
+      "ids": [10180],
+      "revision": 2360281
+    },
+    "Peck_(Moa_Morph)": {
+      "id": 10181,
+      "ids": [10181],
+      "revision": 2361013
+    },
+    "Screech_(Moa_Morph)": {
+      "id": 10182,
+      "ids": [10182],
+      "revision": 2361801
+    },
+    "Flee_(Moa_Morph)": {
+      "id": 15863,
+      "ids": [15863],
+      "revision": 2359551
+    },
+    "Bite_(Tuna_Morph)": {
+      "id": 10372,
+      "ids": [10372],
+      "revision": 3109304
+    },
+    "Chomp_(Tuna_Morph)": {
+      "id": 10373,
+      "ids": [10373],
+      "revision": 2358328
+    },
+    "Frenzy_(Tuna_Morph)": {
+      "id": 10374,
+      "ids": [10374],
+      "revision": 2712773
+    },
+    "Spit_(Tuna_Morph)": {
+      "id": 10376,
+      "ids": [10376],
+      "revision": 2362274
+    },
+    "Flee_(Tuna_Morph)": {
+      "id": 10375,
+      "ids": [10375],
+      "revision": 2712816
+    },
+    "Taste_of_Death": {
+      "id": 10577,
+      "ids": [10577],
+      "revision": 3172039
+    },
+    "Putrid_Explosion": {
+      "id": 10540,
+      "ids": [10540],
+      "revision": 2483749
+    },
+    "Rigor_Mortis": {
+      "id": 10570,
+      "ids": [10570],
+      "revision": 2483758
+    },
+    "Haunt": {
+      "id": 10590,
+      "ids": [3643, 10590],
+      "revision": 2615605
+    },
+    "Necrotic_Traversal": {
+      "id": 10600,
+      "ids": [10600],
+      "revision": 3139993
+    },
+    "Life_Blast": {
+      "id": 10554,
+      "ids": [10554],
+      "revision": 2360421
+    },
+    "Dhuumfire_(death_shroud_skill)": {
+      "id": 18504,
+      "ids": [18504],
+      "revision": 2436433
+    },
+    "Dark_Path": {
+      "id": 10604,
+      "ids": [10604],
+      "revision": 3073326
+    },
+    "Dark_Pursuit": {
+      "id": 56916,
+      "ids": [56916],
+      "revision": 3154910
+    },
+    "Doom": {
+      "id": 10588,
+      "ids": [10588],
+      "revision": 2606623
+    },
+    "Life_Transfer": {
+      "id": 10594,
+      "ids": [10594],
+      "revision": 2998591
+    },
+    "Tainted_Shackles": {
+      "id": 19504,
+      "ids": [19504],
+      "revision": 3081535
+    },
+    "Plague_Blast": {
+      "id": 10690,
+      "ids": [10690],
+      "revision": 2630339
+    },
+    "Dhuumfire_(underwater_death_shroud_skill)": {
+      "id": 24287,
+      "ids": [24287],
+      "revision": 2436431
+    },
+    "Dark_Water": {
+      "id": 10644,
+      "ids": [10644],
+      "revision": 2366825
+    },
+    "Wave_of_Fear": {
+      "id": 10645,
+      "ids": [10645],
+      "revision": 2363334
+    },
+    "Gathering_Plague": {
+      "id": 10643,
+      "ids": [10643],
+      "revision": 2486107
+    },
+    "Charge_(necromancer_skill)": {
+      "id": 10647,
+      "ids": [10647],
+      "revision": 2812692
+    },
+    "Deathly_Claws": {
+      "id": 10634,
+      "ids": [10634],
+      "revision": 2990345
+    },
+    "Lich's_Gaze": {
+      "id": 10635,
+      "ids": [10635],
+      "revision": 2995377
+    },
+    "Ripple_of_Horror": {
+      "id": 10633,
+      "ids": [10633],
+      "revision": 2683871
+    },
+    "March_of_Undeath": {
+      "id": 45780,
+      "ids": [45780],
+      "revision": 2360674
+    },
+    "Summon_Madness": {
+      "id": 10636,
+      "ids": [10636],
+      "revision": 2993802
+    },
+    "Grim_Specter": {
+      "id": 10632,
+      "ids": [10632],
+      "revision": 2359853
+    },
+    "Life_Rend": {
+      "id": 29442,
+      "ids": [29442],
+      "revision": 3079788
+    },
+    "Life_Slash": {
+      "id": 29458,
+      "ids": [29458],
+      "revision": 3079790
+    },
+    "Life_Reap": {
+      "id": 30278,
+      "ids": [30278],
+      "revision": 3079791
+    },
+    "Death's_Charge": {
+      "id": 30825,
+      "ids": [30825],
+      "revision": 3154890
+    },
+    "Infusing_Terror": {
+      "id": 29958,
+      "ids": [29958],
+      "revision": 3128980
+    },
+    "Terrify": {
+      "id": 29709,
+      "ids": [29709],
+      "revision": 2362653
+    },
+    "Soul_Spiral": {
+      "id": 30504,
+      "ids": [30504],
+      "revision": 3079792
+    },
+    "Executioner's_Scythe": {
+      "id": 30557,
+      "ids": [30557],
+      "revision": 3166168
+    },
+    "Tainted_Bolts": {
+      "id": 62611,
+      "ids": [62611],
+      "revision": 2685187
+    },
+    "Dark_Barrage": {
+      "id": 62621,
+      "ids": [62621],
+      "revision": 3182284
+    },
+    "Devouring_Cut": {
+      "id": 62672,
+      "ids": [62672],
+      "revision": 2569230
+    },
+    "Voracious_Arc": {
+      "id": 62539,
+      "ids": [62539],
+      "revision": 2926863
+    },
+    "Vital_Draw": {
+      "id": 62563,
+      "ids": [62563],
+      "revision": 2585861
+    },
+    "Essence_Blast": {
+      "id": 77061,
+      "ids": [77061],
+      "revision": 3078794
+    },
+    "Anguish": {
+      "id": 76864,
+      "ids": [76864],
+      "revision": 3081424
+    },
+    "Wanderlust": {
+      "id": 76741,
+      "ids": [76741, 76961],
+      "revision": 3128986
+    },
+    "Preservation": {
+      "id": 76684,
+      "ids": [76684],
+      "revision": 3128990
+    },
+    "Summon_Spirits": {
+      "id": 76607,
+      "ids": [76607, 77191],
+      "revision": 3151044
+    },
+    "Whirlpool": {
+      "id": 5602,
+      "ids": [5602],
+      "revision": 2767626
+    }
+  },
+  "issues": []
+}

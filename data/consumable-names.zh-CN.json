@@ -1,0 +1,5552 @@
+{
+  "source": "https://gw2.wishingstarmoye.com/admin/gw2_itemdbs",
+  "endpoint": "https://gw2.wishingstarmoye.com/admin/gw2_itemdb_dt_ajax",
+  "fetchedAt": "2026-10-19T16:10:43.583Z",
+  "entries": {
+    "2": {
+      "name": "刺客药丸",
+      "englishName": "Assassin Pill",
+      "type": "Food"
+    },
+    "8481": {
+      "name": "暖色药剂",
+      "englishName": "Warm Potion",
+      "type": "Food"
+    },
+    "8485": {
+      "name": "超级亡灵屠戮药剂",
+      "englishName": "Extended Potion of Undead Slaying",
+      "type": "Utility"
+    },
+    "8486": {
+      "name": "超级噩梦之庭屠戮药剂",
+      "englishName": "Extended Potion of Nightmare Court Slaying",
+      "type": "Utility"
+    },
+    "8487": {
+      "name": "超级斯瓦尼亚之子屠戮药剂",
+      "englishName": "Extended Potion of Sons of Svanir Slaying",
+      "type": "Utility"
+    },
+    "8488": {
+      "name": "超级歹徒屠戮药剂",
+      "englishName": "Extended Potion of Outlaw Slaying",
+      "type": "Utility"
+    },
+    "8489": {
+      "name": "超级烈焰军团屠戮药剂",
+      "englishName": "Extended Potion of Flame Legion Slaying",
+      "type": "Utility"
+    },
+    "8490": {
+      "name": "超级审讯团屠戮药剂",
+      "englishName": "Extended Potion of Inquest Slaying",
+      "type": "Utility"
+    },
+    "8492": {
+      "name": "超级掘洞人屠戮药剂",
+      "englishName": "Extended Potion of Dredge Slaying",
+      "type": "Utility"
+    },
+    "8493": {
+      "name": "超级幽灵屠戮药剂",
+      "englishName": "Extended Potion of Ghost Slaying",
+      "type": "Utility"
+    },
+    "8496": {
+      "name": "彩棱豆饼",
+      "englishName": "Prismatic Soylent",
+      "type": "Food"
+    },
+    "8497": {
+      "name": "小瓶装紧急补给品",
+      "englishName": "Flask of Emergency Supplies",
+      "type": "Food"
+    },
+    "8498": {
+      "name": "伊达的苹果派片",
+      "englishName": "Slice of Eda's Apple Pie",
+      "type": "Food"
+    },
+    "8499": {
+      "name": "杯装西瓜汁",
+      "englishName": "Glass of Melon Juice",
+      "type": "Food"
+    },
+    "8500": {
+      "name": "心形曲奇饼",
+      "englishName": "Heart-Shaped Cookie",
+      "type": "Food"
+    },
+    "8501": {
+      "name": "克鲁包",
+      "englishName": "Krewe Bar",
+      "type": "Food"
+    },
+    "8503": {
+      "name": "炽天使标准干粮",
+      "englishName": "Seraph Standard Ration",
+      "type": "Food"
+    },
+    "8504": {
+      "name": "原型营养素",
+      "englishName": "Prototype Nutriment",
+      "type": "Food"
+    },
+    "8505": {
+      "name": "培养皿美食",
+      "englishName": "Petri Dish Delight",
+      "type": "Food"
+    },
+    "8506": {
+      "name": "骨牛排",
+      "englishName": "T-Bone Steak",
+      "type": "Food"
+    },
+    "8507": {
+      "name": "试验性斯克鼠薄脆饼",
+      "englishName": "Experimental Skritt Wafer",
+      "type": "Food"
+    },
+    "8510": {
+      "name": "萤火虫干脆饼",
+      "englishName": "Crunchy Firefly Snack",
+      "type": "Food"
+    },
+    "8517": {
+      "name": "彩虹蛋糕片",
+      "englishName": "Slice of Rainbow Cake",
+      "type": "Food"
+    },
+    "8518": {
+      "name": "纸杯蛋糕",
+      "englishName": "Cupcake",
+      "type": "Food"
+    },
+    "8519": {
+      "name": "试验残料",
+      "englishName": "Experimental Remnant",
+      "type": "Food"
+    },
+    "8520": {
+      "name": "水生试剂",
+      "englishName": "Aquatic Elixir",
+      "type": "Food"
+    },
+    "8521": {
+      "name": "龙蜥肉排",
+      "englishName": "Drake Steak",
+      "type": "Food"
+    },
+    "8525": {
+      "name": "陆行鸟腿肉",
+      "englishName": "Moa Haunch",
+      "type": "Food"
+    },
+    "8527": {
+      "name": "秘制肉串",
+      "englishName": "Stick of Mystery Meat",
+      "type": "Food"
+    },
+    "8530": {
+      "name": "罐装秋花蜜",
+      "englishName": "Jug of Autumn Nectar",
+      "type": "Food"
+    },
+    "8531": {
+      "name": "香煎牛排",
+      "englishName": "Seared Beef Steak",
+      "type": "Food"
+    },
+    "8532": {
+      "name": "狼灵祭品",
+      "englishName": "Wolf Offering",
+      "type": "Utility"
+    },
+    "8533": {
+      "name": "煮熟的小龙虾",
+      "englishName": "Cooked Crawdad",
+      "type": "Food"
+    },
+    "8534": {
+      "name": "熟鱼排",
+      "englishName": "Cooked Fish Steak",
+      "type": "Food"
+    },
+    "8535": {
+      "name": "鸡蛋糕",
+      "englishName": "Grumble Cake",
+      "type": "Food"
+    },
+    "8536": {
+      "name": "熊灵祭品",
+      "englishName": "Bear Offering",
+      "type": "Utility"
+    },
+    "8537": {
+      "name": "小块魔法蛤蚌诱饵",
+      "englishName": "Bit of Enchanted Clam Bait",
+      "type": "Food"
+    },
+    "8538": {
+      "name": "豹灵祭品",
+      "englishName": "Snow Leopard Offering",
+      "type": "Utility"
+    },
+    "8540": {
+      "name": "西瓜切片",
+      "englishName": "Slice of Watermelon",
+      "type": "Food"
+    },
+    "8541": {
+      "name": "食人魔宠物点心",
+      "englishName": "Ogre Pet Snack",
+      "type": "Food"
+    },
+    "8542": {
+      "name": "鸦灵祭品",
+      "englishName": "Raven Offering",
+      "type": "Utility"
+    },
+    "8543": {
+      "name": "条状野猪肉干",
+      "englishName": "Strip of Boar Jerky",
+      "type": "Food"
+    },
+    "8544": {
+      "name": "水煮小龙虾",
+      "englishName": "Boiled Crawdad",
+      "type": "Food"
+    },
+    "8545": {
+      "name": "狮鹫蛋",
+      "englishName": "Griffon Egg",
+      "type": "Food"
+    },
+    "8548": {
+      "name": "蓝莓松饼",
+      "englishName": "Blueberry Muffin",
+      "type": "Food"
+    },
+    "8552": {
+      "name": "穴居人点心",
+      "englishName": "Grawl Snack",
+      "type": "Food"
+    },
+    "8554": {
+      "name": "魔法水果",
+      "englishName": "Magical Fruit",
+      "type": "Food"
+    },
+    "8557": {
+      "name": "鱼排",
+      "englishName": "Fish Steak",
+      "type": "Food"
+    },
+    "8558": {
+      "name": "地虫卵腌蛋",
+      "englishName": "Pickled Wurm Egg",
+      "type": "Food"
+    },
+    "8559": {
+      "name": "水煮狮鹫蛋",
+      "englishName": "Poached Griffon Egg",
+      "type": "Food"
+    },
+    "8560": {
+      "name": "条状石牦牛肉干",
+      "englishName": "Strip of Dolyak Jerky",
+      "type": "Food"
+    },
+    "8561": {
+      "name": "瓦里洛的迅藻点心",
+      "englishName": "Variloo's Swift Algae Snack",
+      "type": "Food"
+    },
+    "8562": {
+      "name": "兔灵祭品",
+      "englishName": "Rabbit Offering",
+      "type": "Food"
+    },
+    "8563": {
+      "name": "熏黑的鱼排",
+      "englishName": "Blackened Fish Steak",
+      "type": "Food"
+    },
+    "8564": {
+      "name": "碗装地虫鲜肉煲",
+      "englishName": "Bowl of Wurm Meat Stew",
+      "type": "Food"
+    },
+    "8565": {
+      "name": "碗装蛇妖草沙拉",
+      "englishName": "Bowl of Kraitweed Salad",
+      "type": "Food"
+    },
+    "8566": {
+      "name": "碗装河童汤",
+      "englishName": "Bowl of Kappa Soup",
+      "type": "Food"
+    },
+    "8569": {
+      "name": "碗装临渊特色汤",
+      "englishName": "Bowl of Overlake Soup",
+      "type": "Food"
+    },
+    "8570": {
+      "name": "碗装鳞爪鱼翅羹",
+      "englishName": "Bowl of Skalefin Soup",
+      "type": "Food"
+    },
+    "8571": {
+      "name": "夏摩尔面包",
+      "englishName": "Loaf of Shaemoor Bread",
+      "type": "Food"
+    },
+    "8572": {
+      "name": "咖喱小面包",
+      "englishName": "Curry Bun",
+      "type": "Food"
+    },
+    "8573": {
+      "name": "旅者面包",
+      "englishName": "Loaf of Travelers Bread",
+      "type": "Food"
+    },
+    "8575": {
+      "name": "红豆蛋糕",
+      "englishName": "Red Bean Cake",
+      "type": "Food"
+    },
+    "8577": {
+      "name": "罐装柳梅酱",
+      "englishName": "Jar of Juniberry Jam",
+      "type": "Food"
+    },
+    "8580": {
+      "name": "削皮的刺果",
+      "englishName": "Peeled Spikeroot Fruit",
+      "type": "Food"
+    },
+    "8581": {
+      "name": "鲲艮鱼肉点心",
+      "englishName": "Quaggan Fish Snack",
+      "type": "Food"
+    },
+    "8582": {
+      "name": "烤芦荟种子",
+      "englishName": "Roasted Aloe Seed",
+      "type": "Food"
+    },
+    "8584": {
+      "name": "棉花糖棒",
+      "englishName": "Stick of Cotton Candy",
+      "type": "Food"
+    },
+    "8585": {
+      "name": "克丹面包",
+      "englishName": "Loaf of Kodan Bread",
+      "type": "Food"
+    },
+    "8587": {
+      "name": "多罗托水煮蛋",
+      "englishName": "Drottot's Poached Egg",
+      "type": "Food"
+    },
+    "8588": {
+      "name": "奇异花心",
+      "englishName": "Stranglebloom Heart",
+      "type": "Food"
+    },
+    "8595": {
+      "name": "蟹肉蛋糕",
+      "englishName": "Crab Cake",
+      "type": "Food"
+    },
+    "8599": {
+      "name": "炽天使辛辣干粮",
+      "englishName": "Seraph Spicy Ration",
+      "type": "Food"
+    },
+    "8601": {
+      "name": "寒冰地虫刺身片",
+      "englishName": "Slice of Ice Worm Sashimi",
+      "type": "Food"
+    },
+    "8602": {
+      "name": "瓶装蜘蛛佳酿",
+      "englishName": "Bottle of Spider Brew",
+      "type": "Food"
+    },
+    "8605": {
+      "name": "碗装地虫肉糜馅饼",
+      "englishName": "Bowl of Meaty Wurm Surprise",
+      "type": "Food"
+    },
+    "8607": {
+      "name": "席瓦雪山胡椒",
+      "englishName": "Shiverpeak Popper",
+      "type": "Food"
+    },
+    "8608": {
+      "name": "碗装寒冰地虫浓汤",
+      "englishName": "Bowl of Ice Wurm Bisque",
+      "type": "Food"
+    },
+    "8611": {
+      "name": "美味洞穴孢子",
+      "englishName": "Delicious Cave Spore",
+      "type": "Food"
+    },
+    "8612": {
+      "name": "条状鹿肉干",
+      "englishName": "Strip of Venison Jerky",
+      "type": "Food"
+    },
+    "8613": {
+      "name": "守夜人硬面包片",
+      "englishName": "Slice of Vigil Hard Tack",
+      "type": "Food"
+    },
+    "8614": {
+      "name": "陆行鸟蛋卷",
+      "englishName": "Moa Egg Omelet",
+      "type": "Food"
+    },
+    "8615": {
+      "name": "碗装苍蝇汤",
+      "englishName": "Bowl of Fly Soup",
+      "type": "Food"
+    },
+    "8616": {
+      "name": "阿赞提尔的祝福",
+      "englishName": "Blessing of Azantil",
+      "type": "Food"
+    },
+    "8617": {
+      "name": "水煮三文鱼片",
+      "englishName": "Poached Salmon Filet",
+      "type": "Food"
+    },
+    "8618": {
+      "name": "席瓦雪山干粮",
+      "englishName": "Shiverpeak Ration",
+      "type": "Food"
+    },
+    "8622": {
+      "name": "掘洞人工人口粮",
+      "englishName": "Dredge Worker Ration",
+      "type": "Food"
+    },
+    "8623": {
+      "name": "契约团标配干粮",
+      "englishName": "Standard Pact Ration",
+      "type": "Food"
+    },
+    "8626": {
+      "name": "碗装角斗麦糊",
+      "englishName": "Bowl of Gladiator Gruel",
+      "type": "Food"
+    },
+    "8628": {
+      "name": "瘟疫熊刺激性点心",
+      "englishName": "Murrellow Stimulant Snack",
+      "type": "Food"
+    },
+    "8629": {
+      "name": "冰鱼点心",
+      "englishName": "Icy Fish Snack",
+      "type": "Food"
+    },
+    "8632": {
+      "name": "出土的可食用根",
+      "englishName": "Mined Edible Root",
+      "type": "Food"
+    },
+    "8633": {
+      "name": "蟹肉食品",
+      "englishName": "Crab Food",
+      "type": "Food"
+    },
+    "8634": {
+      "name": "海盗硬面包",
+      "englishName": "Pirate Hard Tack",
+      "type": "Food"
+    },
+    "8637": {
+      "name": "治愈药膏",
+      "englishName": "Healing Salve",
+      "type": "Utility"
+    },
+    "8638": {
+      "name": "克丹熏香",
+      "englishName": "Kodan Incense",
+      "type": "Food"
+    },
+    "8640": {
+      "name": "穴居人雪人药剂",
+      "englishName": "Grawl Snowman Potion",
+      "type": "Utility"
+    },
+    "8651": {
+      "name": "探险家工具包",
+      "englishName": "Explorers Kit",
+      "type": "Utility"
+    },
+    "8690": {
+      "name": "烟花",
+      "englishName": "Fireworks",
+      "type": "Utility"
+    },
+    "8691": {
+      "name": "奶牛药剂",
+      "englishName": "Bovine Potion",
+      "type": "Utility"
+    },
+    "8797": {
+      "name": "阿赞提尔药剂",
+      "englishName": "Potion of Azantil",
+      "type": "Utility"
+    },
+    "8798": {
+      "name": "亡灵战斗药剂",
+      "englishName": "Undead Battle Potion",
+      "type": "Utility"
+    },
+    "8804": {
+      "name": "微型烈焰军团屠戮药剂",
+      "englishName": "Weak Potion of Flame Legion Slaying",
+      "type": "Utility"
+    },
+    "8805": {
+      "name": "微型半人马屠戮药剂",
+      "englishName": "Weak Potion of Centaur Slaying",
+      "type": "Utility"
+    },
+    "8806": {
+      "name": "微型歹徒屠戮药剂",
+      "englishName": "Weak Potion of Outlaw Slaying",
+      "type": "Utility"
+    },
+    "8807": {
+      "name": "微型噩梦之庭屠戮药剂",
+      "englishName": "Weak Potion of Nightmare Court Slaying",
+      "type": "Utility"
+    },
+    "8808": {
+      "name": "微型斯瓦尼亚之子屠戮药剂",
+      "englishName": "Weak Potion of Sons of Svanir Slaying",
+      "type": "Utility"
+    },
+    "8809": {
+      "name": "微型毁灭者屠戮药剂",
+      "englishName": "Weak Potion of Destroyer Slaying",
+      "type": "Utility"
+    },
+    "8810": {
+      "name": "微型元素屠戮药剂",
+      "englishName": "Weak Potion of Elemental Slaying",
+      "type": "Utility"
+    },
+    "8811": {
+      "name": "微型恶魔屠戮药剂",
+      "englishName": "Weak Potion of Demon Slaying",
+      "type": "Utility"
+    },
+    "8812": {
+      "name": "微型审讯团屠戮药剂",
+      "englishName": "Weak Potion of Inquest Slaying",
+      "type": "Utility"
+    },
+    "8813": {
+      "name": "微型食人魔屠戮药剂",
+      "englishName": "Weak Potion of Ogre Slaying",
+      "type": "Utility"
+    },
+    "8814": {
+      "name": "微型冰巢屠戮药剂",
+      "englishName": "Weak Potion of Ice Brood Slaying",
+      "type": "Utility"
+    },
+    "8815": {
+      "name": "微型穴居人屠戮药剂",
+      "englishName": "Weak Potion of Grawl Slaying",
+      "type": "Utility"
+    },
+    "8816": {
+      "name": "微型蛇妖屠戮药剂",
+      "englishName": "Weak Potion of Krait Slaying",
+      "type": "Utility"
+    },
+    "8817": {
+      "name": "微型掘洞人屠戮药剂",
+      "englishName": "Weak Potion of Dredge Slaying",
+      "type": "Utility"
+    },
+    "8818": {
+      "name": "微型亡灵屠戮药剂",
+      "englishName": "Weak Potion of Undead Slaying",
+      "type": "Utility"
+    },
+    "8819": {
+      "name": "小型烈焰军团屠戮药剂",
+      "englishName": "Minor Potion of Flame Legion Slaying",
+      "type": "Utility"
+    },
+    "8820": {
+      "name": "小型半人马屠戮药剂",
+      "englishName": "Minor Potion of Centaur Slaying",
+      "type": "Utility"
+    },
+    "8821": {
+      "name": "小型歹徒屠戮药剂",
+      "englishName": "Minor Potion of Outlaw Slaying",
+      "type": "Utility"
+    },
+    "8822": {
+      "name": "小型噩梦之庭屠戮药剂",
+      "englishName": "Minor Potion of Nightmare Court Slaying",
+      "type": "Utility"
+    },
+    "8823": {
+      "name": "小型斯瓦尼亚之子屠戮药剂",
+      "englishName": "Minor Potion of Sons of Svanir Slaying",
+      "type": "Utility"
+    },
+    "8824": {
+      "name": "小型毁灭者屠戮药剂",
+      "englishName": "Minor Potion of Destroyer Slaying",
+      "type": "Utility"
+    },
+    "8825": {
+      "name": "小型元素屠戮药剂",
+      "englishName": "Minor Potion of Elemental Slaying",
+      "type": "Utility"
+    },
+    "8826": {
+      "name": "小型恶魔屠戮药剂",
+      "englishName": "Minor Potion of Demon Slaying",
+      "type": "Utility"
+    },
+    "8827": {
+      "name": "小型审讯团屠戮药剂",
+      "englishName": "Minor Potion of Inquest Slaying",
+      "type": "Utility"
+    },
+    "8828": {
+      "name": "小型食人魔屠戮药剂",
+      "englishName": "Minor Potion of Ogre Slaying",
+      "type": "Utility"
+    },
+    "8829": {
+      "name": "小型冰巢屠戮药剂",
+      "englishName": "Minor Potion of Ice Brood Slaying",
+      "type": "Utility"
+    },
+    "8830": {
+      "name": "小型穴居人屠戮药剂",
+      "englishName": "Minor Potion of Grawl Slaying",
+      "type": "Utility"
+    },
+    "8831": {
+      "name": "小型蛇妖屠戮药剂",
+      "englishName": "Minor Potion of Krait Slaying",
+      "type": "Utility"
+    },
+    "8832": {
+      "name": "小型掘洞人屠戮药剂",
+      "englishName": "Minor Potion of Dredge Slaying",
+      "type": "Utility"
+    },
+    "8833": {
+      "name": "小型亡灵屠戮药剂",
+      "englishName": "Minor Potion of Undead Slaying",
+      "type": "Utility"
+    },
+    "8834": {
+      "name": "烈焰军团屠戮药剂",
+      "englishName": "Potion of Flame Legion Slaying",
+      "type": "Utility"
+    },
+    "8835": {
+      "name": "半人马屠戮药剂",
+      "englishName": "Potion of Centaur Slaying",
+      "type": "Utility"
+    },
+    "8836": {
+      "name": "歹徒屠戮药剂",
+      "englishName": "Potion of Outlaw Slaying",
+      "type": "Utility"
+    },
+    "8837": {
+      "name": "噩梦之庭屠戮药剂",
+      "englishName": "Potion of Nightmare Court Slaying",
+      "type": "Utility"
+    },
+    "8838": {
+      "name": "斯瓦尼亚之子屠戮药剂",
+      "englishName": "Potion of Sons of Svanir Slaying",
+      "type": "Utility"
+    },
+    "8839": {
+      "name": "毁灭者屠戮药剂",
+      "englishName": "Potion of Destroyer Slaying",
+      "type": "Utility"
+    },
+    "8840": {
+      "name": "元素屠戮药剂",
+      "englishName": "Potion of Elemental Slaying",
+      "type": "Utility"
+    },
+    "8841": {
+      "name": "恶魔屠戮药剂",
+      "englishName": "Potion of Demon Slaying",
+      "type": "Utility"
+    },
+    "8842": {
+      "name": "审讯团屠戮药剂",
+      "englishName": "Potion of Inquest Slaying",
+      "type": "Utility"
+    },
+    "8843": {
+      "name": "食人魔屠戮药剂",
+      "englishName": "Potion of Ogre Slaying",
+      "type": "Utility"
+    },
+    "8844": {
+      "name": "冰巢屠戮药剂",
+      "englishName": "Potion of Ice Brood Slaying",
+      "type": "Utility"
+    },
+    "8845": {
+      "name": "穴居人屠戮药剂",
+      "englishName": "Potion of Grawl Slaying",
+      "type": "Utility"
+    },
+    "8846": {
+      "name": "蛇妖屠戮药剂",
+      "englishName": "Potion of Krait Slaying",
+      "type": "Utility"
+    },
+    "8847": {
+      "name": "掘洞人屠戮药剂",
+      "englishName": "Potion of Dredge Slaying",
+      "type": "Utility"
+    },
+    "8848": {
+      "name": "亡灵屠戮药剂",
+      "englishName": "Potion of Undead Slaying",
+      "type": "Utility"
+    },
+    "8849": {
+      "name": "中型烈焰军团屠戮药剂",
+      "englishName": "Strong Potion of Flame Legion Slaying",
+      "type": "Utility"
+    },
+    "8850": {
+      "name": "中型半人马屠戮药剂",
+      "englishName": "Strong Potion of Centaur Slaying",
+      "type": "Utility"
+    },
+    "8851": {
+      "name": "中型歹徒屠戮药剂",
+      "englishName": "Strong Potion of Outlaw Slaying",
+      "type": "Utility"
+    },
+    "8852": {
+      "name": "中型噩梦之庭屠戮药剂",
+      "englishName": "Strong Potion of Nightmare Court Slaying",
+      "type": "Utility"
+    },
+    "8853": {
+      "name": "中型斯瓦尼亚之子屠戮药剂",
+      "englishName": "Strong Potion of Sons of Svanir Slaying",
+      "type": "Utility"
+    },
+    "8854": {
+      "name": "中型毁灭者屠戮药剂",
+      "englishName": "Strong Potion of Destroyer Slaying",
+      "type": "Utility"
+    },
+    "8855": {
+      "name": "中型元素屠戮药剂",
+      "englishName": "Strong Potion of Elemental Slaying",
+      "type": "Utility"
+    },
+    "8856": {
+      "name": "中型恶魔屠戮药剂",
+      "englishName": "Strong Potion of Demon Slaying",
+      "type": "Utility"
+    },
+    "8857": {
+      "name": "中型审讯团屠戮药剂",
+      "englishName": "Strong Potion of Inquest Slaying",
+      "type": "Utility"
+    },
+    "8858": {
+      "name": "中型食人魔屠戮药剂",
+      "englishName": "Strong Potion of Ogre Slaying",
+      "type": "Utility"
+    },
+    "8859": {
+      "name": "中型冰巢屠戮药剂",
+      "englishName": "Strong Potion of Ice Brood Slaying",
+      "type": "Utility"
+    },
+    "8860": {
+      "name": "中型穴居人屠戮药剂",
+      "englishName": "Strong Potion of Grawl Slaying",
+      "type": "Utility"
+    },
+    "8861": {
+      "name": "中型蛇妖屠戮药剂",
+      "englishName": "Strong Potion of Krait Slaying",
+      "type": "Utility"
+    },
+    "8862": {
+      "name": "中型掘洞人屠戮药剂",
+      "englishName": "Strong Potion of Dredge Slaying",
+      "type": "Utility"
+    },
+    "8863": {
+      "name": "中型亡灵屠戮药剂",
+      "englishName": "Strong Potion of Undead Slaying",
+      "type": "Utility"
+    },
+    "8864": {
+      "name": "大型烈焰军团屠戮药剂",
+      "englishName": "Potent Potion of Flame Legion Slaying",
+      "type": "Utility"
+    },
+    "8865": {
+      "name": "大型半人马屠戮药剂",
+      "englishName": "Potent Potion of Centaur Slaying",
+      "type": "Utility"
+    },
+    "8866": {
+      "name": "大型歹徒屠戮药剂",
+      "englishName": "Potent Potion of Outlaw Slaying",
+      "type": "Utility"
+    },
+    "8867": {
+      "name": "大型噩梦之庭屠戮药剂",
+      "englishName": "Potent Potion of Nightmare Court Slaying",
+      "type": "Utility"
+    },
+    "8868": {
+      "name": "大型斯瓦尼亚之子屠戮药剂",
+      "englishName": "Potent Potion of Sons of Svanir Slaying",
+      "type": "Utility"
+    },
+    "8869": {
+      "name": "大型毁灭者屠戮药剂",
+      "englishName": "Potent Potion of Destroyer Slaying",
+      "type": "Utility"
+    },
+    "8870": {
+      "name": "大型元素屠戮药剂",
+      "englishName": "Potent Potion of Elemental Slaying",
+      "type": "Utility"
+    },
+    "8871": {
+      "name": "大型恶魔屠戮药剂",
+      "englishName": "Potent Potion of Demon Slaying",
+      "type": "Utility"
+    },
+    "8872": {
+      "name": "大型审讯团屠戮药剂",
+      "englishName": "Potent Potion of Inquest Slaying",
+      "type": "Utility"
+    },
+    "8873": {
+      "name": "大型食人魔屠戮药剂",
+      "englishName": "Potent Potion of Ogre Slaying",
+      "type": "Utility"
+    },
+    "8874": {
+      "name": "大型冰巢屠戮药剂",
+      "englishName": "Potent Potion of Ice Brood Slaying",
+      "type": "Utility"
+    },
+    "8875": {
+      "name": "大型穴居人屠戮药剂",
+      "englishName": "Potent Potion of Grawl Slaying",
+      "type": "Utility"
+    },
+    "8876": {
+      "name": "大型蛇妖屠戮药剂",
+      "englishName": "Potent Potion of Krait Slaying",
+      "type": "Utility"
+    },
+    "8877": {
+      "name": "大型掘洞人屠戮药剂",
+      "englishName": "Potent Potion of Dredge Slaying",
+      "type": "Utility"
+    },
+    "8878": {
+      "name": "大型亡灵屠戮药剂",
+      "englishName": "Potent Potion of Undead Slaying",
+      "type": "Utility"
+    },
+    "8879": {
+      "name": "巨型烈焰军团屠戮药剂",
+      "englishName": "Powerful Potion of Flame Legion Slaying",
+      "type": "Utility"
+    },
+    "8880": {
+      "name": "巨型半人马屠戮药剂",
+      "englishName": "Powerful Potion of Centaur Slaying",
+      "type": "Utility"
+    },
+    "8881": {
+      "name": "巨型歹徒屠戮药剂",
+      "englishName": "Powerful Potion of Outlaw Slaying",
+      "type": "Utility"
+    },
+    "8882": {
+      "name": "巨型噩梦之庭屠戮药剂",
+      "englishName": "Powerful Potion of Nightmare Court Slaying",
+      "type": "Utility"
+    },
+    "8883": {
+      "name": "巨型斯瓦尼亚之子屠戮药剂",
+      "englishName": "Powerful Potion of Sons of Svanir Slaying",
+      "type": "Utility"
+    },
+    "8884": {
+      "name": "巨型毁灭者屠戮药剂",
+      "englishName": "Powerful Potion of Destroyer Slaying",
+      "type": "Utility"
+    },
+    "8885": {
+      "name": "巨型元素屠戮药剂",
+      "englishName": "Powerful Potion of Elemental Slaying",
+      "type": "Utility"
+    },
+    "8886": {
+      "name": "巨型恶魔屠戮药剂",
+      "englishName": "Powerful Potion of Demon Slaying",
+      "type": "Utility"
+    },
+    "8887": {
+      "name": "巨型审讯团屠戮药剂",
+      "englishName": "Powerful Potion of Inquest Slaying",
+      "type": "Utility"
+    },
+    "8888": {
+      "name": "巨型食人魔屠戮药剂",
+      "englishName": "Powerful Potion of Ogre Slaying",
+      "type": "Utility"
+    },
+    "8889": {
+      "name": "巨型冰巢屠戮药剂",
+      "englishName": "Powerful Potion of Ice Brood Slaying",
+      "type": "Utility"
+    },
+    "8890": {
+      "name": "巨型穴居人屠戮药剂",
+      "englishName": "Powerful Potion of Grawl Slaying",
+      "type": "Utility"
+    },
+    "8891": {
+      "name": "巨型蛇妖屠戮药剂",
+      "englishName": "Powerful Potion of Krait Slaying",
+      "type": "Utility"
+    },
+    "8892": {
+      "name": "巨型掘洞人屠戮药剂",
+      "englishName": "Powerful Potion of Dredge Slaying",
+      "type": "Utility"
+    },
+    "8893": {
+      "name": "巨型亡灵屠戮药剂",
+      "englishName": "Powerful Potion of Undead Slaying",
+      "type": "Utility"
+    },
+    "8897": {
+      "name": "流氓合剂",
+      "englishName": "Knavish Tonic",
+      "type": "Utility"
+    },
+    "9431": {
+      "name": "粗糙磨刀石",
+      "englishName": "Rough Sharpening Stone",
+      "type": "Utility"
+    },
+    "9433": {
+      "name": "简易磨刀石",
+      "englishName": "Simple Sharpening Stone",
+      "type": "Utility"
+    },
+    "9436": {
+      "name": "标准磨刀石",
+      "englishName": "Standard Sharpening Stone",
+      "type": "Utility"
+    },
+    "9438": {
+      "name": "优质磨刀石",
+      "englishName": "Quality Sharpening Stone",
+      "type": "Utility"
+    },
+    "9440": {
+      "name": "硬质磨刀石",
+      "englishName": "Hardened Sharpening Stone",
+      "type": "Utility"
+    },
+    "9443": {
+      "name": "超级磨刀石",
+      "englishName": "Superior Sharpening Stone",
+      "type": "Utility"
+    },
+    "9452": {
+      "name": "学徒保养油",
+      "englishName": "Apprentice Maintenance Oil",
+      "type": "Utility"
+    },
+    "9453": {
+      "name": "能手保养油",
+      "englishName": "Journeyman Maintenance Oil",
+      "type": "Utility"
+    },
+    "9456": {
+      "name": "标准保养油",
+      "englishName": "Standard Maintenance Oil",
+      "type": "Utility"
+    },
+    "9458": {
+      "name": "工匠保养油",
+      "englishName": "Artisan Maintenance Oil",
+      "type": "Utility"
+    },
+    "9460": {
+      "name": "优质保养油",
+      "englishName": "Quality Maintenance Oil",
+      "type": "Utility"
+    },
+    "9461": {
+      "name": "大师保养油",
+      "englishName": "Master Maintenance Oil",
+      "type": "Utility"
+    },
+    "9464": {
+      "name": "学徒调谐水晶",
+      "englishName": "Apprentice Tuning Crystal",
+      "type": "Utility"
+    },
+    "9467": {
+      "name": "能手调谐水晶",
+      "englishName": "Journeyman Tuning Crystal",
+      "type": "Utility"
+    },
+    "9469": {
+      "name": "标准调谐水晶",
+      "englishName": "Standard Tuning Crystal",
+      "type": "Utility"
+    },
+    "9472": {
+      "name": "工匠调谐水晶",
+      "englishName": "Artisan Tuning Crystal",
+      "type": "Utility"
+    },
+    "9473": {
+      "name": "优质调谐水晶",
+      "englishName": "Quality Tuning Crystal",
+      "type": "Utility"
+    },
+    "9476": {
+      "name": "大师调谐水晶",
+      "englishName": "Master Tuning Crystal",
+      "type": "Utility"
+    },
+    "12129": {
+      "name": "辛辣烤肉串",
+      "englishName": "Spicy Meat Kabob",
+      "type": "Food"
+    },
+    "12130": {
+      "name": "烤芜菁甘蓝",
+      "englishName": "Roasted Rutabaga",
+      "type": "Food"
+    },
+    "12131": {
+      "name": "碗装白灼蘑菇汤",
+      "englishName": "Bowl of Watery Mushroom Soup",
+      "type": "Food"
+    },
+    "12132": {
+      "name": "面包",
+      "englishName": "Loaf of Bread",
+      "type": "Food"
+    },
+    "12133": {
+      "name": "守望者干粮",
+      "englishName": "Warden Ration",
+      "type": "Food"
+    },
+    "12139": {
+      "name": "碗装战地前线煲",
+      "englishName": "Bowl of Front Line Stew",
+      "type": "Food"
+    },
+    "12140": {
+      "name": "碗装软泥奶油果冻",
+      "englishName": "Bowl of Gelatinous Ooze Custard",
+      "type": "Food"
+    },
+    "12145": {
+      "name": "饭团",
+      "englishName": "Rice Ball",
+      "type": "Food"
+    },
+    "12146": {
+      "name": "菠菜沙拉",
+      "englishName": "Spinach Salad",
+      "type": "Food"
+    },
+    "12148": {
+      "name": "辛辣牛腩排",
+      "englishName": "Spicy Flank Steak",
+      "type": "Food"
+    },
+    "12149": {
+      "name": "碗装双头巨人煲",
+      "englishName": "Bowl of Ettin Stew",
+      "type": "Food"
+    },
+    "12150": {
+      "name": "伊达的苹果派",
+      "englishName": "Eda's Apple Pie",
+      "type": "Food"
+    },
+    "12154": {
+      "name": "碗装先驱者煲",
+      "englishName": "Bowl of Outrider Stew",
+      "type": "Food"
+    },
+    "12160": {
+      "name": "胡桃粘面包",
+      "englishName": "Loaf of Walnut Sticky Bread",
+      "type": "Food"
+    },
+    "12182": {
+      "name": "奶香黄油饼干",
+      "englishName": "Buttermilk Biscuit",
+      "type": "Food"
+    },
+    "12184": {
+      "name": "杯装炸马铃薯",
+      "englishName": "Cup of Potato Fries",
+      "type": "Food"
+    },
+    "12185": {
+      "name": "一捧巴尼兔肉",
+      "englishName": "Handful of Bjarni's Rabbit Food",
+      "type": "Food"
+    },
+    "12186": {
+      "name": "三角奶酪",
+      "englishName": "Cheese Triangle",
+      "type": "Food"
+    },
+    "12187": {
+      "name": "黄油吐司片",
+      "englishName": "Slice of Buttered Toast",
+      "type": "Food"
+    },
+    "12188": {
+      "name": "碗装简易沙拉",
+      "englishName": "Bowl of Simple Salad",
+      "type": "Food"
+    },
+    "12190": {
+      "name": "泡菇",
+      "englishName": "Marinated Mushroom",
+      "type": "Food"
+    },
+    "12191": {
+      "name": "马铃薯泥",
+      "englishName": "Mashed Potato",
+      "type": "Food"
+    },
+    "12192": {
+      "name": "甲虫郡鸡蛋",
+      "englishName": "Eggs Beetletun",
+      "type": "Food"
+    },
+    "12194": {
+      "name": "蒜蓉面包片",
+      "englishName": "Slice of Garlic Bread",
+      "type": "Food"
+    },
+    "12195": {
+      "name": "肉丸",
+      "englishName": "Meatball",
+      "type": "Food"
+    },
+    "12196": {
+      "name": "碗装阿斯卡隆沙拉",
+      "englishName": "Bowl of Ascalonian Salad",
+      "type": "Food"
+    },
+    "12198": {
+      "name": "开心牛排",
+      "englishName": "Celebratory Steak",
+      "type": "Food"
+    },
+    "12199": {
+      "name": "碗装红肉汤",
+      "englishName": "Bowl of Red Meat Stock",
+      "type": "Food"
+    },
+    "12200": {
+      "name": "碗装浓厚红肉煲",
+      "englishName": "Bowl of Hearty Red Meat Stew",
+      "type": "Food"
+    },
+    "12201": {
+      "name": "碗装简易鲜肉煲",
+      "englishName": "Bowl of Simple Meat Stew",
+      "type": "Food"
+    },
+    "12202": {
+      "name": "碗装鸟肉汤",
+      "englishName": "Bowl of Poultry Stock",
+      "type": "Food"
+    },
+    "12203": {
+      "name": "碗装牦牛煲",
+      "englishName": "Bowl of Dolyak Stew",
+      "type": "Food"
+    },
+    "12204": {
+      "name": "碗装鸟肉面条汤",
+      "englishName": "Bowl of Poultry Noodle Soup",
+      "type": "Food"
+    },
+    "12205": {
+      "name": "碗装简易鸟肉汤",
+      "englishName": "Bowl of Simple Poultry Soup",
+      "type": "Food"
+    },
+    "12206": {
+      "name": "碗装蔬菜汤",
+      "englishName": "Bowl of Vegetable Stock",
+      "type": "Food"
+    },
+    "12207": {
+      "name": "碗装简易蔬菜汤",
+      "englishName": "Bowl of Simple Vegetable Soup",
+      "type": "Food"
+    },
+    "12208": {
+      "name": "至尊汉堡",
+      "englishName": "Deluxe Burger",
+      "type": "Food"
+    },
+    "12209": {
+      "name": "铁板鸟肉",
+      "englishName": "Grilled Poultry",
+      "type": "Food"
+    },
+    "12210": {
+      "name": "汉堡包",
+      "englishName": "Hamburger",
+      "type": "Food"
+    },
+    "12211": {
+      "name": "碗装冰冷地虫煲",
+      "englishName": "Bowl of Cold Wurm Stew",
+      "type": "Food"
+    },
+    "12212": {
+      "name": "烤肉三明治",
+      "englishName": "Roasted Meaty Sandwich",
+      "type": "Food"
+    },
+    "12213": {
+      "name": "芝士汉堡",
+      "englishName": "Cheeseburger",
+      "type": "Food"
+    },
+    "12214": {
+      "name": "鸟肉肉片",
+      "englishName": "Poultry Piccata",
+      "type": "Food"
+    },
+    "12215": {
+      "name": "八宝辣椒",
+      "englishName": "Stuffed Pepper",
+      "type": "Food"
+    },
+    "12216": {
+      "name": "大头菜砂锅",
+      "englishName": "Turnip Casserole",
+      "type": "Food"
+    },
+    "12217": {
+      "name": "碟装意粉拌番茄汁",
+      "englishName": "Plate of Pasta with Tomato Sauce",
+      "type": "Food"
+    },
+    "12218": {
+      "name": "芝士披萨",
+      "englishName": "Cheese Pizza",
+      "type": "Food"
+    },
+    "12221": {
+      "name": "肉丸晚宴大餐",
+      "englishName": "Meatball Dinner",
+      "type": "Food"
+    },
+    "12222": {
+      "name": "巧克力蛋糕",
+      "englishName": "Chocolate Cake",
+      "type": "Food"
+    },
+    "12223": {
+      "name": "苹果派",
+      "englishName": "Apple Pie",
+      "type": "Food"
+    },
+    "12224": {
+      "name": "白蛋糕",
+      "englishName": "White Cake",
+      "type": "Food"
+    },
+    "12225": {
+      "name": "肉桂苹果",
+      "englishName": "Cinnamon Apple",
+      "type": "Food"
+    },
+    "12226": {
+      "name": "草莓饼干",
+      "englishName": "Strawberries and Biscuits",
+      "type": "Food"
+    },
+    "12227": {
+      "name": "白糖曲奇饼",
+      "englishName": "Sugar Cookie",
+      "type": "Food"
+    },
+    "12230": {
+      "name": "香蕉奶油馅饼",
+      "englishName": "Banana Cream Pie",
+      "type": "Food"
+    },
+    "12233": {
+      "name": "一捧果仁杂烩",
+      "englishName": "Handful of Trail Mix",
+      "type": "Food"
+    },
+    "12264": {
+      "name": "树莓馅饼",
+      "englishName": "Raspberry Pie",
+      "type": "Food"
+    },
+    "12273": {
+      "name": "牛头怪肉排",
+      "englishName": "Minotaur Steak",
+      "type": "Food"
+    },
+    "12279": {
+      "name": "铁板蘑菇",
+      "englishName": "Grilled Mushroom",
+      "type": "Food"
+    },
+    "12280": {
+      "name": "香蕉面包",
+      "englishName": "Loaf of Banana Bread",
+      "type": "Food"
+    },
+    "12281": {
+      "name": "碗装番薯泥",
+      "englishName": "Bowl of Mashed Yams",
+      "type": "Food"
+    },
+    "12282": {
+      "name": "神佑八宝蘑菇",
+      "englishName": "Divinity Stuffed Mushroom",
+      "type": "Food"
+    },
+    "12283": {
+      "name": "铁板洋菇",
+      "englishName": "Grilled Portobello Mushroom",
+      "type": "Food"
+    },
+    "12284": {
+      "name": "碗装香辣番薯泥",
+      "englishName": "Bowl of Spiced Mashed Yams",
+      "type": "Food"
+    },
+    "12285": {
+      "name": "西葫芦面包",
+      "englishName": "Loaf of Zucchini Bread",
+      "type": "Food"
+    },
+    "12286": {
+      "name": "碗装沙司",
+      "englishName": "Bowl of Salsa",
+      "type": "Food"
+    },
+    "12287": {
+      "name": "碗装可口地虫煲",
+      "englishName": "Bowl of Tasty Wurm Stew",
+      "type": "Food"
+    },
+    "12288": {
+      "name": "碗装鳄梨辣汁",
+      "englishName": "Bowl of Avocado Salsa",
+      "type": "Food"
+    },
+    "12289": {
+      "name": "柠檬条",
+      "englishName": "Lemon Bar",
+      "type": "Food"
+    },
+    "12290": {
+      "name": "碗装凉拌卷心菜",
+      "englishName": "Bowl of Coleslaw",
+      "type": "Food"
+    },
+    "12291": {
+      "name": "碗装豆蔻爆炒西葫芦",
+      "englishName": "Bowl of Sauteed Zucchini with Nutmeg",
+      "type": "Food"
+    },
+    "12292": {
+      "name": "碗装德根顺煲",
+      "englishName": "Bowl of Degun Shun Stew",
+      "type": "Food"
+    },
+    "12293": {
+      "name": "碗装番茄汤",
+      "englishName": "Bowl of Tomato Soup",
+      "type": "Food"
+    },
+    "12294": {
+      "name": "碗装蛤蚌浓汤",
+      "englishName": "Bowl of Clam Chowder",
+      "type": "Food"
+    },
+    "12295": {
+      "name": "碗装奶油洋菇汤",
+      "englishName": "Bowl of Creamy Portobello Soup",
+      "type": "Food"
+    },
+    "12296": {
+      "name": "碗装番茄西葫芦汤",
+      "englishName": "Bowl of Tomato Zucchini Soup",
+      "type": "Food"
+    },
+    "12297": {
+      "name": "碗装豪华奶油蘑菇汤",
+      "englishName": "Bowl of Fancy Creamy Mushroom Soup",
+      "type": "Food"
+    },
+    "12298": {
+      "name": "碗装莳萝蛤蚌浓汤",
+      "englishName": "Bowl of Dilled Clam Chowder",
+      "type": "Food"
+    },
+    "12299": {
+      "name": "碗装红肉腰豆辣酱汤",
+      "englishName": "Bowl of Meat and Bean Chili",
+      "type": "Food"
+    },
+    "12300": {
+      "name": "碗装简易双豆辣酱汤",
+      "englishName": "Bowl of Simple Bean Chili",
+      "type": "Food"
+    },
+    "12301": {
+      "name": "鼠尾草八宝鸟肉",
+      "englishName": "Sage-Stuffed Poultry",
+      "type": "Food"
+    },
+    "12302": {
+      "name": "碗装干煸卷心菜",
+      "englishName": "Bowl of Cabbage Stirfry",
+      "type": "Food"
+    },
+    "12303": {
+      "name": "素菜汉堡",
+      "englishName": "Veggie Burger",
+      "type": "Food"
+    },
+    "12304": {
+      "name": "芝麻烤肉片",
+      "englishName": "Filet of Sesame-Roasted Meat",
+      "type": "Food"
+    },
+    "12305": {
+      "name": "芝麻烧烤晚宴",
+      "englishName": "Sesame-Roasted Dinner",
+      "type": "Food"
+    },
+    "12306": {
+      "name": "迷迭香烤肉片",
+      "englishName": "Filet of Rosemary-Roasted Meat",
+      "type": "Food"
+    },
+    "12307": {
+      "name": "青椒牛排晚宴",
+      "englishName": "Pepper Steak Dinner",
+      "type": "Food"
+    },
+    "12308": {
+      "name": "碗装苹果酱",
+      "englishName": "Bowl of Apple Sauce",
+      "type": "Food"
+    },
+    "12309": {
+      "name": "苹果挞",
+      "englishName": "Apple Tart",
+      "type": "Food"
+    },
+    "12311": {
+      "name": "碗装蓝莓苹果羹",
+      "englishName": "Bowl of Blueberry Apple Compote",
+      "type": "Food"
+    },
+    "12312": {
+      "name": "草莓挞",
+      "englishName": "Strawberry Tart",
+      "type": "Food"
+    },
+    "12313": {
+      "name": "碗装草莓苹果羹",
+      "englishName": "Bowl of Strawberry Apple Compote",
+      "type": "Food"
+    },
+    "12314": {
+      "name": "碎巧克力曲奇饼",
+      "englishName": "Chocolate Chip Cookie",
+      "type": "Food"
+    },
+    "12315": {
+      "name": "焦糖",
+      "englishName": "Caramel",
+      "type": "Food"
+    },
+    "12316": {
+      "name": "蓝莓馅饼",
+      "englishName": "Blueberry Pie",
+      "type": "Food"
+    },
+    "12317": {
+      "name": "焦糖苹果",
+      "englishName": "Caramel Apple",
+      "type": "Food"
+    },
+    "12318": {
+      "name": "巧克力樱桃",
+      "englishName": "Chocolate Cherry",
+      "type": "Food"
+    },
+    "12319": {
+      "name": "樱桃曲奇饼",
+      "englishName": "Cherry Cookie",
+      "type": "Food"
+    },
+    "12320": {
+      "name": "樱桃馅饼",
+      "englishName": "Cherry Pie",
+      "type": "Food"
+    },
+    "12322": {
+      "name": "葡萄馅饼",
+      "englishName": "Grape Pie",
+      "type": "Food"
+    },
+    "12323": {
+      "name": "樱桃杏仁条",
+      "englishName": "Cherry Almond Bar",
+      "type": "Food"
+    },
+    "12343": {
+      "name": "卡司塔兹烤鸟肉",
+      "englishName": "Kastaz Roasted Poultry",
+      "type": "Food"
+    },
+    "12344": {
+      "name": "蓝莓曲奇饼",
+      "englishName": "Blueberry Cookie",
+      "type": "Food"
+    },
+    "12345": {
+      "name": "草莓曲奇饼",
+      "englishName": "Strawberry Cookie",
+      "type": "Food"
+    },
+    "12346": {
+      "name": "素菜披萨",
+      "englishName": "Veggie Pizza",
+      "type": "Food"
+    },
+    "12347": {
+      "name": "蛤蚌蛋糕",
+      "englishName": "Clam Cake",
+      "type": "Food"
+    },
+    "12348": {
+      "name": "碗装甜菜炖豆煲",
+      "englishName": "Bowl of Beet and Bean Stew",
+      "type": "Food"
+    },
+    "12349": {
+      "name": "碗装香薄荷菠菜鸟肉汤",
+      "englishName": "Bowl of Savory Spinach and Poultry Soup",
+      "type": "Food"
+    },
+    "12352": {
+      "name": "狮鹫蛋卷",
+      "englishName": "Griffon Egg Omelet",
+      "type": "Food"
+    },
+    "12353": {
+      "name": "碗装简易烧肉辣酱汤",
+      "englishName": "Bowl of Simple Meat Chili",
+      "type": "Food"
+    },
+    "12354": {
+      "name": "肉馅饼",
+      "englishName": "Meat Pie",
+      "type": "Food"
+    },
+    "12355": {
+      "name": "蓝莓挞",
+      "englishName": "Blueberry Tart",
+      "type": "Food"
+    },
+    "12356": {
+      "name": "巧克力香蕉",
+      "englishName": "Chocolate Banana",
+      "type": "Food"
+    },
+    "12357": {
+      "name": "草莓馅饼",
+      "englishName": "Strawberry Pie",
+      "type": "Food"
+    },
+    "12358": {
+      "name": "菠菜汉堡",
+      "englishName": "Spinach Burger",
+      "type": "Food"
+    },
+    "12359": {
+      "name": "胡椒牛排",
+      "englishName": "Pepper Steak",
+      "type": "Food"
+    },
+    "12360": {
+      "name": "鼠尾草八宝蘑菇",
+      "englishName": "Sage-Stuffed Mushroom",
+      "type": "Food"
+    },
+    "12361": {
+      "name": "碗装豆沙拉",
+      "englishName": "Bowl of Bean Salad",
+      "type": "Food"
+    },
+    "12362": {
+      "name": "碗装爆炒蒜蓉菠菜",
+      "englishName": "Bowl of Garlic Spinach Sautee",
+      "type": "Food"
+    },
+    "12363": {
+      "name": "碗装豪华双豆辣酱汤",
+      "englishName": "Bowl of Fancy Bean Chili",
+      "type": "Food"
+    },
+    "12364": {
+      "name": "碗装樱桃香草羹",
+      "englishName": "Bowl of Cherry Vanilla Compote",
+      "type": "Food"
+    },
+    "12365": {
+      "name": "樱桃挞",
+      "englishName": "Cherry Tart",
+      "type": "Food"
+    },
+    "12366": {
+      "name": "巧克力樱桃蛋糕",
+      "englishName": "Chocolate Cherry Cake",
+      "type": "Food"
+    },
+    "12367": {
+      "name": "莳萝鸟肉肉片",
+      "englishName": "Dilled Poultry Piccata",
+      "type": "Food"
+    },
+    "12368": {
+      "name": "蘑菇披萨",
+      "englishName": "Mushroom Pizza",
+      "type": "Food"
+    },
+    "12369": {
+      "name": "碗装科瑞塔肉丸晚宴",
+      "englishName": "Bowl of Krytan Meatball Dinner",
+      "type": "Food"
+    },
+    "12370": {
+      "name": "八宝西葫芦",
+      "englishName": "Stuffed Zucchini",
+      "type": "Food"
+    },
+    "12371": {
+      "name": "辛辣青柠肋排",
+      "englishName": "Spicy Lime Steak",
+      "type": "Food"
+    },
+    "12372": {
+      "name": "番薯煎饼",
+      "englishName": "Yam Fritter",
+      "type": "Food"
+    },
+    "12373": {
+      "name": "迷迭香面包",
+      "englishName": "Loaf of Rosemary Bread",
+      "type": "Food"
+    },
+    "12374": {
+      "name": "碗装甘蓝鸟肉汤",
+      "englishName": "Bowl of Kale and Poultry Soup",
+      "type": "Food"
+    },
+    "12375": {
+      "name": "碗装甘蓝汤",
+      "englishName": "Bowl of Kale Soup",
+      "type": "Food"
+    },
+    "12376": {
+      "name": "碗装西葫芦辣酱汤",
+      "englishName": "Bowl of Zucchini Chili",
+      "type": "Food"
+    },
+    "12377": {
+      "name": "碗装辣椒鳄梨汤",
+      "englishName": "Bowl of Chili and Avocado",
+      "type": "Food"
+    },
+    "12378": {
+      "name": "碗装番薯汤",
+      "englishName": "Bowl of Yam Soup",
+      "type": "Food"
+    },
+    "12379": {
+      "name": "碗装卷心菜炖肉煲",
+      "englishName": "Bowl of Meat and Cabbage Stew",
+      "type": "Food"
+    },
+    "12380": {
+      "name": "香橙椰子棒",
+      "englishName": "Orange Coconut Bar",
+      "type": "Food"
+    },
+    "12381": {
+      "name": "巧克力香橙",
+      "englishName": "Chocolate Orange",
+      "type": "Food"
+    },
+    "12382": {
+      "name": "巧克力薄荷曲奇饼",
+      "englishName": "Chocolate Mint Cookie",
+      "type": "Food"
+    },
+    "12383": {
+      "name": "黑莓曲奇饼",
+      "englishName": "Blackberry Cookie",
+      "type": "Food"
+    },
+    "12384": {
+      "name": "南瓜馅饼",
+      "englishName": "Pumpkin Pie",
+      "type": "Food"
+    },
+    "12385": {
+      "name": "黑莓馅饼",
+      "englishName": "Blackberry Pie",
+      "type": "Food"
+    },
+    "12386": {
+      "name": "碗装黑莓雪梨羹",
+      "englishName": "Bowl of Blackberry Pear Compote",
+      "type": "Food"
+    },
+    "12387": {
+      "name": "姜汁雪梨挞",
+      "englishName": "Ginger Pear Tart",
+      "type": "Food"
+    },
+    "12388": {
+      "name": "香橙椰子蛋糕",
+      "englishName": "Orange Coconut Cake",
+      "type": "Food"
+    },
+    "12389": {
+      "name": "碟装柑橘鸟肉杏仁",
+      "englishName": "Plate of Citrus Poultry with Almonds",
+      "type": "Food"
+    },
+    "12390": {
+      "name": "山葵汉堡",
+      "englishName": "Horseradish Burger",
+      "type": "Food"
+    },
+    "12391": {
+      "name": "豪华素菜披萨",
+      "englishName": "Fancy Veggie Pizza",
+      "type": "Food"
+    },
+    "12392": {
+      "name": "碗装蘑菇拌饭",
+      "englishName": "Bowl of Mushroom Risotto",
+      "type": "Food"
+    },
+    "12393": {
+      "name": "碟装柑橘丁香肉",
+      "englishName": "Plate of Citrus Clove Meat",
+      "type": "Food"
+    },
+    "12394": {
+      "name": "碟装香菜炒肉",
+      "englishName": "Plate of Coriander Crusted Meat",
+      "type": "Food"
+    },
+    "12395": {
+      "name": "碟装烤肉拌薄荷汁",
+      "englishName": "Plate of Roast Meat with Mint Sauce",
+      "type": "Food"
+    },
+    "12396": {
+      "name": "碟装香菜炒肉晚宴",
+      "englishName": "Plate of Coriander Crusted Meat Dinner",
+      "type": "Food"
+    },
+    "12397": {
+      "name": "碗装干煸鳄梨",
+      "englishName": "Bowl of Avocado Stirfry",
+      "type": "Food"
+    },
+    "12398": {
+      "name": "碗装鹰嘴豆沙拉",
+      "englishName": "Bowl of Chickpea Salad",
+      "type": "Food"
+    },
+    "12399": {
+      "name": "鹰嘴豆煎饼",
+      "englishName": "Chickpea Fritter",
+      "type": "Food"
+    },
+    "12400": {
+      "name": "南瓜吐司片",
+      "englishName": "Slice of Pumpkin Bread",
+      "type": "Food"
+    },
+    "12401": {
+      "name": "碗装香蒜意粉沙拉",
+      "englishName": "Bowl of Pesto Pasta Salad",
+      "type": "Food"
+    },
+    "12402": {
+      "name": "香辣面包片",
+      "englishName": "Slice of Spiced Bread",
+      "type": "Food"
+    },
+    "12403": {
+      "name": "鲜血托八宝蘑菇",
+      "englishName": "Eztlitl Stuffed Mushroom",
+      "type": "Food"
+    },
+    "12404": {
+      "name": "碗装卷心菜与鹰嘴豆沙拉",
+      "englishName": "Bowl of Cabbage and Chickpea Salad",
+      "type": "Food"
+    },
+    "12405": {
+      "name": "碗装爆炒花椰菜",
+      "englishName": "Bowl of Cauliflower Sautee",
+      "type": "Food"
+    },
+    "12406": {
+      "name": "碗装鹰嘴豆泥",
+      "englishName": "Bowl of Hummus",
+      "type": "Food"
+    },
+    "12407": {
+      "name": "碗装香辣卷心菜炖肉煲",
+      "englishName": "Bowl of Spiced Meat and Cabbage Stew",
+      "type": "Food"
+    },
+    "12408": {
+      "name": "碗装香辣素菜辣酱汤",
+      "englishName": "Bowl of Spiced Veggie Chili",
+      "type": "Food"
+    },
+    "12409": {
+      "name": "碗装香辣烧肉辣酱汤",
+      "englishName": "Bowl of Spiced Meat Chili",
+      "type": "Food"
+    },
+    "12410": {
+      "name": "碗装南瓜浓汤",
+      "englishName": "Bowl of Pumpkin Bisque",
+      "type": "Food"
+    },
+    "12411": {
+      "name": "碗装花椰菜汤",
+      "englishName": "Bowl of Cauliflower Soup",
+      "type": "Food"
+    },
+    "12412": {
+      "name": "碗装鹰嘴豆汤",
+      "englishName": "Bowl of Chickpea Soup",
+      "type": "Food"
+    },
+    "12413": {
+      "name": "碗装浓厚鸟肉汤",
+      "englishName": "Bowl of Hearty Poultry Soup",
+      "type": "Food"
+    },
+    "12414": {
+      "name": "碗装鹰嘴豆鸟肉汤",
+      "englishName": "Bowl of Chickpea and Poultry Soup",
+      "type": "Food"
+    },
+    "12415": {
+      "name": "树莓蜜桃棒",
+      "englishName": "Raspberry Peach Bar",
+      "type": "Food"
+    },
+    "12416": {
+      "name": "巧克力树莓奶油",
+      "englishName": "Chocolate Raspberry Cream",
+      "type": "Food"
+    },
+    "12417": {
+      "name": "巧克力树莓曲奇饼",
+      "englishName": "Chocolate Raspberry Cookie",
+      "type": "Food"
+    },
+    "12418": {
+      "name": "蜜桃曲奇饼",
+      "englishName": "Peach Cookie",
+      "type": "Food"
+    },
+    "12419": {
+      "name": "蜜桃馅饼",
+      "englishName": "Peach Pie",
+      "type": "Food"
+    },
+    "12420": {
+      "name": "混合莓子馅饼",
+      "englishName": "Mixed Berry Pie",
+      "type": "Food"
+    },
+    "12421": {
+      "name": "树莓蜜桃羹",
+      "englishName": "Raspberry Peach Compote",
+      "type": "Food"
+    },
+    "12422": {
+      "name": "蜜桃挞",
+      "englishName": "Peach Tart",
+      "type": "Food"
+    },
+    "12423": {
+      "name": "巧克力树莓蛋糕",
+      "englishName": "Chocolate Raspberry Cake",
+      "type": "Food"
+    },
+    "12424": {
+      "name": "碗装鸟肉龙蒿叶意粉",
+      "englishName": "Bowl of Poultry Tarragon Pasta",
+      "type": "Food"
+    },
+    "12425": {
+      "name": "龙蒿叶八宝鸟肉",
+      "englishName": "Tarragon Stuffed Poultry",
+      "type": "Food"
+    },
+    "12426": {
+      "name": "辛辣芝士汉堡",
+      "englishName": "Spicy Cheeseburger",
+      "type": "Food"
+    },
+    "12427": {
+      "name": "超级素菜披萨",
+      "englishName": "Super Veggie Pizza",
+      "type": "Food"
+    },
+    "12428": {
+      "name": "碗装蘑菇芦笋拌饭",
+      "englishName": "Bowl of Mushroom and Asparagus Risotto",
+      "type": "Food"
+    },
+    "12429": {
+      "name": "火辣牛腩排",
+      "englishName": "Spicier Flank Steak",
+      "type": "Food"
+    },
+    "12430": {
+      "name": "碟装芦笋牛排",
+      "englishName": "Plate of Steak and Asparagus",
+      "type": "Food"
+    },
+    "12431": {
+      "name": "碟装大葱炖烤肉",
+      "englishName": "Plate of Roast Meat with Braised Leeks",
+      "type": "Food"
+    },
+    "12432": {
+      "name": "碟装芦笋牛排晚宴",
+      "englishName": "Plate of Steak and Asparagus Dinner",
+      "type": "Food"
+    },
+    "12433": {
+      "name": "碗装干煸茄子",
+      "englishName": "Bowl of Eggplant Stirfry",
+      "type": "Food"
+    },
+    "12434": {
+      "name": "碗装芦笋鼠尾草沙拉",
+      "englishName": "Bowl of Asparagus and Sage Salad",
+      "type": "Food"
+    },
+    "12435": {
+      "name": "茄子煎饼",
+      "englishName": "Eggplant Fritter",
+      "type": "Food"
+    },
+    "12436": {
+      "name": "树莓蜜桃面包",
+      "englishName": "Loaf of Raspberry Peach Bread",
+      "type": "Food"
+    },
+    "12437": {
+      "name": "龙蒿面包",
+      "englishName": "Loaf of Tarragon Bread",
+      "type": "Food"
+    },
+    "12438": {
+      "name": "烤防风草",
+      "englishName": "Roasted Parsnip",
+      "type": "Food"
+    },
+    "12439": {
+      "name": "辛辣八宝蘑菇",
+      "englishName": "Spicy Stuffed Mushroom",
+      "type": "Food"
+    },
+    "12440": {
+      "name": "碗装芒果辣汁",
+      "englishName": "Bowl of Mango Salsa",
+      "type": "Food"
+    },
+    "12441": {
+      "name": "碗装爆炒茄子",
+      "englishName": "Bowl of Eggplant Sautee",
+      "type": "Food"
+    },
+    "12442": {
+      "name": "烤洋蓟",
+      "englishName": "Roasted Artichoke",
+      "type": "Food"
+    },
+    "12443": {
+      "name": "碗装鸟肉冬菜汤",
+      "englishName": "Bowl of Poultry and Winter Vegetable Soup",
+      "type": "Food"
+    },
+    "12444": {
+      "name": "碗装鸟肉大葱汤",
+      "englishName": "Bowl of Poultry and Leek Soup",
+      "type": "Food"
+    },
+    "12445": {
+      "name": "碗装雪地松露汤",
+      "englishName": "Bowl of Snow Truffle Soup",
+      "type": "Food"
+    },
+    "12446": {
+      "name": "碗装辛辣素菜辣酱汤",
+      "englishName": "Bowl of Spicy Veggie Chili",
+      "type": "Food"
+    },
+    "12447": {
+      "name": "碗装辛辣烧肉辣酱汤",
+      "englishName": "Bowl of Spicy Meat Chili",
+      "type": "Food"
+    },
+    "12448": {
+      "name": "碗装马铃薯大葱汤",
+      "englishName": "Bowl of Potato and Leek Soup",
+      "type": "Food"
+    },
+    "12449": {
+      "name": "碗装冬南瓜汤",
+      "englishName": "Bowl of Butternut Squash Soup",
+      "type": "Food"
+    },
+    "12450": {
+      "name": "碗装洋蓟汤",
+      "englishName": "Bowl of Artichoke Soup",
+      "type": "Food"
+    },
+    "12451": {
+      "name": "碗装鲜肉冬菜煲",
+      "englishName": "Bowl of Meat and Winter Vegetable Stew",
+      "type": "Food"
+    },
+    "12452": {
+      "name": "怪异莓棒",
+      "englishName": "Omnomberry Bar",
+      "type": "Food"
+    },
+    "12453": {
+      "name": "巧克力怪异莓奶油",
+      "englishName": "Chocolate Omnomberry Cream",
+      "type": "Food"
+    },
+    "12454": {
+      "name": "辛辣巧克力曲奇饼",
+      "englishName": "Spicy Chocolate Cookie",
+      "type": "Food"
+    },
+    "12455": {
+      "name": "怪异莓曲奇饼",
+      "englishName": "Omnomberry Cookie",
+      "type": "Food"
+    },
+    "12456": {
+      "name": "芒果馅饼",
+      "englishName": "Mango Pie",
+      "type": "Food"
+    },
+    "12457": {
+      "name": "怪异莓馅饼",
+      "englishName": "Omnomberry Pie",
+      "type": "Food"
+    },
+    "12458": {
+      "name": "怪异莓羹",
+      "englishName": "Omnomberry Compote",
+      "type": "Food"
+    },
+    "12459": {
+      "name": "怪异莓挞",
+      "englishName": "Omnomberry Tart",
+      "type": "Food"
+    },
+    "12460": {
+      "name": "巧克力怪异莓蛋糕",
+      "englishName": "Chocolate Omnomberry Cake",
+      "type": "Food"
+    },
+    "12461": {
+      "name": "碗装松露饺",
+      "englishName": "Bowl of Truffle Ravioli",
+      "type": "Food"
+    },
+    "12462": {
+      "name": "盘装柠檬草鸟肉",
+      "englishName": "Plate of Lemongrass Poultry",
+      "type": "Food"
+    },
+    "12463": {
+      "name": "豪华松露汉堡",
+      "englishName": "Fancy Truffle Burger",
+      "type": "Food"
+    },
+    "12464": {
+      "name": "稀有素菜披萨",
+      "englishName": "Rare Veggie Pizza",
+      "type": "Food"
+    },
+    "12465": {
+      "name": "碗装松露拌饭",
+      "englishName": "Bowl of Truffle Risotto",
+      "type": "Food"
+    },
+    "12466": {
+      "name": "碟装火焰牛腩排",
+      "englishName": "Plate of Fire Flank Steak",
+      "type": "Food"
+    },
+    "12467": {
+      "name": "碟装松露牛排",
+      "englishName": "Plate of Truffle Steak",
+      "type": "Food"
+    },
+    "12468": {
+      "name": "碟装欧尔煎肋排",
+      "englishName": "Plate of Orrian Steak Frittes",
+      "type": "Food"
+    },
+    "12469": {
+      "name": "碟装松露牛排晚宴",
+      "englishName": "Plate of Truffle Steak Dinner",
+      "type": "Food"
+    },
+    "12470": {
+      "name": "碗装干煸莲藕",
+      "englishName": "Bowl of Lotus Stirfry",
+      "type": "Food"
+    },
+    "12471": {
+      "name": "碗装海藻沙拉",
+      "englishName": "Bowl of Seaweed Salad",
+      "type": "Food"
+    },
+    "12472": {
+      "name": "杯装油炸莲藕",
+      "englishName": "Cup of Lotus Fries",
+      "type": "Food"
+    },
+    "12473": {
+      "name": "怪异莓面包",
+      "englishName": "Loaf of Omnomberry Bread",
+      "type": "Food"
+    },
+    "12474": {
+      "name": "藏红花面包",
+      "englishName": "Loaf of Saffron Bread",
+      "type": "Food"
+    },
+    "12475": {
+      "name": "碗装烤莲藕",
+      "englishName": "Bowl of Roasted Lotus Root",
+      "type": "Food"
+    },
+    "12476": {
+      "name": "藏红花八宝蘑菇",
+      "englishName": "Saffron Stuffed Mushroom",
+      "type": "Food"
+    },
+    "12477": {
+      "name": "碗装火辣汁",
+      "englishName": "Bowl of Fire Salsa",
+      "type": "Food"
+    },
+    "12478": {
+      "name": "碗装爆炒松露",
+      "englishName": "Bowl of Truffle Sautee",
+      "type": "Food"
+    },
+    "12479": {
+      "name": "断魂椒",
+      "englishName": "Ghost Pepper Popper",
+      "type": "Food"
+    },
+    "12480": {
+      "name": "碗装藏红花炙鸟肉汤",
+      "englishName": "Bowl of Saffron-scented Poultry Soup",
+      "type": "Food"
+    },
+    "12481": {
+      "name": "碗装柠檬草鸟肉汤",
+      "englishName": "Bowl of Lemongrass Poultry Soup",
+      "type": "Food"
+    },
+    "12482": {
+      "name": "碗装欧尔松露汤",
+      "englishName": "Bowl of Orrian Truffle Soup",
+      "type": "Food"
+    },
+    "12483": {
+      "name": "碗装火焰素菜辣酱汤",
+      "englishName": "Bowl of Fire Veggie Chili",
+      "type": "Food"
+    },
+    "12484": {
+      "name": "碗装火焰烧肉辣酱汤",
+      "englishName": "Bowl of Fire Meat Chili",
+      "type": "Food"
+    },
+    "12485": {
+      "name": "碗装豪华马铃薯大葱汤",
+      "englishName": "Bowl of Fancy Potato and Leek Soup",
+      "type": "Food"
+    },
+    "12486": {
+      "name": "碗装咖喱冬南瓜汤",
+      "englishName": "Bowl of Curry Butternut Squash Soup",
+      "type": "Food"
+    },
+    "12487": {
+      "name": "碗装咖喱南瓜汤",
+      "englishName": "Bowl of Curry Pumpkin Soup",
+      "type": "Food"
+    },
+    "12488": {
+      "name": "碗装欧尔松露鲜肉煲",
+      "englishName": "Bowl of Orrian Truffle and Meat Stew",
+      "type": "Food"
+    },
+    "12489": {
+      "name": "碗装香草肉排",
+      "englishName": "Bowl of Herbed Meat Stock",
+      "type": "Food"
+    },
+    "12490": {
+      "name": "碗装香草鸟肉汤",
+      "englishName": "Bowl of Herbed Poultry Stock",
+      "type": "Food"
+    },
+    "12491": {
+      "name": "碗装香草蔬菜汤",
+      "englishName": "Bowl of Herbed Vegetable Stock",
+      "type": "Food"
+    },
+    "12522": {
+      "name": "香橙蛋糕",
+      "englishName": "Orange Cake",
+      "type": "Food"
+    },
+    "12548": {
+      "name": "碗装简易炒菜",
+      "englishName": "Bowl of Simple Stirfry",
+      "type": "Food"
+    },
+    "12549": {
+      "name": "红辣椒汁",
+      "englishName": "Chili Pepper Popper",
+      "type": "Food"
+    },
+    "12551": {
+      "name": "盘装巧克力香蕉",
+      "englishName": "Tray of Chocolate Bananas",
+      "type": "Food"
+    },
+    "12552": {
+      "name": "盘装草莓曲奇饼",
+      "englishName": "Tray of Strawberry Cookies",
+      "type": "Food"
+    },
+    "12553": {
+      "name": "盘装草莓苹果羹",
+      "englishName": "Tray of Strawberry Apple Compote",
+      "type": "Food"
+    },
+    "12554": {
+      "name": "盘装草莓挞",
+      "englishName": "Tray of Strawberry Tarts",
+      "type": "Food"
+    },
+    "12555": {
+      "name": "盘装香蕉奶油馅饼",
+      "englishName": "Tray of Banana Cream Pies",
+      "type": "Food"
+    },
+    "12556": {
+      "name": "巨型巧克力蛋糕",
+      "englishName": "Giant Chocolate Cake",
+      "type": "Food"
+    },
+    "12557": {
+      "name": "盘装草莓馅饼",
+      "englishName": "Tray of Strawberry Pies",
+      "type": "Food"
+    },
+    "12558": {
+      "name": "盘装樱桃曲奇饼",
+      "englishName": "Tray of Cherry Cookies",
+      "type": "Food"
+    },
+    "12559": {
+      "name": "盘装樱桃香草羹",
+      "englishName": "Tray of Cherry Vanilla Compote",
+      "type": "Food"
+    },
+    "12560": {
+      "name": "盘装巧克力樱桃",
+      "englishName": "Tray of Chocolate Cherries",
+      "type": "Food"
+    },
+    "12561": {
+      "name": "盘装碎巧克力曲奇饼",
+      "englishName": "Tray of Chocolate Chip Cookies",
+      "type": "Food"
+    },
+    "12562": {
+      "name": "盘装樱桃杏仁条",
+      "englishName": "Tray of Cherry Almond Bars",
+      "type": "Food"
+    },
+    "12563": {
+      "name": "盘装樱桃挞",
+      "englishName": "Tray of Cherry Tarts",
+      "type": "Food"
+    },
+    "12564": {
+      "name": "盘装樱桃馅饼",
+      "englishName": "Tray of Cherry Pies",
+      "type": "Food"
+    },
+    "12565": {
+      "name": "巨型巧克力樱桃蛋糕",
+      "englishName": "Giant Chocolate Cherry Cake",
+      "type": "Food"
+    },
+    "12566": {
+      "name": "盘装葡萄馅饼",
+      "englishName": "Tray of Grape Pies",
+      "type": "Food"
+    },
+    "12567": {
+      "name": "盘装黑莓曲奇饼",
+      "englishName": "Tray of Blackberry Cookies",
+      "type": "Food"
+    },
+    "12568": {
+      "name": "盘装巧克力薄荷曲奇饼",
+      "englishName": "Tray of Chocolate Mint Cookies",
+      "type": "Food"
+    },
+    "12569": {
+      "name": "盘装巧克力香橙",
+      "englishName": "Tray of Chocolate Oranges",
+      "type": "Food"
+    },
+    "12570": {
+      "name": "盘装黑莓雪梨羹",
+      "englishName": "Tray of Blackberry Pear Compote",
+      "type": "Food"
+    },
+    "12571": {
+      "name": "盘装姜汁雪梨挞",
+      "englishName": "Tray of Ginger Pear Tarts",
+      "type": "Food"
+    },
+    "12572": {
+      "name": "盘装香橙椰子条",
+      "englishName": "Tray of Orange Coconut Bars",
+      "type": "Food"
+    },
+    "12573": {
+      "name": "盘装黑莓馅饼",
+      "englishName": "Tray of Blackberry Pies",
+      "type": "Food"
+    },
+    "12574": {
+      "name": "巨型香橙椰子蛋糕",
+      "englishName": "Giant Orange Coconut Cake",
+      "type": "Food"
+    },
+    "12575": {
+      "name": "盘装南瓜馅饼",
+      "englishName": "Tray of Pumpkin Pies",
+      "type": "Food"
+    },
+    "12576": {
+      "name": "盘装巧克力树莓曲奇饼",
+      "englishName": "Tray of Chocolate Raspberry Cookies",
+      "type": "Food"
+    },
+    "12577": {
+      "name": "盘装蜜桃曲奇饼",
+      "englishName": "Tray of Peach Cookies",
+      "type": "Food"
+    },
+    "12578": {
+      "name": "盘装巧克力树莓奶油",
+      "englishName": "Tray of Chocolate Raspberry Creams",
+      "type": "Food"
+    },
+    "12579": {
+      "name": "盘装树莓蜜桃羹",
+      "englishName": "Tray of Raspberry Peach Compote",
+      "type": "Food"
+    },
+    "12580": {
+      "name": "盘装蜜桃挞",
+      "englishName": "Tray of Peach Tarts",
+      "type": "Food"
+    },
+    "12581": {
+      "name": "盘装树莓蜜桃棒",
+      "englishName": "Tray of Raspberry Peach Bars",
+      "type": "Food"
+    },
+    "12582": {
+      "name": "巨型巧克力树莓蛋糕",
+      "englishName": "Giant Chocolate Raspberry Cake",
+      "type": "Food"
+    },
+    "12583": {
+      "name": "盘装树莓馅饼",
+      "englishName": "Tray of Mixed Berry Pies",
+      "type": "Food"
+    },
+    "12584": {
+      "name": "盘装蜜桃馅饼",
+      "englishName": "Tray of Peach Pies",
+      "type": "Food"
+    },
+    "12585": {
+      "name": "巨型巧克力怪异莓蛋糕",
+      "englishName": "Giant Chocolate Omnomberry Cake",
+      "type": "Food"
+    },
+    "12586": {
+      "name": "盘装巧克力怪异莓奶油",
+      "englishName": "Tray of Chocolate Omnomberry Creams",
+      "type": "Food"
+    },
+    "12587": {
+      "name": "盘装芒果馅饼",
+      "englishName": "Tray of Mango Pies",
+      "type": "Food"
+    },
+    "12588": {
+      "name": "盘装怪异莓棒",
+      "englishName": "Tray of Omnomberry Bars",
+      "type": "Food"
+    },
+    "12589": {
+      "name": "盘装怪异莓羹",
+      "englishName": "Tray of Omnomberry Compote",
+      "type": "Food"
+    },
+    "12590": {
+      "name": "盘装怪异莓曲奇饼",
+      "englishName": "Tray of Omnomberry Cookies",
+      "type": "Food"
+    },
+    "12591": {
+      "name": "盘装怪异莓馅饼",
+      "englishName": "Tray of Omnomberry Pies",
+      "type": "Food"
+    },
+    "12592": {
+      "name": "盘装怪异莓挞",
+      "englishName": "Tray of Omnomberry Tarts",
+      "type": "Food"
+    },
+    "12593": {
+      "name": "盘装辛辣巧克力曲奇饼",
+      "englishName": "Tray of Spicy Chocolate Cookies",
+      "type": "Food"
+    },
+    "12594": {
+      "name": "黑椒牛排大餐",
+      "englishName": "Feast of Pepper Steaks",
+      "type": "Food"
+    },
+    "12595": {
+      "name": "菠菜汉堡大餐",
+      "englishName": "Feast of Spinach Burgers",
+      "type": "Food"
+    },
+    "12596": {
+      "name": "八宝辣椒大餐",
+      "englishName": "Feast of Stuffed Peppers",
+      "type": "Food"
+    },
+    "12597": {
+      "name": "素菜汉堡大餐",
+      "englishName": "Feast of Veggie Burgers",
+      "type": "Food"
+    },
+    "12598": {
+      "name": "肉丸晚宴大餐",
+      "englishName": "Feast of Meatball Dinners",
+      "type": "Food"
+    },
+    "12599": {
+      "name": "黑椒牛排晚宴大餐",
+      "englishName": "Feast of Pepper Steak Dinners",
+      "type": "Food"
+    },
+    "12600": {
+      "name": "鼠尾草八宝鸟肉大餐",
+      "englishName": "Feast of Sage-Stuffed Poultry",
+      "type": "Food"
+    },
+    "12601": {
+      "name": "大头菜砂锅大餐",
+      "englishName": "Feast of Turnip Casseroles",
+      "type": "Food"
+    },
+    "12602": {
+      "name": "素菜披萨大餐",
+      "englishName": "Feast of Veggie Pizzas",
+      "type": "Food"
+    },
+    "12603": {
+      "name": "八宝西葫芦大餐",
+      "englishName": "Feast of Stuffed Zucchinis",
+      "type": "Food"
+    },
+    "12604": {
+      "name": "蘑菇披萨大餐",
+      "englishName": "Feast of Mushroom Pizzas",
+      "type": "Food"
+    },
+    "12605": {
+      "name": "迷迭香烤肉大餐",
+      "englishName": "Feast of Rosemary-Roasted Meat",
+      "type": "Food"
+    },
+    "12606": {
+      "name": "辛辣青柠肋排大餐",
+      "englishName": "Feast of Spicy Lime Steaks",
+      "type": "Food"
+    },
+    "12607": {
+      "name": "干煸卷心菜大餐",
+      "englishName": "Feast of Cabbage Stirfry",
+      "type": "Food"
+    },
+    "12608": {
+      "name": "至尊汉堡大餐",
+      "englishName": "Feast of Deluxe Burgers",
+      "type": "Food"
+    },
+    "12609": {
+      "name": "莳萝肉丸晚宴大餐",
+      "englishName": "Feast of Dill Meatball Dinners",
+      "type": "Food"
+    },
+    "12610": {
+      "name": "莳萝鸟肉肉片大餐",
+      "englishName": "Feast of Dilled Poultry Piccata",
+      "type": "Food"
+    },
+    "12611": {
+      "name": "芝麻烧烤晚宴大餐",
+      "englishName": "Feast of Sesame-Roasted Dinners",
+      "type": "Food"
+    },
+    "12612": {
+      "name": "芝麻烤肉大餐",
+      "englishName": "Feast of Sesame-Roasted Meat",
+      "type": "Food"
+    },
+    "12613": {
+      "name": "干煸鳄梨大餐",
+      "englishName": "Feast of Avocado Stirfry",
+      "type": "Food"
+    },
+    "12614": {
+      "name": "柑橘丁香肉大餐",
+      "englishName": "Feast of Citrus Clove Meat",
+      "type": "Food"
+    },
+    "12615": {
+      "name": "香菜炒肉大餐",
+      "englishName": "Feast of Coriander Crusted Meat",
+      "type": "Food"
+    },
+    "12616": {
+      "name": "豪华素菜披萨大餐",
+      "englishName": "Feast of Fancy Veggie Pizzas",
+      "type": "Food"
+    },
+    "12617": {
+      "name": "柑橘鸟肉杏仁大餐",
+      "englishName": "Feast of Citrus Poultry with Almonds",
+      "type": "Food"
+    },
+    "12618": {
+      "name": "香菜炒肉晚宴大餐",
+      "englishName": "Feast of Coriander Crusted Meat Dinner",
+      "type": "Food"
+    },
+    "12619": {
+      "name": "山葵汉堡大餐",
+      "englishName": "Feast of Horseradish Burgers",
+      "type": "Food"
+    },
+    "12620": {
+      "name": "壶装蘑菇拌饭",
+      "englishName": "Pot of Mushroom Risotto",
+      "type": "Food"
+    },
+    "12621": {
+      "name": "沙司意粉沙拉大餐",
+      "englishName": "Feast of Pesto Pasta Salad",
+      "type": "Food"
+    },
+    "12622": {
+      "name": "烤肉拌薄荷汁大餐",
+      "englishName": "Feast of Roast Meat with Mint Sauce",
+      "type": "Food"
+    },
+    "12623": {
+      "name": "干煸茄子大餐",
+      "englishName": "Feast of Eggplant Stirfry",
+      "type": "Food"
+    },
+    "12624": {
+      "name": "芦笋牛排大餐",
+      "englishName": "Feast of Steak and Asparagus",
+      "type": "Food"
+    },
+    "12625": {
+      "name": "火辣牛腩排大餐",
+      "englishName": "Feast of Spicier Flank Steaks",
+      "type": "Food"
+    },
+    "12626": {
+      "name": "辛辣芝士汉堡大餐",
+      "englishName": "Feast of Spicy Cheeseburgers",
+      "type": "Food"
+    },
+    "12627": {
+      "name": "超级素菜披萨大餐",
+      "englishName": "Feast of Super Veggie Pizzas",
+      "type": "Food"
+    },
+    "12628": {
+      "name": "龙蒿叶八宝鸟肉大餐",
+      "englishName": "Feast of Tarragon Stuffed Poultry",
+      "type": "Food"
+    },
+    "12629": {
+      "name": "壶装蘑菇芦笋拌饭",
+      "englishName": "Pot of Mushroom and Asparagus Risotto",
+      "type": "Food"
+    },
+    "12630": {
+      "name": "鸟肉龙蒿叶意粉大餐",
+      "englishName": "Feast of Poultry Tarragon Pasta",
+      "type": "Food"
+    },
+    "12631": {
+      "name": "大葱炖烤肉大餐",
+      "englishName": "Feast of Roast Meat with Braised Leeks",
+      "type": "Food"
+    },
+    "12632": {
+      "name": "芦笋牛排晚宴大餐",
+      "englishName": "Feast of Steak and Asparagus Dinner",
+      "type": "Food"
+    },
+    "12633": {
+      "name": "豪华松露汉堡大餐",
+      "englishName": "Feast of Fancy Truffle Burgers",
+      "type": "Food"
+    },
+    "12634": {
+      "name": "火焰牛腩排大餐",
+      "englishName": "Feast of Fire Flank Steak",
+      "type": "Food"
+    },
+    "12635": {
+      "name": "柠檬草鸟肉大餐",
+      "englishName": "Feast of Lemongrass Poultry",
+      "type": "Food"
+    },
+    "12636": {
+      "name": "干煸莲藕大餐",
+      "englishName": "Feast of Lotus Stirfry",
+      "type": "Food"
+    },
+    "12637": {
+      "name": "欧尔煎肋排大餐",
+      "englishName": "Feast of Orrian Steak Frittes",
+      "type": "Food"
+    },
+    "12638": {
+      "name": "稀有素菜披萨大餐",
+      "englishName": "Feast of Rare Veggie Pizzas",
+      "type": "Food"
+    },
+    "12639": {
+      "name": "松露饺子大餐",
+      "englishName": "Feast of Truffle Ravioli",
+      "type": "Food"
+    },
+    "12640": {
+      "name": "壶装松露拌饭",
+      "englishName": "Pot of Truffle Risotto",
+      "type": "Food"
+    },
+    "12641": {
+      "name": "松露牛排晚宴大餐",
+      "englishName": "Feast of Truffle Steak Dinner",
+      "type": "Food"
+    },
+    "12642": {
+      "name": "松露牛排大餐",
+      "englishName": "Feast of Truffle Steak",
+      "type": "Food"
+    },
+    "12643": {
+      "name": "盘装香蕉面包",
+      "englishName": "Tray of Banana Bread",
+      "type": "Food"
+    },
+    "12644": {
+      "name": "豆沙拉大餐",
+      "englishName": "Feast of Bean Salad",
+      "type": "Food"
+    },
+    "12645": {
+      "name": "盘装蒜蓉面包",
+      "englishName": "Tray of Garlic Bread",
+      "type": "Food"
+    },
+    "12646": {
+      "name": "爆炒蒜蓉菠菜大餐",
+      "englishName": "Feast of Garlic Spinach Sautee",
+      "type": "Food"
+    },
+    "12647": {
+      "name": "鼠尾草八宝蘑菇大餐",
+      "englishName": "Feast of Sage-Stuffed Mushrooms",
+      "type": "Food"
+    },
+    "12648": {
+      "name": "阿斯卡隆沙拉大餐",
+      "englishName": "Feast of Ascalonian Salad",
+      "type": "Food"
+    },
+    "12649": {
+      "name": "蛤蚌蛋糕大餐",
+      "englishName": "Feast of Clam Cakes",
+      "type": "Food"
+    },
+    "12650": {
+      "name": "盘装柠檬条",
+      "englishName": "Tray of Lemon Bars",
+      "type": "Food"
+    },
+    "12651": {
+      "name": "铁板洋菇大餐",
+      "englishName": "Feast of Grilled Portobello Mushrooms",
+      "type": "Food"
+    },
+    "12652": {
+      "name": "盘装迷迭香面包",
+      "englishName": "Tray of Rosemary Bread",
+      "type": "Food"
+    },
+    "12653": {
+      "name": "番薯煎饼大餐",
+      "englishName": "Feast of Yam Fritters",
+      "type": "Food"
+    },
+    "12654": {
+      "name": "盘装西葫芦面包",
+      "englishName": "Tray of Zucchini Bread",
+      "type": "Food"
+    },
+    "12655": {
+      "name": "凉拌卷心菜大餐",
+      "englishName": "Feast of Coleslaw",
+      "type": "Food"
+    },
+    "12656": {
+      "name": "神佑八宝蘑菇大餐",
+      "englishName": "Feast of Divinity Stuffed Mushrooms",
+      "type": "Food"
+    },
+    "12658": {
+      "name": "香辣番薯泥大餐",
+      "englishName": "Feast of Spiced Mashed Yams",
+      "type": "Food"
+    },
+    "12659": {
+      "name": "鳄梨辣汁大餐",
+      "englishName": "Feast of Avocado Salsa",
+      "type": "Food"
+    },
+    "12660": {
+      "name": "鹰嘴豆沙拉大餐",
+      "englishName": "Feast of Chickpea Salad",
+      "type": "Food"
+    },
+    "12661": {
+      "name": "盘装南瓜面包",
+      "englishName": "Tray of Pumpkin Bread",
+      "type": "Food"
+    },
+    "12662": {
+      "name": "烤芜菁甘蓝大餐",
+      "englishName": "Feast of Roasted Rutabagas",
+      "type": "Food"
+    },
+    "12663": {
+      "name": "盘装香辣面包",
+      "englishName": "Tray of Spiced Bread",
+      "type": "Food"
+    },
+    "12664": {
+      "name": "卷心菜与鹰嘴豆沙拉大餐",
+      "englishName": "Feast of Cabbage and Chickpea Salad",
+      "type": "Food"
+    },
+    "12665": {
+      "name": "爆炒花椰菜大餐",
+      "englishName": "Feast of Cauliflower Sautee",
+      "type": "Food"
+    },
+    "12666": {
+      "name": "鹰嘴豆油煎饼大餐",
+      "englishName": "Feast of Chickpea Fritters",
+      "type": "Food"
+    },
+    "12667": {
+      "name": "鹰嘴豆泥大餐",
+      "englishName": "Feast of Hummus",
+      "type": "Food"
+    },
+    "12668": {
+      "name": "鲜血托八宝蘑菇大餐",
+      "englishName": "Feast of Eztlitl Stuffed Mushrooms",
+      "type": "Food"
+    },
+    "12669": {
+      "name": "茄子煎饼大餐",
+      "englishName": "Feast of Eggplant Fritters",
+      "type": "Food"
+    },
+    "12670": {
+      "name": "烤防风草大餐",
+      "englishName": "Feast of Roasted Parsnips",
+      "type": "Food"
+    },
+    "12671": {
+      "name": "盘装龙蒿叶面包",
+      "englishName": "Tray of Tarragon Bread",
+      "type": "Food"
+    },
+    "12672": {
+      "name": "盘装树莓蜜桃面包",
+      "englishName": "Tray of Raspberry Peach Bread",
+      "type": "Food"
+    },
+    "12673": {
+      "name": "烤洋蓟大餐",
+      "englishName": "Feast of Roasted Artichokes",
+      "type": "Food"
+    },
+    "12674": {
+      "name": "辛辣八宝蘑菇大餐",
+      "englishName": "Feast of Spicy Stuffed Mushrooms",
+      "type": "Food"
+    },
+    "12675": {
+      "name": "爆炒茄子大餐",
+      "englishName": "Feast of Eggplant Sautee",
+      "type": "Food"
+    },
+    "12676": {
+      "name": "芒果辣汁大餐",
+      "englishName": "Feast of Mango Salsa",
+      "type": "Food"
+    },
+    "12677": {
+      "name": "芦笋鼠尾草沙拉大餐",
+      "englishName": "Feast of Asparagus and Sage Salad",
+      "type": "Food"
+    },
+    "12678": {
+      "name": "火焰辣汁大餐",
+      "englishName": "Feast of Fire Salsa",
+      "type": "Food"
+    },
+    "12679": {
+      "name": "断魂椒大餐",
+      "englishName": "Feast of Ghost Pepper Poppers",
+      "type": "Food"
+    },
+    "12680": {
+      "name": "炒莲藕大餐",
+      "englishName": "Feast of Lotus Fries",
+      "type": "Food"
+    },
+    "12681": {
+      "name": "盘装怪异莓面包",
+      "englishName": "Tray of Omnomberry Bread",
+      "type": "Food"
+    },
+    "12682": {
+      "name": "烤莲藕大餐",
+      "englishName": "Feast of Roasted Lotus Root",
+      "type": "Food"
+    },
+    "12683": {
+      "name": "盘装藏红花面包",
+      "englishName": "Tray of Saffron Bread",
+      "type": "Food"
+    },
+    "12684": {
+      "name": "藏红花八宝蘑菇大餐",
+      "englishName": "Feast of Saffron Stuffed Mushrooms",
+      "type": "Food"
+    },
+    "12685": {
+      "name": "海藻沙拉大餐",
+      "englishName": "Feast of Seaweed Salad",
+      "type": "Food"
+    },
+    "12686": {
+      "name": "爆炒松露大餐",
+      "englishName": "Feast of Truffle Sautee",
+      "type": "Food"
+    },
+    "12687": {
+      "name": "壶装豪华双豆辣酱汤",
+      "englishName": "Pot of Fancy Bean Chili",
+      "type": "Food"
+    },
+    "12688": {
+      "name": "壶装红肉腰豆辣酱汤",
+      "englishName": "Pot of Meat and Bean Chili",
+      "type": "Food"
+    },
+    "12689": {
+      "name": "壶装甜菜炖豆煲",
+      "englishName": "Pot of Beet and Bean Stew",
+      "type": "Food"
+    },
+    "12690": {
+      "name": "壶装蛤蚌浓汤",
+      "englishName": "Pot of Clam Chowder",
+      "type": "Food"
+    },
+    "12691": {
+      "name": "壶装浓厚红肉煲",
+      "englishName": "Pot of Hearty Red Meat Stew",
+      "type": "Food"
+    },
+    "12692": {
+      "name": "壶装香薄荷菠菜鸟肉汤",
+      "englishName": "Pot of Savory Spinach and Poultry Soup",
+      "type": "Food"
+    },
+    "12693": {
+      "name": "壶装甘蓝汤",
+      "englishName": "Pot of Kale Soup",
+      "type": "Food"
+    },
+    "12694": {
+      "name": "壶装奶油洋菇汤",
+      "englishName": "Pot of Creamy Portobello Soup",
+      "type": "Food"
+    },
+    "12695": {
+      "name": "壶装番薯汤",
+      "englishName": "Pot of Yam Soup",
+      "type": "Food"
+    },
+    "12696": {
+      "name": "壶装西葫芦辣酱汤",
+      "englishName": "Pot of Zucchini Chili",
+      "type": "Food"
+    },
+    "12697": {
+      "name": "壶装辣椒鳄梨汤",
+      "englishName": "Pot of Chili and Avocado",
+      "type": "Food"
+    },
+    "12698": {
+      "name": "壶装莳萝蛤蚌浓汤",
+      "englishName": "Pot of Dilled Clam Chowder",
+      "type": "Food"
+    },
+    "12699": {
+      "name": "壶装甘蓝鸟肉汤",
+      "englishName": "Pot of Kale and Poultry Soup",
+      "type": "Food"
+    },
+    "12700": {
+      "name": "壶装卷心菜炖肉煲",
+      "englishName": "Pot of Meat and Cabbage Stew",
+      "type": "Food"
+    },
+    "12701": {
+      "name": "壶装番茄西葫芦汤",
+      "englishName": "Pot of Tomato Zucchini Soup",
+      "type": "Food"
+    },
+    "12702": {
+      "name": "壶装鹰嘴豆汤",
+      "englishName": "Pot of Chickpea Soup",
+      "type": "Food"
+    },
+    "12703": {
+      "name": "壶装浓厚鸟肉汤",
+      "englishName": "Pot of Hearty Poultry Soup",
+      "type": "Food"
+    },
+    "12704": {
+      "name": "壶装香辣烧肉辣酱汤",
+      "englishName": "Pot of Spiced Meat Chili",
+      "type": "Food"
+    },
+    "12705": {
+      "name": "壶装香辣素菜辣酱汤",
+      "englishName": "Pot of Spiced Veggie Chili",
+      "type": "Food"
+    },
+    "12706": {
+      "name": "壶装花椰菜汤",
+      "englishName": "Pot of Cauliflower Soup",
+      "type": "Food"
+    },
+    "12707": {
+      "name": "壶装鹰嘴豆鸟肉汤",
+      "englishName": "Pot of Chickpea and Poultry Soup",
+      "type": "Food"
+    },
+    "12708": {
+      "name": "壶装豪华奶油蘑菇汤",
+      "englishName": "Pot of Fancy Creamy Mushroom Soup",
+      "type": "Food"
+    },
+    "12709": {
+      "name": "壶装南瓜浓汤",
+      "englishName": "Pot of Pumpkin Bisque",
+      "type": "Food"
+    },
+    "12710": {
+      "name": "壶装香辣卷心菜炖肉煲",
+      "englishName": "Pot of Spiced Meat and Cabbage Stew",
+      "type": "Food"
+    },
+    "12711": {
+      "name": "壶装马铃薯大葱汤",
+      "englishName": "Pot of Potato and Leek Soup",
+      "type": "Food"
+    },
+    "12712": {
+      "name": "壶装鸟肉大葱汤",
+      "englishName": "Pot of Poultry and Leek Soup",
+      "type": "Food"
+    },
+    "12713": {
+      "name": "壶装冬南瓜汤",
+      "englishName": "Pot of Butternut Squash Soup",
+      "type": "Food"
+    },
+    "12714": {
+      "name": "壶装辛辣烧肉辣酱汤",
+      "englishName": "Pot of Spicy Meat Chili",
+      "type": "Food"
+    },
+    "12715": {
+      "name": "壶装辛辣素菜辣酱汤",
+      "englishName": "Pot of Spicy Veggie Chili",
+      "type": "Food"
+    },
+    "12716": {
+      "name": "壶装洋蓟汤",
+      "englishName": "Pot of Artichoke Soup",
+      "type": "Food"
+    },
+    "12717": {
+      "name": "壶装鲜肉冬菜煲",
+      "englishName": "Pot of Meat and Winter Vegetable Stew",
+      "type": "Food"
+    },
+    "12718": {
+      "name": "壶装鸟肉冬菜汤",
+      "englishName": "Pot of Poultry and Winter Vegetable Soup",
+      "type": "Food"
+    },
+    "12719": {
+      "name": "壶装雪地松露汤",
+      "englishName": "Pot of Snow Truffle Soup",
+      "type": "Food"
+    },
+    "12720": {
+      "name": "壶装咖喱冬南瓜汤",
+      "englishName": "Pot of Curry Butternut Squash Soup",
+      "type": "Food"
+    },
+    "12721": {
+      "name": "壶装咖喱南瓜汤",
+      "englishName": "Pot of Curry Pumpkin Soup",
+      "type": "Food"
+    },
+    "12722": {
+      "name": "壶装豪华马铃薯大葱汤",
+      "englishName": "Pot of Fancy Potato and Leek Soup",
+      "type": "Food"
+    },
+    "12723": {
+      "name": "壶装火焰烧肉辣酱汤",
+      "englishName": "Pot of Fire Meat Chili",
+      "type": "Food"
+    },
+    "12724": {
+      "name": "壶装火焰素菜辣酱汤",
+      "englishName": "Pot of Fire Veggie Chili",
+      "type": "Food"
+    },
+    "12725": {
+      "name": "壶装柠檬草鸟肉汤",
+      "englishName": "Pot of Lemongrass Poultry Soup",
+      "type": "Food"
+    },
+    "12726": {
+      "name": "壶装欧尔松露鲜肉煲",
+      "englishName": "Pot of Orrian Truffle and Meat Stew",
+      "type": "Food"
+    },
+    "12727": {
+      "name": "壶装欧尔松露汤",
+      "englishName": "Pot of Orrian Truffle Soup",
+      "type": "Food"
+    },
+    "12728": {
+      "name": "壶装藏红花炙鸟肉汤",
+      "englishName": "Pot of Saffron-scented Poultry Soup",
+      "type": "Food"
+    },
+    "12729": {
+      "name": "碗装基础蔬菜汤",
+      "englishName": "Bowl of Basic Vegetable Soup",
+      "type": "Food"
+    },
+    "12730": {
+      "name": "碗装洋葱汤",
+      "englishName": "Bowl of Onion Soup",
+      "type": "Food"
+    },
+    "12731": {
+      "name": "碗装基础鸟肉汤",
+      "englishName": "Bowl of Basic Poultry Soup",
+      "type": "Food"
+    },
+    "12732": {
+      "name": "碗装刀豆煲",
+      "englishName": "Bowl of Green Bean Stew",
+      "type": "Food"
+    },
+    "12733": {
+      "name": "肉桂吐司片",
+      "englishName": "Slice of Cinnamon Toast",
+      "type": "Food"
+    },
+    "12734": {
+      "name": "肉桂转轮",
+      "englishName": "Cinnamon Pinwheel",
+      "type": "Food"
+    },
+    "12735": {
+      "name": "碗装爆炒胡萝卜",
+      "englishName": "Bowl of Sauteed Carrots",
+      "type": "Food"
+    },
+    "12736": {
+      "name": "洋葱圈",
+      "englishName": "Onion Ring",
+      "type": "Food"
+    },
+    "12737": {
+      "name": "铁板牛排",
+      "englishName": "Grilled Steak",
+      "type": "Food"
+    },
+    "12738": {
+      "name": "柠檬挞",
+      "englishName": "Lemon Tart",
+      "type": "Food"
+    },
+    "12739": {
+      "name": "提齐提奇蛋卷",
+      "englishName": "Triktiki Omelet",
+      "type": "Food"
+    },
+    "19422": {
+      "name": "一捆毒浆果",
+      "englishName": "Cluster of Baneberries",
+      "type": "Utility"
+    },
+    "21268": {
+      "name": "荣誉增幅剂",
+      "englishName": "Glory Booster",
+      "type": "Utility"
+    },
+    "36073": {
+      "name": "苹果蜜饯",
+      "englishName": "Candied Apple",
+      "type": "Food"
+    },
+    "36074": {
+      "name": "碗装玉米糖奶冻",
+      "englishName": "Bowl of Candy Corn Custard",
+      "type": "Food"
+    },
+    "36075": {
+      "name": "玉米糖蛋糕",
+      "englishName": "Candy Corn Cake",
+      "type": "Food"
+    },
+    "36076": {
+      "name": "草莓幽灵",
+      "englishName": "Strawberry Ghost",
+      "type": "Food"
+    },
+    "36077": {
+      "name": "玉米糖杏仁酥块",
+      "englishName": "Piece of Candy Corn Almond Brittle",
+      "type": "Food"
+    },
+    "36078": {
+      "name": "玉米糖曲奇饼",
+      "englishName": "Candy Corn Cookie",
+      "type": "Food"
+    },
+    "36079": {
+      "name": "糖衣南瓜馅饼",
+      "englishName": "Glazed Pumpkin Pie",
+      "type": "Food"
+    },
+    "36080": {
+      "name": "糖衣雪梨挞",
+      "englishName": "Glazed Pear Tart",
+      "type": "Food"
+    },
+    "36081": {
+      "name": "糖衣蜜桃挞",
+      "englishName": "Glazed Peach Tart",
+      "type": "Food"
+    },
+    "36082": {
+      "name": "糖衣巧克力树莓曲奇饼",
+      "englishName": "Glazed Chocolate Raspberry Cookie",
+      "type": "Food"
+    },
+    "36083": {
+      "name": "怪异莓幽灵",
+      "englishName": "Omnomberry Ghost",
+      "type": "Food"
+    },
+    "36084": {
+      "name": "辛辣南瓜曲奇饼",
+      "englishName": "Spicy Pumpkin Cookie",
+      "type": "Food"
+    },
+    "36091": {
+      "name": "弱效万圣节屠戮药剂",
+      "englishName": "Weak Potion of Halloween Slaying",
+      "type": "Utility"
+    },
+    "36092": {
+      "name": "巨型万圣节屠戮药剂",
+      "englishName": "Powerful Potion of Halloween Slaying",
+      "type": "Utility"
+    },
+    "36093": {
+      "name": "中型万圣节屠戮药剂",
+      "englishName": "Strong Potion of Halloween Slaying",
+      "type": "Utility"
+    },
+    "36094": {
+      "name": "大型万圣节屠戮药剂",
+      "englishName": "Potent Potion of Halloween Slaying",
+      "type": "Utility"
+    },
+    "36095": {
+      "name": "小型万圣节屠戮药剂",
+      "englishName": "Minor Potion of Halloween Slaying",
+      "type": "Utility"
+    },
+    "36096": {
+      "name": "万圣节屠戮药剂",
+      "englishName": "Potion of Halloween Slaying",
+      "type": "Utility"
+    },
+    "36447": {
+      "name": "三倍幸运合剂",
+      "englishName": "Triple-Luck Tonic",
+      "type": "Utility"
+    },
+    "36724": {
+      "name": "喀壳虫蛋卷",
+      "englishName": "Karka Egg Omelet",
+      "type": "Food"
+    },
+    "36740": {
+      "name": "西番莲果蛋奶酥",
+      "englishName": "Passion Fruit Soufflé",
+      "type": "Food"
+    },
+    "36753": {
+      "name": "西番莲果棒",
+      "englishName": "Passion Fruit Bar",
+      "type": "Food"
+    },
+    "36767": {
+      "name": "碗装财团沙拉",
+      "englishName": "Bowl of Salad a la Consortium",
+      "type": "Food"
+    },
+    "36777": {
+      "name": "香橙西番莲果挞",
+      "englishName": "Orange Passion Fruit Tart",
+      "type": "Food"
+    },
+    "36782": {
+      "name": "树莓西番莲果羹",
+      "englishName": "Raspberry Passion Fruit Compote",
+      "type": "Food"
+    },
+    "36793": {
+      "name": "碗装热带水果沙拉",
+      "englishName": "Bowl of Tropical Fruit Salad",
+      "type": "Food"
+    },
+    "36803": {
+      "name": "苹果西番莲果馅饼",
+      "englishName": "Apple Passion Fruit Pie",
+      "type": "Food"
+    },
+    "36817": {
+      "name": "碗装铁板香蕉拌西番莲果酱",
+      "englishName": "Bowl of Grilled Bananas with Passion Fruit Sauce",
+      "type": "Food"
+    },
+    "36821": {
+      "name": "樱桃西番莲果蛋糕",
+      "englishName": "Cherry Passion Fruit Cake",
+      "type": "Food"
+    },
+    "36828": {
+      "name": "西番莲果椰子曲奇饼",
+      "englishName": "Passion Fruit Coconut Cookie",
+      "type": "Food"
+    },
+    "36835": {
+      "name": "热带风味八宝洋蓟",
+      "englishName": "Stuffed Artichoke with Tropical Dressing",
+      "type": "Food"
+    },
+    "36841": {
+      "name": "碗装热带慕斯",
+      "englishName": "Bowl of Tropical Mousse",
+      "type": "Food"
+    },
+    "38210": {
+      "name": "碗装藏红花芒果冰淇淋",
+      "englishName": "Bowl of Saffron-Mango Ice Cream",
+      "type": "Food"
+    },
+    "38211": {
+      "name": "碗装搅拌树莓蜜桃冰淇淋",
+      "englishName": "Bowl of Peach Raspberry Swirl Ice Cream",
+      "type": "Food"
+    },
+    "38212": {
+      "name": "碗装薄荷巧克力碎片冰淇淋",
+      "englishName": "Bowl of Mint Chocolate Chip Ice Cream",
+      "type": "Food"
+    },
+    "38213": {
+      "name": "碗装青柠姜冰淇淋",
+      "englishName": "Bowl of Ginger-Lime Ice Cream",
+      "type": "Food"
+    },
+    "38214": {
+      "name": "碗装蓝莓巧克力大块冰淇淋",
+      "englishName": "Bowl of Blueberry Chocolate Chunk Ice Cream",
+      "type": "Food"
+    },
+    "38215": {
+      "name": "碗装巧克力碎片冰淇淋",
+      "englishName": "Bowl of Chocolate Chip Ice Cream",
+      "type": "Food"
+    },
+    "38308": {
+      "name": "碗装玉米糖冰淇淋",
+      "englishName": "Bowl of Candy Corn Ice Cream",
+      "type": "Food"
+    },
+    "41561": {
+      "name": "胡萝卜蛋奶酥",
+      "englishName": "Carrot Soufflé",
+      "type": "Food"
+    },
+    "41562": {
+      "name": "碗装难民甜菜汤",
+      "englishName": "Bowl of Refugee's Beet Soup",
+      "type": "Food"
+    },
+    "41563": {
+      "name": "辛辣泡菇",
+      "englishName": "Spicy Marinated Mushroom",
+      "type": "Food"
+    },
+    "41564": {
+      "name": "碟装霜谷蛤蚌",
+      "englishName": "Plate of Frostgorge Clams",
+      "type": "Food"
+    },
+    "41565": {
+      "name": "碗装爆炒蒜蓉甘蓝",
+      "englishName": "Bowl of Garlic Kale Sautee",
+      "type": "Food"
+    },
+    "41566": {
+      "name": "蘑菇面包",
+      "englishName": "Mushroom Loaf",
+      "type": "Food"
+    },
+    "41567": {
+      "name": "碟装辛辣草鸡块",
+      "englishName": "Plate of Spicy Herbed Chicken",
+      "type": "Food"
+    },
+    "41568": {
+      "name": "碗装热情大头菜汤",
+      "englishName": "Bowl of Zesty Turnip Soup",
+      "type": "Food"
+    },
+    "41569": {
+      "name": "碗装甜辣冬南瓜汤",
+      "englishName": "Bowl of Sweet and Spicy Butternut Squash Soup",
+      "type": "Food"
+    },
+    "42427": {
+      "name": "喀壳虫屠戮药剂",
+      "englishName": "Potion Of Karka Slaying",
+      "type": "Utility"
+    },
+    "42428": {
+      "name": "喀壳虫坚韧药剂",
+      "englishName": "Potion Of Karka Toughness",
+      "type": "Utility"
+    },
+    "42597": {
+      "name": "游泳速度增幅剂",
+      "englishName": "Swim Speed Boost",
+      "type": "Utility"
+    },
+    "43358": {
+      "name": "克拉卡托巧克力棒",
+      "englishName": "Kralkachocolate Bar",
+      "type": "Food"
+    },
+    "43359": {
+      "name": "蜻蜓纸杯蛋糕",
+      "englishName": "Dragonfly Cupcake",
+      "type": "Food"
+    },
+    "43360": {
+      "name": "龙息小面包",
+      "englishName": "Dragon's Breath Bun",
+      "type": "Food"
+    },
+    "43361": {
+      "name": "锦鲤蛋糕",
+      "englishName": "Koi Cake",
+      "type": "Food"
+    },
+    "43362": {
+      "name": "巨龙甜甜圈片",
+      "englishName": "Slice of Candied Dragon Roll",
+      "type": "Food"
+    },
+    "43363": {
+      "name": "龙蛾鱼糖",
+      "englishName": "Dragonfish Candy",
+      "type": "Food"
+    },
+    "43419": {
+      "name": "烟花",
+      "englishName": "Fireworks",
+      "type": "Utility"
+    },
+    "43449": {
+      "name": "强效大师调谐水晶",
+      "englishName": "Potent Master Tuning Crystal",
+      "type": "Utility"
+    },
+    "43450": {
+      "name": "强效大师保养油",
+      "englishName": "Potent Master Maintenance Oil",
+      "type": "Utility"
+    },
+    "43451": {
+      "name": "强效超级磨刀石",
+      "englishName": "Potent Superior Sharpening Stone",
+      "type": "Utility"
+    },
+    "43463": {
+      "name": "强效简易磨刀石",
+      "englishName": "Potent Simple Sharpening Stone",
+      "type": "Utility"
+    },
+    "43464": {
+      "name": "强效标准磨刀石",
+      "englishName": "Potent Standard Sharpening Stone",
+      "type": "Utility"
+    },
+    "43465": {
+      "name": "强效优质磨刀石",
+      "englishName": "Potent Quality Sharpening Stone",
+      "type": "Utility"
+    },
+    "43466": {
+      "name": "强效硬质磨刀石",
+      "englishName": "Potent Hardened Sharpening Stone",
+      "type": "Utility"
+    },
+    "43550": {
+      "name": "龙星乐蛋糕",
+      "englishName": "Dragon's Revelry Starcake",
+      "type": "Food"
+    },
+    "43902": {
+      "name": "石英礼赠",
+      "englishName": "Gift of Quartz",
+      "type": "Food"
+    },
+    "48804": {
+      "name": "玉米糖礼赠",
+      "englishName": "Gift of Candy Corn",
+      "type": "Food"
+    },
+    "48915": {
+      "name": "剧毒磨刀石",
+      "englishName": "Toxic Sharpening Stone",
+      "type": "Utility"
+    },
+    "48916": {
+      "name": "剧毒保养油",
+      "englishName": "Toxic Maintenance Oil",
+      "type": "Utility"
+    },
+    "48917": {
+      "name": "剧毒聚能水晶",
+      "englishName": "Toxic Focusing Crystal",
+      "type": "Utility"
+    },
+    "48921": {
+      "name": "碗装玛乔丽试验辣酱汤",
+      "englishName": "Bowl of Marjory's Experimental Chili",
+      "type": "Food"
+    },
+    "50082": {
+      "name": "巨型绯红军队屠戮药剂",
+      "englishName": "Powerful Potion of Slaying Scarlet's Armies",
+      "type": "Utility"
+    },
+    "50083": {
+      "name": "陆行鸟迅羽",
+      "englishName": "Swift Moa Feather",
+      "type": "Utility"
+    },
+    "64108": {
+      "name": "能手调谐水晶",
+      "englishName": "Journeyman Tuning Crystal",
+      "type": "Utility"
+    },
+    "64109": {
+      "name": "能手保养油",
+      "englishName": "Journeyman Maintenance Oil",
+      "type": "Utility"
+    },
+    "64110": {
+      "name": "简易磨刀石",
+      "englishName": "Simple Sharpening Stone",
+      "type": "Utility"
+    },
+    "66221": {
+      "name": "闪耀泡腾剂",
+      "englishName": "Sparkling Effervescence",
+      "type": "Food"
+    },
+    "66523": {
+      "name": "碗装仙人掌果沙拉",
+      "englishName": "Bowl of Cactus Fruit Salad",
+      "type": "Food"
+    },
+    "66525": {
+      "name": "壶装甜辣豆",
+      "englishName": "Pot of Sweet and Spicy Beans",
+      "type": "Food"
+    },
+    "66526": {
+      "name": "仙人球果八宝胭脂仙人掌",
+      "englishName": "Prickly Pear Stuffed Nopal",
+      "type": "Food"
+    },
+    "66527": {
+      "name": "糖果仙人掌玉米面包",
+      "englishName": "Loaf of Candy Cactus Cornbread",
+      "type": "Food"
+    },
+    "66528": {
+      "name": "碗装甜辣豆",
+      "englishName": "Bowl of Sweet and Spicy Beans",
+      "type": "Food"
+    },
+    "66529": {
+      "name": "碗装黑胡椒仙人掌沙拉",
+      "englishName": "Bowl of Black Pepper Cactus Salad",
+      "type": "Food"
+    },
+    "66530": {
+      "name": "碗装爆炒胭脂仙人掌",
+      "englishName": "Bowl of Nopalitos Sauté",
+      "type": "Food"
+    },
+    "66531": {
+      "name": "碗装仙人掌汤",
+      "englishName": "Bowl of Cactus Soup",
+      "type": "Food"
+    },
+    "66532": {
+      "name": "爆炒胭脂仙人掌大餐",
+      "englishName": "Feast of Nopalitos Sauté",
+      "type": "Food"
+    },
+    "66533": {
+      "name": "仙人掌果沙拉大餐",
+      "englishName": "Feast of Cactus Fruit Salad",
+      "type": "Food"
+    },
+    "66534": {
+      "name": "黑胡椒仙人掌沙拉大餐",
+      "englishName": "Feast of Black Pepper Cactus Salad",
+      "type": "Food"
+    },
+    "66535": {
+      "name": "烤仙人掌大餐",
+      "englishName": "Feast of Roasted Cactus",
+      "type": "Food"
+    },
+    "66536": {
+      "name": "碟装烤仙人掌",
+      "englishName": "Plate of Roasted Cactus",
+      "type": "Food"
+    },
+    "66538": {
+      "name": "仙人球果馅饼",
+      "englishName": "Prickly Pear Pie",
+      "type": "Food"
+    },
+    "66539": {
+      "name": "碗装仙人球果冰糕",
+      "englishName": "Bowl of Prickly Pear Sorbet",
+      "type": "Food"
+    },
+    "67183": {
+      "name": "食人魔磨刀石",
+      "englishName": "Ogre Sharpening Stone",
+      "type": "Utility"
+    },
+    "67184": {
+      "name": "哈克蛙保养油",
+      "englishName": "Hylek Maintenance Oil",
+      "type": "Utility"
+    },
+    "67185": {
+      "name": "蛇妖调谐水晶",
+      "englishName": "Krait Tuning Crystal",
+      "type": "Utility"
+    },
+    "67352": {
+      "name": "精装糖果",
+      "englishName": "Foil-Wrapped Candy",
+      "type": "Food"
+    },
+    "67367": {
+      "name": "块状晶化牛轧糖",
+      "englishName": "Lump of Crystallized Nougat",
+      "type": "Utility"
+    },
+    "67368": {
+      "name": "锐磨颅骨",
+      "englishName": "Sharpening Skull",
+      "type": "Utility"
+    },
+    "67371": {
+      "name": "小瓶装南瓜油",
+      "englishName": "Flask of Pumpkin Oil",
+      "type": "Utility"
+    },
+    "67522": {
+      "name": "富饶调谐水晶",
+      "englishName": "Bountiful Tuning Crystal",
+      "type": "Utility"
+    },
+    "67524": {
+      "name": "激狂调谐水晶",
+      "englishName": "Furious Tuning Crystal",
+      "type": "Utility"
+    },
+    "67528": {
+      "name": "富饶保养油",
+      "englishName": "Bountiful Maintenance Oil",
+      "type": "Utility"
+    },
+    "67529": {
+      "name": "激狂保养油",
+      "englishName": "Furious Maintenance Oil",
+      "type": "Utility"
+    },
+    "67530": {
+      "name": "激狂磨刀石",
+      "englishName": "Furious Sharpening Stone",
+      "type": "Utility"
+    },
+    "67531": {
+      "name": "富饶磨刀石",
+      "englishName": "Bountiful Sharpening Stone",
+      "type": "Utility"
+    },
+    "68404": {
+      "name": "碗装血石冰淇淋",
+      "englishName": "Bowl of Bloodstone Ice Cream",
+      "type": "Food"
+    },
+    "68405": {
+      "name": "马克杯装血石咖啡",
+      "englishName": "Mug of Bloodstone Coffee",
+      "type": "Food"
+    },
+    "68407": {
+      "name": "血石早餐全席宴",
+      "englishName": "Complete Bloodstone Breakfast",
+      "type": "Food"
+    },
+    "68408": {
+      "name": "碟装血石华夫饼",
+      "englishName": "Plate of Bloodstone Waffles",
+      "type": "Food"
+    },
+    "68409": {
+      "name": "碗装血石炖牛肉",
+      "englishName": "Bowl of Bloodstone Goulash",
+      "type": "Food"
+    },
+    "68410": {
+      "name": "小杯装血石特浓咖啡",
+      "englishName": "Demitasse of Bloodstone Espresso",
+      "type": "Food"
+    },
+    "68411": {
+      "name": "血石熊掌油酥点心",
+      "englishName": "Bloodstone Bearclaw Pastry",
+      "type": "Food"
+    },
+    "68562": {
+      "name": "血石尘馅饼",
+      "englishName": "Bloodstone Pot Pie",
+      "type": "Food"
+    },
+    "68632": {
+      "name": "春卷",
+      "englishName": "Spring Roll",
+      "type": "Food"
+    },
+    "68633": {
+      "name": "黄金煎饺",
+      "englishName": "Fried Golden Dumpling",
+      "type": "Food"
+    },
+    "68634": {
+      "name": "美味饭团",
+      "englishName": "Delicious Rice Ball",
+      "type": "Food"
+    },
+    "68635": {
+      "name": "红油抄手",
+      "englishName": "Steamed Red Dumpling",
+      "type": "Food"
+    },
+    "68636": {
+      "name": "甜豆包",
+      "englishName": "Sweet Bean Bun",
+      "type": "Food"
+    },
+    "69836": {
+      "name": "盘装樱桃杏仁条",
+      "englishName": "Tray of Cherry Almond Bars",
+      "type": "Food"
+    },
+    "70025": {
+      "name": "蘑菇披萨大餐",
+      "englishName": "Feast of Mushroom Pizzas",
+      "type": "Food"
+    },
+    "70058": {
+      "name": "盘装西葫芦面包",
+      "englishName": "Tray of Zucchini Bread",
+      "type": "Food"
+    },
+    "70496": {
+      "name": "喀壳虫蛋糕",
+      "englishName": "Karka Cake",
+      "type": "Food"
+    },
+    "70628": {
+      "name": "黄金沙堆",
+      "englishName": "Pile of Golden Sand",
+      "type": "Food"
+    },
+    "70845": {
+      "name": "中级力量论文",
+      "englishName": "Thesis on Studied Strength",
+      "type": "Utility"
+    },
+    "70883": {
+      "name": "专业力量令状",
+      "englishName": "Writ of Studied Strength",
+      "type": "Utility"
+    },
+    "70920": {
+      "name": "高级恶毒论文",
+      "englishName": "Thesis on Calculated Malice",
+      "type": "Utility"
+    },
+    "71071": {
+      "name": "特级恶毒论文",
+      "englishName": "Thesis on Learned Malice",
+      "type": "Utility"
+    },
+    "71176": {
+      "name": "粉色沙堆",
+      "englishName": "Pile of Pink Sand",
+      "type": "Food"
+    },
+    "71299": {
+      "name": "黏液地虫",
+      "englishName": "Gummy Wurms",
+      "type": "Food"
+    },
+    "71377": {
+      "name": "力量论文",
+      "englishName": "Thesis on Strength",
+      "type": "Utility"
+    },
+    "71514": {
+      "name": "专业精确令状",
+      "englishName": "Writ of Studied Accuracy",
+      "type": "Utility"
+    },
+    "71691": {
+      "name": "大师速度令状",
+      "englishName": "Writ of Masterful Speed",
+      "type": "Utility"
+    },
+    "71797": {
+      "name": "盘装禽肉干",
+      "englishName": "Plate of Jerk Poultry",
+      "type": "Food"
+    },
+    "71810": {
+      "name": "特级精确论文",
+      "englishName": "Thesis on Learned Accuracy",
+      "type": "Utility"
+    },
+    "71826": {
+      "name": "碗装西番莲果树薯粉布丁",
+      "englishName": "Bowl of Passion Fruit Tapioca Pudding",
+      "type": "Food"
+    },
+    "71928": {
+      "name": "基础速度令状",
+      "englishName": "Writ of Basic Speed",
+      "type": "Utility"
+    },
+    "71940": {
+      "name": "靛蓝蘑菇奶昔",
+      "englishName": "Indigo Mushroom Milkshake",
+      "type": "Food"
+    },
+    "72048": {
+      "name": "普通力量令状",
+      "englishName": "Writ of Strength",
+      "type": "Utility"
+    },
+    "72291": {
+      "name": "普通精确令状",
+      "englishName": "Writ of Accuracy",
+      "type": "Utility"
+    },
+    "72480": {
+      "name": "碗装鱼翅汤",
+      "englishName": "Bowl of Sharkfin Soup",
+      "type": "Food"
+    },
+    "72510": {
+      "name": "大师恶毒令状",
+      "englishName": "Writ of Masterful Malice",
+      "type": "Utility"
+    },
+    "72532": {
+      "name": "中级速度论文",
+      "englishName": "Thesis on Studied Speed",
+      "type": "Utility"
+    },
+    "72563": {
+      "name": "基础恶毒令状",
+      "englishName": "Writ of Basic Malice",
+      "type": "Utility"
+    },
+    "72572": {
+      "name": "精确恶毒令状",
+      "englishName": "Writ of Calculated Malice",
+      "type": "Utility"
+    },
+    "72575": {
+      "name": "碗装咖喱淡菜汤",
+      "englishName": "Bowl of Curry Mussel Soup",
+      "type": "Food"
+    },
+    "72664": {
+      "name": "干脆蚱蜢",
+      "englishName": "Crunchy Grasshopper",
+      "type": "Food"
+    },
+    "72742": {
+      "name": "欧尔海胆籽寿司",
+      "englishName": "Piece of Orrian Sea Urchin Roe Sushi",
+      "type": "Food"
+    },
+    "72761": {
+      "name": "紫薯泥",
+      "englishName": "Mashed Purple Potatoes",
+      "type": "Food"
+    },
+    "72807": {
+      "name": "饱学力量令状",
+      "englishName": "Writ of Learned Strength",
+      "type": "Utility"
+    },
+    "72813": {
+      "name": "普通恶毒令状",
+      "englishName": "Writ of Malice",
+      "type": "Utility"
+    },
+    "72821": {
+      "name": "精确精确令状",
+      "englishName": "Writ of Calculated Accuracy",
+      "type": "Utility"
+    },
+    "73006": {
+      "name": "基础力量论文",
+      "englishName": "Thesis on Basic Strength",
+      "type": "Utility"
+    },
+    "73105": {
+      "name": "特级力量论文",
+      "englishName": "Thesis on Learned Strength",
+      "type": "Utility"
+    },
+    "73191": {
+      "name": "大师力量令状",
+      "englishName": "Writ of Masterful Strength",
+      "type": "Utility"
+    },
+    "73221": {
+      "name": "碗装柠檬草淡菜意粉",
+      "englishName": "Bowl of Lemongrass Mussel Pasta",
+      "type": "Food"
+    },
+    "73286": {
+      "name": "基础力量令状",
+      "englishName": "Writ of Basic Strength",
+      "type": "Utility"
+    },
+    "73351": {
+      "name": "血橙",
+      "englishName": "Blood Orange",
+      "type": "Food"
+    },
+    "73409": {
+      "name": "蜜罐蚂蚁",
+      "englishName": "Honeypot Ant",
+      "type": "Food"
+    },
+    "73570": {
+      "name": "契约团干粮",
+      "englishName": "Pact Ration",
+      "type": "Food"
+    },
+    "73595": {
+      "name": "基础精确令状",
+      "englishName": "Writ of Basic Accuracy",
+      "type": "Utility"
+    },
+    "73752": {
+      "name": "密语干粮",
+      "englishName": "Order of Whispers Rations",
+      "type": "Food"
+    },
+    "73788": {
+      "name": "禽肉干胭脂仙人掌干薄饼三明治",
+      "englishName": "Jerk Poultry and Nopal Flatbread Sandwich",
+      "type": "Food"
+    },
+    "74065": {
+      "name": "丛林地虫蛋卷（苔藓巨人口味）",
+      "englishName": "Jungle Wurm Omelet (Mossman Style)",
+      "type": "Food"
+    },
+    "74239": {
+      "name": "冰糖",
+      "englishName": "Rock Candy",
+      "type": "Food"
+    },
+    "74385": {
+      "name": "海底地虫寿司",
+      "englishName": "Piece of Undersea Wurm Sushi",
+      "type": "Food"
+    },
+    "74478": {
+      "name": "高级力量论文",
+      "englishName": "Thesis on Calculated Strength",
+      "type": "Utility"
+    },
+    "74568": {
+      "name": "守夜人干粮",
+      "englishName": "Vigil Rations",
+      "type": "Food"
+    },
+    "74621": {
+      "name": "干酪木薯卷",
+      "englishName": "Cheesy Cassava Roll",
+      "type": "Food"
+    },
+    "74634": {
+      "name": "基础速度论文",
+      "englishName": "Thesis on Basic Speed",
+      "type": "Utility"
+    },
+    "74777": {
+      "name": "碗装淡菜汤",
+      "englishName": "Bowl of Mussel Soup",
+      "type": "Food"
+    },
+    "74920": {
+      "name": "专业速度令状",
+      "englishName": "Writ of Studied Speed",
+      "type": "Utility"
+    },
+    "74969": {
+      "name": "盘装淡菜咬刃",
+      "englishName": "Plate of Mussels Gnashblade",
+      "type": "Food"
+    },
+    "75010": {
+      "name": "碗装锯木蘑菇拌饭",
+      "englishName": "Bowl of Sawgill Mushroom Risotto",
+      "type": "Food"
+    },
+    "75051": {
+      "name": "专业恶毒令状",
+      "englishName": "Writ of Studied Malice",
+      "type": "Utility"
+    },
+    "75053": {
+      "name": "快手炒蛋",
+      "englishName": "Swiftly Scrambled Eggs",
+      "type": "Food"
+    },
+    "75060": {
+      "name": "基础精确论文",
+      "englishName": "Thesis on Basic Accuracy",
+      "type": "Utility"
+    },
+    "75126": {
+      "name": "多香果蛋糕切片",
+      "englishName": "Slice of Allspice Cake",
+      "type": "Food"
+    },
+    "75154": {
+      "name": "烈焰薄片",
+      "englishName": "Flaming Fire Flakes",
+      "type": "Food"
+    },
+    "75199": {
+      "name": "中级精确论文",
+      "englishName": "Thesis on Studied Accuracy",
+      "type": "Utility"
+    },
+    "75567": {
+      "name": "修会干粮",
+      "englishName": "Priory Rations",
+      "type": "Food"
+    },
+    "75598": {
+      "name": "恶毒论文",
+      "englishName": "Thesis on Malice",
+      "type": "Utility"
+    },
+    "75610": {
+      "name": "饱学精确令状",
+      "englishName": "Writ of Learned Accuracy",
+      "type": "Utility"
+    },
+    "75728": {
+      "name": "精确论文",
+      "englishName": "Thesis on Accuracy",
+      "type": "Utility"
+    },
+    "76103": {
+      "name": "碟装雅克金顿蘑菇",
+      "englishName": "Plate of Mushrooms Yakkington",
+      "type": "Food"
+    },
+    "76135": {
+      "name": "碗装仙人球果树薯粉布丁",
+      "englishName": "Bowl of Prickly Pear Tapioca Pudding",
+      "type": "Food"
+    },
+    "76302": {
+      "name": "禽肉干薄饼三明治",
+      "englishName": "Jerk Poultry Flatbread Sandwich",
+      "type": "Food"
+    },
+    "76353": {
+      "name": "基础恶毒论文",
+      "englishName": "Thesis on Basic Malice",
+      "type": "Utility"
+    },
+    "76359": {
+      "name": "冰淇淋多香果蛋糕切片",
+      "englishName": "Slice of Allspice Cake with Ice Cream",
+      "type": "Food"
+    },
+    "76388": {
+      "name": "荷包蛋",
+      "englishName": "Egg in a Cloud",
+      "type": "Food"
+    },
+    "76415": {
+      "name": "碗装巧克力树薯粉布丁",
+      "englishName": "Bowl of Chocolate Tapioca Pudding",
+      "type": "Food"
+    },
+    "76478": {
+      "name": "饱学恶毒令状",
+      "englishName": "Writ of Learned Malice",
+      "type": "Utility"
+    },
+    "76599": {
+      "name": "大师精确论文",
+      "englishName": "Thesis on Masterful Accuracy",
+      "type": "Utility"
+    },
+    "76603": {
+      "name": "薄饼",
+      "englishName": "Flatbread",
+      "type": "Food"
+    },
+    "76738": {
+      "name": "大师恶毒论文",
+      "englishName": "Thesis on Masterful Malice",
+      "type": "Utility"
+    },
+    "76833": {
+      "name": "大师精确令状",
+      "englishName": "Writ of Masterful Accuracy",
+      "type": "Utility"
+    },
+    "76840": {
+      "name": "碗装树薯粉布丁",
+      "englishName": "Bowl of Tapioca Pudding",
+      "type": "Food"
+    },
+    "76870": {
+      "name": "高级精确论文",
+      "englishName": "Thesis on Calculated Accuracy",
+      "type": "Utility"
+    },
+    "76944": {
+      "name": "黑暗乳蛋饼",
+      "englishName": "Quiche of Darkness",
+      "type": "Food"
+    },
+    "77106": {
+      "name": "中级恶毒论文",
+      "englishName": "Thesis on Studied Malice",
+      "type": "Utility"
+    },
+    "77128": {
+      "name": "精确力量令状",
+      "englishName": "Writ of Calculated Strength",
+      "type": "Utility"
+    },
+    "77146": {
+      "name": "大师力量论文",
+      "englishName": "Thesis on Masterful Strength",
+      "type": "Utility"
+    },
+    "77233": {
+      "name": "速度论文",
+      "englishName": "Thesis on Speed",
+      "type": "Utility"
+    },
+    "77567": {
+      "name": "协调冰柱",
+      "englishName": "Tuning Icicle",
+      "type": "Utility"
+    },
+    "77569": {
+      "name": "罐装水果蛋糕",
+      "englishName": "Tin of Fruitcake",
+      "type": "Utility"
+    },
+    "77579": {
+      "name": "热带薄荷蛋糕",
+      "englishName": "Tropical Peppermint Cake",
+      "type": "Food"
+    },
+    "77586": {
+      "name": "雪景球",
+      "englishName": "Snowglobe",
+      "type": "Food"
+    },
+    "77616": {
+      "name": "翻新玩具",
+      "englishName": "Refurbished Toy",
+      "type": "Food"
+    },
+    "77620": {
+      "name": "冬幕乐谱",
+      "englishName": "Winter Music Score",
+      "type": "Food"
+    },
+    "77630": {
+      "name": "勺装薄荷果甜筒冰淇淋",
+      "englishName": "Scoop of Mintberry Swirl Ice Cream",
+      "type": "Food"
+    },
+    "77631": {
+      "name": "冰冻光环",
+      "englishName": "Icy Aura",
+      "type": "Food"
+    },
+    "77632": {
+      "name": "薄荷保养油",
+      "englishName": "Peppermint Oil",
+      "type": "Utility"
+    },
+    "77633": {
+      "name": "冬日劲酒",
+      "englishName": "Masterful Toast",
+      "type": "Food"
+    },
+    "77643": {
+      "name": "薄荷怪异莓棒",
+      "englishName": "Peppermint Omnomberry Bar",
+      "type": "Food"
+    },
+    "77651": {
+      "name": "拐杖糖",
+      "englishName": "Candy Cane",
+      "type": "Food"
+    },
+    "78000": {
+      "name": "碗装番茄汤",
+      "englishName": "Bowl of Tomato Soup",
+      "type": "Food"
+    },
+    "78005": {
+      "name": "碗装血石浓汤",
+      "englishName": "Bowl of Bloodstone Bisque",
+      "type": "Food"
+    },
+    "78116": {
+      "name": "紧密硬质磨刀石",
+      "englishName": "Compact Hardened Sharpening Stone",
+      "type": "Utility"
+    },
+    "78129": {
+      "name": "罐装巧克力树莓蛋糕",
+      "englishName": "Canned Chocolate Raspberry Cake",
+      "type": "Food"
+    },
+    "78137": {
+      "name": "罐装鸟肉龙蒿叶意粉",
+      "englishName": "Can of Poultry Tarragon Pasta",
+      "type": "Food"
+    },
+    "78167": {
+      "name": "罐装树莓蜜桃面包",
+      "englishName": "Can of Raspberry Peach Bread",
+      "type": "Food"
+    },
+    "78170": {
+      "name": "罐装芒果辣汁",
+      "englishName": "Can of Mango Salsa",
+      "type": "Food"
+    },
+    "78197": {
+      "name": "罐装龙蒿叶八宝鸟肉",
+      "englishName": "Canned Tarragon Stuffed Poultry",
+      "type": "Food"
+    },
+    "78214": {
+      "name": "罐装树莓蜜桃羹",
+      "englishName": "Canned Raspberry Peach Compote",
+      "type": "Food"
+    },
+    "78215": {
+      "name": "罐装鸟肉大葱汤",
+      "englishName": "Can of Poultry and Leek Soup",
+      "type": "Food"
+    },
+    "78219": {
+      "name": "紧密优质调谐水晶",
+      "englishName": "Compact Quality Tuning Crystal",
+      "type": "Utility"
+    },
+    "78229": {
+      "name": "盒装超级素菜披萨",
+      "englishName": "Boxed Super Veggie Pizza",
+      "type": "Food"
+    },
+    "78236": {
+      "name": "罐装洋蓟汤",
+      "englishName": "Can of Artichoke Soup",
+      "type": "Food"
+    },
+    "78247": {
+      "name": "罐装茄子煎饼",
+      "englishName": "Canned Eggplant Fritter",
+      "type": "Food"
+    },
+    "78283": {
+      "name": "罐装鲜肉冬菜煲",
+      "englishName": "Can of Meat and Winter Vegetable Stew",
+      "type": "Food"
+    },
+    "78305": {
+      "name": "超级磨刀石",
+      "englishName": "Superior Sharpening Stone",
+      "type": "Utility"
+    },
+    "78320": {
+      "name": "罐装辛辣烧肉辣酱汤",
+      "englishName": "Can of Spicy Meat Chili",
+      "type": "Food"
+    },
+    "78327": {
+      "name": "罐装干煸茄子",
+      "englishName": "Can of Eggplant Stir-Fry",
+      "type": "Food"
+    },
+    "78339": {
+      "name": "罐装芦笋鼠尾草沙拉",
+      "englishName": "Can of Asparagus and Sage Salad",
+      "type": "Food"
+    },
+    "78365": {
+      "name": "罐装混合莓子馅饼",
+      "englishName": "Canned Mixed Berry Pie",
+      "type": "Food"
+    },
+    "78385": {
+      "name": "盒装巧克力树莓奶油",
+      "englishName": "Boxed Chocolate Raspberry Cream",
+      "type": "Food"
+    },
+    "78424": {
+      "name": "罐装火辣牛腩排",
+      "englishName": "Canned Spicier Flank Steak",
+      "type": "Food"
+    },
+    "78450": {
+      "name": "罐装浓厚鸟肉汤",
+      "englishName": "Can of Hearty Poultry Soup",
+      "type": "Food"
+    },
+    "78456": {
+      "name": "罐装龙蒿面包",
+      "englishName": "Canned Tarragon Bread",
+      "type": "Food"
+    },
+    "78457": {
+      "name": "盒装辛辣芝士汉堡",
+      "englishName": "Boxed Spicy Cheeseburger",
+      "type": "Food"
+    },
+    "78462": {
+      "name": "罐装芦笋牛排",
+      "englishName": "Can of Steak and Asparagus",
+      "type": "Food"
+    },
+    "78480": {
+      "name": "盒装巧克力树莓曲奇饼",
+      "englishName": "Boxed Chocolate Raspberry Cookie",
+      "type": "Food"
+    },
+    "78483": {
+      "name": "罐装爆炒茄子",
+      "englishName": "Can of Eggplant Saute",
+      "type": "Food"
+    },
+    "78495": {
+      "name": "罐装蜜桃馅饼填料",
+      "englishName": "Canned Peach Pie Filling",
+      "type": "Food"
+    },
+    "78498": {
+      "name": "罐装辛辣素菜辣酱汤",
+      "englishName": "Can of Spicy Veggie Chili",
+      "type": "Food"
+    },
+    "78506": {
+      "name": "盒装蜜桃曲奇饼",
+      "englishName": "Boxed Peach Cookie",
+      "type": "Food"
+    },
+    "78509": {
+      "name": "罐装辛辣八宝蘑菇",
+      "englishName": "Canned Spicy Stuffed Mushroom",
+      "type": "Food"
+    },
+    "78514": {
+      "name": "盒装树莓蜜桃棒",
+      "englishName": "Boxed Raspberry Peach Bar",
+      "type": "Food"
+    },
+    "78528": {
+      "name": "罐装马铃薯大葱汤",
+      "englishName": "Can of Potato and Leek Soup",
+      "type": "Food"
+    },
+    "78568": {
+      "name": "罐装大葱炖烤肉",
+      "englishName": "Can of Roasted Meat with Braised Leeks",
+      "type": "Food"
+    },
+    "78588": {
+      "name": "罐装雪地松露汤",
+      "englishName": "Can of Snow Truffle Soup",
+      "type": "Food"
+    },
+    "78609": {
+      "name": "罐装冬南瓜汤",
+      "englishName": "Can of Butternut Squash Soup",
+      "type": "Food"
+    },
+    "78612": {
+      "name": "罐装芦笋牛排晚宴",
+      "englishName": "Can of Steak and Asparagus Dinner",
+      "type": "Food"
+    },
+    "78630": {
+      "name": "罐装蜜桃挞",
+      "englishName": "Canned Peach Tart",
+      "type": "Food"
+    },
+    "78655": {
+      "name": "罐装蘑菇芦笋拌饭",
+      "englishName": "Can of Mushroom and Asparagus Risotto",
+      "type": "Food"
+    },
+    "78658": {
+      "name": "芒果馅饼",
+      "englishName": "Mango Pie",
+      "type": "Food"
+    },
+    "78662": {
+      "name": "罐装热带风味八宝洋蓟",
+      "englishName": "Canned Stuffed Artichoke with Tropical Dressing",
+      "type": "Food"
+    },
+    "78663": {
+      "name": "罐装树莓西番莲果羹",
+      "englishName": "Canned Raspberry Passion Fruit Compote",
+      "type": "Food"
+    },
+    "78695": {
+      "name": "紧密优质保养油",
+      "englishName": "Compact Quality Maintenance Oil",
+      "type": "Utility"
+    },
+    "78700": {
+      "name": "罐装烤洋蓟",
+      "englishName": "Canned Roasted Artichoke",
+      "type": "Food"
+    },
+    "79488": {
+      "name": "碟装甜味咖喱淡菜",
+      "englishName": "Plate of Sweet Curried Mussels",
+      "type": "Food"
+    },
+    "79541": {
+      "name": "碟装岛屿布丁",
+      "englishName": "Plate of Island Pudding",
+      "type": "Food"
+    },
+    "79646": {
+      "name": "大型玉米糖礼赠",
+      "englishName": "Greater Gift of Candy Corn",
+      "type": "Food"
+    },
+    "79729": {
+      "name": "克达贡品",
+      "englishName": "Offering to Koda",
+      "type": "Food"
+    },
+    "79748": {
+      "name": "冬浆果派",
+      "englishName": "Winterberry Pie",
+      "type": "Food"
+    },
+    "79776": {
+      "name": "冬浆果冰糕",
+      "englishName": "Winterberry Sorbet",
+      "type": "Food"
+    },
+    "79786": {
+      "name": "冬浆果酱肉排",
+      "englishName": "Steak with Winterberry Sauce",
+      "type": "Food"
+    },
+    "79793": {
+      "name": "碗装冬浆果海鲜沙拉",
+      "englishName": "Bowl of Winterberry Seaweed Salad",
+      "type": "Food"
+    },
+    "79848": {
+      "name": "贡品篮",
+      "englishName": "Offering Basket",
+      "type": "Food"
+    },
+    "79988": {
+      "name": "超烫柠檬草鸟肉汤",
+      "englishName": "Super-Hot Lemongrass Poultry Soup",
+      "type": "Food"
+    },
+    "80050": {
+      "name": "超烫鸟肉大葱汤",
+      "englishName": "Super-Hot Poultry and Leek Soup",
+      "type": "Food"
+    },
+    "80056": {
+      "name": "超烫藏红花炙鸟肉汤",
+      "englishName": "Super-Hot Saffron-Scented Poultry Soup",
+      "type": "Food"
+    },
+    "80060": {
+      "name": "超烫鸟肉冬菜汤",
+      "englishName": "Super-Hot Poultry and Winter Vegetable Soup",
+      "type": "Food"
+    },
+    "80272": {
+      "name": "魔法灌注蜜桃",
+      "englishName": "Magic-Imbued Peach",
+      "type": "Food"
+    },
+    "80373": {
+      "name": "多里克湖淡菜",
+      "englishName": "Lake Doric Mussels",
+      "type": "Food"
+    },
+    "80466": {
+      "name": "藏红花淡菜",
+      "englishName": "Saffron Mussels",
+      "type": "Food"
+    },
+    "81034": {
+      "name": "尚雅磨刀石",
+      "englishName": "Magnanimous Sharpening Stone",
+      "type": "Utility"
+    },
+    "81079": {
+      "name": "尚雅调谐水晶",
+      "englishName": "Magnanimous Tuning Crystal",
+      "type": "Utility"
+    },
+    "81157": {
+      "name": "尚雅保养油",
+      "englishName": "Magnanimous Maintenance Oil",
+      "type": "Utility"
+    },
+    "81615": {
+      "name": "鸡尾酒汁扇贝",
+      "englishName": "Oysters with Cocktail Sauce",
+      "type": "Food"
+    },
+    "81621": {
+      "name": "香蒜酱扇贝",
+      "englishName": "Oysters with Pesto Sauce",
+      "type": "Food"
+    },
+    "81660": {
+      "name": "煎扇贝三明治",
+      "englishName": "Fried Oyster Sandwich",
+      "type": "Food"
+    },
+    "81786": {
+      "name": "扇贝咬刃",
+      "englishName": "Oysters Gnashblade",
+      "type": "Food"
+    },
+    "81799": {
+      "name": "热辣扇贝",
+      "englishName": "Oysters with Zesty Sauce",
+      "type": "Food"
+    },
+    "81867": {
+      "name": "辣酱扇贝",
+      "englishName": "Oysters with Spicy Sauce",
+      "type": "Food"
+    },
+    "82030": {
+      "name": "煎扇贝",
+      "englishName": "Fried Oysters",
+      "type": "Food"
+    },
+    "82531": {
+      "name": "许愿自由",
+      "englishName": "Wish for Freedom",
+      "type": "Food"
+    },
+    "82541": {
+      "name": "碗装伊伦红",
+      "englishName": "Bowl of \"Elon Red\"",
+      "type": "Food"
+    },
+    "82642": {
+      "name": "杯装轻度烘培咖啡",
+      "englishName": "Cup of Light-Roasted Coffee",
+      "type": "Food"
+    },
+    "82657": {
+      "name": "红扁豆和薄饼大餐",
+      "englishName": "Red Lentil and Flatbread Feast",
+      "type": "Food"
+    },
+    "83171": {
+      "name": "威胁报告：遗失的神圣文本",
+      "englishName": "Threat Report: Missing Sacred Text",
+      "type": "Food"
+    },
+    "83345": {
+      "name": "碗装辣红扁豆煲",
+      "englishName": "Bowl of Spiced Red Lentil Stew",
+      "type": "Food"
+    },
+    "83389": {
+      "name": "许愿真相",
+      "englishName": "Wish For Truth",
+      "type": "Food"
+    },
+    "83545": {
+      "name": "罐装沙漠香料咖啡",
+      "englishName": "Pitcher of Desert-Spiced Coffee",
+      "type": "Food"
+    },
+    "83591": {
+      "name": "威胁报告：热流读数",
+      "englishName": "Threat Report: Thermoptic Flux Readings",
+      "type": "Food"
+    },
+    "83613": {
+      "name": "支援：跳高牧场",
+      "englishName": "Show of Support: Highjump Ranch",
+      "type": "Food"
+    },
+    "83622": {
+      "name": "碟装烤甜肋排",
+      "englishName": "Plate of Sugar Rib Roast",
+      "type": "Food"
+    },
+    "83955": {
+      "name": "碗装红扁豆汤",
+      "englishName": "Bowl of Red Lentil Soup",
+      "type": "Food"
+    },
+    "84429": {
+      "name": "袋装简单猫粮",
+      "englishName": "Bag of Simple Cat Food",
+      "type": "Food"
+    },
+    "84550": {
+      "name": "红扁豆浓汤",
+      "englishName": "Red-Lentil Saobosa",
+      "type": "Food"
+    },
+    "84676": {
+      "name": "神秘鲲艮合剂",
+      "englishName": "Mystery Quaggan Tonic",
+      "type": "Utility"
+    },
+    "86016": {
+      "name": "海盗保养油",
+      "englishName": "Corsair Maintenance Oil",
+      "type": "Utility"
+    },
+    "86287": {
+      "name": "海盗调谐水晶",
+      "englishName": "Corsair Tuning Crystal",
+      "type": "Utility"
+    },
+    "86378": {
+      "name": "海盗磨刀石",
+      "englishName": "Corsair Sharpening Stone",
+      "type": "Utility"
+    },
+    "86997": {
+      "name": "盘装牛肉仁当",
+      "englishName": "Plate of Beef Rendang",
+      "type": "Food"
+    },
+    "87029": {
+      "name": "鳄梨冰沙",
+      "englishName": "Avocado Smoothie",
+      "type": "Food"
+    },
+    "87076": {
+      "name": "碗装禽肉沙茶",
+      "englishName": "Bowl of Poultry Satay",
+      "type": "Food"
+    },
+    "87329": {
+      "name": "全息超级鸡腿",
+      "englishName": "Holographic Super Drumstick",
+      "type": "Utility"
+    },
+    "87336": {
+      "name": "全息超级苹果",
+      "englishName": "Holographic Super Apple",
+      "type": "Utility"
+    },
+    "87358": {
+      "name": "全息超级奶酪",
+      "englishName": "Holographic Super Cheese",
+      "type": "Utility"
+    },
+    "87367": {
+      "name": "全息超级蛋糕",
+      "englishName": "Holographic Super Cake",
+      "type": "Food"
+    },
+    "87631": {
+      "name": "魔像群药剂",
+      "englishName": "Golem Swarm Potion",
+      "type": "Food"
+    },
+    "88101": {
+      "name": "德比的蛋糕",
+      "englishName": "Debbie's Cake",
+      "type": "Food"
+    },
+    "88330": {
+      "name": "灵质灌注幻景水晶",
+      "englishName": "Ectoplasm-Infused Vision Crystal",
+      "type": "Food"
+    },
+    "88573": {
+      "name": "不稳定烙印苏醒者发条",
+      "englishName": "Unstable Branded Awakened Wind-Up",
+      "type": "Food"
+    },
+    "88973": {
+      "name": "脉动水晶",
+      "englishName": "Pulsating Crystal",
+      "type": "Food"
+    },
+    "89002": {
+      "name": "灵魂糕点",
+      "englishName": "Soul Pastry",
+      "type": "Food"
+    },
+    "89088": {
+      "name": "罐装\"幸运\"馅饭团",
+      "englishName": "Canned Rice Ball with \"Lucky\" Filling",
+      "type": "Food"
+    },
+    "89157": {
+      "name": "强化透明油",
+      "englishName": "Enhanced Lucent Oil",
+      "type": "Utility"
+    },
+    "89181": {
+      "name": "罐装炖牡蛎",
+      "englishName": "Can of Stewed Oysters",
+      "type": "Food"
+    },
+    "89203": {
+      "name": "强效透明油",
+      "englishName": "Potent Lucent Oil",
+      "type": "Utility"
+    },
+    "89461": {
+      "name": "龙族水晶药剂",
+      "englishName": "Dragon Crystal Potion",
+      "type": "Utility"
+    },
+    "89692": {
+      "name": "德里莫之光石板——下半部分",
+      "englishName": "Light of Deldrimor Plate—Bottom Half",
+      "type": "Food"
+    },
+    "89828": {
+      "name": "德里莫之光石板——上半部分",
+      "englishName": "Light of Deldrimor Plate—Top Half",
+      "type": "Food"
+    },
+    "91285": {
+      "name": "小型烙印生物屠戮药剂",
+      "englishName": "Minor Potion of Branded Slaying",
+      "type": "Utility"
+    },
+    "91289": {
+      "name": "巨型烙印生物屠戮药剂",
+      "englishName": "Powerful Potion of Branded Slaying",
+      "type": "Utility"
+    },
+    "91293": {
+      "name": "小型全息屠戮药剂",
+      "englishName": "Minor Potion of Hologram Slaying",
+      "type": "Utility"
+    },
+    "91336": {
+      "name": "小型绯红军队屠戮药剂",
+      "englishName": "Minor Potion of Slaying Scarlet's Armies",
+      "type": "Utility"
+    },
+    "91350": {
+      "name": "巨型墨德摩藤屠戮药剂",
+      "englishName": "Powerful Potion of Mordrem Slaying",
+      "type": "Utility"
+    },
+    "91355": {
+      "name": "小型墨德摩藤屠戮药剂",
+      "englishName": "Minor Potion of Mordrem Slaying",
+      "type": "Utility"
+    },
+    "91689": {
+      "name": "厨师品尝盘",
+      "englishName": "Chef's Tasting Platter",
+      "type": "Food"
+    },
+    "91690": {
+      "name": "碗装薄荷配菜水果沙拉",
+      "englishName": "Bowl of Fruit Salad with Mint Garnish",
+      "type": "Food"
+    },
+    "91698": {
+      "name": "丁香素菜薄饼",
+      "englishName": "Clove and Veggie Flatbread",
+      "type": "Food"
+    },
+    "91703": {
+      "name": "薄荷梨子与熏肉薄饼",
+      "englishName": "Mint-Pear Cured Meat Flatbread",
+      "type": "Food"
+    },
+    "91704": {
+      "name": "盘装沙拉配菜鸟肉冻",
+      "englishName": "Plate of Poultry Aspic with Salsa Garnish",
+      "type": "Food"
+    },
+    "91705": {
+      "name": "丁香调味火腿蛋松饼",
+      "englishName": "Clove-Spiced Eggs Benedict",
+      "type": "Food"
+    },
+    "91709": {
+      "name": "盘装沙拉配红酒焖鸡",
+      "englishName": "Plate of Coq Au Vin with Salsa",
+      "type": "Food"
+    },
+    "91711": {
+      "name": "盘装芝麻粉红酒焖鸡",
+      "englishName": "Plate of Sesame-Crusted Coq Au Vin",
+      "type": "Food"
+    },
+    "91713": {
+      "name": "黑胡椒调味牡蛎汤球",
+      "englishName": "Spherified Peppercorn-Spiced Oyster Soup",
+      "type": "Food"
+    },
+    "91718": {
+      "name": "芝麻生姜生牛肉薄片",
+      "englishName": "Plate of Sesame-Ginger Beef Carpaccio",
+      "type": "Food"
+    },
+    "91723": {
+      "name": "盘装丁香调味松露晶饺",
+      "englishName": "Plate of Clove-Spiced Clear Truffle Ravioli",
+      "type": "Food"
+    },
+    "91727": {
+      "name": "薄荷素菜薄饼",
+      "englishName": "Mint and Veggie Flatbread",
+      "type": "Food"
+    },
+    "91729": {
+      "name": "芝麻奶酪蛋糕",
+      "englishName": "Sesame Cheesecake",
+      "type": "Food"
+    },
+    "91732": {
+      "name": "碗装芝麻水果沙拉",
+      "englishName": "Bowl of Sesame Fruit Salad",
+      "type": "Food"
+    },
+    "91734": {
+      "name": "黑胡椒粉真空烹调肉排",
+      "englishName": "Peppercorn-Crusted Sous-Vide Steak",
+      "type": "Food"
+    },
+    "91735": {
+      "name": "盘装芫荽松露晶饺",
+      "englishName": "Plate of Clear Truffle and Cilantro Ravioli",
+      "type": "Food"
+    },
+    "91736": {
+      "name": "盘装芝麻酱油真空烹调肉排",
+      "englishName": "Soy-Sesame Sous-Vide Steak",
+      "type": "Food"
+    },
+    "91737": {
+      "name": "碗装调味水果沙拉",
+      "englishName": "Bowl of Spiced Fruit Salad",
+      "type": "Food"
+    },
+    "91742": {
+      "name": "胡椒调味焦糖布丁",
+      "englishName": "Spiced Pepper Creme Brulee",
+      "type": "Food"
+    },
+    "91743": {
+      "name": "薄荷焦糖布丁",
+      "englishName": "Mint Creme Brulee",
+      "type": "Food"
+    },
+    "91746": {
+      "name": "芒果芫荽焦糖布丁",
+      "englishName": "Mango Cilantro Creme Brulee",
+      "type": "Food"
+    },
+    "91748": {
+      "name": "薄荷配菜牡蛎汤球",
+      "englishName": "Spherified Oyster Soup with Mint Garnish",
+      "type": "Food"
+    },
+    "91753": {
+      "name": "盘装黑胡椒调味红酒焖鸡",
+      "englishName": "Plate of Peppercorn-Spiced Coq Au Vin",
+      "type": "Food"
+    },
+    "91754": {
+      "name": "丁香调味牡蛎汤球",
+      "englishName": "Spherified Clove-Spiced Oyster Soup",
+      "type": "Food"
+    },
+    "91756": {
+      "name": "芝麻牡蛎汤球",
+      "englishName": "Spherified Sesame Oyster Soup",
+      "type": "Food"
+    },
+    "91758": {
+      "name": "薄荷欧芹酱火腿蛋松饼",
+      "englishName": "Eggs Benedict with Mint-Parsley Sauce",
+      "type": "Food"
+    },
+    "91761": {
+      "name": "香橙丁香奶酪蛋糕",
+      "englishName": "Orange Clove Cheesecake",
+      "type": "Food"
+    },
+    "91766": {
+      "name": "丁香调味焦糖布丁",
+      "englishName": "Clove-Spiced Creme Brulee",
+      "type": "Food"
+    },
+    "91769": {
+      "name": "碗装芫荽配菜水果沙拉",
+      "englishName": "Bowl of Fruit Salad with Cilantro Garnish",
+      "type": "Food"
+    },
+    "91770": {
+      "name": "盘装胡椒味松露晶饺",
+      "englishName": "Plate of Peppered Clear Truffle Ravioli",
+      "type": "Food"
+    },
+    "91771": {
+      "name": "黑胡椒素菜薄饼",
+      "englishName": "Peppercorn and Veggie Flatbread",
+      "type": "Food"
+    },
+    "91775": {
+      "name": "盘装芝麻鸟肉冻",
+      "englishName": "Plate of Sesame Poultry Aspic",
+      "type": "Food"
+    },
+    "91780": {
+      "name": "盘装丁香调味红酒焖鸡",
+      "englishName": "Plate of Clove-Spiced Coq Au Vin",
+      "type": "Food"
+    },
+    "91784": {
+      "name": "丁香调味梨子与熏肉薄饼",
+      "englishName": "Clove-Spiced Pear and Cured Meat Flatbread",
+      "type": "Food"
+    },
+    "91790": {
+      "name": "蘑菇丁香真空烹调肉排",
+      "englishName": "Mushroom Clove Sous-Vide Steak",
+      "type": "Food"
+    },
+    "91794": {
+      "name": "盘装黑胡椒调味鸟肉冻",
+      "englishName": "Plate of Peppercorn-Spiced Poultry Aspic",
+      "type": "Food"
+    },
+    "91797": {
+      "name": "盘装薄荷松露晶饺",
+      "englishName": "Plate of Clear Truffle and Mint Ravioli",
+      "type": "Food"
+    },
+    "91798": {
+      "name": "盘装芝麻松露晶饺",
+      "englishName": "Plate of Clear Truffle and Sesame Ravioli",
+      "type": "Food"
+    },
+    "91801": {
+      "name": "薄荷欧芹酱真空烹调肉排",
+      "englishName": "Sous-Vide Steak with Mint-Parsley Sauce",
+      "type": "Food"
+    },
+    "91804": {
+      "name": "芫荽牡蛎汤球",
+      "englishName": "Spherified Cilantro Oyster Soup",
+      "type": "Food"
+    },
+    "91805": {
+      "name": "芫荽柠檬真空烹调肉排",
+      "englishName": "Cilantro Lime Sous-Vide Steak",
+      "type": "Food"
+    },
+    "91806": {
+      "name": "盘装丁香调味生牛肉薄片",
+      "englishName": "Plate of Clove-Spiced Beef Carpaccio",
+      "type": "Food"
+    },
+    "91809": {
+      "name": "盘装薄荷配菜生牛肉薄片",
+      "englishName": "Plate of Beef Carpaccio with Mint Garnish",
+      "type": "Food"
+    },
+    "91822": {
+      "name": "盘装薄荷配菜红酒焖鸡",
+      "englishName": "Plate of Coq Au Vin with Mint Garnish",
+      "type": "Food"
+    },
+    "91823": {
+      "name": "芝麻素菜薄饼",
+      "englishName": "Sesame Veggie Flatbread",
+      "type": "Food"
+    },
+    "91834": {
+      "name": "薄荷草莓奶酪蛋糕",
+      "englishName": "Mint Strawberry Cheesecake",
+      "type": "Food"
+    },
+    "91835": {
+      "name": "黑胡椒调味奶酪蛋糕",
+      "englishName": "Spiced Peppercorn Cheesecake",
+      "type": "Food"
+    },
+    "91837": {
+      "name": "芝麻焦糖布丁",
+      "englishName": "Sesame Creme Brulee",
+      "type": "Food"
+    },
+    "91839": {
+      "name": "盘装丁香调味鸟肉冻",
+      "englishName": "Plate of Clove-Spiced Poultry Aspic",
+      "type": "Food"
+    },
+    "91841": {
+      "name": "碗装香橙丁香糖汁水果沙拉",
+      "englishName": "Bowl of Fruit Salad with Orange-Clove Syrup",
+      "type": "Food"
+    },
+    "91842": {
+      "name": "盘装火腿蛋松饼",
+      "englishName": "Plate of Eggs Benedict",
+      "type": "Food"
+    },
+    "91847": {
+      "name": "沙拉火腿蛋松饼",
+      "englishName": "Salsa Eggs Benedict",
+      "type": "Food"
+    },
+    "91848": {
+      "name": "胡椒味熏肉薄饼",
+      "englishName": "Peppered Cured Meat Flatbread",
+      "type": "Food"
+    },
+    "91851": {
+      "name": "草莓芫荽奶酪蛋糕",
+      "englishName": "Strawberry Cilantro Cheesecake",
+      "type": "Food"
+    },
+    "91855": {
+      "name": "芝麻火腿蛋松饼",
+      "englishName": "Sesame Eggs Benedict",
+      "type": "Food"
+    },
+    "91858": {
+      "name": "盘装黑胡椒调味生牛肉薄片",
+      "englishName": "Plate of Peppercorn-Spiced Beef Carpaccio",
+      "type": "Food"
+    },
+    "91862": {
+      "name": "盘装沙拉配菜生牛肉薄片",
+      "englishName": "Plate of Beef Carpaccio with Salsa Garnish",
+      "type": "Food"
+    },
+    "91864": {
+      "name": "盘装薄荷配菜鸟肉冻",
+      "englishName": "Plate of Poultry Aspic with Mint Garnish",
+      "type": "Food"
+    },
+    "91865": {
+      "name": "黑胡椒调味火腿蛋松饼",
+      "englishName": "Peppercorn-Spiced Eggs Benedict",
+      "type": "Food"
+    },
+    "91867": {
+      "name": "芝麻芦笋熏肉薄饼",
+      "englishName": "Sesame-Asparagus and Cured Meat Flatbread",
+      "type": "Food"
+    },
+    "91876": {
+      "name": "沙拉配素菜薄饼",
+      "englishName": "Salsa-Topped Veggie Flatbread",
+      "type": "Food"
+    },
+    "91878": {
+      "name": "芫荽与熏肉薄饼",
+      "englishName": "Cilantro and Cured Meat Flatbread",
+      "type": "Food"
+    },
+    "91917": {
+      "name": "盘装辛辣陆行鸟翅膀",
+      "englishName": "Plate of Spicy Moa Wings",
+      "type": "Food"
+    },
+    "91943": {
+      "name": "可汗辣椒肉大餐",
+      "englishName": "Feast of Carne Khan Chili",
+      "type": "Food"
+    },
+    "91950": {
+      "name": "碗装喷火辣椒",
+      "englishName": "Bowl of Firebreather Chili",
+      "type": "Food"
+    },
+    "91954": {
+      "name": "碗装可汗辣椒肉",
+      "englishName": "Bowl of Carne Khan Chili",
+      "type": "Food"
+    },
+    "92078": {
+      "name": "碗装绿辣椒冰激凌",
+      "englishName": "Bowl of Green Chile Ice Cream",
+      "type": "Food"
+    },
+    "92138": {
+      "name": "圣人遗骨",
+      "englishName": "Saint Bones",
+      "type": "Food"
+    },
+    "92196": {
+      "name": "灵魂蛋糕",
+      "englishName": "Soul Cake",
+      "type": "Food"
+    },
+    "92864": {
+      "name": "美味蛋糕",
+      "englishName": "Tasty Cake",
+      "type": "Food"
+    },
+    "92865": {
+      "name": "微型磨刀石",
+      "englishName": "Tiny Sharpening Stone",
+      "type": "Utility"
+    },
+    "93241": {
+      "name": "变色试剂",
+      "englishName": "Chatoyant Elixir",
+      "type": "Utility"
+    },
+    "93992": {
+      "name": "烈焰征途专精药酒",
+      "englishName": "Draught of Path of Fire Mastery",
+      "type": "Food"
+    },
+    "94454": {
+      "name": "泰瑞亚中心专精药酒",
+      "englishName": "Draught of Central Tyria Mastery",
+      "type": "Food"
+    },
+    "94457": {
+      "name": "决战迈古玛专精药酒",
+      "englishName": "Draught of Heart of Thorns Mastery",
+      "type": "Food"
+    },
+    "94459": {
+      "name": "冰巢传说专精药酒",
+      "englishName": "Draught of Icebrood Saga Mastery",
+      "type": "Food"
+    },
+    "95277": {
+      "name": "炸香蕉片",
+      "englishName": "Fried Banana Chips",
+      "type": "Food"
+    },
+    "95283": {
+      "name": "决战迈古玛专精试剂",
+      "englishName": "Elixir of Heart of Thorns Mastery",
+      "type": "Food"
+    },
+    "95286": {
+      "name": "泰瑞亚中心专精试剂",
+      "englishName": "Elixir of Central Tyria Mastery",
+      "type": "Food"
+    },
+    "95290": {
+      "name": "冰巢传说专精试剂",
+      "englishName": "Elixir of Icebrood Saga Mastery",
+      "type": "Food"
+    },
+    "95294": {
+      "name": "烈焰征途专精试剂",
+      "englishName": "Elixir of Path of Fire Mastery",
+      "type": "Food"
+    },
+    "95421": {
+      "name": "定制营火大餐",
+      "englishName": "Homemade Campfire Treat",
+      "type": "Food"
+    },
+    "95520": {
+      "name": "长寿面",
+      "englishName": "Longevity Noodles",
+      "type": "Food"
+    },
+    "95556": {
+      "name": "图隆糖切片",
+      "englishName": "Turrón Slice",
+      "type": "Food"
+    },
+    "95847": {
+      "name": "白鱼寿司",
+      "englishName": "Whitefish Sushi",
+      "type": "Food"
+    },
+    "95942": {
+      "name": "芦笋肉串",
+      "englishName": "Meaty Asparagus Skewer",
+      "type": "Food"
+    },
+    "96285": {
+      "name": "黄鱼寿司",
+      "englishName": "Yellowfish Sushi",
+      "type": "Food"
+    },
+    "96578": {
+      "name": "盘装泡菜煎饼",
+      "englishName": "Plate of Kimchi Pancakes",
+      "type": "Food"
+    },
+    "96707": {
+      "name": "碗装鱼汤",
+      "englishName": "Bowl of Fish Stew",
+      "type": "Food"
+    },
+    "96793": {
+      "name": "豆腐块",
+      "englishName": "Block of Tofu",
+      "type": "Food"
+    },
+    "96898": {
+      "name": "橙鱼寿司",
+      "englishName": "Orangefish Sushi",
+      "type": "Food"
+    },
+    "96916": {
+      "name": "卤肉饭",
+      "englishName": "Meaty Rice Bowl",
+      "type": "Food"
+    },
+    "97200": {
+      "name": "寿司卷",
+      "englishName": "Flight of Sushi",
+      "type": "Food"
+    },
+    "97282": {
+      "name": "碗装翠玉之海佳肴",
+      "englishName": "Bowl of Jade Sea Bounty",
+      "type": "Food"
+    },
+    "97422": {
+      "name": "碗装泡菜豆腐汤",
+      "englishName": "Bowl of Kimchi Tofu Stew",
+      "type": "Food"
+    },
+    "97472": {
+      "name": "盘装宫廷特色菜",
+      "englishName": "Plate of Imperial Palace Special",
+      "type": "Food"
+    },
+    "97592": {
+      "name": "科瓦德火锅",
+      "englishName": "Bowl of Echovald Hotpot",
+      "type": "Food"
+    },
+    "97767": {
+      "name": "鱼肉拌饭",
+      "englishName": "Fishy Rice Bowl",
+      "type": "Food"
+    },
+    "97771": {
+      "name": "红鱼寿司",
+      "englishName": "Redfish Sushi",
+      "type": "Food"
+    },
+    "97826": {
+      "name": "盘装松脆鱼肉煎饼",
+      "englishName": "Plate of Crispy Fish Pancakes",
+      "type": "Food"
+    },
+    "97933": {
+      "name": "超级混合冻糕",
+      "englishName": "Super Mixed Parfait",
+      "type": "Food"
+    },
+    "97977": {
+      "name": "愚人节的狗狗大餐",
+      "englishName": "Fool's Dog Treat",
+      "type": "Utility"
+    },
+    "98924": {
+      "name": "盘装十周年甜点",
+      "englishName": "Tray of Decade Desserts",
+      "type": "Food"
+    },
+    "98929": {
+      "name": "巨龙绝境专精试剂",
+      "englishName": "Elixir of End of Dragons Mastery",
+      "type": "Food"
+    },
+    "99379": {
+      "name": "迷雾摩卡罐装咖啡",
+      "englishName": "Mocha of the Mists Coffee Pitcher",
+      "type": "Food"
+    },
+    "99785": {
+      "name": "迷雾灌注黑胡椒粉真空烹调肉排",
+      "englishName": "Mists-Infused Peppercorn-Crusted Sous-Vide Steak",
+      "type": "Food"
+    },
+    "99794": {
+      "name": "迷雾灌注黑胡椒调味牡蛎汤球",
+      "englishName": "Mists-Infused Spherified Peppercorn-Spiced Oyster Soup",
+      "type": "Food"
+    },
+    "99804": {
+      "name": "碗装迷雾灌注薄荷配菜水果沙拉",
+      "englishName": "Bowl of Mists-Infused Fruit Salad with Mint Garnish",
+      "type": "Food"
+    },
+    "99842": {
+      "name": "迷雾灌注保养油",
+      "englishName": "Mist-Infused Maintenance Oil",
+      "type": "Utility"
+    },
+    "99845": {
+      "name": "迷雾灌注磨刀石",
+      "englishName": "Mist-Infused Sharpening Stone",
+      "type": "Utility"
+    },
+    "99955": {
+      "name": "风裔鱼肉干",
+      "englishName": "Zephyrite Fish Jerky",
+      "type": "Food"
+    },
+    "101651": {
+      "name": "愚人节高大合剂",
+      "englishName": "Fool's Tall Tonic",
+      "type": "Utility"
+    },
+    "101666": {
+      "name": "严肃药剂",
+      "englishName": "Serious Potion",
+      "type": "Utility"
+    },
+    "102135": {
+      "name": "迷雾灌注大师聚焦水晶",
+      "englishName": "Mist-Infused Master Tuning Crystal",
+      "type": "Utility"
+    },
+    "102230": {
+      "name": "寻路者的多功能桌装饰",
+      "englishName": "Wayfinder's Versatile Table Decoration",
+      "type": "Utility"
+    },
+    "105402": {
+      "name": "爆米花玉米糖包",
+      "englishName": "Bag of Popped Candy Corn",
+      "type": "Food"
+    },
+    "106158": {
+      "name": "碗装炖菜",
+      "englishName": "Bowl of Stew",
+      "type": "Food"
+    },
+    "106880": {
+      "name": "雪钻装饰",
+      "englishName": "Snow Diamond Ornament",
+      "type": "Food"
+    },
+    "106982": {
+      "name": "珍瑟荒野专精试剂",
+      "englishName": "Elixir of Janthir Wilds Mastery",
+      "type": "Food"
+    },
+    "107031": {
+      "name": "天界之谜专精试剂",
+      "englishName": "Elixir of Secrets of the Obscure Mastery",
+      "type": "Food"
+    },
+    "107063": {
+      "name": "永恒愿景专精试剂",
+      "englishName": "Elixir of Visions of Eternity Mastery",
+      "type": "Food"
+    },
+    "107101": {
+      "name": "新年年糕",
+      "englishName": "New Year Rice Cake",
+      "type": "Food"
+    },
+    "108829": {
+      "name": "愚人明目合剂",
+      "englishName": "Fool's Ocular Tonic",
+      "type": "Utility"
+    },
+    "108839": {
+      "name": "超级锐化多边形",
+      "englishName": "Super Sharpening Polygon",
+      "type": "Food"
+    },
+    "109776": {
+      "name": "上古巨龙棒棒糖",
+      "englishName": "Elder Draco-Pop",
+      "type": "Food"
+    },
+    "109863": {
+      "name": "利维坦淬火油",
+      "englishName": "Leviathan Tempering Oil",
+      "type": "Food"
+    },
+    "110238": {
+      "name": "步行药剂",
+      "englishName": "Dismounting Potion",
+      "type": "Utility"
+    }
+  }
+}

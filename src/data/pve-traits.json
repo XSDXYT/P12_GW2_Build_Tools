@@ -1,0 +1,6196 @@
+{
+  "schema": 1,
+  "mode": "pve",
+  "balance": "live",
+  "sourceCommit": "85bdcbd9bc64a6299242bce740d6a42d9da5f210",
+  "source": "https://github.com/Kadenar/gw2-combat-simulator",
+  "catalogRevision": "2026-10-19T15:34:13.848Z",
+  "generatedAt": "2026-10-19T23:39:12.490Z",
+  "descriptionSource": "Catalog Chinese descriptions: Wishingstarmoye with official Guild Wars 2 API fallback",
+  "policy": "Game parameters only; no reference source programs, authored descriptions, or implementations included.",
+  "traits": {
+    "214": {
+      "rows": [
+        {
+          "label": "激怒冷却",
+          "amount": 8,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 4,
+          "stacks": 1,
+          "recipient": "小队至多 5 人"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/air/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/air.ts"
+      ]
+    },
+    "221": {
+      "rows": [
+        {
+          "label": "暴击率加成",
+          "amount": 5,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/air/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/air.ts"
+      ]
+    },
+    "222": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 8,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/air/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/air.ts"
+      ]
+    },
+    "223": {
+      "rows": [
+        {
+          "label": "暴击效果每加成",
+          "amount": 150,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/air/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/air.ts"
+      ]
+    },
+    "226": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/air/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/air.ts"
+      ]
+    },
+    "227": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 5,
+          "stacks": 1
+        },
+        {
+          "status": "迅捷",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/air/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/air.ts"
+      ]
+    },
+    "229": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 1
+        },
+        {
+          "status": "再生",
+          "duration": 10,
+          "stacks": 1
+        },
+        {
+          "status": "迅捷",
+          "duration": 10,
+          "stacks": 1
+        },
+        {
+          "status": "保护",
+          "duration": 3,
+          "stacks": 1
+        },
+        {
+          "status": "抗性",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/air/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/air.ts"
+      ]
+    },
+    "232": {
+      "rows": [
+        {
+          "label": "精准转换为暴击效果",
+          "amount": 7,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/air/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/air.ts"
+      ]
+    },
+    "253": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 3,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 1.5,
+          "stacks": 1
+        },
+        {
+          "status": "易伤",
+          "duration": 10,
+          "stacks": 1
+        },
+        {
+          "status": "虚弱",
+          "duration": 3,
+          "stacks": 1
+        },
+        {
+          "status": "流血",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/arcane/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/arcane.ts"
+      ]
+    },
+    "263": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 3.5,
+          "stacks": 1
+        },
+        {
+          "status": "定身",
+          "duration": 2,
+          "stacks": 1
+        },
+        {
+          "status": "急速",
+          "duration": 4,
+          "stacks": 1
+        },
+        {
+          "status": "目盲",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/arcane/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/arcane.ts"
+      ]
+    },
+    "264": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 15,
+          "stacks": 1,
+          "recipient": "小队至多 5 人"
+        },
+        {
+          "status": "再生",
+          "duration": 5,
+          "stacks": 1,
+          "recipient": "小队至多 5 人"
+        },
+        {
+          "status": "迅捷",
+          "duration": 8,
+          "stacks": 1,
+          "recipient": "小队至多 5 人"
+        },
+        {
+          "status": "保护",
+          "duration": 5,
+          "stacks": 1,
+          "recipient": "小队至多 5 人"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/arcane/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/arcane.ts"
+      ]
+    },
+    "266": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "活力",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/arcane/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/arcane.ts"
+      ]
+    },
+    "268": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 8,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/arcane/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/arcane.ts"
+      ]
+    },
+    "275": {
+      "rows": [
+        {
+          "label": "坚韧转换为症状伤害",
+          "amount": 10,
+          "unit": "%"
+        },
+        {
+          "label": "流血冷却",
+          "amount": 3,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 10,
+          "stacks": 3
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/earth/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/earth.ts"
+      ]
+    },
+    "281": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "稳固",
+          "duration": 3,
+          "stacks": 1,
+          "recipient": "小队至多 5 人"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/earth/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/earth.ts"
+      ]
+    },
+    "282": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 15,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "抗性",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/earth/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/earth.ts"
+      ]
+    },
+    "289": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/earth/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/earth.ts"
+      ]
+    },
+    "296": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 5,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/fire/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/fire.ts"
+      ]
+    },
+    "325": {
+      "rows": [
+        {
+          "label": "症状伤害",
+          "amount": 180,
+          "unit": "number"
+        }
+      ],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 4,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/fire/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/fire.ts"
+      ]
+    },
+    "348": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 15,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "再生",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/water/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/water.ts"
+      ]
+    },
+    "349": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/water/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/water.ts"
+      ]
+    },
+    "363": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 7,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/water/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/water.ts"
+      ]
+    },
+    "413": {
+      "rows": [
+        {
+          "label": "增益效果",
+          "amount": 240,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/alchemy/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/alchemy.ts"
+      ]
+    },
+    "433": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 10,
+          "unit": "s"
+        },
+        {
+          "label": "燃烧持续时间",
+          "amount": 33,
+          "unit": "%"
+        }
+      ],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 8,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/firearms/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/firearms.ts"
+      ]
+    },
+    "469": {
+      "rows": [
+        {
+          "label": "激怒冷却",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/alchemy/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/alchemy.ts"
+      ]
+    },
+    "473": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 12,
+          "stacks": 2
+        },
+        {
+          "status": "激怒",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/alchemy/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/alchemy.ts"
+      ]
+    },
+    "505": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 6,
+          "stacks": 1
+        },
+        {
+          "status": "残废",
+          "duration": 1,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/explosives/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/explosives.ts"
+      ]
+    },
+    "515": {
+      "rows": [
+        {
+          "label": "流血持续时间",
+          "amount": 33,
+          "unit": "%"
+        }
+      ],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/firearms/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/firearms.ts"
+      ]
+    },
+    "516": {
+      "rows": [
+        {
+          "label": "直伤伤害每目标症状",
+          "amount": 1,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/firearms/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/firearms.ts"
+      ]
+    },
+    "517": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/explosives/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/explosives.ts"
+      ]
+    },
+    "525": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 3,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/explosives/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/explosives.ts"
+      ]
+    },
+    "536": {
+      "rows": [
+        {
+          "label": "激怒冷却",
+          "amount": 8,
+          "unit": "s"
+        },
+        {
+          "label": "拥有激怒时的额外暴击率",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 8,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/firearms/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/firearms.ts"
+      ]
+    },
+    "557": {
+      "rows": [
+        {
+          "label": "增益效果",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/honor/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/honor.ts"
+      ]
+    },
+    "558": {
+      "rows": [
+        {
+          "label": "符号时长增加",
+          "amount": 2,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/honor/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/honor.ts"
+      ]
+    },
+    "562": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 8,
+          "stacks": 1,
+          "recipient": "小队成员"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/honor/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/honor.ts"
+      ]
+    },
+    "566": {
+      "rows": [
+        {
+          "label": "精准",
+          "amount": 80,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/radiance/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/radiance.ts"
+      ]
+    },
+    "567": {
+      "rows": [
+        {
+          "label": "燃烧持续时间",
+          "amount": 20,
+          "unit": "%"
+        },
+        {
+          "label": "火炬冷却变化持续时间",
+          "amount": -20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/radiance/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/radiance.ts"
+      ]
+    },
+    "568": {
+      "rows": [
+        {
+          "label": "暴击效果",
+          "amount": 150,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/radiance/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/radiance.ts"
+      ]
+    },
+    "572": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "目盲",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/radiance/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/radiance.ts"
+      ]
+    },
+    "574": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 20,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "决心",
+          "duration": 8,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/radiance/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/radiance.ts"
+      ]
+    },
+    "577": {
+      "rows": [
+        {
+          "label": "燃烧叠层阈值",
+          "amount": 3,
+          "unit": "number"
+        },
+        {
+          "label": "冷却",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 8,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/radiance/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/radiance.ts"
+      ]
+    },
+    "646": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 5,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/zeal/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/zeal.ts"
+      ]
+    },
+    "649": {
+      "rows": [
+        {
+          "label": "直伤伤害每叠层",
+          "amount": 1,
+          "unit": "%"
+        },
+        {
+          "label": "最多伤害层数",
+          "amount": 5,
+          "unit": "number"
+        },
+        {
+          "label": "叠层持续时间",
+          "amount": 15,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/zeal/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/zeal.ts"
+      ]
+    },
+    "653": {
+      "rows": [
+        {
+          "label": "威力",
+          "amount": 120,
+          "unit": "number"
+        },
+        {
+          "label": "巨剑冷却变化持续时间",
+          "amount": -20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/zeal/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/zeal.ts"
+      ]
+    },
+    "667": {
+      "rows": [
+        {
+          "label": "症状伤害",
+          "amount": 7,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/chaos/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/chaos.ts"
+      ]
+    },
+    "669": {
+      "rows": [
+        {
+          "label": "幻象冷却变化减少",
+          "amount": 5,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/chaos/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/chaos.ts"
+      ]
+    },
+    "681": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/domination/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/domination.ts"
+      ]
+    },
+    "682": {
+      "rows": [
+        {
+          "label": "幻术造物直伤加成",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/domination/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/domination.ts"
+      ]
+    },
+    "686": {
+      "rows": [
+        {
+          "label": "伤害每幻象",
+          "amount": -34,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/domination/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/domination.ts"
+      ]
+    },
+    "687": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 8,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/domination/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/domination.ts"
+      ]
+    },
+    "691": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 3,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/illusions/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/illusions.ts"
+      ]
+    },
+    "692": {
+      "rows": [
+        {
+          "label": "基础暴击伤害加成",
+          "amount": 15,
+          "unit": "%"
+        },
+        {
+          "label": "满足条件时的暴击伤害加成",
+          "amount": 25,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/dueling/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/dueling.ts"
+      ]
+    },
+    "694": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 8,
+          "stacks": 5
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/domination/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/domination.ts"
+      ]
+    },
+    "701": {
+      "rows": [
+        {
+          "label": "幻象暴击率加成",
+          "amount": 25,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/dueling/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/dueling.ts"
+      ]
+    },
+    "706": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "活力",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/dueling/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/dueling.ts"
+      ]
+    },
+    "707": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 8,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 8,
+          "stacks": 1,
+          "recipient": "自身"
+        },
+        {
+          "status": "激怒",
+          "duration": 4,
+          "stacks": 1,
+          "recipient": "小队至多 4 人（不含自身）"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/dueling/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/dueling.ts"
+      ]
+    },
+    "708": {
+      "rows": [
+        {
+          "label": "每层暴击效果",
+          "amount": 15,
+          "unit": "number"
+        },
+        {
+          "label": "最多层数",
+          "amount": 10,
+          "unit": "number"
+        },
+        {
+          "label": "叠层持续时间",
+          "amount": 6,
+          "unit": "s"
+        },
+        {
+          "label": "剑技能冷却变化",
+          "amount": -20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/dueling/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/dueling.ts"
+      ]
+    },
+    "710": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/dueling/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/dueling.ts"
+      ]
+    },
+    "713": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/domination/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/domination.ts"
+      ]
+    },
+    "723": {
+      "rows": [
+        {
+          "label": "直伤伤害每叠层",
+          "amount": 1,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害每叠层",
+          "amount": 1,
+          "unit": "%"
+        },
+        {
+          "label": "最多层数",
+          "amount": 5,
+          "unit": "number"
+        },
+        {
+          "label": "叠层持续时间",
+          "amount": 8,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/illusions/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/illusions.ts"
+      ]
+    },
+    "731": {
+      "rows": [
+        {
+          "label": "冷却变化",
+          "amount": -15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/illusions/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/illusions.ts"
+      ]
+    },
+    "734": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "困惑",
+          "duration": 4,
+          "stacks": 2,
+          "trigger": "替换满足条件的粉碎命中效果"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/illusions/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/illusions.ts"
+      ]
+    },
+    "753": {
+      "rows": [
+        {
+          "label": "困惑持续时间",
+          "amount": 25,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/illusions/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/illusions.ts"
+      ]
+    },
+    "799": {
+      "rows": [
+        {
+          "label": "效能",
+          "amount": 50,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/blood-magic/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/blood-magic.ts"
+      ]
+    },
+    "801": {
+      "rows": [
+        {
+          "label": "症状伤害",
+          "amount": 200,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/curses/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/curses.ts"
+      ]
+    },
+    "802": {
+      "rows": [
+        {
+          "label": "流血持续时间",
+          "amount": 20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/curses/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/curses.ts"
+      ]
+    },
+    "803": {
+      "rows": [
+        {
+          "label": "精准",
+          "amount": 180,
+          "unit": "number"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 8,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/curses/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/curses.ts"
+      ]
+    },
+    "810": {
+      "rows": [
+        {
+          "label": "暴击几率每目标症状",
+          "amount": 2,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/curses/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/curses.ts"
+      ]
+    },
+    "813": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 10,
+          "stacks": 2
+        },
+        {
+          "status": "虚弱",
+          "duration": 6,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/curses/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/curses.ts"
+      ]
+    },
+    "815": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 3,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/curses/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/curses.ts"
+      ]
+    },
+    "816": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "折磨",
+          "duration": 10,
+          "stacks": 2,
+          "recipient": "自身"
+        },
+        {
+          "status": "易伤",
+          "duration": 4,
+          "stacks": 5,
+          "recipient": "自身"
+        },
+        {
+          "status": "中毒",
+          "duration": 4,
+          "stacks": 1,
+          "recipient": "自身"
+        },
+        {
+          "status": "残废",
+          "duration": 2,
+          "stacks": 1,
+          "recipient": "自身"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/curses/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/curses.ts"
+      ]
+    },
+    "829": {
+      "rows": [
+        {
+          "label": "威力转换为体力",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/spite/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/spite.ts"
+      ]
+    },
+    "853": {
+      "rows": [
+        {
+          "label": "目标生命值低于",
+          "amount": 50,
+          "unit": "%"
+        },
+        {
+          "label": "直伤加成",
+          "amount": 20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/spite/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/spite.ts"
+      ]
+    },
+    "857": {
+      "rows": [
+        {
+          "label": "中毒伤害",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/death-magic/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/death-magic.ts"
+      ]
+    },
+    "860": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 5,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/death-magic/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/death-magic.ts"
+      ]
+    },
+    "861": {
+      "rows": [
+        {
+          "label": "体力",
+          "amount": 180,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/soul-reaping/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/soul-reaping.ts"
+      ]
+    },
+    "888": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "迅捷",
+          "duration": 10,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/soul-reaping/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/soul-reaping.ts"
+      ]
+    },
+    "889": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/soul-reaping/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/soul-reaping.ts"
+      ]
+    },
+    "892": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 4,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/soul-reaping/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/soul-reaping.ts"
+      ]
+    },
+    "893": {
+      "rows": [
+        {
+          "label": "暴击率加成",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/soul-reaping/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/soul-reaping.ts"
+      ]
+    },
+    "894": {
+      "rows": [
+        {
+          "label": "症状伤害",
+          "amount": 10,
+          "unit": "%"
+        },
+        {
+          "label": "伤害加成持续时间",
+          "amount": 15,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/soul-reaping/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/soul-reaping.ts"
+      ]
+    },
+    "899": {
+      "rows": [
+        {
+          "label": "目标生命值低于",
+          "amount": 50,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/spite/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/spite.ts"
+      ]
+    },
+    "914": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 5,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/spite/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/spite.ts"
+      ]
+    },
+    "915": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 5,
+          "stacks": 5
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/spite/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/spite.ts"
+      ]
+    },
+    "917": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 1,
+          "unit": "s"
+        },
+        {
+          "label": "目标生命值低于",
+          "amount": 50,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/spite/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/spite.ts"
+      ]
+    },
+    "919": {
+      "rows": [
+        {
+          "label": "伤害加成持续时间",
+          "amount": 3,
+          "unit": "s"
+        },
+        {
+          "label": "直伤加成",
+          "amount": 20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/spite/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/spite.ts"
+      ]
+    },
+    "970": {
+      "rows": [
+        {
+          "label": "基础暴击效果",
+          "amount": 120,
+          "unit": "number"
+        },
+        {
+          "label": "斧冷却变化",
+          "amount": -20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/beastmastery/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/beastmastery.ts"
+      ]
+    },
+    "974": {
+      "rows": [
+        {
+          "label": "宠物直伤伤害",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/beastmastery/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/beastmastery.ts"
+      ]
+    },
+    "975": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "虚弱",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/beastmastery/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/beastmastery.ts"
+      ]
+    },
+    "978": {
+      "rows": [
+        {
+          "label": "威力转换为治疗效果",
+          "amount": 7,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/nature-magic/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/nature-magic.ts"
+      ]
+    },
+    "996": {
+      "rows": [
+        {
+          "label": "宠物直伤伤害",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/marksmanship/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/marksmanship.ts"
+      ]
+    },
+    "1001": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 6,
+          "stacks": 6
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/marksmanship/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/marksmanship.ts"
+      ]
+    },
+    "1009": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "残废",
+          "duration": 2,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/marksmanship/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/marksmanship.ts"
+      ]
+    },
+    "1010": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 5,
+          "stacks": 5
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/marksmanship/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/marksmanship.ts"
+      ]
+    },
+    "1014": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/marksmanship/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/marksmanship.ts"
+      ]
+    },
+    "1016": {
+      "rows": [
+        {
+          "label": "宠物精准",
+          "amount": 420,
+          "unit": "number"
+        },
+        {
+          "label": "宠物暴击效果",
+          "amount": 450,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/skirmishing/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/skirmishing.ts"
+      ]
+    },
+    "1047": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 0.25,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 8,
+          "stacks": 5
+        },
+        {
+          "status": "激怒",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/beastmastery/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/beastmastery.ts"
+      ]
+    },
+    "1055": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 20,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/nature-magic/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/nature-magic.ts"
+      ]
+    },
+    "1059": {
+      "rows": [
+        {
+          "label": "增益效果",
+          "amount": 240,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/nature-magic/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/nature-magic.ts"
+      ]
+    },
+    "1062": {
+      "rows": [
+        {
+          "label": "宠物直伤伤害每增益",
+          "amount": 1,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/nature-magic/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/nature-magic.ts"
+      ]
+    },
+    "1064": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 9,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/skirmishing/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/skirmishing.ts"
+      ]
+    },
+    "1065": {
+      "rows": [
+        {
+          "label": "暴击效果",
+          "amount": 300,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/beastmastery/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/beastmastery.ts"
+      ]
+    },
+    "1068": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 10,
+          "unit": "%"
+        },
+        {
+          "label": "暴击率加成",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/skirmishing/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/skirmishing.ts"
+      ]
+    },
+    "1069": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/skirmishing/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/skirmishing.ts"
+      ]
+    },
+    "1075": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "残废",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/skirmishing/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/skirmishing.ts"
+      ]
+    },
+    "1080": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 9,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "迅捷",
+          "duration": 9,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/skirmishing/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/skirmishing.ts"
+      ]
+    },
+    "1083": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 9,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/skirmishing/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/skirmishing.ts"
+      ]
+    },
+    "1094": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 0.25,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/wilderness-survival/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/wilderness-survival.ts"
+      ]
+    },
+    "1099": {
+      "rows": [
+        {
+          "label": "症状效果",
+          "amount": 150,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/wilderness-survival/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/wilderness-survival.ts"
+      ]
+    },
+    "1101": {
+      "rows": [
+        {
+          "label": "基础症状伤害",
+          "amount": 120,
+          "unit": "number"
+        },
+        {
+          "label": "匕首火炬冷却变化",
+          "amount": -20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/wilderness-survival/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/wilderness-survival.ts"
+      ]
+    },
+    "1157": {
+      "rows": [
+        {
+          "label": "直伤及症状伤害每叠层",
+          "amount": 1,
+          "unit": "%"
+        },
+        {
+          "label": "最多层数",
+          "amount": 15,
+          "unit": "number"
+        },
+        {
+          "label": "叠层持续时间",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/trickery/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/trickery.ts"
+      ]
+    },
+    "1163": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 10,
+          "stacks": 1
+        },
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 5
+        },
+        {
+          "status": "迅捷",
+          "duration": 10,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/trickery/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/trickery.ts"
+      ]
+    },
+    "1164": {
+      "rows": [
+        {
+          "label": "症状伤害",
+          "amount": 180,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/deadly-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadly-arts.ts"
+      ]
+    },
+    "1169": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 10,
+          "stacks": 10
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/deadly-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadly-arts.ts"
+      ]
+    },
+    "1170": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 5,
+          "stacks": 10
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/critical-strikes/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/critical-strikes.ts"
+      ]
+    },
+    "1187": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 8,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/trickery/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/trickery.ts"
+      ]
+    },
+    "1192": {
+      "rows": [
+        {
+          "label": "威力",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/acrobatics/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/acrobatics.ts"
+      ]
+    },
+    "1209": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 2,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 8,
+          "stacks": 3
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/critical-strikes/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/critical-strikes.ts"
+      ]
+    },
+    "1210": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 8,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/critical-strikes/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/critical-strikes.ts"
+      ]
+    },
+    "1215": {
+      "rows": [
+        {
+          "label": "暴击率加成",
+          "amount": 100,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/critical-strikes/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/critical-strikes.ts"
+      ]
+    },
+    "1232": {
+      "rows": [
+        {
+          "label": "症状效果",
+          "amount": 150,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/trickery/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/trickery.ts"
+      ]
+    },
+    "1242": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 10,
+          "unit": "%"
+        },
+        {
+          "label": "加成持续时间",
+          "amount": 5,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/acrobatics/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/acrobatics.ts"
+      ]
+    },
+    "1245": {
+      "rows": [
+        {
+          "label": "威力",
+          "amount": 80,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/deadly-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadly-arts.ts"
+      ]
+    },
+    "1257": {
+      "rows": [
+        {
+          "label": "直伤伤害每症状",
+          "amount": 2,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/deadly-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadly-arts.ts"
+      ]
+    },
+    "1269": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/deadly-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadly-arts.ts"
+      ]
+    },
+    "1277": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "活力",
+          "duration": 10,
+          "stacks": 1
+        },
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 5
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/trickery/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/trickery.ts"
+      ]
+    },
+    "1279": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "中毒",
+          "duration": 10,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/deadly-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadly-arts.ts"
+      ]
+    },
+    "1280": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 3,
+          "recipient": "自身"
+        },
+        {
+          "status": "虚弱",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/deadly-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadly-arts.ts"
+      ]
+    },
+    "1282": {
+      "rows": [
+        {
+          "label": "暴击伤害",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/critical-strikes/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/critical-strikes.ts"
+      ]
+    },
+    "1284": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 2,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "目盲",
+          "duration": 3,
+          "stacks": 1
+        },
+        {
+          "status": "虚弱",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/shadow-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/shadow-arts.ts"
+      ]
+    },
+    "1289": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 20,
+          "stacks": 3,
+          "recipient": "自身"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/acrobatics/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/acrobatics.ts"
+      ]
+    },
+    "1291": {
+      "rows": [
+        {
+          "label": "中毒伤害",
+          "amount": 33,
+          "unit": "%"
+        },
+        {
+          "label": "中毒持续时间",
+          "amount": 33,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/deadly-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadly-arts.ts"
+      ]
+    },
+    "1292": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "定身",
+          "duration": 2.5,
+          "stacks": 1
+        },
+        {
+          "status": "中毒",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/deadly-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadly-arts.ts"
+      ]
+    },
+    "1295": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 2,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/acrobatics/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/acrobatics.ts"
+      ]
+    },
+    "1299": {
+      "rows": [
+        {
+          "label": "手枪直伤伤害",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/critical-strikes/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/critical-strikes.ts"
+      ]
+    },
+    "1300": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "目盲",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/shadow-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/shadow-arts.ts"
+      ]
+    },
+    "1315": {
+      "rows": [
+        {
+          "label": "暴击率加成",
+          "amount": 25,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/arms/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/arms.ts"
+      ]
+    },
+    "1317": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/discipline/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/discipline.ts"
+      ]
+    },
+    "1333": {
+      "rows": [
+        {
+          "label": "症状效果剑症状伤害",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/arms/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/arms.ts"
+      ]
+    },
+    "1334": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/arms/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/arms.ts"
+      ]
+    },
+    "1336": {
+      "rows": [
+        {
+          "label": "暴击率加成",
+          "amount": 100,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/arms/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/arms.ts"
+      ]
+    },
+    "1337": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/arms/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/arms.ts"
+      ]
+    },
+    "1338": {
+      "rows": [
+        {
+          "label": "威力",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/strength/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/strength.ts"
+      ]
+    },
+    "1342": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 4,
+          "unit": "s"
+        },
+        {
+          "label": "拥有激怒时的额外暴击率",
+          "amount": 5,
+          "unit": "%"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 2.5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/arms/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/arms.ts"
+      ]
+    },
+    "1344": {
+      "rows": [
+        {
+          "label": "每层暴击效果",
+          "amount": 100,
+          "unit": "number"
+        },
+        {
+          "label": "最多层数",
+          "amount": 5,
+          "unit": "number"
+        },
+        {
+          "label": "目标生命值低于",
+          "amount": 50,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/arms/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/arms.ts"
+      ]
+    },
+    "1346": {
+      "rows": [
+        {
+          "label": "症状伤害每叠层",
+          "amount": 15,
+          "unit": "number"
+        },
+        {
+          "label": "最多层数",
+          "amount": 25,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/arms/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/arms.ts"
+      ]
+    },
+    "1350": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/defense/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/defense.ts"
+      ]
+    },
+    "1367": {
+      "rows": [
+        {
+          "label": "巨锤及钉锤直伤伤害",
+          "amount": 25,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/defense/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/defense.ts"
+      ]
+    },
+    "1369": {
+      "rows": [
+        {
+          "label": "暴击效果",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/discipline/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/discipline.ts"
+      ]
+    },
+    "1372": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "虚弱",
+          "duration": 3.5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/defense/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/defense.ts"
+      ]
+    },
+    "1437": {
+      "rows": [
+        {
+          "label": "直伤伤害每叠层",
+          "amount": 3.75,
+          "unit": "%"
+        },
+        {
+          "label": "最多层数",
+          "amount": 4,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/strength/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/strength.ts"
+      ]
+    },
+    "1440": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 0.32,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/strength/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/strength.ts"
+      ]
+    },
+    "1444": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 5,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/strength/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/strength.ts"
+      ]
+    },
+    "1446": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 5,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/strength/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/strength.ts"
+      ]
+    },
+    "1447": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "稳固",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/strength/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/strength.ts"
+      ]
+    },
+    "1451": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 6,
+          "stacks": 5
+        },
+        {
+          "status": "抗性",
+          "duration": 6,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/strength/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/strength.ts"
+      ]
+    },
+    "1453": {
+      "rows": [
+        {
+          "label": "暴击率加成",
+          "amount": 5,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/strength/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/strength.ts"
+      ]
+    },
+    "1469": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "定身",
+          "duration": 1,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/tactics/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/tactics.ts"
+      ]
+    },
+    "1470": {
+      "rows": [
+        {
+          "label": "威力转换为治疗效果",
+          "amount": 13,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/tactics/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/tactics.ts"
+      ]
+    },
+    "1471": {
+      "rows": [
+        {
+          "label": "增益效果",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/tactics/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/tactics.ts"
+      ]
+    },
+    "1474": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/tactics/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/tactics.ts"
+      ]
+    },
+    "1480": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 15,
+          "stacks": 3
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/tactics/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/tactics.ts"
+      ]
+    },
+    "1482": {
+      "rows": [
+        {
+          "label": "脉冲间隔",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 5
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/tactics/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/tactics.ts"
+      ]
+    },
+    "1485": {
+      "rows": [
+        {
+          "label": "直伤伤害每增益",
+          "amount": 1,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/tactics/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/tactics.ts"
+      ]
+    },
+    "1486": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 25,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/tactics/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/tactics.ts"
+      ]
+    },
+    "1502": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 7,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/air/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/air.ts"
+      ]
+    },
+    "1510": {
+      "rows": [
+        {
+          "label": "直伤伤害每叠层",
+          "amount": 2,
+          "unit": "%"
+        },
+        {
+          "label": "最多层数",
+          "amount": 5,
+          "unit": "number"
+        },
+        {
+          "label": "叠层持续时间",
+          "amount": 15,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/fire/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/fire.ts"
+      ]
+    },
+    "1511": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/arcane/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/arcane.ts"
+      ]
+    },
+    "1541": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "抗性",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/explosives/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/explosives.ts"
+      ]
+    },
+    "1606": {
+      "rows": [
+        {
+          "label": "兽魂融合增益延长",
+          "amount": 2,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/beastmastery/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/beastmastery.ts"
+      ]
+    },
+    "1657": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "迅捷",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/discipline/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/discipline.ts"
+      ]
+    },
+    "1667": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "稳固",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/tactics/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/tactics.ts"
+      ]
+    },
+    "1672": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "虚弱",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/air/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/air.ts"
+      ]
+    },
+    "1673": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 5,
+          "stacks": 5
+        },
+        {
+          "status": "再生",
+          "duration": 10,
+          "stacks": 1
+        },
+        {
+          "status": "激怒",
+          "duration": 5,
+          "stacks": 1
+        },
+        {
+          "status": "保护",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/arcane/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/arcane.ts"
+      ]
+    },
+    "1682": {
+      "rows": [
+        {
+          "label": "体力",
+          "amount": 300,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/honor/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/honor.ts"
+      ]
+    },
+    "1683": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 6,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/radiance/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/radiance.ts"
+      ]
+    },
+    "1686": {
+      "rows": [
+        {
+          "label": "燃烧伤害",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/radiance/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/radiance.ts"
+      ]
+    },
+    "1690": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "折磨",
+          "duration": 6,
+          "stacks": 1,
+          "trigger": "每次满足条件的粉碎命中"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/illusions/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/illusions.ts"
+      ]
+    },
+    "1696": {
+      "rows": [
+        {
+          "label": "基础伤害",
+          "amount": 444,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/curses/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/curses.ts"
+      ]
+    },
+    "1698": {
+      "rows": [
+        {
+          "label": "长弓冷却变化",
+          "amount": -20,
+          "unit": "%"
+        }
+      ],
+      "effects": [
+        {
+          "status": "迅捷",
+          "duration": 10,
+          "stacks": 1
+        },
+        {
+          "status": "急速",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/marksmanship/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/marksmanship.ts"
+      ]
+    },
+    "1700": {
+      "rows": [
+        {
+          "label": "基础威力",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/skirmishing/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/skirmishing.ts"
+      ]
+    },
+    "1701": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "中毒",
+          "duration": 8,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/wilderness-survival/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/wilderness-survival.ts"
+      ]
+    },
+    "1704": {
+      "rows": [
+        {
+          "label": "威力",
+          "amount": 80,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/deadly-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadly-arts.ts"
+      ]
+    },
+    "1705": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/shadow-arts/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/shadow-arts.ts"
+      ]
+    },
+    "1706": {
+      "rows": [
+        {
+          "label": "流血伤害",
+          "amount": 25,
+          "unit": "%"
+        }
+      ],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 10,
+          "stacks": 3
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/core/traits/trickery/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/trickery.ts"
+      ]
+    },
+    "1708": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 0.32,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "稳固",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/defense/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/defense.ts"
+      ]
+    },
+    "1714": {
+      "rows": [
+        {
+          "label": "症状持续时间",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/corruption/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/corruption.ts"
+      ]
+    },
+    "1715": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 9,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/devastation/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/devastation.ts"
+      ]
+    },
+    "1727": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "折磨",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/corruption/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/corruption.ts"
+      ]
+    },
+    "1740": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "虚弱",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/retribution/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/retribution.ts"
+      ]
+    },
+    "1761": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/invocation/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/invocation.ts"
+      ]
+    },
+    "1765": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/devastation/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/devastation.ts"
+      ]
+    },
+    "1767": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/devastation/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/devastation.ts"
+      ]
+    },
+    "1778": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/invocation/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/invocation.ts"
+      ]
+    },
+    "1779": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/retribution/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/retribution.ts"
+      ]
+    },
+    "1781": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 8,
+          "stacks": 5
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/invocation/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/invocation.ts"
+      ]
+    },
+    "1786": {
+      "rows": [
+        {
+          "label": "激怒间隔",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/devastation/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/devastation.ts"
+      ]
+    },
+    "1793": {
+      "rows": [
+        {
+          "label": "折磨伤害",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/corruption/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/corruption.ts"
+      ]
+    },
+    "1800": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/devastation/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/devastation.ts"
+      ]
+    },
+    "1806": {
+      "rows": [
+        {
+          "label": "额外增益延长",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/revenant/specializations/herald/traits/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/herald.ts"
+      ]
+    },
+    "1808": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 5,
+          "stacks": 5
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/devastation/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/devastation.ts"
+      ]
+    },
+    "1821": {
+      "rows": [
+        {
+          "label": "治疗效果",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/revenant/core/traits/salvation/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/salvation.ts"
+      ]
+    },
+    "1833": {
+      "rows": [
+        {
+          "label": "症状伤害",
+          "amount": 15,
+          "unit": "%"
+        },
+        {
+          "label": "加成持续时间",
+          "amount": 6,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 4,
+          "stacks": 2
+        },
+        {
+          "status": "折磨",
+          "duration": 4,
+          "stacks": 2
+        },
+        {
+          "status": "残废",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/daredevil/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/daredevil.ts"
+      ]
+    },
+    "1839": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 25,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害",
+          "amount": 20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/tempest/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/tempest.ts"
+      ]
+    },
+    "1846": {
+      "rows": [
+        {
+          "label": "流血伤害",
+          "amount": 20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/skirmishing/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/skirmishing.ts"
+      ]
+    },
+    "1849": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "稳固",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/scrapper/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/scrapper.ts"
+      ]
+    },
+    "1856": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/tools/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/tools.ts"
+      ]
+    },
+    "1861": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 12,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "目盲",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/beastmastery/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/beastmastery.ts"
+      ]
+    },
+    "1863": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 8,
+          "stacks": 3
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/spite/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/spite.ts"
+      ]
+    },
+    "1865": {
+      "rows": [
+        {
+          "label": "症状效果",
+          "amount": 100,
+          "unit": "number"
+        },
+        {
+          "label": "增益效果",
+          "amount": 250,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/chaos/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/chaos.ts"
+      ]
+    },
+    "1867": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 5,
+          "stacks": 1
+        },
+        {
+          "status": "稳固",
+          "duration": 3,
+          "stacks": 1,
+          "recipient": "小队至多 5 人"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/scrapper/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/scrapper.ts"
+      ]
+    },
+    "1871": {
+      "rows": [
+        {
+          "label": "冷却",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 5,
+          "stacks": 1
+        },
+        {
+          "status": "稳固",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/alchemy/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/alchemy.ts"
+      ]
+    },
+    "1878": {
+      "rows": [
+        {
+          "label": "症状伤害",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/firearms/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/firearms.ts"
+      ]
+    },
+    "1882": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 7,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/explosives/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/explosives.ts"
+      ]
+    },
+    "1884": {
+      "rows": [
+        {
+          "label": "威力",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/daredevil/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/daredevil.ts"
+      ]
+    },
+    "1887": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "虚弱",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/daredevil/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/daredevil.ts"
+      ]
+    },
+    "1888": {
+      "rows": [
+        {
+          "label": "暴击效果",
+          "amount": 250,
+          "unit": "number"
+        },
+        {
+          "label": "拥有激怒时的额外暴击率",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/skirmishing/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/skirmishing.ts"
+      ]
+    },
+    "1889": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "目盲",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/dueling/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/dueling.ts"
+      ]
+    },
+    "1890": {
+      "rows": [
+        {
+          "label": "幻象直伤伤害",
+          "amount": 5,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/chronomancer/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/chronomancer.ts"
+      ]
+    },
+    "1892": {
+      "rows": [
+        {
+          "label": "每层暴击效果",
+          "amount": 20,
+          "unit": "number"
+        },
+        {
+          "label": "最多层数",
+          "amount": 10,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/explosives/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/explosives.ts"
+      ]
+    },
+    "1893": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/daredevil/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/daredevil.ts"
+      ]
+    },
+    "1896": {
+      "rows": [
+        {
+          "label": "体力",
+          "amount": 180,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/dragonhunter/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/dragonhunter.ts"
+      ]
+    },
+    "1898": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "圣盾",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/dragonhunter/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/dragonhunter.ts"
+      ]
+    },
+    "1899": {
+      "rows": [
+        {
+          "label": "钉锤技能冷却变化",
+          "amount": -20,
+          "unit": "%"
+        },
+        {
+          "label": "钉锤基础增益时长增加",
+          "amount": 33,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/core/traits/honor/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/honor.ts"
+      ]
+    },
+    "1902": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "迅捷",
+          "duration": 8,
+          "stacks": 1
+        },
+        {
+          "status": "稳固",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/tempest/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/tempest.ts"
+      ]
+    },
+    "1911": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "定身",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/dragonhunter/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/dragonhunter.ts"
+      ]
+    },
+    "1912": {
+      "rows": [
+        {
+          "label": "短弓冷却变化",
+          "amount": -20,
+          "unit": "%"
+        }
+      ],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 10,
+          "stacks": 10
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/skirmishing/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/skirmishing.ts"
+      ]
+    },
+    "1914": {
+      "rows": [
+        {
+          "label": "暴击率加成",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/firearms/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/firearms.ts"
+      ]
+    },
+    "1923": {
+      "rows": [
+        {
+          "label": "激怒冷却",
+          "amount": 8,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/firearms/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/firearms.ts"
+      ]
+    },
+    "1926": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 7,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/dragonhunter/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/dragonhunter.ts"
+      ]
+    },
+    "1927": {
+      "rows": [
+        {
+          "label": "拥有敏捷时的暴击率加成",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/chronomancer/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/chronomancer.ts"
+      ]
+    },
+    "1928": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "抗性",
+          "duration": 3.5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/berserker/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/berserker.ts"
+      ]
+    },
+    "1930": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/firearms/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/firearms.ts"
+      ]
+    },
+    "1931": {
+      "rows": [
+        {
+          "label": "治疗效果",
+          "amount": 150,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/core/traits/blood-magic/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/blood-magic.ts"
+      ]
+    },
+    "1935": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 4,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/druid/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/druid.ts"
+      ]
+    },
+    "1938": {
+      "rows": [
+        {
+          "label": "增益效果",
+          "amount": 240,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/tempest/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/tempest.ts"
+      ]
+    },
+    "1945": {
+      "rows": [
+        {
+          "label": "宠物直伤伤害",
+          "amount": 67,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/beastmastery/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/beastmastery.ts"
+      ]
+    },
+    "1947": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/explosives/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/explosives.ts"
+      ]
+    },
+    "1948": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 3,
+          "stacks": 1,
+          "recipient": "小队至多 5 人"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/tempest/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/tempest.ts"
+      ]
+    },
+    "1950": {
+      "rows": [
+        {
+          "label": "对藐视目标的打断冷却",
+          "amount": 3,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "困惑",
+          "duration": 5,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/core/traits/dueling/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/dueling.ts"
+      ]
+    },
+    "1952": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 3,
+          "stacks": 1,
+          "recipient": "小队至多 5 人"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/tempest/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/tempest.ts"
+      ]
+    },
+    "1955": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 10,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/dragonhunter/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/dragonhunter.ts"
+      ]
+    },
+    "1962": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "活力",
+          "duration": 3,
+          "stacks": 1,
+          "recipient": "小队至多 5 人"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/tempest/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/tempest.ts"
+      ]
+    },
+    "1963": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "稳固",
+          "duration": 6,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/dragonhunter/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/dragonhunter.ts"
+      ]
+    },
+    "1964": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "迅捷",
+          "duration": 8,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/daredevil/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/daredevil.ts"
+      ]
+    },
+    "1979": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "活力",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/tools/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/tools.ts"
+      ]
+    },
+    "1983": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "残废",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/dragonhunter/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/dragonhunter.ts"
+      ]
+    },
+    "1986": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "敏捷",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/tempest/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/tempest.ts"
+      ]
+    },
+    "1992": {
+      "rows": [
+        {
+          "label": "间隔",
+          "amount": 3,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/druid/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/druid.ts"
+      ]
+    },
+    "1993": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 3,
+          "stacks": 1
+        },
+        {
+          "status": "激怒",
+          "duration": 8,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/berserker/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/berserker.ts"
+      ]
+    },
+    "2000": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "虚弱",
+          "duration": 3,
+          "stacks": 1
+        },
+        {
+          "status": "易伤",
+          "duration": 6,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/core/traits/strength/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/strength.ts"
+      ]
+    },
+    "2004": {
+      "rows": [
+        {
+          "label": "增益效果",
+          "amount": 180,
+          "unit": "number"
+        },
+        {
+          "label": "冷却变化",
+          "amount": -15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/arcane/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/arcane.ts"
+      ]
+    },
+    "2006": {
+      "rows": [
+        {
+          "label": "症状效果",
+          "amount": 150,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/engineer/core/traits/firearms/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/firearms.ts"
+      ]
+    },
+    "2008": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/reaper/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/reaper.ts"
+      ]
+    },
+    "2009": {
+      "rows": [
+        {
+          "label": "暴击伤害",
+          "amount": 5,
+          "unit": "%"
+        },
+        {
+          "label": "加成持续时间",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/chronomancer/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/chronomancer.ts"
+      ]
+    },
+    "2011": {
+      "rows": [
+        {
+          "label": "基础转换比例",
+          "amount": 12,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/berserker/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/berserker.ts"
+      ]
+    },
+    "2015": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "活力",
+          "duration": 5,
+          "stacks": 1
+        },
+        {
+          "status": "再生",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/tempest/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/tempest.ts"
+      ]
+    },
+    "2020": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 3,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/reaper/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/reaper.ts"
+      ]
+    },
+    "2021": {
+      "rows": [
+        {
+          "label": "冷却减少",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/reaper/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/reaper.ts"
+      ]
+    },
+    "2028": {
+      "rows": [
+        {
+          "label": "体力",
+          "amount": 300,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/core/traits/water/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/water.ts"
+      ]
+    },
+    "2032": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/core/traits/wilderness-survival/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/wilderness-survival.ts"
+      ]
+    },
+    "2033": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "敏捷",
+          "duration": 1,
+          "stacks": 1,
+          "recipient": "小队至多 5 人",
+          "trigger": "超载脉冲"
+        },
+        {
+          "status": "敏捷",
+          "duration": 4.5,
+          "stacks": 1,
+          "recipient": "小队至多 5 人",
+          "trigger": "超载最后一次脉冲"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/tempest/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/tempest.ts"
+      ]
+    },
+    "2038": {
+      "rows": [
+        {
+          "label": "燃烧持续时间",
+          "amount": 33,
+          "unit": "%"
+        }
+      ],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 3,
+          "stacks": 3
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/berserker/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/berserker.ts"
+      ]
+    },
+    "2039": {
+      "rows": [
+        {
+          "label": "额外狂暴延长",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/berserker/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/berserker.ts"
+      ]
+    },
+    "2047": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 15,
+          "unit": "%"
+        },
+        {
+          "label": "加成持续时间",
+          "amount": 6,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/daredevil/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/daredevil.ts"
+      ]
+    },
+    "2052": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 3,
+          "stacks": 1
+        },
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 3
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/scrapper/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/scrapper.ts"
+      ]
+    },
+    "2056": {
+      "rows": [
+        {
+          "label": "症状伤害",
+          "amount": 5,
+          "unit": "%"
+        },
+        {
+          "label": "症状持续时间",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/druid/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/druid.ts"
+      ]
+    },
+    "2061": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 5,
+          "stacks": 3
+        },
+        {
+          "status": "迅捷",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/weaver/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/weaver.ts"
+      ]
+    },
+    "2062": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/firebrand/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/firebrand.ts"
+      ]
+    },
+    "2063": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "迟缓",
+          "duration": 1.5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/firebrand/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/firebrand.ts"
+      ]
+    },
+    "2064": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 6,
+          "stacks": 7
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/holosmith/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/holosmith.ts"
+      ]
+    },
+    "2066": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "活力",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/holosmith/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/holosmith.ts"
+      ]
+    },
+    "2067": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/scourge/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/scourge.ts"
+      ]
+    },
+    "2069": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "活力",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/mirage/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/mirage.ts"
+      ]
+    },
+    "2071": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "激怒",
+          "duration": 6,
+          "stacks": 1
+        },
+        {
+          "status": "急速",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/soulbeast/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/soulbeast.ts"
+      ]
+    },
+    "2072": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 2.5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/soulbeast/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/soulbeast.ts"
+      ]
+    },
+    "2074": {
+      "rows": [
+        {
+          "label": "燃烧伤害",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/scourge/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/scourge.ts"
+      ]
+    },
+    "2075": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 4.5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/firebrand/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/firebrand.ts"
+      ]
+    },
+    "2076": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 7,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 2,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/firebrand/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/firebrand.ts"
+      ]
+    },
+    "2077": {
+      "rows": [
+        {
+          "label": "体力",
+          "amount": 180,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/weaver/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/weaver.ts"
+      ]
+    },
+    "2082": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "再生",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/mirage/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/mirage.ts"
+      ]
+    },
+    "2084": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/deadeye/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadeye.ts"
+      ]
+    },
+    "2085": {
+      "rows": [
+        {
+          "label": "增益延长",
+          "amount": 2,
+          "unit": "s"
+        },
+        {
+          "label": "内置冷却",
+          "amount": 5,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/soulbeast/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/soulbeast.ts"
+      ]
+    },
+    "2092": {
+      "rows": [
+        {
+          "label": "流血伤害",
+          "amount": 25,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/revenant/specializations/renegade/traits/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/renegade.ts"
+      ]
+    },
+    "2093": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/deadeye/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadeye.ts"
+      ]
+    },
+    "2095": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/spellbreaker/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/spellbreaker.ts"
+      ]
+    },
+    "2098": {
+      "rows": [
+        {
+          "label": "直伤伤害每叠层",
+          "amount": 6.25,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害每叠层",
+          "amount": 5,
+          "unit": "%"
+        },
+        {
+          "label": "最多层数",
+          "amount": 4,
+          "unit": "number"
+        },
+        {
+          "label": "叠层持续时间",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/mirage/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/mirage.ts"
+      ]
+    },
+    "2101": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 7,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 2,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/firebrand/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/firebrand.ts"
+      ]
+    },
+    "2102": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 3,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/scourge/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/scourge.ts"
+      ]
+    },
+    "2105": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "抗性",
+          "duration": 2,
+          "stacks": 1
+        },
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 3
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/firebrand/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/firebrand.ts"
+      ]
+    },
+    "2106": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/holosmith/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/holosmith.ts"
+      ]
+    },
+    "2107": {
+      "rows": [
+        {
+          "label": "暴击伤害",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/spellbreaker/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/spellbreaker.ts"
+      ]
+    },
+    "2110": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "困惑",
+          "duration": 4,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/mirage/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/mirage.ts"
+      ]
+    },
+    "2111": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 10
+        },
+        {
+          "status": "激怒",
+          "duration": 10,
+          "stacks": 1
+        },
+        {
+          "status": "保护",
+          "duration": 5,
+          "stacks": 1
+        },
+        {
+          "status": "再生",
+          "duration": 10,
+          "stacks": 1
+        },
+        {
+          "status": "迅捷",
+          "duration": 10,
+          "stacks": 1
+        },
+        {
+          "status": "活力",
+          "duration": 10,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/deadeye/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadeye.ts"
+      ]
+    },
+    "2112": {
+      "rows": [
+        {
+          "label": "最多沙影",
+          "amount": 1,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/scourge/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/scourge.ts"
+      ]
+    },
+    "2115": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "抗性",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/weaver/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/weaver.ts"
+      ]
+    },
+    "2118": {
+      "rows": [
+        {
+          "label": "精准",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/deadeye/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadeye.ts"
+      ]
+    },
+    "2121": {
+      "rows": [
+        {
+          "label": "症状效果及增益效果",
+          "amount": 225,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/scourge/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/scourge.ts"
+      ]
+    },
+    "2127": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 7,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/soulbeast/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/soulbeast.ts"
+      ]
+    },
+    "2130": {
+      "rows": [
+        {
+          "label": "最多层数",
+          "amount": 5,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/spellbreaker/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/spellbreaker.ts"
+      ]
+    },
+    "2131": {
+      "rows": [
+        {
+          "label": "加成持续时间",
+          "amount": 8,
+          "unit": "s"
+        },
+        {
+          "label": "直伤加成",
+          "amount": 15,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/weaver/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/weaver.ts"
+      ]
+    },
+    "2137": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 6,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/holosmith/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/holosmith.ts"
+      ]
+    },
+    "2140": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "定身",
+          "duration": 1,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/spellbreaker/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/spellbreaker.ts"
+      ]
+    },
+    "2143": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 10,
+          "unit": "%"
+        },
+        {
+          "label": "症状持续时间",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/soulbeast/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/soulbeast.ts"
+      ]
+    },
+    "2160": {
+      "rows": [
+        {
+          "label": "增益效果",
+          "amount": 180,
+          "unit": "number"
+        },
+        {
+          "label": "直伤伤害每增益",
+          "amount": 1,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/deadeye/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/deadeye.ts"
+      ]
+    },
+    "2164": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 3,
+          "unit": "s"
+        },
+        {
+          "label": "折磨伤害",
+          "amount": 33,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/scourge/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/scourge.ts"
+      ]
+    },
+    "2165": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "迅捷",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/weaver/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/weaver.ts"
+      ]
+    },
+    "2170": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/weaver/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/weaver.ts"
+      ]
+    },
+    "2177": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "虚弱",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/weaver/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/weaver.ts"
+      ]
+    },
+    "2186": {
+      "rows": [
+        {
+          "label": "体力",
+          "amount": 240,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/harbinger/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/harbinger.ts"
+      ]
+    },
+    "2187": {
+      "rows": [
+        {
+          "label": "体力",
+          "amount": 180,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/willbender/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/willbender.ts"
+      ]
+    },
+    "2189": {
+      "rows": [
+        {
+          "label": "最多层数",
+          "amount": 5,
+          "unit": "number"
+        },
+        {
+          "label": "直伤伤害每叠层",
+          "amount": 2,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害每叠层",
+          "amount": 2,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/willbender/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/willbender.ts"
+      ]
+    },
+    "2190": {
+      "rows": [
+        {
+          "label": "威力",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/willbender/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/willbender.ts"
+      ]
+    },
+    "2191": {
+      "rows": [
+        {
+          "label": "症状伤害",
+          "amount": 120,
+          "unit": "number"
+        }
+      ],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 1,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/willbender/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/willbender.ts"
+      ]
+    },
+    "2192": {
+      "rows": [
+        {
+          "label": "体力转换为暴击效果",
+          "amount": 13,
+          "unit": "%"
+        }
+      ],
+      "effects": [
+        {
+          "status": "稳固",
+          "duration": 5,
+          "stacks": 3
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/harbinger/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/harbinger.ts"
+      ]
+    },
+    "2193": {
+      "rows": [
+        {
+          "label": "体力转换为暴击效果",
+          "amount": 10,
+          "unit": "%"
+        },
+        {
+          "label": "拥有激怒时的额外暴击率",
+          "amount": 15,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/virtuoso/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/virtuoso.ts"
+      ]
+    },
+    "2194": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 4,
+          "stacks": 1,
+          "recipient": "小队成员"
+        },
+        {
+          "status": "激怒",
+          "duration": 4,
+          "stacks": 1,
+          "recipient": "小队成员"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/harbinger/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/harbinger.ts"
+      ]
+    },
+    "2195": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "敏捷",
+          "duration": 5,
+          "stacks": 1,
+          "recipient": "自身",
+          "trigger": "激活决心"
+        },
+        {
+          "status": "敏捷",
+          "duration": 1,
+          "stacks": 1,
+          "recipient": "自身",
+          "trigger": "触发决心"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/willbender/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/willbender.ts"
+      ]
+    },
+    "2197": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "活力",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/willbender/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/willbender.ts"
+      ]
+    },
+    "2201": {
+      "rows": [
+        {
+          "label": "直伤伤害每叠层",
+          "amount": 5,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害每叠层",
+          "amount": 3,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/willbender/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/willbender.ts"
+      ]
+    },
+    "2202": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 4,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/virtuoso/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/virtuoso.ts"
+      ]
+    },
+    "2203": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 6,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/harbinger/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/harbinger.ts"
+      ]
+    },
+    "2204": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 5,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害",
+          "amount": 10,
+          "unit": "%"
+        },
+        {
+          "label": "伤害加成持续时间",
+          "amount": 7,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "易伤",
+          "duration": 5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/virtuoso/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/virtuoso.ts"
+      ]
+    },
+    "2207": {
+      "rows": [
+        {
+          "label": "症状效果",
+          "amount": 150,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/virtuoso/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/virtuoso.ts"
+      ]
+    },
+    "2210": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 15,
+          "stacks": 1,
+          "recipient": "小队成员"
+        },
+        {
+          "status": "激怒",
+          "duration": 3,
+          "stacks": 1,
+          "recipient": "自身"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/willbender/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/willbender.ts"
+      ]
+    },
+    "2218": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "折磨",
+          "duration": 6,
+          "stacks": 6
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/harbinger/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/harbinger.ts"
+      ]
+    },
+    "2223": {
+      "rows": [
+        {
+          "label": "流血伤害",
+          "amount": 25,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/virtuoso/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/virtuoso.ts"
+      ]
+    },
+    "2236": {
+      "rows": [
+        {
+          "label": "暴击效果",
+          "amount": 250,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/bladesworn/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/bladesworn.ts"
+      ]
+    },
+    "2237": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 8,
+          "stacks": 2
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/bladesworn/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/bladesworn.ts"
+      ]
+    },
+    "2242": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "稳固",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/bladesworn/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/bladesworn.ts"
+      ]
+    },
+    "2245": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "敏捷",
+          "duration": 10,
+          "stacks": 1,
+          "recipient": "小队成员"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/bladesworn/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/bladesworn.ts"
+      ]
+    },
+    "2247": {
+      "rows": [
+        {
+          "label": "直伤伤害每叠层",
+          "amount": 1,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害每叠层",
+          "amount": 1,
+          "unit": "%"
+        },
+        {
+          "label": "最多层数",
+          "amount": 5,
+          "unit": "number"
+        },
+        {
+          "label": "叠层持续时间",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/catalyst/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/catalyst.ts"
+      ]
+    },
+    "2250": {
+      "rows": [
+        {
+          "label": "最多层数",
+          "amount": 10,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/catalyst/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/catalyst.ts"
+      ]
+    },
+    "2251": {
+      "rows": [
+        {
+          "label": "增益持续时间",
+          "amount": 50,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/catalyst/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/catalyst.ts"
+      ]
+    },
+    "2252": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 0.25,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/catalyst/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/catalyst.ts"
+      ]
+    },
+    "2255": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "活力",
+          "duration": 9,
+          "stacks": 1,
+          "recipient": "小队至多 5 人"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/revenant/specializations/vindicator/traits/index.ts",
+        "js/games/gw2/professions/revenant/app/tooltips/vindicator.ts"
+      ]
+    },
+    "2260": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "燃烧",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/bladesworn/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/bladesworn.ts"
+      ]
+    },
+    "2264": {
+      "rows": [
+        {
+          "label": "折磨伤害",
+          "amount": 20,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/specter/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/specter.ts"
+      ]
+    },
+    "2274": {
+      "rows": [
+        {
+          "label": "直伤伤害每叠层",
+          "amount": 5,
+          "unit": "%"
+        },
+        {
+          "label": "叠层持续时间",
+          "amount": 5,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/untamed/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/untamed.ts"
+      ]
+    },
+    "2276": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "敏捷",
+          "duration": 1,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/mechanist/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/mechanist.ts"
+      ]
+    },
+    "2282": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "流血",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/mechanist/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/mechanist.ts"
+      ]
+    },
+    "2284": {
+      "rows": [
+        {
+          "label": "症状伤害",
+          "amount": 90,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/specter/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/specter.ts"
+      ]
+    },
+    "2286": {
+      "rows": [
+        {
+          "label": "体力",
+          "amount": 240,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/untamed/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/untamed.ts"
+      ]
+    },
+    "2292": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 2.5,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/mechanist/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/mechanist.ts"
+      ]
+    },
+    "2296": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/mechanist/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/mechanist.ts"
+      ]
+    },
+    "2301": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "目盲",
+          "duration": 2,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/untamed/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/untamed.ts"
+      ]
+    },
+    "2302": {
+      "rows": [
+        {
+          "label": "直伤及症状伤害每叠层",
+          "amount": 1,
+          "unit": "%"
+        },
+        {
+          "label": "最多层数",
+          "amount": 10,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/bladesworn/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/bladesworn.ts"
+      ]
+    },
+    "2303": {
+      "rows": [
+        {
+          "label": "冷却减少",
+          "amount": 0.75,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/bladesworn/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/bladesworn.ts"
+      ]
+    },
+    "2326": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/troubadour/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/troubadour.ts"
+      ]
+    },
+    "2330": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "敏捷",
+          "duration": 4
+        },
+        {
+          "status": "威能",
+          "duration": 8,
+          "stacks": 1
+        },
+        {
+          "status": "激怒",
+          "duration": 5
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/luminary/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/luminary.ts"
+      ]
+    },
+    "2348": {
+      "rows": [
+        {
+          "label": "直伤伤害每叠层",
+          "amount": 3,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害每叠层",
+          "amount": 2,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/antiquary/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/antiquary.ts"
+      ]
+    },
+    "2350": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/thief/specializations/antiquary/traits/index.ts",
+        "js/games/gw2/professions/thief/app/tooltips/antiquary.ts"
+      ]
+    },
+    "2353": {
+      "rows": [
+        {
+          "label": "脉冲间隔",
+          "amount": 1,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/troubadour/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/troubadour.ts"
+      ]
+    },
+    "2356": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 5,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害",
+          "amount": 5,
+          "unit": "%"
+        },
+        {
+          "label": "加成持续时间",
+          "amount": 10,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/amalgam/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/amalgam.ts"
+      ]
+    },
+    "2363": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 5,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/galeshot/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/galeshot.ts"
+      ]
+    },
+    "2369": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "敏捷",
+          "duration": 6,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/paragon/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/paragon.ts"
+      ]
+    },
+    "2371": {
+      "rows": [
+        {
+          "label": "增益效果",
+          "amount": 180,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/ritualist/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/ritualist.ts"
+      ]
+    },
+    "2383": {
+      "rows": [
+        {
+          "label": "中毒持续时间",
+          "amount": 33,
+          "unit": "%"
+        }
+      ],
+      "effects": [
+        {
+          "status": "中毒",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/amalgam/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/amalgam.ts"
+      ]
+    },
+    "2385": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 15,
+          "unit": "%"
+        },
+        {
+          "label": "症状伤害",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/paragon/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/paragon.ts"
+      ]
+    },
+    "2389": {
+      "rows": [
+        {
+          "label": "体力",
+          "amount": 240,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/amalgam/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/amalgam.ts"
+      ]
+    },
+    "2391": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 5,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/elementalist/specializations/evoker/traits/index.ts",
+        "js/games/gw2/professions/elementalist/app/tooltips/evoker.ts"
+      ]
+    },
+    "2394": {
+      "rows": [
+        {
+          "label": "体力",
+          "amount": 180,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/luminary/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/luminary.ts"
+      ]
+    },
+    "2396": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 0.25,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/ranger/specializations/galeshot/traits/index.ts",
+        "js/games/gw2/professions/ranger/app/tooltips/galeshot.ts"
+      ]
+    },
+    "2405": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "急速",
+          "duration": 3.75,
+          "stacks": 1,
+          "recipient": "小队成员"
+        },
+        {
+          "status": "威能",
+          "duration": 10,
+          "stacks": 8,
+          "recipient": "小队成员"
+        },
+        {
+          "status": "激怒",
+          "duration": 5,
+          "stacks": 1,
+          "recipient": "小队成员"
+        },
+        {
+          "status": "决心",
+          "duration": 4,
+          "stacks": 1,
+          "recipient": "小队成员"
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/necromancer/specializations/ritualist/traits/index.ts",
+        "js/games/gw2/professions/necromancer/app/tooltips/ritualist.ts"
+      ]
+    },
+    "2410": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "保护",
+          "duration": 3,
+          "recipient": "小队成员"
+        },
+        {
+          "status": "目盲",
+          "duration": 3,
+          "stacks": 1
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/luminary/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/luminary.ts"
+      ]
+    },
+    "2418": {
+      "rows": [
+        {
+          "label": "增益效果",
+          "amount": 180,
+          "unit": "number"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/warrior/specializations/paragon/traits/index.ts",
+        "js/games/gw2/professions/warrior/app/tooltips/paragon.ts"
+      ]
+    },
+    "2419": {
+      "rows": [
+        {
+          "label": "直伤加成",
+          "amount": 10,
+          "unit": "%"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/guardian/specializations/luminary/traits/index.ts",
+        "js/games/gw2/professions/guardian/app/tooltips/luminary.ts"
+      ]
+    },
+    "2420": {
+      "rows": [
+        {
+          "label": "内置冷却",
+          "amount": 0.24,
+          "unit": "s"
+        },
+        {
+          "label": "冷却减少",
+          "amount": 2.5,
+          "unit": "s"
+        }
+      ],
+      "effects": [],
+      "paths": [
+        "js/games/gw2/professions/engineer/specializations/amalgam/traits/index.ts",
+        "js/games/gw2/professions/engineer/app/tooltips/amalgam.ts"
+      ]
+    },
+    "2427": {
+      "rows": [],
+      "effects": [
+        {
+          "status": "折磨",
+          "duration": 5,
+          "stacks": 4
+        }
+      ],
+      "paths": [
+        "js/games/gw2/professions/mesmer/specializations/troubadour/traits/index.ts",
+        "js/games/gw2/professions/mesmer/app/tooltips/troubadour.ts"
+      ]
+    }
+  }
+}

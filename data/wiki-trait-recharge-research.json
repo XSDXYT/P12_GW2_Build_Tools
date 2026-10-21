@@ -1,0 +1,3442 @@
+{
+  "schema": 1,
+  "pages": {
+    "223": {
+      "title": "Aeromancer's_Training",
+      "revision": 2839323,
+      "profession": "Elementalist",
+      "rows": [
+        {
+          "title": "Convergence_(elementalist_skill)",
+          "text": "Dagger Convergence 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Shocking_Aura",
+          "text": "Shocking Aura (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Shocking_Aura#WvW,PvP",
+          "text": "Shocking Aura (WvW, PvP) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": false
+        },
+        {
+          "title": "Transmute_Lightning#WvW,PvP",
+          "text": "Transmute Lightning (WvW, PvP) 3 → 2.4",
+          "before": 3,
+          "after": 2.4,
+          "pve": false
+        },
+        {
+          "title": "Transmute_Lightning",
+          "text": "Transmute Lightning (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Ride_the_Lightning",
+          "text": "Ride the Lightning (PvE) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Ride_the_Lightning#WvW,PvP",
+          "text": "Ride the Lightning (WvW, PvP) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": false
+        },
+        {
+          "title": "Updraft",
+          "text": "Updraft (PvE) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Updraft#WvW,PvP",
+          "text": "Updraft (WvW, PvP) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": false
+        },
+        {
+          "title": "Dazing_Discharge",
+          "text": "Pistol Dazing Discharge 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Aerial_Agility",
+          "text": "Aerial Agility (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Aerial_Agility#WvW,PvP",
+          "text": "Aerial Agility (WvW, PvP) 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": false
+        },
+        {
+          "title": "Lightning_Strike",
+          "text": "Scepter Lightning Strike 5 → 4",
+          "before": 5,
+          "after": 4,
+          "pve": true
+        },
+        {
+          "title": "Blinding_Flash",
+          "text": "Blinding Flash (PvE) 0.5 → 0.4",
+          "before": 0.5,
+          "after": 0.4,
+          "pve": true
+        },
+        {
+          "title": "Blinding_Flash#WvW,PvP",
+          "text": "Blinding Flash (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Polaric_Leap#WvW,PvP",
+          "text": "Sword Polaric Leap (WvW, PvP) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": false
+        },
+        {
+          "title": "Polaric_Leap",
+          "text": "Polaric Leap (PvE) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Quantum_Strike",
+          "text": "Quantum Strike 16 → 12.8",
+          "before": 16,
+          "after": 12.8,
+          "pve": true
+        },
+        {
+          "title": "Swirling_Winds",
+          "text": "Focus Swirling Winds 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Gale",
+          "text": "Gale 40 → 32",
+          "before": 40,
+          "after": 32,
+          "pve": true
+        },
+        {
+          "title": "Cyclone",
+          "text": "Warhorn Cyclone 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Lightning_Orb",
+          "text": "Lightning Orb 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Hurricane_of_Pain",
+          "text": "Hammer Hurricane of Pain 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Crescent_Wind",
+          "text": "Crescent Wind 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": true
+        },
+        {
+          "title": "Wind_Storm",
+          "text": "Wind Storm 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Shock_Blast",
+          "text": "Shock Blast 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Lightning_Surge#WvW,PvP",
+          "text": "Staff Lightning Surge (WvW, PvP) 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": false
+        },
+        {
+          "title": "Lightning_Surge",
+          "text": "Lightning Surge (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Gust",
+          "text": "Gust 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Windborne_Speed",
+          "text": "Windborne Speed 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Static_Field",
+          "text": "Static Field 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Fulgor",
+          "text": "Spear Fulgor 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Energize",
+          "text": "Energize 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Twister",
+          "text": "Twister 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Etching:_Derecho",
+          "text": "Etching: Derecho 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Electrocute",
+          "text": "Trident Electrocute 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Air_Pocket",
+          "text": "Air Pocket 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Air_Bubble",
+          "text": "Air Bubble (PvE) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Air_Bubble#WvW,PvP",
+          "text": "Air Bubble (WvW, PvP) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": false
+        },
+        {
+          "title": "Lightning_Cage",
+          "text": "Lightning Cage 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        }
+      ]
+    },
+    "280": {
+      "title": "Geomancer's_Training",
+      "revision": 2631693,
+      "profession": "Elementalist",
+      "rows": [
+        {
+          "title": "Ring_of_Earth",
+          "text": "Dagger Ring of Earth 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Earthen_Rush",
+          "text": "Earthen Rush (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Earthen_Rush#WvW,PvP",
+          "text": "Earthen Rush (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Earthquake",
+          "text": "Earthquake (PvE) 16 → 12.8",
+          "before": 16,
+          "after": 12.8,
+          "pve": true
+        },
+        {
+          "title": "Earthquake#WvW,PvP",
+          "text": "Earthquake (WvW, PvP) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": false
+        },
+        {
+          "title": "Churning_Earth",
+          "text": "Churning Earth (PvE) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Churning_Earth#WvW,PvP",
+          "text": "Churning Earth (WvW, PvP) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": false
+        },
+        {
+          "title": "Shattering_Stone",
+          "text": "Pistol Shattering Stone 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Boulder_Blast",
+          "text": "Boulder Blast (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Boulder_Blast#WvW,PvP",
+          "text": "Boulder Blast (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Rock_Barrier",
+          "text": "Scepter Rock Barrier (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Rock_Barrier#PvP",
+          "text": "Rock Barrier (PvP, WvW) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Dust_Devil",
+          "text": "Dust Devil 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Earthen_Vortex",
+          "text": "Sword Earthen Vortex (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Earthen_Vortex#WvW,PvP",
+          "text": "Earthen Vortex (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Rust_Frenzy",
+          "text": "Rust Frenzy 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Magnetic_Wave",
+          "text": "Focus Magnetic Wave 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Obsidian_Flesh",
+          "text": "Obsidian Flesh (PvE, WvW) 50 → 40",
+          "before": 50,
+          "after": 40,
+          "pve": true
+        },
+        {
+          "title": "Obsidian_Flesh#PvP",
+          "text": "Obsidian Flesh (PvP) 60 → 48",
+          "before": 60,
+          "after": 48,
+          "pve": false
+        },
+        {
+          "title": "Sand_Squall",
+          "text": "Warhorn Sand Squall 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Dust_Storm",
+          "text": "Dust Storm 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Whirling_Stones",
+          "text": "Hammer Whirling Stones 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Rocky_Loop",
+          "text": "Rocky Loop 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": true
+        },
+        {
+          "title": "Immutable_Stone",
+          "text": "Immutable Stone 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Ground_Pound",
+          "text": "Ground Pound (PvE) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Ground_Pound#WvW,PvP",
+          "text": "Ground Pound (WvW, PvP) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": false
+        },
+        {
+          "title": "Eruption",
+          "text": "Staff Eruption 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Magnetic_Aura",
+          "text": "Magnetic Aura 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Transmute_Earth#WvW,PvP",
+          "text": "Transmute Earth (WvW, PvP) 3 → 2.4",
+          "before": 3,
+          "after": 2.4,
+          "pve": false
+        },
+        {
+          "title": "Transmute_Earth",
+          "text": "Transmute Earth (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Unsteady_Ground",
+          "text": "Unsteady Ground 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Shock_Wave",
+          "text": "Shock Wave 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Earthen_Spear",
+          "text": "Spear Earthen Spear 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Harden",
+          "text": "Harden (PvE) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Harden#WvW,PvP",
+          "text": "Harden (WvW, PvP) 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": false
+        },
+        {
+          "title": "Fissure",
+          "text": "Fissure 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Etching:_Haboob",
+          "text": "Etching: Haboob 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Rock_Spray",
+          "text": "Trident Rock Spray 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Magnetic_Current",
+          "text": "Magnetic Current 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": true
+        },
+        {
+          "title": "Rock_Anchor",
+          "text": "Rock Anchor 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Murky_Water",
+          "text": "Murky Water 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        }
+      ]
+    },
+    "319": {
+      "title": "Pyromancer's_Training",
+      "revision": 3128164,
+      "profession": "Elementalist",
+      "rows": [
+        {
+          "title": "Drake's_Breath",
+          "text": "Dagger Drake's Breath (PvE) 5 → 4",
+          "before": 5,
+          "after": 4,
+          "pve": true
+        },
+        {
+          "title": "Drake's_Breath#WvW,PvP",
+          "text": "Drake's Breath (WvW, PvP) 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": false
+        },
+        {
+          "title": "Burning_Speed",
+          "text": "Burning Speed 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Ring_of_Fire_(elementalist_skill)",
+          "text": "Ring of Fire 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Fire_Grab",
+          "text": "Fire Grab 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Raging_Ricochet",
+          "text": "Pistol Raging Ricochet (PvE) 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Raging_Ricochet#WvW,PvP",
+          "text": "Raging Ricochet (WvW, PvP) 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": false
+        },
+        {
+          "title": "Searing_Salvo",
+          "text": "Searing Salvo (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Searing_Salvo#WvW,PvP",
+          "text": "Searing Salvo (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Dragon's_Tooth",
+          "text": "Scepter Dragon's Tooth (PvE) 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Dragon's_Tooth#PvP",
+          "text": "Dragon's Tooth (PvP, WvW) 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": false
+        },
+        {
+          "title": "Phoenix",
+          "text": "Phoenix (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Phoenix#WvW,PvP",
+          "text": "Phoenix (WvW, PvP) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": false
+        },
+        {
+          "title": "Flame_Uprising",
+          "text": "Sword Flame Uprising 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Cauterizing_Strike",
+          "text": "Cauterizing Strike 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Flamewall",
+          "text": "Focus Flamewall 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Fire_Shield",
+          "text": "Fire Shield 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Transmute_Fire#WvW,PvP",
+          "text": "Transmute Fire (WvW, PvP) 3 → 2.4",
+          "before": 3,
+          "after": 2.4,
+          "pve": false
+        },
+        {
+          "title": "Transmute_Fire",
+          "text": "Transmute Fire (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Heat_Sync",
+          "text": "Warhorn Heat Sync 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Wildfire",
+          "text": "Wildfire 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Surging_Flames",
+          "text": "Hammer Surging Flames 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Flame_Wheel",
+          "text": "Flame Wheel 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": true
+        },
+        {
+          "title": "Triple_Sear#WvW,PvP",
+          "text": "Triple Sear (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Triple_Sear",
+          "text": "Triple Sear (PvE) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Molten_End#WvW,PvP",
+          "text": "Molten End (WvW, PvP) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": false
+        },
+        {
+          "title": "Molten_End",
+          "text": "Molten End (PvE) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Lava_Font",
+          "text": "Staff Lava Font 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Flame_Burst",
+          "text": "Flame Burst 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Burning_Retreat",
+          "text": "Burning Retreat 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": true
+        },
+        {
+          "title": "Meteor_Shower",
+          "text": "Meteor Shower 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Blazing_Barrage",
+          "text": "Spear Blazing Barrage 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Seethe",
+          "text": "Seethe 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Meteor#PvP",
+          "text": "Meteor (PvP, WvW) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Meteor",
+          "text": "Meteor (PvE) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Etching:_Volcano",
+          "text": "Etching: Volcano 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Boil",
+          "text": "Trident Boil 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Steam_(elementalist_skill)",
+          "text": "Steam (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Steam_(elementalist_skill)#WvW,PvP",
+          "text": "Steam (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Lava_Chains",
+          "text": "Lava Chains (PvE) 16 → 12.8",
+          "before": 16,
+          "after": 12.8,
+          "pve": true
+        },
+        {
+          "title": "Lava_Chains#WvW,PvP",
+          "text": "Lava Chains (WvW, PvP) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": false
+        },
+        {
+          "title": "Heat_Wave",
+          "text": "Heat Wave 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        }
+      ]
+    },
+    "557": {
+      "title": "Honorable_Staff",
+      "revision": 2926835,
+      "profession": "Guardian",
+      "rows": [
+        {
+          "title": "Holy_Strike",
+          "text": "Staff Holy Strike 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Symbol_of_Swiftness",
+          "text": "Symbol of Swiftness (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Symbol_of_Swiftness#PvP",
+          "text": "Symbol of Swiftness (PvP, WvW) 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": false
+        },
+        {
+          "title": "Empower",
+          "text": "Empower 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Line_of_Warding",
+          "text": "Line of Warding 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        }
+      ]
+    },
+    "567": {
+      "title": "Radiant_Fire",
+      "revision": 2812753,
+      "profession": "Guardian",
+      "rows": [
+        {
+          "title": "Zealot's_Flame",
+          "text": "Torch Zealot's Flame 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Cleansing_Flame",
+          "text": "Cleansing Flame 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        }
+      ]
+    },
+    "580": {
+      "title": "Stalwart_Defender",
+      "revision": 2258813,
+      "profession": "Guardian",
+      "rows": [
+        {
+          "title": "Shield_of_Judgment",
+          "text": "Shield Shield of Judgment 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Shield_of_Absorption",
+          "text": "Shield of Absorption 24 → 19.2",
+          "before": 24,
+          "after": 19.2,
+          "pve": true
+        },
+        {
+          "title": "Lesser_Shield_of_Absorption",
+          "text": "Trait Lesser Shield of Absorption 24 → 19.2",
+          "before": 24,
+          "after": 19.2,
+          "pve": true
+        }
+      ]
+    },
+    "620": {
+      "title": "Power_of_the_Virtuous",
+      "revision": 3168689,
+      "profession": "Guardian",
+      "rows": [
+        {
+          "title": "Virtue_of_Justice",
+          "text": "Professionmechanic Virtue of Justice 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Virtue_of_Resolve",
+          "text": "Virtue of Resolve 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Virtue_of_Courage",
+          "text": "Virtue of Courage 45 → 38.25",
+          "before": 45,
+          "after": 38.25,
+          "pve": true
+        },
+        {
+          "title": "Spear_of_Justice",
+          "text": "Spear of Justice 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Wings_of_Resolve",
+          "text": "Wings of Resolve 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Shield_of_Courage",
+          "text": "Shield of Courage (PvE, PvP) 45 → 38.25",
+          "before": 45,
+          "after": 38.25,
+          "pve": true
+        },
+        {
+          "title": "Shield_of_Courage#WvW",
+          "text": "Shield of Courage (WvW) 60 → 51",
+          "before": 60,
+          "after": 51,
+          "pve": false
+        },
+        {
+          "title": "Rushing_Justice",
+          "text": "Rushing Justice (PvE) 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": true
+        },
+        {
+          "title": "Rushing_Justice#PvP",
+          "text": "Rushing Justice (PvP) 18 → 15.3",
+          "before": 18,
+          "after": 15.3,
+          "pve": false
+        },
+        {
+          "title": "Rushing_Justice#WvW",
+          "text": "Rushing Justice (WvW) 22 → 18.7",
+          "before": 22,
+          "after": 18.7,
+          "pve": false
+        },
+        {
+          "title": "Flowing_Resolve",
+          "text": "Flowing Resolve (PvE) 0 → 0",
+          "before": 0,
+          "after": 0,
+          "pve": true
+        },
+        {
+          "title": "Flowing_Resolve#PvP",
+          "text": "Flowing Resolve (PvP) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": false
+        },
+        {
+          "title": "Crashing_Courage",
+          "text": "Crashing Courage (PvE, PvP) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Crashing_Courage#WvW",
+          "text": "Crashing Courage (WvW) 40 → 34",
+          "before": 40,
+          "after": 34,
+          "pve": false
+        },
+        {
+          "title": "Radiant_Justice",
+          "text": "Radiant Justice (PvE) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Radiant_Justice#PvP",
+          "text": "Radiant Justice (PvP, WvW) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": false
+        },
+        {
+          "title": "Radiant_Resolve",
+          "text": "Radiant Resolve (PvE) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Radiant_Resolve#PvP",
+          "text": "Radiant Resolve (PvP, WvW) 35 → 29.75",
+          "before": 35,
+          "after": 29.75,
+          "pve": false
+        },
+        {
+          "title": "Radiant_Courage",
+          "text": "Radiant Courage (PvE) 45 → 38.25",
+          "before": 45,
+          "after": 38.25,
+          "pve": true
+        },
+        {
+          "title": "Radiant_Courage#PvP",
+          "text": "Radiant Courage (PvP, WvW) 55 → 46.75",
+          "before": 55,
+          "after": 46.75,
+          "pve": false
+        }
+      ]
+    },
+    "633": {
+      "title": "Focus_Mastery",
+      "revision": 3073890,
+      "profession": "Guardian",
+      "rows": [
+        {
+          "title": "Ray_of_Judgment",
+          "text": "Focus Ray of Judgment 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Shield_of_Wrath",
+          "text": "Shield of Wrath 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        }
+      ]
+    },
+    "653": {
+      "title": "Zealous_Blade",
+      "revision": 2572445,
+      "profession": "Guardian",
+      "rows": [
+        {
+          "title": "Whirling_Wrath",
+          "text": "Greatsword Whirling Wrath 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Leap_of_Faith",
+          "text": "Leap of Faith (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Leap_of_Faith#WvW,PvP",
+          "text": "Leap of Faith (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Symbol_of_Resolution",
+          "text": "Symbol of Resolution 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Binding_Blade",
+          "text": "Binding Blade 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        }
+      ]
+    },
+    "708": {
+      "title": "Fencer's_Finesse",
+      "revision": 3154896,
+      "profession": "Mesmer",
+      "rows": [
+        {
+          "title": "Blurred_Frenzy",
+          "text": "Sword Blurred Frenzy 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Blade_Leap",
+          "text": "Blade Leap 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Illusionary_Leap",
+          "text": "Illusionary Leap 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Illusionary_Riposte",
+          "text": "Illusionary Riposte (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Illusionary_Riposte#WvW,PvP",
+          "text": "Illusionary Riposte (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Phantasmal_Swordsman",
+          "text": "Phantasmal Swordsman (PvE) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Phantasmal_Swordsman#WvW,PvP",
+          "text": "Phantasmal Swordsman (WvW, PvP) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": false
+        },
+        {
+          "title": "Feigned_Surge",
+          "text": "Spear Feigned Surge 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Phantasmal_Mariner",
+          "text": "Phantasmal Mariner 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Slipstream",
+          "text": "Slipstream 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Vortex",
+          "text": "Vortex 40 → 32",
+          "before": 40,
+          "after": 32,
+          "pve": true
+        }
+      ]
+    },
+    "731": {
+      "title": "Master_of_Misdirection",
+      "revision": 3073784,
+      "profession": "Mesmer",
+      "rows": [
+        {
+          "title": "Mind_Wrack",
+          "text": "Professionmechanic Mind Wrack 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": true
+        },
+        {
+          "title": "Cry_of_Frustration",
+          "text": "Cry of Frustration 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Diversion",
+          "text": "Diversion 38 → 32.3",
+          "before": 38,
+          "after": 32.3,
+          "pve": true
+        },
+        {
+          "title": "Distortion",
+          "text": "Distortion 50 → 42.5",
+          "before": 50,
+          "after": 42.5,
+          "pve": true
+        },
+        {
+          "title": "Split_Second_(skill)",
+          "text": "Split Second (PvE, PvP) 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": true
+        },
+        {
+          "title": "Split_Second_(skill)#WvW",
+          "text": "Split Second (WvW) 15 → 12.75",
+          "before": 15,
+          "after": 12.75,
+          "pve": false
+        },
+        {
+          "title": "Rewinder",
+          "text": "Rewinder 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Time_Sink",
+          "text": "Time Sink 38 → 32.3",
+          "before": 38,
+          "after": 32.3,
+          "pve": true
+        },
+        {
+          "title": "Continuum_Split",
+          "text": "Continuum Split (PvE, WvW) 105 → 89.25",
+          "before": 105,
+          "after": 89.25,
+          "pve": true
+        },
+        {
+          "title": "Continuum_Split#PvP",
+          "text": "Continuum Split (PvP) 120 → 102",
+          "before": 120,
+          "after": 102,
+          "pve": false
+        },
+        {
+          "title": "Bladesong_Harmony",
+          "text": "Professionmechanic Bladesong Harmony 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": true
+        },
+        {
+          "title": "Bladesong_Sorrow",
+          "text": "Bladesong Sorrow 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Bladesong_Dissonance#WvW,PvP",
+          "text": "Bladesong Dissonance (WvW, PvP) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": false
+        },
+        {
+          "title": "Bladesong_Dissonance",
+          "text": "Bladesong Dissonance (PvE) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Bladesong_Distortion",
+          "text": "Bladesong Distortion 50 → 42.5",
+          "before": 50,
+          "after": 42.5,
+          "pve": true
+        },
+        {
+          "title": "Bladeturn_Requiem",
+          "text": "Bladeturn Requiem (PvE) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Bladeturn_Requiem#WvW,PvP",
+          "text": "Bladeturn Requiem (WvW, PvP) 35 → 29.75",
+          "before": 35,
+          "after": 29.75,
+          "pve": false
+        },
+        {
+          "title": "Lively_Lute",
+          "text": "Professionmechanic Lively Lute (PvE, PvP) 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": true
+        },
+        {
+          "title": "Lively_Lute#WvW",
+          "text": "Lively Lute (WvW) 15 → 12.75",
+          "before": 15,
+          "after": 12.75,
+          "pve": false
+        },
+        {
+          "title": "Flustering_Flute",
+          "text": "Flustering Flute 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Deafening_Drum",
+          "text": "Deafening Drum 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Harmonious_Harp",
+          "text": "Harmonious Harp (PvE) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Harmonious_Harp#WvW,PvP",
+          "text": "Harmonious Harp (WvW, PvP) 35 → 29.75",
+          "before": 35,
+          "after": 29.75,
+          "pve": false
+        }
+      ]
+    },
+    "751": {
+      "title": "Warden's_Feedback",
+      "revision": 2683731,
+      "profession": "Mesmer",
+      "rows": [
+        {
+          "title": "Temporal_Curtain",
+          "text": "Focus Temporal Curtain 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Phantasmal_Warden",
+          "text": "Phantasmal Warden 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        }
+      ]
+    },
+    "891": {
+      "title": "Sinister_Shroud",
+      "revision": 3117272,
+      "profession": "Necromancer",
+      "rows": [
+        {
+          "title": "Dark_Path",
+          "text": "Death Shroud Dark Path 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Dark_Water",
+          "text": "Dark Water 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Doom",
+          "text": "Doom 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Wave_of_Fear",
+          "text": "Wave of Fear 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Gathering_Plague",
+          "text": "Gathering Plague 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Life_Transfer",
+          "text": "Life Transfer 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Tainted_Shackles",
+          "text": "Tainted Shackles 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Death's_Charge",
+          "text": "Reaper's Shroud Death's Charge 6 → 5.1",
+          "before": 6,
+          "after": 5.1,
+          "pve": true
+        },
+        {
+          "title": "Infusing_Terror#WvW",
+          "text": "Infusing Terror (WvW) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": false
+        },
+        {
+          "title": "Infusing_Terror",
+          "text": "Infusing Terror (PvE, PvP) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Soul_Spiral#WvW",
+          "text": "Soul Spiral (WvW) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": false
+        },
+        {
+          "title": "Soul_Spiral",
+          "text": "Soul Spiral (PvE, PvP) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Executioner's_Scythe",
+          "text": "Executioner's Scythe 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Nefarious_Favor",
+          "text": "Professionmechanic Nefarious Favor (PvE) 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Nefarious_Favor#PvP",
+          "text": "Nefarious Favor (PvP, WvW) 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": false
+        },
+        {
+          "title": "Sand_Cascade",
+          "text": "Sand Cascade (PvE) 10 → 8.5",
+          "before": 10,
+          "after": 8.5,
+          "pve": true
+        },
+        {
+          "title": "Sand_Cascade#PvP",
+          "text": "Sand Cascade (PvP) 18 → 15.3",
+          "before": 18,
+          "after": 15.3,
+          "pve": false
+        },
+        {
+          "title": "Sand_Cascade#WvW",
+          "text": "Sand Cascade (WvW) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": false
+        },
+        {
+          "title": "Garish_Pillar",
+          "text": "Garish Pillar (PvE) 15 → 12.75",
+          "before": 15,
+          "after": 12.75,
+          "pve": true
+        },
+        {
+          "title": "Garish_Pillar#WvW",
+          "text": "Garish Pillar (WvW) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": false
+        },
+        {
+          "title": "Garish_Pillar#PvP",
+          "text": "Garish Pillar (PvP) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": false
+        },
+        {
+          "title": "Desert_Shroud",
+          "text": "Desert Shroud (PvE) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Desert_Shroud#PvP",
+          "text": "Desert Shroud (PvP, WvW) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": false
+        },
+        {
+          "title": "Sandstorm_Shroud",
+          "text": "Trait Sandstorm Shroud (PvE) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Sandstorm_Shroud#PvP",
+          "text": "Sandstorm Shroud (PvP) 35 → 29.75",
+          "before": 35,
+          "after": 29.75,
+          "pve": false
+        },
+        {
+          "title": "Sandstorm_Shroud#WvW",
+          "text": "Sandstorm Shroud (WvW) 45 → 38.25",
+          "before": 45,
+          "after": 38.25,
+          "pve": false
+        },
+        {
+          "title": "Dark_Barrage#WvW,PvP",
+          "text": "Harbinger Shroud Dark Barrage (WvW, PvP) 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": false
+        },
+        {
+          "title": "Dark_Barrage",
+          "text": "Dark Barrage (PvE) 6 → 5.1",
+          "before": 6,
+          "after": 5.1,
+          "pve": true
+        },
+        {
+          "title": "Devouring_Cut",
+          "text": "Devouring Cut (PvE) 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Devouring_Cut#WvW,PvP",
+          "text": "Devouring Cut (WvW, PvP) 10 → 8.5",
+          "before": 10,
+          "after": 8.5,
+          "pve": false
+        },
+        {
+          "title": "Voracious_Arc",
+          "text": "Voracious Arc (PvE) 10 → 8.5",
+          "before": 10,
+          "after": 8.5,
+          "pve": true
+        },
+        {
+          "title": "Voracious_Arc#WvW,PvP",
+          "text": "Voracious Arc (WvW, PvP) 18 → 15.3",
+          "before": 18,
+          "after": 15.3,
+          "pve": false
+        },
+        {
+          "title": "Voracious_Dive",
+          "text": "Voracious Dive 10 → 8.5",
+          "before": 10,
+          "after": 8.5,
+          "pve": true
+        },
+        {
+          "title": "Vital_Draw",
+          "text": "Vital Draw (PvE) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Vital_Draw#WvW,PvP",
+          "text": "Vital Draw (WvW, PvP) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": false
+        },
+        {
+          "title": "Anguish",
+          "text": "Ritualist's Shroud Anguish (PvE) 7 → 5.95",
+          "before": 7,
+          "after": 5.95,
+          "pve": true
+        },
+        {
+          "title": "Anguish#WvW,PvP",
+          "text": "Anguish (WvW, PvP) 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": false
+        },
+        {
+          "title": "Wanderlust",
+          "text": "Wanderlust (PvE) 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": true
+        },
+        {
+          "title": "Wanderlust#PvP",
+          "text": "Wanderlust (PvP, WvW) 18 → 15.3",
+          "before": 18,
+          "after": 15.3,
+          "pve": false
+        },
+        {
+          "title": "Preservation",
+          "text": "Preservation (PvE, WvW) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Preservation#PvP",
+          "text": "Preservation (PvP) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": false
+        },
+        {
+          "title": "Summon_Spirits",
+          "text": "Summon Spirits (PvE) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Summon_Spirits#WvW,PvP",
+          "text": "Summon Spirits (WvW, PvP) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": false
+        }
+      ]
+    },
+    "970": {
+      "title": "Honed_Axes",
+      "revision": 3092844,
+      "profession": "Ranger",
+      "rows": [
+        {
+          "title": "Splitblade",
+          "text": "Axe Splitblade (PvE) 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Splitblade#WvW,PvP",
+          "text": "Splitblade (WvW, PvP) 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": false
+        },
+        {
+          "title": "Winter's_Bite",
+          "text": "Winter's Bite 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Path_of_Scars",
+          "text": "Path of Scars 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Whirling_Defense",
+          "text": "Whirling Defense 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        }
+      ]
+    },
+    "1101": {
+      "title": "Ambidexterity",
+      "revision": 2944199,
+      "profession": "Ranger",
+      "rows": [
+        {
+          "title": "Double_Arc#WvW,PvP",
+          "text": "Dagger Double Arc (WvW, PvP) 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": false
+        },
+        {
+          "title": "Double_Arc",
+          "text": "Double Arc (PvE) 7 → 5.6",
+          "before": 7,
+          "after": 5.6,
+          "pve": true
+        },
+        {
+          "title": "Instinctive_Engage",
+          "text": "Instinctive Engage 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Stalker's_Strike",
+          "text": "Stalker's Strike (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Stalker's_Strike#WvW",
+          "text": "Stalker's Strike (WvW) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Stalker's_Strike#PvP",
+          "text": "Stalker's Strike (PvP) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": false
+        },
+        {
+          "title": "Crippling_Talon",
+          "text": "Crippling Talon 1 → 0.8",
+          "before": 1,
+          "after": 0.8,
+          "pve": true
+        },
+        {
+          "title": "Throw_Torch",
+          "text": "Torch Throw Torch 1 → 0.8",
+          "before": 1,
+          "after": 0.8,
+          "pve": true
+        },
+        {
+          "title": "Bonfire",
+          "text": "Bonfire 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Crippling_Talon",
+          "text": "Dagger Crippling Talon 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Throw_Torch",
+          "text": "Torch Throw Torch 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        }
+      ]
+    },
+    "1333": {
+      "title": "Blademaster",
+      "revision": 2655530,
+      "profession": "Warrior",
+      "rows": [
+        {
+          "title": "Savage_Leap#WvW,PvP",
+          "text": "Sword Savage Leap (WvW, PvP) 7 → 5.6",
+          "before": 7,
+          "after": 5.6,
+          "pve": false
+        },
+        {
+          "title": "Savage_Leap",
+          "text": "Savage Leap (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Rend",
+          "text": "Rend 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Impale_(warrior_sword_skill)",
+          "text": "Impale 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Rip",
+          "text": "Rip 1 → 0.8",
+          "before": 1,
+          "after": 0.8,
+          "pve": true
+        },
+        {
+          "title": "Riposte",
+          "text": "Riposte 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        }
+      ]
+    },
+    "1338": {
+      "title": "Forceful_Greatsword",
+      "revision": 2849881,
+      "profession": "Warrior",
+      "rows": [
+        {
+          "title": "Greatsword_Swing",
+          "text": "Greatsword Greatsword Swing 0 → 0",
+          "before": 0,
+          "after": 0,
+          "pve": true
+        },
+        {
+          "title": "Greatsword_Slice",
+          "text": "Greatsword Slice 0 → 0",
+          "before": 0,
+          "after": 0,
+          "pve": true
+        },
+        {
+          "title": "Brutal_Strike",
+          "text": "Brutal Strike 0 → 0",
+          "before": 0,
+          "after": 0,
+          "pve": true
+        },
+        {
+          "title": "Hundred_Blades",
+          "text": "Hundred Blades 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Whirlwind_Attack",
+          "text": "Whirlwind Attack 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Bladetrail",
+          "text": "Bladetrail 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Rush",
+          "text": "Rush 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Mariner's_Frenzy",
+          "text": "Spear Mariner's Frenzy 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Barbed_Pull",
+          "text": "Barbed Pull 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Parry",
+          "text": "Parry 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Tsunami_Slash",
+          "text": "Tsunami Slash 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        }
+      ]
+    },
+    "1369": {
+      "title": "Axe_Mastery",
+      "revision": 2590046,
+      "profession": "Warrior",
+      "rows": [
+        {
+          "title": "Cyclone_Axe",
+          "text": "Axe Cyclone Axe (PvE) 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Cyclone_Axe#WvW,PvP",
+          "text": "Cyclone Axe (WvW, PvP) 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": false
+        },
+        {
+          "title": "Throw_Axe",
+          "text": "Throw Axe 1 → 0.8",
+          "before": 1,
+          "after": 0.8,
+          "pve": true
+        },
+        {
+          "title": "Dual_Strike",
+          "text": "Dual Strike (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Dual_Strike#WvW,PvP",
+          "text": "Dual Strike (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Whirling_Axe",
+          "text": "Whirling Axe (PvE) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Whirling_Axe#PvP",
+          "text": "Whirling Axe (PvP, WvW) 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": false
+        },
+        {
+          "title": "Throw_Axe",
+          "text": "Axe Throw Axe (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Throw_Axe",
+          "text": "Throw Axe (WvW, PvP) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": false
+        }
+      ]
+    },
+    "1417": {
+      "title": "Versatile_Power",
+      "revision": 3171937,
+      "profession": "Warrior",
+      "rows": [
+        {
+          "title": "Dragon_Slash—Force",
+          "text": "Dragon Trigger Dragon Slash—Force 1 → 0.85",
+          "before": 1,
+          "after": 0.85,
+          "pve": true
+        },
+        {
+          "title": "Dragon_Slash—Boost",
+          "text": "Dragon Slash—Boost 1 → 0.85",
+          "before": 1,
+          "after": 0.85,
+          "pve": true
+        },
+        {
+          "title": "Dragon_Slash—Reach",
+          "text": "Dragon Slash—Reach 1 → 0.85",
+          "before": 1,
+          "after": 0.85,
+          "pve": true
+        },
+        {
+          "title": "Arcing_Slice",
+          "text": "Professionmechanic Arcing Slice 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Bloodthirster",
+          "text": "Bloodthirster 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Breaching_Strike",
+          "text": "Breaching Strike 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Combustive_Shot",
+          "text": "Combustive Shot 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Earthshaker",
+          "text": "Earthshaker 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Eviscerate",
+          "text": "Eviscerate 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Forceful_Shot",
+          "text": "Forceful Shot 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Harrier's_Toss",
+          "text": "Harrier's Toss 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Kill_Shot",
+          "text": "Kill Shot 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Path_to_Victory",
+          "text": "Path to Victory 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Skull_Crack",
+          "text": "Skull Crack 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Whirling_Strike",
+          "text": "Whirling Strike 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Full_Counter",
+          "text": "Full Counter (PvE) 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Full_Counter#WvW",
+          "text": "Full Counter (WvW) 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": false
+        },
+        {
+          "title": "Full_Counter#PvP",
+          "text": "Full Counter (PvP) 14 → 11.9",
+          "before": 14,
+          "after": 11.9,
+          "pve": false
+        },
+        {
+          "title": "Chant_of_Action",
+          "text": "Chant of Action (PvE) 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Chant_of_Action#PvP",
+          "text": "Chant of Action (PvP, WvW) 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": false
+        },
+        {
+          "title": "Chant_of_Recuperation",
+          "text": "Chant of Recuperation (PvE) 15 → 12.75",
+          "before": 15,
+          "after": 12.75,
+          "pve": true
+        },
+        {
+          "title": "Chant_of_Recuperation#PvP",
+          "text": "Chant of Recuperation (PvP, WvW) 18 → 15.3",
+          "before": 18,
+          "after": 15.3,
+          "pve": false
+        },
+        {
+          "title": "Chant_of_Freedom",
+          "text": "Chant of Freedom (PvE) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Chant_of_Freedom#PvP",
+          "text": "Chant of Freedom (PvP, WvW) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": false
+        },
+        {
+          "title": "Arc_Divider",
+          "text": "Professionmechanic Arc Divider 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Burning_Shackles",
+          "text": "Burning Shackles 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Decapitate",
+          "text": "Decapitate 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Flaming_Flurry",
+          "text": "Flaming Flurry 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Gun_Flame",
+          "text": "Gun Flame 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Rampart_Splitter",
+          "text": "Rampart Splitter 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Rupturing_Smash",
+          "text": "Rupturing Smash 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Scorched_Earth",
+          "text": "Scorched Earth 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Skull_Grinder",
+          "text": "Skull Grinder 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Slicing_Maelstrom",
+          "text": "Slicing Maelstrom 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Wild_Throw",
+          "text": "Wild Throw 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        },
+        {
+          "title": "Wild_Whirl",
+          "text": "Wild Whirl 5 → 4.25",
+          "before": 5,
+          "after": 4.25,
+          "pve": true
+        }
+      ]
+    },
+    "1676": {
+      "title": "Aquamancer's_Training",
+      "revision": 3108871,
+      "profession": "Elementalist",
+      "rows": [
+        {
+          "title": "Cone_of_Cold",
+          "text": "Dagger Cone of Cold 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Frozen_Burst",
+          "text": "Frozen Burst (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Frozen_Burst#WvW,PvP",
+          "text": "Frozen Burst (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Frost_Aura",
+          "text": "Frost Aura (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Frost_Aura#PvP",
+          "text": "Frost Aura (PvP) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": false
+        },
+        {
+          "title": "Frost_Aura#WvW",
+          "text": "Frost Aura (WvW) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": false
+        },
+        {
+          "title": "Transmute_Frost#PvP",
+          "text": "Transmute Frost (PvP) 3 → 2.4",
+          "before": 3,
+          "after": 2.4,
+          "pve": false
+        },
+        {
+          "title": "Transmute_Frost#WvW",
+          "text": "Transmute Frost (WvW) 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": false
+        },
+        {
+          "title": "Transmute_Frost",
+          "text": "Transmute Frost (PvE) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Cleansing_Wave",
+          "text": "Cleansing Wave (PvE, WvW) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Cleansing_Wave#PvP",
+          "text": "Cleansing Wave (PvP) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": false
+        },
+        {
+          "title": "Frigid_Flurry",
+          "text": "Pistol Frigid Flurry (PvE) 5 → 4",
+          "before": 5,
+          "after": 4,
+          "pve": true
+        },
+        {
+          "title": "Frigid_Flurry#WvW,PvP",
+          "text": "Frigid Flurry (WvW, PvP) 7 → 5.6",
+          "before": 7,
+          "after": 5.6,
+          "pve": false
+        },
+        {
+          "title": "Frozen_Fusillade",
+          "text": "Frozen Fusillade 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Shatterstone",
+          "text": "Scepter Shatterstone (PvE) 3 → 2.4",
+          "before": 3,
+          "after": 2.4,
+          "pve": true
+        },
+        {
+          "title": "Shatterstone#WvW,PvP",
+          "text": "Shatterstone (WvW, PvP) 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": false
+        },
+        {
+          "title": "Water_Trident",
+          "text": "Water Trident (PvE) 1 → 0.8",
+          "before": 1,
+          "after": 0.8,
+          "pve": true
+        },
+        {
+          "title": "Water_Trident#WvW,PvP",
+          "text": "Water Trident (WvW, PvP) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": false
+        },
+        {
+          "title": "Riptide",
+          "text": "Sword Riptide (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Riptide#WvW,PvP",
+          "text": "Riptide (WvW, PvP) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": false
+        },
+        {
+          "title": "Aqua_Siphon",
+          "text": "Aqua Siphon 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Freezing_Gust",
+          "text": "Focus Freezing Gust 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Comet",
+          "text": "Comet 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Tidal_Surge",
+          "text": "Warhorn Tidal Surge 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Water_Globe",
+          "text": "Water Globe 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Rain_of_Blows",
+          "text": "Hammer Rain of Blows 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Icy_Coil",
+          "text": "Icy Coil 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": true
+        },
+        {
+          "title": "Crashing_Font",
+          "text": "Crashing Font 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Cleansing_Typhoon",
+          "text": "Cleansing Typhoon 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Ice_Spike",
+          "text": "Staff Ice Spike 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Geyser",
+          "text": "Geyser 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Frozen_Ground#WvW",
+          "text": "Frozen Ground (WvW) 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": false
+        },
+        {
+          "title": "Frozen_Ground",
+          "text": "Frozen Ground (PvE, PvP) 30 → 24",
+          "before": 30,
+          "after": 24,
+          "pve": true
+        },
+        {
+          "title": "Healing_Rain",
+          "text": "Healing Rain 35 → 28",
+          "before": 35,
+          "after": 28,
+          "pve": true
+        },
+        {
+          "title": "Ice_Beam",
+          "text": "Spear Ice Beam 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": true
+        },
+        {
+          "title": "Ripple#WvW",
+          "text": "Ripple (WvW) 14.5 → 11.6",
+          "before": 14.5,
+          "after": 11.6,
+          "pve": false
+        },
+        {
+          "title": "Ripple",
+          "text": "Ripple (PvE) 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Ripple#PvP",
+          "text": "Ripple (PvP) 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": false
+        },
+        {
+          "title": "Undertow",
+          "text": "Undertow 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Etching:_Jökulhlaup",
+          "text": "Etching: Jökulhlaup 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Ice_Globe",
+          "text": "Trident Ice Globe (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Ice_Globe#WvW,PvP",
+          "text": "Ice Globe (WvW, PvP) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": false
+        },
+        {
+          "title": "Ice_Wall",
+          "text": "Ice Wall 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Undercurrent",
+          "text": "Undercurrent 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        },
+        {
+          "title": "Tidal_Wave",
+          "text": "Tidal Wave 25 → 20",
+          "before": 25,
+          "after": 20,
+          "pve": true
+        }
+      ]
+    },
+    "1698": {
+      "title": "Lead_the_Wind",
+      "revision": 3167310,
+      "profession": "Ranger",
+      "rows": [
+        {
+          "title": "Rapid_Fire",
+          "text": "Longbow Rapid Fire (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Rapid_Fire#WvW,PvP",
+          "text": "Rapid Fire (WvW, PvP) 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": false
+        },
+        {
+          "title": "Hunter's_Shot",
+          "text": "Hunter's Shot 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Point-Blank_Shot",
+          "text": "Point-Blank Shot 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        },
+        {
+          "title": "Barrage#WvW",
+          "text": "Barrage (WvW) 5 → 4",
+          "before": 5,
+          "after": 4,
+          "pve": false
+        },
+        {
+          "title": "Barrage",
+          "text": "Barrage (PvE, PvP) 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        },
+        {
+          "title": "Coral_Shot",
+          "text": "Harpoon gun Coral Shot 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Feeding_Frenzy_(ranger_skill)",
+          "text": "Feeding Frenzy 10 → 8",
+          "before": 10,
+          "after": 8,
+          "pve": true
+        },
+        {
+          "title": "Mercy_Shot",
+          "text": "Mercy Shot 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Ink_Blast",
+          "text": "Ink Blast 18 → 14.4",
+          "before": 18,
+          "after": 14.4,
+          "pve": true
+        }
+      ]
+    },
+    "1872": {
+      "title": "Mechanized_Deployment",
+      "revision": 3117851,
+      "profession": "Engineer",
+      "rows": [
+        {
+          "title": "Bandage_Self",
+          "text": "Professionmechanic Bandage Self 17 → 14.45",
+          "before": 17,
+          "after": 14.45,
+          "pve": true
+        },
+        {
+          "title": "Blessing_of_Dwayna",
+          "text": "Blessing of Dwayna 40 → 34",
+          "before": 40,
+          "after": 34,
+          "pve": true
+        },
+        {
+          "title": "Leafy_Bandage",
+          "text": "Leafy Bandage 40 → 34",
+          "before": 40,
+          "after": 34,
+          "pve": true
+        },
+        {
+          "title": "Regenerating_Mist",
+          "text": "Regenerating Mist 18 → 15.3",
+          "before": 18,
+          "after": 15.3,
+          "pve": true
+        },
+        {
+          "title": "Static_Shock",
+          "text": "Static Shock 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Toss_Elixir_H",
+          "text": "Toss Elixir H 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Med_Pack_Drop",
+          "text": "Med Pack Drop 50 → 42.5",
+          "before": 50,
+          "after": 42.5,
+          "pve": true
+        },
+        {
+          "title": "Orbital_Strike#WvW,PvP",
+          "text": "Orbital Strike (WvW, PvP) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": false
+        },
+        {
+          "title": "Orbital_Strike",
+          "text": "Orbital Strike (PvE) 40 → 34",
+          "before": 40,
+          "after": 34,
+          "pve": true
+        },
+        {
+          "title": "Toss_Elixir_X",
+          "text": "Toss Elixir X 60 → 51",
+          "before": 60,
+          "after": 51,
+          "pve": true
+        },
+        {
+          "title": "Blessing_of_Kormir",
+          "text": "Blessing of Kormir 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Blessing_of_Lyssa",
+          "text": "Blessing of Lyssa 35 → 29.75",
+          "before": 35,
+          "after": 29.75,
+          "pve": true
+        },
+        {
+          "title": "Booby_Trap_(charr_skill)",
+          "text": "Booby Trap 45 → 38.25",
+          "before": 45,
+          "after": 38.25,
+          "pve": true
+        },
+        {
+          "title": "Confusing_Speech",
+          "text": "Confusing Speech 45 → 38.25",
+          "before": 45,
+          "after": 38.25,
+          "pve": true
+        },
+        {
+          "title": "Eat_Owl_Egg",
+          "text": "Eat Owl Egg 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Eat_Wurm_Egg",
+          "text": "Eat Wurm Egg 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Flashbang",
+          "text": "Flashbang 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Grenade_Barrage",
+          "text": "Grenade Barrage 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Grenade_Barrage_(underwater)",
+          "text": "Grenade Barrage 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Harpoon_(engineer_skill)",
+          "text": "Harpoon 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Healing_Mist",
+          "text": "Healing Mist 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Hidden_Pistols",
+          "text": "Hidden Pistols 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Invigorating_Roar",
+          "text": "Invigorating Roar 50 → 42.5",
+          "before": 50,
+          "after": 42.5,
+          "pve": true
+        },
+        {
+          "title": "Launch_Personal_Battering_Ram",
+          "text": "Launch Personal Battering Ram 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": true
+        },
+        {
+          "title": "Med_Pack_Drop_(underwater)",
+          "text": "Med Pack Drop 60 → 51",
+          "before": 60,
+          "after": 51,
+          "pve": true
+        },
+        {
+          "title": "Mine_Field",
+          "text": "Mine Field 17 → 14.45",
+          "before": 17,
+          "after": 14.45,
+          "pve": true
+        },
+        {
+          "title": "Net_Attack",
+          "text": "Net Attack 38 → 32.3",
+          "before": 38,
+          "after": 32.3,
+          "pve": true
+        },
+        {
+          "title": "Pain_Transference",
+          "text": "Pain Transference 45 → 38.25",
+          "before": 45,
+          "after": 38.25,
+          "pve": true
+        },
+        {
+          "title": "Rocket",
+          "text": "Rocket 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Rocket_Kick",
+          "text": "Rocket Kick 15 → 12.75",
+          "before": 15,
+          "after": 12.75,
+          "pve": true
+        },
+        {
+          "title": "Rumble",
+          "text": "Rumble 38 → 32.3",
+          "before": 38,
+          "after": 32.3,
+          "pve": true
+        },
+        {
+          "title": "Smoke_Bomb_(engineer_skill)",
+          "text": "Smoke Bomb 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Smoke_Vent",
+          "text": "Smoke Vent (PvE) 15 → 12.75",
+          "before": 15,
+          "after": 12.75,
+          "pve": true
+        },
+        {
+          "title": "Smoke_Vent#WvW,PvP",
+          "text": "Smoke Vent (WvW, PvP) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": false
+        },
+        {
+          "title": "Superspeed_(skill)",
+          "text": "Superspeed (PvE) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Superspeed_(skill)#WvW,PvP",
+          "text": "Superspeed (WvW, PvP) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": false
+        },
+        {
+          "title": "Surprise_Shot_(engineer_skill)",
+          "text": "Surprise Shot (PvE, WvW) 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Surprise_Shot_(engineer_skill)#PvP",
+          "text": "Surprise Shot (PvP) 12 → 10.2",
+          "before": 12,
+          "after": 10.2,
+          "pve": false
+        },
+        {
+          "title": "Throw_Napalm",
+          "text": "Throw Napalm 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Throw_Vine",
+          "text": "Throw Vine 45 → 38.25",
+          "before": 45,
+          "after": 38.25,
+          "pve": true
+        },
+        {
+          "title": "Throw_Wrench#WvW,PvP",
+          "text": "Throw Wrench (WvW, PvP) 15 → 12.75",
+          "before": 15,
+          "after": 12.75,
+          "pve": false
+        },
+        {
+          "title": "Throw_Wrench",
+          "text": "Throw Wrench (PvE) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Toss_Elixir_B",
+          "text": "Toss Elixir B 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Toss_Elixir_C",
+          "text": "Toss Elixir C 16 → 13.6",
+          "before": 16,
+          "after": 13.6,
+          "pve": true
+        },
+        {
+          "title": "Toss_Elixir_R",
+          "text": "Toss Elixir R 90 → 76.5",
+          "before": 90,
+          "after": 76.5,
+          "pve": true
+        },
+        {
+          "title": "Toss_Elixir_S",
+          "text": "Toss Elixir S 45 → 38.25",
+          "before": 45,
+          "after": 38.25,
+          "pve": true
+        },
+        {
+          "title": "Toss_Elixir_U",
+          "text": "Toss Elixir U 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Toss_Elixir_X_(underwater)",
+          "text": "Toss Elixir X 120 → 102",
+          "before": 120,
+          "after": 102,
+          "pve": true
+        },
+        {
+          "title": "Vent_Radiation",
+          "text": "Vent Radiation 45 → 38.25",
+          "before": 45,
+          "after": 38.25,
+          "pve": true
+        },
+        {
+          "title": "Vine_Shield",
+          "text": "Vine Shield 45 → 38.25",
+          "before": 45,
+          "after": 38.25,
+          "pve": true
+        },
+        {
+          "title": "Reconstruction_Field#WvW,PvP",
+          "text": "Reconstruction Field (WvW, PvP) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": false
+        },
+        {
+          "title": "Reconstruction_Field",
+          "text": "Reconstruction Field (PvE) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Function_Gyro_(tool_belt_skill)",
+          "text": "Function Gyro 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Bypass_Coating",
+          "text": "Bypass Coating (PvE) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Bypass_Coating#PvP",
+          "text": "Bypass Coating (PvP) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": false
+        },
+        {
+          "title": "Bypass_Coating#WvW",
+          "text": "Bypass Coating (WvW) 35 → 29.75",
+          "before": 35,
+          "after": 29.75,
+          "pve": false
+        },
+        {
+          "title": "Chemical_Field",
+          "text": "Chemical Field 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Defense_Field",
+          "text": "Defense Field (PvE) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Defense_Field#WvW",
+          "text": "Defense Field (WvW) 35 → 29.75",
+          "before": 35,
+          "after": 29.75,
+          "pve": false
+        },
+        {
+          "title": "Defense_Field#PvP",
+          "text": "Defense Field (PvP) 40 → 34",
+          "before": 40,
+          "after": 34,
+          "pve": false
+        },
+        {
+          "title": "Defense_Field_(underwater)",
+          "text": "Defense Field (PvE) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Defense_Field_(underwater)#WvW",
+          "text": "Defense Field (WvW) 35 → 29.75",
+          "before": 35,
+          "after": 29.75,
+          "pve": false
+        },
+        {
+          "title": "Defense_Field_(underwater)#PvP",
+          "text": "Defense Field (PvP) 40 → 34",
+          "before": 40,
+          "after": 34,
+          "pve": false
+        },
+        {
+          "title": "Spare_Capacitor",
+          "text": "Spare Capacitor 24 → 20.4",
+          "before": 24,
+          "after": 20.4,
+          "pve": true
+        },
+        {
+          "title": "Cauterize",
+          "text": "Cauterize 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Blade_Burst",
+          "text": "Blade Burst (PvE) 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Blade_Burst#WvW,PvP",
+          "text": "Blade Burst (WvW, PvP) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": false
+        },
+        {
+          "title": "Flash_Spark",
+          "text": "Flash Spark 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Particle_Accelerator",
+          "text": "Particle Accelerator (PvE) 8 → 6.8",
+          "before": 8,
+          "after": 6.8,
+          "pve": true
+        },
+        {
+          "title": "Particle_Accelerator#WvW",
+          "text": "Particle Accelerator (WvW) 10 → 8.5",
+          "before": 10,
+          "after": 8.5,
+          "pve": false
+        },
+        {
+          "title": "Particle_Accelerator#PvP",
+          "text": "Particle Accelerator (PvP) 15 → 12.75",
+          "before": 15,
+          "after": 12.75,
+          "pve": false
+        },
+        {
+          "title": "Prismatic_Singularity",
+          "text": "Prismatic Singularity (PvE) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Prismatic_Singularity#WvW,PvP",
+          "text": "Prismatic Singularity (WvW, PvP) 35 → 29.75",
+          "before": 35,
+          "after": 29.75,
+          "pve": false
+        },
+        {
+          "title": "Explosive_Knuckle",
+          "text": "Explosive Knuckle 15 → 12.75",
+          "before": 15,
+          "after": 12.75,
+          "pve": true
+        },
+        {
+          "title": "Rolling_Smash",
+          "text": "Rolling Smash 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Spark_Revolver",
+          "text": "Spark Revolver 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Core_Reactor_Shot",
+          "text": "Core Reactor Shot 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Crisis_Zone",
+          "text": "Crisis Zone (PvE, PvP) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Crisis_Zone#WvW",
+          "text": "Crisis Zone (WvW) 40 → 34",
+          "before": 40,
+          "after": 34,
+          "pve": false
+        },
+        {
+          "title": "Discharge_Array",
+          "text": "Discharge Array 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Barrier_Burst",
+          "text": "Barrier Burst 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Jade_Mortar",
+          "text": "Jade Mortar 20 → 17",
+          "before": 20,
+          "after": 17,
+          "pve": true
+        },
+        {
+          "title": "Sky_Circus",
+          "text": "Sky Circus 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": true
+        },
+        {
+          "title": "Symbiotic_Shielding",
+          "text": "Symbiotic Shielding (PvE, WvW) 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Symbiotic_Shielding#PvP",
+          "text": "Symbiotic Shielding (PvP) 30 → 25.5",
+          "before": 30,
+          "after": 25.5,
+          "pve": false
+        },
+        {
+          "title": "Controlled_Analysis",
+          "text": "Trait Controlled Analysis 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        },
+        {
+          "title": "Invisible_Analysis",
+          "text": "Invisible Analysis 25 → 21.25",
+          "before": 25,
+          "after": 21.25,
+          "pve": true
+        }
+      ]
+    },
+    "1899": {
+      "title": "Invigorated_Bulwark",
+      "revision": 2694781,
+      "profession": "Guardian",
+      "rows": [
+        {
+          "title": "Symbol_of_Faith",
+          "text": "Mace Symbol of Faith 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Protector's_Strike",
+          "text": "Protector's Strike 15 → 12",
+          "before": 15,
+          "after": 12,
+          "pve": true
+        }
+      ]
+    },
+    "1912": {
+      "title": "Light_on_your_Feet",
+      "revision": 3171118,
+      "profession": "Ranger",
+      "rows": [
+        {
+          "title": "Poison_Volley#WvW,PvP",
+          "text": "Short bow Poison Volley (WvW, PvP) 6 → 4.8",
+          "before": 6,
+          "after": 4.8,
+          "pve": false
+        },
+        {
+          "title": "Poison_Volley",
+          "text": "Poison Volley (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Quick_Shot",
+          "text": "Quick Shot (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4,
+          "pve": true
+        },
+        {
+          "title": "Quick_Shot#WvW,PvP",
+          "text": "Quick Shot (WvW, PvP) 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": false
+        },
+        {
+          "title": "Crippling_Shot",
+          "text": "Crippling Shot 12 → 9.6",
+          "before": 12,
+          "after": 9.6,
+          "pve": true
+        },
+        {
+          "title": "Concussion_Shot",
+          "text": "Concussion Shot 20 → 16",
+          "before": 20,
+          "after": 16,
+          "pve": true
+        }
+      ]
+    }
+  }
+}

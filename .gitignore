@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+playwright-report/
+test-results/
+data/wiki-cache/
+docs/
+*.md
+.env
+.env.*
+*.tmp

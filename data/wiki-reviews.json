@@ -1,0 +1,522 @@
+{
+  "schema": 1,
+  "entries": {
+    "traits": {
+      "1876": {
+        "revision": 3099731,
+        "rows": [
+          {
+            "text": "Heal per condition: 961 (0.1)?[sic]",
+            "notes": ["\"condition\" should be capitalized"],
+            "action": "allow"
+          }
+        ]
+      }
+    },
+    "skills": {
+      "5721": {
+        "revision": 3021145,
+        "rows": [
+          {
+            "text": "Defiance Break: 400[sic]",
+            "notes": ["300, 350-400 with 1-2 Water Arrow stacks"],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "蔑视伤害",
+                "detail": "300；1–2 层水箭时 350–400"
+              }
+            ]
+          }
+        ]
+      },
+      "10647": {
+        "revision": 2812692,
+        "rows": [
+          {
+            "text": "Defiance Break: 332[sic]",
+            "notes": [
+              "The Defiance Break sums up 232 from launch and 100 from knockdown while the actual knockdown duration is 2 seconds and thus deals 200 defiance bar damage."
+            ],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "蔑视伤害",
+                "detail": "每次击飞 232；击倒 200"
+              }
+            ]
+          },
+          {
+            "text": "Knockdown: 1 second",
+            "notes": [],
+            "action": "replace",
+            "evidence": "Notes: Actual knockdown duration is 2 seconds.",
+            "rows": [
+              {
+                "label": "击倒",
+                "detail": "2 秒"
+              }
+            ]
+          }
+        ]
+      },
+      "12542": {
+        "revision": 2752162,
+        "rows": [
+          {
+            "text": "10 Unblockable (6s): Your attacks are unblockable[sic]",
+            "notes": ["Missing period."],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "无法格挡",
+                "detail": "6 秒 · 10 次攻击"
+              }
+            ]
+          }
+        ]
+      },
+      "14387": {
+        "revision": 3172032,
+        "rows": [
+          {
+            "text": "Defiance Break: 450[sic]",
+            "notes": [
+              "Depends on Level, Level 1: 100, Level 2: 150, Level 3: 200"
+            ],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "怒气等级 1 · 蔑视伤害",
+                "detail": "100"
+              },
+              {
+                "label": "怒气等级 2 · 蔑视伤害",
+                "detail": "150"
+              },
+              {
+                "label": "怒气等级 3 · 蔑视伤害",
+                "detail": "200"
+              }
+            ]
+          }
+        ]
+      },
+      "14404": {
+        "revision": 3108875,
+        "rows": [
+          {
+            "text": "10 Unblockable (6s): Your attacks are unblockable[sic]",
+            "notes": ["Missing period."],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "无法格挡",
+                "detail": "6 秒 · 10 次攻击"
+              }
+            ]
+          }
+        ]
+      },
+      "14414": {
+        "revision": 3143927,
+        "rows": [
+          {
+            "text": "Defiance Break: 675[sic]",
+            "notes": [
+              "Depends on Level, Level 1: 125, Level 2: 225, Level 3: 325"
+            ],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "怒气等级 1 · 蔑视伤害",
+                "detail": "125"
+              },
+              {
+                "label": "怒气等级 2 · 蔑视伤害",
+                "detail": "225"
+              },
+              {
+                "label": "怒气等级 3 · 蔑视伤害",
+                "detail": "325"
+              }
+            ]
+          }
+        ]
+      },
+      "14443": {
+        "revision": 3143931,
+        "rows": [
+          {
+            "text": "Defiance Break: 450[sic]",
+            "notes": [
+              "Depends on Level, Level 1: 100, Level 2: 150, Level 3: 200"
+            ],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "怒气等级 1 · 蔑视伤害",
+                "detail": "100"
+              },
+              {
+                "label": "怒气等级 2 · 蔑视伤害",
+                "detail": "150"
+              },
+              {
+                "label": "怒气等级 3 · 蔑视伤害",
+                "detail": "200"
+              }
+            ]
+          }
+        ]
+      },
+      "28231": {
+        "revision": 3081529,
+        "rows": [
+          {
+            "text": "2 Unblockable (5s): Your attacks are unblockable[sic]",
+            "notes": ["Missing period."],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "无法格挡",
+                "detail": "5 秒 · 2 次攻击"
+              }
+            ]
+          }
+        ]
+      },
+      "29666": {
+        "revision": 2855376,
+        "rows": [
+          {
+            "text": "10 Unblockable (6s): Your attacks are unblockable[sic]",
+            "notes": ["Missing period."],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "无法格挡",
+                "detail": "6 秒 · 10 次攻击"
+              }
+            ]
+          },
+          {
+            "text": "Unblockable Attacks per Melee Hit (6s): Your attacks are unblockable[sic]",
+            "notes": ["Missing period."],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "每次近战命中 · 无法格挡",
+                "detail": "6 秒"
+              }
+            ]
+          }
+        ]
+      },
+      "29852": {
+        "revision": 2956565,
+        "rows": [
+          {
+            "text": "Range: 450[sic]",
+            "notes": ["Unused skill fact"],
+            "action": "omit"
+          }
+        ]
+      },
+      "30105": {
+        "revision": 2967006,
+        "rows": [
+          {
+            "text": "Defiance Break: 500[sic]",
+            "notes": ["200 or 300 in melee"],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "蔑视伤害",
+                "detail": "200；近战范围内 300"
+              }
+            ]
+          }
+        ]
+      },
+      "30343": {
+        "revision": 2967010,
+        "rows": [
+          {
+            "text": "Defiance Break: 400[sic]",
+            "notes": ["300"],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "蔑视伤害",
+                "detail": "300"
+              }
+            ]
+          }
+        ]
+      },
+      "35304": {
+        "revision": 3069393,
+        "rows": [
+          {
+            "text": "Defiance Break: 232[sic]",
+            "notes": ["332"],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "蔑视伤害",
+                "detail": "332"
+              }
+            ]
+          }
+        ]
+      },
+      "40601": {
+        "revision": 3172032,
+        "rows": [
+          {
+            "text": "Defiance Break: 450[sic]",
+            "notes": [
+              "Depends on Level, Level 1: 100, Level 2: 150, Level 3: 200"
+            ],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "怒气等级 1 · 蔑视伤害",
+                "detail": "100"
+              },
+              {
+                "label": "怒气等级 2 · 蔑视伤害",
+                "detail": "150"
+              },
+              {
+                "label": "怒气等级 3 · 蔑视伤害",
+                "detail": "200"
+              }
+            ]
+          }
+        ]
+      },
+      "41110": {
+        "revision": 3143927,
+        "rows": [
+          {
+            "text": "Defiance Break: 675[sic]",
+            "notes": [
+              "Depends on Level, Level 1: 125, Level 2: 225, Level 3: 325"
+            ],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "怒气等级 1 · 蔑视伤害",
+                "detail": "125"
+              },
+              {
+                "label": "怒气等级 2 · 蔑视伤害",
+                "detail": "225"
+              },
+              {
+                "label": "怒气等级 3 · 蔑视伤害",
+                "detail": "325"
+              }
+            ]
+          }
+        ]
+      },
+      "41746": {
+        "revision": 3143931,
+        "rows": [
+          {
+            "text": "Defiance Break: 450[sic]",
+            "notes": [
+              "Depends on Level, Level 1: 100, Level 2: 150, Level 3: 200"
+            ],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "怒气等级 1 · 蔑视伤害",
+                "detail": "100"
+              },
+              {
+                "label": "怒气等级 2 · 蔑视伤害",
+                "detail": "150"
+              },
+              {
+                "label": "怒气等级 3 · 蔑视伤害",
+                "detail": "200"
+              }
+            ]
+          }
+        ]
+      },
+      "46335": {
+        "revision": 3196801,
+        "rows": [
+          {
+            "text": "Defiance Break: 382[sic]",
+            "notes": ["150 for knockback and 232 for launch"],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "蔑视伤害",
+                "detail": "击退 150；击飞 232"
+              }
+            ]
+          }
+        ]
+      },
+      "55029": {
+        "revision": 2815720,
+        "rows": [
+          {
+            "text": "2 Unblockable (5s): Your attacks are unblockable[sic]",
+            "notes": ["Missing period."],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "无法格挡",
+                "detail": "5 秒 · 2 次攻击"
+              }
+            ]
+          }
+        ]
+      },
+      "56873": {
+        "revision": 3210681,
+        "rows": [
+          {
+            "text": "Defiance Break: 100[sic]",
+            "notes": ["50"],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "蔑视伤害",
+                "detail": "50（每个粉碎）"
+              }
+            ]
+          }
+        ]
+      },
+      "56928": {
+        "revision": 3188692,
+        "rows": [
+          {
+            "text": "Rechage Reduced per Clone: 3 seconds[sic]",
+            "notes": ["Recharge Reduced per Clone"],
+            "action": "allow"
+          }
+        ]
+      },
+      "62561": {
+        "revision": 3118943,
+        "rows": [
+          {
+            "text": "Defiance Break: 550[sic]",
+            "notes": ["400 on target, 150 versus others"],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "蔑视伤害",
+                "detail": "主目标 400；其他目标 150"
+              }
+            ]
+          }
+        ]
+      },
+      "62603": {
+        "revision": 2932256,
+        "rows": [
+          {
+            "text": "Distance Traveled: 450[sic]",
+            "notes": ["approx. 300"],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "移动距离",
+                "detail": "约 300"
+              }
+            ]
+          }
+        ]
+      },
+      "62965": {
+        "revision": 3112931,
+        "rows": [
+          {
+            "text": "10 Unblockable (5s): Your attacks are unblockable[sic]",
+            "notes": ["Missing period."],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "无法格挡",
+                "detail": "5 秒 · 10 次攻击"
+              }
+            ]
+          }
+        ]
+      },
+      "63275": {
+        "revision": 2836474,
+        "rows": [
+          {
+            "text": "Defiance Break: 300[sic]",
+            "notes": ["150 per pull up to 450"],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "蔑视伤害",
+                "detail": "每次拉拽 150，最多 450"
+              }
+            ]
+          }
+        ]
+      },
+      "76782": {
+        "revision": 3075707,
+        "rows": [
+          {
+            "text": "1-3[sic] Motivation: Heals allies around you.",
+            "notes": ["unnecessary space before numbers"],
+            "action": "allow"
+          }
+        ]
+      },
+      "76808": {
+        "revision": 3101989,
+        "rows": [
+          {
+            "text": "Defiance Break: 300[sic]",
+            "notes": ["knockdown is applied to self"],
+            "action": "omit"
+          }
+        ]
+      },
+      "77079": {
+        "revision": 3173328,
+        "rows": [
+          {
+            "text": "Defiance Break: 500[sic]",
+            "notes": ["maximum 200"],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "蔑视伤害",
+                "detail": "最多 200"
+              }
+            ]
+          }
+        ]
+      },
+      "77255": {
+        "revision": 3111171,
+        "rows": [
+          {
+            "text": "Defiance Break: 232[sic]",
+            "notes": ["launch is applied to self"],
+            "action": "omit"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,568 @@
+{
+  "schema": 1,
+  "identities": [
+    {
+      "id": 39972,
+      "profession": "Warrior",
+      "title": "Silencer",
+      "issue": "Wiki identity mismatch: skill/39972; found "
+    },
+    {
+      "id": 40111,
+      "profession": "Ranger",
+      "title": "Narcotic_Spores",
+      "issue": "Wiki identity mismatch: skill/40111; found 45262,45262"
+    },
+    {
+      "id": 41283,
+      "profession": "Warrior",
+      "title": "Boon_Crusher",
+      "issue": "Wiki identity mismatch: article returned HTTP 404"
+    },
+    {
+      "id": 41461,
+      "profession": "Ranger",
+      "title": "Devourer_Retreat",
+      "issue": "Wiki identity mismatch: skill/41461; found 12678,12678"
+    },
+    {
+      "id": 41543,
+      "profession": "Warrior",
+      "title": "Wounding_Strike",
+      "issue": "Wiki identity mismatch: article returned HTTP 404"
+    },
+    {
+      "id": 41575,
+      "profession": "Ranger",
+      "title": "Tail_Swipe",
+      "issue": "Wiki identity mismatch: skill/41575; found 12671,12671"
+    },
+    {
+      "id": 41837,
+      "profession": "Ranger",
+      "title": "Dark_Water",
+      "issue": "Wiki identity mismatch: skill/41837; found 10644,10644"
+    },
+    {
+      "id": 42797,
+      "profession": "Ranger",
+      "title": "Charging_Bite",
+      "issue": "Wiki identity mismatch: skill/42797; found 12739,12739"
+    },
+    {
+      "id": 43060,
+      "profession": "Ranger",
+      "title": "Defy_Pain",
+      "issue": "Wiki identity mismatch: skill/43060; found 12665,12665"
+    },
+    {
+      "id": 43488,
+      "profession": "Warrior",
+      "title": "Fleeting_Stability",
+      "issue": "Wiki identity mismatch: article returned HTTP 404"
+    },
+    {
+      "id": 43548,
+      "profession": "Ranger",
+      "title": "Frenzied_Attack",
+      "issue": "Wiki identity mismatch: skill/43548; found 12707,12707"
+    },
+    {
+      "id": 43671,
+      "profession": "Ranger",
+      "title": "Poison_Gas",
+      "issue": "Wiki identity mismatch: skill/43671; found 12725,12725"
+    },
+    {
+      "id": 43701,
+      "profession": "Ranger",
+      "title": "Photosynthesize",
+      "issue": "Wiki identity mismatch: skill/43701; found 41710,41710"
+    },
+    {
+      "id": 43726,
+      "profession": "Ranger",
+      "title": "Crippling_Leap",
+      "issue": "Wiki identity mismatch: skill/43726; found 12661,12661"
+    },
+    {
+      "id": 44097,
+      "profession": "Ranger",
+      "title": "Entangling_Web",
+      "issue": "Wiki identity mismatch: skill/44097; found 12654,12654"
+    },
+    {
+      "id": 44384,
+      "profession": "Ranger",
+      "title": "Crippling_Anguish",
+      "issue": "Wiki identity mismatch: skill/44384; found 41864,41864"
+    },
+    {
+      "id": 44397,
+      "profession": "Warrior",
+      "title": "Dissonance",
+      "issue": "Wiki identity mismatch: article returned HTTP 404"
+    },
+    {
+      "id": 44617,
+      "profession": "Ranger",
+      "title": "Harmonic_Cry",
+      "issue": "Wiki identity mismatch: skill/44617; found 12706,12706"
+    },
+    {
+      "id": 44991,
+      "profession": "Ranger",
+      "title": "Swoop",
+      "issue": "Wiki identity mismatch: skill/44991; found 12521,12521"
+    },
+    {
+      "id": 45425,
+      "profession": "Mesmer",
+      "title": "Rain_of_Swords",
+      "issue": "Wiki identity mismatch: skill/45425; found 62553,62553"
+    },
+    {
+      "id": 45479,
+      "profession": "Ranger",
+      "title": "Sharpen_Spines",
+      "issue": "Wiki identity mismatch: skill/45479; found 31599,31599"
+    },
+    {
+      "id": 46044,
+      "profession": "Warrior",
+      "title": "Magehunter_Strike",
+      "issue": "Wiki identity mismatch: article returned HTTP 404"
+    },
+    {
+      "id": 46386,
+      "profession": "Ranger",
+      "title": "Tail_Lash",
+      "issue": "Wiki identity mismatch: skill/46386; found 12673,12673"
+    },
+    {
+      "id": 46409,
+      "profession": "Revenant",
+      "title": "Legendary_Renegade_Stance",
+      "issue": "Wiki identity mismatch: skill/46409; found 41858,41858"
+    },
+    {
+      "id": 46473,
+      "profession": "Necromancer",
+      "title": "Manifest_Sand_Shade",
+      "issue": "Wiki identity mismatch: skill/46473; found 44946,42297,44946,42297"
+    },
+    {
+      "id": 46474,
+      "profession": "Necromancer",
+      "title": "Manifest_Sand_Shade",
+      "issue": "Wiki identity mismatch: skill/46474; found 44946,42297,44946,42297"
+    },
+    {
+      "id": 64038,
+      "profession": "Ranger",
+      "title": "Dash",
+      "issue": "Wiki identity mismatch: skill/64038; found "
+    },
+    {
+      "id": 64699,
+      "profession": "Ranger",
+      "title": "Slam",
+      "issue": "Wiki identity mismatch: skill/64699; found 63475"
+    },
+    {
+      "id": 70889,
+      "profession": "Ranger",
+      "title": "Ley-Line_Vortex",
+      "issue": "Wiki identity mismatch: skill/70889; found 70332,70332"
+    },
+    {
+      "id": 71499,
+      "profession": "Ranger",
+      "title": "Electrocute",
+      "issue": "Wiki identity mismatch: skill/71499; found 5655,5655"
+    },
+    {
+      "id": 71546,
+      "profession": "Ranger",
+      "title": "Spit_Goop",
+      "issue": "Wiki identity mismatch: skill/71546; found 71532,71532"
+    },
+    {
+      "id": 72103,
+      "profession": "Engineer",
+      "title": "Function_Gyro",
+      "issue": "Wiki identity mismatch: skill/72103; found "
+    },
+    {
+      "id": 72636,
+      "profession": "Ranger",
+      "title": "Tormenting_Visions",
+      "issue": "Wiki identity mismatch: skill/72636; found 72527,72527"
+    },
+    {
+      "id": 72851,
+      "profession": "Ranger",
+      "title": "Staring_Void",
+      "issue": "Wiki identity mismatch: skill/72851; found 72652,72652"
+    },
+    {
+      "id": 73733,
+      "profession": "Ranger",
+      "title": "Battle_Maul",
+      "issue": "Wiki identity mismatch: skill/73733; found 54912,54922"
+    },
+    {
+      "id": 73938,
+      "profession": "Ranger",
+      "title": "Bop",
+      "issue": "Wiki identity mismatch: skill/73938; found 73376,73376"
+    },
+    {
+      "id": 75392,
+      "profession": "Elementalist",
+      "title": "Deploy_Jade_Sphere",
+      "issue": "Wiki identity mismatch: skill/75392; found "
+    },
+    {
+      "id": 75394,
+      "profession": "Elementalist",
+      "title": "Deploy_Jade_Sphere",
+      "issue": "Wiki identity mismatch: skill/75394; found "
+    },
+    {
+      "id": 75395,
+      "profession": "Elementalist",
+      "title": "Deploy_Jade_Sphere",
+      "issue": "Wiki identity mismatch: skill/75395; found "
+    },
+    {
+      "id": 75407,
+      "profession": "Elementalist",
+      "title": "Deploy_Jade_Sphere",
+      "issue": "Wiki identity mismatch: skill/75407; found "
+    },
+    {
+      "id": 76580,
+      "profession": "Elementalist",
+      "title": "Air_Attunement",
+      "issue": "Wiki identity mismatch: skill/76580; found 5494,5494"
+    },
+    {
+      "id": 76703,
+      "profession": "Elementalist",
+      "title": "Fire_Attunement",
+      "issue": "Wiki identity mismatch: skill/76703; found 5492,5492"
+    },
+    {
+      "id": 76790,
+      "profession": "Engineer",
+      "title": "Locked",
+      "issue": "Wiki identity mismatch: skill/76790; found 672,10586,19643"
+    },
+    {
+      "id": 76988,
+      "profession": "Elementalist",
+      "title": "Water_Attunement",
+      "issue": "Wiki identity mismatch: skill/76988; found 5493,5493"
+    },
+    {
+      "id": 77082,
+      "profession": "Elementalist",
+      "title": "Earth_Attunement",
+      "issue": "Wiki identity mismatch: skill/77082; found 5495,5495"
+    },
+    {
+      "id": 77107,
+      "profession": "Engineer",
+      "title": "Locked",
+      "issue": "Wiki identity mismatch: skill/77107; found 672,10586,19643"
+    },
+    {
+      "id": 77190,
+      "profession": "Elementalist",
+      "title": "Otter's_Compassion",
+      "issue": "Wiki identity mismatch: skill/77190; found 76563,76563"
+    },
+    {
+      "id": 77306,
+      "profession": "Mesmer",
+      "title": "Lively_Lute",
+      "issue": "Wiki identity mismatch: skill/77306; found 76552,76552"
+    },
+    {
+      "id": 77388,
+      "profession": "Engineer",
+      "title": "Locked",
+      "issue": "Wiki identity mismatch: skill/77388; found 672,10586,19643"
+    },
+    {
+      "id": 78309,
+      "profession": "Thief",
+      "title": "Zephyrite_Sun_Crystal",
+      "issue": "Wiki identity mismatch: skill/78309; found 76895,76733,76895,76733"
+    },
+    {
+      "id": 78895,
+      "profession": "Revenant",
+      "title": "Release_Potential:_Warrior",
+      "issue": "Wiki identity mismatch: skill/78895; found 77896,77896"
+    },
+    {
+      "id": 80031,
+      "profession": "Ranger",
+      "title": "Tail_Whip",
+      "issue": "Wiki identity mismatch: skill/80031; found 80164,80164"
+    },
+    {
+      "id": 80035,
+      "profession": "Ranger",
+      "title": "Jet",
+      "issue": "Wiki identity mismatch: skill/80035; found 79654,79654"
+    }
+  ],
+  "sic": [
+    {
+      "kind": "traits",
+      "id": 1876,
+      "profession": "Necromancer",
+      "title": "Blood_Renewal",
+      "revision": 3099731,
+      "text": "Heal per condition: 961 (0.1)?[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 12542,
+      "profession": "Ranger",
+      "title": "Signet_of_the_Hunt",
+      "revision": 2752162,
+      "text": "10 Unblockable (6s): Your attacks are unblockable[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 14387,
+      "profession": "Warrior",
+      "title": "Earthshaker",
+      "revision": 3172032,
+      "text": "Defiance Break: 450[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 14404,
+      "profession": "Warrior",
+      "title": "Signet_of_Might",
+      "revision": 3108875,
+      "text": "10 Unblockable (6s): Your attacks are unblockable[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 14414,
+      "profession": "Warrior",
+      "title": "Skull_Crack",
+      "revision": 3143927,
+      "text": "Defiance Break: 675[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 14443,
+      "profession": "Warrior",
+      "title": "Whirling_Strike",
+      "revision": 3143931,
+      "text": "Defiance Break: 450[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 28231,
+      "profession": "Revenant",
+      "title": "Phase_Traversal",
+      "revision": 3081529,
+      "text": "2 Unblockable (5s): Your attacks are unblockable[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 29666,
+      "profession": "Necromancer",
+      "title": "\"Nothing_Can_Save_You!\"",
+      "revision": 2855376,
+      "text": "10 Unblockable (6s): Your attacks are unblockable[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 29666,
+      "profession": "Necromancer",
+      "title": "\"Nothing_Can_Save_You!\"",
+      "revision": 2855376,
+      "text": "Unblockable Attacks per Melee Hit (6s): Your attacks are unblockable[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 29852,
+      "profession": "Warrior",
+      "title": "Arc_Divider",
+      "revision": 2956565,
+      "text": "Range: 450[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 30105,
+      "profession": "Necromancer",
+      "title": "\"Chilled_to_the_Bone!\"",
+      "revision": 2967006,
+      "text": "Defiance Break: 500[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 30343,
+      "profession": "Warrior",
+      "title": "Head_Butt",
+      "revision": 2967010,
+      "text": "Defiance Break: 400[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 40601,
+      "profession": "Warrior",
+      "title": "Earthshaker",
+      "revision": 3172032,
+      "text": "Defiance Break: 450[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 41110,
+      "profession": "Warrior",
+      "title": "Skull_Crack",
+      "revision": 3143927,
+      "text": "Defiance Break: 675[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 41746,
+      "profession": "Warrior",
+      "title": "Whirling_Strike",
+      "revision": 3143931,
+      "text": "Defiance Break: 450[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 46335,
+      "profession": "Thief",
+      "title": "Shadow_Gust",
+      "revision": 3196801,
+      "text": "Defiance Break: 382[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 55029,
+      "profession": "Revenant",
+      "title": "Ancient_Echo",
+      "revision": 2815720,
+      "text": "2 Unblockable (5s): Your attacks are unblockable[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 56873,
+      "profession": "Mesmer",
+      "title": "Time_Sink",
+      "revision": 3210681,
+      "text": "Defiance Break: 100[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 56928,
+      "profession": "Mesmer",
+      "title": "Rewinder",
+      "revision": 3188692,
+      "text": "Rechage Reduced per Clone: 3 seconds[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 62561,
+      "profession": "Guardian",
+      "title": "Heaven's_Palm",
+      "revision": 3118943,
+      "text": "Defiance Break: 550[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 62603,
+      "profession": "Guardian",
+      "title": "Flowing_Resolve",
+      "revision": 2932256,
+      "text": "Distance Traveled: 450[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 62965,
+      "profession": "Elementalist",
+      "title": "Relentless_Fire",
+      "revision": 3112931,
+      "text": "10 Unblockable (5s): Your attacks are unblockable[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 63275,
+      "profession": "Thief",
+      "title": "Shadowfall",
+      "revision": 2836474,
+      "text": "Defiance Break: 300[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 76782,
+      "profession": "Warrior",
+      "title": "Chant_of_Recuperation",
+      "revision": 3075707,
+      "text": "1-3[sic] Motivation: Heals allies around you.",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 76808,
+      "profession": "Thief",
+      "title": "Inquest_Portal_Device",
+      "revision": 3101989,
+      "text": "Defiance Break: 300[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 77079,
+      "profession": "Mesmer",
+      "title": "Deafening_Drum",
+      "revision": 3173328,
+      "text": "Defiance Break: 500[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    },
+    {
+      "kind": "skills",
+      "id": 77255,
+      "profession": "Thief",
+      "title": "Skritt_Scuffle",
+      "revision": 3111171,
+      "text": "Defiance Break: 232[sic]",
+      "reason": "Wiki marks this value with sic; correction needs explicit review"
+    }
+  ]
+}

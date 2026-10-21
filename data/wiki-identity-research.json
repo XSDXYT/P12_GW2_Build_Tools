@@ -1,0 +1,2161 @@
+{
+  "schema": 1,
+  "entries": {
+    "39972": {
+      "profession": "Warrior",
+      "name": "寂静打击",
+      "originalTitle": "Silencer",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Spellbreaker",
+          "ids": [],
+          "revision": 3069703,
+          "canonical": "Spellbreaker"
+        },
+        {
+          "title": "List_of_warrior_skills",
+          "ids": [],
+          "revision": 3095180,
+          "canonical": "List_of_warrior_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Silencer",
+          "ids": [],
+          "revision": 3199903,
+          "canonical": "Hall_of_Chains_(achievements)"
+        }
+      ],
+      "classification": "unrelated-redirect",
+      "conclusion": "同名文章重定向至成就页，不能用于技能数值。当前索引无精确 ID 证据。"
+    },
+    "40111": {
+      "profession": "Ranger",
+      "name": "困惑孢子",
+      "originalTitle": "Narcotic_Spores",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Narcotic_Spores_(soulbeast)",
+        "revision": 2788848,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Narcotic_Spores_(soulbeast)",
+          "ids": [40111],
+          "revision": 2788848,
+          "canonical": "Narcotic_Spores_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "41283": {
+      "profession": "Warrior",
+      "name": "增益粉粹",
+      "originalTitle": "Boon_Crusher",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Spellbreaker",
+          "ids": [],
+          "revision": 3069703,
+          "canonical": "Spellbreaker"
+        },
+        {
+          "title": "List_of_warrior_skills",
+          "ids": [],
+          "revision": 3095180,
+          "canonical": "List_of_warrior_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Boon_Crusher",
+          "ids": [],
+          "revision": 0,
+          "canonical": "Boon_Crusher"
+        }
+      ],
+      "classification": "page-unavailable",
+      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。"
+    },
+    "41461": {
+      "profession": "Ranger",
+      "name": "噬蝎撤离",
+      "originalTitle": "Devourer_Retreat",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Devourer_Retreat_(soulbeast)",
+        "revision": 2376531,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Devourer_Retreat_(soulbeast)",
+          "ids": [41461],
+          "revision": 2376531,
+          "canonical": "Devourer_Retreat_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "41543": {
+      "profession": "Warrior",
+      "name": "重伤打击",
+      "originalTitle": "Wounding_Strike",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Spellbreaker",
+          "ids": [],
+          "revision": 3069703,
+          "canonical": "Spellbreaker"
+        },
+        {
+          "title": "List_of_warrior_skills",
+          "ids": [],
+          "revision": 3095180,
+          "canonical": "List_of_warrior_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Wounding_Strike",
+          "ids": [],
+          "revision": 0,
+          "canonical": "Wounding_Strike"
+        }
+      ],
+      "classification": "page-unavailable",
+      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。"
+    },
+    "41575": {
+      "profession": "Ranger",
+      "name": "尾鞭横扫",
+      "originalTitle": "Tail_Swipe",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Tail_Swipe_(soulbeast)",
+        "revision": 2840370,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Tail_Swipe_(soulbeast)",
+          "ids": [41575],
+          "revision": 2840370,
+          "canonical": "Tail_Swipe_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "41837": {
+      "profession": "Ranger",
+      "name": "黑暗水雾",
+      "originalTitle": "Dark_Water",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Dark_Water_(soulbeast)",
+        "revision": 2364402,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Dark_Water_(soulbeast)",
+          "ids": [41837],
+          "revision": 2364402,
+          "canonical": "Dark_Water_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "42797": {
+      "profession": "Ranger",
+      "name": "冲锋撕咬",
+      "originalTitle": "Charging_Bite",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Charging_Bite_(soulbeast)",
+        "revision": 2364400,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Charging_Bite_(soulbeast)",
+          "ids": [42797],
+          "revision": 2364400,
+          "canonical": "Charging_Bite_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "43060": {
+      "profession": "Ranger",
+      "name": "蔑视痛苦",
+      "originalTitle": "Defy_Pain",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Defy_Pain_(soulbeast)",
+        "revision": 2788332,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Defy_Pain_(soulbeast)",
+          "ids": [43060],
+          "revision": 2788332,
+          "canonical": "Defy_Pain_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "43488": {
+      "profession": "Warrior",
+      "name": "疾速稳固",
+      "originalTitle": "Fleeting_Stability",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Spellbreaker",
+          "ids": [],
+          "revision": 3069703,
+          "canonical": "Spellbreaker"
+        },
+        {
+          "title": "List_of_warrior_skills",
+          "ids": [],
+          "revision": 3095180,
+          "canonical": "List_of_warrior_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Fleeting_Stability",
+          "ids": [],
+          "revision": 0,
+          "canonical": "Fleeting_Stability"
+        }
+      ],
+      "classification": "page-unavailable",
+      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。"
+    },
+    "43548": {
+      "profession": "Ranger",
+      "name": "狂乱攻击",
+      "originalTitle": "Frenzied_Attack",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Frenzied_Attack_(soulbeast)",
+        "revision": 2359631,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Frenzied_Attack_(soulbeast)",
+          "ids": [43548],
+          "revision": 2359631,
+          "canonical": "Frenzied_Attack_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "43671": {
+      "profession": "Ranger",
+      "name": "剧毒气体",
+      "originalTitle": "Poison_Gas",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Poison_Gas_(soulbeast)",
+        "revision": 2775210,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Poison_Gas_(soulbeast)",
+          "ids": [43671],
+          "revision": 2775210,
+          "canonical": "Poison_Gas_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "43701": {
+      "profession": "Ranger",
+      "name": "光合作用",
+      "originalTitle": "Photosynthesize",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Photosynthesize_(soulbeast)",
+        "revision": 2361060,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Photosynthesize_(soulbeast)",
+          "ids": [43701],
+          "revision": 2361060,
+          "canonical": "Photosynthesize_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "43726": {
+      "profession": "Ranger",
+      "name": "致残跃击",
+      "originalTitle": "Crippling_Leap",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Crippling_Leap_(soulbeast)",
+        "revision": 2358515,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Crippling_Leap_(soulbeast)",
+          "ids": [43726],
+          "revision": 2358515,
+          "canonical": "Crippling_Leap_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "44097": {
+      "profession": "Ranger",
+      "name": "缠丝蛛网",
+      "originalTitle": "Entangling_Web",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Entangling_Web_(soulbeast)",
+        "revision": 2775207,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Entangling_Web_(soulbeast)",
+          "ids": [44097],
+          "revision": 2775207,
+          "canonical": "Entangling_Web_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "44384": {
+      "profession": "Ranger",
+      "name": "致残苦痛",
+      "originalTitle": "Crippling_Anguish",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Crippling_Anguish_(soulbeast)",
+        "revision": 2775294,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Crippling_Anguish_(soulbeast)",
+          "ids": [44384],
+          "revision": 2775294,
+          "canonical": "Crippling_Anguish_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "44397": {
+      "profession": "Warrior",
+      "name": "不谐之音",
+      "originalTitle": "Dissonance",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Spellbreaker",
+          "ids": [],
+          "revision": 3069703,
+          "canonical": "Spellbreaker"
+        },
+        {
+          "title": "List_of_warrior_skills",
+          "ids": [],
+          "revision": 3095180,
+          "canonical": "List_of_warrior_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Dissonance",
+          "ids": [],
+          "revision": 0,
+          "canonical": "Dissonance"
+        }
+      ],
+      "classification": "page-unavailable",
+      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。"
+    },
+    "44617": {
+      "profession": "Ranger",
+      "name": "谐音之鸣",
+      "originalTitle": "Harmonic_Cry",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Harmonic_Cry_(soulbeast)",
+        "revision": 2768077,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Harmonic_Cry_(soulbeast)",
+          "ids": [44617],
+          "revision": 2768077,
+          "canonical": "Harmonic_Cry_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "44991": {
+      "profession": "Ranger",
+      "name": "俯冲",
+      "originalTitle": "Swoop",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Swoop_(soulbeast)",
+        "revision": 2774119,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Swoop_(soulbeast)",
+          "ids": [44991],
+          "revision": 2774119,
+          "canonical": "Swoop_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "45425": {
+      "profession": "Mesmer",
+      "name": "剑刃暴雨",
+      "originalTitle": "Rain_of_Swords",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "List_of_mesmer_skills",
+          "ids": [],
+          "revision": 3018921,
+          "canonical": "List_of_mesmer_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Rain_of_Swords",
+          "ids": [62553],
+          "revision": 2932100,
+          "canonical": "Rain_of_Swords"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "45479": {
+      "profession": "Ranger",
+      "name": "尖锐脊刺",
+      "originalTitle": "Sharpen_Spines",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Sharpen_Spines_(soulbeast)",
+        "revision": 2788842,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Sharpen_Spines_(soulbeast)",
+          "ids": [45479],
+          "revision": 2788842,
+          "canonical": "Sharpen_Spines_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "46044": {
+      "profession": "Warrior",
+      "name": "法师猎人打击",
+      "originalTitle": "Magehunter_Strike",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Spellbreaker",
+          "ids": [],
+          "revision": 3069703,
+          "canonical": "Spellbreaker"
+        },
+        {
+          "title": "List_of_warrior_skills",
+          "ids": [],
+          "revision": 3095180,
+          "canonical": "List_of_warrior_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Magehunter_Strike",
+          "ids": [],
+          "revision": 0,
+          "canonical": "Magehunter_Strike"
+        }
+      ],
+      "classification": "page-unavailable",
+      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。"
+    },
+    "46386": {
+      "profession": "Ranger",
+      "name": "尾刺鞭击",
+      "originalTitle": "Tail_Lash",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Tail_Lash_(soulbeast_Wyvern)",
+        "revision": 2775289,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Tail_Lash_(soulbeast_devourer)",
+          "ids": [43068],
+          "revision": 2971777,
+          "canonical": "Tail_Lash_(soulbeast_devourer)"
+        },
+        {
+          "title": "Tail_Lash_(soulbeast_Wyvern)",
+          "ids": [46386],
+          "revision": 2775289,
+          "canonical": "Tail_Lash_(soulbeast_Wyvern)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "46409": {
+      "profession": "Revenant",
+      "name": "传奇龙魂使姿态",
+      "originalTitle": "Legendary_Renegade_Stance",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Renegade",
+          "ids": [],
+          "revision": 3212718,
+          "canonical": "Renegade"
+        },
+        {
+          "title": "List_of_revenant_skills",
+          "ids": [],
+          "revision": 3034970,
+          "canonical": "List_of_revenant_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Legendary_Renegade_Stance",
+          "ids": [41858],
+          "revision": 3101683,
+          "canonical": "Legendary_Renegade_Stance"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "46473": {
+      "profession": "Necromancer",
+      "name": "显形沙影",
+      "originalTitle": "Manifest_Sand_Shade",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Scourge",
+          "ids": [],
+          "revision": 3159005,
+          "canonical": "Scourge"
+        },
+        {
+          "title": "List_of_necromancer_skills",
+          "ids": [],
+          "revision": 3119607,
+          "canonical": "List_of_necromancer_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Manifest_Sand_Shade",
+          "ids": [44946, 42297],
+          "revision": 3169200,
+          "canonical": "Manifest_Sand_Shade"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "46474": {
+      "profession": "Necromancer",
+      "name": "显形沙影",
+      "originalTitle": "Manifest_Sand_Shade",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Scourge",
+          "ids": [],
+          "revision": 3159005,
+          "canonical": "Scourge"
+        },
+        {
+          "title": "List_of_necromancer_skills",
+          "ids": [],
+          "revision": 3119607,
+          "canonical": "List_of_necromancer_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Manifest_Sand_Shade",
+          "ids": [44946, 42297],
+          "revision": 3169200,
+          "canonical": "Manifest_Sand_Shade"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "64038": {
+      "profession": "Ranger",
+      "name": "猛冲",
+      "originalTitle": "Dash",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Dash_(soulbeast)",
+        "revision": 3004965,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Dash_(soulbeast)",
+          "ids": [64038],
+          "revision": 3004965,
+          "canonical": "Dash_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "64699": {
+      "profession": "Ranger",
+      "name": "抨击",
+      "originalTitle": "Slam",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Slam_(soulbeast)",
+        "revision": 2776822,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Slam_(soulbeast)",
+          "ids": [64699],
+          "revision": 2776822,
+          "canonical": "Slam_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "70889": {
+      "profession": "Ranger",
+      "name": "魔径旋涡",
+      "originalTitle": "Ley-Line_Vortex",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Ley-Line_Vortex_(soulbeast)",
+        "revision": 2840355,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Ley-Line_Vortex_(soulbeast)",
+          "ids": [70889],
+          "revision": 2840355,
+          "canonical": "Ley-Line_Vortex_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "71499": {
+      "profession": "Ranger",
+      "name": "电刑处决",
+      "originalTitle": "Electrocute",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Electrocute_(soulbeast)",
+        "revision": 2808253,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Electrocute_(soulbeast)",
+          "ids": [71499],
+          "revision": 2808253,
+          "canonical": "Electrocute_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "71546": {
+      "profession": "Ranger",
+      "name": "喷吐黏液",
+      "originalTitle": "Spit_Goop",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Spit_Goop_(soulbeast)",
+        "revision": 2808259,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Spit_Goop_(soulbeast)",
+          "ids": [71546],
+          "revision": 2808259,
+          "canonical": "Spit_Goop_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "72103": {
+      "profession": "Engineer",
+      "name": "功能机型",
+      "originalTitle": "Function_Gyro",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Scrapper",
+          "ids": [],
+          "revision": 3018561,
+          "canonical": "Scrapper"
+        },
+        {
+          "title": "List_of_engineer_skills",
+          "ids": [],
+          "revision": 3018927,
+          "canonical": "List_of_engineer_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Function_Gyro",
+          "ids": [],
+          "revision": 2952396,
+          "canonical": "Function_Gyro"
+        },
+        {
+          "title": "Function_Gyro_(tool_belt_skill)",
+          "ids": [56920, 56921, 72114],
+          "revision": 3210515,
+          "canonical": "Function_Gyro_(tool_belt_skill)"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "72636": {
+      "profession": "Ranger",
+      "name": "折磨幻景",
+      "originalTitle": "Tormenting_Visions",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Tormenting_Visions_(soulbeast)",
+        "revision": 2836650,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Tormenting_Visions_(soulbeast)",
+          "ids": [72636],
+          "revision": 2836650,
+          "canonical": "Tormenting_Visions_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "72851": {
+      "profession": "Ranger",
+      "name": "凝视虚空",
+      "originalTitle": "Staring_Void",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Staring_Void_(soulbeast)",
+        "revision": 2836648,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Staring_Void_(soulbeast)",
+          "ids": [72851],
+          "revision": 2836648,
+          "canonical": "Staring_Void_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "73733": {
+      "profession": "Ranger",
+      "name": "斗技巨锤",
+      "originalTitle": "Battle_Maul",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Battle_Maul_(soulbeast)",
+        "revision": 3021025,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Battle_Maul_(soulbeast)",
+          "ids": [73733],
+          "revision": 3021025,
+          "canonical": "Battle_Maul_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "73938": {
+      "profession": "Ranger",
+      "name": "击打",
+      "originalTitle": "Bop",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Bop_(soulbeast)",
+        "revision": 3021029,
+        "indexes": [
+          {
+            "title": "Soulbeast",
+            "ids": [],
+            "revision": 3213853,
+            "canonical": "Soulbeast"
+          },
+          {
+            "title": "List_of_ranger_skills",
+            "ids": [],
+            "revision": 3018926,
+            "canonical": "List_of_ranger_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Bop_(soulbeast)",
+          "ids": [73938],
+          "revision": 3021029,
+          "canonical": "Bop_(soulbeast)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "75392": {
+      "profession": "Elementalist",
+      "name": "部署翠玉元晶",
+      "originalTitle": "Deploy_Jade_Sphere",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Catalyst",
+          "ids": [],
+          "revision": 3169894,
+          "canonical": "Catalyst"
+        },
+        {
+          "title": "List_of_elementalist_skills",
+          "ids": [],
+          "revision": 3018924,
+          "canonical": "List_of_elementalist_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Deploy_Jade_Sphere",
+          "ids": [],
+          "revision": 2656261,
+          "canonical": "Deploy_Jade_Sphere"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(fire)",
+          "ids": [62813, 63396, 63458, 75391],
+          "revision": 2970640,
+          "canonical": "Deploy_Jade_Sphere_(fire)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(water)",
+          "ids": [62723, 63461, 63416, 75406],
+          "revision": 2970642,
+          "canonical": "Deploy_Jade_Sphere_(water)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(air)",
+          "ids": [62940, 63459, 63439, 75399],
+          "revision": 2970643,
+          "canonical": "Deploy_Jade_Sphere_(air)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(earth)",
+          "ids": [62837, 63472, 63454, 75405],
+          "revision": 2970645,
+          "canonical": "Deploy_Jade_Sphere_(earth)"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "75394": {
+      "profession": "Elementalist",
+      "name": "部署翠玉元晶",
+      "originalTitle": "Deploy_Jade_Sphere",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Catalyst",
+          "ids": [],
+          "revision": 3169894,
+          "canonical": "Catalyst"
+        },
+        {
+          "title": "List_of_elementalist_skills",
+          "ids": [],
+          "revision": 3018924,
+          "canonical": "List_of_elementalist_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Deploy_Jade_Sphere",
+          "ids": [],
+          "revision": 2656261,
+          "canonical": "Deploy_Jade_Sphere"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(fire)",
+          "ids": [62813, 63396, 63458, 75391],
+          "revision": 2970640,
+          "canonical": "Deploy_Jade_Sphere_(fire)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(water)",
+          "ids": [62723, 63461, 63416, 75406],
+          "revision": 2970642,
+          "canonical": "Deploy_Jade_Sphere_(water)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(air)",
+          "ids": [62940, 63459, 63439, 75399],
+          "revision": 2970643,
+          "canonical": "Deploy_Jade_Sphere_(air)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(earth)",
+          "ids": [62837, 63472, 63454, 75405],
+          "revision": 2970645,
+          "canonical": "Deploy_Jade_Sphere_(earth)"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "75395": {
+      "profession": "Elementalist",
+      "name": "部署翠玉元晶",
+      "originalTitle": "Deploy_Jade_Sphere",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Catalyst",
+          "ids": [],
+          "revision": 3169894,
+          "canonical": "Catalyst"
+        },
+        {
+          "title": "List_of_elementalist_skills",
+          "ids": [],
+          "revision": 3018924,
+          "canonical": "List_of_elementalist_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Deploy_Jade_Sphere",
+          "ids": [],
+          "revision": 2656261,
+          "canonical": "Deploy_Jade_Sphere"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(fire)",
+          "ids": [62813, 63396, 63458, 75391],
+          "revision": 2970640,
+          "canonical": "Deploy_Jade_Sphere_(fire)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(water)",
+          "ids": [62723, 63461, 63416, 75406],
+          "revision": 2970642,
+          "canonical": "Deploy_Jade_Sphere_(water)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(air)",
+          "ids": [62940, 63459, 63439, 75399],
+          "revision": 2970643,
+          "canonical": "Deploy_Jade_Sphere_(air)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(earth)",
+          "ids": [62837, 63472, 63454, 75405],
+          "revision": 2970645,
+          "canonical": "Deploy_Jade_Sphere_(earth)"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "75407": {
+      "profession": "Elementalist",
+      "name": "部署翠玉元晶",
+      "originalTitle": "Deploy_Jade_Sphere",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Catalyst",
+          "ids": [],
+          "revision": 3169894,
+          "canonical": "Catalyst"
+        },
+        {
+          "title": "List_of_elementalist_skills",
+          "ids": [],
+          "revision": 3018924,
+          "canonical": "List_of_elementalist_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Deploy_Jade_Sphere",
+          "ids": [],
+          "revision": 2656261,
+          "canonical": "Deploy_Jade_Sphere"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(fire)",
+          "ids": [62813, 63396, 63458, 75391],
+          "revision": 2970640,
+          "canonical": "Deploy_Jade_Sphere_(fire)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(water)",
+          "ids": [62723, 63461, 63416, 75406],
+          "revision": 2970642,
+          "canonical": "Deploy_Jade_Sphere_(water)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(air)",
+          "ids": [62940, 63459, 63439, 75399],
+          "revision": 2970643,
+          "canonical": "Deploy_Jade_Sphere_(air)"
+        },
+        {
+          "title": "Deploy_Jade_Sphere_(earth)",
+          "ids": [62837, 63472, 63454, 75405],
+          "revision": 2970645,
+          "canonical": "Deploy_Jade_Sphere_(earth)"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "76580": {
+      "profession": "Elementalist",
+      "name": "空气协调",
+      "originalTitle": "Air_Attunement",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Evoker",
+          "ids": [],
+          "revision": 3179712,
+          "canonical": "Evoker"
+        },
+        {
+          "title": "List_of_elementalist_skills",
+          "ids": [],
+          "revision": 3018924,
+          "canonical": "List_of_elementalist_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Air_Attunement",
+          "ids": [5494],
+          "revision": 3207766,
+          "canonical": "Air_Attunement"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "76703": {
+      "profession": "Elementalist",
+      "name": "火焰协调",
+      "originalTitle": "Fire_Attunement",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Evoker",
+          "ids": [],
+          "revision": 3179712,
+          "canonical": "Evoker"
+        },
+        {
+          "title": "List_of_elementalist_skills",
+          "ids": [],
+          "revision": 3018924,
+          "canonical": "List_of_elementalist_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Fire_Attunement",
+          "ids": [5492],
+          "revision": 3207764,
+          "canonical": "Fire_Attunement"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "76790": {
+      "profession": "Engineer",
+      "name": "锁定",
+      "originalTitle": "Locked",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Locked_(amalgam)",
+        "revision": 3077152,
+        "indexes": [
+          {
+            "title": "Amalgam",
+            "ids": [],
+            "revision": 3068361,
+            "canonical": "Amalgam"
+          },
+          {
+            "title": "List_of_engineer_skills",
+            "ids": [],
+            "revision": 3018927,
+            "canonical": "List_of_engineer_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Amalgam",
+          "ids": [],
+          "revision": 3068361,
+          "canonical": "Amalgam"
+        },
+        {
+          "title": "List_of_engineer_skills",
+          "ids": [],
+          "revision": 3018927,
+          "canonical": "List_of_engineer_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Locked_(amalgam)",
+          "ids": [76790, 77107, 77388],
+          "revision": 3077152,
+          "canonical": "Locked_(amalgam)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "76988": {
+      "profession": "Elementalist",
+      "name": "流水协调",
+      "originalTitle": "Water_Attunement",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Evoker",
+          "ids": [],
+          "revision": 3179712,
+          "canonical": "Evoker"
+        },
+        {
+          "title": "List_of_elementalist_skills",
+          "ids": [],
+          "revision": 3018924,
+          "canonical": "List_of_elementalist_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Water_Attunement",
+          "ids": [5493],
+          "revision": 3207765,
+          "canonical": "Water_Attunement"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "77082": {
+      "profession": "Elementalist",
+      "name": "大地协调",
+      "originalTitle": "Earth_Attunement",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Evoker",
+          "ids": [],
+          "revision": 3179712,
+          "canonical": "Evoker"
+        },
+        {
+          "title": "List_of_elementalist_skills",
+          "ids": [],
+          "revision": 3018924,
+          "canonical": "List_of_elementalist_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Earth_Attunement",
+          "ids": [5495],
+          "revision": 3207767,
+          "canonical": "Earth_Attunement"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "77107": {
+      "profession": "Engineer",
+      "name": "锁定",
+      "originalTitle": "Locked",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Locked_(amalgam)",
+        "revision": 3077152,
+        "indexes": [
+          {
+            "title": "Amalgam",
+            "ids": [],
+            "revision": 3068361,
+            "canonical": "Amalgam"
+          },
+          {
+            "title": "List_of_engineer_skills",
+            "ids": [],
+            "revision": 3018927,
+            "canonical": "List_of_engineer_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Amalgam",
+          "ids": [],
+          "revision": 3068361,
+          "canonical": "Amalgam"
+        },
+        {
+          "title": "List_of_engineer_skills",
+          "ids": [],
+          "revision": 3018927,
+          "canonical": "List_of_engineer_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Locked_(amalgam)",
+          "ids": [76790, 77107, 77388],
+          "revision": 3077152,
+          "canonical": "Locked_(amalgam)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "77190": {
+      "profession": "Elementalist",
+      "name": "水獭怜悯",
+      "originalTitle": "Otter's_Compassion",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Evoker",
+          "ids": [],
+          "revision": 3179712,
+          "canonical": "Evoker"
+        },
+        {
+          "title": "List_of_elementalist_skills",
+          "ids": [],
+          "revision": 3018924,
+          "canonical": "List_of_elementalist_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Otter's_Compassion",
+          "ids": [76563],
+          "revision": 3101995,
+          "canonical": "Otter's_Compassion"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "77306": {
+      "profession": "Mesmer",
+      "name": "活跃琵琶",
+      "originalTitle": "Lively_Lute",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "List_of_mesmer_skills",
+          "ids": [],
+          "revision": 3018921,
+          "canonical": "List_of_mesmer_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Lively_Lute",
+          "ids": [76552],
+          "revision": 3173326,
+          "canonical": "Lively_Lute"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "77388": {
+      "profession": "Engineer",
+      "name": "锁定",
+      "originalTitle": "Locked",
+      "status": "exact-id-verified",
+      "verified": {
+        "title": "Locked_(amalgam)",
+        "revision": 3077152,
+        "indexes": [
+          {
+            "title": "Amalgam",
+            "ids": [],
+            "revision": 3068361,
+            "canonical": "Amalgam"
+          },
+          {
+            "title": "List_of_engineer_skills",
+            "ids": [],
+            "revision": 3018927,
+            "canonical": "List_of_engineer_skills"
+          }
+        ]
+      },
+      "indexes": [
+        {
+          "title": "Amalgam",
+          "ids": [],
+          "revision": 3068361,
+          "canonical": "Amalgam"
+        },
+        {
+          "title": "List_of_engineer_skills",
+          "ids": [],
+          "revision": 3018927,
+          "canonical": "List_of_engineer_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Locked_(amalgam)",
+          "ids": [76790, 77107, 77388],
+          "revision": 3077152,
+          "canonical": "Locked_(amalgam)"
+        }
+      ],
+      "conclusion": "Wiki 实际链接指向独立版本，页面含精确游戏 ID，已接入详情。"
+    },
+    "78309": {
+      "profession": "Thief",
+      "name": "风裔日相水晶",
+      "originalTitle": "Zephyrite_Sun_Crystal",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "List_of_thief_skills",
+          "ids": [],
+          "revision": 3169362,
+          "canonical": "List_of_thief_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Zephyrite_Sun_Crystal",
+          "ids": [76895, 76733],
+          "revision": 3104165,
+          "canonical": "Zephyrite_Sun_Crystal"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "78895": {
+      "profession": "Revenant",
+      "name": "释放潜力：战士",
+      "originalTitle": "Release_Potential:_Warrior",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Conduit",
+          "ids": [],
+          "revision": 3055225,
+          "canonical": "Conduit"
+        },
+        {
+          "title": "List_of_revenant_skills",
+          "ids": [],
+          "revision": 3034970,
+          "canonical": "List_of_revenant_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Release_Potential:_Warrior",
+          "ids": [77896],
+          "revision": 3206180,
+          "canonical": "Release_Potential:_Warrior"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "80031": {
+      "profession": "Ranger",
+      "name": "扫尾",
+      "originalTitle": "Tail_Whip",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Tail_Whip",
+          "ids": [80164],
+          "revision": 3150766,
+          "canonical": "Tail_Whip"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    },
+    "80035": {
+      "profession": "Ranger",
+      "name": "喷射",
+      "originalTitle": "Jet",
+      "status": "identity-unconfirmed",
+      "indexes": [
+        {
+          "title": "Soulbeast",
+          "ids": [],
+          "revision": 3213853,
+          "canonical": "Soulbeast"
+        },
+        {
+          "title": "List_of_ranger_skills",
+          "ids": [],
+          "revision": 3018926,
+          "canonical": "List_of_ranger_skills"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "Jet",
+          "ids": [79654],
+          "revision": 3150765,
+          "canonical": "Jet"
+        }
+      ],
+      "classification": "unlisted-id",
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+    }
+  }
+}

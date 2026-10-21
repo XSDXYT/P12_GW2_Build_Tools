@@ -1,0 +1,3107 @@
+{
+  "schema": 1,
+  "missingApiCount": 328,
+  "entryCount": 276,
+  "verifiedCount": 274,
+  "contextualCount": 2,
+  "entries": [
+    {
+      "id": 8602,
+      "name": "Bottle of Spider Brew",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bottle_of_Spider_Brew?oldid=2795767",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Excessive alcohol consumption will result in intoxication. — In-game description"
+    },
+    {
+      "id": 8640,
+      "name": "Grawl Snowman Potion",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Grawl_Snowman_Potion?oldid=2700029",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.You become a Grawl Snowman for 5 min. — In-game description"
+    },
+    { "id": 8690, "name": "Fireworks", "status": "页面游戏ID未确认" },
+    {
+      "id": 8691,
+      "name": "Bovine Potion",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bovine_Potion?oldid=3012496",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Become a cow for 5m — In-game description"
+    },
+    {
+      "id": 8897,
+      "name": "Knavish Tonic",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Knavish_Tonic?oldid=3160877",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to transform into a Bandit Highwayman. — In-game description"
+    },
+    {
+      "id": 12551,
+      "name": "Tray of Chocolate Bananas",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Chocolate_Bananas?oldid=2700496",
+      "equivalentIds": [12356],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "7% Magic Find while Under the Effect of a Boon\n+10% Experience from Kills"
+    },
+    {
+      "id": 12552,
+      "name": "Tray of Strawberry Cookies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Strawberry_Cookies?oldid=2700530",
+      "equivalentIds": [12345],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+30 Healing\n+10% Experience from Kills"
+    },
+    {
+      "id": 12553,
+      "name": "Tray of Strawberry Apple Compote",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Strawberry_Apple_Compote?oldid=2700529",
+      "equivalentIds": [12313],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "30% Chance to Gain Health on Kill\n+10% Experience from Kills"
+    },
+    {
+      "id": 12554,
+      "name": "Tray of Strawberry Tarts",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Strawberry_Tarts?oldid=2700532",
+      "equivalentIds": [12312],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "10% Magic Find\n+10% Experience from Kills"
+    },
+    {
+      "id": 12555,
+      "name": "Tray of Banana Cream Pies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Banana_Cream_Pies?oldid=2700487",
+      "equivalentIds": [12230],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+10% Experience from Kills"
+    },
+    {
+      "id": 12556,
+      "name": "Giant Chocolate Cake",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Giant_Chocolate_Cake?oldid=2700016",
+      "equivalentIds": [12222],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+5% Chill Duration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12557,
+      "name": "Tray of Strawberry Pies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Strawberry_Pies?oldid=2700531",
+      "equivalentIds": [12357],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "28% Chance to Steal Life on Critical Hit\n+10% Experience from Kills"
+    },
+    {
+      "id": 12558,
+      "name": "Tray of Cherry Cookies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Cherry_Cookies?oldid=2700492",
+      "equivalentIds": [12319],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Healing\n+40 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12559,
+      "name": "Tray of Cherry Vanilla Compote",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Cherry_Vanilla_Compote?oldid=2700495",
+      "equivalentIds": [12364],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "50% Chance to Gain Health on Kill \n+40 Healing Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12560,
+      "name": "Tray of Chocolate Cherries",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Chocolate_Cherries?oldid=2700497",
+      "equivalentIds": [12318],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Concentration\n+24% Magic Find while under the Effect of a Boon\n+10% Experience from Kills"
+    },
+    {
+      "id": 12561,
+      "name": "Tray of Chocolate Chip Cookies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Chocolate_Chip_Cookies?oldid=2700498",
+      "equivalentIds": [12314],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Healing\n+40 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12562,
+      "name": "Tray of Cherry Almond Bars",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Cherry_Almond_Bars?oldid=3138440",
+      "equivalentIds": [12323],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "18% Magic Find\n10% Gold from Monsters\n+10% Experience from Kills"
+    },
+    {
+      "id": 12563,
+      "name": "Tray of Cherry Tarts",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Cherry_Tarts?oldid=2700494",
+      "equivalentIds": [12365],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "18% Magic Find\n+40 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12564,
+      "name": "Tray of Cherry Pies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Cherry_Pies?oldid=2700493",
+      "equivalentIds": [12320],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "36% Chance to Steal Life on Critical Hit\n+40 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12565,
+      "name": "Giant Chocolate Cherry Cake",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Giant_Chocolate_Cherry_Cake?oldid=2700017",
+      "equivalentIds": [12366],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+7% Chill Duration\n+40 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12566,
+      "name": "Tray of Grape Pies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Grape_Pies?oldid=2700506",
+      "equivalentIds": [12322],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+40 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12567,
+      "name": "Tray of Blackberry Cookies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Blackberry_Cookies?oldid=2700488",
+      "equivalentIds": [12383],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Healing\n+50 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12568,
+      "name": "Tray of Chocolate Mint Cookies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Chocolate_Mint_Cookies?oldid=2700499",
+      "equivalentIds": [12382],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Healing\n+50 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12569,
+      "name": "Tray of Chocolate Oranges",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Chocolate_Oranges?oldid=2700501",
+      "equivalentIds": [12381],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Concentration\n+28% Magic Find while Under the Effect of a Boon\n+10% Experience from Kills"
+    },
+    {
+      "id": 12570,
+      "name": "Tray of Blackberry Pear Compote",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Blackberry_Pear_Compote?oldid=2700489",
+      "equivalentIds": [12386],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "60% Chance to Gain Health on Kill\n+50 Healing Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12571,
+      "name": "Tray of Ginger Pear Tarts",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Ginger_Pear_Tarts?oldid=2700505",
+      "equivalentIds": [12387],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "22% Magic Find\n+50 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12572,
+      "name": "Tray of Orange Coconut Bars",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Orange_Coconut_Bars?oldid=2700516",
+      "equivalentIds": [12380],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "22% Magic Find\n20% Gold from Monsters\n+10% Experience from Kills"
+    },
+    {
+      "id": 12573,
+      "name": "Tray of Blackberry Pies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Blackberry_Pies?oldid=2700490",
+      "equivalentIds": [12385],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "40% Chance to Steal Life on Critical Hit\n+50 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12574,
+      "name": "Giant Orange Coconut Cake",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Giant_Orange_Coconut_Cake?oldid=2700020",
+      "equivalentIds": [12388],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Chill Duration\n+50 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12575,
+      "name": "Tray of Pumpkin Pies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Pumpkin_Pies?oldid=2700521",
+      "equivalentIds": [12384],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+50 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12576,
+      "name": "Tray of Chocolate Raspberry Cookies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Chocolate_Raspberry_Cookies?oldid=2700502",
+      "equivalentIds": [12417],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Healing\n+60 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12577,
+      "name": "Tray of Peach Cookies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Peach_Cookies?oldid=2700517",
+      "equivalentIds": [12418],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Healing\n+60 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12578,
+      "name": "Tray of Chocolate Raspberry Creams",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Chocolate_Raspberry_Creams?oldid=2783055",
+      "equivalentIds": [12416],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Concentration\n+32% Magic Find while Under the Effect of a Boon\n+10% Experience from Kills"
+    },
+    {
+      "id": 12579,
+      "name": "Tray of Raspberry Peach Compote",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Raspberry_Peach_Compote?oldid=2700524",
+      "equivalentIds": [12421],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "80% Chance to Gain Health on Kill\n+60 Healing Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12580,
+      "name": "Tray of Peach Tarts",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Peach_Tarts?oldid=2700519",
+      "equivalentIds": [12422],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "26% Magic Find\n+60 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12581,
+      "name": "Tray of Raspberry Peach Bars",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Raspberry_Peach_Bars?oldid=2700522",
+      "equivalentIds": [12415],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "26% Magic Find\n30% Gold from Monsters\n+10% Experience from Kills"
+    },
+    {
+      "id": 12582,
+      "name": "Giant Chocolate Raspberry Cake",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Giant_Chocolate_Raspberry_Cake?oldid=2700019",
+      "equivalentIds": [12423],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+12% Chill Duration\n+60 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12583,
+      "name": "Tray of Mixed Berry Pies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Mixed_Berry_Pies?oldid=2783061",
+      "equivalentIds": [12420],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "50% Chance to Steal Life on Critical Hit\n+60 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12584,
+      "name": "Tray of Peach Pies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Peach_Pies?oldid=2813579",
+      "equivalentIds": [12419],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+60 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12585,
+      "name": "Giant Chocolate Omnomberry Cake",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Giant_Chocolate_Omnomberry_Cake?oldid=2700018",
+      "equivalentIds": [12460],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+15% Chill Duration\n+70 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12586,
+      "name": "Tray of Chocolate Omnomberry Creams",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Chocolate_Omnomberry_Creams?oldid=2700500",
+      "equivalentIds": [12453],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Concentration\n+40% Magic Find while under the Effect of a Boon\n+10% Experience from Kills"
+    },
+    {
+      "id": 12587,
+      "name": "Tray of Mango Pies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Mango_Pies?oldid=2813580",
+      "equivalentIds": [12456, 78658],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+70 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12588,
+      "name": "Tray of Omnomberry Bars",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Omnomberry_Bars?oldid=2967489",
+      "equivalentIds": [12452],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "30% Magic Find\n40% Gold from Monsters\n+10% Experience from Kills"
+    },
+    {
+      "id": 12589,
+      "name": "Tray of Omnomberry Compote",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Omnomberry_Compote?oldid=2700512",
+      "equivalentIds": [12458],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "100% Chance to Gain Health on Kill\n+70 Healing Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12590,
+      "name": "Tray of Omnomberry Cookies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Omnomberry_Cookies?oldid=2700513",
+      "equivalentIds": [12455],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Healing\n+70 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12591,
+      "name": "Tray of Omnomberry Pies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Omnomberry_Pies?oldid=2700514",
+      "equivalentIds": [12457],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+70 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12592,
+      "name": "Tray of Omnomberry Tarts",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Omnomberry_Tarts?oldid=2700515",
+      "equivalentIds": [12459],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "30% Magic Find\n+70 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12593,
+      "name": "Tray of Spicy Chocolate Cookies",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Spicy_Chocolate_Cookies?oldid=2700528",
+      "equivalentIds": [12454],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Healing\n+70 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12594,
+      "name": "Feast of Pepper Steaks",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Pepper_Steaks?oldid=2699939",
+      "equivalentIds": [12359],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+30 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12595,
+      "name": "Feast of Spinach Burgers",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Spinach_Burgers?oldid=2699962",
+      "equivalentIds": [12358],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+5% Poison Duration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12596,
+      "name": "Feast of Stuffed Peppers",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Stuffed_Peppers?oldid=2699965",
+      "equivalentIds": [12215],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "16% Chance to Gain Might on Critical Hit During the Day\n+10% Experience from Kills"
+    },
+    {
+      "id": 12597,
+      "name": "Feast of Veggie Burgers",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Veggie_Burgers?oldid=2777702",
+      "equivalentIds": [12303],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+30 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12598,
+      "name": "Feast of Meatball Dinners",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Meatball_Dinners?oldid=2699934",
+      "equivalentIds": [12221],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+30 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 12599,
+      "name": "Feast of Pepper Steak Dinners",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Pepper_Steak_Dinners?oldid=2699938",
+      "equivalentIds": [12307],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Power for 30 Seconds on Kill \n+10% Experience from Kills"
+    },
+    {
+      "id": 12600,
+      "name": "Feast of Sage-Stuffed Poultry",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Sage-Stuffed_Poultry?oldid=2699953",
+      "equivalentIds": [12301],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+30 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12601,
+      "name": "Feast of Turnip Casseroles",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Turnip_Casseroles?oldid=2699973",
+      "equivalentIds": [12216],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-16% Incoming Stun Duration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12602,
+      "name": "Feast of Veggie Pizzas",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Veggie_Pizzas?oldid=2777701",
+      "equivalentIds": [12346],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+40 Expertise\n+10% Experience from Kills"
+    },
+    {
+      "id": 12603,
+      "name": "Feast of Stuffed Zucchinis",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Stuffed_Zucchinis?oldid=2699966",
+      "equivalentIds": [12370],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "24% Chance to Gain Might on Critical Hit during the Day\n24% Chance to Inflict Chill on Critical Hit during the Night\n+10% Experience from Kills"
+    },
+    {
+      "id": 12604,
+      "name": "Feast of Mushroom Pizzas",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Mushroom_Pizzas?oldid=3119175",
+      "equivalentIds": [12368],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Expertise\n+40 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12605,
+      "name": "Feast of Rosemary-Roasted Meat",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Rosemary-Roasted_Meat?oldid=2699950",
+      "equivalentIds": [12306],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Power\n+40 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12606,
+      "name": "Feast of Spicy Lime Steaks",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Spicy_Lime_Steaks?oldid=2795802",
+      "equivalentIds": [12371],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Power\n+40 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12607,
+      "name": "Feast of Cabbage Stirfry",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Cabbage_Stirfry?oldid=2699901",
+      "equivalentIds": [12302],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "50% Chance to Gain Might on Dodge\n+10% to Endurance Regeneration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12608,
+      "name": "Feast of Deluxe Burgers",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Deluxe_Burgers?oldid=2699913",
+      "equivalentIds": [12208],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+7% Poison Duration\n+40 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12609,
+      "name": "Feast of Dill Meatball Dinners",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Dill_Meatball_Dinners?oldid=2777705",
+      "equivalentIds": [12369],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Toughness\n+40 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12610,
+      "name": "Feast of Dilled Poultry Piccata",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Dilled_Poultry_Piccata?oldid=2699915",
+      "equivalentIds": [12367],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Vitality\n+80 Power When Health below 50%\n+10% Experience from Kills"
+    },
+    {
+      "id": 12611,
+      "name": "Feast of Sesame-Roasted Dinners",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Sesame-Roasted_Dinners?oldid=2699955",
+      "equivalentIds": [12396],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+120 Power for 30 Seconds on Kill\n+50 Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 12612,
+      "name": "Feast of Sesame-Roasted Meat",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Sesame-Roasted_Meat?oldid=2699956",
+      "equivalentIds": [12304],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Power\n+40 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12613,
+      "name": "Feast of Avocado Stirfry",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Avocado_Stirfry?oldid=2699897",
+      "equivalentIds": [12397],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "60% Chance to Gain Might on Kill\n+50 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12614,
+      "name": "Feast of Citrus Clove Meat",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Citrus_Clove_Meat?oldid=2699907",
+      "equivalentIds": [12393],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Power\n+50 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12615,
+      "name": "Feast of Coriander Crusted Meat",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Coriander_Crusted_Meat?oldid=2699911",
+      "equivalentIds": [12394],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Power\n+50 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12616,
+      "name": "Feast of Fancy Veggie Pizzas",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Fancy_Veggie_Pizzas?oldid=3180690",
+      "equivalentIds": [12391],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Expertise\n+50 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12617,
+      "name": "Feast of Citrus Poultry with Almonds",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Citrus_Poultry_with_Almonds?oldid=2699908",
+      "equivalentIds": [12389],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Vitality\n+120 Power When Health below 50%\n+10% Experience from Kills"
+    },
+    {
+      "id": 12618,
+      "name": "Feast of Coriander Crusted Meat Dinner",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Coriander_Crusted_Meat_Dinner?oldid=2699912",
+      "equivalentIds": [12396],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+120 Power for 30 Seconds on Kill\n+50 Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 12619,
+      "name": "Feast of Horseradish Burgers",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Horseradish_Burgers?oldid=2783038",
+      "equivalentIds": [12390],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Poison Duration\n+50 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12620,
+      "name": "Pot of Mushroom Risotto",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Mushroom_Risotto?oldid=2700259",
+      "equivalentIds": [12392],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Condition Damage\n+50 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12621,
+      "name": "Feast of Pesto Pasta Salad",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Pesto_Pasta_Salad?oldid=2699940",
+      "equivalentIds": [12401],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Toughness\n+50 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12622,
+      "name": "Feast of Roast Meat with Mint Sauce",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Roast_Meat_with_Mint_Sauce?oldid=2699944",
+      "equivalentIds": [12395],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Power\n+50 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12623,
+      "name": "Feast of Eggplant Stirfry",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Eggplant_Stirfry?oldid=2699919",
+      "equivalentIds": [12433],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "80% Chance to Gain Might on Kill\n+60 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12624,
+      "name": "Feast of Steak and Asparagus",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Steak_and_Asparagus?oldid=2783025",
+      "equivalentIds": [12430],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Power\n+60 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12625,
+      "name": "Feast of Spicier Flank Steaks",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Spicier_Flank_Steaks?oldid=2699958",
+      "equivalentIds": [12429],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Power\n+60 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12626,
+      "name": "Feast of Spicy Cheeseburgers",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Spicy_Cheeseburgers?oldid=2783043",
+      "equivalentIds": [12426],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+12% Poison Duration\n+60 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12627,
+      "name": "Feast of Super Veggie Pizzas",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Super_Veggie_Pizzas?oldid=2777703",
+      "equivalentIds": [12427],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Expertise\n+60 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12628,
+      "name": "Feast of Tarragon Stuffed Poultry",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Tarragon_Stuffed_Poultry?oldid=2699968",
+      "equivalentIds": [12425],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Vitality\n+160 Power while Health Is Below 50%\n+10% Experience from Kills"
+    },
+    {
+      "id": 12629,
+      "name": "Pot of Mushroom and Asparagus Risotto",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Mushroom_and_Asparagus_Risotto?oldid=2700258",
+      "equivalentIds": [12428],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Condition Damage\n+60 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12630,
+      "name": "Feast of Poultry Tarragon Pasta",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Poultry_Tarragon_Pasta?oldid=2699941",
+      "equivalentIds": [12424],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Toughness\n+60 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12631,
+      "name": "Feast of Roast Meat with Braised Leeks",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Roast_Meat_with_Braised_Leeks?oldid=2699943",
+      "equivalentIds": [12431],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Power\n+60 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12632,
+      "name": "Feast of Steak and Asparagus Dinner",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Steak_and_Asparagus_Dinner?oldid=2699964",
+      "equivalentIds": [12432],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+160 Power for 30 Seconds on Kill \n+60 Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 12633,
+      "name": "Feast of Fancy Truffle Burgers",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Fancy_Truffle_Burgers?oldid=2699921",
+      "equivalentIds": [12463],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+15% Poison Duration\n+70 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12634,
+      "name": "Feast of Fire Flank Steak",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Fire_Flank_Steak?oldid=2699923",
+      "equivalentIds": [12466],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Power\n+70 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12635,
+      "name": "Feast of Lemongrass Poultry",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Lemongrass_Poultry?oldid=2699930",
+      "equivalentIds": [12462],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Vitality\n+200 Power when Health below 50%\n+10% Experience from Kills"
+    },
+    {
+      "id": 12636,
+      "name": "Feast of Lotus Stirfry",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Lotus_Stirfry?oldid=2699932",
+      "equivalentIds": [12470],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "100% Chance to Gain Might on Kill\n+70 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 12637,
+      "name": "Feast of Orrian Steak Frittes",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Orrian_Steak_Frittes?oldid=2813578",
+      "equivalentIds": [12468],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Power\n+70 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12638,
+      "name": "Feast of Rare Veggie Pizzas",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Rare_Veggie_Pizzas?oldid=3180699",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Expertise\n+70 Condition Damage"
+    },
+    {
+      "id": 12639,
+      "name": "Feast of Truffle Ravioli",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Truffle_Ravioli?oldid=2699969",
+      "equivalentIds": [12461],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Toughness\n+70 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12640,
+      "name": "Pot of Truffle Risotto",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Truffle_Risotto?oldid=2700276",
+      "equivalentIds": [12465],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Condition Damage\n+70 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12641,
+      "name": "Feast of Truffle Steak Dinner",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Truffle_Steak_Dinner?oldid=2795774",
+      "equivalentIds": [12469],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+200 Power for 30 Seconds on Kill\n+70 Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 12642,
+      "name": "Feast of Truffle Steak",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Truffle_Steak?oldid=2739657",
+      "equivalentIds": [12467],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Power\n+70 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12643,
+      "name": "Tray of Banana Bread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Banana_Bread?oldid=2700486",
+      "equivalentIds": [12280],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+30 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12644,
+      "name": "Feast of Bean Salad",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Bean_Salad?oldid=2699898",
+      "equivalentIds": [12361],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+30% Downed Health\n+10% Experience from Kills"
+    },
+    {
+      "id": 12645,
+      "name": "Tray of Garlic Bread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Garlic_Bread?oldid=2700504",
+      "equivalentIds": [12194],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage While Stunned, Knocked Down, or Knocked Back\n+10% Experience from Kills"
+    },
+    {
+      "id": 12646,
+      "name": "Feast of Garlic Spinach Sautee",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Garlic_Spinach_Sautee?oldid=2699925",
+      "equivalentIds": [12362],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "30% Chance to Gain Might on Kill\n+10% Experience from Kills"
+    },
+    {
+      "id": 12647,
+      "name": "Feast of Sage-Stuffed Mushrooms",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Sage-Stuffed_Mushrooms?oldid=2699952",
+      "equivalentIds": [12360],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Condition Damage for 30 Seconds on Kill\n+10% Experience from Kills"
+    },
+    {
+      "id": 12648,
+      "name": "Feast of Ascalonian Salad",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Ascalonian_Salad?oldid=2699894",
+      "equivalentIds": [12196],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "28% Chance to Gain Swiftness on Kill\n+10% Experience from Kills"
+    },
+    {
+      "id": 12649,
+      "name": "Feast of Clam Cakes",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Clam_Cakes?oldid=2699909",
+      "equivalentIds": [12347],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "10% Magic Find\n+10% Experience from Kills"
+    },
+    {
+      "id": 12650,
+      "name": "Tray of Lemon Bars",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Lemon_Bars?oldid=2700507",
+      "equivalentIds": [12289],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "10% Magic Find\n+10% Experience from Kills"
+    },
+    {
+      "id": 12651,
+      "name": "Feast of Grilled Portobello Mushrooms",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Grilled_Portobello_Mushrooms?oldid=2699927",
+      "equivalentIds": [12283],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Condition Damage\n+40 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12652,
+      "name": "Tray of Rosemary Bread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Rosemary_Bread?oldid=2700525",
+      "equivalentIds": [12373],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-14% Incoming Damage while Stunned, Knocked Down, or Knocked Back\n-6% Incoming Condition Duration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12653,
+      "name": "Feast of Yam Fritters",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Yam_Fritters?oldid=2699976",
+      "equivalentIds": [12372],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "18% Magic Find\n+40 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12654,
+      "name": "Tray of Zucchini Bread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Zucchini_Bread?oldid=2809890",
+      "equivalentIds": [12285],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Vitality\n+40 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 12655,
+      "name": "Feast of Coleslaw",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Coleslaw?oldid=2699910",
+      "equivalentIds": [12290],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "36% Chance to Gain Swiftness on Kill\n+2% Damage While Moving\n+10% Experience from Kills"
+    },
+    {
+      "id": 12656,
+      "name": "Feast of Divinity Stuffed Mushrooms",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Divinity_Stuffed_Mushrooms?oldid=2699916",
+      "equivalentIds": [12282],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Condition Damage for 30 Seconds on Kill\n+40 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12658,
+      "name": "Feast of Spiced Mashed Yams",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Spiced_Mashed_Yams?oldid=2699957",
+      "equivalentIds": [12284],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-24% Incoming Stun Duration\n+40 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 12659,
+      "name": "Feast of Avocado Salsa",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Avocado_Salsa?oldid=2699896",
+      "equivalentIds": [12288],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50% Downed Health\n+6% Damage while Downed\n+10% Experience from Kills"
+    },
+    {
+      "id": 12660,
+      "name": "Feast of Chickpea Salad",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Chickpea_Salad?oldid=2699906",
+      "equivalentIds": [12398],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60% Downed Health\n+10% Damage While Downed\n+10% Experience from Kills"
+    },
+    {
+      "id": 12661,
+      "name": "Tray of Pumpkin Bread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Pumpkin_Bread?oldid=2700520",
+      "equivalentIds": [12400],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Vitality\n+50 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 12662,
+      "name": "Feast of Roasted Rutabagas",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Roasted_Rutabagas?oldid=2699949",
+      "equivalentIds": [12130],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-28% Incoming Stun Duration\n+50 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 12663,
+      "name": "Tray of Spiced Bread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Spiced_Bread?oldid=2700527",
+      "equivalentIds": [12402],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-16% Incoming Damage while Stunned, Knocked Down, or Knocked Back\n-10% Incoming Condition Duration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12664,
+      "name": "Feast of Cabbage and Chickpea Salad",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Cabbage_and_Chickpea_Salad?oldid=2699900",
+      "equivalentIds": [12404],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "40% Chance to Gain Swiftness on Kill\n+3% Damage While Moving\n+10% Experience from Kills"
+    },
+    {
+      "id": 12665,
+      "name": "Feast of Cauliflower Sautee",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Cauliflower_Sautee?oldid=2699904",
+      "equivalentIds": [12405],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "60% Chance to Gain Might on Kill\n+50 Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 12666,
+      "name": "Feast of Chickpea Fritters",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Chickpea_Fritters?oldid=2783058",
+      "equivalentIds": [12399],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "22% Magic Find\n+50 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12667,
+      "name": "Feast of Hummus",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Hummus?oldid=2699929",
+      "equivalentIds": [12406],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "28% Chance to Gain Might on Critical Hit during the Day\n28% Chance to Inflict Chill on Critical Hit during the Night\n+10% Experience from Kills"
+    },
+    {
+      "id": 12668,
+      "name": "Feast of Eztlitl Stuffed Mushrooms",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Eztlitl_Stuffed_Mushrooms?oldid=2699920",
+      "equivalentIds": [12403],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+120 Condition Damage for 30 Seconds on Kill\n+50 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12669,
+      "name": "Feast of Eggplant Fritters",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Eggplant_Fritters?oldid=2699917",
+      "equivalentIds": [12435],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "26% Magic Find\n+60 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12670,
+      "name": "Feast of Roasted Parsnips",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Roasted_Parsnips?oldid=2699948",
+      "equivalentIds": [12438],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-36% Incoming Stun Duration\n+60 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 12671,
+      "name": "Tray of Tarragon Bread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Tarragon_Bread?oldid=2700533",
+      "equivalentIds": [12437],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": " -18% Incoming Damage while Stunned, Knocked Down, or Knocked Back\n-14% Incoming Condition Duration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12672,
+      "name": "Tray of Raspberry Peach Bread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Raspberry_Peach_Bread?oldid=2700523",
+      "equivalentIds": [12436],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Vitality\n+60 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 12673,
+      "name": "Feast of Roasted Artichokes",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Roasted_Artichokes?oldid=2699945",
+      "equivalentIds": [12442],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "36% Chance to Gain Might on Critical Hit during the Day\n36% Chance to Inflict Chill on Critical Hit during the Night\n+10% Experience from Kills"
+    },
+    {
+      "id": 12674,
+      "name": "Feast of Spicy Stuffed Mushrooms",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Spicy_Stuffed_Mushrooms?oldid=2783072",
+      "equivalentIds": [12439],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+160 Condition Damage for 30 Seconds on Kill\n+60 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12675,
+      "name": "Feast of Eggplant Sautee",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Eggplant_Sautee?oldid=2699918",
+      "equivalentIds": [12441],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "80% Chance to Gain Might on Kill\n+60 Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 12676,
+      "name": "Feast of Mango Salsa",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Mango_Salsa?oldid=2783081",
+      "equivalentIds": [12440],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80% Downed Health\n+14% Damage While Downed\n+10% Experience from Kills"
+    },
+    {
+      "id": 12677,
+      "name": "Feast of Asparagus and Sage Salad",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Asparagus_and_Sage_Salad?oldid=2699895",
+      "equivalentIds": [12434],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "50% to Gain Swiftness on Kill\n+4% Damage While Moving\n+10% Experience from Kills"
+    },
+    {
+      "id": 12678,
+      "name": "Feast of Fire Salsa",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Fire_Salsa?oldid=2699924",
+      "equivalentIds": [12477],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100% Downed Health\n+20% Damage While Downed\n+10% Experience from Kills"
+    },
+    {
+      "id": 12679,
+      "name": "Feast of Ghost Pepper Poppers",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Ghost_Pepper_Poppers?oldid=2699926",
+      "equivalentIds": [12479],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "40% Chance to Gain Might on Critical Hit during the Day\n40% Chance to Inflict Chill on Critical Hit during the Night\n+10% Experience from Kills"
+    },
+    {
+      "id": 12680,
+      "name": "Feast of Lotus Fries",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Lotus_Fries?oldid=2699931",
+      "equivalentIds": [12472],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "30% Magic Find\n+70 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12681,
+      "name": "Tray of Omnomberry Bread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Omnomberry_Bread?oldid=2700511",
+      "equivalentIds": [12473],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Vitality\n+70 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 12682,
+      "name": "Feast of Roasted Lotus Root",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Roasted_Lotus_Root?oldid=2699947",
+      "equivalentIds": [12475],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-40% Incoming Stun Duration\n+70 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 12683,
+      "name": "Tray of Saffron Bread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Saffron_Bread?oldid=2700526",
+      "equivalentIds": [12474],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": " -20% Incoming Damage while Stunned, Knocked Down, or Knocked Back\n-20% Incoming Condition Duration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12684,
+      "name": "Feast of Saffron Stuffed Mushrooms",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Saffron_Stuffed_Mushrooms?oldid=2699951",
+      "equivalentIds": [12476],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+200 Condition Damage for 30 Seconds on Kill\n+70 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12685,
+      "name": "Feast of Seaweed Salad",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Seaweed_Salad?oldid=2699954",
+      "equivalentIds": [12471],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "60% to Gain Swiftness on Kill\n+5% Damage While Moving\n+10% Experience from Kills"
+    },
+    {
+      "id": 12686,
+      "name": "Feast of Truffle Sautee",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Truffle_Sautee?oldid=2699970",
+      "equivalentIds": [12478],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "100% Chance to Gain Might on Kill\n+70 Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 12687,
+      "name": "Pot of Fancy Bean Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Fancy_Bean_Chili?oldid=2700245",
+      "equivalentIds": [12363],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+20 Ferocity\nDay: 8% Chance to Burn on Critical Hit\nNight: 8% Chance to Steal Life on Critical Hit\n+10% Experience from Kills"
+    },
+    {
+      "id": 12688,
+      "name": "Pot of Meat and Bean Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Meat_and_Bean_Chili?oldid=2700255",
+      "equivalentIds": [12299],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+5% Burning Duration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12689,
+      "name": "Pot of Beet and Bean Stew",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Beet_and_Bean_Stew?oldid=2700234",
+      "equivalentIds": [12348],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+30 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12690,
+      "name": "Pot of Clam Chowder",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Clam_Chowder?oldid=2700240",
+      "equivalentIds": [12294],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-8% Incoming Condition Duration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12691,
+      "name": "Pot of Hearty Red Meat Stew",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Hearty_Red_Meat_Stew?oldid=2700251",
+      "equivalentIds": [12200],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "30% Chance to Gain Might on Dodge\n+10% Experience from Kills"
+    },
+    {
+      "id": 12692,
+      "name": "Pot of Savory Spinach and Poultry Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Savory_Spinach_and_Poultry_Soup?oldid=2700267",
+      "equivalentIds": [12349],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "30% Chance to Remove a Condition on Using a Heal Skill\n+10% Experience from Kills"
+    },
+    {
+      "id": 12693,
+      "name": "Pot of Kale Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Kale_Soup?oldid=2700253",
+      "equivalentIds": [12375],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Precision\n+40 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12694,
+      "name": "Pot of Creamy Portobello Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Creamy_Portobello_Soup?oldid=2700241",
+      "equivalentIds": [12295],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Condition Damage\n+40 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12695,
+      "name": "Pot of Yam Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Yam_Soup?oldid=2700277",
+      "equivalentIds": [12378],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Precision\n+40 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12696,
+      "name": "Pot of Zucchini Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Zucchini_Chili?oldid=2777036",
+      "equivalentIds": [12376],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+30 Ferocity\nDay: 12% Chance to Burn on Critical Hit\nNight: 12% Chance to Steal Life on Critical Hit\n+10% Experience from Kills"
+    },
+    {
+      "id": 12697,
+      "name": "Pot of Chili and Avocado",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Chili_and_Avocado?oldid=2700239",
+      "equivalentIds": [12377],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+7% Burning Duration\n+40 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12698,
+      "name": "Pot of Dilled Clam Chowder",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Dilled_Clam_Chowder?oldid=2700244",
+      "equivalentIds": [12298],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-12% Incoming Condition Duration\n+40 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12699,
+      "name": "Pot of Kale and Poultry Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Kale_and_Poultry_Soup?oldid=2700252",
+      "equivalentIds": [12374],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "50% Chance to Remove a Condition on Using a Heal Skill\n+40 Healing\n+10% Experience from Kills"
+    },
+    {
+      "id": 12700,
+      "name": "Pot of Meat and Cabbage Stew",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Meat_and_Cabbage_Stew?oldid=2700256",
+      "equivalentIds": [12379],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "50% Chance to Gain Might on Dodge\n+10% to Endurance Regeneration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12701,
+      "name": "Pot of Tomato Zucchini Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Tomato_Zucchini_Soup?oldid=2700275",
+      "equivalentIds": [12296],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Precision\n+40 Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 12702,
+      "name": "Pot of Chickpea Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Chickpea_Soup?oldid=2700238",
+      "equivalentIds": [12412],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Precision\n+50 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12703,
+      "name": "Pot of Hearty Poultry Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Hearty_Poultry_Soup?oldid=2700250",
+      "equivalentIds": [12413],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "60% Chance to Remove a Condition on Using a Heal Skill\n+50 Healing\n+10% Experience from Kills"
+    },
+    {
+      "id": 12704,
+      "name": "Pot of Spiced Meat Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Spiced_Meat_Chili?oldid=2700270",
+      "equivalentIds": [12409],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Burning Duration\n+50 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12705,
+      "name": "Pot of Spiced Veggie Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Spiced_Veggie_Chili?oldid=2700271",
+      "equivalentIds": [12408],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+20 Ferocity\nDay: 14% Chance to Burn on Critical Hit\nNight: 14% Chance to Steal Life on Critical Hit\n+10% Experience from Kills"
+    },
+    {
+      "id": 12706,
+      "name": "Pot of Cauliflower Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Cauliflower_Soup?oldid=2783028",
+      "equivalentIds": [12411],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Precision\n+50 Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 12707,
+      "name": "Pot of Chickpea and Poultry Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Chickpea_and_Poultry_Soup?oldid=2783059",
+      "equivalentIds": [12414],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-16% Incoming Condition Duration\n+50 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12708,
+      "name": "Pot of Fancy Creamy Mushroom Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Fancy_Creamy_Mushroom_Soup?oldid=2700246",
+      "equivalentIds": [12297],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Condition Damage\n+50 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12709,
+      "name": "Pot of Pumpkin Bisque",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Pumpkin_Bisque?oldid=2783027",
+      "equivalentIds": [12410],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+60 Precision\n+50 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12710,
+      "name": "Pot of Spiced Meat and Cabbage Stew",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Spiced_Meat_and_Cabbage_Stew?oldid=2700269",
+      "equivalentIds": [12407],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "60% Chance to Gain Might on Dodge\n+20% to Endurance Regeneration"
+    },
+    {
+      "id": 12711,
+      "name": "Pot of Potato and Leek Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Potato_and_Leek_Soup?oldid=2700262",
+      "equivalentIds": [12448],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Precision\n+60 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12712,
+      "name": "Pot of Poultry and Leek Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Poultry_and_Leek_Soup?oldid=2700263",
+      "equivalentIds": [12444],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-18% Incoming Condition Duration\n+60 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12713,
+      "name": "Pot of Butternut Squash Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Butternut_Squash_Soup?oldid=2700235",
+      "equivalentIds": [12449],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Precision\n+60 Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 12714,
+      "name": "Pot of Spicy Meat Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Spicy_Meat_Chili?oldid=2700272",
+      "equivalentIds": [12447],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+12% Burning Duration\n+60 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12715,
+      "name": "Pot of Spicy Veggie Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Spicy_Veggie_Chili?oldid=2700273",
+      "equivalentIds": [12446],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+40 Ferocity\nDay: 18% Chance to Burn on Critical Hit\nNight: 18% Chance to Steal Life on Critical Hit\n+10% Experience from Kills"
+    },
+    {
+      "id": 12716,
+      "name": "Pot of Artichoke Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Artichoke_Soup?oldid=2783026",
+      "equivalentIds": [12450],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Precision\n+60 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12717,
+      "name": "Pot of Meat and Winter Vegetable Stew",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Meat_and_Winter_Vegetable_Stew?oldid=2700257",
+      "equivalentIds": [12451],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "80% Chance to Gain Might on Dodge\n+30% to Endurance Regeneration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12718,
+      "name": "Pot of Poultry and Winter Vegetable Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Poultry_and_Winter_Vegetable_Soup?oldid=2700264",
+      "equivalentIds": [12443],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "80% Chance to Remove a Condition on Using a Heal Skill\n+60 Healing\n+10% Experience from Kills"
+    },
+    {
+      "id": 12719,
+      "name": "Pot of Snow Truffle Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Snow_Truffle_Soup?oldid=2783029",
+      "equivalentIds": [12445],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Condition Damage\n+60 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12720,
+      "name": "Pot of Curry Butternut Squash Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Curry_Butternut_Squash_Soup?oldid=2700242",
+      "equivalentIds": [12486],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Precision\n+70 Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 12721,
+      "name": "Pot of Curry Pumpkin Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Curry_Pumpkin_Soup?oldid=2700243",
+      "equivalentIds": [12487],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Precision\n+70 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12722,
+      "name": "Pot of Fancy Potato and Leek Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Fancy_Potato_and_Leek_Soup?oldid=2700247",
+      "equivalentIds": [12485],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Precision\n+70 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 12723,
+      "name": "Pot of Fire Meat Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Fire_Meat_Chili?oldid=2700248",
+      "equivalentIds": [12484],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+15% Burning Duration\n+70 Precision\n+10% Experience from Kills"
+    },
+    {
+      "id": 12724,
+      "name": "Pot of Fire Veggie Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Fire_Veggie_Chili?oldid=2700249",
+      "equivalentIds": [12483],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Ferocity\nDay: 20% Chance to Burn on Critical Hit\nNight: 20% Chance to Steal Life on Critical Hit\n+10% Experience from Kills"
+    },
+    {
+      "id": 12725,
+      "name": "Pot of Lemongrass Poultry Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Lemongrass_Poultry_Soup?oldid=2700254",
+      "equivalentIds": [12481],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+70 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12726,
+      "name": "Pot of Orrian Truffle and Meat Stew",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Orrian_Truffle_and_Meat_Stew?oldid=2700260",
+      "equivalentIds": [12488],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "100% Chance to Gain Might on Dodge\n+40% to Endurance Regeneration\n+10% Experience from Kills"
+    },
+    {
+      "id": 12727,
+      "name": "Pot of Orrian Truffle Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Orrian_Truffle_Soup?oldid=2700261",
+      "equivalentIds": [12482],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Condition Damage\n+70 Vitality\n+10% Experience from Kills"
+    },
+    {
+      "id": 12728,
+      "name": "Pot of Saffron-scented Poultry Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Saffron-scented_Poultry_Soup?oldid=2700266",
+      "equivalentIds": [12480],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "100% Chance to Remove a Condition on Using a Heal Skill (Cooldown: 10 Seconds)\n+70 Healing\n+10% Experience from Kills"
+    },
+    {
+      "id": 19422,
+      "name": "Cluster of Baneberries",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Cluster_of_Baneberries?oldid=3080718",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to poison yourself.These would be safer in the hands of an expert. — In-game description"
+    },
+    {
+      "id": 21268,
+      "name": "Glory Booster",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Glory_Booster?oldid=2287462",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to gain 50% more glory for 1 hour. — In-game description"
+    },
+    {
+      "id": 36447,
+      "name": "Triple-Luck Tonic",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Triple-Luck_Tonic?oldid=2293688",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Wealth, fame, and power—a recipe for success. One drink gives you what most people can't achieve in a lifetime. — In-game description"
+    },
+    { "id": 43419, "name": "Fireworks", "status": "页面游戏ID未确认" },
+    {
+      "id": 43902,
+      "name": "Gift of Quartz",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Gift_of_Quartz?oldid=2287376",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to have a quartz node delivered to your home instance. — In-game description"
+    },
+    {
+      "id": 48804,
+      "name": "Gift of Candy Corn",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Gift_of_Candy_Corn?oldid=2994368",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to grow a candy-corn node in your home instance and homestead. Node can be mined once per day. — In-game description"
+    },
+    {
+      "id": 66525,
+      "name": "Pot of Sweet and Spicy Beans",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pot_of_Sweet_and_Spicy_Beans?oldid=2783032",
+      "equivalentIds": [66528],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Expertise\n+70 Power\n+10% Experience from Kills"
+    },
+    {
+      "id": 66532,
+      "name": "Feast of Nopalitos Sauté",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Nopalitos_Saut%C3%A9?oldid=2699936",
+      "equivalentIds": [66530],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Concentration\n+70 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 66533,
+      "name": "Feast of Cactus Fruit Salad",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Cactus_Fruit_Salad?oldid=2783035",
+      "equivalentIds": [66523],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Expertise\n33% Chance to Steal Life on Critical Hit\n+10% Experience from Kills"
+    },
+    {
+      "id": 66534,
+      "name": "Feast of Black Pepper Cactus Salad",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Black_Pepper_Cactus_Salad?oldid=2835647",
+      "equivalentIds": [66529],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+70 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 66535,
+      "name": "Feast of Roasted Cactus",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Roasted_Cactus?oldid=2783045",
+      "equivalentIds": [66536],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Ferocity\n33% Chance to Gain Might on Critical Hit\n+10% Experience from Kills"
+    },
+    {
+      "id": 67528,
+      "name": "Bountiful Maintenance Oil",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bountiful_Maintenance_Oil?oldid=2900962",
+      "identity": "exact page game ID",
+      "apiText": "Gain 0.6% Increased Healing to Other Allies for Every 100 Healing Power\nGain 0.8% Increased Healing to Other Allies for Every 100 Concentration\n+10% Experience from Kills",
+      "wikiText": "Gain 0.6% Increased Healing to Other Allies for Every 100 Healing Power\nGain 0.8% Increased Healing to Other Allies for Every 100 Concentration\n+10% Experience from Kills"
+    },
+    {
+      "id": 68404,
+      "name": "Bowl of Bloodstone Ice Cream",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Bloodstone_Ice_Cream?oldid=2284989",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.\"For the millionth time, there are no culinary applications for bloodstone dust. None.\"—Chef Robertus — In-game description"
+    },
+    {
+      "id": 68405,
+      "name": "Mug of Bloodstone Coffee",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mug_of_Bloodstone_Coffee?oldid=2289924",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.\"For the millionth time, there are no culinary applications for bloodstone dust. None.\"—Chef Robertus — In-game description"
+    },
+    {
+      "id": 68407,
+      "name": "Complete Bloodstone Breakfast",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Complete_Bloodstone_Breakfast?oldid=2285605",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.\"For the millionth time, there are no culinary applications for bloodstone dust. None.\"—Chef Robertus — In-game description"
+    },
+    {
+      "id": 68408,
+      "name": "Plate of Bloodstone Waffles",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Bloodstone_Waffles?oldid=2290571",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.\"For the millionth time, there are no culinary applications for bloodstone dust. None.\"—Chef Robertus — In-game description"
+    },
+    {
+      "id": 68409,
+      "name": "Bowl of Bloodstone Goulash",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Bloodstone_Goulash?oldid=2284988",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.\"For the millionth time, there are no culinary applications for bloodstone dust. None.\"—Chef Robertus — In-game description"
+    },
+    {
+      "id": 68410,
+      "name": "Demitasse of Bloodstone Espresso",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Demitasse_of_Bloodstone_Espresso?oldid=2685567",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.\"For the millionth time, there are no culinary applications for bloodstone dust. None.\"—Chef Robertus — In-game description"
+    },
+    {
+      "id": 68411,
+      "name": "Bloodstone Bearclaw Pastry",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bloodstone_Bearclaw_Pastry?oldid=2284843",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.\"For the millionth time, there are no culinary applications for bloodstone dust. None.\"—Chef Robertus — In-game description"
+    },
+    {
+      "id": 69836,
+      "name": "Tray of Cherry Almond Bars",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Cherry_Almond_Bars?oldid=3138440",
+      "equivalentIds": [12323],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "18% Magic Find\n10% Gold from Monsters\n+10% Experience from Kills"
+    },
+    {
+      "id": 70025,
+      "name": "Feast of Mushroom Pizzas",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Mushroom_Pizzas?oldid=3119175",
+      "equivalentIds": [12368],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Expertise\n+40 Condition Damage\n+10% Experience from Kills"
+    },
+    {
+      "id": 70058,
+      "name": "Tray of Zucchini Bread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Zucchini_Bread?oldid=2809890",
+      "equivalentIds": [12285],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+50 Vitality\n+40 Toughness\n+10% Experience from Kills"
+    },
+    {
+      "id": 70628,
+      "name": "Pile of Golden Sand",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pile_of_Golden_Sand?oldid=2893988",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Coarse Sand turned to gold in the Pyrite Peninsula. — In-game description"
+    },
+    {
+      "id": 71176,
+      "name": "Pile of Pink Sand",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pile_of_Pink_Sand?oldid=2290485",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Pink sand from the sunny shores of Southsun Cove. — In-game description"
+    },
+    {
+      "id": 74065,
+      "name": "Jungle Wurm Omelet (Mossman Style)",
+      "status": "contextual",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Jungle_Wurm_Omelet_(Mossman_Style)?oldid=2926973",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": ""
+    },
+    {
+      "id": 77586,
+      "name": "Snowglobe",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Snowglobe?oldid=2797007",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants 10,000 karma.Hint: Complete the Wintersday Gauntlet achievement. (Only available during Wintersday) — In-game description"
+    },
+    {
+      "id": 77616,
+      "name": "Refurbished Toy",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Refurbished_Toy?oldid=3191181",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants 10,000 karma.Hint: Complete the Toy Quality Control achievement. (Only available during Wintersday) — In-game description"
+    },
+    {
+      "id": 77620,
+      "name": "Winter Music Score",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Winter_Music_Score?oldid=2797008",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants 10,000 karma.Hint: Complete the Sounds of the Season achievement. (Only available during Wintersday) — In-game description"
+    },
+    {
+      "id": 77631,
+      "name": "Icy Aura",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Icy_Aura?oldid=2797004",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants 10,000 karma.Hint: Complete the Frozen Claw achievement. (Only available during Wintersday) — In-game description"
+    },
+    {
+      "id": 77633,
+      "name": "Masterful Toast",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Masterful_Toast?oldid=2797006",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants 10,000 karma.Hint: Complete the Festive Imbiber achievement. (Only available during Wintersday) — In-game description"
+    },
+    {
+      "id": 77651,
+      "name": "Candy Cane",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Candy_Cane?oldid=2801775",
+      "equivalences": [],
+      "quote": "“ Double-click to consume. Minty Breath (1 m): +10% Karma BonusStacks Duration (Up to 30 Minutes) — In-game description"
+    },
+    {
+      "id": 78005,
+      "name": "Bowl of Bloodstone Bisque",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Bloodstone_Bisque?oldid=2037107",
+      "equivalences": [],
+      "quote": "“ Double-click to consume. Bloodstone Bisque: Consuming this will replace your current nutrition effect.\"For the millionth time, there are no culinary applications for bloodstone dust. None.\"—Chef Robertus — In-game description"
+    },
+    {
+      "id": 79646,
+      "name": "Greater Gift of Candy Corn",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Greater_Gift_of_Candy_Corn?oldid=2287588",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to upgrade your candy-corn node in your home instance into King-Sized Candy Corn. — In-game description"
+    },
+    {
+      "id": 79729,
+      "name": "Offering to Koda",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Offering_to_Koda?oldid=3108699",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to present a burnt offering to Koda. — In-game description"
+    },
+    {
+      "id": 79848,
+      "name": "Offering Basket",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Offering_Basket?oldid=2290127",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to combine 25 elder wood logs, 50 globs of ectoplasm, 10 icy runestones, and 5 winterberries to create an offering for Koda. — In-game description"
+    },
+    {
+      "id": 80272,
+      "name": "Magic-Imbued Peach",
+      "status": "contextual",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Magic-Imbued_Peach?oldid=3140965",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": ""
+    },
+    {
+      "id": 82531,
+      "name": "Wish for Freedom",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Wish_for_Freedom?oldid=2797993",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to gain a moderate amount of karma.Hint: As a mesmer, use a Mystic Coin in the wishing well in the Garden of Seborhin, in the Domain of Vabbi. — In-game description"
+    },
+    {
+      "id": 82541,
+      "name": "Bowl of \"Elon Red\"",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_%22Elon_Red%22?oldid=2699652",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Expertise\n+70 Toughness\n+1% All Experience Gained"
+    },
+    {
+      "id": 82642,
+      "name": "Cup of Light-Roasted Coffee",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Cup_of_Light-Roasted_Coffee?oldid=2699855",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain 5 seconds of Quickness on dismount. (Cooldown: 20 seconds)\n+70 Precision\n+10% Karma\n+1% All Experience Gained"
+    },
+    {
+      "id": 82657,
+      "name": "Red Lentil and Flatbread Feast",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Red_Lentil_and_Flatbread_Feast?oldid=3119969",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-15% Incoming Condition Duration\n+45 All Attributes\n+1% All Experience Gained"
+    },
+    {
+      "id": 83171,
+      "name": "Threat Report: Missing Sacred Text",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Threat_Report%3A_Missing_Sacred_Text?oldid=2798142",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to gain a large amount of Mastery experience.Hint: Purchased from Keeper Pamir at Torment's Watch in the Desolation. — In-game description"
+    },
+    {
+      "id": 83345,
+      "name": "Bowl of Spiced Red Lentil Stew",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Spiced_Red_Lentil_Stew?oldid=2699785",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Lose a Condition on Successful Evade (Cooldown: 10 Seconds)\n+70 Toughness\n+1% All Experience Gained"
+    },
+    {
+      "id": 83389,
+      "name": "Wish For Truth",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Wish_For_Truth?oldid=2798005",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to gain a moderate amount of karma.Hint: As a guardian, use a Mystic Coin in the wishing well in the Garden of Seborhin, in the Domain of Vabbi. — In-game description"
+    },
+    {
+      "id": 83545,
+      "name": "Pitcher of Desert-Spiced Coffee",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Pitcher_of_Desert-Spiced_Coffee?oldid=2783084",
+      "equivalentIds": [82642],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain 5 seconds of Quickness on dismount. (Cooldown: 20 seconds)\n+70 Precision\n+10% Karma\n+1% All Experience Gained"
+    },
+    {
+      "id": 83591,
+      "name": "Threat Report: Thermoptic Flux Readings",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Threat_Report%3A_Thermoptic_Flux_Readings?oldid=2798141",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to gain a large amount of Mastery experience.Hint: Purchased from Keeper Pamir at Torment's Watch in the Desolation. — In-game description"
+    },
+    {
+      "id": 83613,
+      "name": "Show of Support: Highjump Ranch",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Show_of_Support%3A_Highjump_Ranch?oldid=3040791",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to gain a moderate amount of trade contracts.By gathering support from nearby settlements, you can put Amnoon at ease with their independence.Hint: Purchase from Stablemaster Unja near Highjump Ranch in the Desert Highlands. — In-game description"
+    },
+    {
+      "id": 83622,
+      "name": "Plate of Sugar Rib Roast",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Sugar_Rib_Roast?oldid=2700228",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "25% Chance on Critical Hit to Inflict Chill for 1 Second, Burning for 2 Seconds, and Poison for 3 Seconds(Cooldown: 20 Seconds)\n+70 Condition damage\n+1% All Experience Gained"
+    },
+    {
+      "id": 83955,
+      "name": "Bowl of Red Lentil Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Red_Lentil_Soup?oldid=2699759",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+70 Condition Damage\n+1% All Experience Gained"
+    },
+    {
+      "id": 84550,
+      "name": "Red-Lentil Saobosa",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Red-Lentil_Saobosa?oldid=3180695",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Expertise\n+70 Condition Damage\n+1% All Experience Gained"
+    },
+    {
+      "id": 84676,
+      "name": "Mystery Quaggan Tonic",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mystery_Quaggan_Tonic?oldid=3160878",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.The aroma of sea breezes and simpler times wafts from the bottle. Use its contents to transform into...something. — In-game description"
+    },
+    {
+      "id": 87631,
+      "name": "Golem Swarm Potion",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Golem_Swarm_Potion?oldid=2287556",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Double-click to transform into a swarm of miniature golems. — In-game description"
+    },
+    {
+      "id": 88101,
+      "name": "Debbie's Cake",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Debbie's_Cake?oldid=3056281",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Made with love. Grants a small amount of karma when consumed. — In-game description"
+    },
+    {
+      "id": 88330,
+      "name": "Ectoplasm-Infused Vision Crystal",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Ectoplasm-Infused_Vision_Crystal?oldid=3209310",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.A lesser vision crystal imbued with ectoplasm, used to interact with dormant souls.Hint: This vision crystal is imbued with ectoplasm, enabling the user to see deeper through the veil. — In-game description"
+    },
+    {
+      "id": 88573,
+      "name": "Unstable Branded Awakened Wind-Up",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Unstable_Branded_Awakened_Wind-Up?oldid=2748489",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Too soon? Or too fast and too fun? — In-game description"
+    },
+    { "id": 88973, "name": "Pulsating Crystal", "status": "页面游戏ID未确认" },
+    {
+      "id": 89692,
+      "name": "Light of Deldrimor Plate—Bottom Half",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Light_of_Deldrimor_Plate%E2%80%94Bottom_Half?oldid=2627240",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Use with the Light of Deldrimor Plate—Top Half to gain the Reassembled Light of Deldrimor Plate. This will consume both halves. — In-game description"
+    },
+    {
+      "id": 89828,
+      "name": "Light of Deldrimor Plate—Top Half",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Light_of_Deldrimor_Plate%E2%80%94Top_Half?oldid=2627241",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Use with the Light of Deldrimor Plate—Bottom Half to gain the Reassembled Light of Deldrimor Plate. This will consume both halves. — In-game description"
+    },
+    {
+      "id": 91689,
+      "name": "Chef's Tasting Platter",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Chef's_Tasting_Platter?oldid=2699820",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+80 Power for 30 Seconds on Kill\n+50 Precision\n+50 Condition Damage\n+30% Magic Find\n+10% Experience from Kills"
+    },
+    {
+      "id": 91690,
+      "name": "Bowl of Fruit Salad with Mint Garnish",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Fruit_Salad_with_Mint_Garnish?oldid=3099758",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+100 Healing Power\n+70 Concentration\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91698,
+      "name": "Clove and Veggie Flatbread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Clove_and_Veggie_Flatbread?oldid=3099765",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+100 Expertise\n+70 Condition Damage\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91703,
+      "name": "Mint-Pear Cured Meat Flatbread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mint-Pear_Cured_Meat_Flatbread?oldid=3099772",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+100 Condition Damage\n+70 Expertise\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91704,
+      "name": "Plate of Poultry Aspic with Salsa Garnish",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Poultry_Aspic_with_Salsa_Garnish?oldid=3099794",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+100 Concentration\n+70 Toughness\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91705,
+      "name": "Clove-Spiced Eggs Benedict",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Clove-Spiced_Eggs_Benedict?oldid=3099766",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+100 Concentration\n+70 Expertise\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91709,
+      "name": "Plate of Coq Au Vin with Salsa",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Coq_Au_Vin_with_Salsa?oldid=3099786",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+100 Power\n+70 Precision\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91711,
+      "name": "Plate of Sesame-Crusted Coq Au Vin",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Sesame-Crusted_Coq_Au_Vin?oldid=3099813",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+100 Power\n+70 Precision\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91713,
+      "name": "Spherified Peppercorn-Spiced Oyster Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Spherified_Peppercorn-Spiced_Oyster_Soup?oldid=3099809",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+45 to All Attributes\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91718,
+      "name": "Plate of Sesame-Ginger Beef Carpaccio",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Sesame-Ginger_Beef_Carpaccio?oldid=3099797",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+100 Concentration\n+70 Power\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91723,
+      "name": "Plate of Clove-Spiced Clear Truffle Ravioli",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Clove-Spiced_Clear_Truffle_Ravioli?oldid=3099816",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+100 Vitality\n+70 Toughness\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91727,
+      "name": "Mint and Veggie Flatbread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mint_and_Veggie_Flatbread?oldid=3180700",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+100 Expertise\n+70 Condition Damage\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91729,
+      "name": "Sesame Cheesecake",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Sesame_Cheesecake?oldid=3182317",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+100 Concentration\n+33% Chance to Gain Might on Critical Hit\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91732,
+      "name": "Bowl of Sesame Fruit Salad",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Sesame_Fruit_Salad?oldid=3099821",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+100 Healing Power\n+70 Concentration\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91734,
+      "name": "Peppercorn-Crusted Sous-Vide Steak",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Peppercorn-Crusted_Sous-Vide_Steak?oldid=3099778",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+100 Power\n+70 Ferocity\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91735,
+      "name": "Plate of Clear Truffle and Cilantro Ravioli",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Clear_Truffle_and_Cilantro_Ravioli?oldid=3099781",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+100 Vitality\n+70 Toughness\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91736,
+      "name": "Soy-Sesame Sous-Vide Steak",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Soy-Sesame_Sous-Vide_Steak?oldid=3099805",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+100 Power\n+70 Ferocity\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91737,
+      "name": "Bowl of Spiced Fruit Salad",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Spiced_Fruit_Salad?oldid=3099762",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+100 Healing Power\n+70 Concentration\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91742,
+      "name": "Spiced Pepper Creme Brulee",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Spiced_Pepper_Creme_Brulee?oldid=3099811",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+100 Concentration\n+70 Healing Power\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91743,
+      "name": "Mint Creme Brulee",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mint_Creme_Brulee?oldid=3099770",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+100 Concentration\n+70 Healing Power\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91746,
+      "name": "Mango Cilantro Creme Brulee",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mango_Cilantro_Creme_Brulee?oldid=3099768",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+100 Concentration\n+70 Healing Power\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91748,
+      "name": "Spherified Oyster Soup with Mint Garnish",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Spherified_Oyster_Soup_with_Mint_Garnish?oldid=3099808",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+45 to All Attributes\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91753,
+      "name": "Plate of Peppercorn-Spiced Coq Au Vin",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Peppercorn-Spiced_Coq_Au_Vin?oldid=3099790",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+100 Power\n+70 Precision\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91754,
+      "name": "Spherified Clove-Spiced Oyster Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Spherified_Clove-Spiced_Oyster_Soup?oldid=3099807",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+45 to All Attributes\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91756,
+      "name": "Spherified Sesame Oyster Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Spherified_Sesame_Oyster_Soup?oldid=3099810",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+45 to All Attributes\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91758,
+      "name": "Eggs Benedict with Mint-Parsley Sauce",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Eggs_Benedict_with_Mint-Parsley_Sauce?oldid=3099820",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+100 Concentration\n+70 Expertise\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91761,
+      "name": "Orange Clove Cheesecake",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Orange_Clove_Cheesecake?oldid=3182316",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+100 Concentration\n+33% Chance to Gain Might on Critical Hit\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91766,
+      "name": "Clove-Spiced Creme Brulee",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Clove-Spiced_Creme_Brulee?oldid=3099824",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+100 Concentration\n+70 Healing Power\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91769,
+      "name": "Bowl of Fruit Salad with Cilantro Garnish",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Fruit_Salad_with_Cilantro_Garnish?oldid=3099757",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+100 Healing Power\n+70 Concentration\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91770,
+      "name": "Plate of Peppered Clear Truffle Ravioli",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Peppered_Clear_Truffle_Ravioli?oldid=3099792",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+100 Vitality\n+70 Toughness\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91771,
+      "name": "Peppercorn and Veggie Flatbread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Peppercorn_and_Veggie_Flatbread?oldid=3099777",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+100 Expertise\n+70 Condition Damage\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91775,
+      "name": "Plate of Sesame Poultry Aspic",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Sesame_Poultry_Aspic?oldid=3099795",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+100 Concentration\n+70 Toughness\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91780,
+      "name": "Plate of Clove-Spiced Coq Au Vin",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Clove-Spiced_Coq_Au_Vin?oldid=3099815",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+100 Power\n+70 Precision\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91784,
+      "name": "Clove-Spiced Pear and Cured Meat Flatbread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Clove-Spiced_Pear_and_Cured_Meat_Flatbread?oldid=3099767",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+100 Condition Damage\n+70 Expertise\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91790,
+      "name": "Mushroom Clove Sous-Vide Steak",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mushroom_Clove_Sous-Vide_Steak?oldid=3099775",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+100 Power\n+70 Ferocity\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91794,
+      "name": "Plate of Peppercorn-Spiced Poultry Aspic",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Peppercorn-Spiced_Poultry_Aspic?oldid=3099791",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+100 Concentration\n+70 Toughness\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91797,
+      "name": "Plate of Clear Truffle and Mint Ravioli",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Clear_Truffle_and_Mint_Ravioli?oldid=3099782",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+100 Vitality\n+70 Toughness\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91798,
+      "name": "Plate of Clear Truffle and Sesame Ravioli",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Clear_Truffle_and_Sesame_Ravioli?oldid=3099783",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+100 Vitality\n+70 Toughness\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91801,
+      "name": "Sous-Vide Steak with Mint-Parsley Sauce",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Sous-Vide_Steak_with_Mint-Parsley_Sauce?oldid=3099804",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+100 Power\n+70 Ferocity\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91804,
+      "name": "Spherified Cilantro Oyster Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Spherified_Cilantro_Oyster_Soup?oldid=3099806",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+45 to All Attributes\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91805,
+      "name": "Cilantro Lime Sous-Vide Steak",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Cilantro_Lime_Sous-Vide_Steak?oldid=3187615",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+100 Power\n+70 Ferocity\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91806,
+      "name": "Plate of Clove-Spiced Beef Carpaccio",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Clove-Spiced_Beef_Carpaccio?oldid=3099823",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+100 Concentration\n+70 Power\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91809,
+      "name": "Plate of Beef Carpaccio with Mint Garnish",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Beef_Carpaccio_with_Mint_Garnish?oldid=3099817",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+100 Concentration\n+70 Power\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91822,
+      "name": "Plate of Coq Au Vin with Mint Garnish",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Coq_Au_Vin_with_Mint_Garnish?oldid=3099785",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+100 Power\n+70 Precision\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91823,
+      "name": "Sesame Veggie Flatbread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Sesame_Veggie_Flatbread?oldid=3099802",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+100 Expertise\n+70 Condition Damage\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91834,
+      "name": "Mint Strawberry Cheesecake",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mint_Strawberry_Cheesecake?oldid=3182318",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+100 Concentration\n+33% Chance to Gain Might on Critical Hit\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91835,
+      "name": "Spiced Peppercorn Cheesecake",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Spiced_Peppercorn_Cheesecake?oldid=3182315",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+100 Concentration\n+33% Chance to Gain Might on Critical Hit\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91837,
+      "name": "Sesame Creme Brulee",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Sesame_Creme_Brulee?oldid=3099800",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+100 Concentration\n+70 Healing Power\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91839,
+      "name": "Plate of Clove-Spiced Poultry Aspic",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Clove-Spiced_Poultry_Aspic?oldid=3099784",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+100 Concentration\n+70 Toughness\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91841,
+      "name": "Bowl of Fruit Salad with Orange-Clove Syrup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Fruit_Salad_with_Orange-Clove_Syrup?oldid=3099759",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-20% Incoming Condition Duration\n+100 Healing Power\n+70 Concentration\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91842,
+      "name": "Plate of Eggs Benedict",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Eggs_Benedict?oldid=2711917",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Concentration\n+70 Expertise\n+10% Experience from Kills"
+    },
+    {
+      "id": 91847,
+      "name": "Salsa Eggs Benedict",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Salsa_Eggs_Benedict?oldid=3099798",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+100 Concentration\n+70 Expertise\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91848,
+      "name": "Peppered Cured Meat Flatbread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Peppered_Cured_Meat_Flatbread?oldid=3099779",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+100 Condition Damage\n+70 Expertise\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91851,
+      "name": "Strawberry Cilantro Cheesecake",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Strawberry_Cilantro_Cheesecake?oldid=3182319",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+100 Concentration\n+33% Chance to Gain Might on Critical Hit\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91855,
+      "name": "Sesame Eggs Benedict",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Sesame_Eggs_Benedict?oldid=3099801",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+100 Concentration\n+70 Expertise\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91858,
+      "name": "Plate of Peppercorn-Spiced Beef Carpaccio",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Peppercorn-Spiced_Beef_Carpaccio?oldid=3099789",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+100 Concentration\n+70 Power\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91862,
+      "name": "Plate of Beef Carpaccio with Salsa Garnish",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Beef_Carpaccio_with_Salsa_Garnish?oldid=3099780",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+100 Concentration\n+70 Power\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91864,
+      "name": "Plate of Poultry Aspic with Mint Garnish",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Poultry_Aspic_with_Mint_Garnish?oldid=3099793",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+10% Outgoing Healing\n+100 Concentration\n+70 Toughness\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91865,
+      "name": "Peppercorn-Spiced Eggs Benedict",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Peppercorn-Spiced_Eggs_Benedict?oldid=3099818",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "-10% Incoming Damage\n+100 Concentration\n+70 Expertise\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91867,
+      "name": "Sesame-Asparagus and Cured Meat Flatbread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Sesame-Asparagus_and_Cured_Meat_Flatbread?oldid=3099803",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain Health Every Second\n+100 Condition Damage\n+70 Expertise\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91876,
+      "name": "Salsa-Topped Veggie Flatbread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Salsa-Topped_Veggie_Flatbread?oldid=3180701",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+100 Expertise\n+70 Condition Damage\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91878,
+      "name": "Cilantro and Cured Meat Flatbread",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Cilantro_and_Cured_Meat_Flatbread?oldid=3099763",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "66% Chance to Steal Life on Critical Hit\n+100 Condition Damage\n+70 Expertise\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 91917,
+      "name": "Plate of Spicy Moa Wings",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Spicy_Moa_Wings?oldid=2700225",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Power\n+70 Ferocity\n+1% All Experience Gained\nMay Cause Intermittent Gastric Distress"
+    },
+    {
+      "id": 91943,
+      "name": "Feast of Carne Khan Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Feast_of_Carne_Khan_Chili?oldid=2783100",
+      "equivalentIds": [91954],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Concentration\n+70 Expertise\n+1% All Experience Gained"
+    },
+    {
+      "id": 91950,
+      "name": "Bowl of Firebreather Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Firebreather_Chili?oldid=2699704",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Concentration\n+70 Expertise\n+1% All Experience Gained\nMay Cause Intermittent Gastric Distress"
+    },
+    {
+      "id": 91954,
+      "name": "Bowl of Carne Khan Chili",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Carne_Khan_Chili?oldid=2699674",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Concentration\n+70 Expertise\n+1% All Experience Gained"
+    },
+    {
+      "id": 92078,
+      "name": "Bowl of Green Chile Ice Cream",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Green_Chile_Ice_Cream?oldid=2699715",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+100 Concentration\n+70 Expertise\n+10% Karma Gained"
+    },
+    {
+      "id": 93992,
+      "name": "Draught of Path of Fire Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Draught_of_Path_of_Fire_Mastery?oldid=2213446",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a small amount of Path of Fire Mastery experience. — In-game description"
+    },
+    {
+      "id": 94454,
+      "name": "Draught of Central Tyria Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Draught_of_Central_Tyria_Mastery?oldid=2338187",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a small amount of Central Tyria Mastery experience. — In-game description"
+    },
+    {
+      "id": 94457,
+      "name": "Draught of Heart of Thorns Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Draught_of_Heart_of_Thorns_Mastery?oldid=2213445",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a small amount of Heart of Thorns Mastery experience. — In-game description"
+    },
+    {
+      "id": 94459,
+      "name": "Draught of Icebrood Saga Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Draught_of_Icebrood_Saga_Mastery?oldid=2213444",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a small amount of Icebrood Saga Mastery experience. — In-game description"
+    },
+    {
+      "id": 95283,
+      "name": "Elixir of Heart of Thorns Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Elixir_of_Heart_of_Thorns_Mastery?oldid=2978794",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a large amount of Heart of Thorns Mastery experience. — In-game description"
+    },
+    {
+      "id": 95286,
+      "name": "Elixir of Central Tyria Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Elixir_of_Central_Tyria_Mastery?oldid=3130900",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a large amount of Central Tyria Mastery experience. — In-game description"
+    },
+    {
+      "id": 95290,
+      "name": "Elixir of Icebrood Saga Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Elixir_of_Icebrood_Saga_Mastery?oldid=2978800",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a large amount of Icebrood Saga Mastery experience. — In-game description"
+    },
+    {
+      "id": 95294,
+      "name": "Elixir of Path of Fire Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Elixir_of_Path_of_Fire_Mastery?oldid=2978798",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a large amount of Path of Fire Mastery experience. — In-game description"
+    },
+    {
+      "id": 97200,
+      "name": "Flight of Sushi",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Flight_of_Sushi?oldid=3099819",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+150 Fishing Power\n+45 to All Attributes\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 97282,
+      "name": "Bowl of Jade Sea Bounty",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Jade_Sea_Bounty?oldid=3099760",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+150 Fishing Power\n+100 Power\n+70 Ferocity\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 97472,
+      "name": "Plate of Imperial Palace Special",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Imperial_Palace_Special?oldid=3099788",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+150 Fishing Power\n+100 Healing Power\n+70 Concentration\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 97592,
+      "name": "Bowl of Echovald Hotpot",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Echovald_Hotpot?oldid=3099756",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+150 Fishing Power\n+100 Condition Damage\n+70 Expertise\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 97826,
+      "name": "Plate of Crispy Fish Pancakes",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Plate_of_Crispy_Fish_Pancakes?oldid=3099787",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+150 Fishing Power\n+100 Vitality\n+70 Toughness\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 98924,
+      "name": "Tray of Decade Desserts",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Tray_of_Decade_Desserts?oldid=3119575",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "+3% to All Attributes\n+10% Magic Find\n+10% Gold from Monsters\n+10% Karma\n+10% Experience from Kills"
+    },
+    {
+      "id": 98929,
+      "name": "Elixir of End of Dragons Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Elixir_of_End_of_Dragons_Mastery?oldid=2978791",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a large amount of End of Dragons Mastery experience. — In-game description"
+    },
+    {
+      "id": 99379,
+      "name": "Mocha of the Mists Coffee Pitcher",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mocha_of_the_Mists_Coffee_Pitcher?oldid=2684007",
+      "equivalentIds": [82642],
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Gain 5 seconds of Quickness on dismount. (Cooldown: 20 seconds)\n+70 Precision\n+10% Karma\n+1% All Experience Gained"
+    },
+    {
+      "id": 99785,
+      "name": "Mists-Infused Peppercorn-Crusted Sous-Vide Steak",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mists-Infused_Peppercorn-Crusted_Sous-Vide_Steak?oldid=3099773",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Stats only apply in WvW:\n-10% Incoming Damage\n+100 Power\n+70 Ferocity\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 99794,
+      "name": "Mists-Infused Spherified Peppercorn-Spiced Oyster Soup",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mists-Infused_Spherified_Peppercorn-Spiced_Oyster_Soup?oldid=3099774",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Stats only apply in WvW:\n-10% Incoming Damage\n+45 to All Attributes\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 99804,
+      "name": "Bowl of Mists-Infused Fruit Salad with Mint Garnish",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Bowl_of_Mists-Infused_Fruit_Salad_with_Mint_Garnish?oldid=3099761",
+      "identity": "exact page game ID",
+      "apiText": "",
+      "wikiText": "Stats only apply in WvW:\n+10% Outgoing Healing\n+100 Healing Power\n+70 Concentration\n+10% Karma\n+5% All Experience Gained\n+20% Magic Find\n+20% Gold Find\n+10% WXP Gained"
+    },
+    {
+      "id": 99842,
+      "name": "Mist-Infused Maintenance Oil",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mist-Infused_Maintenance_Oil?oldid=3136863",
+      "identity": "exact page game ID",
+      "apiText": "Gain 0.6% Increased Healing to Other Allies for Every 100 Healing Power\nGain 0.8% Increased Healing to Other Allies for Every 100 Concentration\n+10% Experience from Kills",
+      "wikiText": "Gain 0.6% Increased Healing to Other Allies for Every 100 Healing Power\nGain 0.8% Increased Healing to Other Allies for Every 100 Concentration\n+10% Experience from Kills"
+    },
+    {
+      "id": 99845,
+      "name": "Mist-Infused Sharpening Stone",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mist-Infused_Sharpening_Stone?oldid=3136862",
+      "identity": "exact page game ID",
+      "apiText": "Gain Power Equal to 3% of Your Precision\nGain Power Equal to 6% of Your Ferocity\n+10% Experience from Kills",
+      "wikiText": "Gain Power Equal to 3% of Your Precision\nGain Power Equal to 6% of Your Ferocity\n+10% Experience from Kills"
+    },
+    {
+      "id": 102135,
+      "name": "Mist-Infused Master Tuning Crystal",
+      "status": "verified",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Mist-Infused_Master_Tuning_Crystal?oldid=3136864",
+      "identity": "exact page game ID",
+      "apiText": "Gain Condition Damage Equal to 3% of Your Precision\nGain Condition Damage Equal to 8% of Your Expertise\n+10% Experience from Kills",
+      "wikiText": "Gain Condition Damage Equal to 3% of Your Precision\nGain Condition Damage Equal to 8% of Your Expertise\n+10% Experience from Kills"
+    },
+    {
+      "id": 102230,
+      "name": "Wayfinder's Versatile Table Decoration",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Wayfinder's_Versatile_Table_Decoration?oldid=3056723",
+      "equivalences": [],
+      "quote": "“ Crafted with Homesteading Mastery. — In-game description"
+    },
+    {
+      "id": 106982,
+      "name": "Elixir of Janthir Wilds Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Elixir_of_Janthir_Wilds_Mastery?oldid=3103397",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a large amount of Janthir Wilds Mastery experience. — In-game description"
+    },
+    {
+      "id": 107031,
+      "name": "Elixir of Secrets of the Obscure Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Elixir_of_Secrets_of_the_Obscure_Mastery?oldid=3103393",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a large amount of Secrets of the Obscure Mastery experience. — In-game description"
+    },
+    {
+      "id": 107063,
+      "name": "Elixir of Visions of Eternity Mastery",
+      "status": "no-nutrition-or-equivalence",
+      "sourceUrl": "https://wiki.wishingstar.top/wiki/Elixir_of_Visions_of_Eternity_Mastery?oldid=3103399",
+      "equivalences": [],
+      "quote": "“ Double-click to consume.Grants a large amount of Visions of Eternity Mastery experience. — In-game description"
+    }
+  ]
+}

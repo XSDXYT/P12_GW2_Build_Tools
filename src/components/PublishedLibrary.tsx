@@ -1,4 +1,11 @@
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import {
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  type CSSProperties,
+} from "react";
 import { readCollection, type PublishedCollection } from "../collection";
 import { accents, professions } from "../editor";
 import { matchesBuild, sortedNames } from "../build-classification";
@@ -54,27 +61,55 @@ export function PublishedLibrary({
     }
   }
   useEffect(() => {
-    dialog.current?.showModal();
     alive.current = true;
     void load();
     return () => {
       alive.current = false;
     };
   }, []);
-  const entries = collection?.builds || [];
-  const matches = entries.filter((build) =>
-    matchesBuild(build, {
-      query,
-      profession,
-      tag,
-      instance,
-      boss,
-      encounterMode,
-    }),
+  useLayoutEffect(() => {
+    const modal = dialog.current;
+    const root = document.documentElement;
+    const bodyOverflow = document.body.style.overflow;
+    const rootOverflow = root.style.overflow;
+    const gutter = root.style.scrollbarGutter;
+    // Keep the workbench stationary while the archive's own scroller moves.
+    root.style.scrollbarGutter = "stable";
+    root.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+    modal?.showModal();
+    return () => {
+      modal?.close();
+      document.body.style.overflow = bodyOverflow;
+      root.style.overflow = rootOverflow;
+      root.style.scrollbarGutter = gutter;
+    };
+  }, []);
+  const entries = useMemo(() => collection?.builds || [], [collection]);
+  const matches = useMemo(
+    () =>
+      entries.filter((build) =>
+        matchesBuild(build, {
+          query,
+          profession,
+          tag,
+          instance,
+          boss,
+          encounterMode,
+        }),
+      ),
+    [entries, query, profession, tag, instance, boss, encounterMode],
   );
-  const tags = sortedNames(entries.flatMap((build) => build.tags || []));
-  const count = (id: string) =>
-    entries.filter((build) => build.profession === id).length;
+  const tags = useMemo(
+    () => sortedNames(entries.flatMap((build) => build.tags || [])),
+    [entries],
+  );
+  const counts = useMemo(() => {
+    const values = new Map<string, number>();
+    for (const build of entries)
+      values.set(build.profession, (values.get(build.profession) || 0) + 1);
+    return values;
+  }, [entries]);
   const hasFilter = !!(
     query ||
     profession ||
@@ -151,7 +186,7 @@ export function PublishedLibrary({
               >
                 <span className="archive-nav-symbol">{name.slice(0, 1)}</span>
                 <span>{name}</span>
-                <small>{String(count(id)).padStart(2, "0")}</small>
+                <small>{String(counts.get(id) || 0).padStart(2, "0")}</small>
               </button>
             ))}
           </nav>

@@ -4,6 +4,7 @@ dist/
 playwright-report/
 test-results/
 data/wiki-cache/
+data/wiki-consumable-cache/
 docs/
 *.md
 .env

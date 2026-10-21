@@ -1,3 +1,4 @@
+import { consumableNutrition } from "./consumables";
 import type { Entity } from "./domain";
 import { attributeLabels } from "./attributes";
 import {
@@ -480,6 +481,7 @@ export function gameDetails(
 }
 
 export function itemDetails(entity: Entity): GameDetails {
+  const nutrition = consumableNutrition(entity);
   const details = entity.details || {};
   const facts: DetailFact[] = [];
   for (const attribute of details.infix_upgrade?.attributes || [])
@@ -503,7 +505,10 @@ export function itemDetails(entity: Entity): GameDetails {
       modified: false,
     });
   const duration =
-    details.duration_ms != null ? details.duration_ms / 1000 : details.duration;
+    nutrition?.duration ||
+    (details.duration_ms != null
+      ? details.duration_ms / 1000
+      : details.duration);
   if (duration)
     facts.push({
       label: "持续时间",
@@ -515,7 +520,7 @@ export function itemDetails(entity: Entity): GameDetails {
       ...new Set(
         [
           entity.description,
-          details.description,
+          nutrition?.description || details.description,
           details.infix_upgrade?.buff?.description,
         ].filter(Boolean),
       ),
@@ -526,6 +531,7 @@ export function itemDetails(entity: Entity): GameDetails {
     unresolved: [],
     reviewed: true,
     sources: [],
+    sourceUrl: nutrition?.sourceUrl,
   };
 }
 

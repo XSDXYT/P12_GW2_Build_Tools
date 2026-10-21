@@ -5,9 +5,11 @@ export default defineConfig({
   testMatch: [
     "build-description.spec.ts",
     "published-builds.spec.ts",
+    "published-scroll.spec.ts",
     "library.spec.ts",
     "build-classification.spec.ts",
     "gear-batch-runes.spec.ts",
+    "consumables.spec.ts",
   ],
   outputDir: "test-results/compat",
   use: { ...base.use, channel: undefined },

@@ -1,3 +1,4 @@
+import { consumableNutrition } from "./consumables";
 import type { Build, Catalog, Entity } from "./domain";
 export type Edit = (change: (draft: Build) => void, undoLabel?: string) => void;
 export type PickerRequest = {
@@ -95,7 +96,8 @@ export function describe(item: Entity) {
           (a: any) => `${labels[a.attribute] || a.attribute} +${a.modifier}`,
         )
         .join(" · "),
-      item.description || item.details?.description,
+      item.description,
+      consumableNutrition(item)?.description || item.details?.description,
     ]
       .filter(Boolean)
       .join("；") || "暂无效果说明",

@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useMemo, type ReactNode } from "react";
 import {
   encounterOptions,
   groupBuilds,
@@ -25,7 +25,10 @@ export function EncounterFilters({
   mode?: string;
   changeMode?: (mode: string) => void;
 }) {
-  const options = encounterOptions(entries, instance);
+  const options = useMemo(
+    () => encounterOptions(entries, instance),
+    [entries, instance],
+  );
   return (
     <>
       <label>
@@ -106,9 +109,13 @@ export function BuildGroups<T extends BrowseBuild>({
   filter: Pick<BrowseFilter, "instance" | "boss" | "encounterMode">;
   children: (entry: T, cardKey: string) => ReactNode;
 }) {
+  const groups = useMemo(
+    () => groupBuilds(entries, mode, filter),
+    [entries, mode, filter.instance, filter.boss, filter.encounterMode],
+  );
   return (
     <>
-      {groupBuilds(entries, mode, filter).map((group) => (
+      {groups.map((group) => (
         <section
           className="build-list-group"
           key={group.key}

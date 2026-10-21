@@ -1,3 +1,4 @@
+import { consumableNutrition } from "./consumables";
 import {
   armorSlots,
   accessorySlots,
@@ -97,6 +98,8 @@ export type Result = {
   criticalChance: number;
   criticalDamage: number;
   criticalSources: Contribution[];
+  consumableHealingBonus: number;
+  consumableHealingSources: Contribution[];
   conditionDuration: number;
   boonDuration: number;
   conditions: Record<string, number>;
@@ -137,6 +140,10 @@ type Effect = {
   critical: number;
   warnings: string[];
   stack?: { target: Attribute; amount: number };
+  outgoingHealing?: {
+    flat: number;
+    scaling: { from: Attribute; percent: number }[];
+  };
 };
 export function parseAttributeEffect(text: string): Effect {
   const result: Effect = {
@@ -226,6 +233,22 @@ export function parseAttributeEffect(text: string): Effect {
       result.critical += Number(match[1]);
       continue;
     }
+    const outgoing = line.match(
+      /^\+?(\d+(?:\.\d+)?)% (?:Outgoing Healing|Healing Effectiveness|Healing to Other Allies)$/i,
+    );
+    const healingConversion = line.match(
+      /^Gain (\d+(?:\.\d+)?)% Increased Healing to Other Allies for Every 100 (Healing Power|Concentration)$/i,
+    );
+    if (outgoing || healingConversion) {
+      const effect = (result.outgoingHealing ||= { flat: 0, scaling: [] });
+      if (outgoing) effect.flat += Number(outgoing[1]);
+      if (healingConversion)
+        effect.scaling.push({
+          from: aliases[healingConversion[2].toLowerCase()],
+          percent: Number(healingConversion[1]),
+        });
+      continue;
+    }
     if (/(?:charge|stack)/i.test(line)) {
       const charge = line.match(
         /\+(\d+(?:\.\d+)?) (Power|Precision|Ferocity|Condition Damage|Healing Power)/i,
@@ -250,22 +273,6 @@ export function parseAttributeEffect(text: string): Effect {
   }
   return result;
 }
-// These small food facts fill omissions in the public item API. Sources are documented separately.
-const feastStats: Record<number, Partial<Totals>> = {
-  91690: { Healing: 100, BoonDuration: 70 },
-  91732: { Healing: 100, BoonDuration: 70 },
-  91737: { Healing: 100, BoonDuration: 70 },
-  91769: { Healing: 100, BoonDuration: 70 },
-  91841: { Healing: 100, BoonDuration: 70 },
-  91734: { Power: 100, CritDamage: 70 },
-  91805: { Power: 100, CritDamage: 70 },
-  91743: { BoonDuration: 100, Healing: 70 },
-  97282: { Power: 100, CritDamage: 70 },
-  97592: { ConditionDamage: 100, ConditionDuration: 70 },
-  91713: Object.fromEntries(primaryKeys.map((key) => [key, 45])),
-  91748: Object.fromEntries(primaryKeys.map((key) => [key, 45])),
-  91804: Object.fromEntries(primaryKeys.map((key) => [key, 45])),
-};
 type TraitRule = {
   target?: Attribute;
   from?: Attribute;
@@ -413,6 +420,10 @@ export function calculateAttributes(
   const conversions: Conversion[] = [];
   const deferred: { key: Attribute; amount: number; label: string }[] = [];
   const criticalSources: Contribution[] = [];
+  const healingEffects: {
+    effect: NonNullable<Effect["outgoingHealing"]>;
+    label: string;
+  }[] = [];
   let criticalBonus = 0;
   let activeStackingSigil: string | undefined;
   const add = (key: Attribute, amount: number, label: string) => {
@@ -477,7 +488,12 @@ export function calculateAttributes(
           add(entry.attribute, entry.modifier, `${labels[key]} · ${item.name}`);
     }
   }
-  function applyEffect(effect: Effect, label: string, id?: number) {
+  function applyEffect(
+    effect: Effect,
+    label: string,
+    id?: number,
+    consumable = false,
+  ) {
     for (const [key, value] of Object.entries(effect.flats))
       add(key as Attribute, value!, label);
     for (const [key, value] of Object.entries(effect.durations))
@@ -485,6 +501,8 @@ export function calculateAttributes(
     criticalBonus += effect.critical;
     if (effect.critical)
       criticalSources.push({ label, amount: effect.critical });
+    if (consumable && effect.outgoingHealing)
+      healingEffects.push({ effect: effect.outgoingHealing, label });
     for (const c of effect.conversions) conversions.push({ ...c, label });
     for (const warning of effect.warnings)
       warnings.push(`${label}：${warning}`);
@@ -557,24 +575,24 @@ export function calculateAttributes(
       warnings.push(`${item?.name || key}效果资料缺失`);
       continue;
     }
-    if (!entry.pve || /Mists?-Infused/i.test(entry.name)) {
+    const nutrition = consumableNutrition(item);
+    if (!entry.pve || nutrition?.pve === false) {
       warnings.push(`${item?.name || entry.name}为非 PvE 消耗品，未计入`);
       continue;
     }
-    if (key === "food" && feastStats[id]) {
+    if (nutrition?.excludedReason) {
+      warnings.push(`${item?.name || entry.name}：${nutrition.excludedReason}`);
+      continue;
+    }
+    const text = nutrition?.text || entry.text;
+    if (text)
       applyEffect(
-        {
-          flats: feastStats[id],
-          durations: {},
-          conversions: [],
-          critical: 0,
-          warnings: [],
-        },
+        parseAttributeEffect(text),
         item?.name || entry.name,
+        undefined,
+        true,
       );
-    } else if (entry.text) {
-      applyEffect(parseAttributeEffect(entry.text), item?.name || entry.name);
-    } else warnings.push(`${item?.name || entry.name}未提供营养属性，未计入`);
+    else warnings.push(`${item?.name || entry.name}未提供营养属性，未计入`);
   }
   const traits = activeTraits(build, catalog);
   const professionSignets = signetRules[build.profession];
@@ -820,7 +838,21 @@ export function calculateAttributes(
   }
   const generic = totals.ConditionDuration / 15 + (durations.Condition || 0);
   const boon = totals.BoonDuration / 15 + (durations.Boon || 0);
+  const consumableHealingSources = healingEffects.flatMap(
+    ({ effect, label }) => [
+      ...(effect.flat ? [{ label, amount: effect.flat }] : []),
+      ...effect.scaling.map(({ from, percent }) => ({
+        label: `${label} · ${attributeLabels[from]} × ${percent}% ÷ 100`,
+        amount: (totals[from] * percent) / 100,
+      })),
+    ],
+  );
   return {
+    consumableHealingBonus: consumableHealingSources.reduce(
+      (sum, source) => sum + source.amount,
+      0,
+    ),
+    consumableHealingSources,
     primary: totals,
     primarySources: sources,
     criticalChance: 5 + (totals.Precision - 1000) / 21 + criticalBonus,

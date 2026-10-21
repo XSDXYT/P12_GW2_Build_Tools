@@ -2775,7 +2775,9 @@ footer button {
 }
 .archive-main {
   min-width: 0;
+  min-height: 0;
   overflow-y: auto;
+  overscroll-behavior-y: contain;
   scrollbar-gutter: stable;
   padding: 28px 32px 24px;
 }
@@ -3007,9 +3009,11 @@ footer button {
     transform 0.16s;
   overflow: hidden;
 }
-.published-library .archive-card:hover {
-  border-color: color-mix(in srgb, var(--profession-accent) 65%, #3b4548);
-  transform: translateY(-2px);
+@media (hover: hover) and (pointer: fine) {
+  .published-library .archive-card:hover {
+    border-color: color-mix(in srgb, var(--profession-accent) 65%, #3b4548);
+    transform: translateY(-2px);
+  }
 }
 .published-library .archive-card .library-open {
   display: flex;
@@ -3349,6 +3353,30 @@ footer button {
     width: 60px;
     height: 60px;
     margin-bottom: 22px;
+  }
+}
+/* A translucent blur over the full workbench is costly on mobile GPUs. */
+@media (max-width: 760px), (hover: none) and (pointer: coarse) {
+  .published-library::backdrop {
+    background: #080b10ed;
+    backdrop-filter: none;
+  }
+  .published-library {
+    box-shadow: none;
+  }
+  .published-library .archive-card {
+    transition: none;
+  }
+  .published-library .build-list-subgroup > div {
+    content-visibility: auto;
+    contain-intrinsic-block-size: auto 360px;
+  }
+  /* WebKit can fail to reveal skipped flex cards inside a modal scroller. */
+  @supports (-webkit-backdrop-filter: none) {
+    .published-library .build-list-subgroup > div {
+      content-visibility: visible;
+      contain-intrinsic-block-size: none;
+    }
   }
 }
 @media (prefers-reduced-motion: reduce) {

@@ -94,6 +94,12 @@ export function AttributePanel() {
     ];
     formula = "5% + (精准 − 1000) ÷ 21；生效值上限 100%。";
   }
+  if (selected === "ConsumableHealing") {
+    breakdownTitle = "对盟友治疗加成";
+    breakdown = result.consumableHealingSources;
+    formula =
+      "仅汇总食物、扳手的对其他盟友治疗加成。保养油：治疗效果 × 0.006% + 增益效果 × 0.008%；与食物加成相加。不增加治疗效果属性；技能详情仍显示基础治疗，不套用此倍率或屏障加成。";
+  }
   if (selected === "CriticalDamage") {
     breakdownTitle = "暴击伤害";
     breakdown = [
@@ -228,6 +234,13 @@ export function AttributePanel() {
             result.boonDuration,
             baseline.boonDuration,
             true,
+            true,
+          )}
+          {row(
+            "ConsumableHealing",
+            "对盟友治疗加成",
+            result.consumableHealingBonus,
+            baseline.consumableHealingBonus,
             true,
           )}
           <p className="attribute-tip">点击数值行查看来源与公式。</p>

@@ -9,7 +9,7 @@ const files = execFileSync(
 if (!files.length)
   throw Error("No staged/tracked release files. Stage the source first.");
 const forbidden = files.filter((path) =>
-  /(^|\/)(docs|node_modules|dist|test-results|playwright-report|wiki-cache)(\/|$)|\.md$|(^|\/)\.env(?:\.|$)|\.tmp$/i.test(
+  /(^|\/)(docs|node_modules|dist|test-results|playwright-report|wiki-cache|wiki-consumable-cache)(\/|$)|\.md$|(^|\/)\.env(?:\.|$)|\.tmp$/i.test(
     path,
   ),
 );

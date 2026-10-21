@@ -219,18 +219,14 @@ test("特性仅取有效职业与阶级，未知属性规则及缺少食物资�
   assert.deepEqual(activeTraits(b, catalog), []);
   b.specs[0] = { id: 45, traits: [1865, null, null] };
   assert.equal(activeTraits(b, catalog).filter((t) => t.id === 1865).length, 1);
-  const missing = Object.entries(data.items).find(
-    ([id, e]) =>
-      e.pve &&
-      !e.text &&
-      ![
-        91690, 91732, 91737, 91769, 91841, 91734, 91805, 91743, 97282, 97592,
-        91713, 91748, 91804,
-      ].includes(+id) &&
-      catalog.items.some((i) => i.id === +id && i.details?.type === "Food"),
-  )!;
-  b.food = +missing[0];
-  assert.ok(calc(b).warnings.some((w) => w.includes("营养属性")));
+  const missingData = structuredClone(data);
+  delete missingData.items[91842];
+  b.food = 91842;
+  assert.ok(
+    calculateAttributes(b, catalog, missingData).warnings.some((w) =>
+      w.includes("效果资料缺失"),
+    ),
+  );
   const unknown = catalog.traits.find(
     (t) =>
       t.facts?.some((f: any) => f.type === "BuffConversion") &&

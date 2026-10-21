@@ -1,0 +1,36 @@
+{
+  "12562": {
+    "revision": 3138440,
+    "sameAs": 12323,
+    "evidence": "Level 36 and above: Cherry Almond Bar",
+    "duration": 3600
+  },
+  "69836": {
+    "revision": 3138440,
+    "sameAs": 12323,
+    "evidence": "Level 36 and above: Cherry Almond Bar",
+    "duration": 3600
+  },
+  "12638": {
+    "revision": 3180699,
+    "text": "+100 Expertise\n+70 Condition Damage",
+    "evidence": "Provides the same +100 Expertise and +70 Condition Damage stats as the following:",
+    "duration": 3600
+  },
+  "80272": {
+    "revision": 3140965,
+    "evidence": "Blessing of the Harvest Forest is not a nourishment effect",
+    "text": "",
+    "description": "丰收森林祝福：+100 威力、+100 症状伤害、+20% 击败敌人经验。持续1小时，仅可在多里克湖使用，离开地图后消失；这不是营养效果，可与食物和扳手叠加。",
+    "excludedReason": "多里克湖限定的独立祝福，不作为常规食物槽属性计入",
+    "duration": 3600
+  },
+  "74065": {
+    "revision": 2926973,
+    "evidence": "Outgoing damage and conditions in fractals are increased by 3%.",
+    "text": "",
+    "description": "丛林地虫煎蛋（沼泽怪人风味）：仅在迷雾碎层中造成的伤害和症状效果提高3%，受到的伤害降低5%，移动速度提高5%，耐力恢复速率提高10%。持续30分钟；收藏相关的碎层效果，不增加常规基本属性。",
+    "excludedReason": "收藏相关的碎层限定效果，未模拟伤害、移速及耐力倍率",
+    "duration": 1800
+  }
+}

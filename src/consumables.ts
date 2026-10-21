@@ -1,4 +1,4 @@
-import snapshot from "./data/consumables.json";
+import snapshot from "./data/consumables.json" with { type: "json" };
 import type { Entity } from "./domain";
 
 type Nutrition = {

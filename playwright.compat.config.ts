@@ -10,6 +10,8 @@ export default defineConfig({
     "build-classification.spec.ts",
     "gear-batch-runes.spec.ts",
     "consumables.spec.ts",
+    "sigils.spec.ts",
+    "weapon-skills.spec.ts",
   ],
   outputDir: "test-results/compat",
   use: { ...base.use, channel: undefined },

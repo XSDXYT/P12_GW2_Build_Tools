@@ -4,10 +4,12 @@ import {
   attributeLabels,
   primaryKeys,
   conditionLabels,
+  boonLabels,
   emptyPreview,
   type Attribute,
   type Contribution,
 } from "../attributes";
+import { attunements, type Attunement } from "../weapon-skills";
 const number = (value: number) => Math.round(value).toLocaleString("en-US");
 const percent = (value: number) => value.toFixed(2) + "%";
 const cap = (value: number) => Math.max(0, Math.min(100, value));
@@ -16,6 +18,8 @@ export function AttributePanel() {
     build,
     weaponSet,
     onWeaponSet,
+    attunement,
+    onAttunement,
     error,
     load,
     preview,
@@ -94,11 +98,17 @@ export function AttributePanel() {
     ];
     formula = "5% + (精准 − 1000) ÷ 21；生效值上限 100%。";
   }
-  if (selected === "ConsumableHealing") {
+  if (selected === "OutgoingHealing") {
     breakdownTitle = "对盟友治疗加成";
-    breakdown = result.consumableHealingSources;
+    breakdown = result.outgoingHealingSources;
     formula =
-      "仅汇总食物、扳手的对其他盟友治疗加成。保养油：治疗效果 × 0.006% + 增益效果 × 0.008%；与食物加成相加。不增加治疗效果属性；技能详情仍显示基础治疗，不套用此倍率或屏障加成。";
+      "汇总已支持的食物、扳手和法印对其他盟友的治疗加成，各来源相加；不含其他特性、符文或古物倍率。保养油：治疗效果 × 0.006% + 增益效果 × 0.008%。不增加治疗效果属性；技能详情仍显示基础治疗，不套用此倍率或屏障加成。";
+  }
+  if (selected === "ControlDuration") {
+    breakdownTitle = "昏迷与晕眩时长加成";
+    breakdown = result.controlDurationSources;
+    formula =
+      "仅汇总当前武器组已支持的瘫痪法印；同类不叠加。已核实技能的控制时长和蔑视伤害随之更新，不增加击倒、拉拽等其他控制的蔑视伤害。";
   }
   if (selected === "CriticalDamage") {
     breakdownTitle = "暴击伤害";
@@ -111,14 +121,15 @@ export function AttributePanel() {
   if (
     selected === "ConditionBonus" ||
     selected === "BoonBonus" ||
-    (selected && conditionLabels[selected])
+    (selected && (conditionLabels[selected] || boonLabels[selected]))
   ) {
-    const boon = selected === "BoonBonus";
-    const specific = selected && conditionLabels[selected];
-    breakdownTitle = boon
-      ? "增益持续时间"
-      : specific
-        ? specific + "持续时间"
+    const boon = selected === "BoonBonus" || !!boonLabels[selected || ""];
+    const specific =
+      selected && (conditionLabels[selected] || boonLabels[selected]);
+    breakdownTitle = specific
+      ? specific + "持续时间"
+      : boon
+        ? "增益持续时间"
         : "症状持续时间";
     breakdown = [
       ...result.primarySources[boon ? "BoonDuration" : "ConditionDuration"].map(
@@ -131,7 +142,7 @@ export function AttributePanel() {
       ...(specific ? result.durationSources[selected!] || [] : []),
     ];
     formula =
-      "对应属性 ÷ 15，再叠加直接持续时间奖励。单类症状在通用奖励上继续叠加，生效值上限 100%。";
+      "对应属性 ÷ 15，再叠加直接持续时间奖励。单类增益或症状在通用奖励上继续叠加，生效值上限 100%。技能的生效时长 = 基础时长 × (1 + 对应加成)。";
   }
   const hasAttunement = result.controls.some((c) =>
     ["air", "fire"].includes(c.key),
@@ -236,12 +247,42 @@ export function AttributePanel() {
             true,
             true,
           )}
+          {Object.entries(boonLabels)
+            .filter(
+              ([key]) =>
+                Math.abs(cap(result.boons[key]) - cap(result.boonDuration)) >
+                0.005,
+            )
+            .map(([key, label]) =>
+              row(
+                key,
+                label + "持续时间",
+                result.boons[key],
+                baseline.boons[key],
+                true,
+                true,
+                true,
+              ),
+            )}
           {row(
-            "ConsumableHealing",
+            "OutgoingHealing",
             "对盟友治疗加成",
-            result.consumableHealingBonus,
-            baseline.consumableHealingBonus,
+            result.outgoingHealingBonus,
+            baseline.outgoingHealingBonus,
             true,
+          )}
+          {!!result.controlDurationBonus &&
+            row(
+              "ControlDuration",
+              "昏迷与晕眩时长加成",
+              result.controlDurationBonus,
+              baseline.controlDurationBonus,
+              true,
+            )}
+          {result.guaranteedCritical && (
+            <p className="attribute-tip">
+              远见生效：可暴击攻击必定暴击；基础暴击率保持原值。
+            </p>
           )}
           <p className="attribute-tip">点击数值行查看来源与公式。</p>
         </div>
@@ -337,32 +378,16 @@ export function AttributePanel() {
               <span>当前协调</span>
               <select
                 aria-label="预览当前协调"
-                value={
-                  preview.flags.fire
-                    ? "fire"
-                    : preview.flags.air
-                      ? "air"
-                      : "none"
-                }
+                value={attunement}
                 onChange={(event) =>
-                  setPreview((p) => ({
-                    ...p,
-                    flags: {
-                      ...p.flags,
-                      fire: event.target.value === "fire",
-                      air: event.target.value === "air",
-                    },
-                  }))
+                  onAttunement(event.target.value as Attunement)
                 }
               >
-                <option value="none">其他 / 不模拟</option>
-                {result.controls
-                  .filter((c) => ["fire", "air"].includes(c.key))
-                  .map((control) => (
-                    <option key={control.key} value={control.key}>
-                      {control.label}
-                    </option>
-                  ))}
+                {Object.entries(attunements).map(([id, name]) => (
+                  <option key={id} value={id}>
+                    {name}
+                  </option>
+                ))}
               </select>
             </label>
           )}
@@ -444,7 +469,7 @@ export function AttributePanel() {
         </details>
       )}
       <p className="attribute-scope">
-        已有明确公式的详情随治疗效果更新；不计算技能伤害或战斗循环。未计入项请展开核对。
+        治疗公式与已核实的控制详情随配装更新；不计算技能伤害或战斗循环。未计入项请展开核对。
       </p>
     </div>
   );

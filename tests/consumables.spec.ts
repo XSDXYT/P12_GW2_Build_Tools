@@ -25,7 +25,7 @@ async function seed(page: Page, b: Build) {
     b,
   );
   await page.goto("/");
-  await expect(value(page, "ConsumableHealing")).toHaveText("11.16%");
+  await expect(value(page, "OutgoingHealing")).toHaveText("11.16%");
 }
 
 test("食物扳手选择显示补齐的效果并立即计算，保存导出保持版本1", async ({
@@ -44,7 +44,7 @@ test("食物扳手选择显示补齐的效果并立即计算，保存导出保�
   await expect(stone).toContainText("6%");
   await stone.click();
   await expect(value(page, "Power")).toHaveText("1,030");
-  await expect(value(page, "ConsumableHealing")).toHaveText("10.00%");
+  await expect(value(page, "OutgoingHealing")).toHaveText("10.00%");
   await page
     .getByRole("button", { name: `食物：${name(91690)}`, exact: true })
     .click();
@@ -57,7 +57,7 @@ test("食物扳手选择显示补齐的效果并立即计算，保存导出保�
   await eggs.click();
   await expect(value(page, "BoonDuration")).toHaveText("100");
   await expect(value(page, "ConditionDuration")).toHaveText("70");
-  await expect(value(page, "ConsumableHealing")).toHaveText("0.00%");
+  await expect(value(page, "OutgoingHealing")).toHaveText("0.00%");
   await page.getByRole("button", { name: "保存修改", exact: true }).click();
   const saved = await page.evaluate(
     () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
@@ -88,7 +88,7 @@ test("390px只读分享展示营养详情，盟友治疗来源随条件变化且
       upstream.push(r.url());
   });
   await page.goto("/#build=" + encodeShare(b));
-  await expect(value(page, "ConsumableHealing")).toHaveText("11.16%");
+  await expect(value(page, "OutgoingHealing")).toHaveText("11.16%");
   await page
     .getByRole("button", { name: "查看对盟友治疗加成来源", exact: true })
     .click();
@@ -96,7 +96,7 @@ test("390px只读分享展示营养详情，盟友治疗来源随条件变化且
   await expect(page.locator(".attribute-breakdown")).toContainText(name(99842));
   await page.locator(".attribute-effects summary").click();
   await page.getByLabel("预览拥有再生").check();
-  await expect(value(page, "ConsumableHealing")).toHaveText("13.16%");
+  await expect(value(page, "OutgoingHealing")).toHaveText("13.16%");
   await expect(value(page, "Healing")).toHaveText("100");
   const preview = page.getByRole("region", { name: "BD描述预览" });
   await preview.getByRole("button", { name: "营养", exact: true }).click();
@@ -121,7 +121,7 @@ test("390px只读分享展示营养详情，盟友治疗来源随条件变化且
   expect(upstream).toEqual([]);
   expect(decodeShare(new URL(page.url()).hash.split("#build=")[1])).toEqual(b);
   await page.reload();
-  await expect(value(page, "ConsumableHealing")).toHaveText("11.16%");
+  await expect(value(page, "OutgoingHealing")).toHaveText("11.16%");
 });
 
 test("地图限定食物可查看真实效果而不重复增加常规属性", async ({ page }) => {

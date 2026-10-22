@@ -2,6 +2,12 @@ import { type EditorProps } from "../editor";
 import { activeTraits } from "../attributes";
 import { useGameTooltip } from "./GameTooltip";
 import { useAttributePreview } from "../hooks/useAttributePreview";
+import {
+  attunements,
+  followingSkills,
+  weaponSkillSlots,
+  type Attunement,
+} from "../weapon-skills";
 export function TraitsPanel({
   build,
   catalog,
@@ -11,12 +17,48 @@ export function TraitsPanel({
   notify,
 }: EditorProps) {
   const selectedSpecs = build.specs.flatMap((s) => (s.id ? [s.id] : []));
-  const { result } = useAttributePreview();
+  const {
+    result,
+    weaponSet,
+    onWeaponSet,
+    attunement,
+    onAttunement,
+    secondaryAttunement,
+    onSecondaryAttunement,
+  } = useAttributePreview();
   const tooltip = useGameTooltip(
     new Set(activeTraits(build, catalog).map((trait) => trait.id)),
     `${build.id}:${build.profession}:${selectedSpecs.join(",")}`,
     result?.primary.Healing,
+    result?.controlDurationBonus,
+    result || {},
   );
+  const weaponSkills = weaponSkillSlots(
+    build,
+    catalog,
+    weaponSet,
+    attunement,
+    secondaryAttunement,
+  );
+  const stages = (skill: (typeof catalog.skills)[number] | undefined) =>
+    skill &&
+    followingSkills(skill, catalog, build).map(({ skill: child, label }) => (
+      <div className="skill-followup" key={child.id}>
+        <span className="skill-stage-label">{label}</span>
+        <button
+          type="button"
+          className="skill"
+          aria-label={`查看${child.name}详情`}
+          {...tooltip.bind(child, "skill")}
+          onClick={(event) => tooltip.show(event.currentTarget, child, "skill")}
+        >
+          <img src={child.icon} alt="" loading="lazy" />
+        </button>
+        <span className="skill-name" title={child.name}>
+          {child.name}
+        </span>
+      </div>
+    ));
   return (
     <section className="panel traits-panel" aria-labelledby="traits-heading">
       <header className="panel-heading">
@@ -30,6 +72,97 @@ export function TraitsPanel({
           {catalog.professions.find((p) => p.id === build.profession)?.name}
         </span>
       </header>
+      <div className="weapon-skills-bar">
+        <div className="weapon-skills-heading">
+          <h3>武器技能</h3>
+          <label>
+            武器组{" "}
+            <select
+              aria-label="技能预览武器组"
+              value={weaponSet}
+              onChange={(e) => onWeaponSet(+e.target.value as 1 | 2)}
+            >
+              <option value={1}>Ⅰ</option>
+              <option value={2} disabled={!build.equipment.weapon2.weapon}>
+                Ⅱ
+              </option>
+            </select>
+          </label>
+        </div>
+        {build.profession === "Elementalist" && (
+          <div className="attunement-controls">
+            <label>
+              主协调{" "}
+              <select
+                aria-label="技能主协调"
+                value={attunement}
+                onChange={(e) => onAttunement(e.target.value as Attunement)}
+              >
+                {Object.entries(attunements).map(([id, name]) => (
+                  <option key={id} value={id}>
+                    {name}
+                  </option>
+                ))}
+              </select>
+            </label>
+            {selectedSpecs.includes(56) && (
+              <label>
+                副协调{" "}
+                <select
+                  aria-label="技能副协调"
+                  value={secondaryAttunement}
+                  onChange={(e) =>
+                    onSecondaryAttunement(e.target.value as Attunement)
+                  }
+                >
+                  {Object.entries(attunements).map(([id, name]) => (
+                    <option key={id} value={id}>
+                      {name}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
+            <small>仅供预览，不写入 BD</small>
+          </div>
+        )}
+        <div className="skill-list weapon-skill-list">
+          {weaponSkills.map((skill, i) => (
+            <div key={skill?.id || i} data-weapon-slot={i + 1}>
+              <button
+                type="button"
+                className="skill"
+                aria-label={`武器技能${i + 1}：${skill?.name || "未装备"}`}
+                disabled={!skill}
+                {...tooltip.bind(skill, "skill")}
+                onClick={(e) =>
+                  skill && tooltip.show(e.currentTarget, skill, "skill")
+                }
+              >
+                {skill?.icon ? (
+                  <img src={skill.icon} alt="" loading="lazy" />
+                ) : (
+                  <span>—</span>
+                )}
+              </button>
+              <small>技能 {i + 1}</small>
+              <span className="skill-name" title={skill?.name}>
+                {skill?.name || "未装备"}
+              </span>
+              {stages(skill)}
+            </div>
+          ))}
+        </div>
+        <p className="weapon-skills-note">
+          陆地技能 · 后续图标展示连段或条件变种；悬停或点击查看详情。
+        </p>
+        {build.profession === "Thief" &&
+          weaponSkills[1]?.weapon_type === "Spear" && (
+            <p className="weapon-skills-note">
+              长矛两条攻击链可交叉推进；潜袭需要潜行，终结技需要先完成后续攻击。
+            </p>
+          )}
+      </div>
       <div className="skills-bar">
         <div className="skills-heading">
           <h3>技能组合</h3>
@@ -43,6 +176,7 @@ export function TraitsPanel({
             const options = catalog.skills.filter(
               (s) =>
                 s.type === type &&
+                !s.detailOnly &&
                 s.professions?.includes(build.profession) &&
                 (!s.specialization || selectedSpecs.includes(s.specialization)),
             );
@@ -88,6 +222,7 @@ export function TraitsPanel({
                 <span className="skill-name">
                   {skill?.name || (id ? `未知 #${id}` : "未选择")}
                 </span>
+                {stages(skill)}
               </div>
             );
           })}

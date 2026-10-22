@@ -42,7 +42,16 @@ try {
   page.on("pageerror", (e) => errors.push(e.message));
   const address = server.address();
   const base = `http://127.0.0.1:${address.port}${prefix}`;
+  const weaponRequest = page.waitForResponse(
+    (r) => r.url() === base + "weapon-skills.json",
+  );
   await page.goto(base);
+  const weaponResponse = await weaponRequest;
+  assert.equal(weaponResponse.status(), 200);
+  const weaponSnapshot = await weaponResponse.json();
+  assert.equal(weaponSnapshot.schema, 1);
+  assert.ok(weaponSnapshot.skills.some((s) => s.id === 72076));
+  await page.locator(".weapon-skills-bar").waitFor();
   await page.getByRole("heading", { name: "装备 GEAR" }).waitFor();
   await page.locator('[data-value="Power"]').waitFor();
   assert.equal(

@@ -27,6 +27,142 @@ const data: AttributeData = JSON.parse(
 );
 const calc = (build: Build, set: 1 | 2 = 1, preview = emptyPreview()) =>
   calculateAttributes(build, catalog, data, set, preview);
+
+test("生命、动力、赏金与群星按0–25层预览，九项属性来源相符", () => {
+  for (const [id, values] of [
+    [24582, { Healing: 250 }],
+    [49457, { Toughness: 125 }],
+    [81045, { BoonDuration: 225 }],
+    [86170, Object.fromEntries(primaryKeys.map((k) => [k, 50]))],
+  ] as const) {
+    const b = createBuild();
+    b.equipment.weapon1.weapon = "Staff";
+    const base = calc(b);
+    b.equipment.weapon1.sigils = [id, null];
+    assert.deepEqual(calc(b).primary, base.primary);
+    for (const count of [25, 30, 25.9]) {
+      const r = calc(b, 1, {
+        ...emptyPreview(),
+        stacks: { [`sigil-${id}`]: count },
+      });
+      for (const key of primaryKeys) {
+        assert.equal(
+          r.primary[key] - base.primary[key],
+          (values as Record<string, number>)[key] || 0,
+        );
+        assert.equal(
+          r.primarySources[key].reduce((n, s) => n + s.amount, 0),
+          r.primary[key],
+        );
+      }
+    }
+    for (const count of [-1, NaN, Infinity])
+      assert.deepEqual(
+        calc(b, 1, { ...emptyPreview(), stacks: { [`sigil-${id}`]: count } })
+          .primary,
+        base.primary,
+      );
+  }
+});
+
+test("新增法印叠层和亲善共享互斥、同类去重与有效武器组规则", () => {
+  const b = createBuild();
+  b.equipment.weapon1.weapon = "Staff";
+  b.equipment.weapon1.sigils = [24582, 24584];
+  const p = {
+    ...emptyPreview(),
+    stacks: { "sigil-24582": 25, "sigil-24584": 25 },
+  };
+  const original = structuredClone(b),
+    savedPreview = structuredClone(p);
+  const r = calc(b, 1, p);
+  assert.deepEqual(b, original);
+  assert.equal(r.primary.Healing, 250);
+  assert.equal(r.outgoingHealingBonus, 0);
+  assert.ok(r.warnings.some((w) => w.includes("只能启用一种")));
+  b.equipment.weapon1.sigils = [24584, 24582];
+  assert.equal(calc(b, 1, p).outgoingHealingBonus, 12.5);
+  assert.equal(calc(b, 1, p).primary.Healing, 0);
+  b.equipment.weapon1.sigils = [24582, 24582];
+  assert.equal(calc(b, 1, p).primary.Healing, 250);
+  Object.assign(b.equipment.weapon2, {
+    weapon: "Staff",
+    sigils: [24583, null],
+  });
+  assert.equal(calc(b, 2, p).primary.Healing, 0);
+  assert.equal(calc(b, 2, p).conditions.Torment, 20);
+  assert.deepEqual(p, savedPreview);
+});
+
+test("恶魔只增加折磨时长；重复不叠加，不改症状效果和其他症状", () => {
+  const b = createBuild();
+  b.equipment.weapon1.weapon = "Staff";
+  b.equipment.weapon1.sigils = [24583, 24583];
+  const r = calc(b);
+  assert.equal(r.conditions.Torment, 20);
+  assert.equal(r.primary.ConditionDuration, 0);
+  assert.equal(r.conditions.Bleeding, 0);
+  assert.equal(r.durationSources.Torment.length, 1);
+});
+
+test("转移与亲善汇总盟友治疗，不增加Healing Power；生命叠层联动保养油", () => {
+  const b = createBuild();
+  b.equipment.weapon1.weapon = "Staff";
+  b.equipment.weapon1.sigils = [74326, 24584];
+  b.food = 91690;
+  b.utility = 99842;
+  const p = { ...emptyPreview(), stacks: { "sigil-24584": 25 } };
+  const r = calc(b, 1, p);
+  assert.ok(Math.abs(r.outgoingHealingBonus - 33.66) < 1e-8);
+  assert.equal(r.primary.Healing, 100);
+  assert.ok(Math.abs(r.consumableHealingBonus - 11.16) < 1e-8);
+  assert.equal(
+    r.outgoingHealingSources.reduce((n, s) => n + s.amount, 0),
+    r.outgoingHealingBonus,
+  );
+  b.equipment.weapon1.sigils = [24582, null];
+  const life = calc(b, 1, { ...emptyPreview(), stacks: { "sigil-24582": 25 } });
+  assert.equal(life.primary.Healing, 350);
+  assert.ok(Math.abs(life.outgoingHealingBonus - 12.66) < 1e-8);
+  b.equipment.weapon1.sigils = [74326, 74326];
+  assert.ok(Math.abs(calc(b).outgoingHealingBonus - 21.16) < 1e-8);
+});
+
+test("隔离和远见仅在手动触发预览中生效，失去对应武器后忽略残留标记", () => {
+  const b = createBuild();
+  b.equipment.weapon1.weapon = "Staff";
+  b.equipment.weapon1.sigils = [84505, 24600];
+  const p = {
+    ...emptyPreview(),
+    flags: { "sigil-severance": true, "sigil-vision": true },
+  };
+  const hash = encodeShare(b),
+    saved = structuredClone(b);
+  assert.equal(calc(b).primary.Precision, 1000);
+  assert.equal(calc(b).guaranteedCritical, false);
+  const r = calc(b, 1, p);
+  assert.deepEqual(b, saved);
+  assert.equal(encodeShare(b), hash);
+  assert.equal(r.primary.Precision, 1250);
+  assert.equal(r.primary.CritDamage, 250);
+  assert.equal(r.guaranteedCritical, true);
+  assert.ok(Math.abs(r.criticalChance - (5 + 250 / 21)) < 1e-8);
+  Object.assign(b.equipment.weapon2, { weapon: "Staff", sigils: [null, null] });
+  const second = calc(b, 2, p);
+  assert.equal(second.primary.Precision, 1000);
+  assert.equal(second.guaranteedCritical, false);
+});
+
+test("瘫痪法印按当前组去重；冲击不会变成蔑视或威力加成", () => {
+  const b = createBuild();
+  b.equipment.weapon1.weapon = "Staff";
+  b.equipment.weapon1.sigils = [24639, 24639];
+  assert.equal(calc(b).controlDurationBonus, 30);
+  assert.equal(calc(b).controlDurationSources.length, 1);
+  b.equipment.weapon1.sigils = [24868, null];
+  assert.equal(calc(b).controlDurationBonus, 0);
+  assert.equal(calc(b).primary.Power, 1000);
+});
 function berserker() {
   const b = createBuild();
   // Legacy armor ID on trinkets must resolve to the trinket-specific prefix.

@@ -110,6 +110,8 @@ export function BuildDescription({
     new Set(activeTraits(build, catalog).map((t) => t.id)),
     `${build.id}:${build.profession}:${mode}`,
     result?.primary.Healing,
+    result?.controlDurationBonus,
+    result || {},
   );
   const text = build.description || "";
   const query =

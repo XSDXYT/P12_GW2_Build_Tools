@@ -199,6 +199,7 @@ export type Entity = {
   [key: string]: any;
 };
 export type Catalog = {
+  weaponSkillsReady?: boolean;
   revision: string;
   professions: any[];
   specs: Entity[];
@@ -276,6 +277,7 @@ export function issues(b: Build, c: Catalog, _complete = false): string[] {
     const s = c.skills.find((s) => s.id === id);
     if (
       !s ||
+      s.detailOnly ||
       !s.professions?.includes(b.profession) ||
       s.type !== kinds[i] ||
       (s.specialization && !chosen.includes(s.specialization))

@@ -9,8 +9,18 @@ import {
 } from "./game-rules";
 import { pveSources, pveTrait } from "./pve-traits";
 import { wikiDetails } from "./wiki-details";
+import { projectDurations } from "./effect-durations";
+import { weaponDetails } from "./weapon-details";
 
 export type DetailKind = "trait" | "skill" | "item";
+export type DetailContext = {
+  healingPower?: number;
+  controlDurationBonus?: number;
+  boonDuration?: number;
+  conditionDuration?: number;
+  boons?: Record<string, number>;
+  conditions?: Record<string, number>;
+};
 export type GameFact = {
   type?: string;
   text?: string;
@@ -46,6 +56,8 @@ export type DetailFact = {
   trigger?: string;
   healing?: { base: number; coefficient: number };
   scaling?: { value: number; healingPower: number; formula: string };
+  equipmentScaling?: { base: string; bonus: number; source: string };
+  durationScaling?: { base: number; bonus: number; effect: string };
 };
 export type GameDetails = {
   description: string;
@@ -59,6 +71,7 @@ export type GameDetails = {
   sourceUrl?: string;
   selectedTraitNotes?: { id: number; name: string; description: string }[];
   branches?: { label: string; facts: DetailFact[]; sourceUrl: string }[];
+  durationScalingExcluded?: boolean;
 };
 export function gameText(value = "") {
   return value
@@ -387,9 +400,21 @@ export function gameDetails(
   entity: Entity,
   kind: DetailKind,
   selectedTraits: ReadonlySet<number>,
-  context: { healingPower?: number } = {},
+  context: DetailContext = {},
+): GameDetails {
+  return projectDurations(
+    baseGameDetails(entity, kind, selectedTraits, context),
+    context,
+  );
+}
+function baseGameDetails(
+  entity: Entity,
+  kind: DetailKind,
+  selectedTraits: ReadonlySet<number>,
+  context: DetailContext,
 ): GameDetails {
   if (kind === "item") return itemDetails(entity);
+  const weapon = kind === "skill" ? weaponDetails(entity, context) : undefined;
   // overrides addresses the ORIGINAL facts array, before filtering, grouping, or appending.
   const base: { fact: GameFact; modified: boolean }[] = (
     entity.facts || []
@@ -408,6 +433,8 @@ export function gameDetails(
   const profile =
     kind === "trait" ? reviewedTraitProfiles[entity.id] : undefined;
   const wiki = wikiDetails(entity.id, kind, selectedTraits, context);
+  if (weapon && !wiki?.reviewed)
+    return { ...weapon, description: gameText(entity.description) };
   // Wiki owns numeric truth. Preserve independently reviewed recipient semantics
   // only when their modeled values still agree; conflicts use Wiki directly.
   if (
@@ -477,6 +504,9 @@ export function gameDetails(
     unresolved,
     reviewed: false,
     sources: [],
+    durationScalingExcluded: entity.categories?.some((c: string) =>
+      ["Clone", "Phantasm", "Minion"].includes(c),
+    ),
   };
 }
 

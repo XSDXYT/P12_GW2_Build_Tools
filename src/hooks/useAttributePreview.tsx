@@ -12,12 +12,16 @@ import {
   type AttributeData,
 } from "../attributes";
 import type { Build, Catalog } from "../domain";
+import type { Attunement } from "../weapon-skills";
 
 function usePreview(build: Build, catalog: Catalog) {
   const [data, setData] = useState<AttributeData | null>(null);
   const [error, setError] = useState(false);
   const [storedPreview, setPreview] = useState(emptyPreview);
   const [storedWeaponSet, onWeaponSet] = useState<1 | 2>(1);
+  const [attunement, onAttunement] = useState<Attunement>("Fire");
+  const [secondaryAttunement, onSecondaryAttunement] =
+    useState<Attunement>("Fire");
   const [owner, setOwner] = useState(`${build.id}:${build.profession}`);
   const key = `${build.id}:${build.profession}`;
   // Reset before rendering another build so its tooltip cannot use stale conditions.
@@ -25,9 +29,23 @@ function usePreview(build: Build, catalog: Catalog) {
     setOwner(key);
     setPreview(emptyPreview());
     onWeaponSet(1);
+    onAttunement("Fire");
+    onSecondaryAttunement("Fire");
   }
-  const preview = owner === key ? storedPreview : emptyPreview();
-  const weaponSet =
+  const preview = useMemo(() => {
+    const value = owner === key ? storedPreview : emptyPreview();
+    return build.profession === "Elementalist"
+      ? {
+          ...value,
+          flags: {
+            ...value.flags,
+            fire: attunement === "Fire",
+            air: attunement === "Air",
+          },
+        }
+      : value;
+  }, [owner, key, storedPreview, build.profession, attunement]);
+  const weaponSet: 1 | 2 =
     owner === key && storedWeaponSet === 2 && build.equipment.weapon2.weapon
       ? 2
       : 1;
@@ -71,6 +89,10 @@ function usePreview(build: Build, catalog: Catalog) {
     setPreview,
     weaponSet,
     onWeaponSet,
+    attunement,
+    onAttunement,
+    secondaryAttunement,
+    onSecondaryAttunement,
     baseline,
     result,
   };

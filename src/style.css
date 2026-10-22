@@ -741,6 +741,61 @@ h2 small {
   border-color: #bb94cb;
   box-shadow: 0 0 0 1px #b78dcc22;
 }
+.weapon-skills-bar {
+  margin: 12px;
+  padding: 12px;
+  border: 1px solid #443c52;
+  border-radius: 5px;
+  background: #211f2b;
+}
+.weapon-skills-heading,
+.attunement-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.weapon-skills-heading h3 {
+  color: #cfbbdc;
+}
+.weapon-skills-heading label,
+.attunement-controls label {
+  font-size: 12px;
+  color: #c0b7ce;
+}
+.weapon-skills-heading select,
+.attunement-controls select {
+  padding: 3px 5px;
+}
+.attunement-controls {
+  justify-content: flex-start;
+}
+.attunement-controls small,
+.weapon-skills-note {
+  font-size: 11px;
+  color: #a69ab4;
+}
+.weapon-skills-note {
+  margin: 12px 0 0;
+  line-height: 1.6;
+}
+.skill-followup {
+  margin-top: 10px;
+  padding-top: 6px;
+  border-top: 1px solid #5e4c7144;
+}
+.skill-list .skill-stage-label {
+  display: block;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #ac91bc;
+  margin-bottom: 5px;
+}
+.weapon-skill-list {
+  align-items: flex-start;
+}
 .skill-list small {
   font-size: 9px;
   display: block;

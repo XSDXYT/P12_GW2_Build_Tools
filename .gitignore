@@ -5,6 +5,7 @@ playwright-report/
 test-results/
 data/wiki-cache/
 data/wiki-consumable-cache/
+data/weapon-skill-cache/
 docs/
 *.md
 .env

@@ -11,7 +11,12 @@ import {
 } from "react";
 import { createPortal } from "react-dom";
 import type { Entity } from "../domain";
-import { gameDetails, gameText, type DetailKind } from "../game-details";
+import {
+  gameDetails,
+  gameText,
+  type DetailKind,
+  type DetailContext,
+} from "../game-details";
 
 type OpenDetail = {
   entity: Entity;
@@ -24,6 +29,8 @@ export function useGameTooltip(
   selectedTraits: ReadonlySet<number>,
   resetKey: string,
   healingPower?: number,
+  controlDurationBonus?: number,
+  durations: DetailContext = {},
 ) {
   const id = useId();
   const [current, setCurrent] = useState<OpenDetail | null>(null);
@@ -171,7 +178,7 @@ export function useGameTooltip(
       window.removeEventListener("resize", place);
       window.removeEventListener("scroll", scroll, true);
     };
-  }, [current]);
+  }, [current, healingPower, controlDurationBonus, durations]);
 
   function bind(entity: Entity | undefined, kind: DetailKind) {
     if (!entity) return {};
@@ -243,9 +250,26 @@ export function useGameTooltip(
   const model = current
     ? gameDetails(current.entity, current.kind, selectedTraits, {
         healingPower,
+        controlDurationBonus,
+        ...durations,
       })
     : null;
   const facts = model?.facts || [];
+  const projectedFacts = [
+    ...facts,
+    ...(model?.branches || []).flatMap((b) => b.facts),
+  ];
+  const projectionNotes = [
+    projectedFacts.some((f) => f.durationScaling)
+      ? "增益与症状时长已计入当前配装（加成上限 100%）。"
+      : "",
+    projectedFacts.some((f) => f.scaling)
+      ? "治疗及屏障公式已计入当前治疗效果；额外治疗倍率未计算。"
+      : "",
+    projectedFacts.some((f) => f.equipmentScaling)
+      ? "控制时长与蔑视伤害已计入瘫痪法印。"
+      : "",
+  ].filter(Boolean);
   const content =
     current &&
     createPortal(
@@ -305,7 +329,11 @@ export function useGameTooltip(
             {facts.map((fact, index) => (
               <li
                 key={index}
-                className={fact.modified ? "fact-modified" : ""}
+                className={
+                  fact.modified || fact.equipmentScaling || fact.durationScaling
+                    ? "fact-modified"
+                    : ""
+                }
                 data-effect={fact.effectId}
                 data-recipient={fact.audience?.kind}
               >
@@ -327,6 +355,8 @@ export function useGameTooltip(
                       </>
                     )}
                     {fact.modified && <em>特性修正</em>}
+                    {fact.equipmentScaling && <em>法印修正</em>}
+                    {fact.durationScaling && <em>时长修正</em>}
                   </span>
                   {(fact.recipient || fact.trigger) && (
                     <small className="fact-recipient">
@@ -336,6 +366,20 @@ export function useGameTooltip(
                     </small>
                   )}
                   {fact.description && <small>{fact.description}</small>}
+                  {fact.durationScaling && (
+                    <small>
+                      基础 {fact.durationScaling.base} 秒 × (1 +{" "}
+                      {Number(fact.durationScaling.bonus.toFixed(2))}%) ·{" "}
+                      {fact.durationScaling.effect}
+                    </small>
+                  )}
+                  {fact.equipmentScaling && (
+                    <small>
+                      基础 {fact.equipmentScaling.base} × (1 +{" "}
+                      {fact.equipmentScaling.bonus}%) ·{" "}
+                      {fact.equipmentScaling.source}
+                    </small>
+                  )}
                   {fact.scaling && (
                     <small>
                       {fact.scaling.formula}（当前治疗效果{" "}
@@ -362,7 +406,13 @@ export function useGameTooltip(
                   {branch.facts.map((fact, row) => (
                     <li
                       key={row}
-                      className={fact.modified ? "fact-modified" : ""}
+                      className={
+                        fact.modified ||
+                        fact.equipmentScaling ||
+                        fact.durationScaling
+                          ? "fact-modified"
+                          : ""
+                      }
                     >
                       <div>
                         <span>
@@ -373,10 +423,19 @@ export function useGameTooltip(
                             </>
                           )}
                           {fact.modified && <em>特性修正</em>}
+                          {fact.equipmentScaling && <em>法印修正</em>}
+                          {fact.durationScaling && <em>时长修正</em>}
                         </span>
                         {fact.trigger && (
                           <small className="fact-recipient">
                             {fact.trigger}
+                          </small>
+                        )}
+                        {fact.durationScaling && (
+                          <small>
+                            基础 {fact.durationScaling.base} 秒 × (1 +{" "}
+                            {Number(fact.durationScaling.bonus.toFixed(2))}%) ·{" "}
+                            {fact.durationScaling.effect}
                           </small>
                         )}
                         {fact.scaling && (
@@ -384,6 +443,13 @@ export function useGameTooltip(
                             {fact.scaling.formula}（当前治疗效果{" "}
                             {fact.scaling.healingPower.toLocaleString("en-US")}
                             ）
+                          </small>
+                        )}
+                        {fact.equipmentScaling && (
+                          <small>
+                            基础 {fact.equipmentScaling.base} × (1 +{" "}
+                            {fact.equipmentScaling.bonus}%) ·{" "}
+                            {fact.equipmentScaling.source}
                           </small>
                         )}
                       </div>
@@ -404,11 +470,8 @@ export function useGameTooltip(
         {!!(facts.length || model?.branches?.length) &&
           model?.mode === "pve" && (
             <p className="game-tooltip-note">
-              {[
-                ...facts,
-                ...(model.branches || []).flatMap((b) => b.facts),
-              ].some((f) => f.scaling)
-                ? "治疗及屏障公式已计入当前治疗效果；额外治疗倍率未计算。其他效果显示基础值。"
+              {projectionNotes.length
+                ? projectionNotes.join("") + "其他效果显示基础值。"
                 : "基础值，未计入配装加成。"}
             </p>
           )}

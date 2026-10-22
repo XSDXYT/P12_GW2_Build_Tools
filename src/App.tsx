@@ -11,6 +11,7 @@ import { AttributePreviewProvider } from "./hooks/useAttributePreview";
 import { appVersion, releaseCommit } from "./release";
 import { BuildFolder } from "./components/BuildFolder";
 import { PublishedLibrary } from "./components/PublishedLibrary";
+import { mergeSkillCatalog } from "./weapon-skills";
 export function App() {
   const work = useWorkspace();
   const [catalog, setCatalog] = useState<Catalog | null>(null),
@@ -20,15 +21,37 @@ export function App() {
     ),
     [libraryOpen, setLibraryOpen] = useState(false),
     [publishedOpen, setPublishedOpen] = useState(false);
+  const [weaponError, setWeaponError] = useState(false);
   const file = useRef<HTMLInputElement>(null);
   async function load() {
     setLoading(true);
+    setWeaponError(false);
     try {
       const response = await fetch("./catalog.json", { cache: "no-store" });
       if (!response.ok) throw Error();
       const data = await response.json();
       if (!Array.isArray(data.professions) || !data.revision) throw Error();
       setCatalog(data);
+      // Independent snapshot: failure leaves the editor usable and can be retried.
+      try {
+        const weapons = await fetch("./weapon-skills.json", {
+          cache: "no-store",
+        });
+        if (!weapons.ok) throw Error();
+        const snapshot = await weapons.json();
+        if (
+          snapshot.schema !== 1 ||
+          !Array.isArray(snapshot.skills) ||
+          !snapshot.skills.length
+        )
+          throw Error();
+        setCatalog(mergeSkillCatalog(data, snapshot.skills));
+      } catch {
+        setWeaponError(true);
+        work.setMessage(
+          "武器技能资料加载失败，可点击重新加载；当前配装仍保留。",
+        );
+      }
     } catch {
       work.setMessage("游戏资料加载失败。请重试，当前配装仍保留。");
     } finally {
@@ -210,6 +233,14 @@ export function App() {
               ))}
             </ul>
           </details>
+        )}
+        {weaponError && (
+          <div className="notice">
+            <span>武器技能资料暂不可用。</span>
+            <button onClick={() => void load()} disabled={loading}>
+              重新加载武器技能
+            </button>
+          </div>
         )}
         {work.shareLink && (
           <div className="share">

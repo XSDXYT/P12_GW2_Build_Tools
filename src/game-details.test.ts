@@ -6,6 +6,7 @@ import {
   gameDetails,
   gameText,
   reviewedProfileMatchesWiki,
+  type GameFact,
 } from "./game-details.ts";
 import { reviewedTraitProfiles } from "./game-rules.ts";
 import type { Catalog, Entity } from "./domain.ts";
@@ -18,6 +19,142 @@ import {
   type AttributeData,
 } from "./attributes.ts";
 import { createBuild } from "./domain.ts";
+import { projectSigilControl, sigilControlRules } from "./sigil-control.ts";
+
+test("显式29项瘫痪规则匹配Wiki身份与版本，逐项投影并保留基础值", () => {
+  for (const [id, rule] of Object.entries(sigilControlRules)) {
+    const entry = wikiSnapshot.entries.skills[Number(id)];
+    assert.equal(entry.title, rule.title);
+    assert.equal(entry.revision, rule.revision);
+    assert.equal(entry.identityVerified, true);
+    const before = structuredClone(entry);
+    const skill = catalog.skills.find((s) => s.id === Number(id)) || {
+      id: Number(id),
+      name: rule.title,
+    };
+    const detail = gameDetails(skill, "skill", new Set(), {
+      controlDurationBonus: 30,
+    });
+    const fact = detail.facts.find((f) => f.label === "蔑视伤害")!;
+    assert.equal(Number(fact.detail), rule.defiance * 1.3);
+    assert.equal(fact.equipmentScaling?.base, String(rule.defiance));
+    if (rule.control)
+      assert.equal(
+        detail.facts.find((f) => f.label === rule.control!.label)?.detail,
+        `${Number((rule.control.seconds * 1.3).toFixed(6))} 秒`,
+      );
+    assert.deepEqual(entry, before);
+  }
+  const humility = gameDetails(
+    catalog.skills.find((s) => s.id === 29519)!,
+    "skill",
+    new Set(),
+    { controlDurationBonus: 30 },
+  );
+  assert.equal(
+    humility.facts.find((f) => f.label === "蔑视伤害")?.detail,
+    "455",
+  );
+  assert.equal(
+    humility.facts.find((f) => f.label === "持续时间")?.detail,
+    "6 秒",
+  );
+});
+
+test("石蜥毒液石化与单次蔑视受瘫痪影响，毒液有效期不延长且Wiki优先于API", () => {
+  const skill = catalog.skills.find((s) => s.id === 13132)!;
+  const original = structuredClone(skill);
+  const b = createBuild("Thief");
+  Object.assign(b.equipment.weapon1, {
+    weapon: "Staff",
+    sigils: [24639, 24639],
+  });
+  Object.assign(b.equipment.weapon2, { weapon: "Staff", sigils: [null, null] });
+  const data: AttributeData = JSON.parse(
+    readFileSync("public/attribute-data.json", "utf8"),
+  );
+  const bonus = calculateAttributes(b, catalog, data).controlDurationBonus;
+  const facts = gameDetails(skill, "skill", new Set(), {
+    controlDurationBonus: bonus,
+  }).facts;
+  assert.equal(
+    facts.find((f) => f.label === "石化持续时间")?.detail,
+    "1.95 秒",
+  );
+  assert.equal(facts.find((f) => f.label === "蔑视伤害")?.detail, "195");
+  assert.equal(facts.find((f) => f.label === "毒液持续时间")?.detail, "30 秒");
+  assert.equal(facts.find((f) => f.label === "石蜥毒液")?.detail, "30 秒");
+  assert.equal(facts.find((f) => f.label === "目标数")?.detail, "5");
+  assert.equal(facts.find((f) => f.label === "冷却时间")?.detail, "40 秒");
+  assert.equal(
+    facts.find((f) => f.label === "石化持续时间")?.equipmentScaling?.base,
+    "1.5 秒",
+  );
+  const changedAPI = {
+    ...skill,
+    facts: skill.facts?.map((f: GameFact) => ({ ...f, duration: 99 })),
+  };
+  assert.deepEqual(
+    gameDetails(changedAPI, "skill", new Set(), { controlDurationBonus: bonus })
+      .facts,
+    facts,
+  );
+  const off = calculateAttributes(b, catalog, data, 2).controlDurationBonus;
+  const base = gameDetails(skill, "skill", new Set(), {
+    controlDurationBonus: off,
+  }).facts;
+  assert.equal(base.find((f) => f.label === "石化持续时间")?.detail, "1.5 秒");
+  assert.equal(base.find((f) => f.label === "蔑视伤害")?.detail, "150");
+  assert.deepEqual(skill, original);
+});
+
+test("瘫痪不重算未知短时、多段、击退/拉拽，身份或基础值变化时保留原行", () => {
+  for (const id of [56873, 30568, 44165, 41220, 10238]) {
+    const skill = catalog.skills.find((s) => s.id === id);
+    if (!skill) continue;
+    assert.deepEqual(
+      gameDetails(skill, "skill", new Set(), { controlDurationBonus: 30 })
+        .facts,
+      gameDetails(skill, "skill", new Set()).facts,
+    );
+  }
+  const entry = wikiSnapshot.entries.skills[10232];
+  const rows = entry.rows.map((r) => ({ ...r, modified: false }));
+  for (const bonus of [undefined, 0, -1, Infinity, NaN])
+    assert.deepEqual(projectSigilControl(rows, 10232, entry, bonus), rows);
+  assert.deepEqual(
+    projectSigilControl(
+      rows,
+      10232,
+      { ...entry, revision: entry.revision + 1 },
+      30,
+    ),
+    rows,
+  );
+  assert.deepEqual(
+    projectSigilControl(rows, 10232, { ...entry, identityVerified: false }, 30),
+    rows,
+  );
+  const stale = rows.map((r) =>
+    r.label === "昏迷" ? { ...r, detail: "3 秒" } : r,
+  );
+  assert.deepEqual(projectSigilControl(stale, 10232, entry, 30), stale);
+  const modified = rows.map((r) =>
+    r.label === "昏迷" ? { ...r, modified: true } : r,
+  );
+  assert.deepEqual(projectSigilControl(modified, 10232, entry, 30), modified);
+});
+
+test("支配纹章瘫痪投影与模糊铭文失真共存，纯计算不修改分享", () => {
+  const skill = catalog.skills.find((s) => s.id === 10232)!;
+  const facts = gameDetails(skill, "skill", new Set([752]), {
+    healingPower: 1000,
+    controlDurationBonus: 30,
+  }).facts;
+  assert.equal(facts.find((f) => f.label === "昏迷")?.detail, "2.6 秒");
+  assert.equal(facts.find((f) => f.label === "蔑视伤害")?.detail, "260");
+  assert.ok(facts.some((f) => f.label === "失真" && f.modified));
+});
 const catalog: Catalog = JSON.parse(
   readFileSync("public/catalog.json", "utf8"),
 );

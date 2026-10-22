@@ -54,6 +54,20 @@ export const conditionLabels: Record<string, string> = {
   Vulnerability: "易伤",
   Blind: "目盲",
 };
+export const boonLabels: Record<string, string> = {
+  Might: "威能",
+  Fury: "激怒",
+  Regeneration: "再生",
+  Protection: "保护",
+  Aegis: "圣盾",
+  Stability: "稳固",
+  Swiftness: "迅捷",
+  Vigor: "活力",
+  Quickness: "急速",
+  Alacrity: "敏捷",
+  Resistance: "抗性",
+  Resolution: "决心",
+};
 export type AttributeData = {
   revision: string;
   source: string;
@@ -100,9 +114,15 @@ export type Result = {
   criticalSources: Contribution[];
   consumableHealingBonus: number;
   consumableHealingSources: Contribution[];
+  outgoingHealingBonus: number;
+  outgoingHealingSources: Contribution[];
+  controlDurationBonus: number;
+  controlDurationSources: Contribution[];
+  guaranteedCritical: boolean;
   conditionDuration: number;
   boonDuration: number;
   conditions: Record<string, number>;
+  boons: Record<string, number>;
   durationSources: Record<string, Contribution[]>;
   warnings: string[];
   controls: PreviewControl[];
@@ -139,7 +159,7 @@ type Effect = {
   conversions: Omit<Conversion, "label">[];
   critical: number;
   warnings: string[];
-  stack?: { target: Attribute; amount: number };
+  stack?: { target: Attribute | "All" | "OutgoingHealing"; amount: number };
   outgoingHealing?: {
     flat: number;
     scaling: { from: Attribute; percent: number }[];
@@ -194,9 +214,13 @@ export function parseAttributeEffect(text: string): Effect {
         durationName = alternate[1];
         durationValue = Number(alternate[2]);
       } else {
-        const sigil = line.match(
-          /^Increase Inflicted (.+?) Duration:\s*(\d+(?:\.\d+)?)%$/i,
-        );
+        const sigil =
+          line.match(
+            /^Increase Inflicted (.+?) Duration:\s*(\d+(?:\.\d+)?)%$/i,
+          ) ||
+          line.match(
+            /^Increase the duration of inflicted (.+?) by (\d+(?:\.\d+)?)%$/i,
+          );
         if (sigil) {
           durationName = sigil[1];
           durationValue = Number(sigil[2]);
@@ -218,7 +242,10 @@ export function parseAttributeEffect(text: string): Effect {
           ? "Condition"
           : name === "boon"
             ? "Boon"
-            : Object.keys(conditionLabels).find(
+            : [
+                ...Object.keys(conditionLabels),
+                ...Object.keys(boonLabels),
+              ].find(
                 (c) =>
                   c.toLowerCase() === name ||
                   (name === "poisoned" && c === "Poison"),
@@ -233,9 +260,11 @@ export function parseAttributeEffect(text: string): Effect {
       result.critical += Number(match[1]);
       continue;
     }
-    const outgoing = line.match(
-      /^\+?(\d+(?:\.\d+)?)% (?:Outgoing Healing|Healing Effectiveness|Healing to Other Allies)$/i,
-    );
+    const outgoing =
+      line.match(
+        /^\+?(\d+(?:\.\d+)?)% (?:Outgoing Healing|Healing Effectiveness|Healing to Other Allies)$/i,
+      ) ||
+      line.match(/^Healing to other allies is increased by (\d+(?:\.\d+)?)%$/i);
     const healingConversion = line.match(
       /^Gain (\d+(?:\.\d+)?)% Increased Healing to Other Allies for Every 100 (Healing Power|Concentration)$/i,
     );
@@ -250,12 +279,25 @@ export function parseAttributeEffect(text: string): Effect {
       continue;
     }
     if (/(?:charge|stack)/i.test(line)) {
+      const healingCharge = line.match(
+        /^Gain a charge that grants a (\d+(?:\.\d+)?)% increase in healing to other allies each time you kill a foe/i,
+      );
+      if (healingCharge) {
+        result.stack = {
+          target: "OutgoingHealing",
+          amount: Number(healingCharge[1]),
+        };
+        continue;
+      }
       const charge = line.match(
-        /\+(\d+(?:\.\d+)?) (Power|Precision|Ferocity|Condition Damage|Healing Power)/i,
+        /^Gain a charge of \+(\d+(?:\.\d+)?) (?:to )?(All Stats|Power|Precision|Ferocity|Condition Damage|Healing Power|Healing|Toughness|Concentration) each time you kill a foe/i,
       );
       if (charge) {
         result.stack = {
-          target: aliases[charge[2].toLowerCase()],
+          target:
+            charge[2].toLowerCase() === "all stats"
+              ? "All"
+              : aliases[charge[2].toLowerCase()],
           amount: Number(charge[1]),
         };
         continue;
@@ -420,6 +462,9 @@ export function calculateAttributes(
   const conversions: Conversion[] = [];
   const deferred: { key: Attribute; amount: number; label: string }[] = [];
   const criticalSources: Contribution[] = [];
+  const sigilHealingSources: Contribution[] = [];
+  const controlDurationSources: Contribution[] = [];
+  let guaranteedCritical = false;
   const healingEffects: {
     effect: NonNullable<Effect["outgoingHealing"]>;
     label: string;
@@ -503,6 +548,8 @@ export function calculateAttributes(
       criticalSources.push({ label, amount: effect.critical });
     if (consumable && effect.outgoingHealing)
       healingEffects.push({ effect: effect.outgoingHealing, label });
+    else if (id && effect.outgoingHealing?.flat)
+      sigilHealingSources.push({ label, amount: effect.outgoingHealing.flat });
     for (const c of effect.conversions) conversions.push({ ...c, label });
     for (const warning of effect.warnings)
       warnings.push(`${label}：${warning}`);
@@ -511,19 +558,36 @@ export function calculateAttributes(
       controls.push({
         key,
         label: `${label}层数`,
-        description: `每层增加 ${effect.stack.amount} ${attributeLabels[effect.stack.target]}`,
+        description:
+          effect.stack.target === "OutgoingHealing"
+            ? `每层增加 ${effect.stack.amount}% 对盟友治疗；与其他叠层法印互斥`
+            : `每层增加 ${effect.stack.amount} ${effect.stack.target === "All" ? "九项属性" : attributeLabels[effect.stack.target]}；与其他叠层法印互斥`,
         max: 25,
       });
       const stacks = Math.max(
         0,
-        Math.min(25, Math.trunc(preview.stacks[key] || 0)),
+        Math.min(
+          25,
+          Math.trunc(
+            Number.isFinite(preview.stacks[key]) ? preview.stacks[key] : 0,
+          ),
+        ),
       );
       if (stacks && activeStackingSigil && activeStackingSigil !== key) {
         warnings.push(`${label}：只能启用一种属性叠层法印，已忽略此法印层数`);
         return;
       }
       if (stacks) activeStackingSigil = key;
-      add(effect.stack.target, stacks * effect.stack.amount, label);
+      if (effect.stack.target === "All") {
+        for (const target of primaryKeys)
+          add(target, stacks * effect.stack.amount, label);
+      } else if (effect.stack.target === "OutgoingHealing") {
+        if (stacks)
+          sigilHealingSources.push({
+            label: `${label} · ${stacks}层`,
+            amount: stacks * effect.stack.amount,
+          });
+      } else add(effect.stack.target, stacks * effect.stack.amount, label);
     }
   }
   const runeCounts = new Map<number, number>();
@@ -564,7 +628,29 @@ export function calculateAttributes(
       warnings.push(`${item?.name || "法印 #" + id}效果资料缺失`);
       continue;
     }
-    applyEffect(parseAttributeEffect(entry.text), item?.name || entry.name, id);
+    const label = item?.name || entry.name;
+    // Explicit 80-level PvE effects; these are independent of combat timing.
+    if (id === 24639 && entry.name === "Superior Sigil of Paralyzation") {
+      controlDurationSources.push({ label, amount: 30 });
+    } else if (id === 84505 && entry.name === "Superior Sigil of Severance") {
+      controls.push({
+        key: "sigil-severance",
+        label: "隔离法印效果生效中",
+        description: "打断后4秒：+250精准、+250暴击效果；不模拟触发与覆盖率",
+      });
+      if (preview.flags["sigil-severance"]) {
+        add("Precision", 250, `${label} · 触发预览`);
+        add("CritDamage", 250, `${label} · 触发预览`);
+      }
+    } else if (id === 24600 && entry.name === "Superior Sigil of Vision") {
+      controls.push({
+        key: "sigil-vision",
+        label: "远见法印效果生效中",
+        description:
+          "换武器后3秒：可暴击攻击必定暴击；不改变精准或基础暴击率，不模拟触发与覆盖率",
+      });
+      guaranteedCritical = !!preview.flags["sigil-vision"];
+    } else applyEffect(parseAttributeEffect(entry.text), label, id);
   }
   for (const key of ["food", "utility"] as const) {
     const id = build[key];
@@ -847,7 +933,22 @@ export function calculateAttributes(
       })),
     ],
   );
+  const outgoingHealingSources = [
+    ...consumableHealingSources,
+    ...sigilHealingSources,
+  ];
   return {
+    outgoingHealingBonus: outgoingHealingSources.reduce(
+      (sum, source) => sum + source.amount,
+      0,
+    ),
+    outgoingHealingSources,
+    controlDurationBonus: Math.min(
+      100,
+      controlDurationSources.reduce((sum, source) => sum + source.amount, 0),
+    ),
+    controlDurationSources,
+    guaranteedCritical,
     consumableHealingBonus: consumableHealingSources.reduce(
       (sum, source) => sum + source.amount,
       0,
@@ -860,6 +961,9 @@ export function calculateAttributes(
     criticalSources,
     conditionDuration: generic,
     boonDuration: boon,
+    boons: Object.fromEntries(
+      Object.keys(boonLabels).map((key) => [key, boon + (durations[key] || 0)]),
+    ),
     conditions: Object.fromEntries(
       Object.keys(conditionLabels).map((key) => [
         key,

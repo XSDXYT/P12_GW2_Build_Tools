@@ -8,7 +8,8 @@ import elementalist from "./data/wiki/elementalist.json";
 import mesmer from "./data/wiki/mesmer.json";
 import necromancer from "./data/wiki/necromancer.json";
 import revenant from "./data/wiki/revenant.json";
-import type { DetailKind, DetailFact } from "./game-details";
+import type { DetailKind, DetailFact, DetailContext } from "./game-details";
+import { projectSigilControl } from "./sigil-control";
 import { applyWikiModifiers, type WikiModifier } from "./wiki-modifiers";
 
 export type WikiRow = Omit<DetailFact, "modified" | "scaling">;
@@ -93,11 +94,12 @@ export function wikiDetails(
   id: number,
   kind: DetailKind,
   selectedTraits: ReadonlySet<number>,
-  context: { healingPower?: number } = {},
+  context: DetailContext = {},
 ) {
   if (kind === "item") return;
   const entry =
-    wikiSnapshot.entries[kind === "trait" ? "traits" : "skills"][id];
+    wikiSnapshot.entries[kind === "trait" ? "traits" : "skills"][id] ||
+    (kind === "skill" ? branchEntries.get(id) : undefined);
   if (!entry) return;
   let rows = [...entry.rows];
   for (const variant of entry.variants || []) {
@@ -125,8 +127,11 @@ export function wikiDetails(
   }
   facts = applyWikiModifiers(facts, entry.modifiers, selectedTraits);
   facts = scaleWikiHealing(facts, context.healingPower);
+  if (kind === "skill")
+    facts = projectSigilControl(facts, id, entry, context.controlDurationBonus);
   return {
     facts,
+    durationScalingExcluded: independentBranchSkills.has(id),
     reviewed: entry.identityVerified,
     ...(entry.description ? { description: entry.description } : {}),
     selectedTraitNotes: entry.selectedTraitNotes?.filter((t) =>
@@ -140,16 +145,21 @@ export function wikiDetails(
       )
       .map((branch) => ({
         label: branch.label,
-        facts: scaleWikiHealing(
-          applyWikiModifiers(
-            branch.rows.map((row) => ({
-              ...row,
-              modified: false,
-            })),
-            branch.modifiers,
-            selectedTraits,
+        facts: projectSigilControl(
+          scaleWikiHealing(
+            applyWikiModifiers(
+              branch.rows.map((row) => ({
+                ...row,
+                modified: false,
+              })),
+              branch.modifiers,
+              selectedTraits,
+            ),
+            context.healingPower,
           ),
-          context.healingPower,
+          branch.id,
+          branch,
+          context.controlDurationBonus,
         ),
         sourceUrl: `${wikiSnapshot.mirror}/wiki/${encodeURIComponent(branch.title)}`,
       })),
@@ -163,6 +173,26 @@ export function wikiDetails(
           `https://wiki.guildwars2.com/index.php?title=${encodeURIComponent(entry.title)}&oldid=${entry.revision}`,
         ],
   };
+}
+
+// Child icons and Markdown references use the very same reviewed source as
+// their parent tooltip. Never substitute a different same-named skill.
+const branchEntries = new Map<number, WikiEntry>();
+const independentBranchSkills = new Set<number>();
+for (const parent of Object.values(wikiSnapshot.entries.skills)) {
+  for (const branch of parent.branches || []) {
+    if (/变形目标|召唤物|精魂攻击|元素雕文|小型元素雕文/.test(branch.label))
+      independentBranchSkills.add(branch.id);
+    if (!branchEntries.has(branch.id))
+      branchEntries.set(branch.id, {
+        profession: parent.profession,
+        title: branch.title,
+        revision: branch.revision,
+        identityVerified: parent.identityVerified,
+        rows: branch.rows,
+        modifiers: branch.modifiers,
+      });
+  }
 }
 
 /** Evaluate only the explicit Wiki formula, after selected-trait replacements. */

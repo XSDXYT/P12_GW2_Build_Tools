@@ -4,7 +4,7 @@ import { mkdir, mkdtemp, readFile, writeFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { chromium, type Browser } from "@playwright/test";
+import { chromium, expect, type Browser } from "@playwright/test";
 import { createBuild, parseBuild } from "../src/domain.ts";
 import { buildCollection } from "./build-collection.ts";
 import type { BuildDirectoryHandle } from "../src/build-files.ts";
@@ -105,8 +105,17 @@ try {
     .getByRole("dialog", { name: "本地BD库", exact: true })
     .getByRole("button", { name: /原生文件流程验收/ })
     .click();
+  // A card reads asynchronously. Fill does not require pointer hit-testing and
+  // can otherwise edit the inert background draft before the file arrives.
+  await expect(
+    page.getByRole("dialog", { name: "本地BD库", exact: true }),
+  ).toHaveCount(0);
+  await expect(page.getByLabel("BD描述Markdown", { exact: true })).toHaveValue(
+    fixture.description,
+  );
   const markdown = "## 已写入真实浏览器文件\n使用 [幻象回复](gw2:trait/1866)。";
   await page.getByLabel("BD描述Markdown", { exact: true }).fill(markdown);
+  await expect(page.locator(".build-caption")).toContainText("尚未保存");
   await page
     .getByRole("button", { name: "保存到 BD 文件夹", exact: true })
     .click();
@@ -128,6 +137,9 @@ try {
 
   // Creating another build exercises native file creation as well as overwrite.
   await page.getByRole("button", { name: "新建", exact: true }).click();
+  await expect(page.getByLabel("BD描述Markdown", { exact: true })).toHaveValue(
+    "",
+  );
   await page.getByLabel("配装名称", { exact: true }).fill("新建文件验收");
   await page
     .getByLabel("BD描述Markdown", { exact: true })

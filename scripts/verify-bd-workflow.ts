@@ -66,13 +66,15 @@ try {
   assert.ok(address && typeof address !== "string");
   const base = `http://127.0.0.1:${address.port}${prefix}`;
   const fixture = {
-    ...createBuild(),
+    ...createBuild("Ranger"),
     name: "原生文件流程验收",
     description: "# 原始说明",
     tags: ["治疗", "开荒"],
+    jadeBotCore: 96613,
+    mechanics: { pets: [5, 73] },
     encounters: [{ instance: "灵魂山谷", boss: "山谷守护者", mode: "normal" }],
   };
-  fixture.specs[0] = { id: 23, traits: [null, null, 1866] };
+  fixture.specs[2] = { id: 55, traits: [null, null, null] };
   await page.goto(base);
   await page.getByLabel("BD描述Markdown", { exact: true }).waitFor();
   const native = await page.evaluate(async (build) => {
@@ -133,6 +135,8 @@ try {
   assert.equal(saved.id, fixture.id);
   assert.deepEqual(saved.tags, fixture.tags);
   assert.deepEqual(saved.encounters, fixture.encounters);
+  assert.equal(saved.jadeBotCore, fixture.jadeBotCore);
+  assert.deepEqual(saved.mechanics, fixture.mechanics);
   await writeFile(path.join(temporary, "BD", "existing.json"), text);
 
   // Creating another build exercises native file creation as well as overwrite.

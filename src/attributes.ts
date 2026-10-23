@@ -10,6 +10,8 @@ import {
   type Entity,
 } from "./domain";
 import { burningPrecision, chaoticPersistence } from "./game-rules";
+import { landPets, archetypeNames } from "./profession-mechanics";
+import { infusionName } from "./infusions";
 import {
   signetRules,
   nonAttributeSignets,
@@ -484,6 +486,33 @@ export function calculateAttributes(
   };
   for (const key of ["Power", "Precision", "Toughness", "Vitality"] as const)
     add(key, 1000, "80 级基础属性");
+  if (build.jadeBotCore === 96613) add("Vitality", 235, "10 级翠玉核心 · PvE");
+  const mechanicHealingSources: Contribution[] = [];
+  if (
+    build.profession === "Ranger" &&
+    build.specs.some((s) => s.id === 55) &&
+    preview.flags.soulbeastMerged
+  ) {
+    const pet = landPets.find(
+      (p) =>
+        p.id ===
+        build.mechanics?.pets?.[preview.stacks.activePet === 1 ? 1 : 0],
+    );
+    if (pet) {
+      const label = `魂兽合体 · ${pet.name} · ${archetypeNames[pet.archetype]}`;
+      const bonuses: Record<string, Partial<Totals>> = {
+        Stout: { Toughness: 200, Vitality: 100 },
+        Deadly: { ConditionDamage: 150, Precision: 100 },
+        Versatile: { Vitality: 200, BoonDuration: 225 },
+        Ferocious: { Power: 150, CritDamage: 100 },
+        Supportive: { Vitality: 100 },
+      };
+      for (const [key, value] of Object.entries(bonuses[pet.archetype] || {}))
+        add(key as Attribute, value!, label);
+      if (pet.archetype === "Supportive")
+        mechanicHealingSources.push({ label, amount: 25 });
+    }
+  }
   const mainKey = weaponSet === 2 ? "weapon2" : "weapon1",
     offKey = weaponSet === 2 ? "offhand2" : "offhand1";
   const main = build.equipment[mainKey];
@@ -521,7 +550,9 @@ export function calculateAttributes(
             );
         }
     }
-    for (const id of slot.infusions) {
+    for (const id of build.infusionLoadouts?.[weaponSet] !== undefined
+      ? []
+      : slot.infusions) {
       if (!id) continue;
       const item = catalog.items.find((i) => i.id === id);
       if (!item) {
@@ -532,6 +563,20 @@ export function calculateAttributes(
         if (primaryKeys.includes(entry.attribute))
           add(entry.attribute, entry.modifier, `${labels[key]} · ${item.name}`);
     }
+  }
+  for (const group of build.infusionLoadouts?.[weaponSet] || []) {
+    const item = catalog.items.find((item) => item.id === group.id);
+    if (!item) {
+      warnings.push("灌注资料缺失");
+      continue;
+    }
+    for (const entry of item.details?.infix_upgrade?.attributes || [])
+      if (primaryKeys.includes(entry.attribute))
+        add(
+          entry.attribute,
+          (group.attributeValue ?? entry.modifier) * group.count,
+          `灌注 · ${infusionName(item, group.attributeValue)} ×${group.count}`,
+        );
   }
   function applyEffect(
     effect: Effect,
@@ -936,6 +981,7 @@ export function calculateAttributes(
   const outgoingHealingSources = [
     ...consumableHealingSources,
     ...sigilHealingSources,
+    ...mechanicHealingSources,
   ];
   return {
     outgoingHealingBonus: outgoingHealingSources.reduce(

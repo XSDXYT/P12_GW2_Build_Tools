@@ -299,9 +299,11 @@ export function useGameTooltip(
             <small>
               {current.kind === "trait"
                 ? "特性"
-                : current.kind === "item"
-                  ? "物品"
-                  : "技能"}
+                : current.kind === "pet"
+                  ? "宠物"
+                  : current.kind === "item"
+                    ? "物品"
+                    : "技能"}
             </small>
             <h3 id={`${id}-heading`}>{current.entity.name}</h3>
           </div>

@@ -10,6 +10,7 @@ type Props = {
   namesOnly?: boolean;
   displayName?: string;
   className?: string;
+  icon?: string;
 };
 export function ChoiceField({
   label,
@@ -21,6 +22,7 @@ export function ChoiceField({
   namesOnly,
   displayName,
   className = "",
+  icon,
 }: Props) {
   const name = displayName || entityName(id, options);
   const selected =
@@ -32,6 +34,7 @@ export function ChoiceField({
       type="button"
       className={`choice-field ${!id ? "unselected" : ""} ${className}`}
       aria-label={`${context || ""}${label}：${name}`}
+      title={name}
       onClick={(event) =>
         pick({
           title: context ? `${context} · ${label}` : label,
@@ -43,6 +46,20 @@ export function ChoiceField({
         })
       }
     >
+      {icon && (
+        <img
+          key={icon}
+          className="choice-icon"
+          src={icon}
+          alt=""
+          width={24}
+          height={24}
+          loading="lazy"
+          onError={(event) => {
+            event.currentTarget.style.display = "none";
+          }}
+        />
+      )}
       <span className="choice-value">{name}</span>
       <span className="choice-arrow" aria-hidden="true">
         ⌄

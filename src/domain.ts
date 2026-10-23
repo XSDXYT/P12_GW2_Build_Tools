@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { encounterModes } from "./encounter-modes";
 import { zlibSync, Unzlib, strToU8, strFromU8 } from "fflate";
+import { mechanicIssues } from "./profession-mechanics";
 export const armorSlots = [
   "head",
   "shoulders",
@@ -63,6 +64,21 @@ export const buildTagsSchema = z
   .array(z.string().trim().min(1).max(24))
   .max(8)
   .transform((tags) => [...new Set(tags)]);
+const infusionGroupSchema = z
+  .object({
+    id: z.number().int().positive(),
+    count: z.number().int().min(1).max(18),
+    attributeValue: z.number().int().min(1).max(30).optional(),
+  })
+  .strict();
+const infusionLoadoutSchema = z
+  .array(infusionGroupSchema)
+  .max(18)
+  .refine(
+    (groups) => groups.reduce((total, group) => total + group.count, 0) <= 18,
+    "每个武器组最多配置 18 枚灌注。",
+  );
+export type InfusionGroup = z.infer<typeof infusionGroupSchema>;
 export const encountersSchema = z
   .array(
     z
@@ -108,6 +124,23 @@ export const buildSchema = z
     relic: id,
     food: id,
     utility: id,
+    jadeBotCore: z.literal(96613).nullable().optional(),
+    infusionLoadouts: z
+      .object({
+        "1": infusionLoadoutSchema.optional(),
+        "2": infusionLoadoutSchema.optional(),
+      })
+      .strict()
+      .optional(),
+    mechanics: z
+      .object({
+        morphs: z.array(id).length(3).optional(),
+        pets: z.array(id).length(2).optional(),
+        legends: z.array(id).length(2).optional(),
+        familiar: z.enum(["Fire", "Water", "Air", "Earth"]).optional(),
+      })
+      .strict()
+      .optional(),
     skills: z.array(id).length(5),
     specs: z
       .array(z.object({ id, traits: z.array(id).length(3) }).strict())
@@ -244,7 +277,7 @@ export const twoHanded = new Set([
   "Spear",
 ]);
 export function issues(b: Build, c: Catalog, _complete = false): string[] {
-  const errors: string[] = [];
+  const errors: string[] = mechanicIssues(b, c);
   const p = c.professions.find((p) => p.id === b.profession);
   const specs = b.specs.map((s) => c.specs.find((x) => x.id === s.id));
   const chosen = b.specs.flatMap((s) => (s.id ? [s.id] : []));
@@ -362,6 +395,36 @@ export function issues(b: Build, c: Catalog, _complete = false): string[] {
       )
         errors.push(`武器组 ${n} 双手武器不能同时配置副手。`);
     }
+  for (const groups of Object.values(b.infusionLoadouts || {})) {
+    for (const group of groups || []) {
+      const item = c.items.find((item) => item.id === group.id);
+      if (!item?.details?.infusion_upgrade_flags?.includes("Infusion")) {
+        errors.push("灌注配置包含无效物品。");
+        continue;
+      }
+      if (group.attributeValue !== undefined) {
+        const attributes = item.details?.infix_upgrade?.attributes || [];
+        const primary = attributes.filter(
+          (entry: any) => entry.attribute !== "AgonyResistance",
+        );
+        if (
+          primary.length !== 1 ||
+          ![
+            "Power",
+            "Precision",
+            "Toughness",
+            "Vitality",
+            "CritDamage",
+            "ConditionDamage",
+            "ConditionDuration",
+            "BoonDuration",
+            "Healing",
+          ].includes(primary[0].attribute)
+        )
+          errors.push("仅单属性灌注可设置单枚属性值。");
+      }
+    }
+  }
   for (const [key, check] of [
     ["relic", (e: Entity) => e.type === "Relic"],
     ["food", (e: Entity) => e.details?.type === "Food"],

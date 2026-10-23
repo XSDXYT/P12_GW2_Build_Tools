@@ -12,6 +12,7 @@ import { appVersion, releaseCommit } from "./release";
 import { BuildFolder } from "./components/BuildFolder";
 import { PublishedLibrary } from "./components/PublishedLibrary";
 import { mergeSkillCatalog } from "./weapon-skills";
+import { mergeMechanicCatalog } from "./profession-mechanics";
 export function App() {
   const work = useWorkspace();
   const [catalog, setCatalog] = useState<Catalog | null>(null),
@@ -28,7 +29,7 @@ export function App() {
     try {
       const response = await fetch("./catalog.json", { cache: "no-store" });
       if (!response.ok) throw Error();
-      const data = await response.json();
+      const data = mergeMechanicCatalog(await response.json());
       if (!Array.isArray(data.professions) || !data.revision) throw Error();
       setCatalog(data);
       // Independent snapshot: failure leaves the editor usable and can be retried.

@@ -355,6 +355,7 @@ export function BuildDescription({
                     "法印",
                     "符文",
                     "古物",
+                    "宠物",
                     "灌注",
                     "物品",
                   ].map((label) => (

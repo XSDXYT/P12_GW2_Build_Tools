@@ -58,6 +58,11 @@ for (const width of [1440, 390]) {
         .locator(`.armor-row[data-slot="${key}"]`)
         .getByRole("button", { name: new RegExp(`^${labels[key]}符文：`) });
     async function assertRunes(ids: (number | null)[]) {
+      const toggle = page.getByRole("button", {
+        name: "逐件符文",
+        exact: true,
+      });
+      if (await toggle.count()) await toggle.click();
       for (const [index, key] of armorSlots.entries())
         await expect(runeField(key)).toContainText(
           runes.find((rune) => rune.id === ids[index])?.name || "未选择",
@@ -73,8 +78,8 @@ for (const width of [1440, 390]) {
     await page.getByRole("searchbox").fill(String(second.id));
     await expect(picker.getByRole("option")).toHaveCount(1);
     await page.keyboard.press("Escape");
-    await assertRunes(initial);
     await expect(batch).toBeFocused();
+    await assertRunes(initial);
     const apply = async () => {
       await batch.click();
       await page.getByRole("searchbox").fill(String(second.id));
@@ -125,6 +130,7 @@ for (const width of [1440, 390]) {
     await expect(viewer.getByRole("button", { name: /整套符文/ })).toHaveCount(
       0,
     );
+    await viewer.getByRole("button", { name: "逐件符文", exact: true }).click();
     await expect(viewer.locator('.armor-row[data-slot="head"]')).toContainText(
       first.name,
     );

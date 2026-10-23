@@ -28,7 +28,7 @@ test("选择、保存刷新、分享、只读与复制编辑", async ({ page, co
     "浏览器验收 BD",
   );
   await page.getByLabel("主手 Ⅰ武器类型").selectOption("Staff");
-  await expect(page.getByText("由双手武器占用").first()).toBeVisible();
+  await expect(page.getByText("双手 · 占用副手").first()).toBeVisible();
   // 构建受支持核心配置，验证整条分享与解码链路。
   const raw = createBuild();
   const c = catalog;
@@ -119,15 +119,13 @@ test("损坏链接保留可操作界面", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "装备 GEAR" })).toBeVisible();
 });
 
-test("食物、扳手、逐槽灌注选择并保存恢复，JSON 导出内容一致", async ({
+test("食物、扳手、集中灌注选择并保存恢复，JSON 导出内容一致", async ({
   page,
 }) => {
   await page.goto("/");
   const food = catalog.items.find((i: any) => i.details?.type === "Food");
   const utility = catalog.items.find((i: any) => i.details?.type === "Utility");
-  const infusion = catalog.items.find((i: any) =>
-    i.details?.infusion_upgrade_flags?.includes("Infusion"),
-  );
+  const infusion = catalog.items.find((i: any) => i.id === 37131);
   for (const [label, item] of [
     ["食物", food],
     ["扳手", utility],
@@ -139,13 +137,7 @@ test("食物、扳手、逐槽灌注选择并保存恢复，JSON 导出内容一
     await page.locator(".search").fill(String(item.id));
     await page.locator(".option:not(.clear)").click();
   }
-  const head = page
-    .locator(".gear-column")
-    .first()
-    .locator(".equipment-row")
-    .first();
-  await head.locator("summary").click();
-  await head.getByRole("button", { name: /头部灌注槽 1/ }).click();
+  await page.getByRole("button", { name: "添加灌注", exact: true }).click();
   await page.locator(".search").fill(String(infusion.id));
   await page.locator(".option:not(.clear)").click();
   await downloadBuild(page);
@@ -156,7 +148,9 @@ test("食物、扳手、逐槽灌注选择并保存恢复，JSON 导出内容一
   await expect(
     page.locator(".upgrades-card").getByRole("button", { name: /^扳手/ }),
   ).toContainText(utility.name);
-  await expect(page.locator(".infusion-total")).toContainText(infusion.name);
+  await expect(page.locator(".infusion-total")).toContainText(
+    "威力 +5 · 痛苦 +9",
+  );
   const downloadPromise = page.waitForEvent("download");
   await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   const download = await downloadPromise;
@@ -165,7 +159,9 @@ test("食物、扳手、逐槽灌注选择并保存恢复，JSON 导出内容一
   );
   expect(exported.food).toBe(food.id);
   expect(exported.utility).toBe(utility.id);
-  expect(exported.equipment.head.infusions[0]).toBe(infusion.id);
+  expect(exported.infusionLoadouts["1"]).toEqual([
+    { id: infusion.id, count: 1 },
+  ]);
 });
 
 test("下载失败保留草稿和未保存提醒", async ({ page }) => {

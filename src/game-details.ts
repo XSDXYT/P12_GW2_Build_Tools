@@ -11,8 +11,9 @@ import { pveSources, pveTrait } from "./pve-traits";
 import { wikiDetails } from "./wiki-details";
 import { projectDurations } from "./effect-durations";
 import { weaponDetails } from "./weapon-details";
+import { archetypeNames } from "./profession-mechanics";
 
-export type DetailKind = "trait" | "skill" | "item";
+export type DetailKind = "trait" | "skill" | "item" | "pet";
 export type DetailContext = {
   healingPower?: number;
   controlDurationBonus?: number;
@@ -402,6 +403,36 @@ export function gameDetails(
   selectedTraits: ReadonlySet<number>,
   context: DetailContext = {},
 ): GameDetails {
+  if (entity.wikiDescriptionOnly)
+    return {
+      description: gameText(entity.description),
+      facts: [],
+      unresolved: [],
+      reviewed: false,
+      sources: [entity.sourceUrl],
+      sourceUrl: entity.sourceUrl,
+      durationScalingExcluded: true,
+    };
+  if (kind === "pet")
+    return {
+      description: gameText(entity.description),
+      facts: [
+        { label: "宠物类型", detail: "陆地可用", modified: false },
+        {
+          label: "魂兽类型",
+          detail: archetypeNames[entity.archetype] || entity.archetype,
+          modified: false,
+        },
+      ],
+      unresolved: [],
+      reviewed: true,
+      sources: [entity.wikiUrl],
+      sourceUrl: entity.wikiUrl,
+    };
+  if (entity.mechanicActor === "pet" || entity.mechanicActor === "mech") {
+    const details = baseGameDetails(entity, kind, new Set(), {});
+    return { ...details, durationScalingExcluded: true };
+  }
   return projectDurations(
     baseGameDetails(entity, kind, selectedTraits, context),
     context,

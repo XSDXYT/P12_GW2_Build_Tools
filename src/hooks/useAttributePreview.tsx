@@ -10,41 +10,72 @@ import {
   calculateAttributes,
   emptyPreview,
   type AttributeData,
+  type Preview,
 } from "../attributes";
 import type { Build, Catalog } from "../domain";
 import type { Attunement } from "../weapon-skills";
+import { emptyMechanicPreview } from "../profession-mechanics";
 
 function usePreview(build: Build, catalog: Catalog) {
   const [data, setData] = useState<AttributeData | null>(null);
   const [error, setError] = useState(false);
   const [storedPreview, setPreview] = useState(emptyPreview);
   const [storedWeaponSet, onWeaponSet] = useState<1 | 2>(1);
-  const [attunement, onAttunement] = useState<Attunement>("Fire");
+  const [storedAttunement, setAttunement] = useState<Attunement>("Fire");
   const [secondaryAttunement, onSecondaryAttunement] =
     useState<Attunement>("Fire");
-  const [owner, setOwner] = useState(`${build.id}:${build.profession}`);
+  const [mechanicPreview, onMechanicPreview] = useState(emptyMechanicPreview);
+  const lockedAttunement =
+    build.profession === "Elementalist" &&
+    build.specs.some((s) => s.id === 80 && s.traits.includes(2437))
+      ? build.mechanics?.familiar || "Fire"
+      : null;
+  const attunement: Attunement = lockedAttunement || storedAttunement;
+  function onAttunement(value: Attunement) {
+    if (!lockedAttunement || value === lockedAttunement) setAttunement(value);
+  }
   const key = `${build.id}:${build.profession}`;
+  const [owner, setOwner] = useState(key);
+  const mechanicKey = `${key}:${build.specs.map((s) => s.id).join(",")}`;
+  const [mechanicOwner, setMechanicOwner] = useState(mechanicKey);
+  // Specialization changes reset mechanism state without clearing shared boons.
+  if (mechanicOwner !== mechanicKey) {
+    setMechanicOwner(mechanicKey);
+    onMechanicPreview(emptyMechanicPreview());
+  }
   // Reset before rendering another build so its tooltip cannot use stale conditions.
   if (owner !== key) {
     setOwner(key);
     setPreview(emptyPreview());
     onWeaponSet(1);
-    onAttunement("Fire");
+    setAttunement("Fire");
     onSecondaryAttunement("Fire");
   }
-  const preview = useMemo(() => {
+  const preview = useMemo<Preview>(() => {
     const value = owner === key ? storedPreview : emptyPreview();
+    const linked: Preview = {
+      ...value,
+      flags: { ...value.flags, soulbeastMerged: mechanicPreview.transformed },
+      stacks: { ...value.stacks, activePet: mechanicPreview.activePet },
+    };
     return build.profession === "Elementalist"
       ? {
-          ...value,
+          ...linked,
           flags: {
             ...value.flags,
             fire: attunement === "Fire",
             air: attunement === "Air",
           },
         }
-      : value;
-  }, [owner, key, storedPreview, build.profession, attunement]);
+      : linked;
+  }, [
+    owner,
+    key,
+    storedPreview,
+    build.profession,
+    attunement,
+    mechanicPreview,
+  ]);
   const weaponSet: 1 | 2 =
     owner === key && storedWeaponSet === 2 && build.equipment.weapon2.weapon
       ? 2
@@ -93,6 +124,8 @@ function usePreview(build: Build, catalog: Catalog) {
     onAttunement,
     secondaryAttunement,
     onSecondaryAttunement,
+    mechanicPreview,
+    onMechanicPreview,
     baseline,
     result,
   };

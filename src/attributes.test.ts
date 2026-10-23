@@ -261,6 +261,31 @@ test("符文按同类件数启用阶级，混搭不会获得整套奖励", () =>
   assert.equal(calc(b).primary.ConditionDamage, 25);
 });
 
+test("集中灌注按数量和国服单枚属性计算，不与旧逐槽值叠加；另一组保留旧计算", () => {
+  const build = createBuild();
+  build.equipment.head.infusions = [37127];
+  build.infusionLoadouts = {
+    "1": [
+      { id: 37131, count: 12, attributeValue: 30 },
+      { id: 43250, count: 6 },
+    ],
+  };
+  const result = calc(build);
+  assert.equal(result.primary.Power, 1360);
+  assert.equal(result.primary.Healing, 30);
+  assert.ok(
+    result.primarySources.Power.some(
+      (source) => source.amount === 360 && source.label.includes("+30"),
+    ),
+  );
+  assert.equal(calc(build, 2).primary.Power, 1005);
+  build.infusionLoadouts["2"] = [];
+  assert.equal(calc(build, 2).primary.Power, 1000);
+  build.infusionLoadouts["1"] = [{ id: 49432, count: 18 }];
+  assert.equal(calc(build).primary.Power, 1000);
+  assert.equal(calc(build).primary.Healing, 0);
+});
+
 test("法印持续时间与符文通用奖励叠加；重复同类法印仅计算最高阶", () => {
   const b = createBuild();
   for (const key of armorSlots) b.equipment[key].runeId = 24687;

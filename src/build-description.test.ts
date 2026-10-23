@@ -17,6 +17,7 @@ import {
 } from "./build-references.ts";
 import { itemDetails } from "./game-details.ts";
 import { createLibraryBackup, parseLibraryBackup } from "./library.ts";
+import { landPets } from "./profession-mechanics.ts";
 const catalog: Catalog = JSON.parse(
   readFileSync("public/catalog.json", "utf8"),
 );
@@ -56,7 +57,10 @@ test("引用按类型与真实ID区分，跨职业搜索覆盖食物、扳手、
   const index = referenceIndex(catalog);
   assert.equal(
     index.length,
-    catalog.skills.length + catalog.traits.length + catalog.items.length,
+    catalog.skills.length +
+      catalog.traits.length +
+      catalog.items.length +
+      landPets.length,
   );
   for (const category of [
     "技能",
@@ -67,6 +71,7 @@ test("引用按类型与真实ID区分，跨职业搜索覆盖食物、扳手、
     "符文",
     "古物",
     "灌注",
+    "宠物",
   ])
     assert.ok(
       index.some((reference) => reference.category === category),

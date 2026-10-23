@@ -2,6 +2,8 @@ import { type EditorProps } from "../editor";
 import { activeTraits } from "../attributes";
 import { useGameTooltip } from "./GameTooltip";
 import { useAttributePreview } from "../hooks/useAttributePreview";
+import { ProfessionMechanics } from "./ProfessionMechanics";
+import { legendSkills, normalizeMechanics } from "../profession-mechanics";
 import {
   attunements,
   followingSkills,
@@ -25,10 +27,11 @@ export function TraitsPanel({
     onAttunement,
     secondaryAttunement,
     onSecondaryAttunement,
+    mechanicPreview,
   } = useAttributePreview();
   const tooltip = useGameTooltip(
     new Set(activeTraits(build, catalog).map((trait) => trait.id)),
-    `${build.id}:${build.profession}:${selectedSpecs.join(",")}`,
+    `${build.id}:${build.profession}:${selectedSpecs.join(",")}:${JSON.stringify(mechanicPreview)}:${JSON.stringify(build.mechanics)}:${build.skills.join(",")}`,
     result?.primary.Healing,
     result?.controlDurationBonus,
     result || {},
@@ -40,6 +43,11 @@ export function TraitsPanel({
     attunement,
     secondaryAttunement,
   );
+  const secondaryLegend =
+    build.profession === "Revenant" && mechanicPreview.activeLegend === 1;
+  const displayedSkills = secondaryLegend
+    ? legendSkills(build.mechanics?.legends?.[1])
+    : build.skills;
   const stages = (skill: (typeof catalog.skills)[number] | undefined) =>
     skill &&
     followingSkills(skill, catalog, build).map(({ skill: child, label }) => (
@@ -71,6 +79,15 @@ export function TraitsPanel({
           {catalog.professions.find((p) => p.id === build.profession)?.name}
         </span>
       </header>
+      <ProfessionMechanics
+        tooltip={tooltip}
+        build={build}
+        catalog={catalog}
+        readonly={readonly}
+        edit={edit}
+        pick={pick}
+        notify={notify}
+      />
       <div className="weapon-skills-bar">
         <div className="weapon-skills-heading">
           <h3>武器技能</h3>
@@ -168,7 +185,7 @@ export function TraitsPanel({
           <small>{readonly ? "点击查看详情" : "点击技能图标更换"}</small>
         </div>
         <div className="skill-list">
-          {build.skills.map((id, index) => {
+          {displayedSkills.map((id, index) => {
             const skill = catalog.skills.find((s) => s.id === id),
               type = ["Heal", "Utility", "Utility", "Utility", "Elite"][index],
               label = ["治疗", "通用一", "通用二", "通用三", "精英"][index];
@@ -179,6 +196,17 @@ export function TraitsPanel({
                 s.professions?.includes(build.profession) &&
                 (!s.specialization || selectedSpecs.includes(s.specialization)),
             );
+            const legendAllowed =
+              build.profession === "Revenant" && build.mechanics?.legends?.[0]
+                ? legendSkills(build.mechanics.legends[0])
+                : null;
+            const legalOptions = legendAllowed
+              ? options.filter((s) =>
+                  index === 0 || index === 4
+                    ? s.id === legendAllowed[index]
+                    : legendAllowed.slice(1, 4).includes(s.id),
+                )
+              : options;
             return (
               <div key={index}>
                 <button
@@ -187,7 +215,7 @@ export function TraitsPanel({
                   aria-label={`选择${label}技能`}
                   {...tooltip.bind(skill, "skill")}
                   onClick={(event) => {
-                    if (readonly) {
+                    if (readonly || secondaryLegend) {
                       if (skill)
                         tooltip.show(event.currentTarget, skill, "skill");
                       return;
@@ -195,7 +223,7 @@ export function TraitsPanel({
                     tooltip.dismiss();
                     pick({
                       title: `${label}技能`,
-                      options,
+                      options: legalOptions,
                       selected: id,
                       icons: true,
                       anchor: event.currentTarget,
@@ -293,6 +321,7 @@ export function TraitsPanel({
                               ? null
                               : id;
                           });
+                          normalizeMechanics(b, catalog);
                         });
                       },
                     });

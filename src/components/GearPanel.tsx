@@ -1,5 +1,6 @@
-import { useAttributePreview } from "../hooks/useAttributePreview";
+import { useState } from "react";
 import { AttributePanel } from "./AttributePanel";
+import { InfusionEditor } from "./InfusionEditor";
 import {
   armorSlots,
   accessorySlots,
@@ -13,12 +14,20 @@ import {
   type Slot,
 } from "../domain";
 import { ChoiceField } from "./ChoiceField";
+import { jadeCore } from "../profession-mechanics";
+import equipmentIcons from "../data/equipment-icons.json";
 import {
   entityName,
   itemOptions,
   weaponNames,
   type EditorProps,
 } from "../editor";
+
+const itemIcon = (id: number | null) => {
+  const path = id && (equipmentIcons.icons as Record<string, string>)[id];
+  return path ? `https://render.guildwars2.com/file/${path}` : undefined;
+};
+
 export function GearPanel({
   build,
   catalog,
@@ -27,12 +36,10 @@ export function GearPanel({
   pick,
   notify,
 }: EditorProps) {
-  const { weaponSet: activeSet, onWeaponSet: setActiveSet } =
-    useAttributePreview();
+  const [runeDetails, setRuneDetails] = useState(false);
   const p = catalog.professions.find((p) => p.id === build.profession);
   const runes = itemOptions(catalog, "Rune"),
-    sigils = itemOptions(catalog, "Sigil"),
-    infusions = itemOptions(catalog, "Infusion");
+    sigils = itemOptions(catalog, "Sigil");
   const field = (
     key: keyof Build["equipment"],
     label: string,
@@ -48,38 +55,13 @@ export function GearPanel({
       options={options}
       pick={pick}
       namesOnly={namesOnly}
+      icon={namesOnly ? undefined : itemIcon(id)}
       displayName={
         namesOnly ? catalog.stats.find((s) => s.id === id)?.name : undefined
       }
       onSelect={(value) => edit((b) => change(b.equipment[key], value))}
     />
   );
-  function infusionSlots(key: keyof Build["equipment"]) {
-    const slot = build.equipment[key];
-    if (!slot.infusions.length) return <span className="no-socket">—</span>;
-    return (
-      <details className="infusion">
-        <summary
-          aria-label={`${labels[key]}灌注 ${slot.infusions.filter(Boolean).length}/${slot.infusions.length}`}
-        >
-          <span>灌注</span>
-          <b>
-            {slot.infusions.filter(Boolean).length}/{slot.infusions.length}
-          </b>
-        </summary>
-        <div className="infusion-fields">
-          {slot.infusions.map((id, index) => (
-            <div key={index}>
-              <span>{index + 1}</span>
-              {field(key, `灌注槽 ${index + 1}`, id, infusions, (s, value) => {
-                s.infusions[index] = value;
-              })}
-            </div>
-          ))}
-        </div>
-      </details>
-    );
-  }
   function gearRow(
     key: (typeof armorSlots)[number] | (typeof accessorySlots)[number],
   ) {
@@ -87,7 +69,7 @@ export function GearPanel({
     const armor = armorSlots.includes(key as never);
     return (
       <div
-        className={`equipment-row ${armor ? "armor-row" : "trinket-row"}`}
+        className={`equipment-row ${armor ? `armor-row${runeDetails ? " with-runes" : ""}` : "trinket-row"}`}
         data-slot={key}
         key={key}
       >
@@ -103,10 +85,10 @@ export function GearPanel({
           true,
         )}
         {armor &&
+          runeDetails &&
           field(key, "符文", slot.runeId, runes, (s, id) => {
             s.runeId = id;
           })}
-        {infusionSlots(key)}
       </div>
     );
   }
@@ -119,13 +101,7 @@ export function GearPanel({
         : key === "offhand2"
           ? build.equipment.weapon2
           : null;
-    if (parent && twoHanded.has(parent.weapon))
-      return (
-        <div className="weapon-row occupied" data-slot={key} key={key}>
-          <span>{labels[key]}</span>
-          <span>由双手武器占用</span>
-        </div>
-      );
+    if (parent && twoHanded.has(parent.weapon)) return null;
     const options = Object.entries(p?.weapons || {}).filter(
       ([w, value]: [string, any]) =>
         !["Trident", "HarpoonGun"].includes(w) &&
@@ -134,10 +110,14 @@ export function GearPanel({
         ),
     );
     return (
-      <div className="weapon-row" data-slot={key} key={key}>
+      <div
+        className={`weapon-row${twoHanded.has(slot.weapon) ? " two-handed" : ""}`}
+        data-slot={key}
+        key={key}
+      >
         <div className="weapon-identity">
           <label>
-            {labels[key]}
+            <span className="weapon-hand">{off ? "副手" : "主手"}</span>
             <select
               aria-label={`${labels[key]}武器类型`}
               value={slot.weapon}
@@ -183,12 +163,17 @@ export function GearPanel({
             true,
           )}
         </div>
+        {twoHanded.has(slot.weapon) && (
+          <span className="weapon-grip" title="副手由双手武器占用">
+            双手 · 占用副手
+          </span>
+        )}
         <div className="weapon-upgrades">
           {Array.from(
             { length: twoHanded.has(slot.weapon) ? 2 : 1 },
             (_, index) => (
               <div className="labeled-choice" key={index}>
-                <span>法印 {index + 1}</span>
+                <span className="sr-only">法印 {index + 1}</span>
                 {field(
                   key,
                   `法印 ${index + 1}`,
@@ -201,16 +186,14 @@ export function GearPanel({
               </div>
             ),
           )}
-          {infusionSlots(key)}
         </div>
       </div>
     );
   }
-  const counts: Record<number, number> = {};
-  for (const [key, slot] of Object.entries(build.equipment)) {
-    if (weaponSlots.includes(key as never) && !key.endsWith(String(activeSet)))
-      continue;
-    for (const id of slot.infusions) if (id) counts[id] = (counts[id] || 0) + 1;
+  const runeCounts = new Map<number | null, number>();
+  for (const key of armorSlots) {
+    const id = build.equipment[key].runeId;
+    runeCounts.set(id, (runeCounts.get(id) || 0) + 1);
   }
   return (
     <section className="panel gear-panel" aria-labelledby="gear-heading">
@@ -282,25 +265,57 @@ export function GearPanel({
       </header>
       <div className="gear-grid">
         <div className="gear-column">
-          <h3>
-            护甲 <small>ARMOR</small>
+          <h3 id="armor-heading">
+            护甲
+            <button
+              type="button"
+              className="rune-details-toggle"
+              aria-expanded={runeDetails}
+              aria-controls="armor-slots"
+              onClick={() => setRuneDetails(!runeDetails)}
+            >
+              {runeDetails ? "收起逐件符文" : "逐件符文"}
+              <span aria-hidden="true">{runeDetails ? "−" : "+"}</span>
+            </button>
           </h3>
-          <div className="row-labels armor-labels">
+          <div className="gear-group-summary" aria-label="护甲符文汇总">
+            <span className="group-summary-label">符文</span>
+            <div className="group-summary-values">
+              {[...runeCounts].map(([id, count]) => (
+                <span key={id || "empty"} className={id ? "" : "muted"}>
+                  {itemIcon(id) && (
+                    <img
+                      src={itemIcon(id)}
+                      alt=""
+                      width={22}
+                      height={22}
+                      loading="lazy"
+                      onError={(event) => {
+                        event.currentTarget.style.display = "none";
+                      }}
+                    />
+                  )}
+                  {entityName(id, runes, "未配置")} <b>×{count}</b>
+                </span>
+              ))}
+            </div>
+          </div>
+          <div
+            className={`row-labels armor-labels${runeDetails ? " with-runes" : ""}`}
+          >
             <span>槽位</span>
             <span>属性词条</span>
-            <span>符文</span>
-            <span>灌注</span>
+            {runeDetails && <span>符文</span>}
           </div>
-          {armorSlots.map(gearRow)}
+          <div id="armor-slots" aria-labelledby="armor-heading">
+            {armorSlots.map(gearRow)}
+          </div>
         </div>
         <div className="gear-column">
-          <h3>
-            饰品 <small>TRINKETS</small>
-          </h3>
+          <h3>饰品</h3>
           <div className="row-labels trinket-labels">
             <span>槽位</span>
             <span>属性词条</span>
-            <span>灌注</span>
           </div>
           {accessorySlots.map(gearRow)}
         </div>
@@ -310,7 +325,16 @@ export function GearPanel({
           <div className="weapon-group" key={set}>
             <h3>
               武器组 {set === 1 ? "Ⅰ" : "Ⅱ"}
-              <small>{set === 1 ? "PRIMARY" : "ALTERNATE · 可选"}</small>
+              <small>
+                {[`weapon${set}`, `offhand${set}`]
+                  .map(
+                    (key) =>
+                      build.equipment[key as keyof Build["equipment"]].weapon,
+                  )
+                  .filter(Boolean)
+                  .map((weapon) => weaponNames[weapon] || weapon)
+                  .join(" / ") || (set === 2 ? "可选" : "未配置")}
+              </small>
             </h3>
             {weaponRow(`weapon${set}` as "weapon1")}
             {weaponRow(`offhand${set}` as "offhand1")}
@@ -319,9 +343,7 @@ export function GearPanel({
       </div>
       <div className="gear-extras">
         <div className="upgrades-card">
-          <h3>
-            古物与消耗品 <small>EXTRAS</small>
-          </h3>
+          <h3>古物与消耗品</h3>
           {(["relic", "food", "utility"] as const).map((key, index) => (
             <div className="labeled-choice" key={key}>
               <span>{["古物", "食物", "扳手"][index]}</span>
@@ -333,6 +355,7 @@ export function GearPanel({
                   ["Relic", "Food", "Utility"][index],
                 )}
                 pick={pick}
+                icon={itemIcon(build[key])}
                 onSelect={(id) =>
                   edit((b) => {
                     b[key] = id;
@@ -341,39 +364,35 @@ export function GearPanel({
               />
             </div>
           ))}
-        </div>
-        <div className="infusion-total">
-          <h3>
-            灌注汇总{" "}
-            <small>
-              {Object.values(counts).reduce((a, b) => a + b, 0)} / 当前武器组
-            </small>
-          </h3>
-          <div className="segmented" aria-label="灌注汇总武器组">
-            {[1, 2].map((set) => (
-              <button
-                key={set}
-                aria-pressed={activeSet === set}
-                onClick={() => setActiveSet(set as 1 | 2)}
-              >
-                武器组 {set === 1 ? "Ⅰ" : "Ⅱ"}
-              </button>
-            ))}
+          <div className="labeled-choice">
+            <span>翠玉核心</span>
+            <ChoiceField
+              label="翠玉核心"
+              id={build.jadeBotCore || null}
+              options={[jadeCore]}
+              pick={pick}
+              icon={build.jadeBotCore ? jadeCore.icon : undefined}
+              onSelect={(id) =>
+                edit((b) => {
+                  if (id) b.jadeBotCore = 96613;
+                  else delete b.jadeBotCore;
+                })
+              }
+            />
           </div>
-          {Object.keys(counts).length ? (
-            <ul>
-              {Object.entries(counts).map(([id, count]) => (
-                <li key={id}>
-                  <span>{entityName(+id, infusions)}</span>
-                  <b>× {count}</b>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="muted">展开装备行的灌注槽进行配置。</p>
+          {build.jadeBotCore && (
+            <p className="weapon-skills-note">10 级翠玉核心 · PvE 体力 +235</p>
           )}
         </div>
       </div>
+      <InfusionEditor
+        build={build}
+        catalog={catalog}
+        readonly={readonly}
+        edit={edit}
+        pick={pick}
+        notify={notify}
+      />
       <AttributePanel />
     </section>
   );

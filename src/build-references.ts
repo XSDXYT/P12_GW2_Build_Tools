@@ -1,5 +1,6 @@
 import type { Catalog, Entity } from "./domain";
-export type ReferenceKind = "skill" | "trait" | "item";
+import { landPets } from "./profession-mechanics";
+export type ReferenceKind = "skill" | "trait" | "item" | "pet";
 export type BuildReference = {
   kind: ReferenceKind;
   entity: Entity;
@@ -8,6 +9,7 @@ export type BuildReference = {
 export function referenceCategory(entity: Entity, kind: ReferenceKind): string {
   if (kind === "skill") return "技能";
   if (kind === "trait") return "特性";
+  if (kind === "pet") return "宠物";
   if (entity.type === "Relic") return "古物";
   if (entity.details?.infusion_upgrade_flags?.includes("Infusion"))
     return "灌注";
@@ -21,20 +23,27 @@ export function referenceCategory(entity: Entity, kind: ReferenceKind): string {
   );
 }
 export function referenceIndex(catalog: Catalog): BuildReference[] {
-  return (["skill", "trait", "item"] as const).flatMap((kind) =>
-    catalog[
-      kind === "skill" ? "skills" : kind === "trait" ? "traits" : "items"
-    ].map((entity) => ({
-      kind,
+  return [
+    ...(["skill", "trait", "item"] as const).flatMap((kind) =>
+      catalog[
+        kind === "skill" ? "skills" : kind === "trait" ? "traits" : "items"
+      ].map((entity) => ({
+        kind,
+        entity,
+        category: referenceCategory(entity, kind),
+      })),
+    ),
+    ...landPets.map((entity) => ({
+      kind: "pet" as const,
       entity,
-      category: referenceCategory(entity, kind),
+      category: "宠物",
     })),
-  );
+  ];
 }
 export function parseReference(
   url: string,
 ): { kind: ReferenceKind; id: number } | undefined {
-  const match = /^gw2:(skill|trait|item)\/([1-9]\d{0,9})$/.exec(url);
+  const match = /^gw2:(skill|trait|item|pet)\/([1-9]\d{0,9})$/.exec(url);
   if (!match) return;
   const id = Number(match[2]);
   if (!Number.isSafeInteger(id)) return;

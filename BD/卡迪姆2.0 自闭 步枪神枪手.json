@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "id": "564ed2f8-0914-4105-9b01-aafd7bf65a52",
+  "name": "卡迪姆2.0 自闭 步枪神枪手",
+  "description": "# 一、场景\n- 12点自闭位的视角\n- 在不炸球，不踩鲨鱼，不因为T的面向导致boss攻击你的前提下，你的续航是差不多够的。只需要奶在你接球回来后帮你回复点血量。\n- 需要队友帮助蔑视\n# 二、开场\n- 开场时用匕枪武器组，F1，3个枪4 [爆头射击](gw2:skill/13012)，给600点蔑视，触发[七级邪恶](gw2:trait/2111)，恢复先攻值。\n- 还需要队友补400-599点蔑视，注意队友的蔑视不能给多，多了你就无法通过[七级邪恶](gw2:trait/2111)恢复先攻值了。\n# 三、打塔循环\n- F1 [神枪手标记](gw2:skill/43390)\n- [三弹爆发](gw2:skill/44695) × 3\n- [暗影融合](gw2:skill/45508)\n- 潜袭攻击 [恶意死亡审判](gw2:skill/44087)\n- [三弹爆发](gw2:skill/44695) × 3\n- F2 潜袭\n-  潜袭攻击 [恶意死亡审判](gw2:skill/44087)\n- [三弹爆发](gw2:skill/44695) × 5 \n- [怜悯](gw2:skill/41372) 在上面的第五次“三弹爆发”结束时再放\n- [三弹爆发](gw2:skill/44695) 读条快结束时F1 [神枪手标记](gw2:skill/43390)\n- [三弹爆发](gw2:skill/44695)\n- [三弹爆发](gw2:skill/44695)\n- F2 潜袭\n-  潜袭攻击 [恶意死亡审判](gw2:skill/44087)\n- [三弹爆发](gw2:skill/44695) × 5\n- [怜悯](gw2:skill/41372)\n- [三弹爆发](gw2:skill/44695) 读条快结束时F1 [神枪手标记](gw2:skill/43390)\n- [三弹爆发](gw2:skill/44695)\n- [三弹爆发](gw2:skill/44695)\n- F2 潜袭\n- 1 潜袭攻击 [恶意死亡审判](gw2:skill/44087)\n- [三弹爆发](gw2:skill/44695)  × 3\n- [暗影融合](gw2:skill/45508)\n- 潜袭攻击 [恶意死亡审判](gw2:skill/44087)\n- [三弹爆发](gw2:skill/44695)  × 3\n- F2 潜袭\n-  潜袭攻击 [恶意死亡审判](gw2:skill/44087)\n- [三弹爆发](gw2:skill/44695) × 3\n- [暗影融合](gw2:skill/45508)\n- 潜袭攻击 [恶意死亡审判](gw2:skill/44087)\n \n正常点的队伍在你打完这一套循环前就会打进阶段。如果没有打进去，那整体dps就有问题。\n如果真的没打进去阶段，你就自己琢磨后面的技能咋打。\n\n# 四、100% - 80%血。\n\n1、卡迪姆会周期性地（每5%血出现一次，但不会在80%或60%能量值时出现）向图中标记的三个位置之一发射一个混沌之球，这些位置也是熵异常体出现的地方。每个阶段（100-80%、80-60%、60-40%）会生成三个混沌之球，每个阶段每个位置一个。\n2、特定副本中的光球刷新点是预先设定的。副本中的第一个光球刷新点位于东北方向，后续刷新点则按逆时针方向轮换。如果本次挑战失败并重新开始战斗，光球刷新点仍会沿用之前几次挑战的逆时针轮换顺序。\n\n# 四、80%血排火\n\n- 打进80血时，先切到匕枪，排火后，破蔑视，跟开场一样，F1+3个枪4，破600蔑视，然后剩下的让队友补。\n- 假如这次战斗是你进入这个地图后第一次打卡迪姆，75%血的第一个小怪固定刷新在东北反向，也就是你左边，所以这次火要排在你的左边。\n如果你们已经G过了，那第一个小怪刷新的位置就沿用上一次的位置顺时针轮换。\n\n# 五、75%血 小怪蔑视\n- 小怪蔑视全程交给辅助去破。小怪cc量是400，我一般是让奶吟游用[噬心传说](gw2:skill/77066)包全部的小怪蔑视。噬心传说加上[超级瘫痪法印](gw2:item/24639)能破390cc，它本身还能提供几秒的“虚弱”提供软蔑视，完全可以全程负责小怪蔑视。\n- 小怪的刷新频率：75%-40%血。每40血一次，40%血以下，每30s一次。\n- 如果你的辅助包不了小怪的蔑视，那么很遗憾，这套BD不适合你的团队，改用蔑视更多的BD构筑。\n\n# 六、40%血以下\n- boss40%血时会从12点开始，逆时针撞塔，每10%血撞一次。\n- 40%血12点，30%血7点，20%血4点。\n- boss撞完12点塔后，去4点能量塔，跟4点的自闭站一起。继续打卡迪姆。\n- boss20%血撞完4点塔后，关闭特殊行动键，避免抢T。切到匕枪武器组打斩杀，或者继续打步枪循环。\n\n# 七、增伤线与减伤线玩法。\n待补充，可先看外部攻略。\n\nhttps://my.feishu.cn/wiki/TnTpw2QipiAMI4kbrowcO72inih?from=from_copylink\n\n\n\n\n\n",
+  "tags": [
+    "卡迪姆2.0 自闭"
+  ],
+  "encounters": [
+    {
+      "instance": "阿达西姆之钥",
+      "boss": "无可匹敌的卡迪姆",
+      "mode": "normal"
+    },
+    {
+      "instance": "阿达西姆之钥",
+      "boss": "无可匹敌的卡迪姆",
+      "mode": "challenge"
+    }
+  ],
+  "profession": "Thief",
+  "equipment": {
+    "head": {
+      "statId": 161,
+      "runeId": 74978,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        37132
+      ],
+      "weapon": ""
+    },
+    "shoulders": {
+      "statId": 161,
+      "runeId": 74978,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        37132
+      ],
+      "weapon": ""
+    },
+    "chest": {
+      "statId": 161,
+      "runeId": 74978,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        37132
+      ],
+      "weapon": ""
+    },
+    "hands": {
+      "statId": 161,
+      "runeId": 74978,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        37132
+      ],
+      "weapon": ""
+    },
+    "legs": {
+      "statId": 161,
+      "runeId": 74978,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        37132
+      ],
+      "weapon": ""
+    },
+    "feet": {
+      "statId": 161,
+      "runeId": 74978,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        88771
+      ],
+      "weapon": ""
+    },
+    "back": {
+      "statId": 584,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "accessory1": {
+      "statId": 584,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "accessory2": {
+      "statId": 584,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "amulet": {
+      "statId": 584,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [],
+      "weapon": ""
+    },
+    "ring1": {
+      "statId": 584,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "ring2": {
+      "statId": 584,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "weapon1": {
+      "statId": 161,
+      "runeId": null,
+      "sigils": [
+        24615,
+        24868
+      ],
+      "infusions": [
+        null,
+        null
+      ],
+      "weapon": "Rifle"
+    },
+    "offhand1": {
+      "statId": null,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [],
+      "weapon": ""
+    },
+    "weapon2": {
+      "statId": 161,
+      "runeId": null,
+      "sigils": [
+        24615,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": "Dagger"
+    },
+    "offhand2": {
+      "statId": 161,
+      "runeId": null,
+      "sigils": [
+        24868,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": "Pistol"
+    }
+  },
+  "relic": 100924,
+  "food": 91805,
+  "utility": 43451,
+  "skills": [
+    13050,
+    41372,
+    13002,
+    13046,
+    45508
+  ],
+  "specs": [
+    {
+      "id": 35,
+      "traits": [
+        1268,
+        1272,
+        1904
+      ]
+    },
+    {
+      "id": 28,
+      "traits": [
+        1245,
+        1704,
+        1269
+      ]
+    },
+    {
+      "id": 58,
+      "traits": [
+        2145,
+        2160,
+        2111
+      ]
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect, type Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import {
@@ -19,11 +20,7 @@ function fixture(sigils: [number | null, number | null]): Build {
   return b;
 }
 async function seed(page: Page, b: Build) {
-  await page.addInitScript(
-    (b) => localStorage.setItem("p12.builds.v1", JSON.stringify([b])),
-    b,
-  );
-  await page.goto("/");
+  await loadBuild(page, b);
   await expect(value(page, "Healing")).toBeVisible();
 }
 
@@ -50,20 +47,18 @@ test("生命与亲善层数互斥，食物/油联动；保存下载不携带预�
   await expect(page.locator(".attribute-breakdown")).toContainText(
     "超级亲善法印 · 25层",
   );
-  await page.getByRole("button", { name: "保存", exact: true }).click();
-  const saved = await page.evaluate(
-    () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-  );
+
+  const saved = await downloadBuild(page);
   expect(saved.version).toBe(1);
   expect(saved.equipment.weapon1.sigils).toEqual([24582, 24584]);
   expect(saved).not.toHaveProperty("stacks");
   expect(saved).not.toHaveProperty("outgoingHealingBonus");
   const download = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   expect(
     JSON.parse(readFileSync((await (await download).path())!, "utf8")),
   ).toEqual(saved);
-  await page.reload();
+  await reloadBuild(page);
   await expect(value(page, "OutgoingHealing")).toHaveText("11.16%");
 });
 
@@ -195,7 +190,7 @@ test("390px旧版1只读分享计算瘫痪与治疗法印，刷新与预览不�
   await page
     .locator(".attribute-panel")
     .screenshot({ path: "test-results/sigil-attributes-mobile.png" });
-  await page.reload();
+  await reloadBuild(page);
   await expect(value(page, "OutgoingHealing")).toHaveText("21.16%");
   await expect(value(page, "ControlDuration")).toHaveText("30.00%");
 });
@@ -239,7 +234,7 @@ test("石蜥毒液石化/蔑视与描述引用随瘫痪联动，30秒毒液不�
   await expect(fact("蔑视伤害")).toHaveText("150");
   await page.keyboard.press("Escape");
   expect(new URL(page.url()).hash).toBe(hash);
-  await page.reload();
+  await reloadBuild(page);
   await page.locator('.skill-list [data-game-detail="skill-13132"]').click();
   await expect(fact("石化持续时间")).toHaveText("1.95 秒");
 });

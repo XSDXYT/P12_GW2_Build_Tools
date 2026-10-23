@@ -6,6 +6,7 @@ test-results/
 data/wiki-cache/
 data/wiki-consumable-cache/
 data/weapon-skill-cache/
+data/source-audit/
 docs/
 *.md
 .env

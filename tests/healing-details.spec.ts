@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect, type Page } from "@playwright/test";
 import { createBuild, encodeShare, type Build } from "../src/domain";
 
@@ -18,11 +19,7 @@ function fixture(): Build {
   return b;
 }
 async function seed(page: Page, b = fixture()) {
-  await page.addInitScript(
-    (value) => localStorage.setItem("p12.builds.v1", JSON.stringify([value])),
-    b,
-  );
-  await page.goto("/");
+  await loadBuild(page, b);
   await expect(page.locator('[data-value="Healing"]')).toBeVisible();
 }
 async function checkHealing(page: Page) {
@@ -106,7 +103,7 @@ test("390px只读治疗详情保持版本1分享与预览隔离，刷新重新�
       () => document.documentElement.scrollWidth <= innerWidth,
     ),
   ).toBe(true);
-  await page.reload();
+  await reloadBuild(page);
   await expect(page.locator('[data-value="Healing"]')).toBeVisible();
   expect((await checkHealing(page)).healing).toBe(first.healing);
 });
@@ -115,11 +112,7 @@ test("属性资料失败时保留Wiki公式，重试成功后显示配装治疗"
   await page.route("**/attribute-data.json", (route) =>
     route.fulfill({ status: 503, body: "Unavailable" }),
   );
-  await page.addInitScript(
-    (b) => localStorage.setItem("p12.builds.v1", JSON.stringify([b])),
-    fixture(),
-  );
-  await page.goto("/");
+  await loadBuild(page, fixture());
   await expect(
     page.getByRole("button", { name: "重新加载属性资料" }),
   ).toBeVisible();

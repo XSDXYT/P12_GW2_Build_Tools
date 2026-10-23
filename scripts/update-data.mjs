@@ -1,10 +1,12 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
+import { loadSourcePolicy, writeSourcedSnapshot } from "./data-source-io.mjs";
 import {
   localizeConsumables,
   localizeGameDescriptions,
   descriptionLocalizationSummary,
 } from "./catalog-transforms.mjs";
 const base = "https://api.guildwars2.com/v2/";
+const sourcePolicy = await loadSourcePolicy();
 async function get(path) {
   for (let i = 0; i < 5; i++) {
     try {
@@ -104,9 +106,9 @@ const consumables = localizedItems.filter(
   (i) =>
     i.type === "Consumable" && ["Food", "Utility"].includes(i.details?.type),
 );
-await writeFile(
+await writeSourcedSnapshot(
   "public/catalog.json",
-  JSON.stringify({
+  {
     revision: new Date().toISOString(),
     professions,
     specs,
@@ -131,7 +133,9 @@ await writeFile(
         .length,
       missing: consumables.filter((i) => !i.nameSource).map((i) => i.id),
     },
-  }),
+  },
+  "catalog",
+  { policy: sourcePolicy },
 );
 console.log(
   `资料已生成：${minimalItems.length} 个物品，${skills.length} 个技能。`,

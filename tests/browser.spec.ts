@@ -1,5 +1,7 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect } from "@playwright/test";
 import fs from "node:fs";
+import { createBuild } from "../src/domain";
 const catalog = JSON.parse(fs.readFileSync("public/catalog.json", "utf8"));
 test("选择、保存刷新、分享、只读与复制编辑", async ({ page, context }) => {
   const errors: string[] = [];
@@ -14,67 +16,72 @@ test("选择、保存刷新、分享、只读与复制编辑", async ({ page, co
     .first()
     .click();
   await page.locator(".option:not(.clear)").first().click();
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
+
+  const roundtrip = await downloadBuild(page);
   await page.reload();
+  await page.locator('input[type="file"]').setInputFiles({
+    name: "roundtrip.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(JSON.stringify(roundtrip)),
+  });
   await expect(page.getByLabel("配装名称", { exact: true })).toHaveValue(
     "浏览器验收 BD",
   );
   await page.getByLabel("主手 Ⅰ武器类型").selectOption("Staff");
   await expect(page.getByText("由双手武器占用").first()).toBeVisible();
   // 构建受支持核心配置，验证整条分享与解码链路。
-  await page.evaluate((c) => {
-    const raw = JSON.parse(localStorage.getItem("p12.builds.v1")!)[0];
-    raw.name = "完整分享验收";
-    const stat = c.statChoices.equipment[0];
-    for (const s of Object.values(raw.equipment) as any[]) s.statId = stat;
-    raw.equipment.weapon1.weapon = "Staff";
-    raw.equipment.weapon1.infusions = [null, null];
-    raw.equipment.weapon2 = {
-      statId: null,
-      runeId: null,
-      sigils: [null, null],
-      infusions: [null],
-      weapon: "",
-    };
-    raw.equipment.offhand1 = {
-      statId: null,
-      runeId: null,
-      sigils: [null, null],
-      infusions: [],
-      weapon: "",
-    };
-    raw.equipment.offhand2 = {
-      statId: null,
-      runeId: null,
-      sigils: [null, null],
-      infusions: [null],
-      weapon: "",
-    };
-    raw.specs = c.specs
-      .filter((s: any) => s.profession === "Mesmer" && !s.elite)
-      .slice(0, 3)
-      .map((s: any) => ({
-        id: s.id,
-        traits: [1, 2, 3].map(
-          (t) =>
-            c.traits.find(
-              (x: any) =>
-                x.specialization === s.id && x.slot === "Major" && x.tier === t,
-            ).id,
-        ),
-      }));
-    raw.skills = ["Heal", "Utility", "Utility", "Utility", "Elite"].map(
-      (kind, i) =>
-        c.skills.filter(
-          (s: any) =>
-            s.professions?.includes("Mesmer") &&
-            s.type === kind &&
-            !s.specialization,
-        )[kind === "Utility" ? i - 1 : 0].id,
-    );
-    localStorage.setItem("p12.builds.v1", JSON.stringify([raw]));
-  }, catalog);
-  await page.reload();
+  const raw = createBuild();
+  const c = catalog;
+  raw.name = "完整分享验收";
+  const stat = c.statChoices.equipment[0];
+  for (const s of Object.values(raw.equipment) as any[]) s.statId = stat;
+  raw.equipment.weapon1.weapon = "Staff";
+  raw.equipment.weapon1.infusions = [null, null];
+  raw.equipment.weapon2 = {
+    statId: null,
+    runeId: null,
+    sigils: [null, null],
+    infusions: [null],
+    weapon: "",
+  };
+  raw.equipment.offhand1 = {
+    statId: null,
+    runeId: null,
+    sigils: [null, null],
+    infusions: [],
+    weapon: "",
+  };
+  raw.equipment.offhand2 = {
+    statId: null,
+    runeId: null,
+    sigils: [null, null],
+    infusions: [null],
+    weapon: "",
+  };
+  raw.specs = c.specs
+    .filter((s: any) => s.profession === "Mesmer" && !s.elite)
+    .slice(0, 3)
+    .map((s: any) => ({
+      id: s.id,
+      traits: [1, 2, 3].map(
+        (t) =>
+          c.traits.find(
+            (x: any) =>
+              x.specialization === s.id && x.slot === "Major" && x.tier === t,
+          ).id,
+      ),
+    }));
+  raw.skills = ["Heal", "Utility", "Utility", "Utility", "Elite"].map(
+    (kind, i) =>
+      c.skills.filter(
+        (s: any) =>
+          s.professions?.includes("Mesmer") &&
+          s.type === kind &&
+          !s.specialization,
+      )[kind === "Utility" ? i - 1 : 0].id,
+  );
+  await downloadBuild(page);
+  await loadBuild(page, raw);
   await page.getByRole("button", { name: "分享配装 ↗" }).click();
   const link = await page.locator(".share input").inputValue();
   expect(link).toContain("#build=");
@@ -141,8 +148,8 @@ test("食物、扳手、逐槽灌注选择并保存恢复，JSON 导出内容一
   await head.getByRole("button", { name: /头部灌注槽 1/ }).click();
   await page.locator(".search").fill(String(infusion.id));
   await page.locator(".option:not(.clear)").click();
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
-  await page.reload();
+  await downloadBuild(page);
+  await reloadBuild(page);
   await expect(
     page.locator(".upgrades-card").getByRole("button", { name: /^食物/ }),
   ).toContainText(food.name);
@@ -151,7 +158,7 @@ test("食物、扳手、逐槽灌注选择并保存恢复，JSON 导出内容一
   ).toContainText(utility.name);
   await expect(page.locator(".infusion-total")).toContainText(infusion.name);
   const downloadPromise = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   const download = await downloadPromise;
   const exported = JSON.parse(
     fs.readFileSync((await download.path())!, "utf8"),
@@ -161,17 +168,19 @@ test("食物、扳手、逐槽灌注选择并保存恢复，JSON 导出内容一
   expect(exported.equipment.head.infusions[0]).toBe(infusion.id);
 });
 
-test("存储写入失败仍保留当前草稿", async ({ page }) => {
+test("下载失败保留草稿和未保存提醒", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".gear-grid")).toBeVisible();
   await page.getByLabel("配装名称", { exact: true }).fill("必须保留的草稿");
   await page.evaluate(() => {
-    Storage.prototype.setItem = () => {
-      throw new DOMException("Quota exceeded", "QuotaExceededError");
+    URL.createObjectURL = () => {
+      throw new Error("download failed");
     };
   });
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
-  await expect(page.getByRole("status")).toContainText("保存失败");
+
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
+  await expect(page.getByRole("status")).toContainText("下载失败");
+  await expect(page.locator(".build-caption")).toContainText("尚未保存");
   await expect(page.getByLabel("配装名称", { exact: true })).toHaveValue(
     "必须保留的草稿",
   );
@@ -239,8 +248,8 @@ test("整套词条设置可撤销，逐件调整后仍可保存", async ({ page 
   ).toContainText("未选择");
   await page.getByRole("button", { name: /整套词条/ }).click();
   await page.getByRole("option", { name: "天界", exact: true }).click();
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
-  await page.reload();
+  await downloadBuild(page);
+  await reloadBuild(page);
   await expect(
     page
       .locator(".equipment-row")
@@ -323,33 +332,4 @@ test("触屏选择器使用底部面板，打开时不聚焦搜索", async ({ br
     page.getByRole("button", { name: "头部属性：狂战士", exact: true }),
   ).toBeVisible();
   await context.close();
-});
-
-test("配装库复制生成独立身份，删除原配装不影响副本", async ({ page }) => {
-  await page.goto("/");
-  await expect(page.locator(".gear-grid")).toBeVisible();
-  await page.getByLabel("配装名称", { exact: true }).fill("原始配装");
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
-  const originalId = await page.evaluate(
-    () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0].id,
-  );
-  await page.getByRole("button", { name: /我的配装/ }).click();
-  await expect(page.getByRole("dialog", { name: "我的配装" })).toBeVisible();
-  await page.getByRole("button", { name: "复制原始配装", exact: true }).click();
-  await expect(page.getByLabel("配装名称", { exact: true })).toHaveValue(
-    "原始配装 · 副本",
-  );
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
-  const saved = await page.evaluate(() =>
-    JSON.parse(localStorage.getItem("p12.builds.v1")!),
-  );
-  expect(saved).toHaveLength(2);
-  expect(saved[0].id).not.toBe(originalId);
-  await page.getByRole("button", { name: /我的配装/ }).click();
-  page.once("dialog", (dialog) => dialog.accept());
-  await page.getByRole("button", { name: "删除原始配装", exact: true }).click();
-  await expect(page.locator(".library-row")).toHaveCount(1);
-  await expect(page.locator(".library-row")).toContainText("原始配装 · 副本");
-  await page.keyboard.press("Escape");
-  await expect(page.locator(".library")).toHaveCount(0);
 });

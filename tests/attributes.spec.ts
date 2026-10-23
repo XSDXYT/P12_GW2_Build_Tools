@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect, type Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import {
@@ -50,13 +51,7 @@ function fixture(complete = false): Build {
   return b;
 }
 async function seed(page: Page, b: Build) {
-  await page.addInitScript((value) => {
-    if (!sessionStorage.getItem("attribute-fixture")) {
-      localStorage.setItem("p12.builds.v1", JSON.stringify([value]));
-      sessionStorage.setItem("attribute-fixture", "1");
-    }
-  }, b);
-  await page.goto("/");
+  await loadBuild(page, b);
   await expect(page.locator('[data-value="Power"]')).toBeVisible();
 }
 const power = (page: Page) => page.locator('[data-value="Power"]');
@@ -103,13 +98,11 @@ test("威能激怒只改变预览，保存/导出/分享不带条件，刷新重
     original.toLocaleString("en-US"),
   );
   await expect(page.locator(".build-caption")).toContainText("已就绪");
-  await page.getByRole("button", { name: "保存", exact: true }).click();
-  const saved = await page.evaluate(
-    () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-  );
+
+  const saved = await downloadBuild(page);
   expect(saved).toEqual(b);
   const downloading = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   const download = await downloading;
   expect(JSON.parse(readFileSync((await download.path())!, "utf8"))).toEqual(b);
   await page.getByRole("button", { name: "分享配装 ↗" }).click();
@@ -127,7 +120,7 @@ test("威能激怒只改变预览，保存/导出/分享不带条件，刷新重
     "readonly",
     "",
   );
-  await page.reload();
+  await reloadBuild(page);
   await expect(power(page)).toHaveText(original.toLocaleString("en-US"));
   await page.locator(".attribute-effects summary").click();
   await expect(page.getByLabel("预览威能层数")).toHaveValue("0");
@@ -166,7 +159,7 @@ test("符文特定症状时长自动展示，与通用时长叠加并显示上�
   }
   capped.relic = 100849;
   await page.goto("/#build=" + encodeShare(capped));
-  await page.reload();
+  await reloadBuild(page);
   await page.locator(".attribute-effects summary").click();
   await page.getByLabel("预览贵族古物层数").fill("5");
   await expect(page.locator('[data-value="ConditionBonus"]')).toHaveText(
@@ -265,14 +258,10 @@ test("守护者纹章冷却联动属性，保存导出分享隔离且刷新重�
     "怨毒纹章 · 被动",
   );
   await page.getByLabel("预览怨毒纹章正在冷却", { exact: true }).check();
-  await page.getByRole("button", { name: "保存", exact: true }).click();
-  expect(
-    await page.evaluate(
-      () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-    ),
-  ).toEqual(b);
+
+  expect(await downloadBuild(page)).toEqual(b);
   const downloading = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   expect(
     JSON.parse(readFileSync((await (await downloading).path())!, "utf8")),
   ).toEqual(b);
@@ -287,7 +276,7 @@ test("守护者纹章冷却联动属性，保存导出分享隔离且刷新重�
   await expect(power(viewer)).toHaveText(
     (original - 180).toLocaleString("en-US"),
   );
-  await page.reload();
+  await reloadBuild(page);
   await expect(power(page)).toHaveText(original.toLocaleString("en-US"));
   await page.locator(".attribute-effects summary").click();
   await expect(
@@ -381,14 +370,10 @@ test("幻术纹章冷却逐项更新，模糊铭文不保留被动且保存分�
     (originalDamage - 180).toLocaleString("en-US"),
   );
   await expect(expertise).toHaveText(originalExpertise.toLocaleString("en-US"));
-  await page.getByRole("button", { name: "保存", exact: true }).click();
-  expect(
-    await page.evaluate(
-      () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-    ),
-  ).toEqual(b);
+
+  expect(await downloadBuild(page)).toEqual(b);
   const downloading = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   expect(
     JSON.parse(readFileSync((await (await downloading).path())!, "utf8")),
   ).toEqual(b);
@@ -405,7 +390,7 @@ test("幻术纹章冷却逐项更新，模糊铭文不保留被动且保存分�
   await expect(viewer.locator('[data-value="ConditionDuration"]')).toHaveText(
     (originalExpertise - 180).toLocaleString("en-US"),
   );
-  await page.reload();
+  await reloadBuild(page);
   await expect(damage).toHaveText(originalDamage.toLocaleString("en-US"));
   await page.locator(".attribute-effects summary").click();
   await expect(
@@ -509,14 +494,10 @@ test("火焰纹章随石刻纹章点选即时保留或失效，保存分享不�
   await expect(precision).toHaveText((original - 180).toLocaleString("en-US"));
   await page.getByRole("button", { name: "石刻纹章", exact: true }).click();
   b.specs[0].traits[2] = 287;
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
-  expect(
-    await page.evaluate(
-      () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-    ),
-  ).toEqual(b);
+
+  expect(await downloadBuild(page)).toEqual(b);
   const downloading = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   expect(
     JSON.parse(readFileSync((await (await downloading).path())!, "utf8")),
   ).toEqual(b);
@@ -533,7 +514,7 @@ test("火焰纹章随石刻纹章点选即时保留或失效，保存分享不�
   await expect(viewer.locator('[data-value="Precision"]')).toHaveText(
     original.toLocaleString("en-US"),
   );
-  await page.reload();
+  await reloadBuild(page);
   await page.locator(".attribute-effects summary").click();
   await expect(
     page.getByLabel("预览火焰纹章正在冷却", { exact: true }),
@@ -630,14 +611,10 @@ test("战士纹章被动与专精叠层独立，转换实时更新且保存导�
   await expect(page.locator(".attribute-breakdown")).toContainText(
     "纹章专精 · 5 层",
   );
-  await page.getByRole("button", { name: "保存", exact: true }).click();
-  expect(
-    await page.evaluate(
-      () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-    ),
-  ).toEqual(b);
+
+  expect(await downloadBuild(page)).toEqual(b);
   const downloading = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   expect(
     JSON.parse(readFileSync((await (await downloading).path())!, "utf8")),
   ).toEqual(b);
@@ -657,7 +634,7 @@ test("战士纹章被动与专精叠层独立，转换实时更新且保存导�
   await expect(viewer.locator('[data-value="CritDamage"]')).toHaveText(
     (originalFerocity + 500).toLocaleString("en-US"),
   );
-  await page.reload();
+  await reloadBuild(page);
   await page.locator(".attribute-effects summary").click();
   await expect(
     page.getByLabel("预览纹章专精层数", { exact: true }),

@@ -1,4 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
+import { loadSourcePolicy, writeSourcedSnapshot } from "./data-source-io.mjs";
+const sourcePolicy = await loadSourcePolicy();
 import {
   descriptionText,
   localizeGameDescriptions,
@@ -110,5 +112,7 @@ await writeFile(
   "data/game-descriptions.zh-CN.json",
   JSON.stringify(localization, null, 2) + "\n",
 );
-await writeFile("public/catalog.json", JSON.stringify(updated));
+await writeSourcedSnapshot("public/catalog.json", updated, "catalog", {
+  policy: sourcePolicy,
+});
 console.log(JSON.stringify(updated.descriptionLocalization, null, 2));

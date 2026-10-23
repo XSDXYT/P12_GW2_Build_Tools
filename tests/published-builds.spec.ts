@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect } from "@playwright/test";
 import { createBuild } from "../src/domain";
 const build = {
@@ -13,7 +14,7 @@ const manifest = {
   ],
 };
 
-test("公开BD库读取文件、直达及刷新正常，在线可以下载、缓存和复制编辑", async ({
+test("公开BD库读取文件、直达及刷新正常，在线可以下载和复制编辑", async ({
   page,
 }) => {
   await page.route("**/bd/index.json", (route) =>
@@ -34,16 +35,17 @@ test("公开BD库读取文件、直达及刷新正常，在线可以下载、缓
     "",
   );
   expect(new URL(page.url()).hash).toBe("#bd=" + encodeURIComponent(build.id));
-  await page.getByRole("button", { name: "存到浏览器", exact: true }).click();
+  expect((await downloadBuild(page)).description).toBe(build.description);
+  await expect(
+    page.getByRole("button", { name: "存到浏览器", exact: true }),
+  ).toHaveCount(0);
   expect(
-    await page.evaluate(
-      () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0].description,
-    ),
-  ).toBe(build.description);
+    await page.evaluate(() => localStorage.getItem("p12.builds.v1")),
+  ).toBeNull();
   const downloaded = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   expect((await downloaded).suggestedFilename()).toBe("公开幻术BD.json");
-  await page.reload();
+  await reloadBuild(page);
   await expect(
     page.getByRole("heading", { name: "公开讲解", exact: true }),
   ).toBeVisible();

@@ -1,4 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
+import { loadSourcePolicy, writeSourcedSnapshot } from "./data-source-io.mjs";
+const sourcePolicy = await loadSourcePolicy();
 const api = "https://api.guildwars2.com/v2/";
 async function get(path) {
   const response = await fetch(
@@ -99,7 +101,9 @@ const output = {
     ]),
   ),
 };
-await writeFile("public/attribute-data.json", JSON.stringify(output));
+await writeSourcedSnapshot("public/attribute-data.json", output, "attributes", {
+  policy: sourcePolicy,
+});
 console.log(
   `属性基准 ${Object.keys(profiles).length} 槽位；效果资料 ${items.length} 项。`,
 );

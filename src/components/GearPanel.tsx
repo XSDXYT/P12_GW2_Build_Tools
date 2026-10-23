@@ -216,7 +216,6 @@ export function GearPanel({
     <section className="panel gear-panel" aria-labelledby="gear-heading">
       <header className="panel-heading">
         <div>
-          <span className="section-index">01</span>
           <h2 id="gear-heading">
             装备 <small>GEAR</small>
           </h2>

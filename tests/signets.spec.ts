@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect, type Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import {
@@ -60,13 +61,7 @@ function completeSignetBuild(
   return b;
 }
 async function seed(page: Page, b: Build) {
-  await page.addInitScript((value) => {
-    if (!sessionStorage.getItem("signet-fixture")) {
-      localStorage.setItem("p12.builds.v1", JSON.stringify([value]));
-      sessionStorage.setItem("signet-fixture", "1");
-    }
-  }, b);
-  await page.goto("/");
+  await loadBuild(page, b);
   await expect(page.locator('[data-value="Power"]')).toBeVisible();
 }
 const row = (page: Page, key: string) => page.locator(`[data-value="${key}"]`);
@@ -145,14 +140,10 @@ for (const entry of [
     }
     for (const e of entry.effects)
       await page.getByLabel(`预览${e.name}正在冷却`, { exact: true }).check();
-    await page.getByRole("button", { name: "保存", exact: true }).click();
-    expect(
-      await page.evaluate(
-        () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-      ),
-    ).toEqual(b);
+
+    expect(await downloadBuild(page)).toEqual(b);
     const downloading = page.waitForEvent("download");
-    await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+    await page.getByRole("button", { name: "下载 BD", exact: true }).click();
     expect(
       JSON.parse(readFileSync((await (await downloading).path())!, "utf8")),
     ).toEqual(b);
@@ -171,7 +162,7 @@ for (const entry of [
         (original.get(e.key)! - 180).toLocaleString("en-US"),
       );
     }
-    await page.reload();
+    await reloadBuild(page);
     await page.locator(".attribute-effects summary").click();
     for (const e of entry.effects)
       await expect(
@@ -192,7 +183,7 @@ test("唤灵师帷幕使怨恨纹章失效，灾厄不提供帷幕开关", async
     b.skills[1] = 10622;
     b.specs[2].id = elite;
     await page.goto("/#build=" + encodeShare(b));
-    await page.reload();
+    await reloadBuild(page);
     await expect(row(page, "Power")).toHaveText("1,180");
     await page.locator(".attribute-effects summary").click();
     const shroud = page.getByLabel("预览处于帷幕状态", { exact: true });

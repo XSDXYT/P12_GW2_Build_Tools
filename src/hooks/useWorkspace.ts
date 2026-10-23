@@ -9,27 +9,17 @@ import {
   type Build,
   type Catalog,
 } from "../domain";
-import { readLibrary, saveBuild, deleteBuild, downloadBuild } from "../storage";
-import {
-  readLibraryMetadata,
-  saveBuildMetadata,
-  importLibraryBackup,
-  downloadJson,
-} from "../storage";
-import {
-  createLibraryBackup,
-  parseLibraryBackup,
-  type BuildMetadata,
-  type LibraryMetadata,
-} from "../library";
+import { downloadBuild, readLegacyBackup } from "../storage";
+import { parseLibraryBackup, type LibraryBackup } from "../library";
 import type { Edit } from "../editor";
 export function useWorkspace() {
   const loadSequence = useRef(0);
   const [build, setBuild] = useState<Build>(createBuild),
     [readonly, setReadonly] = useState(false),
     [dirty, setDirty] = useState(false),
-    [library, setLibrary] = useState<Build[]>([]),
-    [metadata, setMetadata] = useState<LibraryMetadata>({}),
+    [legacyBackup, setLegacyBackup] = useState<LibraryBackup | null>(null),
+    [recovery, setRecovery] = useState<LibraryBackup | null>(null),
+    [savedStatus, setSavedStatus] = useState("已就绪"),
     [message, setMessage] = useState(""),
     [shareLink, setShareLink] = useState(""),
     [undo, setUndo] = useState<{
@@ -41,16 +31,12 @@ export function useWorkspace() {
   latestBuild.current = build;
   useEffect(() => {
     try {
-      const saved = readLibrary();
-      setLibrary(saved);
-      if (saved[0]) setBuild(saved[0]);
-    } catch (e) {
-      setMessage(String(e));
-    }
-    try {
-      setMetadata(readLibraryMetadata());
+      const backup = readLegacyBackup();
+      if (backup?.builds.length) setLegacyBackup(backup);
     } catch {
-      setMessage("分类资料读取失败，原始分类仍保留，配装可继续使用。");
+      setMessage(
+        "旧浏览器配装读取失败，原始记录保留；仍可导入本地 JSON。请勿清理网站数据。",
+      );
     }
     const onHash = () => {
       const sequence = ++loadSequence.current;
@@ -116,6 +102,7 @@ export function useWorkspace() {
     setUndo(label ? { build: structuredClone(build), dirty, label } : null);
     setBuild(next);
     setDirty(true);
+    setSavedStatus("已就绪");
     setShareLink("");
     if (!label) setMessage("");
   };
@@ -130,6 +117,7 @@ export function useWorkspace() {
     setBuild(structuredClone(next));
     setReadonly(false);
     setDirty(markDirty);
+    setSavedStatus("已就绪");
     setUndo(null);
     setShareLink("");
     setMessage("");
@@ -162,25 +150,16 @@ export function useWorkspace() {
       return false;
     }
   }
-  function cacheBuild() {
+  function exportFile() {
     try {
-      setLibrary(saveBuild({ ...build, id: crypto.randomUUID() }));
-      setMessage(
-        "已将此 BD 作为独立记录存到当前浏览器。可在“我的配装”打开或下载到本地。",
-      );
-    } catch {
-      setMessage("浏览器缓存失败，当前 BD 仍可下载 JSON。");
-    }
-  }
-  function save() {
-    try {
-      setLibrary(saveBuild(build));
+      downloadBuild(build);
       setDirty(false);
-      setMessage("配装已保存在此浏览器。");
-    } catch {
+      setSavedStatus("已发起下载");
       setMessage(
-        "保存失败，本地记录或存储空间不可用。草稿仍保留，可导出备份。",
+        "已发起 BD JSON 下载，请确认浏览器已保存文件。GitHub 同步仍需手动执行。",
       );
+    } catch {
+      setMessage("下载失败，当前草稿保留。请重试或连接 BD 文件夹保存。");
     }
   }
   async function importFile(file?: File) {
@@ -190,41 +169,19 @@ export function useWorkspace() {
       const text = await file.text();
       if (JSON.parse(text)?.type === "p12-library") {
         const backup = parseLibraryBackup(text);
-        const next = importLibraryBackup(backup);
-        setLibrary(next.builds);
-        setMetadata(next.metadata);
+        setRecovery(backup);
         setMessage(
-          `已导入 ${backup.builds.length} 个配装及分类，原配装保留；当前草稿未改变。`,
+          "已读取旧配装库备份，可逐个下载或载入编辑；当前草稿保留，未写入浏览器。",
         );
         return;
       }
       if (file.size > 262144) throw Error("单个配装文件过大");
       const next = parseBuild(text);
       next.id = crypto.randomUUID();
-      if (replace(next, true)) setMessage("已导入为独立草稿，检查后可保存。");
+      if (replace(next, true))
+        setMessage("已导入为独立草稿，检查后可下载或保存到 BD 文件夹。");
     } catch {
-      setMessage(
-        "导入失败：文件过大、格式错误、版本不支持或存储不可用。原配装未修改。",
-      );
-    }
-  }
-  function updateMetadata(id: string, value: BuildMetadata): boolean {
-    try {
-      setMetadata(saveBuildMetadata(id, value));
-      return true;
-    } catch {
-      setMessage("分类保存失败，原始分类仍保留，请先备份检查浏览器存储。");
-      return false;
-    }
-  }
-  function exportLibrary() {
-    try {
-      downloadJson(
-        createLibraryBackup(readLibrary(), readLibraryMetadata()),
-        "P12-配装库备份",
-      );
-    } catch {
-      setMessage("配装库备份失败，原始记录仍保留。可先导出当前配装检查存储。");
+      setMessage("导入失败：文件过大、格式错误或版本不支持。原配装未修改。");
     }
   }
   async function share(catalog: Catalog) {
@@ -245,13 +202,6 @@ export function useWorkspace() {
       }
     } catch (e) {
       setMessage(String(e));
-    }
-  }
-  function remove(id: string) {
-    try {
-      setLibrary(deleteBuild(id));
-    } catch {
-      setMessage("删除失败，原记录保留。");
     }
   }
   function copy() {
@@ -278,29 +228,29 @@ export function useWorkspace() {
     build,
     readonly,
     dirty,
-    library,
-    metadata,
-    updateMetadata,
-    exportLibrary,
+    legacyBackup,
+    recovery,
+    showLegacyBackup: () => setRecovery(legacyBackup),
+    closeRecovery: () => setRecovery(null),
+    savedStatus,
     message,
     setMessage,
     shareLink,
     undo,
     edit,
     replace,
-    save,
     importFile,
     share,
-    remove,
     copy,
     undoEdit,
     newBuild: () => replace(createBuild(build.profession)),
     openPublished,
-    cacheBuild,
     markFileSaved: (saved: Build) => {
-      if (JSON.stringify(latestBuild.current) === JSON.stringify(saved))
+      if (JSON.stringify(latestBuild.current) === JSON.stringify(saved)) {
         setDirty(false);
+        setSavedStatus("已保存到文件");
+      }
     },
-    exportFile: () => downloadBuild(build),
+    exportFile,
   };
 }

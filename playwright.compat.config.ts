@@ -7,6 +7,7 @@ export default defineConfig({
     "published-builds.spec.ts",
     "published-scroll.spec.ts",
     "library.spec.ts",
+    "local-builds.spec.ts",
     "build-classification.spec.ts",
     "gear-batch-runes.spec.ts",
     "consumables.spec.ts",

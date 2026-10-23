@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect, type Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import { createBuild, decodeShare, type Build } from "../src/domain";
@@ -8,11 +9,7 @@ function fixture(): Build {
   return build;
 }
 async function seed(page: Page, build = fixture()) {
-  await page.addInitScript(
-    (value) => localStorage.setItem("p12.builds.v1", JSON.stringify([value])),
-    build,
-  );
-  await page.goto("/");
+  await loadBuild(page, build);
   await expect(page.locator(".trait-lines")).toBeVisible();
 }
 
@@ -56,9 +53,9 @@ test("斜杠引用跨类型检索，Markdown预览悬浮复用技能特性与食
     page.getByRole("dialog", { name: "彩棱豆饼", exact: true }),
   ).toContainText("600 秒");
   await page.keyboard.press("Escape");
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
+
   const download = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   expect(
     JSON.parse(readFileSync((await (await download).path())!, "utf8"))
       .description,
@@ -69,7 +66,7 @@ test("斜杠引用跨类型检索，Markdown预览悬浮复用技能特性与食
   });
 });
 
-test("有意取消主特性后仍可保存和分享，390px只读描述、引用及独立浏览器缓存兼容", async ({
+test("有意取消主特性后仍可下载和分享，390px只读描述与引用兼容", async ({
   page,
   context,
 }) => {
@@ -87,7 +84,7 @@ test("有意取消主特性后仍可保存和分享，390px只读描述、引用
       .getByRole("button", { name: "幻象回复", exact: true }),
   ).toHaveAttribute("aria-pressed", "false");
   await expect(page.locator(".validation")).toHaveCount(0);
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
+
   await page.getByRole("button", { name: "分享配装 ↗", exact: true }).click();
   const link = await page.locator(".share input").inputValue();
   const build = decodeShare(link.split("#build=")[1]);
@@ -112,12 +109,12 @@ test("有意取消主特性后仍可保存和分享，390px只读描述、引用
     viewer.getByRole("dialog", { name: "幻象回复", exact: true }),
   ).toBeVisible();
   await viewer.keyboard.press("Escape");
-  await viewer.getByRole("button", { name: "存到浏览器", exact: true }).click();
-  const cached = await viewer.evaluate(
-    () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-  );
-  expect(cached.description).toBe(text);
-  expect(cached.id).not.toBe(build.id);
+  const downloaded = await downloadBuild(viewer);
+  expect(downloaded.description).toBe(text);
+  expect(downloaded.id).toBe(build.id);
+  expect(
+    await viewer.evaluate(() => localStorage.getItem("p12.builds.v1")),
+  ).toBeNull();
   expect(
     await viewer.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
@@ -242,7 +239,7 @@ test("文件夹旧文件原位更新，新BD按标题命名并避免重名覆盖
   );
   expect(saved.id).toBe(build.id);
   expect(saved.description).toContain("## 已保存");
-  await expect(page.locator(".build-caption")).toContainText("已就绪");
+  await expect(page.locator(".build-caption")).toContainText("已保存到文件");
   for (const [index, filename] of [
     "治疗幻术_开荒.json",
     "治疗幻术_开荒 (2).json",
@@ -268,7 +265,7 @@ test("文件夹旧文件原位更新，新BD按标题命名并避免重名覆盖
     JSON.parse(files["治疗幻术_开荒.json"]).id,
   );
   const downloading = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   expect((await downloading).suggestedFilename()).toBe("治疗幻术_开荒.json");
 });
 
@@ -280,7 +277,7 @@ test("没有文件夹权限时保留草稿，不支持目录接口时仍可下�
       throw new DOMException("denied", "NotAllowedError");
     };
   });
-  await seed(page);
+  await page.goto("/");
   await page.getByLabel("BD描述Markdown", { exact: true }).fill("仍保留的草稿");
   await page
     .getByRole("button", { name: "连接 BD 文件夹", exact: true })
@@ -405,11 +402,7 @@ for (const width of [1440, 390]) {
       path: `test-results/description-expanded-${width}.png`,
     });
     await modal.getByRole("button", { name: "收起窗口", exact: true }).click();
-    await page.getByRole("button", { name: "保存修改", exact: true }).click();
-    expect(
-      await page.evaluate(
-        () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0].description,
-      ),
-    ).toBe(text);
+
+    expect((await downloadBuild(page)).description).toBe(text);
   });
 }

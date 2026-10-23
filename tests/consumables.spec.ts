@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect, type Page } from "@playwright/test";
 import {
   createBuild,
@@ -20,11 +21,7 @@ function fixture() {
   return b;
 }
 async function seed(page: Page, b: Build) {
-  await page.addInitScript(
-    (b) => localStorage.setItem("p12.builds.v1", JSON.stringify([b])),
-    b,
-  );
-  await page.goto("/");
+  await loadBuild(page, b);
   await expect(value(page, "OutgoingHealing")).toHaveText("11.16%");
 }
 
@@ -58,16 +55,14 @@ test("食物扳手选择显示补齐的效果并立即计算，保存导出保�
   await expect(value(page, "BoonDuration")).toHaveText("100");
   await expect(value(page, "ConditionDuration")).toHaveText("70");
   await expect(value(page, "OutgoingHealing")).toHaveText("0.00%");
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
-  const saved = await page.evaluate(
-    () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-  );
+
+  const saved = await downloadBuild(page);
   expect(saved.food).toBe(91842);
   expect(saved.utility).toBe(99845);
   expect(saved.version).toBe(1);
   expect(saved).not.toHaveProperty("consumableHealingBonus");
   const downloading = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   expect(
     JSON.parse(readFileSync((await (await downloading).path())!, "utf8")),
   ).toEqual(saved);
@@ -120,7 +115,7 @@ test("390px只读分享展示营养详情，盟友治疗来源随条件变化且
   ).toBe(true);
   expect(upstream).toEqual([]);
   expect(decodeShare(new URL(page.url()).hash.split("#build=")[1])).toEqual(b);
-  await page.reload();
+  await reloadBuild(page);
   await expect(value(page, "OutgoingHealing")).toHaveText("11.16%");
 });
 

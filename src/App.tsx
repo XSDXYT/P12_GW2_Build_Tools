@@ -6,7 +6,7 @@ import { GearPanel } from "./components/GearPanel";
 import { TraitsPanel } from "./components/TraitsPanel";
 import { BuildDescription } from "./components/BuildDescription";
 import { Picker } from "./components/Picker";
-import { BuildLibrary } from "./components/BuildLibrary";
+import { BuildRecovery } from "./components/BuildRecovery";
 import { AttributePreviewProvider } from "./hooks/useAttributePreview";
 import { appVersion, releaseCommit } from "./release";
 import { BuildFolder } from "./components/BuildFolder";
@@ -19,7 +19,6 @@ export function App() {
     [picker, setPicker] = useState<(PickerRequest & { token: string }) | null>(
       null,
     ),
-    [libraryOpen, setLibraryOpen] = useState(false),
     [publishedOpen, setPublishedOpen] = useState(false);
   const [weaponError, setWeaponError] = useState(false);
   const file = useRef<HTMLInputElement>(null);
@@ -94,7 +93,6 @@ export function App() {
             激战 2 <strong>配装工坊</strong>
           </span>
         </a>
-        <span className="workspace-label">BUILD WORKSPACE</span>
         <span className="header-mode">
           陆地 PvE <span className="dot" /> v{appVersion}
         </span>
@@ -126,29 +124,45 @@ export function App() {
                 {professions[work.build.profession]}
                 {spec ? " / " + spec.name : " / 核心职业"}
                 <span className="status-bullet">·</span>
-                {work.readonly
-                  ? "分享快照"
-                  : work.dirty
-                    ? "尚未保存"
-                    : "已就绪"}
+                <span
+                  className={`build-state${work.dirty && !work.readonly ? " is-dirty" : ""}`}
+                >
+                  {work.readonly
+                    ? "分享快照"
+                    : work.dirty
+                      ? "尚未保存"
+                      : work.savedStatus}
+                </span>
               </span>
             </div>
           </div>
           <div className="toolbar-actions">
-            <button onClick={() => setLibraryOpen(true)}>
-              我的配装 <span className="count">{work.library.length}</span>
+            <button
+              title="查看随网站发布的公开 BD；本地修改需手动同步 GitHub 并部署后才会更新。"
+              onClick={() => setPublishedOpen(true)}
+            >
+              公开 BD 库
             </button>
-            <button onClick={() => setPublishedOpen(true)}>公开 BD 库</button>
-            <button onClick={work.newBuild}>新建</button>
+            <button title="创建当前职业的空白配装。" onClick={work.newBuild}>
+              新建
+            </button>
             {work.readonly ? (
-              <button onClick={work.copy}>复制编辑</button>
-            ) : (
-              <button onClick={work.save}>
-                {work.dirty ? "保存修改" : "保存"}
+              <button
+                title="创建可编辑的独立副本，保留原分享或公开 BD。"
+                onClick={work.copy}
+              >
+                复制编辑
               </button>
-            )}
+            ) : null}
+            <button
+              title="下载当前 BD 的 JSON 文件；保存位置和同名文件处理由浏览器决定，GitHub 需手动同步。"
+              onClick={work.exportFile}
+            >
+              下载 BD
+            </button>
             <button
               className="primary"
+              title="生成并尝试复制当前配装快照链接，包含描述；之后的修改需重新分享。"
               onClick={() => catalog && void work.share(catalog)}
               disabled={!catalog}
             >
@@ -162,6 +176,7 @@ export function App() {
           notify={work.setMessage}
           open={work.replace}
           saved={work.markFileSaved}
+          download={work.exportFile}
         />
         <div className="context-bar">
           <label>
@@ -283,11 +298,20 @@ export function App() {
           </span>
           <p>80 级升华槽位 · 含属性预览，职业专属机制仍在完善</p>
           <div>
-            {work.readonly && (
-              <button onClick={work.cacheBuild}>存到浏览器</button>
+            {work.legacyBackup && (
+              <button
+                title="只读查看旧浏览器配装并下载迁移，不会新增或清理浏览器记录。"
+                onClick={work.showLegacyBackup}
+              >
+                迁移旧浏览器配装
+              </button>
             )}
-            <button onClick={work.exportFile}>导出 JSON</button>
-            <button onClick={() => file.current?.click()}>导入 JSON</button>
+            <button
+              title="导入单个 BD 为独立草稿，或读取旧整库备份用于下载迁移；要更新原 BD 文件，请从已连接的文件夹载入。"
+              onClick={() => file.current?.click()}
+            >
+              导入 JSON
+            </button>
           </div>
         </footer>
         <input
@@ -313,33 +337,13 @@ export function App() {
           }
         />
       )}
-      {libraryOpen && (
-        <BuildLibrary
-          entries={work.library}
-          metadata={work.metadata}
-          onMetadata={work.updateMetadata}
-          onBackup={work.exportLibrary}
-          onClose={() => setLibraryOpen(false)}
-          onOpen={(b) => {
-            if (work.replace(b)) setLibraryOpen(false);
-          }}
-          onRemove={work.remove}
-          onCopy={(b) => {
-            if (
-              work.replace(
-                {
-                  ...b,
-                  id: crypto.randomUUID(),
-                  name: (b.name + " · 副本").slice(0, 80),
-                },
-                true,
-              )
-            )
-              setLibraryOpen(false);
-          }}
-          onImport={() => {
-            setLibraryOpen(false);
-            file.current?.click();
+      {work.recovery && (
+        <BuildRecovery
+          backup={work.recovery}
+          close={work.closeRecovery}
+          open={(b) => {
+            if (work.replace({ ...b, id: crypto.randomUUID() }, true))
+              work.closeRecovery();
           }}
         />
       )}

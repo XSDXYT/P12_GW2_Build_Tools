@@ -100,9 +100,11 @@ try {
   await page
     .getByRole("button", { name: "连接 BD 文件夹", exact: true })
     .click();
+  await page.getByRole("button", { name: "本地 BD 库", exact: true }).click();
   await page
-    .getByLabel("载入文件夹中的BD", { exact: true })
-    .selectOption(fixture.id);
+    .getByRole("dialog", { name: "本地BD库", exact: true })
+    .getByRole("button", { name: /原生文件流程验收/ })
+    .click();
   const markdown = "## 已写入真实浏览器文件\n使用 [幻象回复](gw2:trait/1866)。";
   await page.getByLabel("BD描述Markdown", { exact: true }).fill(markdown);
   await page
@@ -181,18 +183,22 @@ try {
   await viewer.getByRole("dialog", { name: "幻象回复", exact: true }).waitFor();
   await viewer.keyboard.press("Escape");
   const downloading = viewer.waitForEvent("download");
-  await viewer.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await viewer.getByRole("button", { name: "下载 BD", exact: true }).click();
   const download = await downloading;
   assert.deepEqual(
     parseBuild(await readFile((await download.path())!, "utf8")),
     saved,
   );
-  await viewer.getByRole("button", { name: "存到浏览器", exact: true }).click();
-  const cached = await viewer.evaluate(
-    () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
+  assert.equal(
+    await viewer
+      .getByRole("button", { name: "存到浏览器", exact: true })
+      .count(),
+    0,
   );
-  assert.equal(cached.description, markdown);
-  assert.notEqual(cached.id, saved.id);
+  assert.equal(
+    await viewer.evaluate(() => localStorage.getItem("p12.builds.v1")),
+    null,
+  );
   await viewer.reload();
   await viewer
     .getByRole("heading", { name: "已写入真实浏览器文件", exact: true })
@@ -203,7 +209,7 @@ try {
     path: path.join(project, "test-results", "native-file-workflow.png"),
   });
   console.log(
-    "原生文件接口闭环通过：OPFS 实际创建/覆盖文件 → 磁盘 JSON → 生成公开库 → 任意仓库子路径只读查看/引用/下载/缓存/刷新。目录选择器由测试入口提供，未验证用户目录授权或真实设备。",
+    "原生文件接口闭环通过：本地库扫描/卡片载入 → OPFS 实际创建/覆盖文件 → 磁盘 JSON → 生成公开库 → 任意仓库子路径只读查看/引用/下载/刷新。目录选择器由测试入口提供，未验证用户目录授权或真实设备。",
   );
 } finally {
   try {

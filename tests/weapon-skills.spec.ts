@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect, type Page } from "@playwright/test";
 import {
   createBuild,
@@ -8,12 +9,8 @@ import {
 import { readFileSync } from "node:fs";
 
 async function seed(page: Page, b: Build, readonly = false) {
-  if (!readonly)
-    await page.addInitScript(
-      (b) => localStorage.setItem("p12.builds.v1", JSON.stringify([b])),
-      b,
-    );
-  await page.goto(readonly ? `/#build=${encodeShare(b)}` : "/");
+  if (!readonly) await loadBuild(page, b);
+  else await page.goto(`/#build=${encodeShare(b)}`);
   await expect(page.locator('[data-value="Power"]')).toBeVisible();
   await expect(
     page.locator(".weapon-skill-list [data-game-detail]"),
@@ -112,13 +109,11 @@ test("步枪后续段独立详情和Markdown引用随装备时长变化，保存
     .click();
   await expect(page.locator(".game-tooltip")).toContainText("成像分离");
   await page.getByRole("button", { name: "关闭技能与特性详情" }).click();
-  await page.getByRole("button", { name: "保存", exact: true }).click();
-  const saved = await page.evaluate(
-    () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-  );
+
+  const saved = await downloadBuild(page);
   expect(saved).toEqual(b);
   const waiting = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   const downloaded = await waiting;
   expect(JSON.parse(readFileSync((await downloaded.path())!, "utf8"))).toEqual(
     b,
@@ -152,7 +147,7 @@ test("390px只读长矛完整连段和潜袭可点击，刷新与无横向溢出
     path: "test-results/weapon-thief-mobile.png",
     fullPage: true,
   });
-  await page.reload();
+  await reloadBuild(page);
   await expect(
     page.locator('.weapon-skill-list [data-game-detail="skill-72904"]'),
   ).toBeVisible();
@@ -190,13 +185,9 @@ test("元素主副协调联动技能与属性，预览不进入保存，刷新�
   await expect(page.getByLabel("预览当前协调")).toHaveValue("Fire");
   await page.getByLabel("预览当前协调").selectOption("Earth");
   await expect(page.getByLabel("技能主协调")).toHaveValue("Earth");
-  await page.getByRole("button", { name: "保存", exact: true }).click();
-  expect(
-    await page.evaluate(
-      () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-    ),
-  ).toEqual(b);
-  await page.reload();
+
+  expect(await downloadBuild(page)).toEqual(b);
+  await reloadBuild(page);
   await expect(page.getByLabel("技能主协调")).toHaveValue("Fire");
 });
 
@@ -207,11 +198,7 @@ test("武器资料失败保留编辑和草稿，并能单独重试", async ({ pa
   await page.route("**/weapon-skills.json", (route) =>
     route.fulfill({ status: 503, body: "temporarily unavailable" }),
   );
-  await page.addInitScript(
-    (b) => localStorage.setItem("p12.builds.v1", JSON.stringify([b])),
-    b,
-  );
-  await page.goto("/");
+  await loadBuild(page, b);
   const retry = page.getByRole("button", { name: "重新加载武器技能" });
   await expect(retry).toBeVisible();
   await page.getByLabel("BD描述Markdown").fill("修改后的草稿");

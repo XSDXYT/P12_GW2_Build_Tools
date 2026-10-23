@@ -1,4 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
+import { loadSourcePolicy, writeSourcedSnapshot } from "./data-source-io.mjs";
+const sourcePolicy = await loadSourcePolicy();
 import { localizeConsumables } from "./catalog-transforms.mjs";
 const endpoint = "https://gw2.wishingstarmoye.com/admin/gw2_itemdb_dt_ajax";
 const entries = {};
@@ -85,7 +87,9 @@ catalog.localization = {
   matched: targets.length,
   changed: changed.length,
 };
-await writeFile("public/catalog.json", JSON.stringify(catalog));
+await writeSourcedSnapshot("public/catalog.json", catalog, "catalog", {
+  policy: sourcePolicy,
+});
 console.log(
   `按物品 ID 核对 ${targets.length} 项，中文名差异 ${changed.length} 项。`,
 );

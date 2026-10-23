@@ -156,12 +156,14 @@ export function createBuild(profession: Build["profession"] = "Mesmer"): Build {
 }
 export function encodeShare(b: Build) {
   const bytes = zlibSync(strToU8(JSON.stringify(buildSchema.parse(b))));
-  if (bytes.length > 9000) throw Error("链接过长，请导出 JSON 文件。");
+  if (bytes.length > 9000)
+    throw Error("链接过长，请使用“下载 BD”保存 JSON 文件。");
   const encoded = btoa(String.fromCharCode(...bytes))
     .replaceAll("+", "-")
     .replaceAll("/", "_")
     .replace(/=+$/, "");
-  if (encoded.length > 12000) throw Error("链接过长，请导出 JSON 文件。");
+  if (encoded.length > 12000)
+    throw Error("链接过长，请使用“下载 BD”保存 JSON 文件。");
   return encoded;
 }
 export function decodeShare(s: string): Build {

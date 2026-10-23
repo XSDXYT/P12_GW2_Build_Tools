@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import { createBuild, decodeShare } from "../src/domain";
@@ -7,8 +8,9 @@ test("构筑标题标签及多副本场景随保存、JSON和分享保留，只�
   context,
 }) => {
   await page.goto("/");
-  await page.getByLabel("配装名称", { exact: true }).fill("治疗幻术 · 开荒");
   const properties = page.getByRole("group", { name: "BD属性", exact: true });
+  await expect(properties).toBeVisible();
+  await page.getByLabel("配装名称", { exact: true }).fill("治疗幻术 · 开荒");
   await properties
     .getByLabel("新增构筑标签", { exact: true })
     .fill("治疗，开荒，治疗");
@@ -30,14 +32,14 @@ test("构筑标题标签及多副本场景随保存、JSON和分享保留，只�
   await expect(properties.locator(".build-encounters li")).toHaveCount(2);
   await properties.getByLabel("适用副本", { exact: true }).fill("");
   await properties.getByLabel("适用BOSS", { exact: true }).fill("");
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
-  await page.reload();
+  expect((await downloadBuild(page)).name).toBe("治疗幻术 · 开荒");
+  await reloadBuild(page);
   await expect(page.getByLabel("配装名称", { exact: true })).toHaveValue(
     "治疗幻术 · 开荒",
   );
   await expect(properties.locator(".build-badge")).toHaveCount(2);
   const download = page.waitForEvent("download");
-  await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+  await page.getByRole("button", { name: "下载 BD", exact: true }).click();
   const exported = JSON.parse(
     readFileSync((await (await download).path())!, "utf8"),
   );
@@ -55,10 +57,7 @@ test("构筑标题标签及多副本场景随保存、JSON和分享保留，只�
   const readonly = viewer.getByRole("group", { name: "BD属性", exact: true });
   await expect(readonly).toContainText("赎罪堡垒 / 副本通用");
   await expect(readonly.locator("input, button")).toHaveCount(0);
-  await viewer.getByRole("button", { name: "存到浏览器", exact: true }).click();
-  const cached = await viewer.evaluate(
-    () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-  );
+  const cached = await downloadBuild(viewer);
   expect(cached.tags).toEqual(exported.tags);
   expect(cached.encounters).toEqual(exported.encounters);
   await viewer.getByRole("button", { name: "复制编辑", exact: true }).click();
@@ -76,7 +75,7 @@ test("构筑标题标签及多副本场景随保存、JSON和分享保留，只�
   });
 });
 
-test("公开和本地BD库按副本BOSS与职业分组，支持标签关键词组合筛选，旧BD显示未分类", async ({
+test("公开BD库按副本BOSS与职业分组，支持标签关键词组合筛选，旧BD显示未分类", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 1440, height: 1080 });
@@ -103,10 +102,6 @@ test("公开和本地BD库按副本BOSS与职业分组，支持标签关键词�
     },
     { ...createBuild("Mesmer"), name: "旧版通用构筑" },
   ];
-  await page.addInitScript(
-    (values) => localStorage.setItem("p12.builds.v1", JSON.stringify(values)),
-    builds,
-  );
   const entries = builds.map((build, i) => ({
     id: build.id,
     name: build.name,
@@ -178,19 +173,6 @@ test("公开和本地BD库按副本BOSS与职业分组，支持标签关键词�
   await expect(
     page.getByRole("group", { name: "BD属性", exact: true }),
   ).toContainText("开荒");
-  await page.getByRole("button", { name: /我的配装/ }).click();
-  const local = page.getByRole("dialog", { name: "我的配装", exact: true });
-  await local.getByLabel("筛选副本", { exact: true }).selectOption("副本乙");
-  await local.getByLabel("筛选BOSS", { exact: true }).selectOption("首领乙");
-  await local.getByLabel("筛选配装标签", { exact: true }).selectOption("治疗");
-  await local.getByLabel("搜索配装名称", { exact: true }).fill("开荒");
-  await expect(local.locator(".library-row")).toHaveCount(1);
-  await local
-    .getByRole("button", { name: "编辑标签跨副本幻术", exact: true })
-    .click();
-  await expect(
-    local.getByLabel("跨副本幻术的标签", { exact: true }),
-  ).toHaveCount(1);
 });
 
 test("内置副本BOSS支持名称别名检索、键盘及手机点击，三种模式独立添加并保存分享", async ({
@@ -259,7 +241,7 @@ test("内置副本BOSS支持名称别名检索、键盘及手机点击，三种�
   await properties
     .getByRole("button", { name: "添加适用场景", exact: true })
     .click();
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
+
   await page.getByRole("button", { name: "分享配装 ↗", exact: true }).click();
   const decoded = decodeShare(
     (await page.locator(".share input").inputValue()).split("#build=")[1],
@@ -269,19 +251,6 @@ test("内置副本BOSS支持名称别名检索、键盘及手机点击，三种�
     "challenge",
     "legendary",
   ]);
-  await page.getByRole("button", { name: /我的配装/ }).click();
-  const dialog = page.getByRole("dialog", { name: "我的配装", exact: true });
-  await dialog
-    .getByLabel("筛选模式", { exact: true })
-    .selectOption("challenge");
-  await expect(
-    dialog.getByRole("heading", { name: /塞鲁斯 · 挑战/ }),
-  ).toBeVisible();
-  await expect(dialog.locator(".library-row")).toHaveCount(1);
-  expect(await dialog.evaluate((e) => e.scrollWidth <= e.clientWidth)).toBe(
-    true,
-  );
-  await dialog.getByRole("button", { name: "关闭配装库", exact: true }).click();
   const file = `bd-${"c".repeat(64)}.json`;
   await page.route("**/bd/index.json", (route) =>
     route.fulfill({

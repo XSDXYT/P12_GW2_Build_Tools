@@ -25,6 +25,7 @@ import { buildCollection } from "../scripts/build-collection.ts";
 import {
   buildFilename,
   readBuildDirectory,
+  readBuildFile,
   writeBuildFile,
   type BuildDirectoryHandle,
   type BuildFileHandle,
@@ -420,6 +421,37 @@ function memoryDirectory() {
     aborted: () => aborted,
   };
 }
+test("本地卡片重新读取实际文件，拒绝身份替换、超大/损坏文件和路径跳转", async () => {
+  const store = memoryDirectory();
+  const b = { ...createBuild(), description: "扫描时说明" };
+  store.data.set("original.json", JSON.stringify(b));
+  await readBuildDirectory(store.directory);
+  const updated = { ...b, description: "磁盘最新说明" };
+  store.data.set("original.json", JSON.stringify(updated));
+  assert.deepEqual(
+    await readBuildFile(store.directory, "original.json", b.id),
+    updated,
+  );
+  store.data.set("original.json", JSON.stringify(createBuild()));
+  await assert.rejects(
+    readBuildFile(store.directory, "original.json", b.id),
+    /身份已变化/,
+  );
+  store.data.set("original.json", " ".repeat(262145));
+  await assert.rejects(
+    readBuildFile(store.directory, "original.json", b.id),
+    /过大/,
+  );
+  store.data.set("original.json", "broken");
+  await assert.rejects(readBuildFile(store.directory, "original.json", b.id));
+  store.data.delete("original.json");
+  await assert.rejects(readBuildFile(store.directory, "original.json", b.id));
+  await assert.rejects(
+    readBuildFile(store.directory, "../elsewhere.json", b.id),
+    /无效/,
+  );
+  assert.equal(store.data.size, 0);
+});
 test("本地新文件按标题命名，原文件名可沿用，写入失败或同名异ID不覆盖", async () => {
   const store = memoryDirectory();
   const build = { ...createBuild(), description: "本地说明" };

@@ -32,6 +32,24 @@ declare global {
 export function buildFilename(build: Build): string {
   return jsonFilename(build.name);
 }
+/** Re-read a selected file, guarding against replacement after the directory scan. */
+export async function readBuildFile(
+  directory: BuildDirectoryHandle,
+  filename: string,
+  expectedId: string,
+) {
+  if (
+    !filename ||
+    /[\\/]/.test(filename) ||
+    !filename.toLowerCase().endsWith(".json")
+  )
+    throw Error("无效 BD 文件名。");
+  const file = await (await directory.getFileHandle(filename)).getFile();
+  if (file.size > 262144) throw Error("BD 文件过大。");
+  const build = parseBuild(await file.text());
+  if (build.id !== expectedId) throw Error("BD 文件身份已变化，请刷新文件夹。");
+  return build;
+}
 export async function readBuildDirectory(directory: BuildDirectoryHandle) {
   const builds: Build[] = [];
   const filenames = new Map<string, string>();

@@ -1,4 +1,6 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
+import { loadSourcePolicy, writeSourcedSnapshot } from "./data-source-io.mjs";
+const sourcePolicy = await loadSourcePolicy();
 const ids = [30684, 80111, 91234];
 const response = await fetch(
   `https://api.guildwars2.com/v2/items?ids=${ids.join(",")}&lang=zh`,
@@ -33,7 +35,9 @@ c.statChoiceSource = {
   items: ids,
   fetchedAt: new Date().toISOString(),
 };
-await writeFile("public/catalog.json", JSON.stringify(c));
+await writeSourcedSnapshot("public/catalog.json", c, "catalog", {
+  policy: sourcePolicy,
+});
 console.log(
   `装备可选 ${statChoices.equipment.length} 个词条；饰品可选 ${statChoices.trinket.length} 个词条；保留旧 ID 查找表以兼容历史配装。`,
 );

@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect, type Page } from "@playwright/test";
 import { createBuild, encodeShare, type Build } from "../src/domain";
 
@@ -7,11 +8,7 @@ function fireBuild() {
   return b;
 }
 async function seed(page: Page, b: Build) {
-  await page.addInitScript(
-    (value) => localStorage.setItem("p12.builds.v1", JSON.stringify([value])),
-    b,
-  );
-  await page.goto("/");
+  await loadBuild(page, b);
   await expect(page.locator(".trait-lines")).toBeVisible();
 }
 
@@ -66,20 +63,15 @@ test("灵感线按游戏槽位上下排列，目录乱序不影响位置、选�
     fullPage: true,
   });
   await line.getByRole("button", { name: "医者反馈", exact: true }).click();
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
-  expect(
-    await page.evaluate(
-      () =>
-        JSON.parse(localStorage.getItem("p12.builds.v1")!)[0].specs[0].traits,
-    ),
-  ).toEqual([756, 740, 1866]);
+
+  expect((await downloadBuild(page)).specs[0].traits).toEqual([756, 740, 1866]);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/#build=" + encodeShare(b));
   await check();
   await page.keyboard.press("Escape");
   await line.scrollIntoViewIfNeeded();
   await line.screenshot({ path: "test-results/inspiration-order-mobile.png" });
-  await page.reload();
+  await reloadBuild(page);
   await check();
 });
 
@@ -125,13 +117,11 @@ test("再生始终显示；随后选择混沌线立即联动混沌执念且无�
     "0",
   );
   await regeneration.check();
-  await page.getByRole("button", { name: "保存修改", exact: true }).click();
-  const saved = await page.evaluate(
-    () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-  );
+
+  const saved = await downloadBuild(page);
   expect(saved).not.toHaveProperty("flags");
   expect(saved).not.toHaveProperty("preview");
-  await page.reload();
+  await reloadBuild(page);
   await page.locator(".attribute-effects summary").click();
   await expect(regeneration).not.toBeChecked();
   await expect(page.locator('[data-value="BoonDuration"]')).toHaveText("0");

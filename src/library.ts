@@ -19,21 +19,8 @@ export const buildMetadata = (
   id: string,
 ): BuildMetadata =>
   Object.hasOwn(metadata, id) ? metadata[id] : emptyMetadata();
-export const metadataFileSchema = z
-  .object({
-    version: z.literal(1),
-    entries: z.record(z.string().max(80), metadataSchema),
-  })
-  .strict();
-export const libraryBackupSchema = z
-  .object({
-    type: z.literal("p12-library"),
-    version: z.literal(1),
-    builds: z.array(buildSchema).max(1000),
-    metadata: z.record(z.string().max(80), metadataSchema),
-  })
-  .strict();
-export type LibraryBackup = z.infer<typeof libraryBackupSchema>;
+
+// Shared by BD author tags and legacy backup validation.
 export function parseTags(text: string): string[] {
   const tags = [
     ...new Set(
@@ -47,6 +34,8 @@ export function parseTags(text: string): string[] {
     throw Error("每个配装最多 8 个标签，每个标签最多 24 字。");
   return tags;
 }
+
+// Pure compatibility filter for old personal metadata; no browser persistence.
 export function filterLibrary(
   builds: Build[],
   metadata: LibraryMetadata,
@@ -66,12 +55,31 @@ export function filterLibrary(
       (!filter.favorites || info.favorite) &&
       matchesBuild(
         b,
-        { ...filter, instance: filter.instance || "", boss: filter.boss || "" },
+        {
+          ...filter,
+          instance: filter.instance || "",
+          boss: filter.boss || "",
+        },
         info.tags,
       )
     );
   });
 }
+export const metadataFileSchema = z
+  .object({
+    version: z.literal(1),
+    entries: z.record(z.string().max(80), metadataSchema),
+  })
+  .strict();
+export const libraryBackupSchema = z
+  .object({
+    type: z.literal("p12-library"),
+    version: z.literal(1),
+    builds: z.array(buildSchema).max(1000),
+    metadata: z.record(z.string().max(80), metadataSchema),
+  })
+  .strict();
+export type LibraryBackup = z.infer<typeof libraryBackupSchema>;
 export function createLibraryBackup(
   builds: Build[],
   metadata: LibraryMetadata,
@@ -93,32 +101,4 @@ export function parseLibraryBackup(text: string): LibraryBackup {
   if (new Set(backup.builds.map((b) => b.id)).size !== backup.builds.length)
     throw Error("备份包含重复配装 ID。");
   return backup;
-}
-/** Import as independent records; preserve existing builds and keep metadata on the new IDs. */
-export function mergeLibraryBackup(
-  builds: Build[],
-  metadata: LibraryMetadata,
-  backup: LibraryBackup,
-) {
-  const ids = new Set(builds.map((b) => b.id));
-  const imported = backup.builds.map((b) => {
-    let id: string;
-    do {
-      id = crypto.randomUUID();
-    } while (ids.has(id));
-    ids.add(id);
-    return { ...b, id };
-  });
-  return {
-    builds: [...imported, ...builds],
-    metadata: {
-      ...metadata,
-      ...Object.fromEntries(
-        imported.map((b, i) => [
-          b.id,
-          buildMetadata(backup.metadata, backup.builds[i].id),
-        ]),
-      ),
-    },
-  };
 }

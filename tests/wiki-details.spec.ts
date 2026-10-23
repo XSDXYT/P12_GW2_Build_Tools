@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect, type Page } from "@playwright/test";
 import { createBuild, encodeShare, type Build } from "../src/domain";
 
@@ -111,7 +112,7 @@ for (const item of professionCases)
       path: `test-results/wiki-${item.profession.toLowerCase()}-mobile.png`,
     });
     await page.keyboard.press("Escape");
-    await page.reload();
+    await reloadBuild(page);
     await button.click();
     await expect(card).toContainText(item.expected);
     expect(requests).toEqual([]);
@@ -169,16 +170,12 @@ test("幻术实际点选与取消特性更新潜行及主动效果，组合效�
     path: "test-results/wiki-mesmer-trait-modifiers.png",
   });
   expect(new URL(page.url()).hash).toBe(hash);
-  await page.reload();
+  await reloadBuild(page);
   await icon.click();
   await expect(card).toContainText("潜行：3 秒");
 });
 async function seed(page: Page, b: Build) {
-  await page.addInitScript(
-    (value) => localStorage.setItem("p12.builds.v1", JSON.stringify([value])),
-    b,
-  );
-  await page.goto("/");
+  await loadBuild(page, b);
   await expect(page.locator(".trait-lines")).toBeVisible();
 }
 
@@ -242,7 +239,7 @@ for (const [elite, expected, absent] of [
       path: `test-results/wiki-restorative-${elite}-mobile.png`,
     });
     await page.keyboard.press("Escape");
-    await page.reload();
+    await reloadBuild(page);
     await icon.click();
     await expect(card).toContainText(expected);
   });
@@ -361,7 +358,7 @@ for (const item of [
       await page.evaluate(() => localStorage.getItem("p12.builds.v1")),
     ).toBe(stored);
     expect(new URL(page.url()).hash).toBe(hash);
-    await page.reload();
+    await reloadBuild(page);
     await button.click();
     await expect(card.locator(".game-tooltip-branch[open]")).toHaveCount(0);
     expect(requests).toEqual([]);

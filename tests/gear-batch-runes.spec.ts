@@ -1,3 +1,4 @@
+import { loadBuild, downloadBuild, reloadBuild } from "./build-fixtures";
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import {
@@ -47,13 +48,7 @@ for (const width of [1440, 390]) {
       sigils: [itemOptions(catalog, "Sigil")[0].id, null],
     });
     original.equipment.offhand1.infusions = [];
-    await page.addInitScript((build) => {
-      if (!sessionStorage.getItem("rune-fixture")) {
-        localStorage.setItem("p12.builds.v1", JSON.stringify([build]));
-        sessionStorage.setItem("rune-fixture", "1");
-      }
-    }, original);
-    await page.goto("/");
+    await loadBuild(page, original);
     await expect(page.getByLabel("配装名称", { exact: true })).toHaveValue(
       original.name,
     );
@@ -109,17 +104,15 @@ for (const width of [1440, 390]) {
     const expected = structuredClone(original.equipment);
     for (const key of armorSlots) expected[key].runeId = second.id;
     expected.head.runeId = first.id;
-    await page.getByRole("button", { name: "保存修改", exact: true }).click();
-    await page.reload();
+    await downloadBuild(page);
+    await reloadBuild(page);
     await assertRunes(armorSlots.map((key) => expected[key].runeId));
-    const saved = await page.evaluate(
-      () => JSON.parse(localStorage.getItem("p12.builds.v1")!)[0],
-    );
+    const saved = await downloadBuild(page);
     expect(saved.equipment).toEqual(expected);
     expect(saved.description).toBe(original.description);
     expect(saved.version).toBe(1);
     const downloading = page.waitForEvent("download");
-    await page.getByRole("button", { name: "导出 JSON", exact: true }).click();
+    await page.getByRole("button", { name: "下载 BD", exact: true }).click();
     const exported = JSON.parse(
       readFileSync((await (await downloading).path())!, "utf8"),
     );

@@ -1,4 +1,6 @@
-import { readFile, writeFile, mkdir, rename } from "node:fs/promises";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { loadSourcePolicy, writeSourcedSnapshot } from "./data-source-io.mjs";
+const sourcePolicy = await loadSourcePolicy();
 const cached = process.argv.includes("--cached");
 const cachePath = "data/weapon-skill-cache/api.json";
 const catalog = JSON.parse(await readFile("public/catalog.json", "utf8"));
@@ -93,8 +95,9 @@ const output = {
   source: "https://api.guildwars2.com/v2/skills",
   skills,
 };
-await writeFile("public/weapon-skills.json.tmp", JSON.stringify(output));
-await rename("public/weapon-skills.json.tmp", "public/weapon-skills.json");
+await writeSourcedSnapshot("public/weapon-skills.json", output, "weapons", {
+  policy: sourcePolicy,
+});
 console.log(
   `Weapon and related skills: ${skills.length}; all ${roots.length} roots verified`,
 );

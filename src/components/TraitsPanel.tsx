@@ -63,7 +63,6 @@ export function TraitsPanel({
     <section className="panel traits-panel" aria-labelledby="traits-heading">
       <header className="panel-heading">
         <div>
-          <span className="section-index">02</span>
           <h2 id="traits-heading">
             特性与技能 <small>TRAITS & SKILLS</small>
           </h2>

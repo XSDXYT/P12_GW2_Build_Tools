@@ -93,7 +93,7 @@
       "weapon": ""
     },
     "back": {
-      "statId": 584,
+      "statId": 1128,
       "runeId": null,
       "sigils": [
         null,
@@ -218,6 +218,28 @@
   "relic": 100924,
   "food": 91805,
   "utility": 43451,
+  "infusionLoadouts": {
+    "1": [
+      {
+        "id": 43254,
+        "count": 13
+      },
+      {
+        "id": 43255,
+        "count": 5
+      }
+    ],
+    "2": [
+      {
+        "id": 37132,
+        "count": 5
+      },
+      {
+        "id": 88771,
+        "count": 13
+      }
+    ]
+  },
   "skills": [
     13050,
     41372,

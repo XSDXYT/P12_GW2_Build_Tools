@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "id": "4d6feaf8-4a80-4c82-86ad-a893d3ce2f97",
+  "name": "戴莫斯 鬼手预告",
+  "description": "参考攻略，详细机制请阅读gw2 英文wiki，或者镜像wiki。\n# 一、装备\n- 只要坚韧不超过T，有一定的增益持续时间维持保护和再生buff，有一定的治疗效果能恢复血量即可。\n# 二、机制\n\n## 1、大招\n\n- 戴莫斯释放大招前会说一句：“站起来，快点！”\n- 他挥动武器在身旁绕圈，当他的手臂第四次到达腰部时，也就是绕了4圈，就会释放大招。\n- 需要用持续性格挡，无敌类技能，注意，[失真](gw2:skill/10192)和闪避没办法无视大招伤害。\n- 预告可利用格挡技能有很多：如下\n\n| 技能 | 效果 |\n| :---: | :---: |\n| 法杖3 | [裂隙结界](gw2:skill/29288) |\n| 盾牌5 | [水晶休眠](gw2:skill/28262) |\n| 巨龙姿态治疗技能第二段 | [圣光灌注](gw2:skill/27228) |\n\n- 大招结束后会有 debuff 每秒额外扣血，要预留技能回血。\n\n示例\n\n- 巨龙姿态，打开[圣光多面体](gw2:skill/27220)和[混沌多面体](gw2:skill/27760)获得再生和保护。\n- 法杖3格挡大招，受到debuff伤害，切到盾牌5，出鬼手时格挡鬼手伤害并触发[防御者古物](gw2:item/100934)回血，\n- 能量不够时，及时切半人马姿态\n- 血量压力非常大时，使用巨龙姿态的治疗技能第二段[圣光灌注](gw2:skill/27228)踩鬼手快速回血。\n\n## 2、鬼手\n\n- 鬼手每一波5只手\n- 可采用双排的方式减少受到的伤害。\n\n双排参考演示表\n\n| boss |   |   |   |   |\n| :---: | :---: | :---: | :---: | :---: |\n| 第二排 | 3 | 移动 | 3 | 移动 |\n| 第一排 | 2 | 等待下次鬼手 | 2 | 等待下次鬼手 |\n\n## 3、40血以下小怪\n\n40%血以下骄傲和贪婪会再次出现，靠近npc时爆炸，会对npc和玩家都造成伤害，要提醒队友大打小怪。\n\n## 4、眼泪\n\n会对玩家释放无法格挡的血石投射物，不会打破圣盾，但是会有伤害，提醒队友去踩眼泪。\n\n## 5、10%血下地\n\n- 下地后鬼手还站在远处。\n- 大团面朝戴莫斯，站左边，boss先砸右手，大团给稳固\n- 出黑水\n- 大团移动位置\n- boss砸左手，大团不用动\n- boss砸双手，大团稳固或圣盾，鬼手给自己稳固或者圣盾。\n- 打死戴莫斯。",
+  "tags": [
+    "鬼手"
+  ],
+  "encounters": [
+    {
+      "instance": "忏悔者堡垒",
+      "boss": "戴莫斯",
+      "mode": "normal"
+    },
+    {
+      "instance": "忏悔者堡垒",
+      "boss": "戴莫斯",
+      "mode": "challenge"
+    }
+  ],
+  "profession": "Revenant",
+  "equipment": {
+    "head": {
+      "statId": 1123,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "shoulders": {
+      "statId": 1123,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "chest": {
+      "statId": 1123,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "hands": {
+      "statId": 1123,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "legs": {
+      "statId": 1123,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "feet": {
+      "statId": 1123,
+      "runeId": 24842,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "back": {
+      "statId": 1037,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "accessory1": {
+      "statId": 1037,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "accessory2": {
+      "statId": 1037,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "amulet": {
+      "statId": 1037,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [],
+      "weapon": ""
+    },
+    "ring1": {
+      "statId": 1037,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "ring2": {
+      "statId": 1037,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "weapon1": {
+      "statId": 1123,
+      "runeId": null,
+      "sigils": [
+        74326,
+        72339
+      ],
+      "infusions": [
+        null,
+        null
+      ],
+      "weapon": "Staff"
+    },
+    "offhand1": {
+      "statId": null,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [],
+      "weapon": ""
+    },
+    "weapon2": {
+      "statId": 1123,
+      "runeId": null,
+      "sigils": [
+        74326,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": "Scepter"
+    },
+    "offhand2": {
+      "statId": 1123,
+      "runeId": null,
+      "sigils": [
+        72339,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": "Shield"
+    }
+  },
+  "relic": 100934,
+  "food": null,
+  "utility": null,
+  "jadeBotCore": 96613,
+  "mechanics": {
+    "legends": [
+      28085,
+      28195
+    ]
+  },
+  "skills": [
+    27220,
+    28379,
+    27014,
+    26644,
+    27760
+  ],
+  "specs": [
+    {
+      "id": 9,
+      "traits": [
+        1810,
+        1782,
+        1790
+      ]
+    },
+    {
+      "id": 12,
+      "traits": [
+        1823,
+        1817,
+        1825
+      ]
+    },
+    {
+      "id": 52,
+      "traits": [
+        1813,
+        1730,
+        1772
+      ]
+    }
+  ]
+}

@@ -214,6 +214,7 @@ test("授权模板文件夹扫描、修改保存、外部修改拦截、刷新�
   await expect(panel).toContainText("团队 (2).css");
   await panel.getByRole("button", { name: "删除CSS文件", exact: true }).click();
   await panel.getByRole("button", { name: "确认删除", exact: true }).click();
+  await expect(panel).toContainText("CSS文件已删除");
   expect(
     await page.evaluate(() => (window as any).__styleFiles["团队 (2).css"]),
   ).toBeUndefined();

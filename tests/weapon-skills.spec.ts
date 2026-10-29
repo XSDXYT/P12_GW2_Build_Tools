@@ -41,6 +41,13 @@ test("步枪后续段独立详情和Markdown引用随装备时长变化，保存
     if (/wiki\.(guildwars2\.com|wishingstar\.top)/.test(r.url())) upstream++;
   });
   await seed(page, b);
+  await expect(
+    page.getByRole("button", { name: "展开后续技能", exact: true }),
+  ).toHaveAttribute("aria-expanded", "false");
+  await expect(page.locator(".weapon-skill-list .skill-followup")).toHaveCount(
+    0,
+  );
+  await page.getByRole("button", { name: "展开后续技能", exact: true }).click();
   const slot = page.locator('[data-weapon-slot="3"]');
   const root = slot.locator('[data-game-detail="skill-72005"]');
   const child = slot.locator('[data-game-detail="skill-72076"]');
@@ -129,6 +136,15 @@ test("390px只读长矛完整连段和潜袭可点击，刷新与无横向溢出
   b.equipment.weapon1.weapon = "Spear";
   b.specs[2].id = 58;
   await seed(page, b, true);
+  const toggle = page.getByRole("button", {
+    name: "展开后续技能",
+    exact: true,
+  });
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+  await expect(page.locator(".weapon-skill-list .skill-followup")).toHaveCount(
+    0,
+  );
+  await toggle.click();
   await expect(
     page.locator('[data-weapon-slot="2"] [data-game-detail]'),
   ).toHaveCount(3);
@@ -148,6 +164,13 @@ test("390px只读长矛完整连段和潜袭可点击，刷新与无横向溢出
     fullPage: true,
   });
   await reloadBuild(page);
+  await expect(
+    page.getByRole("button", { name: "展开后续技能", exact: true }),
+  ).toHaveAttribute("aria-expanded", "false");
+  await expect(page.locator(".weapon-skill-list .skill-followup")).toHaveCount(
+    0,
+  );
+  await page.getByRole("button", { name: "展开后续技能", exact: true }).click();
   await expect(
     page.locator('.weapon-skill-list [data-game-detail="skill-72904"]'),
   ).toBeVisible();
@@ -207,6 +230,7 @@ test("武器资料失败保留编辑和草稿，并能单独重试", async ({ pa
   await page.getByLabel("BD描述Markdown").fill("修改后的草稿");
   await page.unroute("**/weapon-skills.json");
   await retry.click();
+  await page.getByRole("button", { name: "展开后续技能", exact: true }).click();
   await expect(
     page.locator('.weapon-skill-list [data-game-detail="skill-72076"]'),
   ).toBeVisible();
@@ -231,4 +255,80 @@ test("后续技能支持描述搜索；普通技能选择器不会混入替换�
   await expect(
     page.locator(".option").filter({ hasText: "成像分离" }),
   ).toHaveCount(0);
+});
+
+test("后续技能一键展开与收起覆盖武器、通用和职业机制，默认收起且不改BD", async ({
+  page,
+}) => {
+  const b = createBuild("Mesmer");
+  b.name = "后续技能收起验收";
+  b.equipment.weapon1.weapon = "Rifle";
+  b.skills[1] = 10204;
+  await seed(page, b);
+  const expand = page.getByRole("button", {
+    name: "展开后续技能",
+    exact: true,
+  });
+  await expect(expand).toHaveAttribute("aria-expanded", "false");
+  await expect(page.locator(".skills-bar .skill-followup")).toHaveCount(0);
+  await expand.focus();
+  await expand.press("Enter");
+  await expect(
+    page.getByRole("button", { name: "收起后续技能", exact: true }),
+  ).toHaveAttribute("aria-expanded", "true");
+  await expect(
+    page.locator('.weapon-skill-list [data-game-detail="skill-72076"]'),
+  ).toBeVisible();
+  const child = page.locator(
+    '.skills-bar .skill-followup [data-game-detail="skill-10206"]',
+  );
+  await expect(child).toBeVisible();
+  await child.focus();
+  await child.press("F1");
+  await expect(page.locator(".game-tooltip")).toBeVisible();
+  await page.getByRole("button", { name: "收起后续技能", exact: true }).click();
+  await expect(page.locator(".game-tooltip")).toHaveCount(0);
+  await expect(
+    page.locator(
+      ".weapon-skill-list .skill-followup, .skills-bar .skill-followup",
+    ),
+  ).toHaveCount(0);
+  await expect(
+    page.getByRole("button", { name: "展开后续技能", exact: true }),
+  ).toBeFocused();
+  expect(await downloadBuild(page)).toEqual(b);
+
+  const tempest = createBuild("Elementalist");
+  tempest.equipment.weapon1.weapon = "Dagger";
+  tempest.specs[2].id = 48;
+  await seed(page, tempest, true);
+  const related = page.locator(
+    ".profession-mechanics details.mechanic-related",
+  );
+  expect(await related.count()).toBeGreaterThan(0);
+  expect(
+    await related.evaluateAll((els) =>
+      els.every((e) => !(e as HTMLDetailsElement).open),
+    ),
+  ).toBe(true);
+  await page.getByRole("button", { name: "展开后续技能", exact: true }).click();
+  expect(
+    await related.evaluateAll((els) =>
+      els.every((e) => (e as HTMLDetailsElement).open),
+    ),
+  ).toBe(true);
+  await related.first().locator("summary").click();
+  await page.getByRole("button", { name: "收起后续技能", exact: true }).click();
+  expect(
+    await related.evaluateAll((els) =>
+      els.every((e) => !(e as HTMLDetailsElement).open),
+    ),
+  ).toBe(true);
+  await page.getByRole("button", { name: "展开后续技能", exact: true }).click();
+  expect(
+    await related.evaluateAll((els) =>
+      els.every((e) => (e as HTMLDetailsElement).open),
+    ),
+  ).toBe(true);
+  expect(await downloadBuild(page)).toEqual(tempest);
 });

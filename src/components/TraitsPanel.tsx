@@ -1,4 +1,5 @@
 import { type EditorProps } from "../editor";
+import { useId } from "react";
 import { activeTraits } from "../attributes";
 import { useGameTooltip } from "./GameTooltip";
 import { useAttributePreview } from "../hooks/useAttributePreview";
@@ -17,7 +18,13 @@ export function TraitsPanel({
   edit,
   pick,
   notify,
-}: EditorProps) {
+  followupsExpanded: showFollowups,
+  onToggleFollowups,
+}: EditorProps & {
+  followupsExpanded: boolean;
+  onToggleFollowups: () => void;
+}) {
+  const followupsId = useId();
   const selectedSpecs = build.specs.flatMap((s) => (s.id ? [s.id] : []));
   const {
     result,
@@ -49,6 +56,7 @@ export function TraitsPanel({
     ? legendSkills(build.mechanics?.legends?.[1])
     : build.skills;
   const stages = (skill: (typeof catalog.skills)[number] | undefined) =>
+    showFollowups &&
     skill &&
     followingSkills(skill, catalog, build).map(({ skill: child, label }) => (
       <div className="skill-followup" key={child.id}>
@@ -87,8 +95,10 @@ export function TraitsPanel({
         edit={edit}
         pick={pick}
         notify={notify}
+        followupsExpanded={showFollowups}
+        followupsId={`${followupsId}-mechanics`}
       />
-      <div className="weapon-skills-bar">
+      <div className="weapon-skills-bar" id={`${followupsId}-weapons`}>
         <div className="weapon-skills-heading">
           <h3>武器技能</h3>
           <label>
@@ -104,6 +114,20 @@ export function TraitsPanel({
               </option>
             </select>
           </label>
+          <button
+            type="button"
+            className="skill-followups-toggle"
+            aria-expanded={showFollowups}
+            aria-controls={`${followupsId}-weapons ${followupsId}-skills ${followupsId}-mechanics`}
+            title="一键展开或收起武器、技能组合及职业机制的连段和条件变种，仅影响本次查看。"
+            onClick={(event) => {
+              tooltip.dismiss();
+              event.currentTarget.focus({ preventScroll: true });
+              onToggleFollowups();
+            }}
+          >
+            {showFollowups ? "收起后续技能" : "展开后续技能"}
+          </button>
         </div>
         {build.profession === "Elementalist" && (
           <div className="attunement-controls">
@@ -170,7 +194,8 @@ export function TraitsPanel({
           ))}
         </div>
         <p className="weapon-skills-note">
-          陆地技能 · 后续图标展示连段或条件变种；悬停或点击查看详情。
+          陆地技能 ·
+          后续连段和条件变种默认收起，可一键展开；悬停或点击查看详情。
         </p>
         {build.profession === "Thief" &&
           weaponSkills[1]?.weapon_type === "Spear" && (
@@ -179,7 +204,7 @@ export function TraitsPanel({
             </p>
           )}
       </div>
-      <div className="skills-bar">
+      <div className="skills-bar" id={`${followupsId}-skills`}>
         <div className="skills-heading">
           <h3>技能组合</h3>
           <small>{readonly ? "点击查看详情" : "点击技能图标更换"}</small>

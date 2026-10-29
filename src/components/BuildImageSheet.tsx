@@ -56,26 +56,125 @@ function Skill({
   label,
   build,
   catalog,
+  related = [],
+  command,
+  expanded,
 }: {
   entity?: Entity;
   label: string;
   build: Build;
   catalog: Catalog;
+  related?: Entity[];
+  command?: string;
+  expanded: boolean;
 }) {
+  const stages = expanded
+    ? [
+        ...(entity ? followingSkills(entity, catalog, build) : []),
+        ...related.map((skill) => ({ skill, label: "关联技能" })),
+      ].filter(
+        (stage, i, all) =>
+          stage.skill.id !== entity?.id &&
+          all.findIndex((other) => other.skill.id === stage.skill.id) === i,
+      )
+    : [];
   return (
-    <div className="png-skill">
+    <div className="png-skill" data-skill-id={entity?.id}>
       <small>{label}</small>
-      <Portrait entity={entity} />
-      <span>{entity?.name || "未选择"}</span>
-      {entity &&
-        followingSkills(entity, catalog, build).map((stage) => (
-          <div className="png-stage" key={stage.skill.id}>
+      <span className="png-skill-icon">
+        <Portrait entity={entity} />
+      </span>
+      <span className="png-skill-name">{entity?.name || "未选择"}</span>
+      {!entity && command && <small>{command}</small>}
+      {stages.map((stage) => (
+        <div
+          className="png-stage"
+          key={stage.skill.id}
+          data-skill-id={stage.skill.id}
+        >
+          <small>{stage.label}</small>
+          <span className="png-skill-icon">
             <Portrait entity={stage.skill} />
-            <small>{stage.label}</small>
-            <span>{stage.skill.name}</span>
-          </div>
-        ))}
+          </span>
+          <span>{stage.skill.name}</span>
+        </div>
+      ))}
     </div>
+  );
+}
+function TraitLines({ build, catalog }: { build: Build; catalog: Catalog }) {
+  return (
+    <section className="png-section png-trait-section">
+      <h2>特性选择</h2>
+      <p className="png-muted">金色边框与勾选表示已选特性</p>
+      {build.specs.map((selection, line) => {
+        const spec = catalog.specs.find((s) => s.id === selection.id);
+        return (
+          <div className="png-trait-line" key={line}>
+            <div className="png-trait-heading">
+              <Portrait entity={spec} />
+              <h3>{spec?.name || "未选择特性线"}</h3>
+              <span>{spec?.elite ? "精英特长" : `特性线 0${line + 1}`}</span>
+            </div>
+            <div className="png-traits">
+              {[1, 2, 3].map((tier) => {
+                const minor = catalog.traits.find(
+                    (t) =>
+                      spec?.minor_traits?.includes(t.id) && t.tier === tier,
+                  ),
+                  majors = catalog.traits
+                    .filter(
+                      (t) =>
+                        spec?.major_traits?.includes(t.id) && t.tier === tier,
+                    )
+                    .sort((a, b) => a.order - b.order),
+                  selected = majors.find(
+                    (t) => t.id === selection.traits[tier - 1],
+                  );
+                return (
+                  <div className="png-trait-tier" data-tier={tier} key={tier}>
+                    <small className="png-tier-label">
+                      {["初阶", "大师", "宗师"][tier - 1]}
+                    </small>
+                    <div className="png-trait-stage">
+                      <div className="png-minor" title={minor?.name}>
+                        <span className="png-minor-icon">
+                          <Portrait entity={minor} />
+                        </span>
+                        <span>{minor?.name || "未选择"}</span>
+                      </div>
+                      <div className="png-major-list">
+                        {(majors.length
+                          ? majors
+                          : [undefined, undefined, undefined]
+                        ).map((trait, i) => (
+                          <div
+                            key={trait?.id || i}
+                            className={`png-trait-icon${trait && trait.id === selected?.id ? " is-selected" : ""}`}
+                            data-trait-id={trait?.id}
+                            title={trait?.name}
+                          >
+                            <Portrait entity={trait} />
+                            {trait && trait.id === selected?.id && (
+                              <span className="png-trait-check">✓</span>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <span
+                      className={`png-trait-choice${selected ? " is-selected" : ""}`}
+                    >
+                      {selected ? `已选 · ${selected.name}` : "留空"}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+    </section>
   );
 }
 function ImageSheet({
@@ -83,11 +182,13 @@ function ImageSheet({
   catalog,
   data,
   description,
+  followups,
 }: {
   build: Build;
   catalog: Catalog;
   data: AttributeData;
   description: boolean;
+  followups: boolean;
 }) {
   const item = (id: number | null | undefined) =>
     entityName(id || null, catalog.items);
@@ -325,20 +426,16 @@ function ImageSheet({
                 1,
                 build.mechanics?.familiar || "Fire",
               ).map((slot) => (
-                <div key={slot.key}>
-                  <Skill
-                    entity={slot.skill}
-                    label={slot.key}
-                    build={build}
-                    catalog={catalog}
-                  />
-                  {!slot.skill && slot.command && <small>{slot.command}</small>}
-                  {slot.following.map((s) => (
-                    <p className="png-muted" key={s.id}>
-                      {s.name}
-                    </p>
-                  ))}
-                </div>
+                <Skill
+                  key={slot.key}
+                  entity={slot.skill}
+                  label={slot.key}
+                  build={build}
+                  catalog={catalog}
+                  related={slot.following}
+                  command={slot.command}
+                  expanded={followups}
+                />
               ))}
             </div>
             {!!build.mechanics?.pets && (
@@ -355,7 +452,11 @@ function ImageSheet({
               <p>魔宠元素 · {attunements[build.mechanics.familiar]}</p>
             )}
             {sets.map((set) => (
-              <div key={set}>
+              <div
+                className="png-weapon-skills"
+                data-weapon-set={set}
+                key={set}
+              >
                 <h3>
                   武器技能 · {set === 1 ? "Ⅰ" : "Ⅱ"}
                   {elements}
@@ -373,6 +474,7 @@ function ImageSheet({
                       label={String(i + 1)}
                       build={build}
                       catalog={catalog}
+                      expanded={followups}
                     />
                   ))}
                 </div>
@@ -387,6 +489,7 @@ function ImageSheet({
                   label={["治疗", "通用Ⅰ", "通用Ⅱ", "通用Ⅲ", "精英"][i]}
                   build={build}
                   catalog={catalog}
+                  expanded={followups}
                 />
               ))}
             </div>
@@ -410,6 +513,7 @@ function ImageSheet({
                             }
                             build={build}
                             catalog={catalog}
+                            expanded={followups}
                           />
                         ))}
                       </div>
@@ -419,42 +523,7 @@ function ImageSheet({
               </div>
             )}
           </section>
-          <section className="png-section">
-            <h2>特性选择</h2>
-            {build.specs.map((selection, line) => {
-              const spec = catalog.specs.find((s) => s.id === selection.id);
-              return (
-                <div className="png-trait-line" key={line}>
-                  <h3>{spec?.name || "未选择特性线"}</h3>
-                  <div className="png-traits">
-                    {[1, 2, 3].map((tier) => {
-                      const minor = catalog.traits.find(
-                          (t) =>
-                            spec?.minor_traits?.includes(t.id) &&
-                            t.tier === tier,
-                        ),
-                        major = catalog.traits.find(
-                          (t) => t.id === selection.traits[tier - 1],
-                        );
-                      return (
-                        <div key={tier}>
-                          <small>{["初阶", "大师", "宗师"][tier - 1]}</small>
-                          {minor && (
-                            <div className="png-minor">
-                              <Portrait entity={minor} />
-                              <span>{minor.name}</span>
-                            </div>
-                          )}
-                          <Portrait entity={major} />
-                          <strong>{major?.name || "留空"}</strong>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
-          </section>
+          <TraitLines build={build} catalog={catalog} />
         </div>
       </div>
       {description && build.description && (

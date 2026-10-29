@@ -27,6 +27,15 @@ export function App() {
 }
 function WorkspaceApp() {
   const work = useWorkspace();
+  const followupsOwner = `${work.build.id}:${work.build.profession}`;
+  const [followups, setFollowups] = useState({
+    owner: followupsOwner,
+    expanded: false,
+  });
+  if (followups.owner !== followupsOwner)
+    setFollowups({ owner: followupsOwner, expanded: false });
+  const followupsExpanded =
+    followups.owner === followupsOwner && followups.expanded;
   const appearance = useDescriptionAppearance(work.build, work.readonly);
   const [catalog, setCatalog] = useState<Catalog | null>(null),
     [loading, setLoading] = useState(true),
@@ -190,6 +199,7 @@ function WorkspaceApp() {
               }
               catalog={catalog}
               disabled={loading || weaponError}
+              followupsExpanded={followupsExpanded}
             />
           </div>
         </div>
@@ -296,7 +306,16 @@ function WorkspaceApp() {
           <AttributePreviewProvider build={props.build} catalog={props.catalog}>
             <div className="workspace-layout">
               <GearPanel {...props} />
-              <TraitsPanel {...props} />
+              <TraitsPanel
+                {...props}
+                followupsExpanded={followupsExpanded}
+                onToggleFollowups={() =>
+                  setFollowups({
+                    owner: followupsOwner,
+                    expanded: !followupsExpanded,
+                  })
+                }
+              />
             </div>
             <BuildDescription key={props.build.id} {...props} />
           </AttributePreviewProvider>

@@ -931,6 +931,14 @@ h2 small {
 .attunement-controls select {
   padding: 3px 5px;
 }
+.skill-followups-toggle {
+  min-height: 44px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+.skill-followups-toggle[aria-expanded="true"] {
+  border-color: var(--class-accent);
+}
 .attunement-controls {
   justify-content: flex-start;
 }

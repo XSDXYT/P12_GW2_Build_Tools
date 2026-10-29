@@ -22,12 +22,15 @@ export function ScreenshotShare({
   build,
   catalog,
   disabled = false,
+  followupsExpanded,
 }: {
   build: Build;
   catalog: Catalog | null;
   disabled?: boolean;
+  followupsExpanded: boolean;
 }) {
   const [snapshot, setSnapshot] = useState<Build | null>(null);
+  const [snapshotFollowups, setSnapshotFollowups] = useState(false);
   const [description, setDescription] = useState(true),
     [scale, setScale] = useState(2);
   const [data, setData] = useState<AttributeData | null>(null);
@@ -219,6 +222,7 @@ export function ScreenshotShare({
         }
         onClick={() => {
           setSnapshot(structuredClone(build));
+          setSnapshotFollowups(followupsExpanded);
           setImage(null);
           setError("");
           setMessage("");
@@ -250,7 +254,7 @@ export function ScreenshotShare({
               </header>
               <p className="image-share-intro">
                 导出装备、技能特性和基础属性，讲解会按 Markdown
-                排版。超长内容自动分成多张，保持所选清晰度。威能、激怒等临时预览状态不计入图片。
+                排版。后续技能跟随主面板的展开状态。超长内容自动分成多张，保持所选清晰度。威能、激怒等临时预览状态不计入图片。
               </p>
               <div className="image-share-options">
                 <label>
@@ -366,6 +370,7 @@ export function ScreenshotShare({
                   catalog={catalog}
                   data={data}
                   description={description}
+                  followups={snapshotFollowups}
                 />
               </div>
             )}

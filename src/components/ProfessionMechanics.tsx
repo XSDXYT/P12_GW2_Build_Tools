@@ -20,7 +20,13 @@ export function ProfessionMechanics({
   edit,
   pick,
   tooltip,
-}: EditorProps & { tooltip: ReturnType<typeof useGameTooltip> }) {
+  followupsExpanded,
+  followupsId,
+}: EditorProps & {
+  tooltip: ReturnType<typeof useGameTooltip>;
+  followupsExpanded: boolean;
+  followupsId: string;
+}) {
   const {
     weaponSet,
     attunement,
@@ -79,7 +85,11 @@ export function ProfessionMechanics({
     );
   }
   return (
-    <div className="profession-mechanics" aria-label="职业机制">
+    <div
+      className="profession-mechanics"
+      aria-label="职业机制"
+      id={followupsId}
+    >
       <div className="skills-heading">
         <h3>职业机制</h3>
         <small>随职业、特长与技能联动</small>
@@ -376,7 +386,11 @@ export function ProfessionMechanics({
                 </small>
               )}
               {following.length > 0 && (
-                <details className="mechanic-related">
+                <details
+                  className="mechanic-related"
+                  open={followupsExpanded}
+                  key={`${build.id}:${build.profession}`}
+                >
                   <summary>后续 / 关联技能（{following.length}）</summary>
                   {following.map((child) => (
                     <div key={child.id} className="skill-followup">

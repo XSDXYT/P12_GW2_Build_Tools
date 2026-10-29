@@ -1,5 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
-import { readFileSync, copyFileSync, mkdirSync } from "node:fs";
+import { readFileSync, copyFileSync, mkdirSync, writeFileSync } from "node:fs";
 import {
   createBuild,
   encodeShare,
@@ -7,7 +7,7 @@ import {
   type Build,
 } from "../src/domain";
 import { loadBuild, downloadBuild } from "./build-fixtures";
-import { pngFilename } from "../src/build-image";
+import { imageSlices, pngFilename, pngPartFilename } from "../src/build-image";
 import { unzipSync } from "fflate";
 const catalog: Catalog = JSON.parse(
   readFileSync("public/catalog.json", "utf8"),
@@ -78,6 +78,15 @@ async function generate(page: Page) {
   });
   return modal;
 }
+async function imageParts(page: Page, scale = 2) {
+  const { width, height } = await page
+    .locator(".png-sheet")
+    .evaluate((node) => {
+      const r = node.getBoundingClientRect();
+      return { width: Math.ceil(r.width), height: Math.ceil(r.height) };
+    });
+  return imageSlices(width, height, scale);
+}
 test("高清PNG包含完整双武器与MD讲解，下载文件真实可解码，导出不修改BD或编辑状态", async ({
   page,
   browserName,
@@ -98,11 +107,20 @@ test("高清PNG包含完整双武器与MD讲解，下载文件真实可解码，
   await expect(page.locator(".png-sheet")).toContainText("武器组 Ⅱ");
   await expect(page.locator(".png-sheet")).toContainText("昏迷与晕眩时长加成");
   await expect(page.locator(".png-sheet")).toContainText("留空");
+  const parts = await imageParts(page);
   const waiting = page.waitForEvent("download");
-  await modal.getByRole("button", { name: "下载 PNG", exact: true }).click();
+  await modal
+    .getByRole("button", {
+      name: parts.length > 1 ? "下载当前 PNG" : "下载 PNG",
+      exact: true,
+    })
+    .click();
   const d = await waiting;
   expect(d.suggestedFilename()).toBe(
-    suggestedPngFilename(pngFilename(b.name), browserName),
+    suggestedPngFilename(
+      pngPartFilename(pngFilename(b.name), 0, parts.length),
+      browserName,
+    ),
   );
   const bytes = readFileSync((await d.path())!);
   expect(bytes.subarray(0, 8).toString("hex")).toBe("89504e470d0a1a0a");
@@ -125,7 +143,21 @@ test("高清PNG包含完整双武器与MD讲解，下载文件真实可解码，
     return n;
   });
   expect(painted).toBeGreaterThan(1000);
-  const background = await page.evaluate(async () => {
+  const descriptionY = await page
+    .locator(".png-markdown")
+    .evaluate(
+      (node) =>
+        node.getBoundingClientRect().top -
+        document.querySelector(".png-sheet")!.getBoundingClientRect().top +
+        10,
+    );
+  const descriptionPart = parts.findIndex(
+    (p) => descriptionY >= p.y && descriptionY < p.y + p.height,
+  );
+  expect(descriptionPart).toBeGreaterThanOrEqual(0);
+  for (let i = 0; i < descriptionPart; i++)
+    await modal.getByRole("button", { name: "下一张", exact: true }).click();
+  const background = await page.evaluate(async (offsetY) => {
     const sheet = document.querySelector(".png-sheet")!.getBoundingClientRect();
     const content = document
       .querySelector(".png-markdown")!
@@ -142,14 +174,14 @@ test("高清PNG包含完整双武器与MD讲解，下载文件真实可解码，
     const rgba = Array.from(
       x.getImageData(
         Math.round((content.left - sheet.left + 10) * 2),
-        Math.round((content.top - sheet.top + 10) * 2),
+        Math.round((content.top - sheet.top + 10 - offsetY) * 2),
         1,
         1,
       ).data,
     );
     c.width = 0;
     return rgba;
-  });
+  }, parts[descriptionPart].y);
   expect(background).toEqual([244, 248, 252, 255]);
   mkdirSync("test-results", { recursive: true });
   copyFileSync((await d.path())!, "test-results/build-image-hd.png");
@@ -192,6 +224,265 @@ test("390px只读分享可导出标准PNG，不附带讲解，关闭恢复焦点
   expect(
     await page.evaluate(() => localStorage.getItem("p12.builds.v1")),
   ).toBeNull();
+});
+
+test("神枪手截图保留完整特性树、三选一位置和实际PNG金色选中框", async ({
+  page,
+  browserName,
+}) => {
+  await icons(page);
+  const b = createBuild("Thief");
+  b.name = "特性树截图验收";
+  b.equipment.weapon1.weapon = "Rifle";
+  b.specs = [
+    { id: 35, traits: [1268, 1272, 1904] },
+    { id: 28, traits: [1245, 1704, 1269] },
+    { id: 58, traits: [2145, 2160, 2111] },
+  ];
+  await loadBuild(page, b);
+  const shown = await page
+    .locator(".trait-line .major-list")
+    .evaluateAll((lists) =>
+      lists.map((list) =>
+        [...list.querySelectorAll("button")].map((b) =>
+          b.getAttribute("aria-label"),
+        ),
+      ),
+    );
+  const modal = await generate(page);
+  const exported = page.locator(".png-trait-section");
+  await expect(exported.locator(".png-trait-line")).toHaveCount(3);
+  await expect(exported.locator(".png-trait-icon")).toHaveCount(27);
+  await expect(exported.locator(".png-minor-icon")).toHaveCount(9);
+  expect(
+    await exported
+      .locator(".png-major-list")
+      .evaluateAll((lists) =>
+        lists.map((list) =>
+          [...list.children].map((t) => t.getAttribute("title")),
+        ),
+      ),
+  ).toEqual(shown);
+  expect(
+    await exported
+      .locator(".png-trait-icon.is-selected")
+      .evaluateAll((els) =>
+        els.map((e) => Number(e.getAttribute("data-trait-id"))),
+      ),
+  ).toEqual(b.specs.flatMap((s) => s.traits));
+  await expect(exported.locator(".png-trait-check")).toHaveCount(9);
+  const bounds = await exported.boundingBox();
+  expect(bounds!.width).toBeGreaterThan(400);
+  expect(bounds!.width).toBeLessThan(500);
+  const skillSizes = await page
+    .locator(".png-skill > .png-skill-icon")
+    .first()
+    .boundingBox();
+  expect(skillSizes!.width).toBe(40);
+  // Sample the downloaded drawing itself: DOM selection alone cannot catch a missing canvas border.
+  const geometry = await page.evaluate(() => {
+    const sheet = document.querySelector(".png-sheet")!.getBoundingClientRect();
+    const section = document
+      .querySelector(".png-trait-section")!
+      .getBoundingClientRect();
+    return {
+      section: {
+        x: section.left - sheet.left,
+        y: section.top - sheet.top,
+        width: section.width,
+        height: section.height,
+      },
+      points: [...document.querySelectorAll(".png-trait-icon.is-selected")].map(
+        (e) => {
+          const r = e.getBoundingClientRect();
+          return { x: r.left - sheet.left + 1, y: r.top - sheet.top + 20 };
+        },
+      ),
+    };
+  });
+  const parts = await imageParts(page),
+    sources: { url: string; y: number }[] = [];
+  const gold: number[][] = [];
+  for (const part of parts) {
+    sources.push({
+      url: (await modal.getByRole("img").getAttribute("src"))!,
+      y: part.y,
+    });
+    const points = geometry.points.filter(
+      (p) => p.y >= part.y && p.y < part.y + part.height,
+    );
+    gold.push(
+      ...(await page.evaluate(
+        async ({ points, y }) => {
+          const img = document.querySelector(
+            ".image-share-preview img",
+          ) as HTMLImageElement;
+          await img.decode();
+          const c = document.createElement("canvas");
+          c.width = img.naturalWidth;
+          c.height = img.naturalHeight;
+          const ctx = c.getContext("2d")!;
+          ctx.drawImage(img, 0, 0);
+          const result = points.map((p) =>
+            Array.from(
+              ctx.getImageData(
+                Math.round(p.x * 2),
+                Math.round((p.y - y) * 2),
+                1,
+                1,
+              ).data,
+            ),
+          );
+          c.width = 0;
+          return result;
+        },
+        { points, y: part.y },
+      )),
+    );
+    if (part !== parts.at(-1))
+      await modal.getByRole("button", { name: "下一张", exact: true }).click();
+  }
+  expect(gold).toEqual(Array.from({ length: 9 }, () => [225, 196, 144, 255]));
+  const crop = await page.evaluate(
+    async ({ sources, section }) => {
+      const c = document.createElement("canvas");
+      c.width = Math.ceil(section.width * 2);
+      c.height = Math.ceil(section.height * 2);
+      const ctx = c.getContext("2d")!;
+      for (const source of sources) {
+        const img = new Image();
+        img.src = source.url;
+        await img.decode();
+        ctx.drawImage(img, -section.x * 2, (source.y - section.y) * 2);
+      }
+      return c.toDataURL("image/png").split(",")[1];
+    },
+    { sources, section: geometry.section },
+  );
+  mkdirSync("test-results", { recursive: true });
+  writeFileSync(
+    `test-results/build-image-traits-${browserName}.png`,
+    Buffer.from(crop, "base64"),
+  );
+  await page.keyboard.press("Escape");
+  expect(await downloadBuild(page)).toEqual(b);
+});
+
+test("灵感特性顺序、留空阶和空特性线正确，技能后续段与查看界面一致", async ({
+  page,
+}) => {
+  await icons(page);
+  const b = fixture();
+  b.description = "";
+  b.specs[0] = { id: 23, traits: [756, null, 1866] };
+  await loadBuild(page, b);
+  const shownTraits = await page
+    .locator(".trait-line")
+    .first()
+    .locator(".major-list")
+    .evaluateAll((lists) =>
+      lists.map((list) =>
+        [...list.querySelectorAll("button")].map((b) =>
+          b.getAttribute("aria-label"),
+        ),
+      ),
+    );
+  await page.getByRole("button", { name: "展开后续技能", exact: true }).click();
+  const displayedStages = await page
+    .locator(".weapon-skill-list .skill-followup .skill-name")
+    .allTextContents();
+  const modal = await generate(page);
+  const first = page.locator(".png-trait-line").first();
+  expect(
+    await first
+      .locator(".png-major-list")
+      .evaluateAll((lists) =>
+        lists.map((list) =>
+          [...list.children].map((t) => t.getAttribute("title")),
+        ),
+      ),
+  ).toEqual(shownTraits);
+  await expect(
+    first.locator(".png-trait-tier").nth(1).locator(".is-selected"),
+  ).toHaveCount(0);
+  await expect(first.locator(".png-trait-tier").nth(1)).toContainText("留空");
+  await expect(
+    page.locator(".png-trait-line").nth(1).locator(".png-trait-icon"),
+  ).toHaveCount(9);
+  await expect(
+    page.locator(".png-trait-line").nth(1).locator(".is-selected"),
+  ).toHaveCount(0);
+  expect(displayedStages.length).toBeGreaterThan(0);
+  expect(
+    await page
+      .locator(
+        '.png-weapon-skills[data-weapon-set="1"] .png-stage > span:last-child',
+      )
+      .allTextContents(),
+  ).toEqual(displayedStages);
+  await expect(modal.getByRole("img", { name: "BD长图预览" })).toBeVisible();
+});
+
+test("截图跟随后续技能展开状态，重新打开同步切换，JSON和原链接不变", async ({
+  page,
+}) => {
+  await icons(page);
+  const b = fixture();
+  b.name = "后续技能截图联动";
+  b.description = "";
+  b.skills[1] = 10204;
+  await page.goto("/#build=" + encodeShare(b));
+  await expect(page.getByLabel("配装名称", { exact: true })).toHaveValue(
+    b.name,
+  );
+  const hash = new URL(page.url()).hash;
+  await expect(
+    page.getByRole("button", { name: "展开后续技能", exact: true }),
+  ).toHaveAttribute("aria-expanded", "false");
+  let modal = await generate(page);
+  await expect(page.locator(".png-stage")).toHaveCount(0);
+  await expect(
+    page.locator(".png-skill[data-skill-id='10204'] > .png-skill-name"),
+  ).not.toHaveText("");
+  await page.keyboard.press("Escape");
+
+  await page.getByRole("button", { name: "展开后续技能", exact: true }).click();
+  const displayedStages = await page
+    .locator(".weapon-skill-list .skill-followup .skill-name")
+    .allTextContents();
+  expect(displayedStages.length).toBeGreaterThan(0);
+  modal = await generate(page);
+  expect(
+    await page
+      .locator(
+        '.png-weapon-skills[data-weapon-set="1"] .png-stage > span:last-child',
+      )
+      .allTextContents(),
+  ).toEqual(displayedStages);
+  await expect(
+    page.locator(
+      '.png-skill[data-skill-id="10204"] .png-stage[data-skill-id="10206"]',
+    ),
+  ).toHaveCount(1);
+  const waiting = page.waitForEvent("download");
+  const parts = await imageParts(page);
+  await modal
+    .getByRole("button", {
+      name: parts.length > 1 ? "下载当前 PNG" : "下载 PNG",
+      exact: true,
+    })
+    .click();
+  const png = readFileSync((await (await waiting).path())!);
+  expect(png.subarray(0, 8).toString("hex")).toBe("89504e470d0a1a0a");
+  expect(png.readUInt32BE(16)).toBe(2000);
+  await page.keyboard.press("Escape");
+
+  await page.getByRole("button", { name: "收起后续技能", exact: true }).click();
+  await generate(page);
+  await expect(page.locator(".png-stage")).toHaveCount(0);
+  await page.keyboard.press("Escape");
+  expect(await downloadBuild(page)).toEqual(b);
+  expect(new URL(page.url()).hash).toBe(hash);
 });
 test("属性资料失败可重试，外部图片跨域失败保留文字，长文自动高清分图并完整打包下载", async ({
   page,
@@ -369,7 +660,13 @@ test("生成途中可取消，清理临时节点；重新生成后可将PNG交�
     });
   });
   await generate(page);
-  await modal.getByRole("button", { name: "系统分享", exact: true }).click();
+  const parts = await imageParts(page);
+  await modal
+    .getByRole("button", {
+      name: parts.length > 1 ? "分享当前图片" : "系统分享",
+      exact: true,
+    })
+    .click();
   const shared = await page.evaluate(
     () =>
       (
@@ -378,7 +675,9 @@ test("生成途中可取消，清理临时节点；重新生成后可将PNG交�
         }
       ).__pngShared,
   );
-  expect(shared.name).toBe(pngFilename(b.name));
+  expect(shared.name).toBe(
+    pngPartFilename(pngFilename(b.name), 0, parts.length),
+  );
   expect(shared.type).toBe("image/png");
   expect(shared.size).toBeGreaterThan(1000);
   await expect(modal.getByRole("status")).toContainText("已完成系统分享");

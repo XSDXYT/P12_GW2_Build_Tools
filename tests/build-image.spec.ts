@@ -12,6 +12,11 @@ import { unzipSync } from "fflate";
 const catalog: Catalog = JSON.parse(
   readFileSync("public/catalog.json", "utf8"),
 );
+// WebKitGTK sanitizes spaces in blob-download suggestions on Linux.
+const suggestedPngFilename = (name: string, browserName: string) =>
+  process.platform === "linux" && browserName === "webkit"
+    ? name.replaceAll(" ", "_")
+    : name;
 function fixture() {
   const b = createBuild("Mesmer");
   b.name = "长图：幻术 / 开荒";
@@ -75,6 +80,7 @@ async function generate(page: Page) {
 }
 test("高清PNG包含完整双武器与MD讲解，下载文件真实可解码，导出不修改BD或编辑状态", async ({
   page,
+  browserName,
 }) => {
   await icons(page);
   const b = fixture();
@@ -95,7 +101,9 @@ test("高清PNG包含完整双武器与MD讲解，下载文件真实可解码，
   const waiting = page.waitForEvent("download");
   await modal.getByRole("button", { name: "下载 PNG", exact: true }).click();
   const d = await waiting;
-  expect(d.suggestedFilename()).toBe(pngFilename(b.name));
+  expect(d.suggestedFilename()).toBe(
+    suggestedPngFilename(pngFilename(b.name), browserName),
+  );
   const bytes = readFileSync((await d.path())!);
   expect(bytes.subarray(0, 8).toString("hex")).toBe("89504e470d0a1a0a");
   expect(bytes.readUInt32BE(16)).toBe(2000);
@@ -187,6 +195,7 @@ test("390px只读分享可导出标准PNG，不附带讲解，关闭恢复焦点
 });
 test("属性资料失败可重试，外部图片跨域失败保留文字，长文自动高清分图并完整打包下载", async ({
   page,
+  browserName,
 }) => {
   await icons(page);
   const b = fixture();
@@ -229,13 +238,17 @@ test("属性资料失败可重试，外部图片跨域失败保留文字，长�
   await modal
     .getByRole("button", { name: "下载当前 PNG", exact: true })
     .click();
-  expect((await download).suggestedFilename()).toBe("长图：幻术 _ 开荒-02.png");
+  expect((await download).suggestedFilename()).toBe(
+    suggestedPngFilename("长图：幻术 _ 开荒-02.png", browserName),
+  );
   const zipDownload = page.waitForEvent("download");
   await modal
     .getByRole("button", { name: "打包下载全部 PNG", exact: true })
     .click();
   const zipFile = await zipDownload;
-  expect(zipFile.suggestedFilename()).toBe("长图：幻术 _ 开荒.zip");
+  expect(zipFile.suggestedFilename()).toBe(
+    suggestedPngFilename("长图：幻术 _ 开荒.zip", browserName),
+  );
   const entries = unzipSync(readFileSync((await zipFile.path())!));
   const keys = Object.keys(entries);
   expect(keys.length).toBeGreaterThan(1);

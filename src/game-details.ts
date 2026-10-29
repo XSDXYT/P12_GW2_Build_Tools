@@ -431,7 +431,10 @@ export function gameDetails(
     };
   if (entity.mechanicActor === "pet" || entity.mechanicActor === "mech") {
     const details = baseGameDetails(entity, kind, new Set(), {});
-    return { ...details, durationScalingExcluded: true };
+    // Only reviewed, explicitly targeted Wiki rules may affect another actor.
+    // Player attributes, API traited facts and equipment previews stay isolated.
+    const wiki = wikiDetails(entity.id, kind, selectedTraits, {});
+    return { ...details, ...wiki, durationScalingExcluded: true };
   }
   return projectDurations(
     baseGameDetails(entity, kind, selectedTraits, context),

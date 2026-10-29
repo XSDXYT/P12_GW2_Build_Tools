@@ -3853,6 +3853,28 @@
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "grenadier-radius",
+                "trait": 514,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 514,
+                  "title": "Grenadier",
+                  "revision": 2990846
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "爆炸半径",
+                    "factor": 1,
+                    "add": 60
+                  }
+                ],
+                "traitName": "投弹专家"
+              }
             ]
           },
           {
@@ -3904,6 +3926,28 @@
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "grenadier-radius",
+                "trait": 514,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 514,
+                  "title": "Grenadier",
+                  "revision": 2990846
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "爆炸半径",
+                    "factor": 1,
+                    "add": 60
+                  }
+                ],
+                "traitName": "投弹专家"
+              }
             ]
           },
           {
@@ -3953,6 +3997,28 @@
                 "label": "射程",
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "grenadier-radius",
+                "trait": 514,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 514,
+                  "title": "Grenadier",
+                  "revision": 2990846
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "爆炸半径",
+                    "factor": 1,
+                    "add": 60
+                  }
+                ],
+                "traitName": "投弹专家"
               }
             ]
           },
@@ -4004,6 +4070,28 @@
                 "label": "射程",
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "grenadier-radius",
+                "trait": 514,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 514,
+                  "title": "Grenadier",
+                  "revision": 2990846
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "爆炸半径",
+                    "factor": 1,
+                    "add": 60
+                  }
+                ],
+                "traitName": "投弹专家"
               }
             ]
           },
@@ -4060,6 +4148,28 @@
                 "label": "无法格挡",
                 "detail": "",
                 "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "grenadier-radius",
+                "trait": 514,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 514,
+                  "title": "Grenadier",
+                  "revision": 2990846
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "半径",
+                    "factor": 1,
+                    "add": 60
+                  }
+                ],
+                "traitName": "投弹专家"
               }
             ]
           }
@@ -4153,6 +4263,42 @@
             "id": 2420,
             "name": "水银偏好",
             "description": "控制敌人时减少进化的冷却时间。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "gadgeteer-ram",
+            "trait": 1679,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1679,
+              "title": "Gadgeteer",
+              "revision": 2998219
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "击飞",
+                "factor": 1,
+                "add": 150
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "燃烧",
+                  "detail": "3 秒"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "爆炸",
+                  "detail": ""
+                }
+              }
+            ],
+            "traitName": "配件达人"
           }
         ]
       },
@@ -4609,6 +4755,73 @@
             "name": "施加斥力",
             "description": "当你的威能达到或超过临界值时获得稳固。威能提供额外的威力。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "hgh-base-durations",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "激怒",
+                "factor": 1.2
+              },
+              {
+                "type": "duration",
+                "label": "威能",
+                "factor": 1.2
+              },
+              {
+                "type": "duration",
+                "label": "决心",
+                "factor": 1.2
+              },
+              {
+                "type": "duration",
+                "label": "迅捷",
+                "factor": 1.2
+              }
+            ],
+            "traitName": "生长激素"
+          },
+          {
+            "id": "hgh-extra-boons",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外威能",
+                  "detail": "15 秒 · 2 层",
+                  "stacks": 2,
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外激怒",
+                  "detail": "4 秒",
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              }
+            ],
+            "traitName": "生长激素"
+          }
         ]
       },
       "5825": {
@@ -4700,6 +4913,46 @@
             "id": 2420,
             "name": "水银偏好",
             "description": "控制敌人时减少进化的冷却时间。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "gadgeteer-shoes",
+            "trait": 1679,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1679,
+              "title": "Gadgeteer",
+              "revision": 2998219
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "半径",
+                "row": {
+                  "label": "半径",
+                  "detail": "90",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "稳固",
+                  "detail": "4 秒 · 5 层",
+                  "stacks": 5
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "解除昏迷",
+                  "detail": ""
+                }
+              }
+            ],
+            "traitName": "配件达人"
           }
         ]
       },
@@ -5265,6 +5518,68 @@
               }
             ]
           }
+        ],
+        "modifiers": [
+          {
+            "id": "hgh-base-durations",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "飓风形态",
+                "factor": 1.2
+              },
+              {
+                "type": "duration",
+                "label": "怒神附体",
+                "factor": 1.2
+              },
+              {
+                "type": "duration",
+                "label": "巫妖形态",
+                "factor": 1.2
+              }
+            ],
+            "traitName": "生长激素"
+          },
+          {
+            "id": "hgh-extra-boons",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外威能",
+                  "detail": "15 秒 · 2 层",
+                  "stacks": 2,
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外激怒",
+                  "detail": "4 秒",
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              }
+            ],
+            "traitName": "生长激素"
+          }
         ]
       },
       "5834": {
@@ -5403,6 +5718,68 @@
             "id": 2267,
             "name": "紧急协议",
             "description": "如果机甲在生命值低于一半时受到攻击，它将激活紧急协议，短时间内获得伤害减免和再生。你施加的再生效果更强。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "hgh-base-durations",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "保护",
+                "factor": 1.2
+              },
+              {
+                "type": "duration",
+                "label": "再生",
+                "factor": 1.2
+              },
+              {
+                "type": "duration",
+                "label": "迅捷",
+                "factor": 1.2
+              }
+            ],
+            "traitName": "生长激素"
+          },
+          {
+            "id": "hgh-extra-boons",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外威能",
+                  "detail": "15 秒 · 2 层",
+                  "stacks": 2,
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外激怒",
+                  "detail": "4 秒",
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              }
+            ],
+            "traitName": "生长激素"
           }
         ]
       },
@@ -5740,6 +6117,39 @@
             "name": "生长激素",
             "description": "试剂延长持续时间并提供威能。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "hgh-extra-boons",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外威能",
+                  "detail": "15 秒 · 2 层",
+                  "stacks": 2,
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外激怒",
+                  "detail": "4 秒",
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              }
+            ],
+            "traitName": "生长激素"
+          }
         ]
       },
       "5861": {
@@ -5781,6 +6191,58 @@
             "id": 473,
             "name": "生长激素",
             "description": "试剂延长持续时间并提供威能。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "hgh-base-durations",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "持续时间",
+                "factor": 1.2
+              }
+            ],
+            "traitName": "生长激素"
+          },
+          {
+            "id": "hgh-extra-boons",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外威能",
+                  "detail": "15 秒 · 2 层",
+                  "stacks": 2,
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外激怒",
+                  "detail": "4 秒",
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              }
+            ],
+            "traitName": "生长激素"
           }
         ]
       },
@@ -5847,6 +6309,68 @@
             "id": 1860,
             "name": "万物运动",
             "description": "拥有稳固、迅捷或奔驰疾速时提升打击伤害。该打击伤害随着你拥有的增益而增加。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "hgh-base-durations",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "急速",
+                "factor": 1.2
+              },
+              {
+                "type": "duration",
+                "label": "稳固",
+                "factor": 1.2
+              },
+              {
+                "type": "duration",
+                "label": "活力",
+                "factor": 1.2
+              }
+            ],
+            "traitName": "生长激素"
+          },
+          {
+            "id": "hgh-extra-boons",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外威能",
+                  "detail": "15 秒 · 2 层",
+                  "stacks": 2,
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外激怒",
+                  "detail": "4 秒",
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              }
+            ],
+            "traitName": "生长激素"
           }
         ]
       },
@@ -5916,6 +6440,33 @@
             "id": 1679,
             "name": "配件达人",
             "description": "配件技能变得更强大。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "gadgeteer-goggles",
+            "trait": 1679,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1679,
+              "title": "Gadgeteer",
+              "revision": 2998219
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "屏障",
+                  "detail": "2122 + 0.2 × 治疗效果",
+                  "healing": {
+                    "base": 2122,
+                    "coefficient": 0.2
+                  }
+                }
+              }
+            ],
+            "traitName": "配件达人"
           }
         ]
       },
@@ -6393,6 +6944,42 @@
             "id": 1679,
             "name": "配件达人",
             "description": "配件技能变得更强大。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "gadgeteer-boots",
+            "trait": 1679,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1679,
+              "title": "Gadgeteer",
+              "revision": 2998219
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "火箭距离",
+                "factor": 1,
+                "add": 300
+              },
+              {
+                "type": "number",
+                "label": "射程",
+                "factor": 1,
+                "add": 300
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "奔驰疾速",
+                  "detail": "2 秒",
+                  "trigger": "落地时"
+                }
+              }
+            ],
+            "traitName": "配件达人"
           }
         ]
       },
@@ -6921,6 +7508,79 @@
                 "detail": "",
                 "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "hgh-base-durations",
+                "trait": 473,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 473,
+                  "title": "HGH",
+                  "revision": 3163406
+                },
+                "changes": [
+                  {
+                    "type": "duration",
+                    "label": "持续时间",
+                    "factor": 1.2
+                  }
+                ],
+                "traitName": "生长激素"
+              },
+              {
+                "id": "hgh-extra-boons",
+                "trait": 473,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 473,
+                  "title": "HGH",
+                  "revision": 3163406
+                },
+                "changes": [
+                  {
+                    "type": "append",
+                    "row": {
+                      "label": "额外威能",
+                      "detail": "15 秒 · 2 层",
+                      "stacks": 2,
+                      "trigger": "每次使用药剂时，仅一次"
+                    }
+                  },
+                  {
+                    "type": "append",
+                    "row": {
+                      "label": "额外激怒",
+                      "detail": "4 秒",
+                      "trigger": "每次使用药剂时，仅一次"
+                    }
+                  }
+                ],
+                "traitName": "生长激素"
+              },
+              {
+                "id": "hgh-acid-bomb-hits",
+                "trait": 473,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 473,
+                  "title": "HGH",
+                  "revision": 3163406
+                },
+                "changes": [
+                  {
+                    "type": "append",
+                    "row": {
+                      "label": "命中次数",
+                      "detail": "7"
+                    }
+                  }
+                ],
+                "traitName": "生长激素"
+              }
             ]
           },
           {
@@ -6995,6 +7655,39 @@
                 "detail": "",
                 "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "hgh-extra-boons",
+                "trait": 473,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 473,
+                  "title": "HGH",
+                  "revision": 3163406
+                },
+                "changes": [
+                  {
+                    "type": "append",
+                    "row": {
+                      "label": "额外威能",
+                      "detail": "15 秒 · 2 层",
+                      "stacks": 2,
+                      "trigger": "每次使用药剂时，仅一次"
+                    }
+                  },
+                  {
+                    "type": "append",
+                    "row": {
+                      "label": "额外激怒",
+                      "detail": "4 秒",
+                      "trigger": "每次使用药剂时，仅一次"
+                    }
+                  }
+                ],
+                "traitName": "生长激素"
+              }
             ]
           }
         ]
@@ -7041,6 +7734,39 @@
             "id": 473,
             "name": "生长激素",
             "description": "试剂延长持续时间并提供威能。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "hgh-extra-boons",
+            "trait": 473,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 473,
+              "title": "HGH",
+              "revision": 3163406
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外威能",
+                  "detail": "15 秒 · 2 层",
+                  "stacks": 2,
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外激怒",
+                  "detail": "4 秒",
+                  "trigger": "每次使用药剂时，仅一次"
+                }
+              }
+            ],
+            "traitName": "生长激素"
           }
         ]
       },
@@ -7206,6 +7932,30 @@
             "name": "水银偏好",
             "description": "控制敌人时减少进化的冷却时间。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "gadgeteer-mine",
+            "trait": 1679,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1679,
+              "title": "Gadgeteer",
+              "revision": 2998219
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外地雷",
+                  "detail": "1",
+                  "trigger": "施放时，在自身位置放置；单枚伤害与蔑视量不变"
+                }
+              }
+            ],
+            "traitName": "配件达人"
+          }
         ]
       },
       "21659": {
@@ -7317,6 +8067,36 @@
             "name": "步调一致",
             "description": "使用治疗技能后，以你为中心在一定范围内施加奔驰疾速。使用工具带提供的治疗技能，让你自己获得奔驰疾速。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "gadgeteer-aed",
+            "trait": 1679,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1679,
+              "title": "Gadgeteer",
+              "revision": 2998219
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "自动除颤",
+                "factor": 1,
+                "add": 3
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "电击光环",
+                  "detail": "",
+                  "trigger": "自动除颤阻止致命伤害时"
+                }
+              }
+            ],
+            "traitName": "配件达人"
+          }
         ]
       },
       "29739": {
@@ -7368,6 +8148,52 @@
             "id": 1917,
             "name": "机械加速",
             "description": "法池技能的第一次脉冲范围效果增强，给附近盟友提供奔驰疾速。使用功能机型时给附近盟友提供奔驰疾速。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "gyro-radius-29739",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "半径",
+                  "detail": "360"
+                }
+              }
+            ],
+            "traitName": "机械加速"
+          },
+          {
+            "id": "gyro-superspeed",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "奔驰疾速",
+                  "detail": "5 秒",
+                  "recipient": "附近盟友（最多5名）",
+                  "trigger": "井首次脉冲；机能机械施放时"
+                }
+              }
+            ],
+            "traitName": "机械加速"
           }
         ]
       },
@@ -7430,6 +8256,54 @@
             "id": 2052,
             "name": "动能加速",
             "description": "当你成功使用爆炸、跳跃或旋风终结技时，向附近盟友施加增益。你的功能机械现在是爆炸终结技。\n旋风终结技每隔一段时间只能触发一次该特性。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "gyro-radius-29921",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "半径",
+                "row": {
+                  "label": "半径",
+                  "detail": "360",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+                }
+              }
+            ],
+            "traitName": "机械加速"
+          },
+          {
+            "id": "gyro-superspeed",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "奔驰疾速",
+                  "detail": "5 秒",
+                  "recipient": "附近盟友（最多5名）",
+                  "trigger": "井首次脉冲；机能机械施放时"
+                }
+              }
+            ],
+            "traitName": "机械加速"
           }
         ]
       },
@@ -7495,6 +8369,54 @@
             "id": 1917,
             "name": "机械加速",
             "description": "法池技能的第一次脉冲范围效果增强，给附近盟友提供奔驰疾速。使用功能机型时给附近盟友提供奔驰疾速。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "gyro-radius-30101",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "半径",
+                "row": {
+                  "label": "半径",
+                  "detail": "360",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+                }
+              }
+            ],
+            "traitName": "机械加速"
+          },
+          {
+            "id": "gyro-superspeed",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "奔驰疾速",
+                  "detail": "5 秒",
+                  "recipient": "附近盟友（最多5名）",
+                  "trigger": "井首次脉冲；机能机械施放时"
+                }
+              }
+            ],
+            "traitName": "机械加速"
           }
         ]
       },
@@ -7606,6 +8528,54 @@
             "id": 2014,
             "name": "步调一致",
             "description": "使用治疗技能后，以你为中心在一定范围内施加奔驰疾速。使用工具带提供的治疗技能，让你自己获得奔驰疾速。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "gyro-radius-30357",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "半径",
+                "row": {
+                  "label": "半径",
+                  "detail": "360",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+                }
+              }
+            ],
+            "traitName": "机械加速"
+          },
+          {
+            "id": "gyro-superspeed",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "奔驰疾速",
+                  "detail": "5 秒",
+                  "recipient": "附近盟友（最多5名）",
+                  "trigger": "井首次脉冲；机能机械施放时"
+                }
+              }
+            ],
+            "traitName": "机械加速"
           }
         ]
       },
@@ -7910,6 +8880,58 @@
                 "detail": "",
                 "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "hgh-base-durations",
+                "trait": 473,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 473,
+                  "title": "HGH",
+                  "revision": 3163406
+                },
+                "changes": [
+                  {
+                    "type": "duration",
+                    "label": "持续时间",
+                    "factor": 1.2
+                  }
+                ],
+                "traitName": "生长激素"
+              },
+              {
+                "id": "hgh-extra-boons",
+                "trait": 473,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 473,
+                  "title": "HGH",
+                  "revision": 3163406
+                },
+                "changes": [
+                  {
+                    "type": "append",
+                    "row": {
+                      "label": "额外威能",
+                      "detail": "15 秒 · 2 层",
+                      "stacks": 2,
+                      "trigger": "每次使用药剂时，仅一次"
+                    }
+                  },
+                  {
+                    "type": "append",
+                    "row": {
+                      "label": "额外激怒",
+                      "detail": "4 秒",
+                      "trigger": "每次使用药剂时，仅一次"
+                    }
+                  }
+                ],
+                "traitName": "生长激素"
+              }
             ]
           }
         ]
@@ -7973,6 +8995,54 @@
             "id": 1917,
             "name": "机械加速",
             "description": "法池技能的第一次脉冲范围效果增强，给附近盟友提供奔驰疾速。使用功能机型时给附近盟友提供奔驰疾速。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "gyro-radius-30815",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "半径",
+                "row": {
+                  "label": "半径",
+                  "detail": "360",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+                }
+              }
+            ],
+            "traitName": "机械加速"
+          },
+          {
+            "id": "gyro-superspeed",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "奔驰疾速",
+                  "detail": "5 秒",
+                  "recipient": "附近盟友（最多5名）",
+                  "trigger": "井首次脉冲；机能机械施放时"
+                }
+              }
+            ],
+            "traitName": "机械加速"
           }
         ]
       },
@@ -8144,6 +9214,54 @@
             "id": 1849,
             "name": "施加斥力",
             "description": "当你的威能达到或超过临界值时获得稳固。威能提供额外的威力。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "gyro-radius-31248",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "半径",
+                "row": {
+                  "label": "半径",
+                  "detail": "360",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+                }
+              }
+            ],
+            "traitName": "机械加速"
+          },
+          {
+            "id": "gyro-superspeed",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "奔驰疾速",
+                  "detail": "5 秒",
+                  "recipient": "附近盟友（最多5名）",
+                  "trigger": "井首次脉冲；机能机械施放时"
+                }
+              }
+            ],
+            "traitName": "机械加速"
           }
         ]
       },
@@ -9243,6 +10361,50 @@
             "name": "动能加速",
             "description": "当你成功使用爆炸、跳跃或旋风终结技时，向附近盟友施加增益。你的功能机械现在是爆炸终结技。\n旋风终结技每隔一段时间只能触发一次该特性。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-56920",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          },
+          {
+            "id": "gyro-superspeed",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "奔驰疾速",
+                  "detail": "5 秒",
+                  "recipient": "附近盟友（最多5名）",
+                  "trigger": "井首次脉冲；机能机械施放时"
+                }
+              }
+            ],
+            "traitName": "机械加速"
+          }
         ]
       },
       "63049": {
@@ -9470,6 +10632,31 @@
             "name": "机甲核心：翠玉驱动器",
             "description": "可以使用机甲命令天空马戏团。当你没有操纵机甲，或者修理机甲的时候，它将偶尔发射空袭弹幕提供支援。\n提升纹章技能的被动效果，冷却时被动奖励依然有效。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "j-drive-63095",
+            "trait": 2298,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2298,
+              "title": "Mech_Core:_J-Drive",
+              "revision": 2569160
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "冷却减少",
+                "row": {
+                  "label": "冷却减少",
+                  "detail": "24%",
+                  "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png"
+                }
+              }
+            ],
+            "traitName": "机甲核心：翠玉驱动器"
+          }
         ]
       },
       "63111": {
@@ -9516,6 +10703,31 @@
             "id": 2298,
             "name": "机甲核心：翠玉驱动器",
             "description": "可以使用机甲命令天空马戏团。当你没有操纵机甲，或者修理机甲的时候，它将偶尔发射空袭弹幕提供支援。\n提升纹章技能的被动效果，冷却时被动奖励依然有效。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "j-drive-63111",
+            "trait": 2298,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2298,
+              "title": "Mech_Core:_J-Drive",
+              "revision": 2569160
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "移动速度提高",
+                "row": {
+                  "label": "移动速度提高",
+                  "detail": "30%",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                }
+              }
+            ],
+            "traitName": "机甲核心：翠玉驱动器"
           }
         ]
       },
@@ -9612,6 +10824,30 @@
             "id": 2298,
             "name": "机甲核心：翠玉驱动器",
             "description": "可以使用机甲命令天空马戏团。当你没有操纵机甲，或者修理机甲的时候，它将偶尔发射空袭弹幕提供支援。\n提升纹章技能的被动效果，冷却时被动奖励依然有效。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "j-drive-63113",
+            "trait": 2298,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2298,
+              "title": "Mech_Core:_J-Drive",
+              "revision": 2569160
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "纹章被动",
+                "row": {
+                  "label": "纹章被动",
+                  "detail": "+12% 症状伤害"
+                }
+              }
+            ],
+            "traitName": "机甲核心：翠玉驱动器"
           }
         ]
       },
@@ -9879,6 +11115,31 @@
             "name": "机甲核心：翠玉驱动器",
             "description": "可以使用机甲命令天空马戏团。当你没有操纵机甲，或者修理机甲的时候，它将偶尔发射空袭弹幕提供支援。\n提升纹章技能的被动效果，冷却时被动奖励依然有效。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "j-drive-63262",
+            "trait": 2298,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2298,
+              "title": "Mech_Core:_J-Drive",
+              "revision": 2569160
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "屏障纹章",
+                "row": {
+                  "label": "屏障纹章",
+                  "detail": "-12% 受到的伤害, -12% 受到的症状伤害",
+                  "icon": "https://render.guildwars2.com/file/EB737C0D4462F5C5572166DEC2801DD56148AFE6/2503688.png"
+                }
+              }
+            ],
+            "traitName": "机甲核心：翠玉驱动器"
+          }
         ]
       },
       "72103": {
@@ -10012,6 +11273,73 @@
             "id": 2052,
             "name": "动能加速",
             "description": "当你成功使用爆炸、跳跃或旋风终结技时，向附近盟友施加增益。你的功能机械现在是爆炸终结技。\n旋风终结技每隔一段时间只能触发一次该特性。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-72114",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          },
+          {
+            "id": "gyro-radius-72114",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "半径",
+                "row": {
+                  "label": "半径",
+                  "detail": "360",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+                }
+              }
+            ],
+            "traitName": "机械加速"
+          },
+          {
+            "id": "gyro-superspeed",
+            "trait": 1917,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1917,
+              "title": "Gyroscopic_Acceleration",
+              "revision": 2675995
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "奔驰疾速",
+                  "detail": "5 秒",
+                  "recipient": "附近盟友（最多5名）",
+                  "trigger": "井首次脉冲；机能机械施放时"
+                }
+              }
+            ],
+            "traitName": "机械加速"
           }
         ]
       },

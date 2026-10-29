@@ -12,7 +12,7 @@
     "Necromancer",
     "Revenant"
   ],
-  "generatedAt": "2026-10-20T23:43:22.991Z",
+  "generatedAt": "2026-10-24T00:40:29.995Z",
   "mirror": "https://wiki.wishingstar.top",
   "specializationTraits": {
     "1": [
@@ -1326,15 +1326,161 @@
     "skippedRows": 0,
     "withheldRows": 0
   },
+  "traitDurationBonuses": [
+    {
+      "trait": 433,
+      "name": "燃烧火药",
+      "effects": [
+        "Burning"
+      ],
+      "bonus": 33,
+      "source": {
+        "title": "Incendiary_Powder",
+        "revision": 2655474
+      }
+    },
+    {
+      "trait": 515,
+      "name": "抑制凝血",
+      "effects": [
+        "Bleeding"
+      ],
+      "bonus": 33,
+      "source": {
+        "title": "Serrated_Steel",
+        "revision": 3094923
+      }
+    },
+    {
+      "trait": 2383,
+      "name": "焦油成分",
+      "effects": [
+        "Poison"
+      ],
+      "bonus": 33,
+      "source": {
+        "title": "Carbolic_Composition",
+        "revision": 3081045
+      }
+    },
+    {
+      "trait": 1291,
+      "name": "强效毒药",
+      "effects": [
+        "Poison"
+      ],
+      "bonus": 33,
+      "source": {
+        "title": "Potent_Poison",
+        "revision": 2630304
+      }
+    },
+    {
+      "trait": 363,
+      "name": "碎冰穿刺",
+      "effects": [
+        "Vulnerability"
+      ],
+      "bonus": 33,
+      "source": {
+        "title": "Piercing_Shards",
+        "revision": 3128169
+      }
+    },
+    {
+      "trait": 1507,
+      "name": "锯齿之岩",
+      "effects": [
+        "Bleeding"
+      ],
+      "bonus": 20,
+      "source": {
+        "title": "Serrated_Stones",
+        "revision": 2842822
+      }
+    },
+    {
+      "trait": 802,
+      "name": "倒刺精准",
+      "effects": [
+        "Bleeding"
+      ],
+      "bonus": 20,
+      "source": {
+        "title": "Barbed_Precision",
+        "revision": 2626596
+      }
+    },
+    {
+      "trait": 892,
+      "name": "死亡恐惧",
+      "effects": [
+        "Fear"
+      ],
+      "bonus": 100,
+      "source": {
+        "title": "Fear_of_Death",
+        "revision": 2366250
+      }
+    },
+    {
+      "trait": 1879,
+      "name": "恐惧寒栗",
+      "effects": [
+        "Chilled"
+      ],
+      "bonus": 20,
+      "source": {
+        "title": "Shivers_of_Dread",
+        "revision": 3128978
+      }
+    },
+    {
+      "trait": 1744,
+      "name": "强烈渴嗜",
+      "effects": [
+        "Bleeding",
+        "Burning",
+        "Poison",
+        "Confusion",
+        "Torment"
+      ],
+      "bonus": 10,
+      "source": {
+        "title": "Yearning_Empowerment",
+        "revision": 3058259
+      }
+    },
+    {
+      "trait": 2079,
+      "name": "鲜血狂怒",
+      "effects": [
+        "Bleeding"
+      ],
+      "bonus": 25,
+      "gate": "fury",
+      "source": {
+        "title": "Blood_Fury",
+        "revision": 2655477
+      }
+    }
+  ],
   "modifierCoverage": {
     "professions": [
       "Mesmer",
       "Guardian",
-      "Warrior"
+      "Warrior",
+      "Engineer",
+      "Ranger",
+      "Thief",
+      "Elementalist",
+      "Necromancer",
+      "Revenant"
     ],
-    "rules": 107,
-    "targets": 85,
-    "traits": 8,
-    "guardedSkips": 0
+    "rules": 302,
+    "targets": 204,
+    "traits": 45,
+    "durationTraits": 11,
+    "guardedSkips": 281
   }
 }

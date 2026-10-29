@@ -2,6 +2,7 @@ import { z } from "zod";
 import { encounterModes } from "./encounter-modes";
 import { zlibSync, Unzlib, strToU8, strFromU8 } from "fflate";
 import { mechanicIssues } from "./profession-mechanics";
+import { descriptionStyleSchema } from "./markdown-style";
 export const armorSlots = [
   "head",
   "shoulders",
@@ -107,6 +108,7 @@ export const buildSchema = z
     id: z.string().max(80),
     name: z.string().max(80),
     description: z.string().max(60000).optional(),
+    descriptionStyle: descriptionStyleSchema.optional(),
     tags: buildTagsSchema.optional(),
     encounters: encountersSchema.optional(),
     profession: z.enum([

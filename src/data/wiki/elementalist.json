@@ -5865,6 +5865,28 @@
                 "label": "闪避",
                 "detail": "1 秒"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "persisting-flames-fields",
+                "trait": 1510,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 1510,
+                  "title": "Persisting_Flames",
+                  "revision": 2938218
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "持续时间",
+                    "factor": 1,
+                    "add": 2
+                  }
+                ],
+                "traitName": "长效怒火"
+              }
             ]
           },
           {
@@ -5915,6 +5937,28 @@
                 "label": "组合技区域",
                 "detail": "火焰",
                 "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "persisting-flames-fields",
+                "trait": 1510,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 1510,
+                  "title": "Persisting_Flames",
+                  "revision": 2938218
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "持续时间",
+                    "factor": 1,
+                    "add": 2
+                  }
+                ],
+                "traitName": "长效怒火"
               }
             ]
           },
@@ -9280,6 +9324,27 @@
             "name": "元素棱堡",
             "description": "你施加的光环可以治疗盟友。在生命值低于临界值时受到攻击将对附近盟友施加冰霜光环。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "smothering-fire-aura",
+            "trait": 340,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 340,
+              "title": "Smothering_Auras",
+              "revision": 2946543
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "火焰光环",
+                "factor": 1.33
+              }
+            ],
+            "traitName": "窒息光环"
+          }
         ]
       },
       "40183": {
@@ -9815,6 +9880,27 @@
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "决心",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
+          }
         ]
       },
       "62725": {
@@ -9958,6 +10044,27 @@
             "id": 2251,
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "威能",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
           }
         ]
       },
@@ -10123,6 +10230,27 @@
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "保护",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
+          }
         ]
       },
       "62940": {
@@ -10202,6 +10330,27 @@
             "id": 2251,
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "激怒",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
           }
         ]
       },
@@ -10359,6 +10508,27 @@
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "威能",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
+          }
         ]
       },
       "63416": {
@@ -10432,6 +10602,27 @@
             "id": 2251,
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "决心",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
           }
         ]
       },
@@ -10513,6 +10704,27 @@
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "激怒",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
+          }
         ]
       },
       "63454": {
@@ -10586,6 +10798,27 @@
             "id": 2251,
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "保护",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
           }
         ]
       },
@@ -10667,6 +10900,27 @@
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "威能",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
+          }
         ]
       },
       "63459": {
@@ -10747,6 +11001,27 @@
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "激怒",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
+          }
         ]
       },
       "63461": {
@@ -10821,6 +11096,27 @@
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "决心",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
+          }
         ]
       },
       "63472": {
@@ -10894,6 +11190,27 @@
             "id": 2251,
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "保护",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
           }
         ]
       },
@@ -10974,6 +11291,27 @@
             "id": 2251,
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "威能",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
           }
         ]
       },
@@ -11076,6 +11414,27 @@
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "激怒",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
+          }
         ]
       },
       "75405": {
@@ -11150,6 +11509,27 @@
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "保护",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
+          }
         ]
       },
       "75406": {
@@ -11223,6 +11603,27 @@
             "id": 2251,
             "name": "元晶专家",
             "description": "提高翠玉元晶所施加的增益的持续时间。翠玉元晶激活时，你可以获得能量。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "sphere-specialist",
+            "trait": 2251,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2251,
+              "title": "Sphere_Specialist",
+              "revision": 3128215
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "决心",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "元晶专家"
           }
         ]
       },

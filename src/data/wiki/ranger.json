@@ -3414,6 +3414,49 @@
             "name": "激动捕获",
             "description": "当你或者你的宠物控制敌人后恢复弓箭。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "trapper-conditions",
+            "trait": 1075,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1075,
+              "title": "Trapper's_Expertise",
+              "revision": 2691134
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "流血",
+                "factor": 1.6
+              }
+            ],
+            "traitName": "陷阱专长"
+          },
+          {
+            "id": "trapper-cripple",
+            "trait": 1075,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1075,
+              "title": "Trapper's_Expertise",
+              "revision": 2691134
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "致残",
+                  "detail": "3 秒",
+                  "trigger": "陷阱触发时"
+                }
+              }
+            ],
+            "traitName": "陷阱专长"
+          }
         ]
       },
       "12483": {
@@ -3617,6 +3660,31 @@
             "name": "高等协同",
             "description": "当你使用治疗技能时，治疗宠物周围的目标，给他们附着一个流水区域。当你在流水区域内使用爆炸终结技时，在该区域种下次级生命种子。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "trapper-healing-spring",
+            "trait": 1075,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1075,
+              "title": "Trapper's_Expertise",
+              "revision": 2691134
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "再生",
+                "row": {
+                  "label": "再生",
+                  "detail": "5 秒 · 6 层",
+                  "stacks": 6
+                }
+              }
+            ],
+            "traitName": "陷阱专长"
+          }
         ]
       },
       "12491": {
@@ -3767,6 +3835,49 @@
             "id": 2143,
             "name": "压迫优势",
             "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "trapper-conditions",
+            "trait": 1075,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1075,
+              "title": "Trapper's_Expertise",
+              "revision": 2691134
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "每秒冰冻",
+                "factor": 1.6
+              }
+            ],
+            "traitName": "陷阱专长"
+          },
+          {
+            "id": "trapper-cripple",
+            "trait": 1075,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1075,
+              "title": "Trapper's_Expertise",
+              "revision": 2691134
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "致残",
+                  "detail": "3 秒",
+                  "trigger": "陷阱触发时"
+                }
+              }
+            ],
+            "traitName": "陷阱专长"
           }
         ]
       },
@@ -4095,6 +4206,49 @@
             "name": "压迫优势",
             "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "trapper-conditions",
+            "trait": 1075,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1075,
+              "title": "Trapper's_Expertise",
+              "revision": 2691134
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "每次脉冲中毒",
+                "factor": 1.6
+              }
+            ],
+            "traitName": "陷阱专长"
+          },
+          {
+            "id": "trapper-cripple",
+            "trait": 1075,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1075,
+              "title": "Trapper's_Expertise",
+              "revision": 2691134
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "致残",
+                  "detail": "3 秒",
+                  "trigger": "陷阱触发时"
+                }
+              }
+            ],
+            "traitName": "陷阱专长"
+          }
         ]
       },
       "12497": {
@@ -4303,6 +4457,30 @@
             "id": 2143,
             "name": "压迫优势",
             "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "trapper-flame",
+            "trait": 1075,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1075,
+              "title": "Trapper's_Expertise",
+              "revision": 2691134
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "每次脉冲燃烧",
+                "row": {
+                  "label": "每次脉冲燃烧",
+                  "detail": "4.15 秒"
+                }
+              }
+            ],
+            "traitName": "陷阱专长"
           }
         ]
       },

@@ -4143,12 +4143,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "17 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "美德之力"
@@ -4303,12 +4300,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "38.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "美德之力"
@@ -4436,12 +4430,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "25.5 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "美德之力"
@@ -8243,12 +8234,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "25.5 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "美德之力"
@@ -8424,12 +8412,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "10.2 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "美德之力"
@@ -9211,12 +9196,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "38.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "美德之力"
@@ -9377,12 +9359,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "25.5 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "美德之力"
@@ -9544,12 +9523,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "17 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "美德之力"

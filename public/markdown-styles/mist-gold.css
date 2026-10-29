@@ -1,0 +1,91 @@
+/* 迷雾金笺。用 .md-content 表示讲解正文；修改后导入或刷新模板文件夹。 */
+.md-content {
+  --md-accent: #e0c58e;
+  background: #142a31;
+  color: #e4eef0;
+  padding: 26px;
+  border: 1px solid #47616a;
+  border-radius: 8px;
+  font-family: "Microsoft YaHei UI", "PingFang SC", sans-serif;
+  font-size: 17px;
+  line-height: 1.95;
+}
+h1 {
+  color: #f2deaf;
+  font-size: 30px;
+  line-height: 1.5;
+  border-bottom: 2px solid #9b854f;
+  padding-bottom: 14px;
+  margin: 0 0 26px;
+}
+h2 {
+  color: #e0c58e;
+  font-size: 23px;
+  border-left: 4px solid #b99b60;
+  padding-left: 14px;
+  margin: 30px 0 14px;
+}
+h3 {
+  color: #e9d9b6;
+  font-size: 19px;
+  margin: 24px 0 10px;
+}
+p {
+  margin: 12px 0;
+}
+strong {
+  color: #ffdda0;
+  font-weight: 700;
+}
+blockquote {
+  background: #203a40;
+  color: #d0e5e3;
+  border-left: 3px solid #7eaaa5;
+  padding: 10px 18px;
+  margin: 20px 0;
+}
+a {
+  color: #f1d69f;
+}
+code {
+  background: #0d2028;
+  color: #d5e9e9;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+pre {
+  background: #0d2028;
+  padding: 18px;
+  border: 1px solid #3a535d;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th {
+  background: #29434a;
+  color: #f1ddb8;
+  font-weight: 600;
+}
+th,
+td {
+  padding: 10px 14px;
+  border: 1px solid #46616b;
+}
+tr:nth-child(even) {
+  background: #1c333b;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #60706a;
+  margin: 28px 0;
+}
+.build-reference,
+.png-reference {
+  background: #36443c;
+  color: #ffe1a2;
+  border: 1px solid #8a815d;
+  border-radius: 4px;
+  padding: 1px 6px;
+}

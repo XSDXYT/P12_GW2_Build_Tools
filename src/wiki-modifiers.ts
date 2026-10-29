@@ -4,12 +4,14 @@ export type WikiModifier = {
   id: string;
   trait: number;
   traitName: string;
+  requiresTraits?: number[];
   priority: number;
   source: { kind: string; id: number; title: string; revision: number };
   changes: (
     | { type: "replace"; label: string; row: WikiRow }
     | { type: "append"; row: WikiRow }
     | { type: "duration"; label: string; factor: number }
+    | { type: "number"; label: string; factor?: number; add?: number }
   )[];
 };
 /** Project reviewed numeric rules into fresh rows; never mutate a saved build or snapshot. */
@@ -22,7 +24,11 @@ export function applyWikiModifiers(
   for (const modifier of [...(modifiers || [])].sort(
     (a, b) => a.priority - b.priority,
   )) {
-    if (!selectedTraits.has(modifier.trait)) continue;
+    if (
+      !selectedTraits.has(modifier.trait) ||
+      modifier.requiresTraits?.some((id) => !selectedTraits.has(id))
+    )
+      continue;
     for (const change of modifier.changes) {
       if (change.type === "append") {
         const row = change.row;
@@ -48,8 +54,9 @@ export function applyWikiModifiers(
         result[index] = {
           ...result[index],
           detail: before.replace(
-            /^(\d+(?:\.\d+)?) 秒/,
-            (_, n) => `${Number((Number(n) * change.factor).toFixed(6))} 秒`,
+            /^(-?\d+(?:\.\d+)?)/,
+            (_, n) =>
+              `${Number((Number(n) * (change.factor ?? 1) + (change.type === "number" ? (change.add ?? 0) : 0)).toFixed(6))}`,
           ),
           modified: true,
         };

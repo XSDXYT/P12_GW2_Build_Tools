@@ -69,6 +69,13 @@ try {
     ...createBuild("Ranger"),
     name: "原生文件流程验收",
     description: "# 原始说明",
+    descriptionStyle: {
+      name: "清纸攻略",
+      css: await readFile(
+        path.join(project, "public/markdown-styles/clear-guide.css"),
+        "utf8",
+      ),
+    },
     tags: ["治疗", "开荒"],
     jadeBotCore: 96613,
     mechanics: { pets: [5, 73] },
@@ -137,7 +144,77 @@ try {
   assert.deepEqual(saved.encounters, fixture.encounters);
   assert.equal(saved.jadeBotCore, fixture.jadeBotCore);
   assert.deepEqual(saved.mechanics, fixture.mechanics);
+  assert.deepEqual(saved.descriptionStyle, fixture.descriptionStyle);
   await writeFile(path.join(temporary, "BD", "existing.json"), text);
+
+  // Exercise template writes/removal with native OPFS methods as well.
+  await page.evaluate(async () => {
+    const root = await navigator.storage.getDirectory();
+    const cssDirectory = await root.getDirectoryHandle("p12-workflow-css", {
+      create: true,
+    });
+    const file = await cssDirectory.getFileHandle("OPFS.css", { create: true });
+    const writer = await file.createWritable();
+    await writer.write("h2{color:#224466}");
+    await writer.close();
+    const target = window as unknown as {
+      __workflowCss: FileSystemDirectoryHandle;
+      __workflowDirectory: FileSystemDirectoryHandle;
+      showDirectoryPicker: (options: {
+        id: string;
+      }) => Promise<FileSystemDirectoryHandle>;
+    };
+    target.__workflowCss = cssDirectory;
+    target.showDirectoryPicker = async (options) =>
+      options.id === "p12-markdown-styles"
+        ? cssDirectory
+        : target.__workflowDirectory;
+  });
+  const styles = page.getByLabel("CSS 样式", { exact: true });
+  await page.getByRole("button", { name: "CSS 样式", exact: true }).click();
+  await styles.locator("summary").click();
+  await styles
+    .getByRole("button", { name: "连接模板文件夹", exact: true })
+    .click();
+  await styles
+    .getByLabel("自定义模板", { exact: true })
+    .selectOption("file:OPFS.css");
+  await styles.getByLabel("CSS源代码").fill("h2{color:#113355}");
+  await styles
+    .getByRole("button", { name: "更新原CSS文件", exact: true })
+    .click();
+  await expect(styles).toContainText("已更新“OPFS.css”");
+  const originalCss = await page.evaluate(async () => {
+    const dir = (
+      window as unknown as { __workflowCss: FileSystemDirectoryHandle }
+    ).__workflowCss;
+    return (await (await dir.getFileHandle("OPFS.css")).getFile()).text();
+  });
+  assert.equal(originalCss, "h2{color:#113355}");
+  await styles
+    .getByRole("button", { name: "另存到模板文件夹", exact: true })
+    .click();
+  await expect(styles).toContainText("OPFS (2).css");
+  await styles
+    .getByRole("button", { name: "删除CSS文件", exact: true })
+    .click();
+  await styles.getByRole("button", { name: "确认删除", exact: true }).click();
+  await expect(styles).toContainText("CSS文件已删除");
+  assert.equal(
+    await page.evaluate(async () => {
+      const dir = (
+        window as unknown as { __workflowCss: FileSystemDirectoryHandle }
+      ).__workflowCss;
+      try {
+        await dir.getFileHandle("OPFS (2).css");
+        return false;
+      } catch (error) {
+        return error instanceof DOMException && error.name === "NotFoundError";
+      }
+    }),
+    true,
+  );
+  await styles.locator("summary").click();
 
   // Creating another build exercises native file creation as well as overwrite.
   await page.getByRole("button", { name: "新建", exact: true }).click();
@@ -192,6 +269,10 @@ try {
       .getAttribute("readonly"),
     "",
   );
+  await expect(viewer.getByRole("region", { name: "BD描述预览" })).toHaveCSS(
+    "background-color",
+    "rgb(244, 248, 252)",
+  );
   await viewer
     .getByRole("region", { name: "BD描述预览" })
     .getByRole("button", { name: "幻象回复", exact: true })
@@ -225,7 +306,7 @@ try {
     path: path.join(project, "test-results", "native-file-workflow.png"),
   });
   console.log(
-    "原生文件接口闭环通过：本地库扫描/卡片载入 → OPFS 实际创建/覆盖文件 → 磁盘 JSON → 生成公开库 → 任意仓库子路径只读查看/引用/下载/刷新。目录选择器由测试入口提供，未验证用户目录授权或真实设备。",
+    "原生文件接口闭环通过：本地库扫描/卡片载入 → OPFS 实际创建/覆盖文件 → 磁盘 JSON → 生成公开库 → 任意仓库子路径只读查看/引用/下载/刷新，保留CSS快照；模板CSS原生更新/另存/删除通过。目录选择器由测试入口提供，未验证用户目录授权或真实设备。",
   );
 } finally {
   try {

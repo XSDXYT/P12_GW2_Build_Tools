@@ -5254,6 +5254,27 @@
                 "detail": "",
                 "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-10604",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              }
             ]
           },
           {
@@ -5297,6 +5318,27 @@
                 "label": "射程",
                 "detail": "1,200",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-10588",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
               }
             ]
           },
@@ -5344,6 +5386,27 @@
                 "label": "半径",
                 "detail": "600",
                 "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-10594",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
               }
             ]
           },
@@ -5400,6 +5463,27 @@
                 "label": "半径",
                 "detail": "600",
                 "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-19504",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
               }
             ]
           },
@@ -5534,6 +5618,27 @@
                 "detail": "1,200",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-10644",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              }
             ]
           },
           {
@@ -5570,6 +5675,27 @@
                 "detail": "600",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-10645",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              }
             ]
           },
           {
@@ -5599,6 +5725,27 @@
               {
                 "label": "射程",
                 "detail": "1,200"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-10643",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
               }
             ]
           },
@@ -5655,6 +5802,27 @@
                 "label": "半径",
                 "detail": "600",
                 "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-19504",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
               }
             ]
           }
@@ -6661,6 +6829,27 @@
             "name": "凶恶帷幕",
             "description": "帷幕技能冷却速度提升。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-10643",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          }
         ]
       },
       "10644": {
@@ -6761,6 +6950,27 @@
             "name": "凶恶帷幕",
             "description": "帷幕技能冷却速度提升。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-10644",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          }
         ]
       },
       "10645": {
@@ -6854,6 +7064,27 @@
             "id": 1879,
             "name": "恐惧寒栗",
             "description": "施加恐惧时也会施加冰冻。冰冻的持续时间增加。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-10645",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
           }
         ]
       },
@@ -7658,6 +7889,27 @@
             "name": "瘟疫增益",
             "description": "对自己施加增益或者移除敌人增益时，获得生命之力。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-29958",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          }
         ]
       },
       "30105": {
@@ -8095,6 +8347,27 @@
             "name": "凶恶帷幕",
             "description": "帷幕技能冷却速度提升。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-30504",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          }
         ]
       },
       "30557": {
@@ -8224,6 +8497,27 @@
             "id": 1919,
             "name": "致命冰冻",
             "description": "冰冻对敌人造成持续性伤害。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-30557",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
           }
         ]
       },
@@ -8703,6 +8997,27 @@
                 "detail": "600",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-30825",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              }
             ]
           },
           {
@@ -8740,6 +9055,27 @@
                 "label": "半径",
                 "detail": "360",
                 "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-29958",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
               }
             ]
           },
@@ -8809,6 +9145,27 @@
                 "detail": "旋风",
                 "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-30504",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              }
             ]
           },
           {
@@ -8868,6 +9225,27 @@
               {
                 "label": "蔑视伤害",
                 "detail": "150"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-30557",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
               }
             ]
           }
@@ -8960,6 +9338,27 @@
             "id": 891,
             "name": "凶恶帷幕",
             "description": "帷幕技能冷却速度提升。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-30825",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
           }
         ]
       },
@@ -9135,6 +9534,56 @@
             "name": "黄沙仆从",
             "description": "同时只能召唤一个沙影。这个巨型影魔的冷却时间有所调整。你的暗影技能的影响范围变大。\n在相关特性中，巨型暗影等同于三个暗影。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-40813",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          },
+          {
+            "id": "sand-savant-area",
+            "trait": 2112,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2112,
+              "title": "Sand_Savant",
+              "revision": 2709385
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "半径",
+                "factor": 1,
+                "add": 120
+              },
+              {
+                "type": "replace",
+                "label": "目标数",
+                "row": {
+                  "label": "目标数",
+                  "detail": "5",
+                  "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+                }
+              }
+            ],
+            "traitName": "黄沙仆从"
+          }
         ]
       },
       "41615": {
@@ -9259,6 +9708,31 @@
             "id": 2080,
             "name": "沙漠强化",
             "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "desert-empowerment-alacrity",
+            "trait": 2080,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2080,
+              "title": "Desert_Empowerment",
+              "revision": 3029008
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "敏捷",
+                  "detail": "1.5 秒",
+                  "recipient": "获得屏障的目标",
+                  "trigger": "此技能授予屏障时"
+                }
+              }
+            ],
+            "traitName": "沙漠强化"
           }
         ]
       },
@@ -9386,6 +9860,108 @@
             "id": 2080,
             "name": "沙漠强化",
             "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "desert-empowerment",
+            "trait": 2080,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2080,
+              "title": "Desert_Empowerment",
+              "revision": 3029008
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外屏障",
+                  "detail": "572 + 1 × 治疗效果",
+                  "healing": {
+                    "base": 572,
+                    "coefficient": 1
+                  },
+                  "recipient": "附近盟友（最多5名，半径300）",
+                  "trigger": "显形沙影时"
+                }
+              }
+            ],
+            "traitName": "沙漠强化"
+          },
+          {
+            "id": "sand-savant-area",
+            "trait": 2112,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2112,
+              "title": "Sand_Savant",
+              "revision": 2709385
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "半径",
+                "factor": 1,
+                "add": 120
+              },
+              {
+                "type": "replace",
+                "label": "目标数",
+                "row": {
+                  "label": "目标数",
+                  "detail": "5",
+                  "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+                }
+              }
+            ],
+            "traitName": "黄沙仆从"
+          },
+          {
+            "id": "sand-savant-count",
+            "trait": 2112,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2112,
+              "title": "Sand_Savant",
+              "revision": 2709385
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "同时存在的沙影",
+                  "detail": "1"
+                }
+              }
+            ],
+            "traitName": "黄沙仆从"
+          },
+          {
+            "id": "desert-empowerment-alacrity",
+            "trait": 2080,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2080,
+              "title": "Desert_Empowerment",
+              "revision": 3029008
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "敏捷",
+                  "detail": "1.5 秒",
+                  "recipient": "获得屏障的目标",
+                  "trigger": "此技能授予屏障时"
+                }
+              }
+            ],
+            "traitName": "沙漠强化"
           }
         ]
       },
@@ -9611,6 +10187,31 @@
             "id": 2080,
             "name": "沙漠强化",
             "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "desert-empowerment-alacrity",
+            "trait": 2080,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2080,
+              "title": "Desert_Empowerment",
+              "revision": 3029008
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "敏捷",
+                  "detail": "1.5 秒",
+                  "recipient": "获得屏障的目标",
+                  "trigger": "此技能授予屏障时"
+                }
+              }
+            ],
+            "traitName": "沙漠强化"
           }
         ]
       },
@@ -9866,6 +10467,31 @@
             "name": "沙漠强化",
             "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "desert-empowerment-alacrity",
+            "trait": 2080,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2080,
+              "title": "Desert_Empowerment",
+              "revision": 3029008
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "敏捷",
+                  "detail": "1.5 秒",
+                  "recipient": "获得屏障的目标",
+                  "trigger": "此技能授予屏障时"
+                }
+              }
+            ],
+            "traitName": "沙漠强化"
+          }
         ]
       },
       "43448": {
@@ -9929,6 +10555,79 @@
             "id": 2080,
             "name": "沙漠强化",
             "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-43448",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          },
+          {
+            "id": "sand-savant-area",
+            "trait": 2112,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2112,
+              "title": "Sand_Savant",
+              "revision": 2709385
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "半径",
+                "factor": 1,
+                "add": 120
+              },
+              {
+                "type": "replace",
+                "label": "盟友目标数量",
+                "row": {
+                  "label": "盟友目标数量",
+                  "detail": "5",
+                  "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+                }
+              }
+            ],
+            "traitName": "黄沙仆从"
+          },
+          {
+            "id": "desert-empowerment-alacrity",
+            "trait": 2080,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2080,
+              "title": "Desert_Empowerment",
+              "revision": 3029008
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "敏捷",
+                  "detail": "1.5 秒",
+                  "recipient": "获得屏障的目标",
+                  "trigger": "此技能授予屏障时"
+                }
+              }
+            ],
+            "traitName": "沙漠强化"
           }
         ]
       },
@@ -10019,6 +10718,56 @@
             "id": 2112,
             "name": "黄沙仆从",
             "description": "同时只能召唤一个沙影。这个巨型影魔的冷却时间有所调整。你的暗影技能的影响范围变大。\n在相关特性中，巨型暗影等同于三个暗影。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-44428",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          },
+          {
+            "id": "sand-savant-area",
+            "trait": 2112,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2112,
+              "title": "Sand_Savant",
+              "revision": 2709385
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "半径",
+                "factor": 1,
+                "add": 120
+              },
+              {
+                "type": "replace",
+                "label": "目标数",
+                "row": {
+                  "label": "目标数",
+                  "detail": "5",
+                  "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+                }
+              }
+            ],
+            "traitName": "黄沙仆从"
           }
         ]
       },
@@ -10229,6 +10978,79 @@
             "name": "沙漠强化",
             "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-44663",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          },
+          {
+            "id": "sand-savant-area",
+            "trait": 2112,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2112,
+              "title": "Sand_Savant",
+              "revision": 2709385
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "半径",
+                "factor": 1,
+                "add": 120
+              },
+              {
+                "type": "replace",
+                "label": "目标数",
+                "row": {
+                  "label": "目标数",
+                  "detail": "5",
+                  "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+                }
+              }
+            ],
+            "traitName": "黄沙仆从"
+          },
+          {
+            "id": "desert-empowerment-alacrity",
+            "trait": 2080,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2080,
+              "title": "Desert_Empowerment",
+              "revision": 3029008
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "敏捷",
+                  "detail": "1.5 秒",
+                  "recipient": "获得屏障的目标",
+                  "trigger": "此技能授予屏障时"
+                }
+              }
+            ],
+            "traitName": "沙漠强化"
+          }
         ]
       },
       "44946": {
@@ -10356,6 +11178,108 @@
             "id": 2080,
             "name": "沙漠强化",
             "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "desert-empowerment",
+            "trait": 2080,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2080,
+              "title": "Desert_Empowerment",
+              "revision": 3029008
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "额外屏障",
+                  "detail": "572 + 1 × 治疗效果",
+                  "healing": {
+                    "base": 572,
+                    "coefficient": 1
+                  },
+                  "recipient": "附近盟友（最多5名，半径300）",
+                  "trigger": "显形沙影时"
+                }
+              }
+            ],
+            "traitName": "沙漠强化"
+          },
+          {
+            "id": "sand-savant-area",
+            "trait": 2112,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2112,
+              "title": "Sand_Savant",
+              "revision": 2709385
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "半径",
+                "factor": 1,
+                "add": 120
+              },
+              {
+                "type": "replace",
+                "label": "目标数",
+                "row": {
+                  "label": "目标数",
+                  "detail": "5",
+                  "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+                }
+              }
+            ],
+            "traitName": "黄沙仆从"
+          },
+          {
+            "id": "sand-savant-count",
+            "trait": 2112,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2112,
+              "title": "Sand_Savant",
+              "revision": 2709385
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "同时存在的沙影",
+                  "detail": "1"
+                }
+              }
+            ],
+            "traitName": "黄沙仆从"
+          },
+          {
+            "id": "desert-empowerment-alacrity",
+            "trait": 2080,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2080,
+              "title": "Desert_Empowerment",
+              "revision": 3029008
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "敏捷",
+                  "detail": "1.5 秒",
+                  "recipient": "获得屏障的目标",
+                  "trigger": "此技能授予屏障时"
+                }
+              }
+            ],
+            "traitName": "沙漠强化"
           }
         ]
       },
@@ -10501,6 +11425,31 @@
             "name": "层叠腐化",
             "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "twisted-medicine",
+            "trait": 2220,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2220,
+              "title": "Twisted_Medicine",
+              "revision": 2842805
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "盟友增益目标",
+                  "detail": "4",
+                  "recipient": "药剂落点范围内的其他盟友",
+                  "trigger": "药剂增益同时授予盟友；不改变自身增益"
+                }
+              }
+            ],
+            "traitName": "扭曲药剂"
+          }
         ]
       },
       "62530": {
@@ -10641,6 +11590,31 @@
             "name": "层叠腐化",
             "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "twisted-medicine",
+            "trait": 2220,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2220,
+              "title": "Twisted_Medicine",
+              "revision": 2842805
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "盟友增益目标",
+                  "detail": "4",
+                  "recipient": "药剂落点范围内的其他盟友",
+                  "trigger": "药剂增益同时授予盟友；不改变自身增益"
+                }
+              }
+            ],
+            "traitName": "扭曲药剂"
+          }
         ]
       },
       "62539": {
@@ -10755,6 +11729,57 @@
             "name": "末日降临",
             "description": "处于帷幕时，瘟疫减少的生命值变多，积累速度变快。你的帷幕技能效果提升。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-62539",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          },
+          {
+            "id": "doom-voracious-arc",
+            "trait": 2203,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2203,
+              "title": "Doom_Approaches",
+              "revision": 3188980
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "晕眩",
+                "row": {
+                  "label": "恐惧",
+                  "detail": "1 秒"
+                }
+              },
+              {
+                "type": "replace",
+                "label": "蔑视伤害",
+                "row": {
+                  "label": "蔑视伤害",
+                  "detail": "100"
+                }
+              }
+            ],
+            "traitName": "末日降临"
+          }
         ]
       },
       "62563": {
@@ -10827,6 +11852,50 @@
             "id": 2203,
             "name": "末日降临",
             "description": "处于帷幕时，瘟疫减少的生命值变多，积累速度变快。你的帷幕技能效果提升。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-62563",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          },
+          {
+            "id": "doom-vital-draw",
+            "trait": 2203,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2203,
+              "title": "Doom_Approaches",
+              "revision": 3188980
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "半径",
+                "row": {
+                  "label": "半径",
+                  "detail": "300",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+                }
+              }
+            ],
+            "traitName": "末日降临"
           }
         ]
       },
@@ -11023,6 +12092,31 @@
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "doom-bolts",
+                "trait": 2203,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 2203,
+                  "title": "Doom_Approaches",
+                  "revision": 3188980
+                },
+                "changes": [
+                  {
+                    "type": "append",
+                    "row": {
+                      "label": "易伤",
+                      "detail": "6 秒 · 2 层",
+                      "stacks": 2,
+                      "trigger": "两次打击合计；每击1层"
+                    }
+                  }
+                ],
+                "traitName": "末日降临"
+              }
             ]
           },
           {
@@ -11069,6 +12163,66 @@
                 "label": "射程",
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-62621",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              },
+              {
+                "id": "doom-barrage",
+                "trait": 2203,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 2203,
+                  "title": "Doom_Approaches",
+                  "revision": 3188980
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "打击次数",
+                    "factor": 1,
+                    "add": 2
+                  },
+                  {
+                    "type": "replace",
+                    "label": "伤害",
+                    "row": {
+                      "label": "伤害",
+                      "detail": "系数 ×4.8 · 8 次命中",
+                      "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+                    }
+                  },
+                  {
+                    "type": "replace",
+                    "label": "折磨",
+                    "row": {
+                      "label": "折磨",
+                      "detail": "3 秒 · 8 层",
+                      "icon": "https://render.guildwars2.com/file/10BABF2708CA3575730AC662A2E72EC292565B08/598887.png",
+                      "stacks": 8
+                    }
+                  }
+                ],
+                "traitName": "末日降临"
               }
             ]
           },
@@ -11119,6 +12273,48 @@
                 "label": "射程",
                 "detail": "600",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-62672",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              },
+              {
+                "id": "doom-cut",
+                "trait": 2203,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 2203,
+                  "title": "Doom_Approaches",
+                  "revision": 3188980
+                },
+                "changes": [
+                  {
+                    "type": "append",
+                    "row": {
+                      "label": "增益转化为症状",
+                      "detail": "2"
+                    }
+                  }
+                ],
+                "traitName": "末日降临"
               }
             ]
           },
@@ -11182,6 +12378,57 @@
                 "detail": "600",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-62539",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              },
+              {
+                "id": "doom-voracious-arc",
+                "trait": 2203,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 2203,
+                  "title": "Doom_Approaches",
+                  "revision": 3188980
+                },
+                "changes": [
+                  {
+                    "type": "replace",
+                    "label": "晕眩",
+                    "row": {
+                      "label": "恐惧",
+                      "detail": "1 秒"
+                    }
+                  },
+                  {
+                    "type": "replace",
+                    "label": "蔑视伤害",
+                    "row": {
+                      "label": "蔑视伤害",
+                      "detail": "100"
+                    }
+                  }
+                ],
+                "traitName": "末日降临"
+              }
             ]
           },
           {
@@ -11226,6 +12473,50 @@
               {
                 "label": "蔑视伤害",
                 "detail": "300"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-62563",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              },
+              {
+                "id": "doom-vital-draw",
+                "trait": 2203,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 2203,
+                  "title": "Doom_Approaches",
+                  "revision": 3188980
+                },
+                "changes": [
+                  {
+                    "type": "replace",
+                    "label": "半径",
+                    "row": {
+                      "label": "半径",
+                      "detail": "300",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+                    }
+                  }
+                ],
+                "traitName": "末日降临"
               }
             ]
           }
@@ -11317,6 +12608,31 @@
             "id": 2203,
             "name": "末日降临",
             "description": "处于帷幕时，瘟疫减少的生命值变多，积累速度变快。你的帷幕技能效果提升。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "doom-bolts",
+            "trait": 2203,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2203,
+              "title": "Doom_Approaches",
+              "revision": 3188980
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "易伤",
+                  "detail": "6 秒 · 2 层",
+                  "stacks": 2,
+                  "trigger": "两次打击合计；每击1层"
+                }
+              }
+            ],
+            "traitName": "末日降临"
           }
         ]
       },
@@ -11422,6 +12738,66 @@
             "id": 2203,
             "name": "末日降临",
             "description": "处于帷幕时，瘟疫减少的生命值变多，积累速度变快。你的帷幕技能效果提升。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-62621",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          },
+          {
+            "id": "doom-barrage",
+            "trait": 2203,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2203,
+              "title": "Doom_Approaches",
+              "revision": 3188980
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "打击次数",
+                "factor": 1,
+                "add": 2
+              },
+              {
+                "type": "replace",
+                "label": "伤害",
+                "row": {
+                  "label": "伤害",
+                  "detail": "系数 ×4.8 · 8 次命中",
+                  "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+                }
+              },
+              {
+                "type": "replace",
+                "label": "折磨",
+                "row": {
+                  "label": "折磨",
+                  "detail": "3 秒 · 8 层",
+                  "icon": "https://render.guildwars2.com/file/10BABF2708CA3575730AC662A2E72EC292565B08/598887.png",
+                  "stacks": 8
+                }
+              }
+            ],
+            "traitName": "末日降临"
           }
         ]
       },
@@ -11560,6 +12936,31 @@
             "id": 2218,
             "name": "层叠腐化",
             "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "twisted-medicine",
+            "trait": 2220,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2220,
+              "title": "Twisted_Medicine",
+              "revision": 2842805
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "盟友增益目标",
+                  "detail": "4",
+                  "recipient": "药剂落点范围内的其他盟友",
+                  "trigger": "药剂增益同时授予盟友；不改变自身增益"
+                }
+              }
+            ],
+            "traitName": "扭曲药剂"
           }
         ]
       },
@@ -11730,6 +13131,31 @@
             "name": "层叠腐化",
             "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "twisted-medicine",
+            "trait": 2220,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2220,
+              "title": "Twisted_Medicine",
+              "revision": 2842805
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "盟友增益目标",
+                  "detail": "4",
+                  "recipient": "药剂落点范围内的其他盟友",
+                  "trigger": "药剂增益同时授予盟友；不改变自身增益"
+                }
+              }
+            ],
+            "traitName": "扭曲药剂"
+          }
         ]
       },
       "62662": {
@@ -11851,6 +13277,31 @@
             "id": 2218,
             "name": "层叠腐化",
             "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "twisted-medicine",
+            "trait": 2220,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2220,
+              "title": "Twisted_Medicine",
+              "revision": 2842805
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "盟友增益目标",
+                  "detail": "4",
+                  "recipient": "药剂落点范围内的其他盟友",
+                  "trigger": "药剂增益同时授予盟友；不改变自身增益"
+                }
+              }
+            ],
+            "traitName": "扭曲药剂"
           }
         ]
       },
@@ -12021,6 +13472,31 @@
             "name": "层叠腐化",
             "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "twisted-medicine",
+            "trait": 2220,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2220,
+              "title": "Twisted_Medicine",
+              "revision": 2842805
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "盟友增益目标",
+                  "detail": "4",
+                  "recipient": "药剂落点范围内的其他盟友",
+                  "trigger": "药剂增益同时授予盟友；不改变自身增益"
+                }
+              }
+            ],
+            "traitName": "扭曲药剂"
+          }
         ]
       },
       "62672": {
@@ -12111,6 +13587,48 @@
             "name": "末日降临",
             "description": "处于帷幕时，瘟疫减少的生命值变多，积累速度变快。你的帷幕技能效果提升。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-62672",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          },
+          {
+            "id": "doom-cut",
+            "trait": 2203,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2203,
+              "title": "Doom_Approaches",
+              "revision": 3188980
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "增益转化为症状",
+                  "detail": "2"
+                }
+              }
+            ],
+            "traitName": "末日降临"
+          }
         ]
       },
       "76607": {
@@ -12177,6 +13695,27 @@
             "id": 891,
             "name": "凶恶帷幕",
             "description": "帷幕技能冷却速度提升。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-76607",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
           }
         ]
       },
@@ -12325,6 +13864,27 @@
             "id": 2392,
             "name": "灵魂扭曲",
             "description": "进入祭祀帷幕时使用的第一个灵魂技能立即冷却完毕。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-76684",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
           }
         ]
       },
@@ -12607,6 +14167,27 @@
             "name": "灵魂扭曲",
             "description": "进入祭祀帷幕时使用的第一个灵魂技能立即冷却完毕。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-76864",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          }
         ]
       },
       "76941": {
@@ -12852,6 +14433,27 @@
             "id": 2392,
             "name": "灵魂扭曲",
             "description": "进入祭祀帷幕时使用的第一个灵魂技能立即冷却完毕。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-76961",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
           }
         ]
       },
@@ -13180,6 +14782,27 @@
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-76864",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              }
             ]
           },
           {
@@ -13257,6 +14880,27 @@
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-76741",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              }
             ]
           },
           {
@@ -13311,6 +14955,27 @@
                 "detail": "300",
                 "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-76684",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
+              }
             ]
           },
           {
@@ -13355,6 +15020,27 @@
                 "label": "射程",
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "recharge-891-76607",
+                "trait": 891,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 891,
+                  "title": "Sinister_Shroud",
+                  "revision": 3117272
+                },
+                "changes": [
+                  {
+                    "type": "number",
+                    "label": "冷却时间",
+                    "factor": 0.85
+                  }
+                ],
+                "traitName": "凶恶帷幕"
               }
             ]
           }

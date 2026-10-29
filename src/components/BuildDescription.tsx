@@ -24,6 +24,15 @@ import {
 import { useGameTooltip } from "./GameTooltip";
 import { useAttributePreview } from "../hooks/useAttributePreview";
 import { BuildProperties } from "./BuildProperties";
+import { MarkdownStyle } from "./MarkdownStyle";
+import { MarkdownTableInsert } from "./MarkdownTableInsert";
+import { insertMarkdownTable } from "../markdown-table";
+import { useDescriptionAppearance } from "../hooks/useDescriptionAppearance";
+import { classicDescriptionStyle } from "../markdown-style";
+import {
+  MarkdownStylePicker,
+  type MarkdownStyleSession,
+} from "./MarkdownStylePicker";
 
 const ReferenceContext = createContext<{
   references: Map<string, BuildReference>;
@@ -78,11 +87,13 @@ export function BuildDescription({
   edit,
 }: EditorProps) {
   const [mode, setMode] = useState<"edit" | "preview">("edit");
+  const appearance = useDescriptionAppearance(build, readonly);
   const [cursor, setCursor] = useState(0);
   const [dismissed, setDismissed] = useState(false);
   const [category, setCategory] = useState("");
   const [selected, setSelected] = useState(0);
   const [expanded, setExpanded] = useState(false);
+  const [stylesOpen, setStylesOpen] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
   const expandButton = useRef<HTMLButtonElement>(null);
   const previewButton = useRef<HTMLButtonElement>(null);
@@ -93,6 +104,7 @@ export function BuildDescription({
     scroll: number;
   } | null>(null);
   const input = useRef<HTMLTextAreaElement>(null);
+  const styleSession = useRef<MarkdownStyleSession | null>(null);
   const id = useId();
   const index = useMemo(() => referenceIndex(catalog), [catalog]);
   const references = useMemo(
@@ -211,8 +223,18 @@ export function BuildDescription({
     <>
       <div className="description-heading">
         <h3 id={`${id}-heading`}>BD 描述与讲解</h3>
-        {!readonly && (
-          <div className="description-actions">
+        <div className="description-actions">
+          <button
+            type="button"
+            className="description-style-toggle"
+            aria-expanded={stylesOpen}
+            aria-controls={`${id}-styles`}
+            title="展开或收起CSS样式，可选择模板、设置默认样式或加载CSS文件。"
+            onClick={() => setStylesOpen((open) => !open)}
+          >
+            CSS 样式
+          </button>
+          {!readonly && (
             <div role="tablist" aria-label="描述模式">
               <button
                 role="tab"
@@ -236,24 +258,59 @@ export function BuildDescription({
                 预览
               </button>
             </div>
-            {(!preview || enlarged) && (
-              <button
-                ref={expandButton}
-                type="button"
-                className="description-expand"
-                aria-haspopup={enlarged ? undefined : "dialog"}
-                aria-controls={`${id}-expanded`}
-                aria-expanded={enlarged}
-                onClick={resizeEditor}
-              >
-                {enlarged ? "收起窗口" : "放大编辑"}
-              </button>
-            )}
-          </div>
-        )}
+          )}
+          {!readonly && (!preview || enlarged) && (
+            <button
+              ref={expandButton}
+              type="button"
+              className="description-expand"
+              aria-haspopup={enlarged ? undefined : "dialog"}
+              aria-controls={`${id}-expanded`}
+              aria-expanded={enlarged}
+              onClick={resizeEditor}
+            >
+              {enlarged ? "收起窗口" : "放大编辑"}
+            </button>
+          )}
+        </div>
+      </div>
+      <div
+        id={`${id}-styles`}
+        className="description-style-panel"
+        hidden={!stylesOpen}
+      >
+        <MarkdownStylePicker
+          session={styleSession}
+          value={appearance.style}
+          readonlyView={readonly}
+          defaultStyle={appearance.defaultStyle}
+          setDefault={appearance.setDefault}
+          restoreAuthor={
+            readonly && appearance.overridden
+              ? appearance.restoreAuthor
+              : undefined
+          }
+          onChange={(style) => {
+            tooltip.dismiss();
+            if (readonly) {
+              appearance.selectForViewing(style);
+              return;
+            }
+            edit((draft) => {
+              if (style) draft.descriptionStyle = style;
+              else if (appearance.defaultStyle)
+                draft.descriptionStyle = classicDescriptionStyle;
+              else delete draft.descriptionStyle;
+            });
+          }}
+        />
       </div>
       {preview ? (
-        <div className="markdown-body" role="region" aria-label="BD描述预览">
+        <MarkdownStyle
+          style={appearance.style}
+          className="markdown-body"
+          label="BD描述预览"
+        >
           {text ? (
             <ReferenceContext.Provider value={{ references, tooltip }}>
               <Markdown
@@ -270,7 +327,7 @@ export function BuildDescription({
           ) : (
             <p className="muted">尚未添加描述。</p>
           )}
-        </div>
+        </MarkdownStyle>
       ) : (
         <>
           <div className="markdown-tools" aria-label="Markdown格式">
@@ -297,6 +354,29 @@ export function BuildDescription({
                 {tool.label}
               </button>
             ))}
+            <MarkdownTableInsert
+              capture={() => {
+                tooltip.dismiss();
+                setDismissed(true);
+                return {
+                  text,
+                  position: input.current?.selectionEnd ?? text.length,
+                };
+              }}
+              insert={(point, options) => {
+                if (point.text !== text)
+                  throw Error(
+                    "正文在插入期间已变化，请重新打开表格窗口；原文已保留。",
+                  );
+                const next = insertMarkdownTable(text, point.position, options);
+                change(next.value, next.start);
+                setDismissed(true);
+                requestAnimationFrame(() => {
+                  input.current?.focus({ preventScroll: true });
+                  input.current?.setSelectionRange(next.start, next.end);
+                });
+              }}
+            />
             <button
               type="button"
               onClick={() => {

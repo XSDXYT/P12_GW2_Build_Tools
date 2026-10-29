@@ -3118,6 +3118,35 @@
             "detail": "1,200",
             "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "traversing-dusk-heal",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "治疗",
+                  "detail": "645 + 0.1 × 治疗效果",
+                  "healing": {
+                    "base": 645,
+                    "coefficient": 0.1
+                  },
+                  "recipient": "自身周围盟友（最多5名，半径360）",
+                  "trigger": "战斗中暗影步时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
+          }
         ]
       },
       "13014": {
@@ -3252,6 +3281,53 @@
             "id": 2403,
             "name": "首饰收藏家",
             "description": "顺手牵羊被替换成斯克鼠横扫，你可以向敌人借用物品。成功使用借用技能后获得一个进攻圣器和一个防御圣器。每次借用只能获得一件圣器，再次使用将覆盖现有圣器的效果。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "deadly-ambush",
+            "trait": 1706,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1706,
+              "title": "Deadly_Ambush",
+              "revision": 3016217
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "流血",
+                  "detail": "10 秒 · 3 层",
+                  "stacks": 3,
+                  "trigger": "偷窃命中敌人时"
+                }
+              }
+            ],
+            "traitName": "致命伏击"
+          },
+          {
+            "id": "endurance-thief",
+            "trait": 1837,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1837,
+              "title": "Endurance_Thief",
+              "revision": 2655918
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "耐力获取",
+                  "detail": "50",
+                  "trigger": "偷窃命中时"
+                }
+              }
+            ],
+            "traitName": "妙手耐力"
           }
         ]
       },
@@ -4494,6 +4570,35 @@
             "name": "薄暮穿越",
             "description": "当你暗影疾步时，治疗区域内的盟友。半径内的每个盟友均可获得暗影之力。法池的第一次打击提供抗性。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "traversing-dusk-heal",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "治疗",
+                  "detail": "645 + 0.1 × 治疗效果",
+                  "healing": {
+                    "base": 645,
+                    "coefficient": 0.1
+                  },
+                  "recipient": "自身周围盟友（最多5名，半径360）",
+                  "trigger": "战斗中暗影步时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
+          }
         ]
       },
       "13065": {
@@ -5462,6 +5567,30 @@
             "name": "扰乱攻击",
             "description": "打断敌人时，减少顺手牵羊的冷却时间，对目标发动肺部打击。\n该特性对拥有蔑视条的敌人每次间隔只能影响一次。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "brawlers-tenacity",
+            "trait": 1949,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1949,
+              "title": "Brawler's_Tenacity",
+              "revision": 3161344
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "耐力获取",
+                  "detail": "15",
+                  "trigger": "使用体术时"
+                }
+              }
+            ],
+            "traitName": "顽强斗士"
+          }
         ]
       },
       "30369": {
@@ -5540,6 +5669,30 @@
             "id": 1949,
             "name": "顽强斗士",
             "description": "体术技能激活时获得耐力。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "brawlers-tenacity",
+            "trait": 1949,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1949,
+              "title": "Brawler's_Tenacity",
+              "revision": 3161344
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "耐力获取",
+                  "detail": "15",
+                  "trigger": "使用体术时"
+                }
+              }
+            ],
+            "traitName": "顽强斗士"
           }
         ]
       },
@@ -5668,6 +5821,30 @@
             "name": "扰乱攻击",
             "description": "打断敌人时，减少顺手牵羊的冷却时间，对目标发动肺部打击。\n该特性对拥有蔑视条的敌人每次间隔只能影响一次。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "brawlers-tenacity",
+            "trait": 1949,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1949,
+              "title": "Brawler's_Tenacity",
+              "revision": 3161344
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "耐力获取",
+                  "detail": "15",
+                  "trigger": "使用体术时"
+                }
+              }
+            ],
+            "traitName": "顽强斗士"
+          }
         ]
       },
       "30661": {
@@ -5702,6 +5879,30 @@
             "id": 1949,
             "name": "顽强斗士",
             "description": "体术技能激活时获得耐力。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "brawlers-tenacity",
+            "trait": 1949,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1949,
+              "title": "Brawler's_Tenacity",
+              "revision": 3161344
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "耐力获取",
+                  "detail": "15",
+                  "trigger": "使用体术时"
+                }
+              }
+            ],
+            "traitName": "顽强斗士"
           }
         ]
       },
@@ -5754,6 +5955,30 @@
             "id": 1949,
             "name": "顽强斗士",
             "description": "体术技能激活时获得耐力。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "brawlers-tenacity",
+            "trait": 1949,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1949,
+              "title": "Brawler's_Tenacity",
+              "revision": 3161344
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "耐力获取",
+                  "detail": "15",
+                  "trigger": "使用体术时"
+                }
+              }
+            ],
+            "traitName": "顽强斗士"
           }
         ]
       },
@@ -6158,6 +6383,53 @@
             "name": "致命火力",
             "description": "使用顺手牵羊技能为附近盟友施加额外增益。顺手牵羊会一直是汲取时间，无论目标的职业。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "deadly-ambush",
+            "trait": 1706,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1706,
+              "title": "Deadly_Ambush",
+              "revision": 3016217
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "流血",
+                  "detail": "10 秒 · 3 层",
+                  "stacks": 3,
+                  "trigger": "偷窃命中敌人时"
+                }
+              }
+            ],
+            "traitName": "致命伏击"
+          },
+          {
+            "id": "quick-or-killed",
+            "trait": 2093,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2093,
+              "title": "Be_Quick_or_Be_Killed",
+              "revision": 2631040
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "急速",
+                  "detail": "4 秒",
+                  "trigger": "标记敌人时"
+                }
+              }
+            ],
+            "traitName": "非快即死"
+          }
         ]
       },
       "45088": {
@@ -6534,6 +6806,58 @@
             "name": "薄暮穿越",
             "description": "当你暗影疾步时，治疗区域内的盟友。半径内的每个盟友均可获得暗影之力。法池的第一次打击提供抗性。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "traversing-dusk",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "抗性",
+                  "detail": "3 秒",
+                  "recipient": "井范围内的盟友",
+                  "trigger": "井的初始冲击时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
+          },
+          {
+            "id": "traversing-dusk-heal",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "治疗",
+                  "detail": "645 + 0.1 × 治疗效果",
+                  "healing": {
+                    "base": 645,
+                    "coefficient": 0.1
+                  },
+                  "recipient": "自身周围盟友（最多5名，半径360）",
+                  "trigger": "战斗中暗影步时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
+          }
         ]
       },
       "63275": {
@@ -6637,6 +6961,58 @@
             "id": 2285,
             "name": "薄暮穿越",
             "description": "当你暗影疾步时，治疗区域内的盟友。半径内的每个盟友均可获得暗影之力。法池的第一次打击提供抗性。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "traversing-dusk",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "抗性",
+                  "detail": "3 秒",
+                  "recipient": "井范围内的盟友",
+                  "trigger": "井的初始冲击时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
+          },
+          {
+            "id": "traversing-dusk-heal",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "治疗",
+                  "detail": "645 + 0.1 × 治疗效果",
+                  "healing": {
+                    "base": 645,
+                    "coefficient": 0.1
+                  },
+                  "recipient": "自身周围盟友（最多5名，半径360）",
+                  "trigger": "战斗中暗影步时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
           }
         ]
       },
@@ -6763,6 +7139,58 @@
             "name": "暗影力量",
             "description": "基于你的体力获得症状效果。你施加的折磨将造成更多的伤害。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "traversing-dusk",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "抗性",
+                  "detail": "3 秒",
+                  "recipient": "井范围内的盟友",
+                  "trigger": "井的初始冲击时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
+          },
+          {
+            "id": "traversing-dusk-heal",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "治疗",
+                  "detail": "645 + 0.1 × 治疗效果",
+                  "healing": {
+                    "base": 645,
+                    "coefficient": 0.1
+                  },
+                  "recipient": "自身周围盟友（最多5名，半径360）",
+                  "trigger": "战斗中暗影步时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
+          }
         ]
       },
       "63292": {
@@ -6865,6 +7293,58 @@
             "name": "薄暮穿越",
             "description": "当你暗影疾步时，治疗区域内的盟友。半径内的每个盟友均可获得暗影之力。法池的第一次打击提供抗性。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "traversing-dusk",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "抗性",
+                  "detail": "3 秒",
+                  "recipient": "井范围内的盟友",
+                  "trigger": "井的初始冲击时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
+          },
+          {
+            "id": "traversing-dusk-heal",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "治疗",
+                  "detail": "645 + 0.1 × 治疗效果",
+                  "healing": {
+                    "base": 645,
+                    "coefficient": 0.1
+                  },
+                  "recipient": "自身周围盟友（最多5名，半径360）",
+                  "trigger": "战斗中暗影步时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
+          }
         ]
       },
       "63294": {
@@ -6937,6 +7417,58 @@
             "id": 2285,
             "name": "薄暮穿越",
             "description": "当你暗影疾步时，治疗区域内的盟友。半径内的每个盟友均可获得暗影之力。法池的第一次打击提供抗性。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "traversing-dusk",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "抗性",
+                  "detail": "3 秒",
+                  "recipient": "井范围内的盟友",
+                  "trigger": "井的初始冲击时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
+          },
+          {
+            "id": "traversing-dusk-heal",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "治疗",
+                  "detail": "645 + 0.1 × 治疗效果",
+                  "healing": {
+                    "base": 645,
+                    "coefficient": 0.1
+                  },
+                  "recipient": "自身周围盟友（最多5名，半径360）",
+                  "trigger": "战斗中暗影步时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
           }
         ]
       },
@@ -7054,6 +7586,58 @@
             "id": 2285,
             "name": "薄暮穿越",
             "description": "当你暗影疾步时，治疗区域内的盟友。半径内的每个盟友均可获得暗影之力。法池的第一次打击提供抗性。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "traversing-dusk",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "抗性",
+                  "detail": "3 秒",
+                  "recipient": "井范围内的盟友",
+                  "trigger": "井的初始冲击时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
+          },
+          {
+            "id": "traversing-dusk-heal",
+            "trait": 2285,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2285,
+              "title": "Traversing_Dusk",
+              "revision": 3065828
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "治疗",
+                  "detail": "645 + 0.1 × 治疗效果",
+                  "healing": {
+                    "base": 645,
+                    "coefficient": 0.1
+                  },
+                  "recipient": "自身周围盟友（最多5名，半径360）",
+                  "trigger": "战斗中暗影步时"
+                }
+              }
+            ],
+            "traitName": "薄暮穿越"
           }
         ]
       },
@@ -8929,6 +9513,31 @@
             "id": 2348,
             "name": "斗志高涨",
             "description": "使用斯克鼠横扫时获得斗志高涨，提升输出的打击伤害和症状伤害。每隔一段时间失去一层斗志高涨。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "deadly-ambush",
+            "trait": 1706,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1706,
+              "title": "Deadly_Ambush",
+              "revision": 3016217
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "流血",
+                  "detail": "10 秒 · 3 层",
+                  "stacks": 3,
+                  "trigger": "偷窃命中敌人时"
+                }
+              }
+            ],
+            "traitName": "致命伏击"
           }
         ]
       },

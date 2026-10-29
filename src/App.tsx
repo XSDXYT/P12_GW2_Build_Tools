@@ -11,10 +11,23 @@ import { AttributePreviewProvider } from "./hooks/useAttributePreview";
 import { appVersion, releaseCommit } from "./release";
 import { BuildFolder } from "./components/BuildFolder";
 import { PublishedLibrary } from "./components/PublishedLibrary";
+import { ScreenshotShare } from "./components/ScreenshotShare";
 import { mergeSkillCatalog } from "./weapon-skills";
 import { mergeMechanicCatalog } from "./profession-mechanics";
+import {
+  DescriptionAppearanceProvider,
+  useDescriptionAppearance,
+} from "./hooks/useDescriptionAppearance";
 export function App() {
+  return (
+    <DescriptionAppearanceProvider>
+      <WorkspaceApp />
+    </DescriptionAppearanceProvider>
+  );
+}
+function WorkspaceApp() {
   const work = useWorkspace();
+  const appearance = useDescriptionAppearance(work.build, work.readonly);
   const [catalog, setCatalog] = useState<Catalog | null>(null),
     [loading, setLoading] = useState(true),
     [picker, setPicker] = useState<(PickerRequest & { token: string }) | null>(
@@ -169,6 +182,15 @@ export function App() {
             >
               分享配装 ↗
             </button>
+            <ScreenshotShare
+              build={
+                appearance.style
+                  ? { ...work.build, descriptionStyle: appearance.style }
+                  : work.build
+              }
+              catalog={catalog}
+              disabled={loading || weaponError}
+            />
           </div>
         </div>
         <BuildFolder
@@ -318,6 +340,7 @@ export function App() {
         <input
           hidden
           type="file"
+          aria-label="导入BD或旧备份JSON"
           ref={file}
           accept=".json,application/json"
           onChange={(event) => {

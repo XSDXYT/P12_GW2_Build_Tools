@@ -317,9 +317,18 @@ if (!fetchOnly) {
   });
   const { attachTraitModifiers } = await import("./wiki-trait-modifiers.mjs");
   const traitModifiers = await attachTraitModifiers({
-    snapshot, catalog,
+    snapshot,
+    catalog,
     config: await json("data/wiki-trait-modifiers.json"),
-    readHtml: (kind,id) => readFile(file(`data/wiki-cache/${kind}-${id}.html`),"utf8"),
+    readHtml: (kind, id) =>
+      readFile(
+        file(
+          kind === "articles"
+            ? `data/wiki-cache/articles/${encodeURIComponent(id)}.html`
+            : `data/wiki-cache/${kind}-${id}.html`,
+        ),
+        "utf8",
+      ),
   });
   await mkdir(file("src/data/"), { recursive: true });
   await atomic(

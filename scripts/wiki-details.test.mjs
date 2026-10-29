@@ -2,35 +2,206 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { parseWikiPage, createWikiSnapshot } from "./wiki-details.mjs";
 import { attachWikiBranches } from "./wiki-branches.mjs";
-import { rechargeTableRows, attachTraitModifiers } from "./wiki-trait-modifiers.mjs";
+import {
+  rechargeTableRows,
+  attachTraitModifiers,
+} from "./wiki-trait-modifiers.mjs";
 
 test("冷却对照只读取当前 PvE 或共用行，排除竞争模式、历史和额外条件", () => {
-  const table=rows=>`<table><tr><th></th><th>Skill</th><th>Traited recharge</th></tr>${rows}</table>`;
-  const row=(title,text)=>`<tr><td><a href="/wiki/${title}">${title}</a>${text}</td><td>30 → 24</td></tr>`;
-  const html=`<div class="mw-parser-output">${table(row('Shared','')+row('Competitive',' (PvP, WvW)')+row('PvE',' (PvE, PvP)')+row('Conditional',' (while moving)'))}<h2><span id="Version_history">History</span></h2>${table(row('Old',''))}</div>`;
-  assert.deepEqual(rechargeTableRows(html).map(r=>r.title),['Shared','PvE']);
+  const table = (rows) =>
+    `<table><tr><th></th><th>Skill</th><th>Traited recharge</th></tr>${rows}</table>`;
+  const row = (title, text) =>
+    `<tr><td><a href="/wiki/${title}">${title}</a>${text}</td><td>30 → 24</td></tr>`;
+  const html = `<div class="mw-parser-output">${table(row("Shared", "") + row("Competitive", " (PvP, WvW)") + row("PvE", " (PvE, PvP)") + row("Conditional", " (while moving)"))}<h2><span id="Version_history">History</span></h2>${table(row("Old", ""))}</div>`;
+  assert.deepEqual(
+    rechargeTableRows(html).map((r) => r.title),
+    ["Shared", "PvE"],
+  );
 });
 
 test("数值修正绑定来源版本、证据与目标基础行，不从不一致的冷却表发布数值", async () => {
-  const html='<script>{"wgRevisionId":12345}</script><div class="mw-parser-output"><div class="infobox trait"></div><blockquote>Recharge Reduced: 20%</blockquote><table><tr><th>Skill</th><th>Traited recharge</th></tr><tr><td><a href="/wiki/Example_Skill">Skill</a></td><td>30 → 24</td></tr></table></div>';
-  const make=()=>({
-    snapshot:{entries:{traits:{42:{title:'Example_Trait',profession:'Mesmer',revision:12345,identityVerified:true,rows:[]}},skills:{7:{title:'Example_Skill',profession:'Mesmer',revision:54321,identityVerified:true,rows:[{label:'冷却时间',detail:'30 秒'}]}}}},
-    catalog:{traits:[{id:42,name:'特性',specialization:1}],specs:[{id:1,profession:'Mesmer'}]},
-    readHtml:async()=>html,
-    config:{professions:['Mesmer'],rules:[{id:'extra',trait:42,revision:12345,evidence:'Recharge Reduced: 20%',targets:[{kind:'skills',id:7,revision:54321,guards:[{label:'冷却时间',detail:'30 秒'}]}],changes:[{type:'append',row:{label:'额外效果',detail:'1 秒'}}]}]},
+  const html =
+    '<script>{"wgRevisionId":12345}</script><div class="mw-parser-output"><div class="infobox trait"></div><blockquote>Recharge Reduced: 20%</blockquote><table><tr><th>Skill</th><th>Traited recharge</th></tr><tr><td><a href="/wiki/Example_Skill">Skill</a></td><td>30 → 24</td></tr></table></div>';
+  const make = () => ({
+    snapshot: {
+      entries: {
+        traits: {
+          42: {
+            title: "Example_Trait",
+            profession: "Mesmer",
+            revision: 12345,
+            identityVerified: true,
+            rows: [],
+          },
+        },
+        skills: {
+          7: {
+            title: "Example_Skill",
+            profession: "Mesmer",
+            revision: 54321,
+            identityVerified: true,
+            rows: [{ label: "冷却时间", detail: "30 秒" }],
+          },
+        },
+      },
+    },
+    catalog: {
+      traits: [{ id: 42, name: "特性", specialization: 1 }],
+      specs: [{ id: 1, profession: "Mesmer" }],
+    },
+    readHtml: async () => html,
+    config: {
+      professions: ["Mesmer"],
+      rules: [
+        {
+          id: "extra",
+          trait: 42,
+          revision: 12345,
+          evidence: "Recharge Reduced: 20%",
+          targets: [
+            {
+              kind: "skills",
+              id: 7,
+              revision: 54321,
+              guards: [{ label: "冷却时间", detail: "30 秒" }],
+            },
+          ],
+          changes: [
+            { type: "append", row: { label: "额外效果", detail: "1 秒" } },
+          ],
+        },
+      ],
+    },
   });
-  const p=make();const audit=await attachTraitModifiers(p);
-  assert.equal(p.snapshot.entries.skills[7].modifiers.length,2);
-  assert.equal(audit.rules[0].trait,42);
-  const stale=make();stale.config.rules[0].revision=999;
-  await assert.rejects(()=>attachTraitModifiers(stale),/source revision/);
-  const changed=make();changed.config.rules[0].evidence='Not present';
-  await assert.rejects(()=>attachTraitModifiers(changed),/evidence changed/);
-  const target=make();target.config.rules[0].targets[0].revision=999;
-  await assert.rejects(()=>attachTraitModifiers(target),/target revision/);
-  const incompatible=make();incompatible.snapshot.entries.skills[7].rows[0].detail='40 秒';incompatible.config.rules=[];
-  const skipped=await attachTraitModifiers(incompatible);
-  assert.equal(skipped.rules.length,0);assert.equal(skipped.skipped.length,1);
+  const p = make();
+  const audit = await attachTraitModifiers(p);
+  assert.equal(p.snapshot.entries.skills[7].modifiers.length, 2);
+  assert.equal(audit.rules[0].trait, 42);
+  const stale = make();
+  stale.config.rules[0].revision = 999;
+  await assert.rejects(() => attachTraitModifiers(stale), /source revision/);
+  const changed = make();
+  changed.config.rules[0].evidence = "Not present";
+  await assert.rejects(() => attachTraitModifiers(changed), /evidence changed/);
+  const target = make();
+  target.config.rules[0].targets[0].revision = 999;
+  await assert.rejects(() => attachTraitModifiers(target), /target revision/);
+  const incompatible = make();
+  incompatible.snapshot.entries.skills[7].rows[0].detail = "40 秒";
+  incompatible.config.rules = [];
+  const skipped = await attachTraitModifiers(incompatible);
+  assert.equal(skipped.rules.length, 0);
+  assert.equal(skipped.skipped.length, 1);
+  const ammunition = make();
+  ammunition.config.rules = [];
+  ammunition.snapshot.entries.skills[7].rows.push({
+    label: "最大计数",
+    detail: "2",
+  });
+  const ammoAudit = await attachTraitModifiers(ammunition);
+  assert.equal(ammoAudit.rules.length, 0);
+  assert.equal(ammoAudit.skipped.length, 1);
+});
+
+test("通用时长绑定Wiki PvE证据和基础行；辅助技能证据不能来自竞争模式或历史", async () => {
+  const html =
+    '<script>{"wgRevisionId":123}</script><div class="mw-parser-output"><div class="infobox trait"></div><blockquote>Bleeding lasts longer. Duration Increase: 20%</blockquote></div>';
+  const make = () => ({
+    snapshot: {
+      entries: {
+        skills: {
+          7: {
+            title: "Skill",
+            profession: "Ranger",
+            revision: 456,
+            identityVerified: true,
+            rows: [{ label: "半径", detail: "120" }],
+          },
+        },
+        traits: {
+          42: {
+            title: "Trait",
+            profession: "Ranger",
+            revision: 123,
+            identityVerified: true,
+            rows: [{ label: "持续时间延长", detail: "20%" }],
+          },
+        },
+      },
+    },
+    catalog: {
+      traits: [{ id: 42, name: "特性", specialization: 1 }],
+      specs: [{ id: 1, profession: "Ranger" }],
+    },
+    readHtml: async () => html,
+    config: {
+      professions: ["Ranger"],
+      rules: [],
+      durationBonuses: [
+        {
+          trait: 42,
+          revision: 123,
+          evidence: "Bleeding lasts longer.",
+          guard: { label: "持续时间延长", detail: "20%" },
+          effects: ["Bleeding"],
+          bonus: 20,
+        },
+      ],
+    },
+  });
+  const p = make();
+  await attachTraitModifiers(p);
+  assert.equal(p.snapshot.traitDurationBonuses[0].bonus, 20);
+  const stale = make();
+  stale.config.durationBonuses[0].guard.detail = "30%";
+  await assert.rejects(
+    () => attachTraitModifiers(stale),
+    /duration evidence changed/,
+  );
+  const mode = make();
+  mode.readHtml = async () =>
+    html.replace(
+      "Bleeding lasts longer.",
+      '<span class="gamemode pvp">Bleeding lasts longer.</span>',
+    );
+  await assert.rejects(
+    () => attachTraitModifiers(mode),
+    /duration evidence changed/,
+  );
+  const extra = make();
+  extra.config.rules = [
+    {
+      id: "extra",
+      trait: 42,
+      revision: 123,
+      evidence: "Bleeding lasts longer.",
+      targets: [
+        {
+          kind: "skills",
+          id: 7,
+          revision: 456,
+          guards: [{ label: "半径", detail: "120" }],
+        },
+      ],
+      changes: [{ type: "number", label: "半径", add: 60 }],
+      evidenceSources: [
+        {
+          kind: "skills",
+          id: 7,
+          revision: 456,
+          evidence: "Confirmed barrier.",
+        },
+      ],
+    },
+  ];
+  extra.readHtml = async (kind) =>
+    kind === "traits"
+      ? html
+      : '<script>{"wgRevisionId":456}</script><div class="mw-parser-output"><div class="infobox skill"></div><blockquote>Skill</blockquote><h2><span id="Version_history">History</span></h2>Confirmed barrier.</div>';
+  await assert.rejects(
+    () => attachTraitModifiers(extra),
+    /Additional trait evidence changed/,
+  );
 });
 
 const context = {

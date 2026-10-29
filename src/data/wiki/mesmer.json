@@ -3746,12 +3746,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "21.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -3942,12 +3939,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "10.2 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -4156,12 +4150,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "42.5 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -4762,6 +4753,31 @@
               }
             ],
             "traitName": "模糊铭文"
+          },
+          {
+            "id": "fragmentation-signet-reflect",
+            "trait": 2035,
+            "requiresTraits": [
+              752
+            ],
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2035,
+              "title": "Master_of_Fragmentation",
+              "revision": 3087267
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "反射投射物",
+                  "detail": "",
+                  "trigger": "激活纹章产生的失真期间"
+                }
+              }
+            ],
+            "traitName": "破碎大师"
           }
         ]
       },
@@ -4894,6 +4910,31 @@
               }
             ],
             "traitName": "万华领悟"
+          },
+          {
+            "id": "fragmentation-signet-reflect",
+            "trait": 2035,
+            "requiresTraits": [
+              752
+            ],
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2035,
+              "title": "Master_of_Fragmentation",
+              "revision": 3087267
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "反射投射物",
+                  "detail": "",
+                  "trigger": "激活纹章产生的失真期间"
+                }
+              }
+            ],
+            "traitName": "破碎大师"
           }
         ]
       },
@@ -5082,6 +5123,31 @@
               }
             ],
             "traitName": "模糊铭文"
+          },
+          {
+            "id": "fragmentation-signet-reflect",
+            "trait": 2035,
+            "requiresTraits": [
+              752
+            ],
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2035,
+              "title": "Master_of_Fragmentation",
+              "revision": 3087267
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "反射投射物",
+                  "detail": "",
+                  "trigger": "激活纹章产生的失真期间"
+                }
+              }
+            ],
+            "traitName": "破碎大师"
           }
         ]
       },
@@ -5337,6 +5403,31 @@
               }
             ],
             "traitName": "模糊铭文"
+          },
+          {
+            "id": "fragmentation-signet-reflect",
+            "trait": 2035,
+            "requiresTraits": [
+              752
+            ],
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2035,
+              "title": "Master_of_Fragmentation",
+              "revision": 3087267
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "反射投射物",
+                  "detail": "",
+                  "trigger": "激活纹章产生的失真期间"
+                }
+              }
+            ],
+            "traitName": "破碎大师"
           }
         ]
       },
@@ -5652,12 +5743,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "32.3 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -6094,6 +6182,31 @@
               }
             ],
             "traitName": "模糊铭文"
+          },
+          {
+            "id": "fragmentation-signet-reflect",
+            "trait": 2035,
+            "requiresTraits": [
+              752
+            ],
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2035,
+              "title": "Master_of_Fragmentation",
+              "revision": 3087267
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "反射投射物",
+                  "detail": "",
+                  "trigger": "激活纹章产生的失真期间"
+                }
+              }
+            ],
+            "traitName": "破碎大师"
           }
         ]
       },
@@ -6549,6 +6662,31 @@
               }
             ],
             "traitName": "模糊铭文"
+          },
+          {
+            "id": "fragmentation-signet-reflect",
+            "trait": 2035,
+            "requiresTraits": [
+              752
+            ],
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2035,
+              "title": "Master_of_Fragmentation",
+              "revision": 3087267
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "反射投射物",
+                  "detail": "",
+                  "trigger": "激活纹章产生的失真期间"
+                }
+              }
+            ],
+            "traitName": "破碎大师"
           }
         ]
       },
@@ -6807,12 +6945,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "89.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -8206,12 +8341,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "32.3 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -8406,12 +8538,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "25.5 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -8610,12 +8739,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "10.2 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -8973,12 +9099,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "25.5 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -9172,12 +9295,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "25.5 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -9376,12 +9496,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "17 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -9568,12 +9685,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "10.2 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -9739,12 +9853,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "42.5 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -9929,12 +10040,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "10.2 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -10353,12 +10461,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "17 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -10718,12 +10823,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "21.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -11116,12 +11218,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "21.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"
@@ -11340,12 +11439,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "21.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "误导大师"

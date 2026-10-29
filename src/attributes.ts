@@ -12,6 +12,7 @@ import {
 import { burningPrecision, chaoticPersistence } from "./game-rules";
 import { landPets, archetypeNames } from "./profession-mechanics";
 import { infusionName } from "./infusions";
+import wikiMetadata from "./data/wiki-details.json";
 import {
   signetRules,
   nonAttributeSignets,
@@ -825,6 +826,11 @@ export function calculateAttributes(
     return !!preview.flags[key];
   };
   for (const trait of traits) {
+    for (const rule of wikiMetadata.traitDurationBonuses) {
+      if (rule.trait !== trait.id || (rule.gate && !gate(rule.gate))) continue;
+      for (const effect of rule.effects)
+        duration(effect, rule.bonus, trait.name);
+    }
     const rules = traitRules[trait.id];
     if (!rules) {
       if (nonAttributeSignetTraits[trait.id]) continue;

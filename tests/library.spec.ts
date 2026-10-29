@@ -25,7 +25,7 @@ test("浏览器存储不可写时仍可编辑下载和导入；刷新不自动�
   await expect(page.getByLabel("配装名称", { exact: true })).not.toHaveValue(
     downloaded.name,
   );
-  await page.locator('input[type="file"]').setInputFiles({
+  await page.getByLabel("导入BD或旧备份JSON", { exact: true }).setInputFiles({
     name: "BD.json",
     mimeType: "application/json",
     buffer: Buffer.from(JSON.stringify(downloaded)),
@@ -119,7 +119,7 @@ test("旧整库备份读取到会话用于下载，坏备份保留当前草稿",
   const backup = createLibraryBackup([b, createBuild("Guardian")], {});
   await page.goto("/");
   await page.getByLabel("配装名称", { exact: true }).fill("原草稿");
-  await page.locator('input[type="file"]').setInputFiles({
+  await page.getByLabel("导入BD或旧备份JSON", { exact: true }).setInputFiles({
     name: "backup.json",
     mimeType: "application/json",
     buffer: Buffer.from(JSON.stringify(backup)),
@@ -139,7 +139,7 @@ test("旧整库备份读取到会话用于下载，坏备份保留当前草稿",
   await expect(page.getByLabel("配装名称", { exact: true })).toHaveValue(
     "原草稿",
   );
-  await page.locator('input[type="file"]').setInputFiles({
+  await page.getByLabel("导入BD或旧备份JSON", { exact: true }).setInputFiles({
     name: "broken.json",
     mimeType: "application/json",
     buffer: Buffer.from(JSON.stringify({ ...backup, version: 9 })),

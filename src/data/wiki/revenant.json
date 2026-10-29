@@ -7607,6 +7607,31 @@
             "name": "辩证澄清",
             "description": "卡拉狂热将根据你的输出伤害按比例提供治疗。壁垒轰炸第一次击中敌人时施加晕眩。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "bold-citadel",
+            "trait": 2133,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2133,
+              "title": "Bold_Reversal",
+              "revision": 3170033
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "易伤",
+                  "detail": "6 秒 · 2 层",
+                  "stacks": 2,
+                  "trigger": "每次军械命中时"
+                }
+              }
+            ],
+            "traitName": "英勇逆转"
+          }
         ]
       },
       "42949": {
@@ -7808,6 +7833,31 @@
             "name": "公正反叛",
             "description": "卡拉狂热增加你给其他盟友施加的治疗。高层命令将持续更长时间，治疗盟友，影响更大区域。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "bold-heroic",
+            "trait": 2133,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2133,
+              "title": "Bold_Reversal",
+              "revision": 3170033
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "迅捷",
+                  "detail": "6 秒",
+                  "recipient": "盟友",
+                  "trigger": "使用英勇指令时"
+                }
+              }
+            ],
+            "traitName": "英勇逆转"
+          }
         ]
       },
       "45537": {
@@ -7889,6 +7939,101 @@
             "id": 2182,
             "name": "公正反叛",
             "description": "卡拉狂热增加你给其他盟友施加的治疗。高层命令将持续更长时间，治疗盟友，影响更大区域。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "bold-orders",
+            "trait": 2133,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2133,
+              "title": "Bold_Reversal",
+              "revision": 3170033
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "保护",
+                  "detail": "1 秒 · 4 次脉冲",
+                  "trigger": "每次脉冲授予盟友"
+                }
+              }
+            ],
+            "traitName": "英勇逆转"
+          },
+          {
+            "id": "righteous-orders",
+            "trait": 2182,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2182,
+              "title": "Righteous_Rebel",
+              "revision": 3170015
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "半径",
+                "factor": 1,
+                "add": 120
+              },
+              {
+                "type": "number",
+                "label": "持续时间",
+                "factor": 1.5,
+                "add": 0
+              },
+              {
+                "type": "replace",
+                "label": "敏捷",
+                "row": {
+                  "label": "敏捷",
+                  "detail": "2 秒 · 6 层 · +25% 技能冷却恢复速度",
+                  "icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png",
+                  "stacks": 6
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "治疗",
+                  "detail": "714",
+                  "recipient": "盟友",
+                  "trigger": "每次脉冲时"
+                }
+              }
+            ],
+            "traitName": "公正反叛"
+          },
+          {
+            "id": "righteous-bold-orders",
+            "trait": 2182,
+            "requiresTraits": [
+              2133
+            ],
+            "priority": 20,
+            "source": {
+              "kind": "traits",
+              "id": 2182,
+              "title": "Righteous_Rebel",
+              "revision": 3170015
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "保护",
+                "row": {
+                  "label": "保护",
+                  "detail": "1 秒 · 6 次脉冲",
+                  "trigger": "每次脉冲授予盟友"
+                }
+              }
+            ],
+            "traitName": "公正反叛"
           }
         ]
       },
@@ -8263,6 +8408,28 @@
             "name": "龙吟回响",
             "description": "使用消耗技能后，你的多面体被动技能会持续一段时间。你的多面体被动技能会给予你额外增益。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "core-value-51667",
+            "trait": 1806,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1806,
+              "title": "Core_Value",
+              "revision": 2656061
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "增益移除",
+                "factor": 1,
+                "add": 1
+              }
+            ],
+            "traitName": "核心价值"
+          }
         ]
       },
       "51675": {
@@ -8359,6 +8526,32 @@
             "name": "龙吟回响",
             "description": "使用消耗技能后，你的多面体被动技能会持续一段时间。你的多面体被动技能会给予你额外增益。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "core-value-dwarf",
+            "trait": 1806,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1806,
+              "title": "Core_Value",
+              "revision": 2656061
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "稳固",
+                "row": {
+                  "label": "稳固",
+                  "detail": "4 秒 · 3 层",
+                  "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                  "stacks": 3
+                }
+              }
+            ],
+            "traitName": "核心价值"
+          }
         ]
       },
       "51696": {
@@ -8446,6 +8639,28 @@
             "id": 1772,
             "name": "龙吟回响",
             "description": "使用消耗技能后，你的多面体被动技能会持续一段时间。你的多面体被动技能会给予你额外增益。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "core-value-51696",
+            "trait": 1806,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1806,
+              "title": "Core_Value",
+              "revision": 2656061
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "持续时间延长",
+                "factor": 1,
+                "add": 1
+              }
+            ],
+            "traitName": "核心价值"
           }
         ]
       },
@@ -8562,6 +8777,28 @@
             "name": "龙吟回响",
             "description": "使用消耗技能后，你的多面体被动技能会持续一段时间。你的多面体被动技能会给予你额外增益。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "core-value-51713",
+            "trait": 1806,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1806,
+              "title": "Core_Value",
+              "revision": 2656061
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "症状移除",
+                "factor": 1,
+                "add": 1
+              }
+            ],
+            "traitName": "核心价值"
+          }
         ]
       },
       "51714": {
@@ -8667,6 +8904,28 @@
             "id": 1772,
             "name": "龙吟回响",
             "description": "使用消耗技能后，你的多面体被动技能会持续一段时间。你的多面体被动技能会给予你额外增益。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "core-value-51714",
+            "trait": 1806,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1806,
+              "title": "Core_Value",
+              "revision": 2656061
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "症状转移",
+                "factor": 1,
+                "add": 1
+              }
+            ],
+            "traitName": "核心价值"
           }
         ]
       },
@@ -8951,6 +9210,107 @@
             "id": 2255,
             "name": "林木之曲",
             "description": "能量结合给予更多的耐力，并给予附近的盟友它的耐力和活力。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "arboreum",
+            "trait": 2255,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2255,
+              "title": "Song_of_Arboreum",
+              "revision": 2786641
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "耐力获取",
+                "row": {
+                  "label": "耐力获取",
+                  "detail": "40",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "活力",
+                  "detail": "9 秒",
+                  "recipient": "自身与附近盟友（最多5名，半径360）",
+                  "trigger": "使用能量融合时"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "盟友耐力获取",
+                  "detail": "40",
+                  "recipient": "附近盟友（最多5名，半径360）",
+                  "trigger": "使用能量融合时"
+                }
+              }
+            ],
+            "traitName": "林木之曲"
+          },
+          {
+            "id": "angsiyans-trust",
+            "trait": 2243,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2243,
+              "title": "Angsiyan's_Trust",
+              "revision": 2857036
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "能量消耗",
+                "row": {
+                  "label": "能量消耗",
+                  "detail": "0"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "获得能量",
+                  "detail": "25",
+                  "trigger": "战斗中使用能量融合时"
+                }
+              }
+            ],
+            "traitName": "帝皇之托"
+          },
+          {
+            "id": "reavers-curse",
+            "trait": 2259,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2259,
+              "title": "Reaver's_Curse",
+              "revision": 3206177
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.5,
+                "add": 0
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "掠夺诅咒",
+                  "detail": "6 秒",
+                  "trigger": "加强下一次闪避：伤害、治疗与屏障+100%；其他触发保留条件"
+                }
+              }
+            ],
+            "traitName": "掠夺诅咒"
           }
         ]
       },
@@ -9467,6 +9827,107 @@
             "id": 2255,
             "name": "林木之曲",
             "description": "能量结合给予更多的耐力，并给予附近的盟友它的耐力和活力。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "arboreum",
+            "trait": 2255,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2255,
+              "title": "Song_of_Arboreum",
+              "revision": 2786641
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "耐力获取",
+                "row": {
+                  "label": "耐力获取",
+                  "detail": "40",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "活力",
+                  "detail": "9 秒",
+                  "recipient": "自身与附近盟友（最多5名，半径360）",
+                  "trigger": "使用能量融合时"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "盟友耐力获取",
+                  "detail": "40",
+                  "recipient": "附近盟友（最多5名，半径360）",
+                  "trigger": "使用能量融合时"
+                }
+              }
+            ],
+            "traitName": "林木之曲"
+          },
+          {
+            "id": "angsiyans-trust",
+            "trait": 2243,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2243,
+              "title": "Angsiyan's_Trust",
+              "revision": 2857036
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "能量消耗",
+                "row": {
+                  "label": "能量消耗",
+                  "detail": "0"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "获得能量",
+                  "detail": "25",
+                  "trigger": "战斗中使用能量融合时"
+                }
+              }
+            ],
+            "traitName": "帝皇之托"
+          },
+          {
+            "id": "reavers-curse",
+            "trait": 2259,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2259,
+              "title": "Reaver's_Curse",
+              "revision": 3206177
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.5,
+                "add": 0
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "掠夺诅咒",
+                  "detail": "6 秒",
+                  "trigger": "加强下一次闪避：伤害、治疗与屏障+100%；其他触发保留条件"
+                }
+              }
+            ],
+            "traitName": "掠夺诅咒"
           }
         ]
       },

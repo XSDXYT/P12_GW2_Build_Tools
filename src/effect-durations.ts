@@ -5,7 +5,7 @@ const excluded =
   /获得折磨|移除|复制|窃取|偷取|转移|延长|延续|增加.*持续时间|缩短|减少.*持续时间/;
 // Recognize an actual application row, never arbitrary text containing a boon.
 const prefixes =
-  /^(?:个人|盟友|初始|基础|额外提供|额外|命中时|每次命中|每次脉冲|每次近战命中|第三次触发|触发时|自毁时|超充|区域|回响|职业技能|必定获得)/;
+  /^(?:个人|盟友|初始|基础|额外提供|额外|命中时|每次命中|每秒|每次脉冲|每次近战命中|第三次触发|触发时|自毁时|超充|区域|回响|职业技能|必定获得)/;
 function effectKey(row: DetailFact) {
   if (excluded.test(`${row.label} ${row.recipient || ""} ${row.trigger || ""}`))
     return;
@@ -18,7 +18,10 @@ function effectKey(row: DetailFact) {
     ["boon", boonLabels],
     ["condition", conditionLabels],
   ] as const) {
-    const key = Object.keys(labels).find((key) => labels[key] === label);
+    const key = Object.keys(labels).find(
+      (key) =>
+        labels[key] === label || (key === "Crippled" && label === "致残"),
+    );
     if (
       key &&
       !(

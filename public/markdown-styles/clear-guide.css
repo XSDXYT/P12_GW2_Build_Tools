@@ -1,0 +1,88 @@
+/* 清纸攻略。浅色正文适合长文和PNG，外围构筑器保持原配色。 */
+.md-content {
+  background: #f4f8fc;
+  color: #273c4c;
+  padding: 28px;
+  border: 1px solid #becedb;
+  border-radius: 6px;
+  font-family: "Microsoft YaHei UI", "PingFang SC", sans-serif;
+  font-size: 17px;
+  line-height: 2;
+}
+h1 {
+  color: #183f5d;
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0 0 26px;
+  padding-bottom: 14px;
+  border-bottom: 3px solid #2f6b90;
+}
+h2 {
+  color: #245e86;
+  font-size: 23px;
+  margin: 30px 0 14px;
+  padding-left: 12px;
+  border-left: 4px solid #4f86aa;
+}
+h3 {
+  color: #345c70;
+  font-size: 19px;
+  margin: 24px 0 10px;
+}
+p {
+  margin: 12px 0;
+}
+strong {
+  color: #133d5b;
+}
+blockquote {
+  background: #e3eef6;
+  color: #33566e;
+  border-left: 3px solid #5e8da9;
+  padding: 12px 18px;
+  margin: 20px 0;
+}
+a {
+  color: #185f91;
+}
+code {
+  background: #dce8f1;
+  color: #224f70;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+pre {
+  background: #e5edf4;
+  padding: 18px;
+  border: 1px solid #b5c7d6;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th {
+  background: #dce8f2;
+  color: #224965;
+}
+th,
+td {
+  padding: 10px 14px;
+  border: 1px solid #aec4d3;
+}
+tr:nth-child(even) {
+  background: #eaf1f7;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #a7bdcc;
+  margin: 28px 0;
+}
+.build-reference,
+.png-reference {
+  background: #e1edf5;
+  color: #204f72;
+  border: 1px solid #7e9fb6;
+  border-radius: 4px;
+  padding: 1px 6px;
+}

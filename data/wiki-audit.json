@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-20T23:43:22.991Z",
+  "generatedAt": "2026-10-24T00:40:29.995Z",
   "coverage": {
     "Mesmer": {
       "traits": {
@@ -11313,6 +11313,474 @@
         }
       },
       {
+        "target": 10604,
+        "title": "Dark_Path",
+        "trait": 891,
+        "rule": "recharge-891-10604",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 10644,
+        "title": "Dark_Water",
+        "trait": 891,
+        "rule": "recharge-891-10644",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 10644,
+        "title": "Dark_Water",
+        "trait": 891,
+        "rule": "recharge-891-10644",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 10588,
+        "title": "Doom",
+        "trait": 891,
+        "rule": "recharge-891-10588",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 10645,
+        "title": "Wave_of_Fear",
+        "trait": 891,
+        "rule": "recharge-891-10645",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 10645,
+        "title": "Wave_of_Fear",
+        "trait": 891,
+        "rule": "recharge-891-10645",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 10643,
+        "title": "Gathering_Plague",
+        "trait": 891,
+        "rule": "recharge-891-10643",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 10643,
+        "title": "Gathering_Plague",
+        "trait": 891,
+        "rule": "recharge-891-10643",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 10594,
+        "title": "Life_Transfer",
+        "trait": 891,
+        "rule": "recharge-891-10594",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 19504,
+        "title": "Tainted_Shackles",
+        "trait": 891,
+        "rule": "recharge-891-19504",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 19504,
+        "title": "Tainted_Shackles",
+        "trait": 891,
+        "rule": "recharge-891-19504",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 30825,
+        "title": "Death's_Charge",
+        "trait": 891,
+        "rule": "recharge-891-30825",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 30825,
+        "title": "Death's_Charge",
+        "trait": 891,
+        "rule": "recharge-891-30825",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 29958,
+        "title": "Infusing_Terror",
+        "trait": 891,
+        "rule": "recharge-891-29958",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 29958,
+        "title": "Infusing_Terror",
+        "trait": 891,
+        "rule": "recharge-891-29958",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 30504,
+        "title": "Soul_Spiral",
+        "trait": 891,
+        "rule": "recharge-891-30504",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 30504,
+        "title": "Soul_Spiral",
+        "trait": 891,
+        "rule": "recharge-891-30504",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 30557,
+        "title": "Executioner's_Scythe",
+        "trait": 891,
+        "rule": "recharge-891-30557",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 30557,
+        "title": "Executioner's_Scythe",
+        "trait": 891,
+        "rule": "recharge-891-30557",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 40813,
+        "title": "Nefarious_Favor",
+        "trait": 891,
+        "rule": "recharge-891-40813",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 43448,
+        "title": "Sand_Cascade",
+        "trait": 891,
+        "rule": "recharge-891-43448",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 44428,
+        "title": "Garish_Pillar",
+        "trait": 891,
+        "rule": "recharge-891-44428",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 44663,
+        "title": "Desert_Shroud",
+        "trait": 891,
+        "rule": "recharge-891-44663",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 62621,
+        "title": "Dark_Barrage",
+        "trait": 891,
+        "rule": "recharge-891-62621",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 62621,
+        "title": "Dark_Barrage",
+        "trait": 891,
+        "rule": "recharge-891-62621",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 62672,
+        "title": "Devouring_Cut",
+        "trait": 891,
+        "rule": "recharge-891-62672",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 62672,
+        "title": "Devouring_Cut",
+        "trait": 891,
+        "rule": "recharge-891-62672",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 62539,
+        "title": "Voracious_Arc",
+        "trait": 891,
+        "rule": "recharge-891-62539",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 62539,
+        "title": "Voracious_Arc",
+        "trait": 891,
+        "rule": "recharge-891-62539",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 62563,
+        "title": "Vital_Draw",
+        "trait": 891,
+        "rule": "recharge-891-62563",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 62563,
+        "title": "Vital_Draw",
+        "trait": 891,
+        "rule": "recharge-891-62563",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 76864,
+        "title": "Anguish",
+        "trait": 891,
+        "rule": "recharge-891-76864",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 76864,
+        "title": "Anguish",
+        "trait": 891,
+        "rule": "recharge-891-76864",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 76961,
+        "title": "Wanderlust",
+        "trait": 891,
+        "rule": "recharge-891-76961",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 76741,
+        "title": "Wanderlust",
+        "trait": 891,
+        "rule": "recharge-891-76741",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 76684,
+        "title": "Preservation",
+        "trait": 891,
+        "rule": "recharge-891-76684",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 76684,
+        "title": "Preservation",
+        "trait": 891,
+        "rule": "recharge-891-76684",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 76607,
+        "title": "Summon_Spirits",
+        "trait": 891,
+        "rule": "recharge-891-76607",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
+        "target": 76607,
+        "title": "Summon_Spirits",
+        "trait": 891,
+        "rule": "recharge-891-76607",
+        "source": {
+          "kind": "traits",
+          "id": 891,
+          "title": "Sinister_Shroud",
+          "revision": 3117272
+        }
+      },
+      {
         "target": 14375,
         "title": "Arcing_Slice",
         "trait": 1417,
@@ -11853,6 +12321,30 @@
         }
       },
       {
+        "target": 56920,
+        "title": "Function_Gyro_(tool_belt_skill)",
+        "trait": 1872,
+        "rule": "recharge-1872-56920",
+        "source": {
+          "kind": "traits",
+          "id": 1872,
+          "title": "Mechanized_Deployment",
+          "revision": 3117851
+        }
+      },
+      {
+        "target": 72114,
+        "title": "Function_Gyro_(tool_belt_skill)",
+        "trait": 1872,
+        "rule": "recharge-1872-72114",
+        "source": {
+          "kind": "traits",
+          "id": 1872,
+          "title": "Mechanized_Deployment",
+          "revision": 3117851
+        }
+      },
+      {
         "target": 21750,
         "title": "Signet_of_the_Ether",
         "trait": 752,
@@ -12283,13 +12775,4761 @@
           "title": "Perfect_Inscriptions",
           "revision": 3202239
         }
+      },
+      {
+        "target": 5882,
+        "title": "Grenade",
+        "trait": 514,
+        "rule": "grenadier-radius",
+        "source": {
+          "kind": "traits",
+          "id": 514,
+          "title": "Grenadier",
+          "revision": 2990846
+        }
+      },
+      {
+        "target": 5807,
+        "title": "Shrapnel_Grenade",
+        "trait": 514,
+        "rule": "grenadier-radius",
+        "source": {
+          "kind": "traits",
+          "id": 514,
+          "title": "Grenadier",
+          "revision": 2990846
+        }
+      },
+      {
+        "target": 5808,
+        "title": "Flash_Grenade",
+        "trait": 514,
+        "rule": "grenadier-radius",
+        "source": {
+          "kind": "traits",
+          "id": 514,
+          "title": "Grenadier",
+          "revision": 2990846
+        }
+      },
+      {
+        "target": 5809,
+        "title": "Freeze_Grenade",
+        "trait": 514,
+        "rule": "grenadier-radius",
+        "source": {
+          "kind": "traits",
+          "id": 514,
+          "title": "Grenadier",
+          "revision": 2990846
+        }
+      },
+      {
+        "target": 5806,
+        "title": "Poison_Grenade",
+        "trait": 514,
+        "rule": "grenadier-radius",
+        "source": {
+          "kind": "traits",
+          "id": 514,
+          "title": "Grenadier",
+          "revision": 2990846
+        }
+      },
+      {
+        "target": 5821,
+        "title": "Elixir_B",
+        "trait": 473,
+        "rule": "hgh-base-durations",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5832,
+        "title": "Elixir_X",
+        "trait": 473,
+        "rule": "hgh-base-durations",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5834,
+        "title": "Elixir_H",
+        "trait": 473,
+        "rule": "hgh-base-durations",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5861,
+        "title": "Elixir_S",
+        "trait": 473,
+        "rule": "hgh-base-durations",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5862,
+        "title": "Elixir_U",
+        "trait": 473,
+        "rule": "hgh-base-durations",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5936,
+        "title": "Acid_Bomb",
+        "trait": 473,
+        "rule": "hgh-base-durations",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 30032,
+        "title": "Elixir_Shell",
+        "trait": 473,
+        "rule": "hgh-base-durations",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5821,
+        "title": "Elixir_B",
+        "trait": 473,
+        "rule": "hgh-extra-boons",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5832,
+        "title": "Elixir_X",
+        "trait": 473,
+        "rule": "hgh-extra-boons",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5834,
+        "title": "Elixir_H",
+        "trait": 473,
+        "rule": "hgh-extra-boons",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5860,
+        "title": "Elixir_C",
+        "trait": 473,
+        "rule": "hgh-extra-boons",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5861,
+        "title": "Elixir_S",
+        "trait": 473,
+        "rule": "hgh-extra-boons",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5862,
+        "title": "Elixir_U",
+        "trait": 473,
+        "rule": "hgh-extra-boons",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5936,
+        "title": "Acid_Bomb",
+        "trait": 473,
+        "rule": "hgh-extra-boons",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5937,
+        "title": "Super_Elixir",
+        "trait": 473,
+        "rule": "hgh-extra-boons",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5968,
+        "title": "Elixir_R",
+        "trait": 473,
+        "rule": "hgh-extra-boons",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 30032,
+        "title": "Elixir_Shell",
+        "trait": 473,
+        "rule": "hgh-extra-boons",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 21659,
+        "title": "A.E.D.",
+        "trait": 1679,
+        "rule": "gadgeteer-aed",
+        "source": {
+          "kind": "traits",
+          "id": 1679,
+          "title": "Gadgeteer",
+          "revision": 2998219
+        }
+      },
+      {
+        "target": 5811,
+        "title": "Personal_Battering_Ram",
+        "trait": 1679,
+        "rule": "gadgeteer-ram",
+        "source": {
+          "kind": "traits",
+          "id": 1679,
+          "title": "Gadgeteer",
+          "revision": 2998219
+        }
+      },
+      {
+        "target": 5910,
+        "title": "Rocket_Boots",
+        "trait": 1679,
+        "rule": "gadgeteer-boots",
+        "source": {
+          "kind": "traits",
+          "id": 1679,
+          "title": "Gadgeteer",
+          "revision": 2998219
+        }
+      },
+      {
+        "target": 6161,
+        "title": "Throw_Mine",
+        "trait": 1679,
+        "rule": "gadgeteer-mine",
+        "source": {
+          "kind": "traits",
+          "id": 1679,
+          "title": "Gadgeteer",
+          "revision": 2998219
+        }
+      },
+      {
+        "target": 29739,
+        "title": "Purge_Gyro",
+        "trait": 1917,
+        "rule": "gyro-radius-29739",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 29921,
+        "title": "Shredder_Gyro",
+        "trait": 1917,
+        "rule": "gyro-radius-29921",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 30101,
+        "title": "Bulwark_Gyro",
+        "trait": 1917,
+        "rule": "gyro-radius-30101",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 30357,
+        "title": "Medic_Gyro",
+        "trait": 1917,
+        "rule": "gyro-radius-30357",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 30815,
+        "title": "Sneak_Gyro",
+        "trait": 1917,
+        "rule": "gyro-radius-30815",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 31248,
+        "title": "Blast_Gyro",
+        "trait": 1917,
+        "rule": "gyro-radius-31248",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 72114,
+        "title": "Function_Gyro_(tool_belt_skill)",
+        "trait": 1917,
+        "rule": "gyro-radius-72114",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 29739,
+        "title": "Purge_Gyro",
+        "trait": 1917,
+        "rule": "gyro-superspeed",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 29921,
+        "title": "Shredder_Gyro",
+        "trait": 1917,
+        "rule": "gyro-superspeed",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 30101,
+        "title": "Bulwark_Gyro",
+        "trait": 1917,
+        "rule": "gyro-superspeed",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 30357,
+        "title": "Medic_Gyro",
+        "trait": 1917,
+        "rule": "gyro-superspeed",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 30815,
+        "title": "Sneak_Gyro",
+        "trait": 1917,
+        "rule": "gyro-superspeed",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 31248,
+        "title": "Blast_Gyro",
+        "trait": 1917,
+        "rule": "gyro-superspeed",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 56920,
+        "title": "Function_Gyro_(tool_belt_skill)",
+        "trait": 1917,
+        "rule": "gyro-superspeed",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 72114,
+        "title": "Function_Gyro_(tool_belt_skill)",
+        "trait": 1917,
+        "rule": "gyro-superspeed",
+        "source": {
+          "kind": "traits",
+          "id": 1917,
+          "title": "Gyroscopic_Acceleration",
+          "revision": 2675995
+        }
+      },
+      {
+        "target": 63095,
+        "title": "Overclock_Signet",
+        "trait": 2298,
+        "rule": "j-drive-63095",
+        "source": {
+          "kind": "traits",
+          "id": 2298,
+          "title": "Mech_Core:_J-Drive",
+          "revision": 2569160
+        }
+      },
+      {
+        "target": 63111,
+        "title": "Shift_Signet",
+        "trait": 2298,
+        "rule": "j-drive-63111",
+        "source": {
+          "kind": "traits",
+          "id": 2298,
+          "title": "Mech_Core:_J-Drive",
+          "revision": 2569160
+        }
+      },
+      {
+        "target": 63113,
+        "title": "Superconducting_Signet",
+        "trait": 2298,
+        "rule": "j-drive-63113",
+        "source": {
+          "kind": "traits",
+          "id": 2298,
+          "title": "Mech_Core:_J-Drive",
+          "revision": 2569160
+        }
+      },
+      {
+        "target": 63262,
+        "title": "Barrier_Signet",
+        "trait": 2298,
+        "rule": "j-drive-63262",
+        "source": {
+          "kind": "traits",
+          "id": 2298,
+          "title": "Mech_Core:_J-Drive",
+          "revision": 2569160
+        }
+      },
+      {
+        "target": 12476,
+        "title": "Spike_Trap",
+        "trait": 1075,
+        "rule": "trapper-conditions",
+        "source": {
+          "kind": "traits",
+          "id": 1075,
+          "title": "Trapper's_Expertise",
+          "revision": 2691134
+        }
+      },
+      {
+        "target": 12492,
+        "title": "Frost_Trap",
+        "trait": 1075,
+        "rule": "trapper-conditions",
+        "source": {
+          "kind": "traits",
+          "id": 1075,
+          "title": "Trapper's_Expertise",
+          "revision": 2691134
+        }
+      },
+      {
+        "target": 12496,
+        "title": "Viper's_Nest",
+        "trait": 1075,
+        "rule": "trapper-conditions",
+        "source": {
+          "kind": "traits",
+          "id": 1075,
+          "title": "Trapper's_Expertise",
+          "revision": 2691134
+        }
+      },
+      {
+        "target": 12489,
+        "title": "Healing_Spring",
+        "trait": 1075,
+        "rule": "trapper-healing-spring",
+        "source": {
+          "kind": "traits",
+          "id": 1075,
+          "title": "Trapper's_Expertise",
+          "revision": 2691134
+        }
+      },
+      {
+        "target": 12499,
+        "title": "Flame_Trap",
+        "trait": 1075,
+        "rule": "trapper-flame",
+        "source": {
+          "kind": "traits",
+          "id": 1075,
+          "title": "Trapper's_Expertise",
+          "revision": 2691134
+        }
+      },
+      {
+        "target": 12476,
+        "title": "Spike_Trap",
+        "trait": 1075,
+        "rule": "trapper-cripple",
+        "source": {
+          "kind": "traits",
+          "id": 1075,
+          "title": "Trapper's_Expertise",
+          "revision": 2691134
+        }
+      },
+      {
+        "target": 12492,
+        "title": "Frost_Trap",
+        "trait": 1075,
+        "rule": "trapper-cripple",
+        "source": {
+          "kind": "traits",
+          "id": 1075,
+          "title": "Trapper's_Expertise",
+          "revision": 2691134
+        }
+      },
+      {
+        "target": 12496,
+        "title": "Viper's_Nest",
+        "trait": 1075,
+        "rule": "trapper-cripple",
+        "source": {
+          "kind": "traits",
+          "id": 1075,
+          "title": "Trapper's_Expertise",
+          "revision": 2691134
+        }
+      },
+      {
+        "target": 13014,
+        "title": "Steal",
+        "trait": 1706,
+        "rule": "deadly-ambush",
+        "source": {
+          "kind": "traits",
+          "id": 1706,
+          "title": "Deadly_Ambush",
+          "revision": 3016217
+        }
+      },
+      {
+        "target": 43390,
+        "title": "Deadeye's_Mark",
+        "trait": 1706,
+        "rule": "deadly-ambush",
+        "source": {
+          "kind": "traits",
+          "id": 1706,
+          "title": "Deadly_Ambush",
+          "revision": 3016217
+        }
+      },
+      {
+        "target": 77397,
+        "title": "Skritt_Swipe",
+        "trait": 1706,
+        "rule": "deadly-ambush",
+        "source": {
+          "kind": "traits",
+          "id": 1706,
+          "title": "Deadly_Ambush",
+          "revision": 3016217
+        }
+      },
+      {
+        "target": 13014,
+        "title": "Steal",
+        "trait": 1837,
+        "rule": "endurance-thief",
+        "source": {
+          "kind": "traits",
+          "id": 1837,
+          "title": "Endurance_Thief",
+          "revision": 2655918
+        }
+      },
+      {
+        "target": 29516,
+        "title": "Impact_Strike",
+        "trait": 1949,
+        "rule": "brawlers-tenacity",
+        "source": {
+          "kind": "traits",
+          "id": 1949,
+          "title": "Brawler's_Tenacity",
+          "revision": 3161344
+        }
+      },
+      {
+        "target": 30369,
+        "title": "Impairing_Daggers",
+        "trait": 1949,
+        "rule": "brawlers-tenacity",
+        "source": {
+          "kind": "traits",
+          "id": 1949,
+          "title": "Brawler's_Tenacity",
+          "revision": 3161344
+        }
+      },
+      {
+        "target": 30568,
+        "title": "Distracting_Daggers",
+        "trait": 1949,
+        "rule": "brawlers-tenacity",
+        "source": {
+          "kind": "traits",
+          "id": 1949,
+          "title": "Brawler's_Tenacity",
+          "revision": 3161344
+        }
+      },
+      {
+        "target": 30661,
+        "title": "Bandit's_Defense",
+        "trait": 1949,
+        "rule": "brawlers-tenacity",
+        "source": {
+          "kind": "traits",
+          "id": 1949,
+          "title": "Brawler's_Tenacity",
+          "revision": 3161344
+        }
+      },
+      {
+        "target": 30868,
+        "title": "Fist_Flurry",
+        "trait": 1949,
+        "rule": "brawlers-tenacity",
+        "source": {
+          "kind": "traits",
+          "id": 1949,
+          "title": "Brawler's_Tenacity",
+          "revision": 3161344
+        }
+      },
+      {
+        "target": 43390,
+        "title": "Deadeye's_Mark",
+        "trait": 2093,
+        "rule": "quick-or-killed",
+        "source": {
+          "kind": "traits",
+          "id": 2093,
+          "title": "Be_Quick_or_Be_Killed",
+          "revision": 2631040
+        }
+      },
+      {
+        "target": 63230,
+        "title": "Well_of_Silence",
+        "trait": 2285,
+        "rule": "traversing-dusk",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 63275,
+        "title": "Shadowfall",
+        "trait": 2285,
+        "rule": "traversing-dusk",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 63276,
+        "title": "Well_of_Sorrow",
+        "trait": 2285,
+        "rule": "traversing-dusk",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 63292,
+        "title": "Well_of_Gloom",
+        "trait": 2285,
+        "rule": "traversing-dusk",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 63294,
+        "title": "Well_of_Tears",
+        "trait": 2285,
+        "rule": "traversing-dusk",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 63323,
+        "title": "Well_of_Bounty",
+        "trait": 2285,
+        "rule": "traversing-dusk",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 13002,
+        "title": "Shadowstep",
+        "trait": 2285,
+        "rule": "traversing-dusk-heal",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 13064,
+        "title": "Infiltrator's_Signet",
+        "trait": 2285,
+        "rule": "traversing-dusk-heal",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 63230,
+        "title": "Well_of_Silence",
+        "trait": 2285,
+        "rule": "traversing-dusk-heal",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 63275,
+        "title": "Shadowfall",
+        "trait": 2285,
+        "rule": "traversing-dusk-heal",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 63276,
+        "title": "Well_of_Sorrow",
+        "trait": 2285,
+        "rule": "traversing-dusk-heal",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 63292,
+        "title": "Well_of_Gloom",
+        "trait": 2285,
+        "rule": "traversing-dusk-heal",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 63294,
+        "title": "Well_of_Tears",
+        "trait": 2285,
+        "rule": "traversing-dusk-heal",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 63323,
+        "title": "Well_of_Bounty",
+        "trait": 2285,
+        "rule": "traversing-dusk-heal",
+        "source": {
+          "kind": "traits",
+          "id": 2285,
+          "title": "Traversing_Dusk",
+          "revision": 3065828
+        }
+      },
+      {
+        "target": 62723,
+        "title": "Deploy_Jade_Sphere_(water)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 62813,
+        "title": "Deploy_Jade_Sphere_(fire)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 62837,
+        "title": "Deploy_Jade_Sphere_(earth)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 62940,
+        "title": "Deploy_Jade_Sphere_(air)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 63396,
+        "title": "Deploy_Jade_Sphere_(fire)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 63416,
+        "title": "Deploy_Jade_Sphere_(water)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 63439,
+        "title": "Deploy_Jade_Sphere_(air)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 63454,
+        "title": "Deploy_Jade_Sphere_(earth)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 63458,
+        "title": "Deploy_Jade_Sphere_(fire)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 63459,
+        "title": "Deploy_Jade_Sphere_(air)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 63461,
+        "title": "Deploy_Jade_Sphere_(water)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 63472,
+        "title": "Deploy_Jade_Sphere_(earth)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 75391,
+        "title": "Deploy_Jade_Sphere_(fire)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 75399,
+        "title": "Deploy_Jade_Sphere_(air)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 75405,
+        "title": "Deploy_Jade_Sphere_(earth)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 75406,
+        "title": "Deploy_Jade_Sphere_(water)",
+        "trait": 2251,
+        "rule": "sphere-specialist",
+        "source": {
+          "kind": "traits",
+          "id": 2251,
+          "title": "Sphere_Specialist",
+          "revision": 3128215
+        }
+      },
+      {
+        "target": 30662,
+        "title": "\"Feel_the_Burn!\"",
+        "trait": 340,
+        "rule": "smothering-fire-aura",
+        "source": {
+          "kind": "traits",
+          "id": 340,
+          "title": "Smothering_Auras",
+          "revision": 2946543
+        }
+      },
+      {
+        "target": 5717,
+        "title": "Burning_Retreat_(Lava_Axe_skill)",
+        "trait": 1510,
+        "rule": "persisting-flames-fields",
+        "source": {
+          "kind": "traits",
+          "id": 1510,
+          "title": "Persisting_Flames",
+          "revision": 2938218
+        }
+      },
+      {
+        "target": 5718,
+        "title": "Ring_of_Fire_(Lava_Axe_skill)",
+        "trait": 1510,
+        "rule": "persisting-flames-fields",
+        "source": {
+          "kind": "traits",
+          "id": 1510,
+          "title": "Persisting_Flames",
+          "revision": 2938218
+        }
+      },
+      {
+        "target": 42297,
+        "title": "Manifest_Sand_Shade",
+        "trait": 2080,
+        "rule": "desert-empowerment",
+        "source": {
+          "kind": "traits",
+          "id": 2080,
+          "title": "Desert_Empowerment",
+          "revision": 3029008
+        }
+      },
+      {
+        "target": 44946,
+        "title": "Manifest_Sand_Shade",
+        "trait": 2080,
+        "rule": "desert-empowerment",
+        "source": {
+          "kind": "traits",
+          "id": 2080,
+          "title": "Desert_Empowerment",
+          "revision": 3029008
+        }
+      },
+      {
+        "target": 40813,
+        "title": "Nefarious_Favor",
+        "trait": 2112,
+        "rule": "sand-savant-area",
+        "source": {
+          "kind": "traits",
+          "id": 2112,
+          "title": "Sand_Savant",
+          "revision": 2709385
+        }
+      },
+      {
+        "target": 42297,
+        "title": "Manifest_Sand_Shade",
+        "trait": 2112,
+        "rule": "sand-savant-area",
+        "source": {
+          "kind": "traits",
+          "id": 2112,
+          "title": "Sand_Savant",
+          "revision": 2709385
+        }
+      },
+      {
+        "target": 43448,
+        "title": "Sand_Cascade",
+        "trait": 2112,
+        "rule": "sand-savant-area",
+        "source": {
+          "kind": "traits",
+          "id": 2112,
+          "title": "Sand_Savant",
+          "revision": 2709385
+        }
+      },
+      {
+        "target": 44428,
+        "title": "Garish_Pillar",
+        "trait": 2112,
+        "rule": "sand-savant-area",
+        "source": {
+          "kind": "traits",
+          "id": 2112,
+          "title": "Sand_Savant",
+          "revision": 2709385
+        }
+      },
+      {
+        "target": 44663,
+        "title": "Desert_Shroud",
+        "trait": 2112,
+        "rule": "sand-savant-area",
+        "source": {
+          "kind": "traits",
+          "id": 2112,
+          "title": "Sand_Savant",
+          "revision": 2709385
+        }
+      },
+      {
+        "target": 44946,
+        "title": "Manifest_Sand_Shade",
+        "trait": 2112,
+        "rule": "sand-savant-area",
+        "source": {
+          "kind": "traits",
+          "id": 2112,
+          "title": "Sand_Savant",
+          "revision": 2709385
+        }
+      },
+      {
+        "target": 42297,
+        "title": "Manifest_Sand_Shade",
+        "trait": 2112,
+        "rule": "sand-savant-count",
+        "source": {
+          "kind": "traits",
+          "id": 2112,
+          "title": "Sand_Savant",
+          "revision": 2709385
+        }
+      },
+      {
+        "target": 44946,
+        "title": "Manifest_Sand_Shade",
+        "trait": 2112,
+        "rule": "sand-savant-count",
+        "source": {
+          "kind": "traits",
+          "id": 2112,
+          "title": "Sand_Savant",
+          "revision": 2709385
+        }
+      },
+      {
+        "target": 41615,
+        "title": "Serpent_Siphon",
+        "trait": 2080,
+        "rule": "desert-empowerment-alacrity",
+        "source": {
+          "kind": "traits",
+          "id": 2080,
+          "title": "Desert_Empowerment",
+          "revision": 3029008
+        }
+      },
+      {
+        "target": 42297,
+        "title": "Manifest_Sand_Shade",
+        "trait": 2080,
+        "rule": "desert-empowerment-alacrity",
+        "source": {
+          "kind": "traits",
+          "id": 2080,
+          "title": "Desert_Empowerment",
+          "revision": 3029008
+        }
+      },
+      {
+        "target": 42917,
+        "title": "Sand_Swell",
+        "trait": 2080,
+        "rule": "desert-empowerment-alacrity",
+        "source": {
+          "kind": "traits",
+          "id": 2080,
+          "title": "Desert_Empowerment",
+          "revision": 3029008
+        }
+      },
+      {
+        "target": 43148,
+        "title": "Sand_Flare",
+        "trait": 2080,
+        "rule": "desert-empowerment-alacrity",
+        "source": {
+          "kind": "traits",
+          "id": 2080,
+          "title": "Desert_Empowerment",
+          "revision": 3029008
+        }
+      },
+      {
+        "target": 43448,
+        "title": "Sand_Cascade",
+        "trait": 2080,
+        "rule": "desert-empowerment-alacrity",
+        "source": {
+          "kind": "traits",
+          "id": 2080,
+          "title": "Desert_Empowerment",
+          "revision": 3029008
+        }
+      },
+      {
+        "target": 44663,
+        "title": "Desert_Shroud",
+        "trait": 2080,
+        "rule": "desert-empowerment-alacrity",
+        "source": {
+          "kind": "traits",
+          "id": 2080,
+          "title": "Desert_Empowerment",
+          "revision": 3029008
+        }
+      },
+      {
+        "target": 44946,
+        "title": "Manifest_Sand_Shade",
+        "trait": 2080,
+        "rule": "desert-empowerment-alacrity",
+        "source": {
+          "kind": "traits",
+          "id": 2080,
+          "title": "Desert_Empowerment",
+          "revision": 3029008
+        }
+      },
+      {
+        "target": 62514,
+        "title": "Elixir_of_Bliss",
+        "trait": 2220,
+        "rule": "twisted-medicine",
+        "source": {
+          "kind": "traits",
+          "id": 2220,
+          "title": "Twisted_Medicine",
+          "revision": 2842805
+        }
+      },
+      {
+        "target": 62530,
+        "title": "Elixir_of_Risk",
+        "trait": 2220,
+        "rule": "twisted-medicine",
+        "source": {
+          "kind": "traits",
+          "id": 2220,
+          "title": "Twisted_Medicine",
+          "revision": 2842805
+        }
+      },
+      {
+        "target": 62646,
+        "title": "Elixir_of_Ignorance",
+        "trait": 2220,
+        "rule": "twisted-medicine",
+        "source": {
+          "kind": "traits",
+          "id": 2220,
+          "title": "Twisted_Medicine",
+          "revision": 2842805
+        }
+      },
+      {
+        "target": 62655,
+        "title": "Elixir_of_Ambition",
+        "trait": 2220,
+        "rule": "twisted-medicine",
+        "source": {
+          "kind": "traits",
+          "id": 2220,
+          "title": "Twisted_Medicine",
+          "revision": 2842805
+        }
+      },
+      {
+        "target": 62662,
+        "title": "Elixir_of_Anguish",
+        "trait": 2220,
+        "rule": "twisted-medicine",
+        "source": {
+          "kind": "traits",
+          "id": 2220,
+          "title": "Twisted_Medicine",
+          "revision": 2842805
+        }
+      },
+      {
+        "target": 62667,
+        "title": "Elixir_of_Promise",
+        "trait": 2220,
+        "rule": "twisted-medicine",
+        "source": {
+          "kind": "traits",
+          "id": 2220,
+          "title": "Twisted_Medicine",
+          "revision": 2842805
+        }
+      },
+      {
+        "target": 62611,
+        "title": "Tainted_Bolts",
+        "trait": 2203,
+        "rule": "doom-bolts",
+        "source": {
+          "kind": "traits",
+          "id": 2203,
+          "title": "Doom_Approaches",
+          "revision": 3188980
+        }
+      },
+      {
+        "target": 62611,
+        "title": "Tainted_Bolts",
+        "trait": 2203,
+        "rule": "doom-bolts",
+        "source": {
+          "kind": "traits",
+          "id": 2203,
+          "title": "Doom_Approaches",
+          "revision": 3188980
+        }
+      },
+      {
+        "target": 62621,
+        "title": "Dark_Barrage",
+        "trait": 2203,
+        "rule": "doom-barrage",
+        "source": {
+          "kind": "traits",
+          "id": 2203,
+          "title": "Doom_Approaches",
+          "revision": 3188980
+        }
+      },
+      {
+        "target": 62621,
+        "title": "Dark_Barrage",
+        "trait": 2203,
+        "rule": "doom-barrage",
+        "source": {
+          "kind": "traits",
+          "id": 2203,
+          "title": "Doom_Approaches",
+          "revision": 3188980
+        }
+      },
+      {
+        "target": 62672,
+        "title": "Devouring_Cut",
+        "trait": 2203,
+        "rule": "doom-cut",
+        "source": {
+          "kind": "traits",
+          "id": 2203,
+          "title": "Doom_Approaches",
+          "revision": 3188980
+        }
+      },
+      {
+        "target": 62672,
+        "title": "Devouring_Cut",
+        "trait": 2203,
+        "rule": "doom-cut",
+        "source": {
+          "kind": "traits",
+          "id": 2203,
+          "title": "Doom_Approaches",
+          "revision": 3188980
+        }
+      },
+      {
+        "target": 62539,
+        "title": "Voracious_Arc",
+        "trait": 2203,
+        "rule": "doom-voracious-arc",
+        "source": {
+          "kind": "traits",
+          "id": 2203,
+          "title": "Doom_Approaches",
+          "revision": 3188980
+        }
+      },
+      {
+        "target": 62539,
+        "title": "Voracious_Arc",
+        "trait": 2203,
+        "rule": "doom-voracious-arc",
+        "source": {
+          "kind": "traits",
+          "id": 2203,
+          "title": "Doom_Approaches",
+          "revision": 3188980
+        }
+      },
+      {
+        "target": 62563,
+        "title": "Vital_Draw",
+        "trait": 2203,
+        "rule": "doom-vital-draw",
+        "source": {
+          "kind": "traits",
+          "id": 2203,
+          "title": "Doom_Approaches",
+          "revision": 3188980
+        }
+      },
+      {
+        "target": 62563,
+        "title": "Vital_Draw",
+        "trait": 2203,
+        "rule": "doom-vital-draw",
+        "source": {
+          "kind": "traits",
+          "id": 2203,
+          "title": "Doom_Approaches",
+          "revision": 3188980
+        }
+      },
+      {
+        "target": 51667,
+        "title": "True_Nature_(assassin)",
+        "trait": 1806,
+        "rule": "core-value-51667",
+        "source": {
+          "kind": "traits",
+          "id": 1806,
+          "title": "Core_Value",
+          "revision": 2656061
+        }
+      },
+      {
+        "target": 51713,
+        "title": "True_Nature_(centaur)",
+        "trait": 1806,
+        "rule": "core-value-51713",
+        "source": {
+          "kind": "traits",
+          "id": 1806,
+          "title": "Core_Value",
+          "revision": 2656061
+        }
+      },
+      {
+        "target": 51714,
+        "title": "True_Nature_(demon)",
+        "trait": 1806,
+        "rule": "core-value-51714",
+        "source": {
+          "kind": "traits",
+          "id": 1806,
+          "title": "Core_Value",
+          "revision": 2656061
+        }
+      },
+      {
+        "target": 51696,
+        "title": "True_Nature_(dragon)",
+        "trait": 1806,
+        "rule": "core-value-51696",
+        "source": {
+          "kind": "traits",
+          "id": 1806,
+          "title": "Core_Value",
+          "revision": 2656061
+        }
+      },
+      {
+        "target": 51675,
+        "title": "True_Nature_(dwarf)",
+        "trait": 1806,
+        "rule": "core-value-dwarf",
+        "source": {
+          "kind": "traits",
+          "id": 1806,
+          "title": "Core_Value",
+          "revision": 2656061
+        }
+      },
+      {
+        "target": 44076,
+        "title": "Heroic_Command",
+        "trait": 2133,
+        "rule": "bold-heroic",
+        "source": {
+          "kind": "traits",
+          "id": 2133,
+          "title": "Bold_Reversal",
+          "revision": 3170033
+        }
+      },
+      {
+        "target": 42836,
+        "title": "Citadel_Bombardment",
+        "trait": 2133,
+        "rule": "bold-citadel",
+        "source": {
+          "kind": "traits",
+          "id": 2133,
+          "title": "Bold_Reversal",
+          "revision": 3170033
+        }
+      },
+      {
+        "target": 45537,
+        "title": "Orders_from_Above",
+        "trait": 2133,
+        "rule": "bold-orders",
+        "source": {
+          "kind": "traits",
+          "id": 2133,
+          "title": "Bold_Reversal",
+          "revision": 3170033
+        }
+      },
+      {
+        "target": 45537,
+        "title": "Orders_from_Above",
+        "trait": 2182,
+        "rule": "righteous-orders",
+        "source": {
+          "kind": "traits",
+          "id": 2182,
+          "title": "Righteous_Rebel",
+          "revision": 3170015
+        }
+      },
+      {
+        "target": 45537,
+        "title": "Orders_from_Above",
+        "trait": 2182,
+        "rule": "righteous-bold-orders",
+        "source": {
+          "kind": "traits",
+          "id": 2182,
+          "title": "Righteous_Rebel",
+          "revision": 3170015
+        }
+      },
+      {
+        "target": 62757,
+        "title": "Energy_Meld",
+        "trait": 2255,
+        "rule": "arboreum",
+        "source": {
+          "kind": "traits",
+          "id": 2255,
+          "title": "Song_of_Arboreum",
+          "revision": 2786641
+        }
+      },
+      {
+        "target": 72058,
+        "title": "Energy_Meld",
+        "trait": 2255,
+        "rule": "arboreum",
+        "source": {
+          "kind": "traits",
+          "id": 2255,
+          "title": "Song_of_Arboreum",
+          "revision": 2786641
+        }
+      },
+      {
+        "target": 62757,
+        "title": "Energy_Meld",
+        "trait": 2243,
+        "rule": "angsiyans-trust",
+        "source": {
+          "kind": "traits",
+          "id": 2243,
+          "title": "Angsiyan's_Trust",
+          "revision": 2857036
+        }
+      },
+      {
+        "target": 72058,
+        "title": "Energy_Meld",
+        "trait": 2243,
+        "rule": "angsiyans-trust",
+        "source": {
+          "kind": "traits",
+          "id": 2243,
+          "title": "Angsiyan's_Trust",
+          "revision": 2857036
+        }
+      },
+      {
+        "target": 62757,
+        "title": "Energy_Meld",
+        "trait": 2259,
+        "rule": "reavers-curse",
+        "source": {
+          "kind": "traits",
+          "id": 2259,
+          "title": "Reaver's_Curse",
+          "revision": 3206177
+        }
+      },
+      {
+        "target": 72058,
+        "title": "Energy_Meld",
+        "trait": 2259,
+        "rule": "reavers-curse",
+        "source": {
+          "kind": "traits",
+          "id": 2259,
+          "title": "Reaver's_Curse",
+          "revision": 3206177
+        }
+      },
+      {
+        "target": 21750,
+        "title": "Signet_of_the_Ether",
+        "trait": 2035,
+        "rule": "fragmentation-signet-reflect",
+        "source": {
+          "kind": "traits",
+          "id": 2035,
+          "title": "Master_of_Fragmentation",
+          "revision": 3087267
+        }
+      },
+      {
+        "target": 10236,
+        "title": "Signet_of_Inspiration",
+        "trait": 2035,
+        "rule": "fragmentation-signet-reflect",
+        "source": {
+          "kind": "traits",
+          "id": 2035,
+          "title": "Master_of_Fragmentation",
+          "revision": 3087267
+        }
+      },
+      {
+        "target": 10232,
+        "title": "Signet_of_Domination",
+        "trait": 2035,
+        "rule": "fragmentation-signet-reflect",
+        "source": {
+          "kind": "traits",
+          "id": 2035,
+          "title": "Master_of_Fragmentation",
+          "revision": 3087267
+        }
+      },
+      {
+        "target": 10234,
+        "title": "Signet_of_Midnight",
+        "trait": 2035,
+        "rule": "fragmentation-signet-reflect",
+        "source": {
+          "kind": "traits",
+          "id": 2035,
+          "title": "Master_of_Fragmentation",
+          "revision": 3087267
+        }
+      },
+      {
+        "target": 10247,
+        "title": "Signet_of_Illusions",
+        "trait": 2035,
+        "rule": "fragmentation-signet-reflect",
+        "source": {
+          "kind": "traits",
+          "id": 2035,
+          "title": "Master_of_Fragmentation",
+          "revision": 3087267
+        }
+      },
+      {
+        "target": 29519,
+        "title": "Signet_of_Humility",
+        "trait": 2035,
+        "rule": "fragmentation-signet-reflect",
+        "source": {
+          "kind": "traits",
+          "id": 2035,
+          "title": "Master_of_Fragmentation",
+          "revision": 3087267
+        }
+      },
+      {
+        "target": 5936,
+        "title": "Acid_Bomb",
+        "trait": 473,
+        "rule": "hgh-acid-bomb-hits",
+        "source": {
+          "kind": "traits",
+          "id": 473,
+          "title": "HGH",
+          "revision": 3163406
+        }
+      },
+      {
+        "target": 5825,
+        "title": "Slick_Shoes",
+        "trait": 1679,
+        "rule": "gadgeteer-shoes",
+        "source": {
+          "kind": "traits",
+          "id": 1679,
+          "title": "Gadgeteer",
+          "revision": 2998219
+        }
+      },
+      {
+        "target": 5865,
+        "title": "Utility_Goggles",
+        "trait": 1679,
+        "rule": "gadgeteer-goggles",
+        "source": {
+          "kind": "traits",
+          "id": 1679,
+          "title": "Gadgeteer",
+          "revision": 2998219
+        }
       }
     ],
-    "skipped": [],
+    "skipped": [
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Convergence_(elementalist_skill)",
+          "text": "Dagger Convergence 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Shocking_Aura",
+          "text": "Shocking Aura (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Transmute_Lightning",
+          "text": "Transmute Lightning (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Ride_the_Lightning",
+          "text": "Ride the Lightning (PvE) 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Updraft",
+          "text": "Updraft (PvE) 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Dazing_Discharge",
+          "text": "Pistol Dazing Discharge 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Aerial_Agility",
+          "text": "Aerial Agility (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Lightning_Strike",
+          "text": "Scepter Lightning Strike 5 → 4",
+          "before": 5,
+          "after": 4
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Blinding_Flash",
+          "text": "Blinding Flash (PvE) 0.5 → 0.4",
+          "before": 0.5,
+          "after": 0.4
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Polaric_Leap",
+          "text": "Polaric Leap (PvE) 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Quantum_Strike",
+          "text": "Quantum Strike 16 → 12.8",
+          "before": 16,
+          "after": 12.8
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Swirling_Winds",
+          "text": "Focus Swirling Winds 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Gale",
+          "text": "Gale 40 → 32",
+          "before": 40,
+          "after": 32
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Cyclone",
+          "text": "Warhorn Cyclone 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Lightning_Orb",
+          "text": "Lightning Orb 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Hurricane_of_Pain",
+          "text": "Hammer Hurricane of Pain 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Crescent_Wind",
+          "text": "Crescent Wind 18 → 14.4",
+          "before": 18,
+          "after": 14.4
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Wind_Storm",
+          "text": "Wind Storm 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Shock_Blast",
+          "text": "Shock Blast 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Lightning_Surge",
+          "text": "Lightning Surge (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Gust",
+          "text": "Gust 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Windborne_Speed",
+          "text": "Windborne Speed 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Static_Field",
+          "text": "Static Field 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Fulgor",
+          "text": "Spear Fulgor 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Energize",
+          "text": "Energize 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Twister",
+          "text": "Twister 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Etching:_Derecho",
+          "text": "Etching: Derecho 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Electrocute",
+          "text": "Trident Electrocute 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Air_Pocket",
+          "text": "Air Pocket 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Air_Bubble",
+          "text": "Air Bubble (PvE) 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 223,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Lightning_Cage",
+          "text": "Lightning Cage 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Ring_of_Earth",
+          "text": "Dagger Ring of Earth 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Earthen_Rush",
+          "text": "Earthen Rush (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Earthquake",
+          "text": "Earthquake (PvE) 16 → 12.8",
+          "before": 16,
+          "after": 12.8
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Churning_Earth",
+          "text": "Churning Earth (PvE) 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Shattering_Stone",
+          "text": "Pistol Shattering Stone 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Boulder_Blast",
+          "text": "Boulder Blast (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rock_Barrier",
+          "text": "Scepter Rock Barrier (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Dust_Devil",
+          "text": "Dust Devil 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Earthen_Vortex",
+          "text": "Sword Earthen Vortex (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rust_Frenzy",
+          "text": "Rust Frenzy 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Magnetic_Wave",
+          "text": "Focus Magnetic Wave 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Obsidian_Flesh",
+          "text": "Obsidian Flesh (PvE, WvW) 50 → 40",
+          "before": 50,
+          "after": 40
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Sand_Squall",
+          "text": "Warhorn Sand Squall 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Dust_Storm",
+          "text": "Dust Storm 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Whirling_Stones",
+          "text": "Hammer Whirling Stones 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rocky_Loop",
+          "text": "Rocky Loop 18 → 14.4",
+          "before": 18,
+          "after": 14.4
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Immutable_Stone",
+          "text": "Immutable Stone 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Ground_Pound",
+          "text": "Ground Pound (PvE) 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Eruption",
+          "text": "Staff Eruption 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Magnetic_Aura",
+          "text": "Magnetic Aura 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Transmute_Earth",
+          "text": "Transmute Earth (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Unsteady_Ground",
+          "text": "Unsteady Ground 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Shock_Wave",
+          "text": "Shock Wave 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Earthen_Spear",
+          "text": "Spear Earthen Spear 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Harden",
+          "text": "Harden (PvE) 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Fissure",
+          "text": "Fissure 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Etching:_Haboob",
+          "text": "Etching: Haboob 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rock_Spray",
+          "text": "Trident Rock Spray 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Magnetic_Current",
+          "text": "Magnetic Current 18 → 14.4",
+          "before": 18,
+          "after": 14.4
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rock_Anchor",
+          "text": "Rock Anchor 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 280,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Murky_Water",
+          "text": "Murky Water 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Drake's_Breath",
+          "text": "Dagger Drake's Breath (PvE) 5 → 4",
+          "before": 5,
+          "after": 4
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Burning_Speed",
+          "text": "Burning Speed 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Ring_of_Fire_(elementalist_skill)",
+          "text": "Ring of Fire 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Fire_Grab",
+          "text": "Fire Grab 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Raging_Ricochet",
+          "text": "Pistol Raging Ricochet (PvE) 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Searing_Salvo",
+          "text": "Searing Salvo (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Dragon's_Tooth",
+          "text": "Scepter Dragon's Tooth (PvE) 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Phoenix",
+          "text": "Phoenix (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Flame_Uprising",
+          "text": "Sword Flame Uprising 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Cauterizing_Strike",
+          "text": "Cauterizing Strike 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Flamewall",
+          "text": "Focus Flamewall 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Fire_Shield",
+          "text": "Fire Shield 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Transmute_Fire",
+          "text": "Transmute Fire (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Heat_Sync",
+          "text": "Warhorn Heat Sync 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Wildfire",
+          "text": "Wildfire 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Surging_Flames",
+          "text": "Hammer Surging Flames 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Flame_Wheel",
+          "text": "Flame Wheel 18 → 14.4",
+          "before": 18,
+          "after": 14.4
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Triple_Sear",
+          "text": "Triple Sear (PvE) 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Molten_End",
+          "text": "Molten End (PvE) 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Lava_Font",
+          "text": "Staff Lava Font 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Flame_Burst",
+          "text": "Flame Burst 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Burning_Retreat",
+          "text": "Burning Retreat 18 → 14.4",
+          "before": 18,
+          "after": 14.4
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Meteor_Shower",
+          "text": "Meteor Shower 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Blazing_Barrage",
+          "text": "Spear Blazing Barrage 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Seethe",
+          "text": "Seethe 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Meteor",
+          "text": "Meteor (PvE) 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Etching:_Volcano",
+          "text": "Etching: Volcano 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Boil",
+          "text": "Trident Boil 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Steam_(elementalist_skill)",
+          "text": "Steam (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Lava_Chains",
+          "text": "Lava Chains (PvE) 16 → 12.8",
+          "before": 16,
+          "after": 12.8
+        }
+      },
+      {
+        "trait": 319,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Heat_Wave",
+          "text": "Heat Wave 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 557,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Holy_Strike",
+          "text": "Staff Holy Strike 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 557,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Symbol_of_Swiftness",
+          "text": "Symbol of Swiftness (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 557,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Empower",
+          "text": "Empower 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 557,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Line_of_Warding",
+          "text": "Line of Warding 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 567,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Zealot's_Flame",
+          "text": "Torch Zealot's Flame 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 567,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Cleansing_Flame",
+          "text": "Cleansing Flame 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 580,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Shield_of_Judgment",
+          "text": "Shield Shield of Judgment 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 580,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Shield_of_Absorption",
+          "text": "Shield of Absorption 24 → 19.2",
+          "before": 24,
+          "after": 19.2
+        }
+      },
+      {
+        "trait": 580,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Lesser_Shield_of_Absorption",
+          "text": "Trait Lesser Shield of Absorption 24 → 19.2",
+          "before": 24,
+          "after": 19.2
+        }
+      },
+      {
+        "trait": 620,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Spear_of_Justice",
+          "text": "Spear of Justice 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 620,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Wings_of_Resolve",
+          "text": "Wings of Resolve 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 620,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Shield_of_Courage",
+          "text": "Shield of Courage (PvE, PvP) 45 → 38.25",
+          "before": 45,
+          "after": 38.25
+        }
+      },
+      {
+        "trait": 633,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Ray_of_Judgment",
+          "text": "Focus Ray of Judgment 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 633,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Shield_of_Wrath",
+          "text": "Shield of Wrath 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 653,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Whirling_Wrath",
+          "text": "Greatsword Whirling Wrath 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 653,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Leap_of_Faith",
+          "text": "Leap of Faith (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 653,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Symbol_of_Resolution",
+          "text": "Symbol of Resolution 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 653,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Binding_Blade",
+          "text": "Binding Blade 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 708,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Blurred_Frenzy",
+          "text": "Sword Blurred Frenzy 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 708,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Blade_Leap",
+          "text": "Blade Leap 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 708,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Illusionary_Leap",
+          "text": "Illusionary Leap 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 708,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Illusionary_Riposte",
+          "text": "Illusionary Riposte (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 708,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Phantasmal_Swordsman",
+          "text": "Phantasmal Swordsman (PvE) 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 708,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Feigned_Surge",
+          "text": "Spear Feigned Surge 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 708,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Phantasmal_Mariner",
+          "text": "Phantasmal Mariner 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 708,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Slipstream",
+          "text": "Slipstream 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 708,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Vortex",
+          "text": "Vortex 40 → 32",
+          "before": 40,
+          "after": 32
+        }
+      },
+      {
+        "trait": 751,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Temporal_Curtain",
+          "text": "Focus Temporal Curtain 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 751,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Phantasmal_Warden",
+          "text": "Phantasmal Warden 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 891,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Sandstorm_Shroud",
+          "text": "Trait Sandstorm Shroud (PvE) 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 891,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Voracious_Dive",
+          "text": "Voracious Dive 10 → 8.5",
+          "before": 10,
+          "after": 8.5
+        }
+      },
+      {
+        "trait": 970,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Splitblade",
+          "text": "Axe Splitblade (PvE) 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 970,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Winter's_Bite",
+          "text": "Winter's Bite 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 970,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Path_of_Scars",
+          "text": "Path of Scars 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 970,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Whirling_Defense",
+          "text": "Whirling Defense 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 1101,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Double_Arc",
+          "text": "Double Arc (PvE) 7 → 5.6",
+          "before": 7,
+          "after": 5.6
+        }
+      },
+      {
+        "trait": 1101,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Instinctive_Engage",
+          "text": "Instinctive Engage 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 1101,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Stalker's_Strike",
+          "text": "Stalker's Strike (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 1101,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Crippling_Talon",
+          "text": "Crippling Talon 1 → 0.8",
+          "before": 1,
+          "after": 0.8
+        }
+      },
+      {
+        "trait": 1101,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Throw_Torch",
+          "text": "Torch Throw Torch 1 → 0.8",
+          "before": 1,
+          "after": 0.8
+        }
+      },
+      {
+        "trait": 1101,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Bonfire",
+          "text": "Bonfire 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 1101,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Crippling_Talon",
+          "text": "Dagger Crippling Talon 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1101,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Throw_Torch",
+          "text": "Torch Throw Torch 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1333,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Savage_Leap",
+          "text": "Savage Leap (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 1333,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rend",
+          "text": "Rend 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 1333,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Impale_(warrior_sword_skill)",
+          "text": "Impale 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1333,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rip",
+          "text": "Rip 1 → 0.8",
+          "before": 1,
+          "after": 0.8
+        }
+      },
+      {
+        "trait": 1333,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Riposte",
+          "text": "Riposte 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1338,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Hundred_Blades",
+          "text": "Hundred Blades 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 1338,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Whirlwind_Attack",
+          "text": "Whirlwind Attack 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 1338,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Bladetrail",
+          "text": "Bladetrail 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1338,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rush",
+          "text": "Rush 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 1338,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Mariner's_Frenzy",
+          "text": "Spear Mariner's Frenzy 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 1338,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Barbed_Pull",
+          "text": "Barbed Pull 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 1338,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Parry",
+          "text": "Parry 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1338,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Tsunami_Slash",
+          "text": "Tsunami Slash 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 1369,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Cyclone_Axe",
+          "text": "Axe Cyclone Axe (PvE) 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 1369,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Throw_Axe",
+          "text": "Throw Axe 1 → 0.8",
+          "before": 1,
+          "after": 0.8
+        }
+      },
+      {
+        "trait": 1369,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Dual_Strike",
+          "text": "Dual Strike (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 1369,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Whirling_Axe",
+          "text": "Whirling Axe (PvE) 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1369,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Throw_Axe",
+          "text": "Axe Throw Axe (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 1417,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Dragon_Slash—Force",
+          "text": "Dragon Trigger Dragon Slash—Force 1 → 0.85",
+          "before": 1,
+          "after": 0.85
+        }
+      },
+      {
+        "trait": 1417,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Dragon_Slash—Boost",
+          "text": "Dragon Slash—Boost 1 → 0.85",
+          "before": 1,
+          "after": 0.85
+        }
+      },
+      {
+        "trait": 1417,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Dragon_Slash—Reach",
+          "text": "Dragon Slash—Reach 1 → 0.85",
+          "before": 1,
+          "after": 0.85
+        }
+      },
+      {
+        "trait": 1417,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Chant_of_Freedom",
+          "text": "Chant of Freedom (PvE) 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Cone_of_Cold",
+          "text": "Dagger Cone of Cold 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Frozen_Burst",
+          "text": "Frozen Burst (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Frost_Aura",
+          "text": "Frost Aura (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Transmute_Frost",
+          "text": "Transmute Frost (PvE) 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Cleansing_Wave",
+          "text": "Cleansing Wave (PvE, WvW) 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Frigid_Flurry",
+          "text": "Pistol Frigid Flurry (PvE) 5 → 4",
+          "before": 5,
+          "after": 4
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Frozen_Fusillade",
+          "text": "Frozen Fusillade 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Shatterstone",
+          "text": "Scepter Shatterstone (PvE) 3 → 2.4",
+          "before": 3,
+          "after": 2.4
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Water_Trident",
+          "text": "Water Trident (PvE) 1 → 0.8",
+          "before": 1,
+          "after": 0.8
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Riptide",
+          "text": "Sword Riptide (PvE) 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Aqua_Siphon",
+          "text": "Aqua Siphon 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Freezing_Gust",
+          "text": "Focus Freezing Gust 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Comet",
+          "text": "Comet 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Tidal_Surge",
+          "text": "Warhorn Tidal Surge 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Water_Globe",
+          "text": "Water Globe 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rain_of_Blows",
+          "text": "Hammer Rain of Blows 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Icy_Coil",
+          "text": "Icy Coil 18 → 14.4",
+          "before": 18,
+          "after": 14.4
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Crashing_Font",
+          "text": "Crashing Font 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Cleansing_Typhoon",
+          "text": "Cleansing Typhoon 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Ice_Spike",
+          "text": "Staff Ice Spike 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Geyser",
+          "text": "Geyser 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Frozen_Ground",
+          "text": "Frozen Ground (PvE, PvP) 30 → 24",
+          "before": 30,
+          "after": 24
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Healing_Rain",
+          "text": "Healing Rain 35 → 28",
+          "before": 35,
+          "after": 28
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Ice_Beam",
+          "text": "Spear Ice Beam 6 → 4.8",
+          "before": 6,
+          "after": 4.8
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Ripple",
+          "text": "Ripple (PvE) 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Undertow",
+          "text": "Undertow 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Etching:_Jökulhlaup",
+          "text": "Etching: Jökulhlaup 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Ice_Globe",
+          "text": "Trident Ice Globe (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Ice_Wall",
+          "text": "Ice Wall 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Undercurrent",
+          "text": "Undercurrent 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 1676,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Tidal_Wave",
+          "text": "Tidal Wave 25 → 20",
+          "before": 25,
+          "after": 20
+        }
+      },
+      {
+        "trait": 1698,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rapid_Fire",
+          "text": "Longbow Rapid Fire (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 1698,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Hunter's_Shot",
+          "text": "Hunter's Shot 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 1698,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Point-Blank_Shot",
+          "text": "Point-Blank Shot 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1698,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Barrage",
+          "text": "Barrage (PvE, PvP) 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 1698,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Coral_Shot",
+          "text": "Harpoon gun Coral Shot 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 1698,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Feeding_Frenzy_(ranger_skill)",
+          "text": "Feeding Frenzy 10 → 8",
+          "before": 10,
+          "after": 8
+        }
+      },
+      {
+        "trait": 1698,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Mercy_Shot",
+          "text": "Mercy Shot 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 1698,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Ink_Blast",
+          "text": "Ink Blast 18 → 14.4",
+          "before": 18,
+          "after": 14.4
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Bandage_Self",
+          "text": "Professionmechanic Bandage Self 17 → 14.45",
+          "before": 17,
+          "after": 14.45
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Blessing_of_Dwayna",
+          "text": "Blessing of Dwayna 40 → 34",
+          "before": 40,
+          "after": 34
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Leafy_Bandage",
+          "text": "Leafy Bandage 40 → 34",
+          "before": 40,
+          "after": 34
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Regenerating_Mist",
+          "text": "Regenerating Mist 18 → 15.3",
+          "before": 18,
+          "after": 15.3
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Static_Shock",
+          "text": "Static Shock 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Toss_Elixir_H",
+          "text": "Toss Elixir H 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Med_Pack_Drop",
+          "text": "Med Pack Drop 50 → 42.5",
+          "before": 50,
+          "after": 42.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Orbital_Strike",
+          "text": "Orbital Strike (PvE) 40 → 34",
+          "before": 40,
+          "after": 34
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Toss_Elixir_X",
+          "text": "Toss Elixir X 60 → 51",
+          "before": 60,
+          "after": 51
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Blessing_of_Kormir",
+          "text": "Blessing of Kormir 30 → 25.5",
+          "before": 30,
+          "after": 25.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Blessing_of_Lyssa",
+          "text": "Blessing of Lyssa 35 → 29.75",
+          "before": 35,
+          "after": 29.75
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Booby_Trap_(charr_skill)",
+          "text": "Booby Trap 45 → 38.25",
+          "before": 45,
+          "after": 38.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Confusing_Speech",
+          "text": "Confusing Speech 45 → 38.25",
+          "before": 45,
+          "after": 38.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Eat_Owl_Egg",
+          "text": "Eat Owl Egg 30 → 25.5",
+          "before": 30,
+          "after": 25.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Eat_Wurm_Egg",
+          "text": "Eat Wurm Egg 30 → 25.5",
+          "before": 30,
+          "after": 25.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Flashbang",
+          "text": "Flashbang 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Grenade_Barrage",
+          "text": "Grenade Barrage 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Grenade_Barrage_(underwater)",
+          "text": "Grenade Barrage 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Harpoon_(engineer_skill)",
+          "text": "Harpoon 8 → 6.8",
+          "before": 8,
+          "after": 6.8
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Healing_Mist",
+          "text": "Healing Mist 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Hidden_Pistols",
+          "text": "Hidden Pistols 30 → 25.5",
+          "before": 30,
+          "after": 25.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Invigorating_Roar",
+          "text": "Invigorating Roar 50 → 42.5",
+          "before": 50,
+          "after": 42.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Launch_Personal_Battering_Ram",
+          "text": "Launch Personal Battering Ram 12 → 10.2",
+          "before": 12,
+          "after": 10.2
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Med_Pack_Drop_(underwater)",
+          "text": "Med Pack Drop 60 → 51",
+          "before": 60,
+          "after": 51
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Mine_Field",
+          "text": "Mine Field 17 → 14.45",
+          "before": 17,
+          "after": 14.45
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Net_Attack",
+          "text": "Net Attack 38 → 32.3",
+          "before": 38,
+          "after": 32.3
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Pain_Transference",
+          "text": "Pain Transference 45 → 38.25",
+          "before": 45,
+          "after": 38.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rocket",
+          "text": "Rocket 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rocket_Kick",
+          "text": "Rocket Kick 15 → 12.75",
+          "before": 15,
+          "after": 12.75
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rumble",
+          "text": "Rumble 38 → 32.3",
+          "before": 38,
+          "after": 32.3
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Smoke_Bomb_(engineer_skill)",
+          "text": "Smoke Bomb 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Smoke_Vent",
+          "text": "Smoke Vent (PvE) 15 → 12.75",
+          "before": 15,
+          "after": 12.75
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Superspeed_(skill)",
+          "text": "Superspeed (PvE) 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Surprise_Shot_(engineer_skill)",
+          "text": "Surprise Shot (PvE, WvW) 8 → 6.8",
+          "before": 8,
+          "after": 6.8
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Throw_Napalm",
+          "text": "Throw Napalm 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Throw_Vine",
+          "text": "Throw Vine 45 → 38.25",
+          "before": 45,
+          "after": 38.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Throw_Wrench",
+          "text": "Throw Wrench (PvE) 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Toss_Elixir_B",
+          "text": "Toss Elixir B 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Toss_Elixir_C",
+          "text": "Toss Elixir C 16 → 13.6",
+          "before": 16,
+          "after": 13.6
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Toss_Elixir_R",
+          "text": "Toss Elixir R 90 → 76.5",
+          "before": 90,
+          "after": 76.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Toss_Elixir_S",
+          "text": "Toss Elixir S 45 → 38.25",
+          "before": 45,
+          "after": 38.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Toss_Elixir_U",
+          "text": "Toss Elixir U 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Toss_Elixir_X_(underwater)",
+          "text": "Toss Elixir X 120 → 102",
+          "before": 120,
+          "after": 102
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Vent_Radiation",
+          "text": "Vent Radiation 45 → 38.25",
+          "before": 45,
+          "after": 38.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Vine_Shield",
+          "text": "Vine Shield 45 → 38.25",
+          "before": 45,
+          "after": 38.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Reconstruction_Field",
+          "text": "Reconstruction Field (PvE) 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Bypass_Coating",
+          "text": "Bypass Coating (PvE) 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Chemical_Field",
+          "text": "Chemical Field 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Defense_Field",
+          "text": "Defense Field (PvE) 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Defense_Field_(underwater)",
+          "text": "Defense Field (PvE) 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Spare_Capacitor",
+          "text": "Spare Capacitor 24 → 20.4",
+          "before": 24,
+          "after": 20.4
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Cauterize",
+          "text": "Cauterize 30 → 25.5",
+          "before": 30,
+          "after": 25.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Blade_Burst",
+          "text": "Blade Burst (PvE) 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Flash_Spark",
+          "text": "Flash Spark 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Particle_Accelerator",
+          "text": "Particle Accelerator (PvE) 8 → 6.8",
+          "before": 8,
+          "after": 6.8
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Prismatic_Singularity",
+          "text": "Prismatic Singularity (PvE) 30 → 25.5",
+          "before": 30,
+          "after": 25.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Explosive_Knuckle",
+          "text": "Explosive Knuckle 15 → 12.75",
+          "before": 15,
+          "after": 12.75
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Rolling_Smash",
+          "text": "Rolling Smash 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Spark_Revolver",
+          "text": "Spark Revolver 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Core_Reactor_Shot",
+          "text": "Core Reactor Shot 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Crisis_Zone",
+          "text": "Crisis Zone (PvE, PvP) 30 → 25.5",
+          "before": 30,
+          "after": 25.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Discharge_Array",
+          "text": "Discharge Array 30 → 25.5",
+          "before": 30,
+          "after": 25.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Barrier_Burst",
+          "text": "Barrier Burst 30 → 25.5",
+          "before": 30,
+          "after": 25.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Jade_Mortar",
+          "text": "Jade Mortar 20 → 17",
+          "before": 20,
+          "after": 17
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Sky_Circus",
+          "text": "Sky Circus 30 → 25.5",
+          "before": 30,
+          "after": 25.5
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Symbiotic_Shielding",
+          "text": "Symbiotic Shielding (PvE, WvW) 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Controlled_Analysis",
+          "text": "Trait Controlled Analysis 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1872,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Invisible_Analysis",
+          "text": "Invisible Analysis 25 → 21.25",
+          "before": 25,
+          "after": 21.25
+        }
+      },
+      {
+        "trait": 1899,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Symbol_of_Faith",
+          "text": "Mace Symbol of Faith 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 1899,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Protector's_Strike",
+          "text": "Protector's Strike 15 → 12",
+          "before": 15,
+          "after": 12
+        }
+      },
+      {
+        "trait": 1912,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Poison_Volley",
+          "text": "Poison Volley (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 1912,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Quick_Shot",
+          "text": "Quick Shot (PvE) 8 → 6.4",
+          "before": 8,
+          "after": 6.4
+        }
+      },
+      {
+        "trait": 1912,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Crippling_Shot",
+          "text": "Crippling Shot 12 → 9.6",
+          "before": 12,
+          "after": 9.6
+        }
+      },
+      {
+        "trait": 1912,
+        "reason": "No independently verified skill page in snapshot",
+        "table": {
+          "title": "Concussion_Shot",
+          "text": "Concussion Shot 20 → 16",
+          "before": 20,
+          "after": 16
+        }
+      },
+      {
+        "trait": 473,
+        "target": 5937,
+        "reason": "Super Elixir lists 6 actual pulses; exact HGH duration/pulse combination requires independent evidence, only extra boons projected"
+      },
+      {
+        "trait": 2298,
+        "target": 63253,
+        "reason": "J-Drive table says +12% but current Force Signet base says +15%; no guessed +18%"
+      },
+      {
+        "trait": 2298,
+        "target": 63049,
+        "reason": "Passive pulse base 314 is listed without its traited healing coefficient; formula multiplier withheld"
+      },
+      {
+        "trait": 2112,
+        "target": 42297,
+        "reason": "Sand Savant notes table lists PvE 8→10 seconds but independent Manifest Sand Shade tooltip says 15 seconds; charge recharge withheld"
+      },
+      {
+        "trait": 1070,
+        "reason": "Moment of Clarity stun/daze and sigil combination requires independent control projection evidence"
+      },
+      {
+        "trait": 1502,
+        "reason": "Stormsoul stun and sigil combination requires independent control projection evidence"
+      },
+      {
+        "trait": 2411,
+        "reason": "Kinetic Insight is combat only; no unconditional Release Potential cooldown projection"
+      },
+      {
+        "trait": 2379,
+        "reason": "Enhanced Embodiment is combat only; no unconditional legend cooldown projection"
+      },
+      {
+        "trait": 2431,
+        "reason": "Meticulous Custodian artifact-specific enhancements require independent skill pages"
+      },
+      {
+        "trait": 2437,
+        "reason": "Specialized Elements familiar/attunement triggers require separate conditional modeling"
+      }
+    ],
+    "durations": [
+      {
+        "trait": 433,
+        "name": "燃烧火药",
+        "effects": [
+          "Burning"
+        ],
+        "bonus": 33,
+        "source": {
+          "title": "Incendiary_Powder",
+          "revision": 2655474
+        }
+      },
+      {
+        "trait": 515,
+        "name": "抑制凝血",
+        "effects": [
+          "Bleeding"
+        ],
+        "bonus": 33,
+        "source": {
+          "title": "Serrated_Steel",
+          "revision": 3094923
+        }
+      },
+      {
+        "trait": 2383,
+        "name": "焦油成分",
+        "effects": [
+          "Poison"
+        ],
+        "bonus": 33,
+        "source": {
+          "title": "Carbolic_Composition",
+          "revision": 3081045
+        }
+      },
+      {
+        "trait": 1291,
+        "name": "强效毒药",
+        "effects": [
+          "Poison"
+        ],
+        "bonus": 33,
+        "source": {
+          "title": "Potent_Poison",
+          "revision": 2630304
+        }
+      },
+      {
+        "trait": 363,
+        "name": "碎冰穿刺",
+        "effects": [
+          "Vulnerability"
+        ],
+        "bonus": 33,
+        "source": {
+          "title": "Piercing_Shards",
+          "revision": 3128169
+        }
+      },
+      {
+        "trait": 1507,
+        "name": "锯齿之岩",
+        "effects": [
+          "Bleeding"
+        ],
+        "bonus": 20,
+        "source": {
+          "title": "Serrated_Stones",
+          "revision": 2842822
+        }
+      },
+      {
+        "trait": 802,
+        "name": "倒刺精准",
+        "effects": [
+          "Bleeding"
+        ],
+        "bonus": 20,
+        "source": {
+          "title": "Barbed_Precision",
+          "revision": 2626596
+        }
+      },
+      {
+        "trait": 892,
+        "name": "死亡恐惧",
+        "effects": [
+          "Fear"
+        ],
+        "bonus": 100,
+        "source": {
+          "title": "Fear_of_Death",
+          "revision": 2366250
+        }
+      },
+      {
+        "trait": 1879,
+        "name": "恐惧寒栗",
+        "effects": [
+          "Chilled"
+        ],
+        "bonus": 20,
+        "source": {
+          "title": "Shivers_of_Dread",
+          "revision": 3128978
+        }
+      },
+      {
+        "trait": 1744,
+        "name": "强烈渴嗜",
+        "effects": [
+          "Bleeding",
+          "Burning",
+          "Poison",
+          "Confusion",
+          "Torment"
+        ],
+        "bonus": 10,
+        "source": {
+          "title": "Yearning_Empowerment",
+          "revision": 3058259
+        }
+      },
+      {
+        "trait": 2079,
+        "name": "鲜血狂怒",
+        "effects": [
+          "Bleeding"
+        ],
+        "bonus": 25,
+        "gate": "fury",
+        "source": {
+          "title": "Blood_Fury",
+          "revision": 2655477
+        }
+      }
+    ],
     "professions": [
       "Mesmer",
       "Guardian",
-      "Warrior"
+      "Warrior",
+      "Engineer",
+      "Ranger",
+      "Thief",
+      "Elementalist",
+      "Necromancer",
+      "Revenant"
     ]
   },
   "entries": {

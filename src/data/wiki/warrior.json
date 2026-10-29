@@ -3598,12 +3598,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -4108,12 +4105,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -4348,12 +4342,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -4769,12 +4760,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -5998,12 +5986,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -6372,12 +6357,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -7073,12 +7055,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -7435,12 +7414,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -7889,12 +7865,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -8116,12 +8089,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -8265,12 +8235,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -8440,12 +8407,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -9336,12 +9300,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -9521,12 +9482,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -9742,12 +9700,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -9912,12 +9867,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -10122,12 +10074,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -10366,12 +10315,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -10631,12 +10577,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -10794,12 +10737,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -11022,12 +10962,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -11246,12 +11183,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -11424,12 +11358,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -11588,12 +11519,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -11841,12 +11769,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -12148,12 +12073,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -12337,12 +12259,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -13089,12 +13008,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -13271,12 +13187,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -13466,12 +13379,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -13662,12 +13572,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -13858,12 +13765,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -14054,12 +13958,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -14250,12 +14151,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -14444,12 +14342,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -14603,12 +14498,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -14762,12 +14654,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -14921,12 +14810,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -15080,12 +14966,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -15239,12 +15122,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -15404,12 +15284,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "4.25 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -15886,12 +15763,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "12.75 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -16413,12 +16287,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -16607,12 +16478,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"
@@ -16801,12 +16669,9 @@
             },
             "changes": [
               {
-                "type": "replace",
+                "type": "number",
                 "label": "冷却时间",
-                "row": {
-                  "label": "冷却时间",
-                  "detail": "6.8 秒"
-                }
+                "factor": 0.85
               }
             ],
             "traitName": "通用威力"

@@ -1,6 +1,6 @@
 {
   "name": "p12-gw2-build-tools",
-  "version": "0.6.10",
+  "version": "0.6.11",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,13 +10,14 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "tsx --test src/domain.test.ts src/attributes.test.ts src/game-details.test.ts src/library.test.ts src/build-description.test.ts src/collection.test.ts scripts/catalog-transforms.test.mjs scripts/data-source-policy.test.mjs scripts/wiki-details.test.mjs src/consumables.test.ts scripts/consumable-wiki.test.mjs src/weapon-skills.test.ts src/effect-durations.test.ts src/profession-mechanics.test.ts src/infusions.test.ts",
+    "test": "tsx --test src/domain.test.ts src/attributes.test.ts src/game-details.test.ts src/trait-modifiers.test.ts src/build-image.test.ts src/markdown-style.test.ts src/markdown-table.test.ts src/library.test.ts src/build-description.test.ts src/collection.test.ts scripts/catalog-transforms.test.mjs scripts/data-source-policy.test.mjs scripts/wiki-details.test.mjs scripts/pages-scope.test.mjs src/consumables.test.ts scripts/consumable-wiki.test.mjs src/weapon-skills.test.ts src/effect-durations.test.ts src/profession-mechanics.test.ts src/infusions.test.ts",
     "data:mechanics": "node scripts/sync-profession-mechanics.mjs",
     "data:mechanics:check": "tsx scripts/check-profession-mechanics.ts",
     "data:structure": "node scripts/sync-data-structure.mjs",
     "data:structure:check": "node scripts/sync-data-structure.mjs --check",
     "data:update": "node scripts/update-data.mjs",
     "test:e2e": "playwright test",
+    "test:bd": "playwright test tests/published-builds.spec.ts --workers=2",
     "test:compat": "playwright test --config playwright.compat.config.ts",
     "test:workflow": "tsx scripts/verify-bd-workflow.ts",
     "release:check": "node scripts/check-release.mjs",
@@ -27,11 +28,14 @@
     "data:pve": "node scripts/sync-pve-traits.mjs",
     "data:descriptions": "node scripts/sync-game-descriptions.mjs",
     "data:wiki": "node scripts/sync-wiki-details.mjs",
+    "data:trait-modifiers:check": "node scripts/check-trait-modifiers.mjs",
     "data:consumables": "node scripts/sync-consumables.mjs",
     "data:weapons": "node scripts/sync-weapon-skills.mjs"
   },
   "dependencies": {
+    "css-tree": "^3.2.1",
     "fflate": "^0.8.2",
+    "html2canvas": "^1.4.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-markdown": "^10.1.0",
@@ -40,6 +44,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1",
+    "@types/css-tree": "^3.2.0",
     "@types/node": "^26.6.5",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",

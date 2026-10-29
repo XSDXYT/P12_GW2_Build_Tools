@@ -3,7 +3,13 @@
   "professions": [
     "Mesmer",
     "Guardian",
-    "Warrior"
+    "Warrior",
+    "Engineer",
+    "Ranger",
+    "Thief",
+    "Elementalist",
+    "Necromancer",
+    "Revenant"
   ],
   "rules": [
     {
@@ -646,6 +652,3835 @@
           }
         }
       ]
+    },
+    {
+      "id": "grenadier-radius",
+      "trait": 514,
+      "revision": 2990846,
+      "evidence": "Radius Increase: 60",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5882,
+          "revision": 3123237,
+          "guards": [
+            {
+              "label": "爆炸半径",
+              "detail": "120"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "爆炸半径",
+              "factor": 1,
+              "add": 60
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5807,
+          "revision": 3128690,
+          "guards": [
+            {
+              "label": "爆炸半径",
+              "detail": "120"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "爆炸半径",
+              "factor": 1,
+              "add": 60
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5808,
+          "revision": 2777029,
+          "guards": [
+            {
+              "label": "爆炸半径",
+              "detail": "120"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "爆炸半径",
+              "factor": 1,
+              "add": 60
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5809,
+          "revision": 2840067,
+          "guards": [
+            {
+              "label": "爆炸半径",
+              "detail": "120"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "爆炸半径",
+              "factor": 1,
+              "add": 60
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5806,
+          "revision": 2969635,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "120"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "半径",
+              "factor": 1,
+              "add": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hgh-base-durations",
+      "trait": 473,
+      "revision": 3163406,
+      "evidence": "Duration Increase: 20%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5821,
+          "revision": 2990854,
+          "guards": [
+            {
+              "label": "激怒",
+              "detail": "10 秒 · +25% 暴击率"
+            },
+            {
+              "label": "威能",
+              "detail": "10 秒 · 5 层"
+            },
+            {
+              "label": "决心",
+              "detail": "10 秒"
+            },
+            {
+              "label": "迅捷",
+              "detail": "10 秒 · +33% 移动速度"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "激怒",
+              "factor": 1.2
+            },
+            {
+              "type": "duration",
+              "label": "威能",
+              "factor": 1.2
+            },
+            {
+              "type": "duration",
+              "label": "决心",
+              "factor": 1.2
+            },
+            {
+              "type": "duration",
+              "label": "迅捷",
+              "factor": 1.2
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5832,
+          "revision": 2882042,
+          "guards": [
+            {
+              "label": "飓风形态",
+              "detail": "15 秒"
+            },
+            {
+              "label": "怒神附体",
+              "detail": "15 秒"
+            },
+            {
+              "label": "巫妖形态",
+              "detail": "15 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "飓风形态",
+              "factor": 1.2
+            },
+            {
+              "type": "duration",
+              "label": "怒神附体",
+              "factor": 1.2
+            },
+            {
+              "type": "duration",
+              "label": "巫妖形态",
+              "factor": 1.2
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5834,
+          "revision": 2689978,
+          "guards": [
+            {
+              "label": "保护",
+              "detail": "2 秒 · -33% 受到的伤害"
+            },
+            {
+              "label": "再生",
+              "detail": "4 秒"
+            },
+            {
+              "label": "迅捷",
+              "detail": "4 秒 · +33% 移动速度"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "保护",
+              "factor": 1.2
+            },
+            {
+              "type": "duration",
+              "label": "再生",
+              "factor": 1.2
+            },
+            {
+              "type": "duration",
+              "label": "迅捷",
+              "factor": 1.2
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5861,
+          "revision": 2840048,
+          "guards": [
+            {
+              "label": "持续时间",
+              "detail": "3 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "持续时间",
+              "factor": 1.2
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5862,
+          "revision": 3179376,
+          "guards": [
+            {
+              "label": "急速",
+              "detail": "6 秒"
+            },
+            {
+              "label": "稳固",
+              "detail": "6 秒 · 2 层"
+            },
+            {
+              "label": "活力",
+              "detail": "6 秒 · +50% 耐力回复速度"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "急速",
+              "factor": 1.2
+            },
+            {
+              "type": "duration",
+              "label": "稳固",
+              "factor": 1.2
+            },
+            {
+              "type": "duration",
+              "label": "活力",
+              "factor": 1.2
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5936,
+          "revision": 3110849,
+          "guards": [
+            {
+              "label": "持续时间",
+              "detail": "5 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "持续时间",
+              "factor": 1.2
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 30032,
+          "revision": 2690111,
+          "guards": [
+            {
+              "label": "持续时间",
+              "detail": "5 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "持续时间",
+              "factor": 1.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hgh-extra-boons",
+      "trait": 473,
+      "revision": 3163406,
+      "evidence": "Fury (4s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5821,
+          "revision": 2990854,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外威能",
+                "detail": "15 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "额外激怒",
+                "detail": "4 秒",
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5832,
+          "revision": 2882042,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外威能",
+                "detail": "15 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "额外激怒",
+                "detail": "4 秒",
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5834,
+          "revision": 2689978,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外威能",
+                "detail": "15 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "额外激怒",
+                "detail": "4 秒",
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5860,
+          "revision": 3205610,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外威能",
+                "detail": "15 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "额外激怒",
+                "detail": "4 秒",
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5861,
+          "revision": 2840048,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外威能",
+                "detail": "15 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "额外激怒",
+                "detail": "4 秒",
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5862,
+          "revision": 3179376,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外威能",
+                "detail": "15 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "额外激怒",
+                "detail": "4 秒",
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5936,
+          "revision": 3110849,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外威能",
+                "detail": "15 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "额外激怒",
+                "detail": "4 秒",
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5937,
+          "revision": 2956317,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外威能",
+                "detail": "15 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "额外激怒",
+                "detail": "4 秒",
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5968,
+          "revision": 2991321,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外威能",
+                "detail": "15 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "额外激怒",
+                "detail": "4 秒",
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 30032,
+          "revision": 2690111,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外威能",
+                "detail": "15 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "额外激怒",
+                "detail": "4 秒",
+                "trigger": "每次使用药剂时，仅一次"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gadgeteer-aed",
+      "trait": 1679,
+      "revision": 2998219,
+      "evidence": "Increases duration to 8 seconds.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 21659,
+          "revision": 3206114,
+          "guards": [
+            {
+              "label": "自动除颤",
+              "detail": "5 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "自动除颤",
+              "factor": 1,
+              "add": 3
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "电击光环",
+                "detail": "",
+                "trigger": "自动除颤阻止致命伤害时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gadgeteer-ram",
+      "trait": 1679,
+      "revision": 2998219,
+      "evidence": "inflicts burning for 3s.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5811,
+          "revision": 2840074,
+          "guards": [
+            {
+              "label": "击飞",
+              "detail": "450"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "击飞",
+              "factor": 1,
+              "add": 150
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "燃烧",
+                "detail": "3 秒"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "爆炸",
+                "detail": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gadgeteer-boots",
+      "trait": 1679,
+      "revision": 2998219,
+      "evidence": "Grants Superspeed for 2s after landing.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5910,
+          "revision": 2689952,
+          "guards": [
+            {
+              "label": "火箭距离",
+              "detail": "900"
+            },
+            {
+              "label": "射程",
+              "detail": "900"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "火箭距离",
+              "factor": 1,
+              "add": 300
+            },
+            {
+              "type": "number",
+              "label": "射程",
+              "factor": 1,
+              "add": 300
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "奔驰疾速",
+                "detail": "2 秒",
+                "trigger": "落地时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gadgeteer-mine",
+      "trait": 1679,
+      "revision": 2998219,
+      "evidence": "Causes you to drop a second mine at your location when cast.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 6161,
+          "revision": 2750035,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外地雷",
+                "detail": "1",
+                "trigger": "施放时，在自身位置放置；单枚伤害与蔑视量不变"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gyro-radius-29739",
+      "trait": 1917,
+      "revision": 2675995,
+      "evidence": "Radius: 360",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 29739,
+          "revision": 2650010,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "半径",
+                "detail": "360"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gyro-radius-29921",
+      "trait": 1917,
+      "revision": 2675995,
+      "evidence": "Radius: 360",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 29921,
+          "revision": 2917110,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "240"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "半径",
+              "row": {
+                "label": "半径",
+                "detail": "360",
+                "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gyro-radius-30101",
+      "trait": 1917,
+      "revision": 2675995,
+      "evidence": "Radius: 360",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 30101,
+          "revision": 3205660,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "240"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "半径",
+              "row": {
+                "label": "半径",
+                "detail": "360",
+                "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gyro-radius-30357",
+      "trait": 1917,
+      "revision": 2675995,
+      "evidence": "Radius: 360",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 30357,
+          "revision": 2650014,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "240"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "半径",
+              "row": {
+                "label": "半径",
+                "detail": "360",
+                "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gyro-radius-30815",
+      "trait": 1917,
+      "revision": 2675995,
+      "evidence": "Radius: 360",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 30815,
+          "revision": 2788879,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "240"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "半径",
+              "row": {
+                "label": "半径",
+                "detail": "360",
+                "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gyro-radius-31248",
+      "trait": 1917,
+      "revision": 2675995,
+      "evidence": "Radius: 360",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 31248,
+          "revision": 2776618,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "240"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "半径",
+              "row": {
+                "label": "半径",
+                "detail": "360",
+                "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gyro-radius-72114",
+      "trait": 1917,
+      "revision": 2675995,
+      "evidence": "Radius: 360",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 72114,
+          "revision": 3210515,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "240"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "半径",
+              "row": {
+                "label": "半径",
+                "detail": "360",
+                "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gyro-superspeed",
+      "trait": 1917,
+      "revision": 2675995,
+      "evidence": "Superspeed (5s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 29739,
+          "revision": 2650010,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "奔驰疾速",
+                "detail": "5 秒",
+                "recipient": "附近盟友（最多5名）",
+                "trigger": "井首次脉冲；机能机械施放时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 29921,
+          "revision": 2917110,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "奔驰疾速",
+                "detail": "5 秒",
+                "recipient": "附近盟友（最多5名）",
+                "trigger": "井首次脉冲；机能机械施放时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 30101,
+          "revision": 3205660,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "奔驰疾速",
+                "detail": "5 秒",
+                "recipient": "附近盟友（最多5名）",
+                "trigger": "井首次脉冲；机能机械施放时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 30357,
+          "revision": 2650014,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "奔驰疾速",
+                "detail": "5 秒",
+                "recipient": "附近盟友（最多5名）",
+                "trigger": "井首次脉冲；机能机械施放时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 30815,
+          "revision": 2788879,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "奔驰疾速",
+                "detail": "5 秒",
+                "recipient": "附近盟友（最多5名）",
+                "trigger": "井首次脉冲；机能机械施放时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 31248,
+          "revision": 2776618,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "奔驰疾速",
+                "detail": "5 秒",
+                "recipient": "附近盟友（最多5名）",
+                "trigger": "井首次脉冲；机能机械施放时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 56920,
+          "revision": 3210515,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "奔驰疾速",
+                "detail": "5 秒",
+                "recipient": "附近盟友（最多5名）",
+                "trigger": "井首次脉冲；机能机械施放时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 72114,
+          "revision": 3210515,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "奔驰疾速",
+                "detail": "5 秒",
+                "recipient": "附近盟友（最多5名）",
+                "trigger": "井首次脉冲；机能机械施放时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j-drive-63095",
+      "trait": 2298,
+      "revision": 2569160,
+      "evidence": "Signet Effectiveness Increased: 20%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 63095,
+          "revision": 2730906,
+          "guards": [
+            {
+              "label": "冷却减少",
+              "detail": "20%"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "冷却减少",
+              "row": {
+                "label": "冷却减少",
+                "detail": "24%",
+                "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j-drive-63111",
+      "trait": 2298,
+      "revision": 2569160,
+      "evidence": "Signet Effectiveness Increased: 20%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 63111,
+          "revision": 2982620,
+          "guards": [
+            {
+              "label": "移动速度提高",
+              "detail": "25%"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "移动速度提高",
+              "row": {
+                "label": "移动速度提高",
+                "detail": "30%",
+                "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j-drive-63113",
+      "trait": 2298,
+      "revision": 2569160,
+      "evidence": "Signet Effectiveness Increased: 20%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 63113,
+          "revision": 3043552,
+          "guards": [
+            {
+              "label": "纹章被动",
+              "detail": "+10% 症状伤害"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "纹章被动",
+              "row": {
+                "label": "纹章被动",
+                "detail": "+12% 症状伤害"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j-drive-63262",
+      "trait": 2298,
+      "revision": 2569160,
+      "evidence": "Signet Effectiveness Increased: 20%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 63262,
+          "revision": 2695496,
+          "guards": [
+            {
+              "label": "屏障纹章",
+              "detail": "-10% 受到的伤害, -10% 受到的症状伤害"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "屏障纹章",
+              "row": {
+                "label": "屏障纹章",
+                "detail": "-12% 受到的伤害, -12% 受到的症状伤害",
+                "icon": "https://render.guildwars2.com/file/EB737C0D4462F5C5572166DEC2801DD56148AFE6/2503688.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trapper-conditions",
+      "trait": 1075,
+      "revision": 2691134,
+      "evidence": "Duration Increase: 60%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 12476,
+          "revision": 2690754,
+          "guards": [
+            {
+              "label": "流血",
+              "detail": "6.25 秒 · 6 层"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "流血",
+              "factor": 1.6
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 12492,
+          "revision": 2997917,
+          "guards": [
+            {
+              "label": "每秒冰冻",
+              "detail": "2 秒 · -66% 技能冷却恢复速度, -66% 移动速度"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "每秒冰冻",
+              "factor": 1.6
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 12496,
+          "revision": 2969594,
+          "guards": [
+            {
+              "label": "每次脉冲中毒",
+              "detail": "8 秒 · 2 层 · -33% 治疗效能"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "每次脉冲中毒",
+              "factor": 1.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trapper-healing-spring",
+      "trait": 1075,
+      "revision": 2691134,
+      "evidence": "increased by 66% to 5 seconds.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 12489,
+          "revision": 2961098,
+          "guards": [
+            {
+              "label": "再生",
+              "detail": "3 秒 · 6 层"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "再生",
+              "row": {
+                "label": "再生",
+                "detail": "5 秒 · 6 层",
+                "stacks": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trapper-flame",
+      "trait": 1075,
+      "revision": 2691134,
+      "evidence": "increased by 66% to 4.15 seconds.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 12499,
+          "revision": 2997916,
+          "guards": [
+            {
+              "label": "每次脉冲燃烧",
+              "detail": "2.5 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "每次脉冲燃烧",
+              "row": {
+                "label": "每次脉冲燃烧",
+                "detail": "4.15 秒"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trapper-cripple",
+      "trait": 1075,
+      "revision": 2691134,
+      "evidence": "Offensive traps inflict cripple.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 12476,
+          "revision": 2690754,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "致残",
+                "detail": "3 秒",
+                "trigger": "陷阱触发时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 12492,
+          "revision": 2997917,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "致残",
+                "detail": "3 秒",
+                "trigger": "陷阱触发时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 12496,
+          "revision": 2969594,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "致残",
+                "detail": "3 秒",
+                "trigger": "陷阱触发时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deadly-ambush",
+      "trait": 1706,
+      "revision": 3016217,
+      "evidence": "3 Bleeding (10s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 13014,
+          "revision": 2790574,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "流血",
+                "detail": "10 秒 · 3 层",
+                "stacks": 3,
+                "trigger": "偷窃命中敌人时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 43390,
+          "revision": 3179818,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "流血",
+                "detail": "10 秒 · 3 层",
+                "stacks": 3,
+                "trigger": "偷窃命中敌人时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 77397,
+          "revision": 3095246,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "流血",
+                "detail": "10 秒 · 3 层",
+                "stacks": 3,
+                "trigger": "偷窃命中敌人时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endurance-thief",
+      "trait": 1837,
+      "revision": 2655918,
+      "evidence": "Endurance Gained: 50",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 13014,
+          "revision": 2790574,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "耐力获取",
+                "detail": "50",
+                "trigger": "偷窃命中时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brawlers-tenacity",
+      "trait": 1949,
+      "revision": 3161344,
+      "evidence": "Endurance Gained: 15",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 29516,
+          "revision": 2768615,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "耐力获取",
+                "detail": "15",
+                "trigger": "使用体术时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 30369,
+          "revision": 3179387,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "耐力获取",
+                "detail": "15",
+                "trigger": "使用体术时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 30568,
+          "revision": 3171134,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "耐力获取",
+                "detail": "15",
+                "trigger": "使用体术时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 30661,
+          "revision": 2691176,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "耐力获取",
+                "detail": "15",
+                "trigger": "使用体术时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 30868,
+          "revision": 2690720,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "耐力获取",
+                "detail": "15",
+                "trigger": "使用体术时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quick-or-killed",
+      "trait": 2093,
+      "revision": 2631040,
+      "evidence": "Quickness (4s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 43390,
+          "revision": 3179818,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "急速",
+                "detail": "4 秒",
+                "trigger": "标记敌人时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "traversing-dusk",
+      "trait": 2285,
+      "revision": 3065828,
+      "evidence": "Resistance (3s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 63230,
+          "revision": 2840246,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "抗性",
+                "detail": "3 秒",
+                "recipient": "井范围内的盟友",
+                "trigger": "井的初始冲击时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63275,
+          "revision": 2836474,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "抗性",
+                "detail": "3 秒",
+                "recipient": "井范围内的盟友",
+                "trigger": "井的初始冲击时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63276,
+          "revision": 3128642,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "抗性",
+                "detail": "3 秒",
+                "recipient": "井范围内的盟友",
+                "trigger": "井的初始冲击时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63292,
+          "revision": 2768616,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "抗性",
+                "detail": "3 秒",
+                "recipient": "井范围内的盟友",
+                "trigger": "井的初始冲击时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63294,
+          "revision": 2874752,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "抗性",
+                "detail": "3 秒",
+                "recipient": "井范围内的盟友",
+                "trigger": "井的初始冲击时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63323,
+          "revision": 2989840,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "抗性",
+                "detail": "3 秒",
+                "recipient": "井范围内的盟友",
+                "trigger": "井的初始冲击时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "traversing-dusk-heal",
+      "trait": 2285,
+      "revision": 3065828,
+      "evidence": "Heal allies in the area around you when you shadowstep.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 13002,
+          "revision": 3140125,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "治疗",
+                "detail": "645 + 0.1 × 治疗效果",
+                "healing": {
+                  "base": 645,
+                  "coefficient": 0.1
+                },
+                "recipient": "自身周围盟友（最多5名，半径360）",
+                "trigger": "战斗中暗影步时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 13064,
+          "revision": 2956545,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "治疗",
+                "detail": "645 + 0.1 × 治疗效果",
+                "healing": {
+                  "base": 645,
+                  "coefficient": 0.1
+                },
+                "recipient": "自身周围盟友（最多5名，半径360）",
+                "trigger": "战斗中暗影步时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63230,
+          "revision": 2840246,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "治疗",
+                "detail": "645 + 0.1 × 治疗效果",
+                "healing": {
+                  "base": 645,
+                  "coefficient": 0.1
+                },
+                "recipient": "自身周围盟友（最多5名，半径360）",
+                "trigger": "战斗中暗影步时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63275,
+          "revision": 2836474,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "治疗",
+                "detail": "645 + 0.1 × 治疗效果",
+                "healing": {
+                  "base": 645,
+                  "coefficient": 0.1
+                },
+                "recipient": "自身周围盟友（最多5名，半径360）",
+                "trigger": "战斗中暗影步时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63276,
+          "revision": 3128642,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "治疗",
+                "detail": "645 + 0.1 × 治疗效果",
+                "healing": {
+                  "base": 645,
+                  "coefficient": 0.1
+                },
+                "recipient": "自身周围盟友（最多5名，半径360）",
+                "trigger": "战斗中暗影步时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63292,
+          "revision": 2768616,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "治疗",
+                "detail": "645 + 0.1 × 治疗效果",
+                "healing": {
+                  "base": 645,
+                  "coefficient": 0.1
+                },
+                "recipient": "自身周围盟友（最多5名，半径360）",
+                "trigger": "战斗中暗影步时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63294,
+          "revision": 2874752,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "治疗",
+                "detail": "645 + 0.1 × 治疗效果",
+                "healing": {
+                  "base": 645,
+                  "coefficient": 0.1
+                },
+                "recipient": "自身周围盟友（最多5名，半径360）",
+                "trigger": "战斗中暗影步时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63323,
+          "revision": 2989840,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "治疗",
+                "detail": "645 + 0.1 × 治疗效果",
+                "healing": {
+                  "base": 645,
+                  "coefficient": 0.1
+                },
+                "recipient": "自身周围盟友（最多5名，半径360）",
+                "trigger": "战斗中暗影步时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sphere-specialist",
+      "trait": 2251,
+      "revision": 3128215,
+      "evidence": "Duration Increase: 50%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 62723,
+          "revision": 2970642,
+          "guards": [
+            {
+              "label": "决心",
+              "detail": "1 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "决心",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 62813,
+          "revision": 2970640,
+          "guards": [
+            {
+              "label": "威能",
+              "detail": "10 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "威能",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 62837,
+          "revision": 2970645,
+          "guards": [
+            {
+              "label": "保护",
+              "detail": "1 秒 · -33% 受到的伤害"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "保护",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 62940,
+          "revision": 2970643,
+          "guards": [
+            {
+              "label": "激怒",
+              "detail": "1 秒 · +25% 暴击率"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "激怒",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63396,
+          "revision": 2970640,
+          "guards": [
+            {
+              "label": "威能",
+              "detail": "10 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "威能",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63416,
+          "revision": 2970642,
+          "guards": [
+            {
+              "label": "决心",
+              "detail": "1 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "决心",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63439,
+          "revision": 2970643,
+          "guards": [
+            {
+              "label": "激怒",
+              "detail": "1 秒 · +25% 暴击率"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "激怒",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63454,
+          "revision": 2970645,
+          "guards": [
+            {
+              "label": "保护",
+              "detail": "1 秒 · -33% 受到的伤害"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "保护",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63458,
+          "revision": 2970640,
+          "guards": [
+            {
+              "label": "威能",
+              "detail": "10 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "威能",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63459,
+          "revision": 2970643,
+          "guards": [
+            {
+              "label": "激怒",
+              "detail": "1 秒 · +25% 暴击率"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "激怒",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63461,
+          "revision": 2970642,
+          "guards": [
+            {
+              "label": "决心",
+              "detail": "1 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "决心",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 63472,
+          "revision": 2970645,
+          "guards": [
+            {
+              "label": "保护",
+              "detail": "1 秒 · -33% 受到的伤害"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "保护",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 75391,
+          "revision": 2970640,
+          "guards": [
+            {
+              "label": "威能",
+              "detail": "10 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "威能",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 75399,
+          "revision": 2970643,
+          "guards": [
+            {
+              "label": "激怒",
+              "detail": "1 秒 · +25% 暴击率"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "激怒",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 75405,
+          "revision": 2970645,
+          "guards": [
+            {
+              "label": "保护",
+              "detail": "1 秒 · -33% 受到的伤害"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "保护",
+              "factor": 1.5
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 75406,
+          "revision": 2970642,
+          "guards": [
+            {
+              "label": "决心",
+              "detail": "1 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "决心",
+              "factor": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smothering-fire-aura",
+      "trait": 340,
+      "revision": 2946543,
+      "evidence": "Duration Increase: 33%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 30662,
+          "revision": 3021359,
+          "guards": [
+            {
+              "label": "火焰光环",
+              "detail": "4 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "duration",
+              "label": "火焰光环",
+              "factor": 1.33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "persisting-flames-fields",
+      "trait": 1510,
+      "revision": 2938218,
+      "evidence": "Duration Increase: 2 seconds",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5717,
+          "revision": 2887316,
+          "guards": [
+            {
+              "label": "持续时间",
+              "detail": "4 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "持续时间",
+              "factor": 1,
+              "add": 2
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5718,
+          "revision": 3021150,
+          "guards": [
+            {
+              "label": "持续时间",
+              "detail": "5 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "持续时间",
+              "factor": 1,
+              "add": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desert-empowerment",
+      "trait": 2080,
+      "revision": 3029008,
+      "evidence": "Barrier: 572 (1.0)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 42297,
+          "revision": 3169200,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外屏障",
+                "detail": "572 + 1 × 治疗效果",
+                "healing": {
+                  "base": 572,
+                  "coefficient": 1
+                },
+                "recipient": "附近盟友（最多5名，半径300）",
+                "trigger": "显形沙影时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 44946,
+          "revision": 3169200,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "额外屏障",
+                "detail": "572 + 1 × 治疗效果",
+                "healing": {
+                  "base": 572,
+                  "coefficient": 1
+                },
+                "recipient": "附近盟友（最多5名，半径300）",
+                "trigger": "显形沙影时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sand-savant-area",
+      "trait": 2112,
+      "revision": 2709385,
+      "evidence": "Radius Increase: 120",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 40813,
+          "revision": 2776523,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "180"
+            },
+            {
+              "label": "目标数",
+              "detail": "3"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "半径",
+              "factor": 1,
+              "add": 120
+            },
+            {
+              "type": "replace",
+              "label": "目标数",
+              "row": {
+                "label": "目标数",
+                "detail": "5",
+                "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 42297,
+          "revision": 3169200,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "180"
+            },
+            {
+              "label": "目标数",
+              "detail": "3"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "半径",
+              "factor": 1,
+              "add": 120
+            },
+            {
+              "type": "replace",
+              "label": "目标数",
+              "row": {
+                "label": "目标数",
+                "detail": "5",
+                "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 43448,
+          "revision": 3013937,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "180"
+            },
+            {
+              "label": "盟友目标数量",
+              "detail": "3"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "半径",
+              "factor": 1,
+              "add": 120
+            },
+            {
+              "type": "replace",
+              "label": "盟友目标数量",
+              "row": {
+                "label": "盟友目标数量",
+                "detail": "5",
+                "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 44428,
+          "revision": 3013938,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "180"
+            },
+            {
+              "label": "目标数",
+              "detail": "3"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "半径",
+              "factor": 1,
+              "add": 120
+            },
+            {
+              "type": "replace",
+              "label": "目标数",
+              "row": {
+                "label": "目标数",
+                "detail": "5",
+                "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 44663,
+          "revision": 2747807,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "180"
+            },
+            {
+              "label": "目标数",
+              "detail": "3"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "半径",
+              "factor": 1,
+              "add": 120
+            },
+            {
+              "type": "replace",
+              "label": "目标数",
+              "row": {
+                "label": "目标数",
+                "detail": "5",
+                "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 44946,
+          "revision": 3169200,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "180"
+            },
+            {
+              "label": "目标数",
+              "detail": "3"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "半径",
+              "factor": 1,
+              "add": 120
+            },
+            {
+              "type": "replace",
+              "label": "目标数",
+              "row": {
+                "label": "目标数",
+                "detail": "5",
+                "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sand-savant-count",
+      "trait": 2112,
+      "revision": 2709385,
+      "evidence": "Summon only one shade at a time.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 42297,
+          "revision": 3169200,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "同时存在的沙影",
+                "detail": "1"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 44946,
+          "revision": 3169200,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "同时存在的沙影",
+                "detail": "1"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desert-empowerment-alacrity",
+      "trait": 2080,
+      "revision": 3029008,
+      "evidence": "Alacrity (1½s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 41615,
+          "revision": 2932298,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "敏捷",
+                "detail": "1.5 秒",
+                "recipient": "获得屏障的目标",
+                "trigger": "此技能授予屏障时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 42297,
+          "revision": 3169200,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "敏捷",
+                "detail": "1.5 秒",
+                "recipient": "获得屏障的目标",
+                "trigger": "此技能授予屏障时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 42917,
+          "revision": 3139992,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "敏捷",
+                "detail": "1.5 秒",
+                "recipient": "获得屏障的目标",
+                "trigger": "此技能授予屏障时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 43148,
+          "revision": 2877863,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "敏捷",
+                "detail": "1.5 秒",
+                "recipient": "获得屏障的目标",
+                "trigger": "此技能授予屏障时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 43448,
+          "revision": 3013937,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "敏捷",
+                "detail": "1.5 秒",
+                "recipient": "获得屏障的目标",
+                "trigger": "此技能授予屏障时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 44663,
+          "revision": 2747807,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "敏捷",
+                "detail": "1.5 秒",
+                "recipient": "获得屏障的目标",
+                "trigger": "此技能授予屏障时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 44946,
+          "revision": 3169200,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "敏捷",
+                "detail": "1.5 秒",
+                "recipient": "获得屏障的目标",
+                "trigger": "此技能授予屏障时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "twisted-medicine",
+      "trait": 2220,
+      "revision": 2842805,
+      "evidence": "Number of Targets: 4",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 62514,
+          "revision": 3163242,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "盟友增益目标",
+                "detail": "4",
+                "recipient": "药剂落点范围内的其他盟友",
+                "trigger": "药剂增益同时授予盟友；不改变自身增益"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 62530,
+          "revision": 3169257,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "盟友增益目标",
+                "detail": "4",
+                "recipient": "药剂落点范围内的其他盟友",
+                "trigger": "药剂增益同时授予盟友；不改变自身增益"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 62646,
+          "revision": 3213413,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "盟友增益目标",
+                "detail": "4",
+                "recipient": "药剂落点范围内的其他盟友",
+                "trigger": "药剂增益同时授予盟友；不改变自身增益"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 62655,
+          "revision": 3163239,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "盟友增益目标",
+                "detail": "4",
+                "recipient": "药剂落点范围内的其他盟友",
+                "trigger": "药剂增益同时授予盟友；不改变自身增益"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 62662,
+          "revision": 3163241,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "盟友增益目标",
+                "detail": "4",
+                "recipient": "药剂落点范围内的其他盟友",
+                "trigger": "药剂增益同时授予盟友；不改变自身增益"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 62667,
+          "revision": 3163240,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "盟友增益目标",
+                "detail": "4",
+                "recipient": "药剂落点范围内的其他盟友",
+                "trigger": "药剂增益同时授予盟友；不改变自身增益"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doom-bolts",
+      "trait": 2203,
+      "revision": 3188980,
+      "evidence": "the 2 stacks is the combination of both strikes.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 62611,
+          "revision": 2685187,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "易伤",
+                "detail": "6 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "两次打击合计；每击1层"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doom-barrage",
+      "trait": 2203,
+      "revision": 3188980,
+      "evidence": "Additional Missiles: 2",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 62621,
+          "revision": 3182284,
+          "guards": [
+            {
+              "label": "打击次数",
+              "detail": "6"
+            },
+            {
+              "label": "伤害",
+              "detail": "系数 ×3.6 · 6 次命中"
+            },
+            {
+              "label": "折磨",
+              "detail": "3 秒 · 6 层"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "打击次数",
+              "factor": 1,
+              "add": 2
+            },
+            {
+              "type": "replace",
+              "label": "伤害",
+              "row": {
+                "label": "伤害",
+                "detail": "系数 ×4.8 · 8 次命中",
+                "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+              }
+            },
+            {
+              "type": "replace",
+              "label": "折磨",
+              "row": {
+                "label": "折磨",
+                "detail": "3 秒 · 8 层",
+                "icon": "https://render.guildwars2.com/file/10BABF2708CA3575730AC662A2E72EC292565B08/598887.png",
+                "stacks": 8
+              }
+            }
+          ]
+        }
+      ],
+      "evidenceSources": [
+        {
+          "kind": "skills",
+          "id": 62621,
+          "revision": 3182284,
+          "evidence": "Damage (8x): 1,280 (4.8)"
+        }
+      ]
+    },
+    {
+      "id": "doom-cut",
+      "trait": 2203,
+      "revision": 3188980,
+      "evidence": "Boons Converted to Conditions: 2",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 62672,
+          "revision": 2569230,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "增益转化为症状",
+                "detail": "2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doom-voracious-arc",
+      "trait": 2203,
+      "revision": 3188980,
+      "evidence": "Inflicts Fear instead of Daze.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 62539,
+          "revision": 2926863,
+          "guards": [
+            {
+              "label": "晕眩",
+              "detail": "0.5 秒"
+            },
+            {
+              "label": "蔑视伤害",
+              "detail": "100"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "晕眩",
+              "row": {
+                "label": "恐惧",
+                "detail": "1 秒"
+              }
+            },
+            {
+              "type": "replace",
+              "label": "蔑视伤害",
+              "row": {
+                "label": "蔑视伤害",
+                "detail": "100"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doom-vital-draw",
+      "trait": 2203,
+      "revision": 3188980,
+      "evidence": "Radius: 300",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 62563,
+          "revision": 2585861,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "240"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "半径",
+              "row": {
+                "label": "半径",
+                "detail": "300",
+                "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core-value-51667",
+      "trait": 1806,
+      "revision": 2656061,
+      "evidence": "Improve the effects of the True Nature skill.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 51667,
+          "revision": 2818624,
+          "guards": [
+            {
+              "label": "增益移除",
+              "detail": "2"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "增益移除",
+              "factor": 1,
+              "add": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core-value-51713",
+      "trait": 1806,
+      "revision": 2656061,
+      "evidence": "Improve the effects of the True Nature skill.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 51713,
+          "revision": 2818625,
+          "guards": [
+            {
+              "label": "症状移除",
+              "detail": "2"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "症状移除",
+              "factor": 1,
+              "add": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core-value-51714",
+      "trait": 1806,
+      "revision": 2656061,
+      "evidence": "Improve the effects of the True Nature skill.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 51714,
+          "revision": 2818626,
+          "guards": [
+            {
+              "label": "症状转移",
+              "detail": "2"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "症状转移",
+              "factor": 1,
+              "add": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core-value-51696",
+      "trait": 1806,
+      "revision": 2656061,
+      "evidence": "Improve the effects of the True Nature skill.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 51696,
+          "revision": 3013950,
+          "guards": [
+            {
+              "label": "持续时间延长",
+              "detail": "2 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "持续时间延长",
+              "factor": 1,
+              "add": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core-value-dwarf",
+      "trait": 1806,
+      "revision": 2656061,
+      "evidence": "Grant an additional stack of stability to allies.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 51675,
+          "revision": 2818628,
+          "guards": [
+            {
+              "label": "稳固",
+              "detail": "4 秒 · 2 层"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "稳固",
+              "row": {
+                "label": "稳固",
+                "detail": "4 秒 · 3 层",
+                "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                "stacks": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bold-heroic",
+      "trait": 2133,
+      "revision": 3170033,
+      "evidence": "Swiftness (6s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 44076,
+          "revision": 3033331,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "迅捷",
+                "detail": "6 秒",
+                "recipient": "盟友",
+                "trigger": "使用英勇指令时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bold-citadel",
+      "trait": 2133,
+      "revision": 3170033,
+      "evidence": "2 Vulnerability (6s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 42836,
+          "revision": 3035052,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "易伤",
+                "detail": "6 秒 · 2 层",
+                "stacks": 2,
+                "trigger": "每次军械命中时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bold-orders",
+      "trait": 2133,
+      "revision": 3170033,
+      "evidence": "4 Protection (1s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 45537,
+          "revision": 3033332,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "保护",
+                "detail": "1 秒 · 4 次脉冲",
+                "trigger": "每次脉冲授予盟友"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "righteous-orders",
+      "trait": 2182,
+      "revision": 3170015,
+      "evidence": "Radius Increase: 120",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 45537,
+          "revision": 3033332,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "240"
+            },
+            {
+              "label": "持续时间",
+              "detail": "4 秒"
+            },
+            {
+              "label": "敏捷",
+              "detail": "2 秒 · 4 层 · +25% 技能冷却恢复速度"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "半径",
+              "factor": 1,
+              "add": 120
+            },
+            {
+              "type": "number",
+              "label": "持续时间",
+              "factor": 1.5,
+              "add": 0
+            },
+            {
+              "type": "replace",
+              "label": "敏捷",
+              "row": {
+                "label": "敏捷",
+                "detail": "2 秒 · 6 层 · +25% 技能冷却恢复速度",
+                "icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png",
+                "stacks": 6
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "治疗",
+                "detail": "714",
+                "recipient": "盟友",
+                "trigger": "每次脉冲时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "righteous-bold-orders",
+      "trait": 2182,
+      "revision": 3170015,
+      "evidence": "Orders from Above grants more protection when Bold Reversal is equipped.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 45537,
+          "revision": 3033332,
+          "guards": [],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "保护",
+              "row": {
+                "label": "保护",
+                "detail": "1 秒 · 6 次脉冲",
+                "trigger": "每次脉冲授予盟友"
+              }
+            }
+          ]
+        }
+      ],
+      "requiresTraits": [2133],
+      "priority": 20
+    },
+    {
+      "id": "arboreum",
+      "trait": 2255,
+      "revision": 2786641,
+      "evidence": "Endurance Gained: 40",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 62757,
+          "revision": 2889220,
+          "guards": [
+            {
+              "label": "耐力获取",
+              "detail": "25"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "耐力获取",
+              "row": {
+                "label": "耐力获取",
+                "detail": "40",
+                "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "活力",
+                "detail": "9 秒",
+                "recipient": "自身与附近盟友（最多5名，半径360）",
+                "trigger": "使用能量融合时"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "盟友耐力获取",
+                "detail": "40",
+                "recipient": "附近盟友（最多5名，半径360）",
+                "trigger": "使用能量融合时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 72058,
+          "revision": 2889220,
+          "guards": [
+            {
+              "label": "耐力获取",
+              "detail": "25"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "耐力获取",
+              "row": {
+                "label": "耐力获取",
+                "detail": "40",
+                "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "活力",
+                "detail": "9 秒",
+                "recipient": "自身与附近盟友（最多5名，半径360）",
+                "trigger": "使用能量融合时"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "盟友耐力获取",
+                "detail": "40",
+                "recipient": "附近盟友（最多5名，半径360）",
+                "trigger": "使用能量融合时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "angsiyans-trust",
+      "trait": 2243,
+      "revision": 2857036,
+      "evidence": "no longer has an energy cost",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 62757,
+          "revision": 2889220,
+          "guards": [
+            {
+              "label": "能量消耗",
+              "detail": "10"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "能量消耗",
+              "row": {
+                "label": "能量消耗",
+                "detail": "0"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "获得能量",
+                "detail": "25",
+                "trigger": "战斗中使用能量融合时"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 72058,
+          "revision": 2889220,
+          "guards": [
+            {
+              "label": "能量消耗",
+              "detail": "10"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "能量消耗",
+              "row": {
+                "label": "能量消耗",
+                "detail": "0"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "获得能量",
+                "detail": "25",
+                "trigger": "战斗中使用能量融合时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reavers-curse",
+      "trait": 2259,
+      "revision": 3206177,
+      "evidence": "Recharge Reduced: 50%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 62757,
+          "revision": 2889220,
+          "guards": [
+            {
+              "label": "冷却时间",
+              "detail": "20 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "冷却时间",
+              "factor": 0.5,
+              "add": 0
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "掠夺诅咒",
+                "detail": "6 秒",
+                "trigger": "加强下一次闪避：伤害、治疗与屏障+100%；其他触发保留条件"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 72058,
+          "revision": 2889220,
+          "guards": [
+            {
+              "label": "冷却时间",
+              "detail": "20 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "冷却时间",
+              "factor": 0.5,
+              "add": 0
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "掠夺诅咒",
+                "detail": "6 秒",
+                "trigger": "加强下一次闪避：伤害、治疗与屏障+100%；其他触发保留条件"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fragmentation-signet-reflect",
+      "trait": 2035,
+      "revision": 3087267,
+      "evidence": "Applies Reflection to any source of Distortion.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 21750,
+          "revision": 2937050,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "反射投射物",
+                "detail": "",
+                "trigger": "激活纹章产生的失真期间"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 10236,
+          "revision": 2888185,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "反射投射物",
+                "detail": "",
+                "trigger": "激活纹章产生的失真期间"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 10232,
+          "revision": 3171622,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "反射投射物",
+                "detail": "",
+                "trigger": "激活纹章产生的失真期间"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 10234,
+          "revision": 2888186,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "反射投射物",
+                "detail": "",
+                "trigger": "激活纹章产生的失真期间"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 10247,
+          "revision": 3115829,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "反射投射物",
+                "detail": "",
+                "trigger": "激活纹章产生的失真期间"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 29519,
+          "revision": 3199892,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "反射投射物",
+                "detail": "",
+                "trigger": "激活纹章产生的失真期间"
+              }
+            }
+          ]
+        }
+      ],
+      "requiresTraits": [752]
+    },
+    {
+      "id": "hgh-acid-bomb-hits",
+      "trait": 473,
+      "revision": 3163406,
+      "evidence": "Duration Increase: 20%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5936,
+          "revision": 3110849,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "命中次数",
+                "detail": "7"
+              }
+            }
+          ]
+        }
+      ],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Acid_Bomb",
+          "revision": 3110849,
+          "evidence": "Acid Bomb will hit a total of 6 times, 7 when traited with HGH."
+        }
+      ]
+    },
+    {
+      "id": "gadgeteer-shoes",
+      "trait": 1679,
+      "revision": 2998219,
+      "evidence": "Adds stability and a stun break.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5825,
+          "revision": 3170241,
+          "guards": [
+            {
+              "label": "半径",
+              "detail": "60"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "半径",
+              "row": {
+                "label": "半径",
+                "detail": "90",
+                "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "稳固",
+                "detail": "4 秒 · 5 层",
+                "stacks": 5
+              }
+            },
+            {
+              "type": "append",
+              "row": {
+                "label": "解除昏迷",
+                "detail": ""
+              }
+            }
+          ]
+        }
+      ],
+      "evidenceSources": [
+        {
+          "kind": "skills",
+          "id": 5825,
+          "revision": 3170241,
+          "evidence": "grants 5 Stability for 4 seconds"
+        }
+      ]
+    },
+    {
+      "id": "gadgeteer-goggles",
+      "trait": 1679,
+      "revision": 2998219,
+      "evidence": "Grants barrier.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5865,
+          "revision": 3186504,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "屏障",
+                "detail": "2122 + 0.2 × 治疗效果",
+                "healing": {
+                  "base": 2122,
+                  "coefficient": 0.2
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "evidenceSources": [
+        {
+          "kind": "skills",
+          "id": 5865,
+          "revision": 3186504,
+          "evidence": "Grants 2122 + Healing Power * 0.2 Barrier with Gadgeteer."
+        }
+      ]
+    }
+  ],
+  "durationBonuses": [
+    {
+      "trait": 433,
+      "revision": 2655474,
+      "evidence": "Burning you inflict lasts longer",
+      "effects": ["Burning"],
+      "bonus": 33,
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "33%"
+      }
+    },
+    {
+      "trait": 515,
+      "revision": 3094923,
+      "evidence": "Duration Increase: 33%",
+      "effects": ["Bleeding"],
+      "bonus": 33,
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "33%"
+      }
+    },
+    {
+      "trait": 2383,
+      "revision": 3081045,
+      "evidence": "Poison you inflict lasts longer",
+      "effects": ["Poison"],
+      "bonus": 33,
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "33%"
+      }
+    },
+    {
+      "trait": 1291,
+      "revision": 2630304,
+      "evidence": "Poison you inflict has increased damage and duration",
+      "effects": ["Poison"],
+      "bonus": 33,
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "33%"
+      }
+    },
+    {
+      "trait": 363,
+      "revision": 3128169,
+      "evidence": "Vulnerability Duration Increased: 33%",
+      "effects": ["Vulnerability"],
+      "bonus": 33,
+      "guard": {
+        "label": "延长易伤持续时间",
+        "detail": "33%"
+      }
+    },
+    {
+      "trait": 1507,
+      "revision": 2842822,
+      "evidence": "Duration Increase: 20%",
+      "effects": ["Bleeding"],
+      "bonus": 20,
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "20%"
+      }
+    },
+    {
+      "trait": 802,
+      "revision": 2626596,
+      "evidence": "Duration Increase: 20%",
+      "effects": ["Bleeding"],
+      "bonus": 20,
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "20%"
+      }
+    },
+    {
+      "trait": 892,
+      "revision": 2366250,
+      "evidence": "Duration Increase: 100%",
+      "effects": ["Fear"],
+      "bonus": 100,
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "100%"
+      }
+    },
+    {
+      "trait": 1879,
+      "revision": 3128978,
+      "evidence": "Duration Increase: 20%",
+      "effects": ["Chilled"],
+      "bonus": 20,
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "20%"
+      }
+    },
+    {
+      "trait": 1744,
+      "revision": 3058259,
+      "evidence": "Damaging conditions you apply last longer",
+      "effects": ["Bleeding", "Burning", "Poison", "Confusion", "Torment"],
+      "bonus": 10,
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "10%"
+      }
+    },
+    {
+      "trait": 2079,
+      "revision": 2655477,
+      "evidence": "Bleeding Duration Increase: 25%",
+      "effects": ["Bleeding"],
+      "bonus": 25,
+      "guard": {
+        "label": "流血持续时间延长",
+        "detail": "25%"
+      },
+      "gate": "fury"
+    }
+  ],
+  "reviewedExclusions": [
+    {
+      "trait": 473,
+      "target": 5937,
+      "reason": "Super Elixir lists 6 actual pulses; exact HGH duration/pulse combination requires independent evidence, only extra boons projected"
+    },
+    {
+      "trait": 2298,
+      "target": 63253,
+      "reason": "J-Drive table says +12% but current Force Signet base says +15%; no guessed +18%"
+    },
+    {
+      "trait": 2298,
+      "target": 63049,
+      "reason": "Passive pulse base 314 is listed without its traited healing coefficient; formula multiplier withheld"
+    },
+    {
+      "trait": 2112,
+      "target": 42297,
+      "reason": "Sand Savant notes table lists PvE 8→10 seconds but independent Manifest Sand Shade tooltip says 15 seconds; charge recharge withheld"
+    },
+    {
+      "trait": 1070,
+      "reason": "Moment of Clarity stun/daze and sigil combination requires independent control projection evidence"
+    },
+    {
+      "trait": 1502,
+      "reason": "Stormsoul stun and sigil combination requires independent control projection evidence"
+    },
+    {
+      "trait": 2411,
+      "reason": "Kinetic Insight is combat only; no unconditional Release Potential cooldown projection"
+    },
+    {
+      "trait": 2379,
+      "reason": "Enhanced Embodiment is combat only; no unconditional legend cooldown projection"
+    },
+    {
+      "trait": 2431,
+      "reason": "Meticulous Custodian artifact-specific enhancements require independent skill pages"
+    },
+    {
+      "trait": 2437,
+      "reason": "Specialized Elements familiar/attunement triggers require separate conditional modeling"
     }
   ]
 }

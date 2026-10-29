@@ -193,12 +193,15 @@ test("元素主副协调联动技能与属性，预览不进入保存，刷新�
 
 test("武器资料失败保留编辑和草稿，并能单独重试", async ({ page }) => {
   const b = createBuild();
+  b.name = "武器资料重试验收";
   b.equipment.weapon1.weapon = "Rifle";
   b.description = "不能丢失的草稿";
   await page.route("**/weapon-skills.json", (route) =>
     route.fulfill({ status: 503, body: "temporarily unavailable" }),
   );
   await loadBuild(page, b);
+  await expect(page.getByLabel("主手 Ⅰ武器类型")).toHaveValue("Rifle");
+  await expect(page.getByLabel("BD描述Markdown")).toHaveValue(b.description!);
   const retry = page.getByRole("button", { name: "重新加载武器技能" });
   await expect(retry).toBeVisible();
   await page.getByLabel("BD描述Markdown").fill("修改后的草稿");

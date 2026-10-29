@@ -15,21 +15,39 @@ jobs:
     permissions:
       contents: read
       pages: read
+      actions: read
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
+      - name: Select validation scope
+        id: scope
+        run: node scripts/pages-scope.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - run: npm ci
       - run: npm run release:check
       - run: npm test
       - run: npm run build
         env:
           VITE_RELEASE_COMMIT: ${{ github.sha }}
-      - run: npx playwright install --with-deps chromium firefox webkit
+      - name: Install Chromium for BD-only validation
+        if: steps.scope.outputs.bd_only == 'true'
+        run: npx playwright install --with-deps --only-shell chromium
+      - name: Install browsers for full validation
+        if: steps.scope.outputs.bd_only != 'true'
+        run: npx playwright install --with-deps chromium firefox webkit
+      - name: BD-only validation
+        if: steps.scope.outputs.bd_only == 'true'
+        run: npm run test:bd
       - run: npm run test:e2e -- --workers=2
+        if: steps.scope.outputs.bd_only != 'true'
       - run: npm run test:compat -- --workers=2
+        if: steps.scope.outputs.bd_only != 'true'
       - run: node scripts/verify-build.mjs
       - run: npm run test:workflow
       - uses: actions/configure-pages@v5

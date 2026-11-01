@@ -172,7 +172,7 @@
       "weapon": ""
     },
     "weapon1": {
-      "statId": 1363,
+      "statId": 628,
       "runeId": null,
       "sigils": [
         74326,
@@ -195,7 +195,7 @@
       "weapon": ""
     },
     "weapon2": {
-      "statId": 1363,
+      "statId": 628,
       "runeId": null,
       "sigils": [
         74326,
@@ -207,7 +207,7 @@
       "weapon": "Scepter"
     },
     "offhand2": {
-      "statId": 1363,
+      "statId": 628,
       "runeId": null,
       "sigils": [
         72339,

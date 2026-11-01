@@ -6,7 +6,9 @@ import {
   type ReactNode,
 } from "react";
 import type { Build } from "../domain";
+import mistGoldCss from "../../public/markdown-styles/mist-gold.css?raw";
 import {
+  builtinMarkdownStyles,
   classicDescriptionStyle,
   descriptionStyleSchema,
   type DescriptionStyle,
@@ -24,7 +26,14 @@ export function DescriptionAppearanceProvider({
 }: {
   children: ReactNode;
 }) {
-  const [defaultStyle, setDefaultStyle] = useState<DescriptionStyle>();
+  const [defaultStyle, setDefaultStyle] = useState<
+    DescriptionStyle | undefined
+  >(() =>
+    descriptionStyleSchema.parse({
+      name: builtinMarkdownStyles[0].name,
+      css: mistGoldCss,
+    }),
+  );
   const [overrides, setOverrides] = useState(
     new Map<string, DescriptionStyle>(),
   );

@@ -68,11 +68,48 @@ test("三套模板切换、经典恢复、JSON/分享样式还原及引用浮层
   await expect(reader.getByLabel("CSS 样式", { exact: true })).toBeHidden();
   await reader.close();
   await picker.getByRole("button", { name: /经典样式/ }).click();
-  expect((await downloadBuild(page)).descriptionStyle).toBeUndefined();
+  expect((await downloadBuild(page)).descriptionStyle).toEqual({
+    name: "经典样式",
+    css: ".md-content {}",
+  });
   await page.getByRole("button", { name: "CSS 样式", exact: true }).click();
   await page
     .locator(".build-description")
     .screenshot({ path: "test-results/markdown-styles-collapsed-desktop.png" });
+});
+
+test("初始默认迷雾金笺，刷新保留程序默认，作者样式优先且不改旧BD或浏览器记录", async ({
+  page,
+}) => {
+  const bare = createBuild("Mesmer");
+  bare.name = "初始默认样式验收";
+  bare.description = "# 默认讲解\n\n无CSS字段的旧BD。";
+  await page.goto("/#build=" + encodeShare(bare));
+  const originalStorage = await page.evaluate(() =>
+    JSON.stringify(localStorage),
+  );
+  const preview = page.getByRole("region", { name: "BD描述预览" });
+  await expect(preview).toHaveCSS("background-color", "rgb(20, 42, 49)");
+  await page.getByRole("button", { name: "CSS 样式", exact: true }).click();
+  await expect(page.getByLabel("CSS 样式", { exact: true })).toContainText(
+    "默认：迷雾金笺",
+  );
+  expect(await downloadBuild(page)).toEqual(bare);
+  await page.reload();
+  await expect(preview).toHaveCSS("background-color", "rgb(20, 42, 49)");
+  const authored = {
+    ...bare,
+    descriptionStyle: {
+      name: "作者蓝",
+      css: ".md-content{background:#223344}",
+    },
+  };
+  await page.goto("/#build=" + encodeShare(authored));
+  await expect(preview).toHaveCSS("background-color", "rgb(34, 51, 68)");
+  expect(await downloadBuild(page)).toEqual(authored);
+  expect(await page.evaluate(() => JSON.stringify(localStorage))).toBe(
+    originalStorage,
+  );
 });
 
 test("导入CSS、修改预览与下载、无效CSS保护和放大编辑保留未应用样式草稿", async ({

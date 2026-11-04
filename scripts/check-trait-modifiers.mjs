@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import assert from "node:assert/strict";
 import { attachTraitModifiers } from "./wiki-trait-modifiers.mjs";
+import { wikiArticlePath } from "./wiki-cache-paths.mjs";
 
 // Read-only, completely offline audit. The reviewed config is never seeded/reset.
 const root = new URL("../", import.meta.url),
@@ -37,11 +38,9 @@ const generated = await attachTraitModifiers({
   catalog,
   readHtml: (kind, id) =>
     readFile(
-      file(
-        kind === "articles"
-          ? `data/wiki-cache/articles/${encodeURIComponent(id)}.html`
-          : `data/wiki-cache/${kind}-${id}.html`,
-      ),
+      kind === "articles"
+        ? wikiArticlePath(id)
+        : file(`data/wiki-cache/${kind}-${id}.html`),
       "utf8",
     ),
 });
@@ -62,7 +61,22 @@ assert.deepEqual(
   metadata.traitDurationBonuses,
   "Duration metadata differs",
 );
+assert.deepEqual(
+  snapshot.traitControlBonuses,
+  metadata.traitControlBonuses,
+  "Control-duration metadata differs",
+);
 assert.deepEqual(generated, audit.traitModifiers, "Modifier audit differs");
+assert.deepEqual(
+  snapshot.traitAttributeBonuses,
+  metadata.traitAttributeBonuses,
+  "Attribute metadata differs",
+);
+assert.deepEqual(
+  snapshot.traitWeaponReplacements,
+  metadata.traitWeaponReplacements,
+  "Weapon replacement metadata differs",
+);
 const coverage = {};
 for (const p of config.professions) {
   const ids = new Set(
@@ -76,11 +90,17 @@ for (const p of config.professions) {
   );
   const rules = generated.rules.filter((r) => ids.has(r.trait));
   const durations = generated.durations.filter((r) => ids.has(r.trait));
+  const controls = generated.controls.filter((r) => ids.has(r.trait));
+  const attributes = generated.attributes.filter((r) => ids.has(r.trait));
   coverage[p] = {
     rules: rules.length,
     targets: new Set(rules.map((r) => r.target)).size,
-    traits: new Set([...rules, ...durations].map((r) => r.trait)).size,
+    traits: new Set(
+      [...rules, ...durations, ...controls, ...attributes].map((r) => r.trait),
+    ).size,
     durationTraits: durations.length,
+    controlTraits: controls.length,
+    attributeTraits: attributes.length,
   };
 }
 console.log(

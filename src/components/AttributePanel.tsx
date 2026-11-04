@@ -102,21 +102,29 @@ export function AttributePanel() {
     breakdownTitle = "对盟友治疗加成";
     breakdown = result.outgoingHealingSources;
     formula =
-      "汇总已支持的食物、扳手和法印对其他盟友的治疗加成，各来源相加；不含其他特性、符文或古物倍率。保养油：治疗效果 × 0.006% + 增益效果 × 0.008%。不增加治疗效果属性；技能详情仍显示基础治疗，不套用此倍率或屏障加成。";
+      "汇总已支持的特性、食物、扳手、法印及职业机制对其他盟友的治疗加成，各来源相加。保养油：治疗效果 × 0.006% + 增益效果 × 0.008%；意志之力按当前体力计算。不增加治疗效果属性；技能详情仍按已有基础公式显示，不统一套用此倍率或屏障加成。";
   }
-  if (selected === "ControlDuration") {
-    breakdownTitle = "昏迷与晕眩时长加成";
-    breakdown = result.controlDurationSources;
+  if (
+    ["ControlDuration", "StunDuration", "DazeDuration"].includes(selected || "")
+  ) {
+    breakdownTitle =
+      selected === "StunDuration"
+        ? "昏迷时长加成"
+        : selected === "DazeDuration"
+          ? "晕眩时长加成"
+          : "昏迷与晕眩时长加成";
+    breakdown =
+      selected === "DazeDuration"
+        ? result.dazeDurationSources
+        : result.stunDurationSources;
     formula =
-      "仅汇总当前武器组已支持的瘫痪法印；同类不叠加。已核实技能的控制时长和蔑视伤害随之更新，不增加击倒、拉拽等其他控制的蔑视伤害。";
+      "当前武器组已支持的瘫痪法印与特性加成相加，上限100%；同类法印不叠加。醉生梦死影响昏迷和晕眩，风暴之魂仅影响昏迷。仅更新已核实技能对应的控制时长与蔑视伤害。";
   }
   if (selected === "CriticalDamage") {
     breakdownTitle = "暴击伤害";
-    breakdown = [
-      { label: "基础暴击伤害", amount: 150 },
-      { label: "暴击效果换算", amount: result.primary.CritDamage / 15 },
-    ];
-    formula = "150% + 暴击效果 ÷ 15。未支持的额外倍率会列在未计入清单。";
+    breakdown = result.criticalDamageSources;
+    formula =
+      "(150% + 暴击效果 ÷ 15) × 已生效的暴击伤害倍率；同一特性的奖励相加，不同特性倍率相乘。按当前目标条件预览，倍率不增加暴击效果属性，也不适用于非暴击或独立召唤物。";
   }
   if (
     selected === "ConditionBonus" ||
@@ -271,14 +279,35 @@ export function AttributePanel() {
             baseline.outgoingHealingBonus,
             true,
           )}
-          {!!result.controlDurationBonus &&
+          {!!result.stunDurationBonus &&
+            result.stunDurationBonus === result.dazeDurationBonus &&
             row(
               "ControlDuration",
               "昏迷与晕眩时长加成",
-              result.controlDurationBonus,
-              baseline.controlDurationBonus,
+              result.stunDurationBonus,
+              baseline.stunDurationBonus,
               true,
             )}
+          {result.stunDurationBonus !== result.dazeDurationBonus && (
+            <>
+              {!!result.stunDurationBonus &&
+                row(
+                  "StunDuration",
+                  "昏迷时长加成",
+                  result.stunDurationBonus,
+                  baseline.stunDurationBonus,
+                  true,
+                )}
+              {!!result.dazeDurationBonus &&
+                row(
+                  "DazeDuration",
+                  "晕眩时长加成",
+                  result.dazeDurationBonus,
+                  baseline.dazeDurationBonus,
+                  true,
+                )}
+            </>
+          )}
           {result.guaranteedCritical && (
             <p className="attribute-tip">
               远见生效：可暴击攻击必定暴击；基础暴击率保持原值。

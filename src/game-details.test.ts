@@ -20,6 +20,8 @@ import {
 } from "./attributes.ts";
 import { createBuild } from "./domain.ts";
 import { projectSigilControl, sigilControlRules } from "./sigil-control.ts";
+import { mergeSkillCatalog } from "./weapon-skills.ts";
+import { mergeMechanicCatalog } from "./profession-mechanics.ts";
 
 test("显式29项瘫痪规则匹配Wiki身份与版本，逐项投影并保留基础值", () => {
   for (const [id, rule] of Object.entries(sigilControlRules)) {
@@ -158,6 +160,13 @@ test("支配纹章瘫痪投影与模糊铭文失真共存，纯计算不修改�
 const catalog: Catalog = JSON.parse(
   readFileSync("public/catalog.json", "utf8"),
 );
+const completeSkillCatalog = mergeSkillCatalog(
+  mergeMechanicCatalog(catalog),
+  JSON.parse(readFileSync("public/weapon-skills.json", "utf8")).skills,
+);
+const branchIdentities = JSON.parse(
+  readFileSync("data/wiki-branch-api.json", "utf8"),
+);
 
 test("幻象回复按当前治疗效果计算，零值、灵刃和乐器各档保留独立公式", () => {
   const trait = catalog.traits.find((t) => t.id === 1866)!;
@@ -231,9 +240,11 @@ test("九职业所有明确治疗公式及关联分支均可纯计算，其他�
   let count = 0;
   for (const kind of ["traits", "skills"] as const)
     for (const [id, entry] of Object.entries(wikiSnapshot.entries[kind])) {
-      const entity = (kind === "traits" ? catalog.traits : catalog.skills).find(
-        (e) => e.id === +id,
-      )!;
+      const entity =
+        (kind === "traits" ? catalog.traits : completeSkillCatalog.skills).find(
+          (e) => e.id === +id,
+        ) || (kind === "skills" ? branchIdentities.zh[id] : undefined);
+      assert.ok(entity, `Missing bilingual identity for ${kind}/${id}`);
       const baseline = gameDetails(
         entity,
         kind === "traits" ? "trait" : "skill",
@@ -253,10 +264,21 @@ test("九职业所有明确治疗公式及关联分支均可纯计算，其他�
         ...model.facts,
         ...(model.branches || []).flatMap((b) => b.facts),
       ];
+      const otherCasterFacts = new Set(
+        (baseline.branches || [])
+          .filter((b) =>
+            /变形目标|召唤物|精魂攻击|元素雕文|小型元素雕文/.test(b.label),
+          )
+          .flatMap((b) => b.facts),
+      );
       assert.equal(facts.length, oldFacts.length);
       facts.forEach((fact, i) => {
         const old = oldFacts[i];
-        if (!old.healing) {
+        if (
+          !old.healing ||
+          model.durationScalingExcluded ||
+          otherCasterFacts.has(old)
+        ) {
           assert.deepEqual(fact, old);
           return;
         }
@@ -939,9 +961,7 @@ test("Wiki 页面 ID 不一致的技能只保留说明与来源，不从同名�
     assert.equal(model.description, gameText(entity.description));
     assert.equal(model.reviewed, false);
     assert.equal(model.mode, undefined);
-    assert.ok(
-      model.sourceUrl?.startsWith("https://wiki.wishingstar.top/wiki/"),
-    );
+    assert.ok(model.sourceUrl?.startsWith("https://wiki.guildwars2.com/wiki/"));
   }
 });
 

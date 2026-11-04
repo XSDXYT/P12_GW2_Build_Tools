@@ -9,6 +9,7 @@ export type ControlRule = {
   revision: number;
   defiance: number;
   control?: { label: string; seconds: number };
+  alternateControls?: { label: string; seconds: number }[];
 };
 export const sigilControlRules: Record<number, ControlRule> = {
   "76811": {
@@ -270,50 +271,86 @@ export const sigilControlRules: Record<number, ControlRule> = {
 export function projectSigilControl(
   facts: DetailFact[],
   id: number,
-  page: { title: string; revision: number; identityVerified?: boolean },
+  page: {
+    title: string;
+    revision: number;
+    identityVerified?: boolean;
+    controlRule?: ControlRule;
+  },
   bonus?: number,
+  traitBonuses: { name: string; effects: string[]; bonus: number }[] = [],
 ): DetailFact[] {
-  const rule = sigilControlRules[id];
+  const rule = page.controlRule || sigilControlRules[id];
+  const applicable = rule?.control
+    ? traitBonuses.filter(
+        (t) =>
+          t.effects.includes(rule.control!.label) &&
+          Number.isFinite(t.bonus) &&
+          t.bonus > 0,
+      )
+    : [];
   if (
     !rule ||
     page.identityVerified === false ||
     page.title !== rule.title ||
     page.revision !== rule.revision ||
-    !Number.isFinite(bonus) ||
-    !bonus ||
-    bonus < 0
+    (bonus != null && (!Number.isFinite(bonus) || bonus < 0))
   )
     return facts;
-  const amount = Math.min(100, bonus);
+  const amount = Math.min(
+    100,
+    (bonus || 0) + applicable.reduce((sum, t) => sum + t.bonus, 0),
+  );
+  if (!amount) return facts;
   const defiance = facts.filter((f) => f.label === "蔑视伤害");
-  const controls = rule.control
-    ? facts.filter((f) => f.label === rule.control!.label)
-    : [];
+  const controlDefinitions = [
+    rule.control,
+    ...(rule.alternateControls || []),
+  ].filter((c): c is { label: string; seconds: number } => !!c);
+  const controls = controlDefinitions.map((c) => ({
+    definition: c,
+    facts: facts.filter((f) => f.label === c.label),
+  }));
   if (
     defiance.length !== 1 ||
     defiance[0].modified ||
     defiance[0].detail !== String(rule.defiance) ||
-    (rule.control &&
-      (controls.length !== 1 ||
-        controls[0].modified ||
-        controls[0].detail !== `${rule.control.seconds} 秒`))
+    controls.some(
+      (c) =>
+        c.facts.length !== 1 ||
+        c.facts[0].modified ||
+        c.facts[0].detail !== `${c.definition.seconds} 秒`,
+    )
   )
     return facts;
   return facts.map((f) => {
+    const control = controls.find((c) => c.facts[0] === f)?.definition;
     const base =
-      f === defiance[0]
-        ? rule.defiance
-        : rule.control && f === controls[0]
-          ? rule.control.seconds
-          : undefined;
+      f === defiance[0] ? rule.defiance : control ? control.seconds : undefined;
     if (base == null) return f;
+    const rowTraits = control
+      ? traitBonuses.filter(
+          (t) =>
+            t.effects.includes(control.label) &&
+            Number.isFinite(t.bonus) &&
+            t.bonus > 0,
+        )
+      : applicable;
+    const rowAmount = control
+      ? Math.min(100, (bonus || 0) + rowTraits.reduce((s, t) => s + t.bonus, 0))
+      : amount;
+    if (!rowAmount) return f;
     return {
       ...f,
-      detail: `${Number((base * (1 + amount / 100)).toFixed(6))}${f === defiance[0] ? "" : " 秒"}`,
+      detail: `${Number((base * (1 + rowAmount / 100)).toFixed(6))}${f === defiance[0] ? "" : " 秒"}`,
+      modified: f.modified || rowTraits.length > 0,
       equipmentScaling: {
         base: f.detail,
-        bonus: amount,
-        source: "超级瘫痪法印",
+        bonus: rowAmount,
+        source: [
+          ...(bonus ? ["超级瘫痪法印"] : []),
+          ...rowTraits.map((t) => t.name),
+        ].join("、"),
       },
     };
   });

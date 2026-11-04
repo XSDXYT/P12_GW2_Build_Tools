@@ -1,5 +1,6 @@
 import { twoHanded, type Build, type Catalog, type Entity } from "./domain";
 import { wikiSnapshot } from "./wiki-details";
+import { activeTraits } from "./attributes";
 
 export const attunements = {
   Fire: "火焰",
@@ -106,6 +107,7 @@ export function weaponSkillSlots(
   const specs = build.specs.flatMap((s) => (s.id ? [s.id] : []));
   const weaver = build.profession === "Elementalist" && specs.includes(56);
   const byId = new Map(catalog.skills.map((s) => [s.id, s]));
+  const selectedTraits = new Set(activeTraits(build, catalog).map((t) => t.id));
   return [1, 2, 3, 4, 5].map((slot) => {
     const weapon = slot <= 3 || twoHanded.has(main) ? main : off;
     const definition = profession?.weapons?.[weapon];
@@ -167,6 +169,13 @@ export function weaponSkillSlots(
         Number(specs.includes(b.specialization)) -
         Number(specs.includes(a.specialization)),
     );
-    return valid[0];
+    const base = valid[0];
+    const replacement = wikiSnapshot.traitWeaponReplacements.find(
+      (r) =>
+        r.profession === build.profession &&
+        r.before === base?.id &&
+        selectedTraits.has(r.trait),
+    );
+    return (replacement && byId.get(replacement.after)) || base;
   });
 }

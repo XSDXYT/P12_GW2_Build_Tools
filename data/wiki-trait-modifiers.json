@@ -3869,7 +3869,9 @@
           ]
         }
       ],
-      "requiresTraits": [2133],
+      "requiresTraits": [
+        2133
+      ],
       "priority": 20
     },
     {
@@ -4191,7 +4193,9 @@
           ]
         }
       ],
-      "requiresTraits": [752]
+      "requiresTraits": [
+        752
+      ]
     },
     {
       "id": "hgh-acid-bomb-hits",
@@ -4311,6 +4315,703 @@
           "evidence": "Grants 2122 + Healing Power * 0.2 Barrier with Gadgeteer."
         }
       ]
+    },
+    {
+      "id": "j-drive-force-current-pve",
+      "trait": 2298,
+      "revision": 2569160,
+      "evidence": "Signet Effectiveness Increased: 20%",
+      "evidenceSources": [
+        {
+          "kind": "skills",
+          "id": 63253,
+          "revision": 2956326,
+          "evidence": "When using Mech Core: J-Drive, the damage increase is improved to 18%."
+        }
+      ],
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 63253,
+          "revision": 2956326,
+          "guards": [
+            {
+              "label": "斥力纹章",
+              "detail": "+15% 伤害"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "replace",
+          "label": "斥力纹章",
+          "row": {
+            "label": "斥力纹章",
+            "detail": "+18% 伤害"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sand-savant-current-charge",
+      "trait": 2112,
+      "revision": 2709385,
+      "evidence": "Recharge Increase: 25%",
+      "evidenceSources": [
+        {
+          "kind": "skills",
+          "id": 42297,
+          "revision": 3169200,
+          "evidence": "Count Recharge: 15 seconds"
+        }
+      ],
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 42297,
+          "revision": 3169200,
+          "guards": [
+            {
+              "label": "计数冷却时间",
+              "detail": "15 秒"
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 44946,
+          "revision": 3169200,
+          "guards": [
+            {
+              "label": "计数冷却时间",
+              "detail": "15 秒"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "number",
+          "label": "计数冷却时间",
+          "factor": 1.25
+        }
+      ]
+    },
+    {
+      "id": "kinetic-insight-qualified",
+      "trait": 2411,
+      "revision": 3127313,
+      "evidence": "Recharge Reduced: 20%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 78501,
+          "revision": 3104126,
+          "guards": [
+            {
+              "label": "冷却时间",
+              "detail": "10 秒"
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 78615,
+          "revision": 3206179,
+          "guards": [
+            {
+              "label": "冷却时间",
+              "detail": "10 秒"
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 78661,
+          "revision": 3104124,
+          "guards": [
+            {
+              "label": "冷却时间",
+              "detail": "10 秒"
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 78845,
+          "revision": 3206178,
+          "guards": [
+            {
+              "label": "冷却时间",
+              "detail": "10 秒"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "战斗中冷却时间",
+            "detail": "8 秒",
+            "trigger": "战斗中"
+          }
+        },
+        {
+          "type": "append",
+          "row": {
+            "label": "生效亲和点数",
+            "detail": "当前亲和点数 +2（最高5点）",
+            "trigger": "释放潜能时"
+          }
+        }
+      ],
+      "evidenceSources": [
+        {
+          "kind": "traits",
+          "id": 2411,
+          "revision": 3127313,
+          "evidence": "two additional points of affinity, up to a maximum of five."
+        }
+      ]
+    },
+    {
+      "id": "enhanced-embodiment-qualified",
+      "trait": 2379,
+      "revision": 3206181,
+      "evidence": "Recharge Reduced: 40%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 28134,
+          "revision": 3106132,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 28195,
+          "revision": 3101684,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 28419,
+          "revision": 3101680,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 28494,
+          "revision": 3101681,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 76610,
+          "revision": 3118897,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "战斗中传奇切换冷却时间",
+            "detail": "6 秒",
+            "trigger": "战斗中"
+          }
+        },
+        {
+          "type": "append",
+          "row": {
+            "label": "宇宙智慧持续时间延长",
+            "detail": "1 秒",
+            "trigger": "宇宙智慧生效时切换传奇"
+          }
+        }
+      ],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Legend",
+          "revision": 3174601,
+          "evidence": "Invoking a legend always has 10 second recharge time"
+        },
+        {
+          "kind": "traits",
+          "id": 2379,
+          "revision": 3206181,
+          "evidence": "Duration Increase: 1 second"
+        }
+      ]
+    },
+    {
+      "id": "specialized-elements-basic-qualified",
+      "trait": 2437,
+      "revision": 3205721,
+      "evidence": "Basic Skill Recharge: 10%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 77226,
+          "revision": 3110841,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 76643,
+          "revision": 3119681,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 77225,
+          "revision": 3107876,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 77370,
+          "revision": 3178258,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "魔宠充能所需技能次数",
+            "detail": "2"
+          }
+        },
+        {
+          "type": "append",
+          "row": {
+            "label": "武器技能冷却缩短",
+            "detail": "10%",
+            "trigger": "激活该魔宠技能时"
+          }
+        }
+      ],
+      "evidenceSources": [
+        {
+          "kind": "traits",
+          "id": 2437,
+          "revision": 3205721,
+          "evidence": "Skills to Charge Familiar: 2"
+        }
+      ]
+    },
+    {
+      "id": "specialized-elements-empowered-qualified",
+      "trait": 2437,
+      "revision": 3205721,
+      "evidence": "Empowered Skill Recharge: 33%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 77357,
+          "revision": 3078973,
+          "guards": []
+        },
+        {
+          "kind": "skills",
+          "id": 76681,
+          "revision": 3078974,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "武器技能冷却缩短",
+            "detail": "33%",
+            "trigger": "激活该强化魔宠技能时"
+          }
+        },
+        {
+          "type": "append",
+          "row": {
+            "label": "协调特性触发",
+            "detail": "视同进入对应协调",
+            "trigger": "激活该强化魔宠技能时"
+          }
+        }
+      ]
+    },
+    {
+      "id": "meticulous-mistburn-current-pve",
+      "trait": 2431,
+      "revision": 3129027,
+      "evidence": "Burning (2s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 77277,
+          "revision": 3129026,
+          "guards": [
+            {
+              "label": "区域燃烧",
+              "detail": "1 秒"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "replace",
+          "label": "区域燃烧",
+          "row": {
+            "label": "区域燃烧",
+            "detail": "2 秒",
+            "trigger": "区域每次脉冲时"
+          }
+        }
+      ]
+    },
+    {
+      "id": "weapon-base-duration-1878-5830",
+      "trait": 1878,
+      "revision": 2655468,
+      "evidence": "This trait increases the base durations of the conditions applied by pistol skills and is applied before condition duration.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5830,
+          "revision": 2810145,
+          "guards": [
+            {
+              "label": "定身",
+              "detail": "1.5 秒"
+            },
+            {
+              "label": "致残",
+              "detail": "2 秒 · -50% 移动速度"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "定身",
+          "factor": 1.33
+        },
+        {
+          "type": "duration",
+          "label": "致残",
+          "factor": 1.33
+        }
+      ]
+    },
+    {
+      "id": "weapon-base-duration-1878-5831",
+      "trait": 1878,
+      "revision": 2655468,
+      "evidence": "This trait increases the base durations of the conditions applied by pistol skills and is applied before condition duration.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5831,
+          "revision": 3128686,
+          "guards": [
+            {
+              "label": "最高燃烧",
+              "detail": "4.5 秒 · 3 层"
+            },
+            {
+              "label": "最低燃烧",
+              "detail": "3 秒 · 3 层"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "最高燃烧",
+          "factor": 1.33
+        },
+        {
+          "type": "duration",
+          "label": "最低燃烧",
+          "factor": 1.33
+        }
+      ]
+    },
+    {
+      "id": "weapon-base-duration-801-10532",
+      "trait": 801,
+      "revision": 2630755,
+      "evidence": "Only the base durations are increased, thus not counting towards the maximum condition duration.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10532,
+          "revision": 2631630,
+          "guards": [
+            {
+              "label": "流血",
+              "detail": "10 秒 · 3 层"
+            },
+            {
+              "label": "致残",
+              "detail": "7 秒 · -50% 移动速度"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "流血",
+          "factor": 1.5
+        },
+        {
+          "type": "duration",
+          "label": "致残",
+          "factor": 1.5
+        }
+      ]
+    },
+    {
+      "id": "weapon-base-duration-801-10552",
+      "trait": 801,
+      "revision": 2630755,
+      "evidence": "Only the base durations are increased, thus not counting towards the maximum condition duration.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10552,
+          "revision": 2631629,
+          "guards": [
+            {
+              "label": "流血",
+              "detail": "4.5 秒"
+            },
+            {
+              "label": "中毒",
+              "detail": "6 秒 · -33% 治疗效能"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "流血",
+          "factor": 1.5
+        },
+        {
+          "type": "duration",
+          "label": "中毒",
+          "factor": 1.5
+        }
+      ]
+    },
+    {
+      "id": "weapon-base-duration-801-10698",
+      "trait": 801,
+      "revision": 2630755,
+      "evidence": "Only the base durations are increased, thus not counting towards the maximum condition duration.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10698,
+          "revision": 2631627,
+          "guards": [
+            {
+              "label": "流血",
+              "detail": "4.5 秒"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "流血",
+          "factor": 1.5
+        }
+      ]
+    },
+    {
+      "id": "weapon-base-duration-801-10699",
+      "trait": 801,
+      "revision": 2630755,
+      "evidence": "Only the base durations are increased, thus not counting towards the maximum condition duration.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10699,
+          "revision": 2631628,
+          "guards": [
+            {
+              "label": "流血",
+              "detail": "4.5 秒"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "流血",
+          "factor": 1.5
+        }
+      ]
+    },
+    {
+      "id": "weapon-base-duration-801-10709",
+      "trait": 801,
+      "revision": 2630755,
+      "evidence": "Only the base durations are increased, thus not counting towards the maximum condition duration.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10709,
+          "revision": 2959884,
+          "guards": [
+            {
+              "label": "每种症状折磨",
+              "detail": "4 秒"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "每种症状折磨",
+          "factor": 1.5
+        }
+      ]
+    },
+    {
+      "id": "weapon-base-duration-801-51647",
+      "trait": 801,
+      "revision": 2630755,
+      "evidence": "Only the base durations are increased, thus not counting towards the maximum condition duration.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 51647,
+          "revision": 2932290,
+          "guards": [
+            {
+              "label": "每种症状折磨",
+              "detail": "4 秒"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "每种症状折磨",
+          "factor": 1.5
+        }
+      ]
+    },
+    {
+      "id": "weapon-base-duration-1878-5827",
+      "trait": 1878,
+      "revision": 2655468,
+      "evidence": "This trait increases the base durations of the conditions applied by pistol skills and is applied before condition duration.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5827,
+          "revision": 2842793,
+          "guards": [
+            {
+              "label": "流血",
+              "detail": "6 秒"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "流血",
+          "factor": 1.33
+        }
+      ]
+    },
+    {
+      "id": "weapon-base-duration-1878-5828",
+      "trait": 1878,
+      "revision": 2655468,
+      "evidence": "This trait increases the base durations of the conditions applied by pistol skills and is applied before condition duration.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5828,
+          "revision": 2794142,
+          "guards": [
+            {
+              "label": "中毒",
+              "detail": "7 秒 · -33% 治疗效能"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "中毒",
+          "factor": 1.33
+        }
+      ]
+    },
+    {
+      "id": "weapon-base-duration-1878-5829",
+      "trait": 1878,
+      "revision": 2655468,
+      "evidence": "This trait increases the base durations of the conditions applied by pistol skills and is applied before condition duration.",
+      "priority": 0,
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5829,
+          "revision": 2776280,
+          "guards": [
+            {
+              "label": "目盲",
+              "detail": "3 秒"
+            },
+            {
+              "label": "困惑",
+              "detail": "5 秒 · 3 层"
+            }
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "type": "duration",
+          "label": "目盲",
+          "factor": 1.33
+        },
+        {
+          "type": "duration",
+          "label": "困惑",
+          "factor": 1.33
+        }
+      ]
     }
   ],
   "durationBonuses": [
@@ -4318,7 +5019,9 @@
       "trait": 433,
       "revision": 2655474,
       "evidence": "Burning you inflict lasts longer",
-      "effects": ["Burning"],
+      "effects": [
+        "Burning"
+      ],
       "bonus": 33,
       "guard": {
         "label": "持续时间延长",
@@ -4329,7 +5032,9 @@
       "trait": 515,
       "revision": 3094923,
       "evidence": "Duration Increase: 33%",
-      "effects": ["Bleeding"],
+      "effects": [
+        "Bleeding"
+      ],
       "bonus": 33,
       "guard": {
         "label": "持续时间延长",
@@ -4340,7 +5045,9 @@
       "trait": 2383,
       "revision": 3081045,
       "evidence": "Poison you inflict lasts longer",
-      "effects": ["Poison"],
+      "effects": [
+        "Poison"
+      ],
       "bonus": 33,
       "guard": {
         "label": "持续时间延长",
@@ -4351,7 +5058,9 @@
       "trait": 1291,
       "revision": 2630304,
       "evidence": "Poison you inflict has increased damage and duration",
-      "effects": ["Poison"],
+      "effects": [
+        "Poison"
+      ],
       "bonus": 33,
       "guard": {
         "label": "持续时间延长",
@@ -4362,7 +5071,9 @@
       "trait": 363,
       "revision": 3128169,
       "evidence": "Vulnerability Duration Increased: 33%",
-      "effects": ["Vulnerability"],
+      "effects": [
+        "Vulnerability"
+      ],
       "bonus": 33,
       "guard": {
         "label": "延长易伤持续时间",
@@ -4373,7 +5084,9 @@
       "trait": 1507,
       "revision": 2842822,
       "evidence": "Duration Increase: 20%",
-      "effects": ["Bleeding"],
+      "effects": [
+        "Bleeding"
+      ],
       "bonus": 20,
       "guard": {
         "label": "持续时间延长",
@@ -4384,7 +5097,9 @@
       "trait": 802,
       "revision": 2626596,
       "evidence": "Duration Increase: 20%",
-      "effects": ["Bleeding"],
+      "effects": [
+        "Bleeding"
+      ],
       "bonus": 20,
       "guard": {
         "label": "持续时间延长",
@@ -4395,7 +5110,9 @@
       "trait": 892,
       "revision": 2366250,
       "evidence": "Duration Increase: 100%",
-      "effects": ["Fear"],
+      "effects": [
+        "Fear"
+      ],
       "bonus": 100,
       "guard": {
         "label": "持续时间延长",
@@ -4406,7 +5123,9 @@
       "trait": 1879,
       "revision": 3128978,
       "evidence": "Duration Increase: 20%",
-      "effects": ["Chilled"],
+      "effects": [
+        "Chilled"
+      ],
       "bonus": 20,
       "guard": {
         "label": "持续时间延长",
@@ -4417,7 +5136,13 @@
       "trait": 1744,
       "revision": 3058259,
       "evidence": "Damaging conditions you apply last longer",
-      "effects": ["Bleeding", "Burning", "Poison", "Confusion", "Torment"],
+      "effects": [
+        "Bleeding",
+        "Burning",
+        "Poison",
+        "Confusion",
+        "Torment"
+      ],
       "bonus": 10,
       "guard": {
         "label": "持续时间延长",
@@ -4428,7 +5153,9 @@
       "trait": 2079,
       "revision": 2655477,
       "evidence": "Bleeding Duration Increase: 25%",
-      "effects": ["Bleeding"],
+      "effects": [
+        "Bleeding"
+      ],
       "bonus": 25,
       "guard": {
         "label": "流血持续时间延长",
@@ -4445,42 +5172,4046 @@
     },
     {
       "trait": 2298,
-      "target": 63253,
-      "reason": "J-Drive table says +12% but current Force Signet base says +15%; no guessed +18%"
-    },
-    {
-      "trait": 2298,
       "target": 63049,
       "reason": "Passive pulse base 314 is listed without its traited healing coefficient; formula multiplier withheld"
     },
     {
-      "trait": 2112,
-      "target": 42297,
-      "reason": "Sand Savant notes table lists PvE 8→10 seconds but independent Manifest Sand Shade tooltip says 15 seconds; charge recharge withheld"
-    },
-    {
-      "trait": 1070,
-      "reason": "Moment of Clarity stun/daze and sigil combination requires independent control projection evidence"
-    },
-    {
-      "trait": 1502,
-      "reason": "Stormsoul stun and sigil combination requires independent control projection evidence"
-    },
-    {
       "trait": 2411,
-      "reason": "Kinetic Insight is combat only; no unconditional Release Potential cooldown projection"
+      "reason": "Qualified 8s combat cooldown and +2 effective affinity (cap 5) displayed; full per-affinity effect-state simulation is not implemented"
     },
     {
       "trait": 2379,
-      "reason": "Enhanced Embodiment is combat only; no unconditional legend cooldown projection"
+      "reason": "Qualified 6s combat legend cooldown and +1s Cosmic Wisdom extension displayed; combat timeline is not simulated"
     },
     {
       "trait": 2431,
-      "reason": "Meticulous Custodian artifact-specific enhancements require independent skill pages"
+      "reason": "Mistburn Mortar PvE pulse burning reviewed against current table and April 14 2026 patch; remaining artifact table is marked incomplete/possibly mode-split and is not treated as confirmed"
     },
     {
       "trait": 2437,
-      "reason": "Specialized Elements familiar/attunement triggers require separate conditional modeling"
+      "reason": "Six exact-ID familiar skills display charge/weapon-recharge triggers; fire empowered 77074 and air empowered 76618 lack exact-ID Wiki page evidence and stay unchanged"
+    }
+  ],
+  "controlBonuses": [
+    {
+      "trait": 1070,
+      "revision": 2857080,
+      "evidence": "Duration Increase: 50%",
+      "effects": [
+        "昏迷",
+        "晕眩"
+      ],
+      "bonus": 50,
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "50%"
+      },
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Control_effect",
+          "revision": 3193419,
+          "evidence": "Increases to duration stack additively"
+        }
+      ]
+    },
+    {
+      "trait": 1502,
+      "revision": 3128166,
+      "evidence": "Duration Increase: 33%",
+      "effects": [
+        "昏迷"
+      ],
+      "bonus": 33,
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "33%"
+      },
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Control_effect",
+          "revision": 3193419,
+          "evidence": "Increases to duration stack additively"
+        }
+      ]
+    }
+  ],
+  "attributeBonuses": [
+    {
+      "trait": 653,
+      "revision": 2572445,
+      "evidence": [
+        "“ Zealous Blade Your power is increased. Gain additional power while wielding a greatsword. Your greatsword skills have reduced recharge. Power: +120 Power While Wielding Greatsword: +120 Recharge Reduced: 20% — In-game description",
+        "the baseline power is applied after."
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120,
+          "afterConversion": true
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "weapon:Greatsword"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1896,
+      "revision": 2844839,
+      "evidence": [
+        "“ 1 Defender's Dogma Gain vitality. Blocking an attack causes justice to reach its maximum charge and reduces the cooldown of Spear of Justice. Recharge Time Reduced: 3 seconds Vitality: +180 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2187,
+      "revision": 2767877,
+      "evidence": [
+        "“ Conceited Curate Gain increased vitality. Willbender Flames now heal you when they strike an enemy. Healing: 272 (0.11)? Vitality: +180 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2190,
+      "revision": 3186826,
+      "evidence": [
+        "“ Power for Power Gain increased power. Willbender Flames deal increased damage to foes they strike. Damage Increase: 200% Power: +120 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2191,
+      "revision": 2569190,
+      "evidence": [
+        "“ Searing Pact Gain condition damage. Willbender Flames now inflict burning on foes they strike. Burning (1s): 131 Damage Condition Damage: +120 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "症状伤害",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 120
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2394,
+      "revision": 3081894,
+      "evidence": [
+        "“ Light's Gift Gain vitality. Grant Luminary's Blessing to allies when you equip a radiant weapon. Luminary's Blessing (6s): Reduced incoming strike damage. Heal when this expires. Vitality: +180 Number of Targets: 5 Radius: 300 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2148,
+      "revision": 2739984,
+      "evidence": [
+        "“ Imbued Haste Gain increased attributes while affected by quickness. Condition Damage: +250 Healing Power: +250 Vitality: +250 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "症状伤害",
+          "detail": "+250"
+        },
+        {
+          "label": "治疗效果",
+          "detail": "+250"
+        },
+        {
+          "label": "体力",
+          "detail": "+250"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 250,
+          "gates": [
+            "quickness"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 250,
+          "gates": [
+            "quickness"
+          ]
+        },
+        {
+          "target": "Vitality",
+          "amount": 250,
+          "gates": [
+            "quickness"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "quickness",
+          "label": "拥有急速",
+          "description": "急速生效期间，联动已支持的属性特性；不模拟覆盖率"
+        }
+      ]
+    },
+    {
+      "trait": 1343,
+      "revision": 3100044,
+      "evidence": [
+        "“ Deep Strikes Gain condition damage when you have fury. You have increased chance to critically strike against bleeding foes. Condition Damage: +180 Critical Chance Increase: 5% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "症状伤害",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 180,
+          "gates": [
+            "fury"
+          ]
+        },
+        {
+          "target": "critical",
+          "amount": 5,
+          "gates": [
+            "targetBleeding"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetBleeding",
+          "label": "目标处于流血状态",
+          "description": "只联动目标流血条件下的暴击率加成"
+        }
+      ]
+    },
+    {
+      "trait": 1453,
+      "revision": 2631177,
+      "evidence": [
+        "“ Pinnacle of Strength Might applied to you grants more power. Your critical-hit chance is increased. Power: +10 Critical Chance Increase: 5% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+10"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 10,
+          "perMight": true,
+          "afterConversion": true
+        },
+        {
+          "target": "critical",
+          "amount": 5
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2011,
+      "revision": 3129010,
+      "evidence": [
+        "“ Blood Reaction A percentage of precision is given as a bonus to ferocity and a percentage of power is given as a bonus to condition damage. These bonuses are doubled in berserk mode. Gain Ferocity Based on a Percentage of Precision: 12% Gain Condition Damage Based on a Percentage of Power: 12% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "精准转化为暴击效果的比例",
+          "detail": "12%"
+        },
+        {
+          "label": "威力转化为症状伤害的比例",
+          "detail": "12%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 12,
+          "from": "Precision"
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 12,
+          "from": "Power"
+        },
+        {
+          "target": "CritDamage",
+          "amount": 12,
+          "from": "Precision",
+          "gates": [
+            "berserk"
+          ]
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 12,
+          "from": "Power",
+          "gates": [
+            "berserk"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2046,
+      "revision": 3129011,
+      "evidence": [
+        "“ Fatal Frenzy Berserk mode increases power and condition damage. Power: +300 Condition Damage: +150 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+300"
+        },
+        {
+          "label": "症状伤害",
+          "detail": "+150"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 300,
+          "gates": [
+            "berserk"
+          ]
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 150,
+          "gates": [
+            "berserk"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2418,
+      "revision": 3081507,
+      "evidence": [
+        "“ 4 Inspiring Implements Gain concentration. Gain adrenaline and motivation when you swap weapons.Motivation can only be gained while a refrain is active. Concentration: +180 Adrenaline: 5 Motivation Stacks: 2 Combat Only — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "增益效果",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1849,
+      "revision": 3092472,
+      "evidence": [
+        "“ 10 Applied Force Gain stability when you gain might at or above the threshold. Might grants bonus power. Stability (3s): Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted. Required Boon: 30 Condition Damage, 30 Power Power: +30 Stack Threshold: 10 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+30"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 30,
+          "perMight": true,
+          "afterConversion": true
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1878,
+      "revision": 2655468,
+      "evidence": [
+        "“ Chemical Rounds Gain condition damage. Your pistol skills gain increased condition duration. Duration Increase: 33% Condition Damage: +120 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "症状伤害",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 120
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1923,
+      "revision": 2657369,
+      "evidence": [
+        "“ 8 No Scope Critical hits on foes within the range threshold have a chance to grant fury. Fury grants you ferocity. Percent: 100% Range Threshold: 450 Fury (4s): +25% Critical Chance Ferocity: +150 Number of Targets: 5 Boon Radius: 360 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "暴击效果",
+          "detail": "+150"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 150,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1944,
+      "revision": 2868106,
+      "evidence": [
+        "“ Blast Shield Explosive Entrance grants barrier. Gain vitality based on a percentage of your power. Barrier: 1,508 (0.25)? Gain Vitality Based on a Percentage of Power: 10% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力转化为体力的比例",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 10,
+          "from": "Power"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2006,
+      "revision": 2363880,
+      "evidence": [
+        "“ Thermal Vision Gain expertise. Increase your outgoing condition damage when you inflict burning. Thermal Vision (4s): +5% Condition Damage Expertise: +150 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "症状效果",
+          "detail": "+150"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 150
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2052,
+      "revision": 3154859,
+      "evidence": [
+        "“ Kinetic Accelerators Grant boons to nearby allies when you successfully combo a field with a blast, leap, or whirl finisher. Your function gyro is now a blast finisher.Whirl finishers can only trigger this trait once per interval. Quickness (3s): Skills and actions are faster. 3 Might (10s): 90 Condition Damage, 90 Power Gain Concentration Based on a Percentage of Power: 13% Interval: 3 seconds Radius: 360 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力转化为增益效果的比例",
+          "detail": "13%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 13,
+          "from": "Power"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2389,
+      "revision": 3169696,
+      "evidence": [
+        "“ Hybrid Vigor Gain vitality. Gain barrier when you use a morph skill. Barrier: 1,295 (0.1)? Vitality: +240 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力",
+          "detail": "+240"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 240
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 970,
+      "revision": 3092844,
+      "evidence": [
+        "“ Honed Axes You and your pet gain ferocity. Axe skills gain reduced recharge, and you gain additional ferocity while wielding an axe. Ferocity: +120 Additional Ferocity: +120 Recharge Reduced: 20% — In-game description",
+        "the player will not gain their pet's ferocity bonus."
+      ],
+      "guards": [
+        {
+          "label": "暴击效果",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 120
+        },
+        {
+          "target": "CritDamage",
+          "amount": 120,
+          "gates": [
+            "weapon:Axe"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 978,
+      "revision": 3155790,
+      "evidence": [
+        "“ Wellspring Grant regeneration to nearby allies when you use a healing skill. You and your pet gain healing power based on power. Regen (6s): 780 Heal Gain Healing Power Based on a Percentage of Power: 7% Number of Targets: 5 Radius: 300 — In-game description",
+        "Healing Power gained is 6.5% of Power and not 7%"
+      ],
+      "guards": [
+        {
+          "label": "威力转化为治疗效果的比例",
+          "detail": "7%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Healing",
+          "amount": 6.5,
+          "from": "Power"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1700,
+      "revision": 2693261,
+      "evidence": [
+        "“ 1 Strider's Strength You and your pet gain power. Gain additional power while wielding a sword. Successfully evading an attack grants might. Might (8s): 30 Condition Damage, 30 Power Power: +120 Additional Power: +120 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "weapon:Sword"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1888,
+      "revision": 3083095,
+      "evidence": [
+        "“ 2 Vicious Quarry Fury grants ferocity and additional increased critical strike chance. When struck while below the health threshold, gain fury. Health Threshold: 75% Fury (4s): +25% Critical Chance Ferocity: +250 Critical Chance Increase: 15% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "暴击效果",
+          "detail": "+250"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 250,
+          "gates": [
+            "fury"
+          ]
+        },
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1900,
+      "revision": 3092842,
+      "evidence": [
+        "“ Pack Alpha Your pet's attributes are improved and pet skills gain recharge reduction.Improved attributes are power, condition damage, precision, toughness, and vitality. Attribute Increase: 300 Pet Skill Recharge: 20% — In-game description",
+        "the player gains an attribute bonus of 150 in PvE"
+      ],
+      "guards": [
+        {
+          "label": "属性提升",
+          "detail": "300",
+          "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 150,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 150,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        },
+        {
+          "target": "Precision",
+          "amount": 150,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        },
+        {
+          "target": "Toughness",
+          "amount": 150,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        },
+        {
+          "target": "Vitality",
+          "amount": 150,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2286,
+      "revision": 3117862,
+      "evidence": [
+        "“ Natural Fortitude Gain vitality. Unleashed Ambush skills siphon health if they hit. Siphon healing is reduced for each target struck beyond the first. Cannot siphon the same target more than once per skill. Life Siphon Damage: 3,517 (0.005)? First-Hit Life Siphon Healing: 3,517 (0.2)? Additional-Hit Healing: 586 (0.03)? Vitality: +240 Number of Targets: 5 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力",
+          "detail": "+240"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 240
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1884,
+      "revision": 2695928,
+      "evidence": [
+        "“ Staff Master While wielding a staff, gain endurance for each initiative point spent. Gain bonus power, which is increased when wielding a staff. Power: +120 Bonus Power with Staff: +120 Endurance per Initiative: 2 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "weapon:Staff"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1904,
+      "revision": 2656078,
+      "evidence": [
+        "“ 2 No Quarter Landing a critical hit while under the effects of fury increases the duration of fury. Gain increased ferocity while under the effects of fury. Fury (2s): +25% Critical Chance Ferocity: +250 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "暴击效果",
+          "detail": "+250"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 250,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1933,
+      "revision": 2631030,
+      "evidence": [
+        "“ Marauder's Resilience Gain vitality based on a portion of your power. Damage is decreased from foes within the range threshold. Damage Reduced: 10% Gain Vitality Based on a Percentage of Power: 7% Radius: 360 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力转化为体力的比例",
+          "detail": "7%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 7,
+          "from": "Power"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2093,
+      "revision": 2631040,
+      "evidence": [
+        "“ Be Quick or Be Killed Gain quickness when marking a foe. Your power and precision are increased while under this effect. Quickness (4s): Skills and actions are faster. Power: +200 Precision: +200 — In-game description",
+        "no matter the source."
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+200",
+          "icon": "https://render.guildwars2.com/file/D6CAECEA0FD5FADE04DD6970384ADC5DE309C506/2229322.png"
+        },
+        {
+          "label": "精准",
+          "detail": "+200",
+          "icon": "https://render.guildwars2.com/file/C2CEA567E0C43C199C782809544721AA12A6DF0A/2229323.png"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 200,
+          "gates": [
+            "quickness"
+          ]
+        },
+        {
+          "target": "Precision",
+          "amount": 200,
+          "gates": [
+            "quickness"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "quickness",
+          "label": "拥有急速",
+          "description": "急速生效期间，联动已支持的属性特性；不模拟覆盖率"
+        }
+      ]
+    },
+    {
+      "trait": 2118,
+      "revision": 3172334,
+      "evidence": [
+        "“ Silent Scope Gain precision. When you dodge roll, gain access to your stealth attack if your malice is above the threshold. Malice Threshold: 3 Silent Scope (3s): You can use your stealth attack, even when not stealthed. Precision: +120 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "精准",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Precision",
+          "amount": 120
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2160,
+      "revision": 2946176,
+      "evidence": [
+        "“ Premeditation Deal increased strike damage for each unique boon you have; concentration is increased. Bonus Damage per Boon: 1% Concentration: +180 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "增益效果",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2264,
+      "revision": 2745951,
+      "evidence": [
+        "“ Strength of Shadows Gain expertise based on a percentage of your vitality. Torment you inflict deals increased damage. Condition Damage Increase: 20% Gain Expertise Based on a Percentage of Vitality: 13% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力转化为症状效果的比例",
+          "detail": "13%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 13,
+          "from": "Vitality"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2284,
+      "revision": 2689075,
+      "evidence": [
+        "“ Second Opinion A portion of condition damage is converted to healing power. Gain condition damage, which is increased while wielding a scepter. Condition Damage: +90 Additional Condition Damage: +90 Gain Healing Power Based on a Percentage of Condition Damage: 7% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "症状伤害",
+          "detail": "+90"
+        },
+        {
+          "label": "症状伤害转化为治疗效果的比例",
+          "detail": "7%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 90
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 90,
+          "gates": [
+            "weapon:Scepter"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 7,
+          "from": "ConditionDamage"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 263,
+      "revision": 3106981,
+      "evidence": [
+        "“ Arcane Lightning Arcane skills grant increased ferocity and have additional effects. Protection (3½s): -33% Incoming Damage Immobilize (1½s): Unable to move. Blindness (5s): Next outgoing attack misses. 2 Stability (4s): Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted. Quickness (4s): Skills and actions are faster. Arcane Lightning (15s): Increases your ferocity. Ferocity: +150 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "暴击效果",
+          "detail": "+150"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 150,
+          "gates": [
+            "arcaneLightning"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "arcaneLightning",
+          "label": "秘法闪电效果生效中",
+          "description": "秘法技能触发的 15 秒效果：+150 暴击效果；不自动模拟触发"
+        }
+      ]
+    },
+    {
+      "trait": 334,
+      "revision": 2363646,
+      "evidence": [
+        "“ Power Overwhelming While at or above the might threshold, gain increased power. Power bonuses are doubled while attuned to fire. Power: +150 Stack Threshold: 10 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+150"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 150,
+          "gates": [
+            "might10"
+          ]
+        },
+        {
+          "target": "Power",
+          "amount": 150,
+          "gates": [
+            "might10",
+            "fire"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1938,
+      "revision": 2839802,
+      "evidence": [
+        "“ Gathered Focus Your concentration is increased. Concentration: +240 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "增益效果",
+          "detail": "+240"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 240
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2004,
+      "revision": 2475777,
+      "evidence": [
+        "“ Elemental Enchantment Gain concentration and your attunements gain reduced recharge. Concentration: +180 Recharge Reduced: 15% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "增益效果",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2028,
+      "revision": 2839787,
+      "evidence": [
+        "“ Soothing Power Gain vitality. Soothing Mist is more effective. Effectiveness Increased: 100% Vitality: +300 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力",
+          "detail": "+300"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 300
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2077,
+      "revision": 3170553,
+      "evidence": [
+        "“ Elemental Refreshment Gain vitality. Grant barrier to yourself when using Dual Attack skills. Barrier: 1,003 (0.2875)? Vitality: +180 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 801,
+      "revision": 2630755,
+      "evidence": [
+        "“ Lingering Curse Your condition damage is increased. Conditions inflicted by scepter skills have longer durations, and Feast of Corruption becomes Devouring Darkness. Condition Damage: +200 Duration Increase: 50% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "症状伤害",
+          "detail": "+200"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 200
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 803,
+      "revision": 2630254,
+      "evidence": [
+        "“ Furious Demise Gain fury when entering shroud. Gain additional precision. Fury (8s): +25% Critical Chance Precision: +180 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "精准",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Precision",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 810,
+      "revision": 3006426,
+      "evidence": [
+        "“ Target the Weak Increases critical-hit chance for each condition on the foe. Gain condition damage based on your precision. Critical Chance Increase: 2% Gain Condition Damage Based on a Percentage of Precision: 13% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "精准转化为症状伤害的比例",
+          "detail": "13%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 13,
+          "from": "Precision"
+        },
+        {
+          "target": "critical",
+          "amount": 2,
+          "perStack": "targetConditions"
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetConditions",
+          "label": "目标症状种类数",
+          "description": "每种不同症状 +2% 暴击率；同一症状的层数不重复计算",
+          "max": 14
+        }
+      ]
+    },
+    {
+      "trait": 829,
+      "revision": 3172502,
+      "evidence": [
+        "“ Spiteful Fortitude Gain vitality based on a percentage of your power. Gain life force when you strike a foe below the health threshold. Gain Vitality Based on a Percentage of Power: 10% Life Force: 1% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力转化为体力的比例",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 10,
+          "from": "Power"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 855,
+      "revision": 2789003,
+      "evidence": [
+        "“ Deadly Strength Carapace stacks grant power and condition damage. Power: +10 Condition Damage: +10 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+10"
+        },
+        {
+          "label": "症状伤害",
+          "detail": "+10"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 10,
+          "perStack": "carapace"
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 10,
+          "perStack": "carapace"
+        }
+      ],
+      "controls": [
+        {
+          "key": "carapace",
+          "label": "死亡甲壳层数",
+          "description": "每层 +20 坚韧；选中致命力量后每层另加 +10 威力和症状伤害",
+          "max": 30
+        }
+      ],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Death's_Carapace",
+          "revision": 3190240,
+          "evidence": "Toughness per stack: 20"
+        }
+      ]
+    },
+    {
+      "trait": 861,
+      "revision": 2554092,
+      "evidence": [
+        "“ Vital Persistence Gain Vitality. Your incoming healing is increased. Vitality: +180 Incoming Healing Increase: 20% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 915,
+      "revision": 3092737,
+      "evidence": [
+        "“ Awaken the Pain Might grants you more power. Gain might when entering shroud. 5 Might (5s): 150 Condition Damage, 200 Power Power: +10 — In-game description",
+        "each stack of Might grants 40 Power and 30 Condition Damage"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+10"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 10,
+          "perMight": true,
+          "afterConversion": true
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2021,
+      "revision": 3003839,
+      "evidence": [
+        "“ Reaper's Onslaught Gain ferocity and quickness while in Reaper's Shroud. Hitting with Life Reap reduces the recharge time of shroud skills.Recharge reduction can only occur once per use of Life Reap. Quickness (3s): Skills and actions are faster. Ferocity: +300 Recharge Time Reduced: 1 second Interval: 3 seconds — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "暴击效果",
+          "detail": "+300"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 300,
+          "gates": [
+            "reaperShroud"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "signet-shroud",
+          "label": "处于帷幕状态",
+          "description": "与怨恨纹章共用当前帷幕预览；夺魂者猛攻仅在夺魂者帷幕中生效"
+        }
+      ]
+    },
+    {
+      "trait": 2074,
+      "revision": 2707906,
+      "evidence": [
+        "“ Fell Beacon Burning you inflict does more damage. Gain expertise based on your condition damage. Damage Increase: 10% Gain Expertise Based on a Percentage of Condition Damage: 7% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "症状伤害转化为症状效果的比例",
+          "detail": "7%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 7,
+          "from": "ConditionDamage"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2121,
+      "revision": 2707891,
+      "evidence": [
+        "“ Sand Sage Gain concentration and expertise when you have an active shade. Concentration: +225 Expertise: +225 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "增益效果",
+          "detail": "+225"
+        },
+        {
+          "label": "症状效果",
+          "detail": "+225"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 225,
+          "gates": [
+            "activeShade"
+          ]
+        },
+        {
+          "target": "ConditionDuration",
+          "amount": 225,
+          "gates": [
+            "activeShade"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "activeShade",
+          "label": "拥有活跃沙影",
+          "description": "拥有至少一个活跃沙影时，+225 增益效果、+225 症状效果"
+        }
+      ]
+    },
+    {
+      "trait": 2192,
+      "revision": 3155330,
+      "evidence": [
+        "“ Implacable Foe Gain stability and damage reduction when entering Harbinger Shroud. Gain ferocity based on your vitality. 3 Stability (5s): Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted. Implacable Foe (2s): -50% Incoming Damage Gain Ferocity Based on a Percentage of Vitality: 13% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力转化为暴击效果的比例",
+          "detail": "13%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 13,
+          "from": "Vitality"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2209,
+      "revision": 3128982,
+      "evidence": [
+        "“ Dark Gunslinger Pistol skills gain reduced recharge. Gain expertise based on your vitality. Gain Expertise Based on a Percentage of Vitality: 10% Recharge Reduced: 20% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力转化为症状效果的比例",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 10,
+          "from": "Vitality"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2220,
+      "revision": 2842805,
+      "evidence": [
+        "“ Twisted Medicine Elixir skills also grant their boons to allies within the elixir impact radius. Gain concentration based on your vitality. Gain Concentration Based on a Percentage of Vitality: 13% Number of Targets: 4 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力转化为增益效果的比例",
+          "detail": "13%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 13,
+          "from": "Vitality"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2371,
+      "revision": 3073893,
+      "evidence": [
+        "“ Boon of Creation Gain concentration. Gain life force when you summon a creature.Spirits and minions are creatures. Concentration: +180 Life Force: 10% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "增益效果",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1746,
+      "revision": 3013954,
+      "evidence": [
+        "“ Elevated Compassion Heal allies when you grant them boons. Grant boons to allies when your upkeep cost is equal to or higher than the threshold.An ally can only be affected by this skill once per interval. Healing: 130 (0.058)? Upkeep threshold: 6 Quickness (1¼s): Skills and actions are faster. Gain Concentration Based on a Percentage of Power: 13% Number of Allied Targets: 5 Interval: 1 second Radius: 600 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力转化为增益效果的比例",
+          "detail": "13%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 13,
+          "from": "Power"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1770,
+      "revision": 3216458,
+      "evidence": [
+        "“ Versed in Stone Rite of the Great Dwarf reduces damage by an additional amount. When struck below the health threshold, cast Rite of the Great Dwarf. Gain power based on your toughness. Damage Reduced: 50% Health Threshold: 50% Gain Power Based on a Percentage of Toughness: 13% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "坚韧转化为威力的比例",
+          "detail": "13%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 13,
+          "from": "Toughness"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1788,
+      "revision": 2946172,
+      "evidence": [
+        "“ Reinforced Potency Gain concentration and deal increased strike damage for each active boon you have. Bonus Damage per Boon: 1% Concentration: +240 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "增益效果",
+          "detail": "+240"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 240
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1801,
+      "revision": 2838474,
+      "evidence": [
+        "“ Seething Malice Your condition damage is increased. Condition Damage: +120 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "症状伤害",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 120
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1821,
+      "revision": 2363857,
+      "evidence": [
+        "“ Life Attunement Gain healing power. Gain concentration based on a portion of your healing power. Healing Power: +120 Gain Concentration Based on a Percentage of Healing Power: 7% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "治疗效果",
+          "detail": "+120"
+        },
+        {
+          "label": "治疗效果转化为增益效果的比例",
+          "detail": "7%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Healing",
+          "amount": 120
+        },
+        {
+          "target": "BoonDuration",
+          "amount": 7,
+          "from": "Healing"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2229,
+      "revision": 3128934,
+      "evidence": [
+        "“ Empire Divided Gain increased power while above the health threshold. Gain increased healing power while below it. Health Threshold: 50% Power: +240 Healing Power: +240 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+240"
+        },
+        {
+          "label": "治疗效果",
+          "detail": "+240"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 240,
+          "gates": [
+            "healthAbove50"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 240,
+          "gates": [
+            "healthBelow50"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "healthBelow50",
+          "label": "生命低于 50%",
+          "description": "勾选：+240 治疗效果；取消：按生命高于 50% 预览，+240 威力。两种状态互斥"
+        }
+      ]
+    },
+    {
+      "trait": 839,
+      "revision": 2768400,
+      "evidence": [
+        "“ Soul Comprehension Your passive life-force generation from nearby deaths is increased. Kills grant carapace. When you enter shroud, gain life-force per stack of carapace. Death's Carapace (10s): 20 Toughness Effectiveness Increased: 20% Life Force: ½% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "死亡甲壳",
+          "detail": "10 秒"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Toughness",
+          "amount": 20,
+          "perStack": "carapace"
+        }
+      ],
+      "controls": [
+        {
+          "key": "carapace",
+          "label": "死亡甲壳层数",
+          "description": "每层 +20 坚韧；选中致命力量后每层另加 +10 威力和症状伤害",
+          "max": 30
+        }
+      ],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Death's_Carapace",
+          "revision": 3190240,
+          "evidence": "Toughness per stack: 20"
+        }
+      ]
+    },
+    {
+      "trait": 1065,
+      "revision": 3119168,
+      "evidence": [
+        "“ Pet's Prowess Your pet moves faster and deals more damage on critical hits. Ferocity Increase: +300 Movement Speed Increase: 30% — In-game description",
+        "While in Beastmode, the player gains both the ferocity bonus"
+      ],
+      "guards": [
+        {
+          "label": "提升暴击效果",
+          "detail": "+300"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 300,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1704,
+      "revision": 3114082,
+      "evidence": [
+        "“ Revealed Training Gain power, then gain extra power while you are revealed. Revealed: You cannot stealth Base Power: +80 Power while Revealed: +120 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "基础威力",
+          "detail": "+80"
+        },
+        {
+          "label": "现身时威力",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 80
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "revealed"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "revealed",
+          "label": "处于现身状态",
+          "description": "无法潜行的现身效果期间，额外 +120 威力；不自动模拟触发"
+        }
+      ]
+    },
+    {
+      "trait": 1931,
+      "revision": 3028999,
+      "evidence": [
+        "“ Last Rites As long as you are not downed, allies near you do not bleed out if they are downed. Gain healing power based on your current health. Last Rites (9s): You do not lose health while downed. Healing Power above 75% Health: +150 Healing Power below 75% Health: +300 Healing Power below 50% Health: +450 Interval: 3 seconds Radius: 300 Combat Only — In-game description",
+        "The passive healing power increase is always in effect"
+      ],
+      "guards": [
+        {
+          "label": "生命值高于75%时的治疗效果",
+          "detail": "+150"
+        },
+        {
+          "label": "生命值低于75%时的治疗效果",
+          "detail": "+300"
+        },
+        {
+          "label": "生命值低于50%时的治疗效果",
+          "detail": "+450"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Healing",
+          "amount": 150,
+          "gates": [
+            "healthAbove75"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 300,
+          "gates": [
+            "health50to75"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 450,
+          "gates": [
+            "healthBelow50"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "healthBelow75",
+          "label": "生命低于 75%",
+          "description": "终焉仪式：高于75%时 +150 治疗效果；低于75%但高于50%时 +300"
+        },
+        {
+          "key": "healthBelow50",
+          "label": "生命低于 50%",
+          "description": "终焉仪式：低于50%时 +450 治疗效果；同时勾选两个血线条件时，按较低生命区间预览"
+        }
+      ]
+    },
+    {
+      "trait": 2186,
+      "revision": 2994741,
+      "evidence": [
+        "“ Alchemic Vigor Gain increased vitality. Heal each second for each stack of blight you have. Healing: 13 (0.0125)? Vitality Increased: +240 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "提升体力",
+          "detail": "+240"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 240
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1683,
+      "revision": 3073889,
+      "evidence": [
+        "“ Righteous Instincts Resolution increases your chances to critically strike and grants might each interval. Might (6s): 30 Condition Damage, 30 Power Critical Chance Increase: 25% Boon Application Interval: 1 second — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威能",
+          "detail": "6 秒"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "25%"
+        },
+        {
+          "label": "增益生效间隔",
+          "detail": "1 秒"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 25,
+          "gates": [
+            "resolution"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "resolution",
+          "label": "拥有决心",
+          "description": "正义本能：决心期间额外 +25% 暴击率；不自动添加威能"
+        }
+      ]
+    },
+    {
+      "trait": 1315,
+      "revision": 2624432,
+      "evidence": [
+        "“ Unsuspecting Foe Increased critical-hit chance against disabled or defiant foes.Disables include stun, daze, knockback, pull, knockdown, sink, float, launch, taunt, and fear. Critical Chance Increase on Defiant Foes: 25% Critical Chance Increase on Disabled Foes: 50% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "对拥有蔑视条的敌人，暴击率提升",
+          "detail": "25%"
+        },
+        {
+          "label": "对被控制的敌人暴击率提升",
+          "detail": "50%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 25,
+          "gates": [
+            "targetDefiantOnly"
+          ]
+        },
+        {
+          "target": "critical",
+          "amount": 50,
+          "gates": [
+            "targetDisabled"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetDefiant",
+          "label": "目标拥有蔑视条",
+          "description": "联动明确对拥有蔑视条敌人生效的特性"
+        },
+        {
+          "key": "targetDisabled",
+          "label": "目标被控制",
+          "description": "目标受到昏迷、晕眩、击倒等控制；不包括单纯定身或残废"
+        }
+      ]
+    },
+    {
+      "trait": 1342,
+      "revision": 2786275,
+      "evidence": [
+        "“ 4 Furious Burst Gain fury when you swap weapons. Fury gives an increased critical chance. Fury (2½s): +30% Critical Chance Critical Chance Increase: 5% Combat Only — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "内置冷却",
+          "detail": "4 秒"
+        },
+        {
+          "label": "激怒",
+          "detail": "2.5 秒 · +30% 暴击率"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "5%"
+        },
+        {
+          "label": "仅限战斗",
+          "detail": ""
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 5,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2049,
+      "revision": 3040136,
+      "evidence": [
+        "“ Smash Brawler When you hit with a Primal Burst skill, extend the duration of your berserk. Critical-hit chance is increased while berserk. Duration Increase: 2 seconds Critical Chance Increase: 15% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "持续时间延长",
+          "detail": "2 秒"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "15%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "berserk"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 536,
+      "revision": 3092457,
+      "evidence": [
+        "“ 8 Hematic Focus Gain fury when you inflict bleeding on an enemy. Fury gives an increased critical-strike chance. Fury (8s): +25% Critical Chance Critical Chance Increase: 15% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "内置冷却",
+          "detail": "8 秒"
+        },
+        {
+          "label": "激怒",
+          "detail": "8 秒 · +25% 暴击率"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "15%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1914,
+      "revision": 3092455,
+      "evidence": [
+        "“ High Caliber You have an increased critical hit chance against foes within the range threshold. Range Threshold: 450 Critical Chance Increase: 15% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "临界范围",
+          "detail": "450"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "15%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "targetWithin450"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetWithin450",
+          "label": "与目标距离不超过 450",
+          "description": "优质枪械：在Wiki距离阈值内额外 +15% 暴击率"
+        }
+      ]
+    },
+    {
+      "trait": 1068,
+      "revision": 3135499,
+      "evidence": [
+        "“ Hunter's Tactics You deal more damage and have an increased chance to critically strike while attacking from behind or the side or when striking a defiant foe. Damage Increase: 10% Critical Chance Increase: 10% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "伤害提升",
+          "detail": "10%"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 10,
+          "anyGates": [
+            "targetFlanked",
+            "targetDefiant"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetFlanked",
+          "label": "从目标侧面或背后攻击",
+          "description": "只预览当前攻击方向，不自动模拟走位"
+        },
+        {
+          "key": "targetDefiant",
+          "label": "目标拥有蔑视条",
+          "description": "联动明确对拥有蔑视条敌人生效的特性"
+        }
+      ]
+    },
+    {
+      "trait": 1215,
+      "revision": 2882668,
+      "evidence": [
+        "“ Hidden Killer Gain bonus critical-hit chance while stealthed. This bonus lingers for a short duration after you've been revealed. Hidden Killer (4s): +100% Critical Chance Critical Chance Increase: 100% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "出其不意",
+          "detail": "4 秒 · +100% 暴击率"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "100%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 100,
+          "anyGates": [
+            "stealth",
+            "hiddenKiller"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "stealth",
+          "label": "处于潜行状态",
+          "description": "出其不意：潜行期间额外 +100% 暴击率"
+        },
+        {
+          "key": "hiddenKiller",
+          "label": "出其不意余效生效中",
+          "description": "现身后的4秒效果；不根据现身状态自动假定持续时间"
+        }
+      ]
+    },
+    {
+      "trait": 1281,
+      "revision": 2817482,
+      "evidence": [
+        "“ Keen Observer Critical-hit chance is increased while your health is above the threshold. Health Threshold: 50% High-Health Critical Chance Increase: 5% Critical Chance Increase: 10% — In-game description",
+        "The critical hit chance increase from the health threshold is not displayed in the attribute window, but still applies. The unconditional crit chance increase will show."
+      ],
+      "guards": [
+        {
+          "label": "生命临界值",
+          "detail": "50%"
+        },
+        {
+          "label": "高生命值时暴击率增加",
+          "detail": "5%"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 10
+        }
+      ],
+      "controls": [],
+      "panelPolicy": {
+        "basis": "game-attribute-window",
+        "combatOnlyBonus": 5,
+        "healthThreshold": 50,
+        "note": "The 5% high-health bonus remains in Wiki detail facts, excluded from the attribute panel per the current Wiki note and user preference."
+      }
+    },
+    {
+      "trait": 2177,
+      "revision": 3173262,
+      "evidence": [
+        "“ 4 Superior Elements Dual Attack skills weaken enemies. Attacks against weakened foes have increased critical chance. Weakness (5s): -50% Endurance Regeneration, +50% Fumble (Unrestricted) Critical Chance Increase: 20% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "内置冷却",
+          "detail": "4 秒"
+        },
+        {
+          "label": "虚弱",
+          "detail": "5 秒 · -50% 耐力回复速度, +50% 非限定攻击失手几率"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "20%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 20,
+          "gates": [
+            "targetWeakness"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetWeakness",
+          "label": "目标处于虚弱状态",
+          "description": "超级元素：攻击虚弱目标时额外 +20% 暴击率"
+        }
+      ]
+    },
+    {
+      "trait": 2031,
+      "revision": 2502283,
+      "evidence": [
+        "“ Decimate Defenses Striking a foe with vulnerability increases your critical hit chance. Critical Chance per Stack: 2% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "每层暴击率",
+          "detail": "2%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 2,
+          "perStack": "targetVulnerability"
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetVulnerability",
+          "label": "目标易伤层数",
+          "description": "防御瓦解每层 +2% 暴击率，最高25层；不增加精准",
+          "max": 25
+        }
+      ]
+    },
+    {
+      "trait": 1719,
+      "revision": 3013943,
+      "evidence": [
+        "“ Roiling Mists Critical-hit chance is further increased while you are under the effect of fury. Convert a percentage of your outgoing critical strike damage into healing. Percent: 2% Critical Chance Increase: 25% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "百分比",
+          "detail": "2%"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "25%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 25,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2142,
+      "revision": 2840275,
+      "evidence": [
+        "“ 8 Brutal Momentum Gain increased critical-hit chance. This bonus is increased further while your endurance is full. Gain vigor when you gain fury. Vigor (6s): +50% Endurance Regeneration Critical Chance Increase: 10% Critical Chance Increase at Full Endurance: 33% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "内置冷却",
+          "detail": "8 秒"
+        },
+        {
+          "label": "活力",
+          "detail": "6 秒 · +50% 耐力回复速度"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "10%"
+        },
+        {
+          "label": "耐力全满时暴击率增加",
+          "detail": "33%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 10
+        },
+        {
+          "target": "critical",
+          "amount": 23,
+          "gates": [
+            "enduranceFull"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "enduranceFull",
+          "label": "耐力全满",
+          "description": "残暴冲力：耐力未满时 +10%，全满时合计 +33% 暴击率"
+        }
+      ]
+    },
+    {
+      "trait": 692,
+      "revision": 3212700,
+      "evidence": [
+        "“ Superiority Complex Your critical hits deal more damage. Critical hit damage against disabled foes, or foes below the health threshold, is further increased.Disabled foes are affected by stun, daze, knockback, pull, knockdown, sink, float, fear, taunt, or launch. Health Threshold: 50% Critical Damage Increase: 15% Bonus Critical Damage Increase: 10% — In-game description",
+        "15/25% multiplicative strike damage modifier only applied to critical hits."
+      ],
+      "guards": [
+        {
+          "label": "生命临界值",
+          "detail": "50%"
+        },
+        {
+          "label": "暴击伤害提升",
+          "detail": "15%"
+        },
+        {
+          "label": "奖励的暴击伤害增加",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "criticalMultiplier",
+          "amount": 15
+        },
+        {
+          "target": "criticalMultiplier",
+          "amount": 10,
+          "anyGates": [
+            "targetDisabled",
+            "targetHealthBelow50"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetDisabled",
+          "label": "目标被控制",
+          "description": "目标受到昏迷、晕眩、击倒等控制；不包括单纯定身或残废"
+        },
+        {
+          "key": "targetHealthBelow50",
+          "label": "目标生命低于 50%",
+          "description": "优越自尊：低血量或被控制只触发一次额外10%暴击伤害倍率"
+        }
+      ]
+    },
+    {
+      "trait": 2009,
+      "revision": 3128597,
+      "evidence": [
+        "“ Danger Time When you inflict slow, you and your clones' outgoing critical-strike damage is increased for a duration. Slow: Skills and actions are slower. Danger Time (10s): Critical-strike damage is increased for you and your clones. Critical Damage Increase: 5% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "迟缓",
+          "detail": "技能与动作速度降低"
+        },
+        {
+          "label": "危机时刻",
+          "detail": "10 秒"
+        },
+        {
+          "label": "暴击伤害提升",
+          "detail": "5%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "criticalMultiplier",
+          "amount": 5,
+          "gates": [
+            "dangerTime"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "dangerTime",
+          "label": "危机时刻效果生效中",
+          "description": "施加迟缓后10秒内，玩家暴击伤害倍率 +5%；不模拟触发或独立分身属性"
+        }
+      ]
+    },
+    {
+      "trait": 2107,
+      "revision": 3135611,
+      "evidence": [
+        "“ Pure Strike Deal increased critical-hit damage. This bonus is doubled against boonless foes. Critical Damage Increase: 5% Boonless Critical Damage Increase: 10% — In-game description",
+        "5/10% multiplicative strike damage modifier only applied to critical hits."
+      ],
+      "guards": [
+        {
+          "label": "暴击伤害提升",
+          "detail": "5%"
+        },
+        {
+          "label": "增加对无增益敌人的暴击伤害",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "criticalMultiplier",
+          "amount": 5
+        },
+        {
+          "target": "criticalMultiplier",
+          "amount": 5,
+          "gates": [
+            "targetBoonless"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetBoonless",
+          "label": "目标没有增益",
+          "description": "纯净打击：目标无增益时倍率由5%提高至10%"
+        }
+      ]
+    },
+    {
+      "trait": 1268,
+      "revision": 3065777,
+      "evidence": [
+        "“ Twin Fangs Deal increased critical damage, which is further increased when your health is above the threshold. Gain bonus critical-hit chance when hitting a foe from behind or the side or when they are defiant. Health Threshold: 50% High Health Critical Damage Increase: 2% Critical Damage Increase: 5% Critical Chance Increase: 7% — In-game description",
+        "The damage modifiers stack additively with each other, but multiplicatively with other damage modifiers."
+      ],
+      "guards": [
+        {
+          "label": "生命临界值",
+          "detail": "50%"
+        },
+        {
+          "label": "高生命值时暴击伤害提高",
+          "detail": "2%"
+        },
+        {
+          "label": "暴击伤害提升",
+          "detail": "5%"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "7%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 7,
+          "anyGates": [
+            "targetFlanked",
+            "targetDefiant"
+          ]
+        },
+        {
+          "target": "criticalMultiplier",
+          "amount": 5
+        },
+        {
+          "target": "criticalMultiplier",
+          "amount": 2,
+          "gates": [
+            "healthAbove50"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetFlanked",
+          "label": "从目标侧面或背后攻击",
+          "description": "只预览当前攻击方向，不自动模拟走位"
+        },
+        {
+          "key": "targetDefiant",
+          "label": "目标拥有蔑视条",
+          "description": "联动明确对拥有蔑视条敌人生效的特性"
+        },
+        {
+          "key": "healthBelow50",
+          "label": "生命低于 50%",
+          "description": "取消时按自身生命高于50%预览；不代表目标生命"
+        }
+      ]
+    },
+    {
+      "trait": 893,
+      "revision": 3128975,
+      "evidence": [
+        "“ Death Perception Gain increased critical-strike chance. Gain increased critical-strike damage while in shroud. Critical Damage Increase: 10% Critical Chance Increase: 15% — In-game description",
+        "10% multiplicative strike damage modifier only applied to critical hits."
+      ],
+      "guards": [
+        {
+          "label": "暴击伤害提升",
+          "detail": "10%"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "15%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 15
+        },
+        {
+          "target": "criticalMultiplier",
+          "amount": 10,
+          "gates": [
+            "playerShroud"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "signet-shroud",
+          "label": "处于帷幕状态",
+          "description": "与怨恨纹章共用预览；只影响已支持的玩家帷幕效果",
+          "excludeSpecializations": [
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "trait": 2188,
+      "revision": 3128036,
+      "evidence": [
+        "“ Wicked Corruption Deal increased strike damage for each stack of blight you have. Critical strikes deal increased damage to targets with torment. Damage Increase: 1% Critical Damage Increase: 10% — In-game description",
+        "12.5% multiplicative strike damage modifier only applied to critical hits."
+      ],
+      "guards": [
+        {
+          "label": "伤害提升",
+          "detail": "1%"
+        },
+        {
+          "label": "暴击伤害提升",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "criticalMultiplier",
+          "amount": 12.5,
+          "gates": [
+            "targetTorment"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetTorment",
+          "label": "目标处于折磨状态",
+          "description": "按Wiki异常注记，恶毒腐化实际暴击伤害倍率为12.5%"
+        }
+      ]
+    },
+    {
+      "trait": 1915,
+      "revision": 3100080,
+      "evidence": [
+        "“ Illusionary Inspiration Increase healing to other allies. Summoning an illusion heals all allies around you.Virtuoso: Triggers when stocking a blade. Healing: 212 (0.3)? Healing Increase to Others: 5% Number of Targets: 5 Radius: 300 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "治疗",
+          "detail": "212 + 0.3 × 治疗效果"
+        },
+        {
+          "label": "增加对其他人的治疗",
+          "detail": "5%"
+        },
+        {
+          "label": "目标数",
+          "detail": "5"
+        },
+        {
+          "label": "半径",
+          "detail": "300"
+        }
+      ],
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 5
+        }
+      ],
+      "controls": [],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Healing",
+          "revision": 3080200,
+          "evidence": "Outgoing healing modifiers stack additively"
+        }
+      ]
+    },
+    {
+      "trait": 1682,
+      "revision": 2628665,
+      "evidence": [
+        "“ Force of Will Gain increased vitality. Healing others is improved based on a percentage of your vitality. Healing Increase to Others per 100 Vitality: 1% Force of Will: 300 Vitality, +X% Healing Increase to Others — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "每100点体力提升对盟友治疗效果",
+          "detail": "1%"
+        },
+        {
+          "label": "意志之力",
+          "detail": "300 体力；对其他盟友的治疗加成随体力变化"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 300
+        },
+        {
+          "target": "outgoingHealing",
+          "amount": 1,
+          "scaleWith": "Vitality"
+        }
+      ],
+      "controls": [],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Healing",
+          "revision": 3080200,
+          "evidence": "Outgoing healing modifiers stack additively"
+        }
+      ]
+    },
+    {
+      "trait": 1381,
+      "revision": 2791427,
+      "evidence": [
+        "“ Stalwart Focus Increase your incoming healing effectiveness and healing to other allies. Healing Increase to Others: 15% Incoming Healing Increase: 10% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "增加对其他人的治疗",
+          "detail": "15%"
+        },
+        {
+          "label": "受到的治疗增加",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 15
+        }
+      ],
+      "controls": [],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Healing",
+          "revision": 3080200,
+          "evidence": "Outgoing healing modifiers stack additively"
+        }
+      ]
+    },
+    {
+      "trait": 1992,
+      "revision": 3205682,
+      "evidence": [
+        "“ Natural Mender Increase healing to other allies. Gain astral force each interval while not in celestial avatar form. Healing Increase to Others: 20% Energy Gain: 8 Interval: 3 seconds — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "增加对其他人的治疗",
+          "detail": "20%"
+        },
+        {
+          "label": "获得能量",
+          "detail": "8"
+        },
+        {
+          "label": "间隔",
+          "detail": "3 秒"
+        }
+      ],
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 20
+        }
+      ],
+      "controls": [],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Healing",
+          "revision": 3080200,
+          "evidence": "Outgoing healing modifiers stack additively"
+        }
+      ]
+    },
+    {
+      "trait": 2058,
+      "revision": 3170339,
+      "evidence": [
+        "“ Lingering Light While in Celestial Avatar form, your healing of others is significantly increased. Healing another player with a Celestial Avatar skill reduces the cooldown of Celestial Avatar.Cooldown can only be reduced once per outgoing heal and will occur even if the affected player is at full health. Lingering Light: Reduces the cooldown of Celestial Avatar when exiting. Healing Increase to Others: 20% Recharge Time Reduced: 1 second Maximum Stacks: 5 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "萦绕之光",
+          "detail": "退出天界化身时缩短其冷却时间"
+        },
+        {
+          "label": "增加对其他人的治疗",
+          "detail": "20%"
+        },
+        {
+          "label": "冷却时间减少",
+          "detail": "1 秒"
+        },
+        {
+          "label": "最大层数",
+          "detail": "5"
+        }
+      ],
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 20,
+          "gates": [
+            "celestialAvatar"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "celestialAvatar",
+          "label": "处于天界化身形态",
+          "description": "萦绕之光：天界化身形态期间，对盟友治疗额外 +20%"
+        }
+      ],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Healing",
+          "revision": 3080200,
+          "evidence": "Outgoing healing modifiers stack additively"
+        }
+      ]
+    },
+    {
+      "trait": 2272,
+      "revision": 3154937,
+      "evidence": [
+        "“ 1 Dark Sentry Apply Rot Wallow Venom to allies you grant barrier to. Outgoing healing to allies is increased.Rot Wallow Venom effect cannot apply to yourself. Rot Wallow Venom (10s): Inflict torment on foes struck. Torment (2s): 44 Damage, 64 Damage if Foe Is Stationary Healing Increase to Others: 20% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "内置冷却",
+          "detail": "1 秒"
+        },
+        {
+          "label": "腐溺毒素",
+          "detail": "10 秒"
+        },
+        {
+          "label": "折磨",
+          "detail": "2 秒"
+        },
+        {
+          "label": "增加对其他人的治疗",
+          "detail": "20%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 20
+        }
+      ],
+      "controls": [],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Healing",
+          "revision": 3080200,
+          "evidence": "Outgoing healing modifiers stack additively"
+        }
+      ]
+    },
+    {
+      "trait": 789,
+      "revision": 2906377,
+      "evidence": [
+        "“ Life from Death Heal allies in an area when you exit shroud. Increase healing to other allies. Healing: 714 (1.5)? Healing Increase: 10% Number of Targets: 5 Radius: 360 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "治疗",
+          "detail": "714 + 1.5 × 治疗效果"
+        },
+        {
+          "label": "提升治疗",
+          "detail": "10%"
+        },
+        {
+          "label": "目标数",
+          "detail": "5"
+        },
+        {
+          "label": "半径",
+          "detail": "360"
+        }
+      ],
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 10
+        }
+      ],
+      "controls": [],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Healing",
+          "revision": 3080200,
+          "evidence": "Outgoing healing modifiers stack additively"
+        }
+      ]
+    },
+    {
+      "trait": 2182,
+      "revision": 3170015,
+      "evidence": [
+        "“ Righteous Rebel Kalla's Fervor increases your healing to other allies. Orders from Above lasts longer, heals allies, and affects a larger area. Healing: 714 Healing Increase to Others: 4% Duration Increase: 50% Radius Increase: 120 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "治疗",
+          "detail": "714"
+        },
+        {
+          "label": "增加对其他人的治疗",
+          "detail": "4%"
+        },
+        {
+          "label": "持续时间延长",
+          "detail": "50%"
+        },
+        {
+          "label": "半径增加",
+          "detail": "120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 4,
+          "perStack": "kallasFervor"
+        }
+      ],
+      "controls": [
+        {
+          "key": "kallasFervor",
+          "label": "卡拉狂热层数",
+          "description": "公正反叛每层对盟友治疗 +4%，最多5层；不自动模拟触发",
+          "max": 5
+        }
+      ],
+      "evidenceSources": [
+        {
+          "kind": "articles",
+          "id": "Healing",
+          "revision": 3080200,
+          "evidence": "Outgoing healing modifiers stack additively"
+        }
+      ]
+    },
+    {
+      "trait": 2353,
+      "revision": 3161505,
+      "evidence": [
+        "“ Fortissimo After using Crescendo, gain a note every interval for a duration. Gain increased attributes for each instrument you have playing. Attribute Increase per Instrument: 4% Duration: 5 seconds Interval: 1 second — In-game description",
+        "Lively Lute",
+        "Flustering Flute",
+        "Deafening Drum",
+        "Harmonious Harp"
+      ],
+      "guards": [
+        {
+          "label": "每件乐器的属性增加",
+          "detail": "4%"
+        },
+        {
+          "label": "持续时间",
+          "detail": "5 秒"
+        },
+        {
+          "label": "间隔",
+          "detail": "1 秒"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 4,
+          "from": "Power",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "Precision",
+          "amount": 4,
+          "from": "Precision",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "Toughness",
+          "amount": 4,
+          "from": "Toughness",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "Vitality",
+          "amount": 4,
+          "from": "Vitality",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "CritDamage",
+          "amount": 4,
+          "from": "CritDamage",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 4,
+          "from": "ConditionDamage",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "ConditionDuration",
+          "amount": 4,
+          "from": "ConditionDuration",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "BoonDuration",
+          "amount": 4,
+          "from": "BoonDuration",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "Healing",
+          "amount": 4,
+          "from": "Healing",
+          "perStack": "activeInstruments"
+        }
+      ],
+      "controls": [
+        {
+          "key": "activeInstruments",
+          "label": "演奏中乐器数量",
+          "description": "每件乐器增加4%的可转换属性；最多4件，不自动模拟演奏时间",
+          "max": 4
+        }
+      ],
+      "implementationReference": {
+        "repository": "Kadenar/gw2-combat-simulator",
+        "revision": "a32190b29e5a9265a90855757c9bd867b49fbfff",
+        "path": "js/games/gw2/professions/mesmer/specializations/troubadour/traits/index.ts",
+        "scope": "eligible pool; excludes Might, signet passives and conversion outputs; current numeric rate remains Wiki-owned"
+      }
+    },
+    {
+      "trait": 214,
+      "revision": 2589553,
+      "evidence": [
+        "“ 8 Raging Storm Critically striking a foe grants fury. Gain ferocity while under the effects of fury. Fury (4s): +25% Critical Chance Ferocity: +180 Number of Targets: 5 Radius: 360 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "内置冷却",
+          "detail": "8 秒"
+        },
+        {
+          "label": "激怒",
+          "detail": "4 秒 · +25% 暴击率"
+        },
+        {
+          "label": "暴击效果",
+          "detail": "+180"
+        },
+        {
+          "label": "目标数",
+          "detail": "5"
+        },
+        {
+          "label": "半径",
+          "detail": "360"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 180,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 221,
+      "revision": 2630241,
+      "evidence": [
+        "“ Zephyr's Speed Your chance to critically strike is increased. While attuned to air, your movement speed is also increased. Critical Chance Increase: 5% Movement Speed Increase: 25% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "暴击率提升",
+          "detail": "5%"
+        },
+        {
+          "label": "移动速度提高",
+          "detail": "25%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 5
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 223,
+      "revision": 2839323,
+      "evidence": [
+        "“ Aeromancer's Training Gain ferocity, and gain additional ferocity while attuned to air. Air weapon skills get a reduced recharge time. Ferocity: +150 Additional Ferocity: +150 Recharge Reduced: 20% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "暴击效果",
+          "detail": "+150"
+        },
+        {
+          "label": "额外的暴击效果",
+          "detail": "+150"
+        },
+        {
+          "label": "冷却减少",
+          "detail": "20%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 150
+        },
+        {
+          "target": "CritDamage",
+          "amount": 150,
+          "gates": [
+            "air"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "air",
+          "label": "空气协调",
+          "description": "跟随当前协调，不独立保存"
+        }
+      ]
+    },
+    {
+      "trait": 232,
+      "revision": 2356258,
+      "evidence": [
+        "“ Ferocious Winds Gain ferocity based on your precision. Gain Ferocity Based on a Percentage of Precision: 7% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "精准转化为暴击效果的比例",
+          "detail": "7%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 7,
+          "from": "Precision"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 275,
+      "revision": 3115411,
+      "evidence": [
+        "“ 3 Strength of Stone Gain condition damage based on your toughness. Inflict bleeding when you immobilize a foe.Bleeding can only occur on the same target once per interval. 3 Bleeding (10s): 660 Damage Gain Condition Damage Based on a Percentage of Toughness: 10% Interval: 3 seconds — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "内置冷却",
+          "detail": "3 秒"
+        },
+        {
+          "label": "流血",
+          "detail": "10 秒 · 3 层"
+        },
+        {
+          "label": "坚韧转化为症状伤害的比例",
+          "detail": "10%"
+        },
+        {
+          "label": "间隔",
+          "detail": "3 秒"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 10,
+          "from": "Toughness"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 296,
+      "revision": 2622736,
+      "evidence": [
+        "“ 5 Burning Precision Burning you inflict has increased duration and your critical hits gain a chance to inflict burning. Chance on Critical Hit: 33% Burning (3s): 393 Damage Duration Increase: 20% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "内置冷却",
+          "detail": "5 秒"
+        },
+        {
+          "label": "暴击时触发几率",
+          "detail": "33%"
+        },
+        {
+          "label": "燃烧",
+          "detail": "3 秒"
+        },
+        {
+          "label": "持续时间延长",
+          "detail": "20%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "duration",
+          "amount": 20,
+          "effect": "Burning"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 320,
+      "revision": 2607376,
+      "evidence": [
+        "“ Empowering Flame Gain power while in fire attunement. Power: +150 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+150"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 150,
+          "gates": [
+            "fire"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "fire",
+          "label": "火焰协调",
+          "description": "跟随当前协调，不独立保存"
+        }
+      ]
+    },
+    {
+      "trait": 325,
+      "revision": 3114202,
+      "evidence": [
+        "“ Burning Rage Sunspot inflicts burning, and its radius is increased. Your condition damage is increased. 2 Burning (4s): 1,048 Damage Condition Damage: +180 Radius Increase: 60 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "燃烧",
+          "detail": "4 秒 · 2 层"
+        },
+        {
+          "label": "症状伤害",
+          "detail": "+180"
+        },
+        {
+          "label": "半径增加",
+          "detail": "60"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 413,
+      "revision": 3026674,
+      "evidence": [
+        "“ Compounding Chemicals Heal yourself when you grant yourself a boon. Remove a condition from yourself when you use an elixir skill. Gain increased concentration. Healing: 37 (0.023)? Conditions Removed: 1 Concentration: +240 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "治疗",
+          "detail": "37 + 0.023 × 治疗效果"
+        },
+        {
+          "label": "症状移除",
+          "detail": "1"
+        },
+        {
+          "label": "增益效果",
+          "detail": "+240"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 240
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 519,
+      "revision": 2882047,
+      "evidence": [
+        "“ Energy Amplifier Your power and healing power are increased while you have regeneration. Power: +250 Healing Power: +250 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+250"
+        },
+        {
+          "label": "治疗效果",
+          "detail": "+250"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 250,
+          "gates": [
+            "regeneration"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 250,
+          "gates": [
+            "regeneration"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "regeneration",
+          "label": "拥有再生",
+          "description": "再生期间联动已支持的特性属性"
+        }
+      ]
+    },
+    {
+      "trait": 557,
+      "revision": 2926835,
+      "evidence": [
+        "“ Honorable Staff Gain concentration. Empower now grants endurance to allies in addition to its effects. Staff skills recharge time is reduced. Concentration: +120 Endurance Gained: 50 Recharge Reduced: 20% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "增益效果",
+          "detail": "+120"
+        },
+        {
+          "label": "耐力获取",
+          "detail": "50"
+        },
+        {
+          "label": "冷却减少",
+          "detail": "20%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 120
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 566,
+      "revision": 2694778,
+      "evidence": [
+        "“ Right-Hand Strength Your precision is increased. Gain increased power while wielding a one-handed weapon in your main hand. Precision: +80 Power: +80 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "精准",
+          "detail": "+80"
+        },
+        {
+          "label": "威力",
+          "detail": "+80"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Precision",
+          "amount": 80,
+          "afterConversion": true
+        },
+        {
+          "target": "Power",
+          "amount": 80,
+          "gates": [
+            "oneHand"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 568,
+      "revision": 2369786,
+      "evidence": [
+        "“ Radiant Power Attacks against burning foes have an increased chance to critically hit. Your ferocity is increased. Critical Chance Increase: 10% Ferocity: +150 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "暴击率提升",
+          "detail": "10%"
+        },
+        {
+          "label": "暴击效果",
+          "detail": "+150"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 150,
+          "afterConversion": true
+        },
+        {
+          "target": "critical",
+          "amount": 10,
+          "gates": [
+            "targetBurning"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetBurning",
+          "label": "目标处于燃烧状态",
+          "description": "光耀力量：对燃烧目标额外 +10% 暴击率"
+        }
+      ]
+    },
+    {
+      "trait": 580,
+      "revision": 2258813,
+      "evidence": [
+        "“ Stalwart Defender Gain toughness when wielding a shield, and shield skills gain reduced recharge. Toughness: +240 Recharge Reduced: 20% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "坚韧",
+          "detail": "+240"
+        },
+        {
+          "label": "冷却减少",
+          "detail": "20%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Toughness",
+          "amount": 240,
+          "gates": [
+            "weapon:Shield"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 620,
+      "revision": 3168689,
+      "evidence": [
+        "“ Power of the Virtuous Gain condition damage based on your vitality. Virtues gain reduced recharge. Gain Condition Damage Based on a Percentage of Vitality: 7% Recharge Reduced: 15% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "体力转化为症状伤害的比例",
+          "detail": "7%"
+        },
+        {
+          "label": "冷却减少",
+          "detail": "15%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 7,
+          "from": "Vitality"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 753,
+      "revision": 3175412,
+      "evidence": [
+        "“ 1 Malicious Sorcery Confusion you inflict has increased duration. When you dodge an attack, inflict confusion on your attacker. 3 Confusion (4s): 219 Damage, 49 Damage on Skill Use Duration Increase: 25% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "内置冷却",
+          "detail": "1 秒"
+        },
+        {
+          "label": "困惑",
+          "detail": "4 秒 · 3 层"
+        },
+        {
+          "label": "困惑持续时间",
+          "detail": "25%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "duration",
+          "amount": 25,
+          "effect": "Confusion"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1059,
+      "revision": 3048436,
+      "evidence": [
+        "“ Lingering Magic You and your pet gain increased concentration. Regeneration you apply is more effective. Increased Regenerative Healing: 20% Concentration: +240 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "提升再生效果",
+          "detail": "20%"
+        },
+        {
+          "label": "增益效果",
+          "detail": "+240"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 240
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1099,
+      "revision": 2959826,
+      "evidence": [
+        "“ Arachnophobia Spider pet's Spit and devourer pet's Twin Darts additionally inflict torment. You and your pet gain expertise; spiders and devourers gain more. Torment (3s): 66 Damage, 95 Damage if Foe Is Stationary Expertise: +150 Spider and Devourer Additional Expertise: +225 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "折磨",
+          "detail": "3 秒"
+        },
+        {
+          "label": "症状效果",
+          "detail": "+150"
+        },
+        {
+          "label": "蜘蛛和噬蝎额外的症状效果",
+          "detail": "+225"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 150
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1101,
+      "revision": 2944199,
+      "evidence": [
+        "“ Ambidexterity Gain condition damage. Gain additional condition damage while wielding a torch, dagger, or mace. Torch and dagger skills recharge faster. Condition Damage: +120 Additional Condition Damage: +120 Recharge Reduced: 20% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "症状伤害",
+          "detail": "+120"
+        },
+        {
+          "label": "额外的症状伤害",
+          "detail": "+120"
+        },
+        {
+          "label": "冷却减少",
+          "detail": "20%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 120
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 120,
+          "gates": [
+            "weapon:Torch,Dagger,Mace"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1164,
+      "revision": 2812058,
+      "evidence": [
+        "“ Deadly Ambition Inflict poison when striking a foe with a dual wield attack. Gain increased condition damage.Applies poison once per attack use. Poison (3s): 101 Damage, -33% Heal Effectiveness Condition Damage: +180 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "中毒",
+          "detail": "3 秒 · -33% 治疗效能"
+        },
+        {
+          "label": "症状伤害",
+          "detail": "+180"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 180
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1192,
+      "revision": 3021642,
+      "evidence": [
+        "“ 1 Swindler's Equilibrium Gain power and additional power while wielding a sword or underwater spear. Successfully evading an attack while wielding a sword or underwater spear recharges Steal. Power: +120 Bonus Power: +120 Recharge Time Reduced: 2 seconds — In-game description",
+        "underwater spear"
+      ],
+      "guards": [
+        {
+          "label": "内置冷却",
+          "detail": "1 秒"
+        },
+        {
+          "label": "威力",
+          "detail": "+120"
+        },
+        {
+          "label": "奖励威力",
+          "detail": "+120"
+        },
+        {
+          "label": "冷却时间减少",
+          "detail": "2 秒"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "weapon:Sword"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1232,
+      "revision": 2968943,
+      "evidence": [
+        "“ Preparedness Increases maximum initiative by 3. Gain increased expertise. Expertise: +150 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "症状效果",
+          "detail": "+150"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 150
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1245,
+      "revision": 2356173,
+      "evidence": [
+        "“ Dagger Training Gain bonus power, which is increased when wielding a dagger. Power: +80 Additional Power: +80 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力",
+          "detail": "+80"
+        },
+        {
+          "label": "额外威力",
+          "detail": "+80"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 80
+        },
+        {
+          "target": "Power",
+          "amount": 80,
+          "gates": [
+            "weapon:Dagger"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1272,
+      "revision": 2363650,
+      "evidence": [
+        "“ Practiced Tolerance Gain ferocity based on your precision. Gain Ferocity Based on a Percentage of Precision: 10% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "精准转化为暴击效果的比例",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 10,
+          "from": "Precision"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1333,
+      "revision": 2655530,
+      "evidence": [
+        "“ Blademaster Gain expertise. Gain condition damage while wielding a sword. Sword skills gain reduced recharge. Recharge Reduced: 20% Condition Damage: +120 Expertise: +120 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "冷却减少",
+          "detail": "20%"
+        },
+        {
+          "label": "症状伤害",
+          "detail": "+120"
+        },
+        {
+          "label": "症状效果",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 120
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 120,
+          "gates": [
+            "weapon:Sword"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1338,
+      "revision": 2849881,
+      "evidence": [
+        "“ Forceful Greatsword Gain power and a chance to gain might on critical strike. Double these bonuses while wielding a greatsword or underwater spear. Greatsword and underwater spear skills recharge faster. Chance on Critical Strike to Gain Might: 50% Might (5s): 30 Condition Damage, 30 Power Power: +120 Recharge Reduced: 20% — In-game description",
+        "underwater spear"
+      ],
+      "guards": [
+        {
+          "label": "暴击后有几率获得威能",
+          "detail": "50%"
+        },
+        {
+          "label": "威能",
+          "detail": "5 秒"
+        },
+        {
+          "label": "威力",
+          "detail": "+120"
+        },
+        {
+          "label": "冷却减少",
+          "detail": "20%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "weapon:Greatsword"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1369,
+      "revision": 2590046,
+      "evidence": [
+        "“ Axe Mastery Gain ferocity. Gain additional ferocity when wielding an axe. Axe skills gain reduced recharge and grant adrenaline when critically striking. Ferocity: +120 Additional Ferocity: +120 Adrenaline: 2 Recharge Reduced: 20% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "暴击效果",
+          "detail": "+120"
+        },
+        {
+          "label": "额外的暴击效果",
+          "detail": "+120"
+        },
+        {
+          "label": "怒气",
+          "detail": "2"
+        },
+        {
+          "label": "冷却减少",
+          "detail": "20%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 120
+        },
+        {
+          "target": "CritDamage",
+          "amount": 120,
+          "gates": [
+            "weapon:Axe"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1449,
+      "revision": 2621156,
+      "evidence": [
+        "“ Great Fortitude Gain vitality and ferocity based on a percentage of your power. Gain Vitality Based on a Percentage of Power: 10% Gain Ferocity Based on a Percentage of Power: 10% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力转化为体力的比例",
+          "detail": "10%"
+        },
+        {
+          "label": "威力转化为暴击效果的比例",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 10,
+          "from": "Power"
+        },
+        {
+          "target": "CritDamage",
+          "amount": 10,
+          "from": "Power"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1455,
+      "revision": 2363890,
+      "evidence": [
+        "“ Wounding Precision Gain expertise based on your precision. Gain Expertise Based on a Percentage of Precision: 7% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "精准转化为症状效果的比例",
+          "detail": "7%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 7,
+          "from": "Precision"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1470,
+      "revision": 2956562,
+      "evidence": [
+        "“ Vigorous Shouts Shout skills heal allies. Gain healing power based on your power. Healing: 1,000 (1.2)? Radius: 600 Gain Healing Power Based on a Percentage of Power: 13% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "治疗",
+          "detail": "1000 + 1.2 × 治疗效果"
+        },
+        {
+          "label": "半径",
+          "detail": "600"
+        },
+        {
+          "label": "威力转化为治疗效果的比例",
+          "detail": "13%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "Healing",
+          "amount": 13,
+          "from": "Power"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1471,
+      "revision": 2590038,
+      "evidence": [
+        "“ Roaring Reveille Warhorn skills apply additional boons. Your concentration is increased. Fury (5s): +25% Critical Chance Resistance (3s): Nondamaging conditions currently on you are ineffective. Concentration: +120 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "激怒",
+          "detail": "5 秒 · +25% 暴击率"
+        },
+        {
+          "label": "抗性",
+          "detail": "3 秒"
+        },
+        {
+          "label": "增益效果",
+          "detail": "+120"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 120
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1556,
+      "revision": 2054472,
+      "evidence": [
+        "“ Kindled Zeal Gain condition damage based on your power. Gain Condition Damage Based on a Percentage of Power: 10% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "威力转化为症状伤害的比例",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 10,
+          "from": "Power"
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 1865,
+      "revision": 3189915,
+      "evidence": [
+        "“ Chaotic Persistence Gain concentration and expertise while affected by regeneration. Concentration: +250 Expertise: +100 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "增益效果",
+          "detail": "+250"
+        },
+        {
+          "label": "症状效果",
+          "detail": "+100"
+        }
+      ],
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 250,
+          "gates": [
+            "regeneration"
+          ]
+        },
+        {
+          "target": "ConditionDuration",
+          "amount": 100,
+          "gates": [
+            "regeneration"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "regeneration",
+          "label": "拥有再生",
+          "description": "再生期间联动已支持的特性属性"
+        }
+      ]
+    },
+    {
+      "trait": 1927,
+      "revision": 3107767,
+      "evidence": [
+        "“ Flow of Time Gain alacrity for each clone you shatter. Gain increased critical-strike chance for you and your clones[sic] when you have alacrity. Alacrity per Clone (1s): +25% Skill Recharge Rate Critical Chance Increase: 15% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "每个分身提供敏捷",
+          "detail": "1 秒 · +25% 技能冷却恢复速度"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "15%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "alacrity"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "alacrity",
+          "label": "拥有敏捷",
+          "description": "时间涌流：敏捷期间额外 +15% 暴击率"
+        }
+      ]
+    },
+    {
+      "trait": 2193,
+      "revision": 2908846,
+      "evidence": [
+        "“ Quiet Intensity Fury gives an increased critical chance. Gain ferocity based on your vitality. Fury: +40% Critical Chance Critical Chance Increase: 15% Gain Ferocity Based on a Percentage of Vitality: 10% — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "激怒",
+          "detail": "+40% 暴击率"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "15%"
+        },
+        {
+          "label": "体力转化为暴击效果的比例",
+          "detail": "10%"
+        }
+      ],
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 10,
+          "from": "Vitality"
+        },
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": []
+    },
+    {
+      "trait": 2207,
+      "revision": 2646212,
+      "evidence": [
+        "“ Sharpening Sorrow Gain fury when you activate Bladesong Sorrow. Fury increases your expertise. Fury (5s): +25% Critical Chance Expertise granted by fury: +150 — In-game description"
+      ],
+      "guards": [
+        {
+          "label": "激怒",
+          "detail": "5 秒 · +25% 暴击率"
+        },
+        {
+          "label": "激怒提供的症状效果",
+          "detail": "+150"
+        }
+      ],
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 150,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": []
+    }
+  ],
+  "attributeExclusions": [
+    {
+      "trait": 1016,
+      "reason": "Fang and Claw affects pets only; does not grant player precision/ferocity, including Beastmode."
+    },
+    {
+      "trait": 2291,
+      "reason": "Mechanical Genius affects mech inheritance, not player attributes. Separate mech attribute model required."
+    },
+    {
+      "trait": 222,
+      "reason": "Electric Discharge critical damage is scoped to its own triggered lightning, not a global player attribute."
+    },
+    {
+      "trait": 1011,
+      "reason": "Precise Strike only guarantees Opening Strike critical hits, not all player attacks."
+    },
+    {
+      "trait": 2279,
+      "reason": "Jade Cannons critical chance belongs to the mech, not the player."
+    },
+    {
+      "trait": 1336,
+      "reason": "Burst Precision guarantees burst skills and grants a timed global buff; the buff conversion eligibility needs explicit verification before player ferocity is calculated."
+    }
+  ],
+  "weaponReplacements": [
+    {
+      "trait": 801,
+      "revision": 2630755,
+      "evidence": "Feast of Corruption becomes Devouring Darkness.",
+      "before": {
+        "id": 10709,
+        "revision": 2959884
+      },
+      "after": {
+        "id": 51647,
+        "revision": 2932290
+      }
     }
   ]
 }

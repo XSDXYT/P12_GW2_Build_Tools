@@ -5568,6 +5568,15 @@
             "description": "打断敌人时，减少顺手牵羊的冷却时间，对目标发动肺部打击。\n该特性对拥有蔑视条的敌人每次间隔只能影响一次。"
           }
         ],
+        "controlRule": {
+          "title": "Impact_Strike",
+          "revision": 2768615,
+          "control": {
+            "label": "晕眩",
+            "seconds": 2
+          },
+          "defiance": 200
+        },
         "modifiers": [
           {
             "id": "brawlers-tenacity",
@@ -6807,6 +6816,15 @@
             "description": "当你暗影疾步时，治疗区域内的盟友。半径内的每个盟友均可获得暗影之力。法池的第一次打击提供抗性。"
           }
         ],
+        "controlRule": {
+          "title": "Well_of_Silence",
+          "revision": 2840246,
+          "control": {
+            "label": "晕眩",
+            "seconds": 2
+          },
+          "defiance": 200
+        },
         "modifiers": [
           {
             "id": "traversing-dusk",
@@ -7883,7 +7901,16 @@
             "name": "喜鹊防御",
             "description": "当你使用治疗技能或精英技能时获得屏障。此特性的冷却时间针对治疗技能和精英技能分别独立计算。"
           }
-        ]
+        ],
+        "controlRule": {
+          "title": "Metal_Legion_Guitar",
+          "revision": 3128646,
+          "control": {
+            "label": "昏迷",
+            "seconds": 2
+          },
+          "defiance": 200
+        }
       },
       "76601": {
         "title": "Exalted_Hammer",
@@ -9166,9 +9193,9 @@
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
-            "label": "燃烧",
+            "label": "区域燃烧",
             "detail": "1 秒",
-            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+            "trigger": "区域每次脉冲时"
           },
           {
             "label": "雾灼迫击炮",
@@ -9177,9 +9204,9 @@
             "stacks": 5
           },
           {
-            "label": "燃烧",
+            "label": "命中时燃烧",
             "detail": "1.5 秒",
-            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+            "trigger": "迷雾燃烧迫击炮效果生效期间命中时"
           },
           {
             "label": "目标数",
@@ -9268,6 +9295,31 @@
             "id": 2337,
             "name": "喜鹊防御",
             "description": "当你使用治疗技能或精英技能时获得屏障。此特性的冷却时间针对治疗技能和精英技能分别独立计算。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "meticulous-mistburn-current-pve",
+            "trait": 2431,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2431,
+              "title": "Meticulous_Custodian",
+              "revision": 3129027
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "区域燃烧",
+                "row": {
+                  "label": "区域燃烧",
+                  "detail": "2 秒",
+                  "trigger": "区域每次脉冲时"
+                }
+              }
+            ],
+            "traitName": "谨慎托管"
           }
         ]
       },

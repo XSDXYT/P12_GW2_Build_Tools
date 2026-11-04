@@ -29,7 +29,34 @@
         }
       ],
       "classification": "unrelated-redirect",
-      "conclusion": "同名文章重定向至成就页，不能用于技能数值。当前索引无精确 ID 证据。"
+      "conclusion": "同名文章重定向至成就页，不能用于技能数值。当前索引无精确 ID 证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "wrong-article",
+        "reason": "同名入口指向非技能文章，当前职业与特长索引未提供精确ID依据。",
+        "candidates": [
+          {
+            "title": "Silencer",
+            "canonical": "Hall_of_Chains_(achievements)",
+            "revision": 3199903,
+            "ids": [],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_warrior_skills",
+            "revision": 3095180,
+            "unavailable": false
+          },
+          {
+            "title": "Spellbreaker",
+            "revision": 3069703,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "40111": {
       "profession": "Ranger",
@@ -71,7 +98,9 @@
       "candidates": [
         {
           "title": "Narcotic_Spores_(soulbeast)",
-          "ids": [40111],
+          "ids": [
+            40111
+          ],
           "revision": 2788848,
           "canonical": "Narcotic_Spores_(soulbeast)"
         }
@@ -106,7 +135,34 @@
         }
       ],
       "classification": "page-unavailable",
-      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。"
+      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "article-missing",
+        "reason": "官方原文章仍为404，当前索引未提供精确ID依据；不据此断言技能已退役。",
+        "candidates": [
+          {
+            "title": "Boon_Crusher",
+            "canonical": "Boon_Crusher",
+            "revision": 0,
+            "ids": [],
+            "missing": true
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_warrior_skills",
+            "revision": 3095180,
+            "unavailable": false
+          },
+          {
+            "title": "Spellbreaker",
+            "revision": 3069703,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "41461": {
       "profession": "Ranger",
@@ -148,7 +204,9 @@
       "candidates": [
         {
           "title": "Devourer_Retreat_(soulbeast)",
-          "ids": [41461],
+          "ids": [
+            41461
+          ],
           "revision": 2376531,
           "canonical": "Devourer_Retreat_(soulbeast)"
         }
@@ -183,7 +241,34 @@
         }
       ],
       "classification": "page-unavailable",
-      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。"
+      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "article-missing",
+        "reason": "官方原文章仍为404，当前索引未提供精确ID依据；不据此断言技能已退役。",
+        "candidates": [
+          {
+            "title": "Wounding_Strike",
+            "canonical": "Wounding_Strike",
+            "revision": 0,
+            "ids": [],
+            "missing": true
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_warrior_skills",
+            "revision": 3095180,
+            "unavailable": false
+          },
+          {
+            "title": "Spellbreaker",
+            "revision": 3069703,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "41575": {
       "profession": "Ranger",
@@ -225,7 +310,9 @@
       "candidates": [
         {
           "title": "Tail_Swipe_(soulbeast)",
-          "ids": [41575],
+          "ids": [
+            41575
+          ],
           "revision": 2840370,
           "canonical": "Tail_Swipe_(soulbeast)"
         }
@@ -272,7 +359,9 @@
       "candidates": [
         {
           "title": "Dark_Water_(soulbeast)",
-          "ids": [41837],
+          "ids": [
+            41837
+          ],
           "revision": 2364402,
           "canonical": "Dark_Water_(soulbeast)"
         }
@@ -319,7 +408,9 @@
       "candidates": [
         {
           "title": "Charging_Bite_(soulbeast)",
-          "ids": [42797],
+          "ids": [
+            42797
+          ],
           "revision": 2364400,
           "canonical": "Charging_Bite_(soulbeast)"
         }
@@ -366,7 +457,9 @@
       "candidates": [
         {
           "title": "Defy_Pain_(soulbeast)",
-          "ids": [43060],
+          "ids": [
+            43060
+          ],
           "revision": 2788332,
           "canonical": "Defy_Pain_(soulbeast)"
         }
@@ -401,7 +494,34 @@
         }
       ],
       "classification": "page-unavailable",
-      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。"
+      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "article-missing",
+        "reason": "官方原文章仍为404，当前索引未提供精确ID依据；不据此断言技能已退役。",
+        "candidates": [
+          {
+            "title": "Fleeting_Stability",
+            "canonical": "Fleeting_Stability",
+            "revision": 0,
+            "ids": [],
+            "missing": true
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_warrior_skills",
+            "revision": 3095180,
+            "unavailable": false
+          },
+          {
+            "title": "Spellbreaker",
+            "revision": 3069703,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "43548": {
       "profession": "Ranger",
@@ -443,7 +563,9 @@
       "candidates": [
         {
           "title": "Frenzied_Attack_(soulbeast)",
-          "ids": [43548],
+          "ids": [
+            43548
+          ],
           "revision": 2359631,
           "canonical": "Frenzied_Attack_(soulbeast)"
         }
@@ -490,7 +612,9 @@
       "candidates": [
         {
           "title": "Poison_Gas_(soulbeast)",
-          "ids": [43671],
+          "ids": [
+            43671
+          ],
           "revision": 2775210,
           "canonical": "Poison_Gas_(soulbeast)"
         }
@@ -537,7 +661,9 @@
       "candidates": [
         {
           "title": "Photosynthesize_(soulbeast)",
-          "ids": [43701],
+          "ids": [
+            43701
+          ],
           "revision": 2361060,
           "canonical": "Photosynthesize_(soulbeast)"
         }
@@ -584,7 +710,9 @@
       "candidates": [
         {
           "title": "Crippling_Leap_(soulbeast)",
-          "ids": [43726],
+          "ids": [
+            43726
+          ],
           "revision": 2358515,
           "canonical": "Crippling_Leap_(soulbeast)"
         }
@@ -631,7 +759,9 @@
       "candidates": [
         {
           "title": "Entangling_Web_(soulbeast)",
-          "ids": [44097],
+          "ids": [
+            44097
+          ],
           "revision": 2775207,
           "canonical": "Entangling_Web_(soulbeast)"
         }
@@ -678,7 +808,9 @@
       "candidates": [
         {
           "title": "Crippling_Anguish_(soulbeast)",
-          "ids": [44384],
+          "ids": [
+            44384
+          ],
           "revision": 2775294,
           "canonical": "Crippling_Anguish_(soulbeast)"
         }
@@ -713,7 +845,34 @@
         }
       ],
       "classification": "page-unavailable",
-      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。"
+      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "article-missing",
+        "reason": "官方原文章仍为404，当前索引未提供精确ID依据；不据此断言技能已退役。",
+        "candidates": [
+          {
+            "title": "Dissonance",
+            "canonical": "Dissonance",
+            "revision": 0,
+            "ids": [],
+            "missing": true
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_warrior_skills",
+            "revision": 3095180,
+            "unavailable": false
+          },
+          {
+            "title": "Spellbreaker",
+            "revision": 3069703,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "44617": {
       "profession": "Ranger",
@@ -755,7 +914,9 @@
       "candidates": [
         {
           "title": "Harmonic_Cry_(soulbeast)",
-          "ids": [44617],
+          "ids": [
+            44617
+          ],
           "revision": 2768077,
           "canonical": "Harmonic_Cry_(soulbeast)"
         }
@@ -802,7 +963,9 @@
       "candidates": [
         {
           "title": "Swoop_(soulbeast)",
-          "ids": [44991],
+          "ids": [
+            44991
+          ],
           "revision": 2774119,
           "canonical": "Swoop_(soulbeast)"
         }
@@ -825,13 +988,39 @@
       "candidates": [
         {
           "title": "Rain_of_Swords",
-          "ids": [62553],
+          "ids": [
+            62553
+          ],
           "revision": 2932100,
           "canonical": "Rain_of_Swords"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Rain_of_Swords",
+            "canonical": "Rain_of_Swords",
+            "revision": 2932100,
+            "ids": [
+              62553
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_mesmer_skills",
+            "revision": 3018921,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "45479": {
       "profession": "Ranger",
@@ -873,7 +1062,9 @@
       "candidates": [
         {
           "title": "Sharpen_Spines_(soulbeast)",
-          "ids": [45479],
+          "ids": [
+            45479
+          ],
           "revision": 2788842,
           "canonical": "Sharpen_Spines_(soulbeast)"
         }
@@ -908,7 +1099,34 @@
         }
       ],
       "classification": "page-unavailable",
-      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。"
+      "conclusion": "原技能页为 404；当前特长与职业索引未找到精确 ID 页面。不能据此断言技能已退役。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "article-missing",
+        "reason": "官方原文章仍为404，当前索引未提供精确ID依据；不据此断言技能已退役。",
+        "candidates": [
+          {
+            "title": "Magehunter_Strike",
+            "canonical": "Magehunter_Strike",
+            "revision": 0,
+            "ids": [],
+            "missing": true
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_warrior_skills",
+            "revision": 3095180,
+            "unavailable": false
+          },
+          {
+            "title": "Spellbreaker",
+            "revision": 3069703,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "46386": {
       "profession": "Ranger",
@@ -950,13 +1168,17 @@
       "candidates": [
         {
           "title": "Tail_Lash_(soulbeast_devourer)",
-          "ids": [43068],
+          "ids": [
+            43068
+          ],
           "revision": 2971777,
           "canonical": "Tail_Lash_(soulbeast_devourer)"
         },
         {
           "title": "Tail_Lash_(soulbeast_Wyvern)",
-          "ids": [46386],
+          "ids": [
+            46386
+          ],
           "revision": 2775289,
           "canonical": "Tail_Lash_(soulbeast_Wyvern)"
         }
@@ -985,13 +1207,44 @@
       "candidates": [
         {
           "title": "Legendary_Renegade_Stance",
-          "ids": [41858],
+          "ids": [
+            41858
+          ],
           "revision": 3101683,
           "canonical": "Legendary_Renegade_Stance"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Legendary_Renegade_Stance",
+            "canonical": "Legendary_Renegade_Stance",
+            "revision": 3101683,
+            "ids": [
+              41858
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_revenant_skills",
+            "revision": 3034970,
+            "unavailable": false
+          },
+          {
+            "title": "Renegade",
+            "revision": 3212718,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "46473": {
       "profession": "Necromancer",
@@ -1015,13 +1268,46 @@
       "candidates": [
         {
           "title": "Manifest_Sand_Shade",
-          "ids": [44946, 42297],
+          "ids": [
+            44946,
+            42297
+          ],
           "revision": 3169200,
           "canonical": "Manifest_Sand_Shade"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Manifest_Sand_Shade",
+            "canonical": "Manifest_Sand_Shade",
+            "revision": 3169200,
+            "ids": [
+              44946,
+              42297
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_necromancer_skills",
+            "revision": 3119607,
+            "unavailable": false
+          },
+          {
+            "title": "Scourge",
+            "revision": 3159005,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "46474": {
       "profession": "Necromancer",
@@ -1045,13 +1331,46 @@
       "candidates": [
         {
           "title": "Manifest_Sand_Shade",
-          "ids": [44946, 42297],
+          "ids": [
+            44946,
+            42297
+          ],
           "revision": 3169200,
           "canonical": "Manifest_Sand_Shade"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Manifest_Sand_Shade",
+            "canonical": "Manifest_Sand_Shade",
+            "revision": 3169200,
+            "ids": [
+              44946,
+              42297
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_necromancer_skills",
+            "revision": 3119607,
+            "unavailable": false
+          },
+          {
+            "title": "Scourge",
+            "revision": 3159005,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "64038": {
       "profession": "Ranger",
@@ -1093,7 +1412,9 @@
       "candidates": [
         {
           "title": "Dash_(soulbeast)",
-          "ids": [64038],
+          "ids": [
+            64038
+          ],
           "revision": 3004965,
           "canonical": "Dash_(soulbeast)"
         }
@@ -1140,7 +1461,9 @@
       "candidates": [
         {
           "title": "Slam_(soulbeast)",
-          "ids": [64699],
+          "ids": [
+            64699
+          ],
           "revision": 2776822,
           "canonical": "Slam_(soulbeast)"
         }
@@ -1187,7 +1510,9 @@
       "candidates": [
         {
           "title": "Ley-Line_Vortex_(soulbeast)",
-          "ids": [70889],
+          "ids": [
+            70889
+          ],
           "revision": 2840355,
           "canonical": "Ley-Line_Vortex_(soulbeast)"
         }
@@ -1234,7 +1559,9 @@
       "candidates": [
         {
           "title": "Electrocute_(soulbeast)",
-          "ids": [71499],
+          "ids": [
+            71499
+          ],
           "revision": 2808253,
           "canonical": "Electrocute_(soulbeast)"
         }
@@ -1281,7 +1608,9 @@
       "candidates": [
         {
           "title": "Spit_Goop_(soulbeast)",
-          "ids": [71546],
+          "ids": [
+            71546
+          ],
           "revision": 2808259,
           "canonical": "Spit_Goop_(soulbeast)"
         }
@@ -1316,13 +1645,55 @@
         },
         {
           "title": "Function_Gyro_(tool_belt_skill)",
-          "ids": [56920, 56921, 72114],
+          "ids": [
+            56920,
+            56921,
+            72114
+          ],
           "revision": 3210515,
           "canonical": "Function_Gyro_(tool_belt_skill)"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Function_Gyro",
+            "canonical": "Function_Gyro",
+            "revision": 2952396,
+            "ids": [],
+            "missing": false
+          },
+          {
+            "title": "Function_Gyro_(tool_belt_skill)",
+            "canonical": "Function_Gyro_(tool_belt_skill)",
+            "revision": 3210515,
+            "ids": [
+              56920,
+              56921,
+              72114
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_engineer_skills",
+            "revision": 0,
+            "unavailable": true
+          },
+          {
+            "title": "Scrapper",
+            "revision": 3018561,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "72636": {
       "profession": "Ranger",
@@ -1364,7 +1735,9 @@
       "candidates": [
         {
           "title": "Tormenting_Visions_(soulbeast)",
-          "ids": [72636],
+          "ids": [
+            72636
+          ],
           "revision": 2836650,
           "canonical": "Tormenting_Visions_(soulbeast)"
         }
@@ -1411,7 +1784,9 @@
       "candidates": [
         {
           "title": "Staring_Void_(soulbeast)",
-          "ids": [72851],
+          "ids": [
+            72851
+          ],
           "revision": 2836648,
           "canonical": "Staring_Void_(soulbeast)"
         }
@@ -1458,7 +1833,9 @@
       "candidates": [
         {
           "title": "Battle_Maul_(soulbeast)",
-          "ids": [73733],
+          "ids": [
+            73733
+          ],
           "revision": 3021025,
           "canonical": "Battle_Maul_(soulbeast)"
         }
@@ -1505,7 +1882,9 @@
       "candidates": [
         {
           "title": "Bop_(soulbeast)",
-          "ids": [73938],
+          "ids": [
+            73938
+          ],
           "revision": 3021029,
           "canonical": "Bop_(soulbeast)"
         }
@@ -1540,31 +1919,126 @@
         },
         {
           "title": "Deploy_Jade_Sphere_(fire)",
-          "ids": [62813, 63396, 63458, 75391],
+          "ids": [
+            62813,
+            63396,
+            63458,
+            75391
+          ],
           "revision": 2970640,
           "canonical": "Deploy_Jade_Sphere_(fire)"
         },
         {
           "title": "Deploy_Jade_Sphere_(water)",
-          "ids": [62723, 63461, 63416, 75406],
+          "ids": [
+            62723,
+            63461,
+            63416,
+            75406
+          ],
           "revision": 2970642,
           "canonical": "Deploy_Jade_Sphere_(water)"
         },
         {
           "title": "Deploy_Jade_Sphere_(air)",
-          "ids": [62940, 63459, 63439, 75399],
+          "ids": [
+            62940,
+            63459,
+            63439,
+            75399
+          ],
           "revision": 2970643,
           "canonical": "Deploy_Jade_Sphere_(air)"
         },
         {
           "title": "Deploy_Jade_Sphere_(earth)",
-          "ids": [62837, 63472, 63454, 75405],
+          "ids": [
+            62837,
+            63472,
+            63454,
+            75405
+          ],
           "revision": 2970645,
           "canonical": "Deploy_Jade_Sphere_(earth)"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Deploy_Jade_Sphere",
+            "canonical": "Deploy_Jade_Sphere",
+            "revision": 2656261,
+            "ids": [],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(fire)",
+            "canonical": "Deploy_Jade_Sphere_(fire)",
+            "revision": 2970640,
+            "ids": [
+              62813,
+              63396,
+              63458,
+              75391
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(water)",
+            "canonical": "Deploy_Jade_Sphere_(water)",
+            "revision": 2970642,
+            "ids": [
+              62723,
+              63461,
+              63416,
+              75406
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(air)",
+            "canonical": "Deploy_Jade_Sphere_(air)",
+            "revision": 2970643,
+            "ids": [
+              62940,
+              63459,
+              63439,
+              75399
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(earth)",
+            "canonical": "Deploy_Jade_Sphere_(earth)",
+            "revision": 2970645,
+            "ids": [
+              62837,
+              63472,
+              63454,
+              75405
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_elementalist_skills",
+            "revision": 3018924,
+            "unavailable": false
+          },
+          {
+            "title": "Catalyst",
+            "revision": 3169894,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "75394": {
       "profession": "Elementalist",
@@ -1594,31 +2068,126 @@
         },
         {
           "title": "Deploy_Jade_Sphere_(fire)",
-          "ids": [62813, 63396, 63458, 75391],
+          "ids": [
+            62813,
+            63396,
+            63458,
+            75391
+          ],
           "revision": 2970640,
           "canonical": "Deploy_Jade_Sphere_(fire)"
         },
         {
           "title": "Deploy_Jade_Sphere_(water)",
-          "ids": [62723, 63461, 63416, 75406],
+          "ids": [
+            62723,
+            63461,
+            63416,
+            75406
+          ],
           "revision": 2970642,
           "canonical": "Deploy_Jade_Sphere_(water)"
         },
         {
           "title": "Deploy_Jade_Sphere_(air)",
-          "ids": [62940, 63459, 63439, 75399],
+          "ids": [
+            62940,
+            63459,
+            63439,
+            75399
+          ],
           "revision": 2970643,
           "canonical": "Deploy_Jade_Sphere_(air)"
         },
         {
           "title": "Deploy_Jade_Sphere_(earth)",
-          "ids": [62837, 63472, 63454, 75405],
+          "ids": [
+            62837,
+            63472,
+            63454,
+            75405
+          ],
           "revision": 2970645,
           "canonical": "Deploy_Jade_Sphere_(earth)"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Deploy_Jade_Sphere",
+            "canonical": "Deploy_Jade_Sphere",
+            "revision": 2656261,
+            "ids": [],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(fire)",
+            "canonical": "Deploy_Jade_Sphere_(fire)",
+            "revision": 2970640,
+            "ids": [
+              62813,
+              63396,
+              63458,
+              75391
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(water)",
+            "canonical": "Deploy_Jade_Sphere_(water)",
+            "revision": 2970642,
+            "ids": [
+              62723,
+              63461,
+              63416,
+              75406
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(air)",
+            "canonical": "Deploy_Jade_Sphere_(air)",
+            "revision": 2970643,
+            "ids": [
+              62940,
+              63459,
+              63439,
+              75399
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(earth)",
+            "canonical": "Deploy_Jade_Sphere_(earth)",
+            "revision": 2970645,
+            "ids": [
+              62837,
+              63472,
+              63454,
+              75405
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_elementalist_skills",
+            "revision": 3018924,
+            "unavailable": false
+          },
+          {
+            "title": "Catalyst",
+            "revision": 3169894,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "75395": {
       "profession": "Elementalist",
@@ -1648,31 +2217,126 @@
         },
         {
           "title": "Deploy_Jade_Sphere_(fire)",
-          "ids": [62813, 63396, 63458, 75391],
+          "ids": [
+            62813,
+            63396,
+            63458,
+            75391
+          ],
           "revision": 2970640,
           "canonical": "Deploy_Jade_Sphere_(fire)"
         },
         {
           "title": "Deploy_Jade_Sphere_(water)",
-          "ids": [62723, 63461, 63416, 75406],
+          "ids": [
+            62723,
+            63461,
+            63416,
+            75406
+          ],
           "revision": 2970642,
           "canonical": "Deploy_Jade_Sphere_(water)"
         },
         {
           "title": "Deploy_Jade_Sphere_(air)",
-          "ids": [62940, 63459, 63439, 75399],
+          "ids": [
+            62940,
+            63459,
+            63439,
+            75399
+          ],
           "revision": 2970643,
           "canonical": "Deploy_Jade_Sphere_(air)"
         },
         {
           "title": "Deploy_Jade_Sphere_(earth)",
-          "ids": [62837, 63472, 63454, 75405],
+          "ids": [
+            62837,
+            63472,
+            63454,
+            75405
+          ],
           "revision": 2970645,
           "canonical": "Deploy_Jade_Sphere_(earth)"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Deploy_Jade_Sphere",
+            "canonical": "Deploy_Jade_Sphere",
+            "revision": 2656261,
+            "ids": [],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(fire)",
+            "canonical": "Deploy_Jade_Sphere_(fire)",
+            "revision": 2970640,
+            "ids": [
+              62813,
+              63396,
+              63458,
+              75391
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(water)",
+            "canonical": "Deploy_Jade_Sphere_(water)",
+            "revision": 2970642,
+            "ids": [
+              62723,
+              63461,
+              63416,
+              75406
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(air)",
+            "canonical": "Deploy_Jade_Sphere_(air)",
+            "revision": 2970643,
+            "ids": [
+              62940,
+              63459,
+              63439,
+              75399
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(earth)",
+            "canonical": "Deploy_Jade_Sphere_(earth)",
+            "revision": 2970645,
+            "ids": [
+              62837,
+              63472,
+              63454,
+              75405
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_elementalist_skills",
+            "revision": 3018924,
+            "unavailable": false
+          },
+          {
+            "title": "Catalyst",
+            "revision": 3169894,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "75407": {
       "profession": "Elementalist",
@@ -1702,31 +2366,126 @@
         },
         {
           "title": "Deploy_Jade_Sphere_(fire)",
-          "ids": [62813, 63396, 63458, 75391],
+          "ids": [
+            62813,
+            63396,
+            63458,
+            75391
+          ],
           "revision": 2970640,
           "canonical": "Deploy_Jade_Sphere_(fire)"
         },
         {
           "title": "Deploy_Jade_Sphere_(water)",
-          "ids": [62723, 63461, 63416, 75406],
+          "ids": [
+            62723,
+            63461,
+            63416,
+            75406
+          ],
           "revision": 2970642,
           "canonical": "Deploy_Jade_Sphere_(water)"
         },
         {
           "title": "Deploy_Jade_Sphere_(air)",
-          "ids": [62940, 63459, 63439, 75399],
+          "ids": [
+            62940,
+            63459,
+            63439,
+            75399
+          ],
           "revision": 2970643,
           "canonical": "Deploy_Jade_Sphere_(air)"
         },
         {
           "title": "Deploy_Jade_Sphere_(earth)",
-          "ids": [62837, 63472, 63454, 75405],
+          "ids": [
+            62837,
+            63472,
+            63454,
+            75405
+          ],
           "revision": 2970645,
           "canonical": "Deploy_Jade_Sphere_(earth)"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Deploy_Jade_Sphere",
+            "canonical": "Deploy_Jade_Sphere",
+            "revision": 2656261,
+            "ids": [],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(fire)",
+            "canonical": "Deploy_Jade_Sphere_(fire)",
+            "revision": 2970640,
+            "ids": [
+              62813,
+              63396,
+              63458,
+              75391
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(water)",
+            "canonical": "Deploy_Jade_Sphere_(water)",
+            "revision": 2970642,
+            "ids": [
+              62723,
+              63461,
+              63416,
+              75406
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(air)",
+            "canonical": "Deploy_Jade_Sphere_(air)",
+            "revision": 2970643,
+            "ids": [
+              62940,
+              63459,
+              63439,
+              75399
+            ],
+            "missing": false
+          },
+          {
+            "title": "Deploy_Jade_Sphere_(earth)",
+            "canonical": "Deploy_Jade_Sphere_(earth)",
+            "revision": 2970645,
+            "ids": [
+              62837,
+              63472,
+              63454,
+              75405
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_elementalist_skills",
+            "revision": 3018924,
+            "unavailable": false
+          },
+          {
+            "title": "Catalyst",
+            "revision": 3169894,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "76580": {
       "profession": "Elementalist",
@@ -1750,13 +2509,40 @@
       "candidates": [
         {
           "title": "Air_Attunement",
-          "ids": [5494],
+          "ids": [
+            5494
+          ],
           "revision": 3207766,
           "canonical": "Air_Attunement"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "source-unavailable",
+        "reason": "本轮官方文章仍返回503或超时，无法核实当前页面；保留此前缓存证据。",
+        "candidates": [
+          {
+            "title": "Air_Attunement",
+            "unavailable": true,
+            "ids": []
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_elementalist_skills",
+            "revision": 3018924,
+            "unavailable": false
+          },
+          {
+            "title": "Evoker",
+            "revision": 3179712,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "76703": {
       "profession": "Elementalist",
@@ -1780,13 +2566,44 @@
       "candidates": [
         {
           "title": "Fire_Attunement",
-          "ids": [5492],
+          "ids": [
+            5492
+          ],
           "revision": 3207764,
           "canonical": "Fire_Attunement"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Fire_Attunement",
+            "canonical": "Fire_Attunement",
+            "revision": 3207764,
+            "ids": [
+              5492
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_elementalist_skills",
+            "revision": 3018924,
+            "unavailable": false
+          },
+          {
+            "title": "Evoker",
+            "revision": 3179712,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "76790": {
       "profession": "Engineer",
@@ -1828,7 +2645,11 @@
       "candidates": [
         {
           "title": "Locked_(amalgam)",
-          "ids": [76790, 77107, 77388],
+          "ids": [
+            76790,
+            77107,
+            77388
+          ],
           "revision": 3077152,
           "canonical": "Locked_(amalgam)"
         }
@@ -1857,13 +2678,44 @@
       "candidates": [
         {
           "title": "Water_Attunement",
-          "ids": [5493],
+          "ids": [
+            5493
+          ],
           "revision": 3207765,
           "canonical": "Water_Attunement"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Water_Attunement",
+            "canonical": "Water_Attunement",
+            "revision": 3207765,
+            "ids": [
+              5493
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_elementalist_skills",
+            "revision": 3018924,
+            "unavailable": false
+          },
+          {
+            "title": "Evoker",
+            "revision": 3179712,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "77082": {
       "profession": "Elementalist",
@@ -1887,13 +2739,40 @@
       "candidates": [
         {
           "title": "Earth_Attunement",
-          "ids": [5495],
+          "ids": [
+            5495
+          ],
           "revision": 3207767,
           "canonical": "Earth_Attunement"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "source-unavailable",
+        "reason": "本轮官方文章仍返回503或超时，无法核实当前页面；保留此前缓存证据。",
+        "candidates": [
+          {
+            "title": "Earth_Attunement",
+            "unavailable": true,
+            "ids": []
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_elementalist_skills",
+            "revision": 3018924,
+            "unavailable": false
+          },
+          {
+            "title": "Evoker",
+            "revision": 3179712,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "77107": {
       "profession": "Engineer",
@@ -1935,7 +2814,11 @@
       "candidates": [
         {
           "title": "Locked_(amalgam)",
-          "ids": [76790, 77107, 77388],
+          "ids": [
+            76790,
+            77107,
+            77388
+          ],
           "revision": 3077152,
           "canonical": "Locked_(amalgam)"
         }
@@ -1964,13 +2847,51 @@
       "candidates": [
         {
           "title": "Otter's_Compassion",
-          "ids": [76563],
+          "ids": [
+            76563
+          ],
           "revision": 3101995,
           "canonical": "Otter's_Compassion"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Otter's_Compassion",
+            "canonical": "Otter's_Compassion",
+            "revision": 3101995,
+            "ids": [
+              76563
+            ],
+            "missing": false
+          },
+          {
+            "title": "Otter's_Compassion_(effect)",
+            "canonical": "Otter's_Compassion_(effect)",
+            "revision": 3065020,
+            "ids": [],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_elementalist_skills",
+            "revision": 3018924,
+            "unavailable": false
+          },
+          {
+            "title": "Evoker",
+            "revision": 3179712,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "77306": {
       "profession": "Mesmer",
@@ -1988,13 +2909,39 @@
       "candidates": [
         {
           "title": "Lively_Lute",
-          "ids": [76552],
+          "ids": [
+            76552
+          ],
           "revision": 3173326,
           "canonical": "Lively_Lute"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Lively_Lute",
+            "canonical": "Lively_Lute",
+            "revision": 3173326,
+            "ids": [
+              76552
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_mesmer_skills",
+            "revision": 3018921,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "77388": {
       "profession": "Engineer",
@@ -2036,7 +2983,11 @@
       "candidates": [
         {
           "title": "Locked_(amalgam)",
-          "ids": [76790, 77107, 77388],
+          "ids": [
+            76790,
+            77107,
+            77388
+          ],
           "revision": 3077152,
           "canonical": "Locked_(amalgam)"
         }
@@ -2059,13 +3010,48 @@
       "candidates": [
         {
           "title": "Zephyrite_Sun_Crystal",
-          "ids": [76895, 76733],
+          "ids": [
+            76895,
+            76733
+          ],
           "revision": 3104165,
           "canonical": "Zephyrite_Sun_Crystal"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Zephyrite_Sun_Crystal",
+            "canonical": "Zephyrite_Sun_Crystal",
+            "revision": 3104165,
+            "ids": [
+              76895,
+              76733
+            ],
+            "missing": false
+          },
+          {
+            "title": "Zephyrite_Sun_Crystal_(effect)",
+            "canonical": "Zephyrite_Sun_Crystal_(effect)",
+            "revision": 3098115,
+            "ids": [],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_thief_skills",
+            "revision": 0,
+            "unavailable": true
+          }
+        ]
+      }
     },
     "78895": {
       "profession": "Revenant",
@@ -2089,13 +3075,44 @@
       "candidates": [
         {
           "title": "Release_Potential:_Warrior",
-          "ids": [77896],
+          "ids": [
+            77896
+          ],
           "revision": 3206180,
           "canonical": "Release_Potential:_Warrior"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Release_Potential:_Warrior",
+            "canonical": "Release_Potential:_Warrior",
+            "revision": 3206180,
+            "ids": [
+              77896
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_revenant_skills",
+            "revision": 3034970,
+            "unavailable": false
+          },
+          {
+            "title": "Conduit",
+            "revision": 3055225,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "80031": {
       "profession": "Ranger",
@@ -2119,13 +3136,44 @@
       "candidates": [
         {
           "title": "Tail_Whip",
-          "ids": [80164],
+          "ids": [
+            80164
+          ],
           "revision": 3150766,
           "canonical": "Tail_Whip"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Tail_Whip",
+            "canonical": "Tail_Whip",
+            "revision": 3150766,
+            "ids": [
+              80164
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_ranger_skills",
+            "revision": 3018926,
+            "unavailable": false
+          },
+          {
+            "title": "Soulbeast",
+            "revision": 3213853,
+            "unavailable": false
+          }
+        ]
+      }
     },
     "80035": {
       "profession": "Ranger",
@@ -2149,13 +3197,44 @@
       "candidates": [
         {
           "title": "Jet",
-          "ids": [79654],
+          "ids": [
+            79654
+          ],
           "revision": 3150765,
           "canonical": "Jet"
         }
       ],
       "classification": "unlisted-id",
-      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。"
+      "conclusion": "已检索实际索引与同名分支，但 Wiki 只列其他游戏 ID；施放、效果、水下或历史 ID 的等价关系仍无明确证据。",
+      "currentReview": {
+        "checkedAt": "2026-11-03",
+        "source": "https://wiki.guildwars2.com",
+        "outcome": "id-differs",
+        "reason": "已读取同名及实际链接的分支页面，但页面未列出待核ID；不按名称映射当前技能、历史或效果ID。",
+        "candidates": [
+          {
+            "title": "Jet",
+            "canonical": "Jet",
+            "revision": 3150765,
+            "ids": [
+              79654
+            ],
+            "missing": false
+          }
+        ],
+        "indexes": [
+          {
+            "title": "List_of_ranger_skills",
+            "revision": 3018926,
+            "unavailable": false
+          },
+          {
+            "title": "Soulbeast",
+            "revision": 3213853,
+            "unavailable": false
+          }
+        ]
+      }
     }
   }
 }

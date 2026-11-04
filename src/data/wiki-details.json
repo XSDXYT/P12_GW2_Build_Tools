@@ -12,8 +12,8 @@
     "Necromancer",
     "Revenant"
   ],
-  "generatedAt": "2026-10-24T00:40:29.995Z",
-  "mirror": "https://wiki.wishingstar.top",
+  "generatedAt": "2026-11-04T01:27:54.433Z",
+  "mirror": "https://wiki.guildwars2.com",
   "specializationTraits": {
     "1": [
       692,
@@ -1320,12 +1320,47 @@
     }
   },
   "branchCoverage": {
-    "parents": 41,
-    "pages": 192,
-    "branches": 204,
+    "parents": 42,
+    "pages": 193,
+    "branches": 205,
     "skippedRows": 0,
     "withheldRows": 0
   },
+  "supplementalCoverage": {
+    "pages": 283,
+    "skills": 290,
+    "skippedRows": 0,
+    "withheldRows": 0
+  },
+  "traitControlBonuses": [
+    {
+      "trait": 1070,
+      "profession": "Ranger",
+      "name": "醉生梦死",
+      "effects": [
+        "昏迷",
+        "晕眩"
+      ],
+      "bonus": 50,
+      "source": {
+        "title": "Moment_of_Clarity",
+        "revision": 2857080
+      }
+    },
+    {
+      "trait": 1502,
+      "profession": "Elementalist",
+      "name": "风暴之魂",
+      "effects": [
+        "昏迷"
+      ],
+      "bonus": 33,
+      "source": {
+        "title": "Stormsoul",
+        "revision": 3128166
+      }
+    }
+  ],
   "traitDurationBonuses": [
     {
       "trait": 433,
@@ -1465,6 +1500,2855 @@
       }
     }
   ],
+  "traitAttributeBonuses": [
+    {
+      "trait": 653,
+      "profession": "Guardian",
+      "name": "狂热利刃",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120,
+          "afterConversion": true
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "weapon:Greatsword"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Zealous_Blade",
+        "revision": 2572445
+      }
+    },
+    {
+      "trait": 1896,
+      "profession": "Guardian",
+      "name": "防御信条",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Defender's_Dogma",
+        "revision": 2844839
+      }
+    },
+    {
+      "trait": 2187,
+      "profession": "Guardian",
+      "name": "自负助理",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Conceited_Curate",
+        "revision": 2767877
+      }
+    },
+    {
+      "trait": 2190,
+      "profession": "Guardian",
+      "name": "以力换韧",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Power_for_Power",
+        "revision": 3186826
+      }
+    },
+    {
+      "trait": 2191,
+      "profession": "Guardian",
+      "name": "灼热协定",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 120
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Searing_Pact",
+        "revision": 2569190
+      }
+    },
+    {
+      "trait": 2394,
+      "profession": "Guardian",
+      "name": "光明礼赠",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Light's_Gift",
+        "revision": 3081894
+      }
+    },
+    {
+      "trait": 2148,
+      "profession": "Guardian",
+      "name": "急速灌注",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 250,
+          "gates": [
+            "quickness"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 250,
+          "gates": [
+            "quickness"
+          ]
+        },
+        {
+          "target": "Vitality",
+          "amount": 250,
+          "gates": [
+            "quickness"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "quickness",
+          "label": "拥有急速",
+          "description": "急速生效期间，联动已支持的属性特性；不模拟覆盖率"
+        }
+      ],
+      "source": {
+        "title": "Imbued_Haste",
+        "revision": 2739984
+      }
+    },
+    {
+      "trait": 1343,
+      "profession": "Warrior",
+      "name": "破甲打击",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 180,
+          "gates": [
+            "fury"
+          ]
+        },
+        {
+          "target": "critical",
+          "amount": 5,
+          "gates": [
+            "targetBleeding"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetBleeding",
+          "label": "目标处于流血状态",
+          "description": "只联动目标流血条件下的暴击率加成"
+        }
+      ],
+      "source": {
+        "title": "Deep_Strikes",
+        "revision": 3100044
+      }
+    },
+    {
+      "trait": 1453,
+      "profession": "Warrior",
+      "name": "力量尖峰",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 10,
+          "perMight": true,
+          "afterConversion": true
+        },
+        {
+          "target": "critical",
+          "amount": 5
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Pinnacle_of_Strength",
+        "revision": 2631177
+      }
+    },
+    {
+      "trait": 2011,
+      "profession": "Warrior",
+      "name": "鲜血感应",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 12,
+          "from": "Precision"
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 12,
+          "from": "Power"
+        },
+        {
+          "target": "CritDamage",
+          "amount": 12,
+          "from": "Precision",
+          "gates": [
+            "berserk"
+          ]
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 12,
+          "from": "Power",
+          "gates": [
+            "berserk"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Blood_Reaction",
+        "revision": 3129010
+      }
+    },
+    {
+      "trait": 2046,
+      "profession": "Warrior",
+      "name": "致命狂暴",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 300,
+          "gates": [
+            "berserk"
+          ]
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 150,
+          "gates": [
+            "berserk"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Fatal_Frenzy",
+        "revision": 3129011
+      }
+    },
+    {
+      "trait": 2418,
+      "profession": "Warrior",
+      "name": "激励工具",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Inspiring_Implements",
+        "revision": 3081507
+      }
+    },
+    {
+      "trait": 1849,
+      "profession": "Engineer",
+      "name": "施加斥力",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 30,
+          "perMight": true,
+          "afterConversion": true
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Applied_Force",
+        "revision": 3092472
+      }
+    },
+    {
+      "trait": 1878,
+      "profession": "Engineer",
+      "name": "化学弹药",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 120
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Chemical_Rounds",
+        "revision": 2655468
+      }
+    },
+    {
+      "trait": 1923,
+      "profession": "Engineer",
+      "name": "粗略瞄准",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 150,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "No_Scope",
+        "revision": 2657369
+      }
+    },
+    {
+      "trait": 1944,
+      "profession": "Engineer",
+      "name": "冲击护盾",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 10,
+          "from": "Power"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Blast_Shield",
+        "revision": 2868106
+      }
+    },
+    {
+      "trait": 2006,
+      "profession": "Engineer",
+      "name": "热能视觉",
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 150
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Thermal_Vision",
+        "revision": 2363880
+      }
+    },
+    {
+      "trait": 2052,
+      "profession": "Engineer",
+      "name": "动能加速",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 13,
+          "from": "Power"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Kinetic_Accelerators",
+        "revision": 3154859
+      }
+    },
+    {
+      "trait": 2389,
+      "profession": "Engineer",
+      "name": "混合活力",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 240
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Hybrid_Vigor",
+        "revision": 3169696
+      }
+    },
+    {
+      "trait": 970,
+      "profession": "Ranger",
+      "name": "精磨砺斧",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 120
+        },
+        {
+          "target": "CritDamage",
+          "amount": 120,
+          "gates": [
+            "weapon:Axe"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Honed_Axes",
+        "revision": 3092844
+      }
+    },
+    {
+      "trait": 978,
+      "profession": "Ranger",
+      "name": "源泉",
+      "rules": [
+        {
+          "target": "Healing",
+          "amount": 6.5,
+          "from": "Power"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Wellspring",
+        "revision": 3155790
+      }
+    },
+    {
+      "trait": 1700,
+      "profession": "Ranger",
+      "name": "迅步力量",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "weapon:Sword"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Strider's_Strength",
+        "revision": 2693261
+      }
+    },
+    {
+      "trait": 1888,
+      "profession": "Ranger",
+      "name": "严酷追猎",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 250,
+          "gates": [
+            "fury"
+          ]
+        },
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Vicious_Quarry",
+        "revision": 3083095
+      }
+    },
+    {
+      "trait": 1900,
+      "profession": "Ranger",
+      "name": "兽群头领",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 150,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 150,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        },
+        {
+          "target": "Precision",
+          "amount": 150,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        },
+        {
+          "target": "Toughness",
+          "amount": 150,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        },
+        {
+          "target": "Vitality",
+          "amount": 150,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Pack_Alpha",
+        "revision": 3092842
+      }
+    },
+    {
+      "trait": 2286,
+      "profession": "Ranger",
+      "name": "自然刚毅",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 240
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Natural_Fortitude",
+        "revision": 3117862
+      }
+    },
+    {
+      "trait": 1884,
+      "profession": "Thief",
+      "name": "法杖大师",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "weapon:Staff"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Staff_Master",
+        "revision": 2695928
+      }
+    },
+    {
+      "trait": 1904,
+      "profession": "Thief",
+      "name": "越战越勇",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 250,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "No_Quarter_(trait)",
+        "revision": 2656078
+      }
+    },
+    {
+      "trait": 1933,
+      "profession": "Thief",
+      "name": "劫掠强韧",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 7,
+          "from": "Power"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Marauder's_Resilience",
+        "revision": 2631030
+      }
+    },
+    {
+      "trait": 2093,
+      "profession": "Thief",
+      "name": "非快即死",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 200,
+          "gates": [
+            "quickness"
+          ]
+        },
+        {
+          "target": "Precision",
+          "amount": 200,
+          "gates": [
+            "quickness"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "quickness",
+          "label": "拥有急速",
+          "description": "急速生效期间，联动已支持的属性特性；不模拟覆盖率"
+        }
+      ],
+      "source": {
+        "title": "Be_Quick_or_Be_Killed",
+        "revision": 2631040
+      }
+    },
+    {
+      "trait": 2118,
+      "profession": "Thief",
+      "name": "沉默隐望",
+      "rules": [
+        {
+          "target": "Precision",
+          "amount": 120
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Silent_Scope",
+        "revision": 3172334
+      }
+    },
+    {
+      "trait": 2160,
+      "profession": "Thief",
+      "name": "提前布局",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Premeditation",
+        "revision": 2946176
+      }
+    },
+    {
+      "trait": 2264,
+      "profession": "Thief",
+      "name": "暗影力量",
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 13,
+          "from": "Vitality"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Strength_of_Shadows",
+        "revision": 2745951
+      }
+    },
+    {
+      "trait": 2284,
+      "profession": "Thief",
+      "name": "第二选项",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 90
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 90,
+          "gates": [
+            "weapon:Scepter"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 7,
+          "from": "ConditionDamage"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Second_Opinion",
+        "revision": 2689075
+      }
+    },
+    {
+      "trait": 263,
+      "profession": "Elementalist",
+      "name": "秘法闪电",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 150,
+          "gates": [
+            "arcaneLightning"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "arcaneLightning",
+          "label": "秘法闪电效果生效中",
+          "description": "秘法技能触发的 15 秒效果：+150 暴击效果；不自动模拟触发"
+        }
+      ],
+      "source": {
+        "title": "Arcane_Lightning",
+        "revision": 3106981
+      }
+    },
+    {
+      "trait": 334,
+      "profession": "Elementalist",
+      "name": "威力满溢",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 150,
+          "gates": [
+            "might10"
+          ]
+        },
+        {
+          "target": "Power",
+          "amount": 150,
+          "gates": [
+            "might10",
+            "fire"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Power_Overwhelming_(trait)",
+        "revision": 2363646
+      }
+    },
+    {
+      "trait": 1938,
+      "profession": "Elementalist",
+      "name": "集中聚能",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 240
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Gathered_Focus",
+        "revision": 2839802
+      }
+    },
+    {
+      "trait": 2004,
+      "profession": "Elementalist",
+      "name": "元素附魔",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Elemental_Enchantment",
+        "revision": 2475777
+      }
+    },
+    {
+      "trait": 2028,
+      "profession": "Elementalist",
+      "name": "抚伤之力",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 300
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Soothing_Power",
+        "revision": 2839787
+      }
+    },
+    {
+      "trait": 2077,
+      "profession": "Elementalist",
+      "name": "元素振兴",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Elemental_Refreshment",
+        "revision": 3170553
+      }
+    },
+    {
+      "trait": 801,
+      "profession": "Necromancer",
+      "name": "诅咒萦绕",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 200
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Lingering_Curse",
+        "revision": 2630755
+      }
+    },
+    {
+      "trait": 803,
+      "profession": "Necromancer",
+      "name": "狂怒渡化",
+      "rules": [
+        {
+          "target": "Precision",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Furious_Demise",
+        "revision": 2630254
+      }
+    },
+    {
+      "trait": 810,
+      "profession": "Necromancer",
+      "name": "弱点追击",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 13,
+          "from": "Precision"
+        },
+        {
+          "target": "critical",
+          "amount": 2,
+          "perStack": "targetConditions"
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetConditions",
+          "label": "目标症状种类数",
+          "description": "每种不同症状 +2% 暴击率；同一症状的层数不重复计算",
+          "max": 14
+        }
+      ],
+      "source": {
+        "title": "Target_the_Weak",
+        "revision": 3006426
+      }
+    },
+    {
+      "trait": 829,
+      "profession": "Necromancer",
+      "name": "恶意坚韧",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 10,
+          "from": "Power"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Spiteful_Fortitude",
+        "revision": 3172502
+      }
+    },
+    {
+      "trait": 855,
+      "profession": "Necromancer",
+      "name": "致命力量",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 10,
+          "perStack": "carapace"
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 10,
+          "perStack": "carapace"
+        }
+      ],
+      "controls": [
+        {
+          "key": "carapace",
+          "label": "死亡甲壳层数",
+          "description": "每层 +20 坚韧；选中致命力量后每层另加 +10 威力和症状伤害",
+          "max": 30
+        }
+      ],
+      "source": {
+        "title": "Deadly_Strength",
+        "revision": 2789003
+      }
+    },
+    {
+      "trait": 861,
+      "profession": "Necromancer",
+      "name": "现世妄执",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Vital_Persistence",
+        "revision": 2554092
+      }
+    },
+    {
+      "trait": 915,
+      "profession": "Necromancer",
+      "name": "唤醒痛苦",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 10,
+          "perMight": true,
+          "afterConversion": true
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Awaken_the_Pain",
+        "revision": 3092737
+      }
+    },
+    {
+      "trait": 2021,
+      "profession": "Necromancer",
+      "name": "夺魂灭屠",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 300,
+          "gates": [
+            "reaperShroud"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "signet-shroud",
+          "label": "处于帷幕状态",
+          "description": "与怨恨纹章共用当前帷幕预览；夺魂者猛攻仅在夺魂者帷幕中生效"
+        }
+      ],
+      "source": {
+        "title": "Reaper's_Onslaught",
+        "revision": 3003839
+      }
+    },
+    {
+      "trait": 2074,
+      "profession": "Necromancer",
+      "name": "崩塌信标",
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 7,
+          "from": "ConditionDamage"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Fell_Beacon",
+        "revision": 2707906
+      }
+    },
+    {
+      "trait": 2121,
+      "profession": "Necromancer",
+      "name": "黄沙贤者",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 225,
+          "gates": [
+            "activeShade"
+          ]
+        },
+        {
+          "target": "ConditionDuration",
+          "amount": 225,
+          "gates": [
+            "activeShade"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "activeShade",
+          "label": "拥有活跃沙影",
+          "description": "拥有至少一个活跃沙影时，+225 增益效果、+225 症状效果"
+        }
+      ],
+      "source": {
+        "title": "Sand_Sage",
+        "revision": 2707891
+      }
+    },
+    {
+      "trait": 2192,
+      "profession": "Necromancer",
+      "name": "难恕之敌",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 13,
+          "from": "Vitality"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Implacable_Foe",
+        "revision": 3155330
+      }
+    },
+    {
+      "trait": 2209,
+      "profession": "Necromancer",
+      "name": "黑暗枪手",
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 10,
+          "from": "Vitality"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Dark_Gunslinger",
+        "revision": 3128982
+      }
+    },
+    {
+      "trait": 2220,
+      "profession": "Necromancer",
+      "name": "扭曲药剂",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 13,
+          "from": "Vitality"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Twisted_Medicine",
+        "revision": 2842805
+      }
+    },
+    {
+      "trait": 2371,
+      "profession": "Necromancer",
+      "name": "创造增益",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Boon_of_Creation",
+        "revision": 3073893
+      }
+    },
+    {
+      "trait": 1746,
+      "profession": "Revenant",
+      "name": "高尚慈悲",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 13,
+          "from": "Power"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Elevated_Compassion",
+        "revision": 3013954
+      }
+    },
+    {
+      "trait": 1770,
+      "profession": "Revenant",
+      "name": "石刻造诣",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 13,
+          "from": "Toughness"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Versed_in_Stone",
+        "revision": 3216458
+      }
+    },
+    {
+      "trait": 1788,
+      "profession": "Revenant",
+      "name": "强化效力",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 240
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Reinforced_Potency",
+        "revision": 2946172
+      }
+    },
+    {
+      "trait": 1801,
+      "profession": "Revenant",
+      "name": "涌动恶意",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 120
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Seething_Malice",
+        "revision": 2838474
+      }
+    },
+    {
+      "trait": 1821,
+      "profession": "Revenant",
+      "name": "生命协调",
+      "rules": [
+        {
+          "target": "Healing",
+          "amount": 120
+        },
+        {
+          "target": "BoonDuration",
+          "amount": 7,
+          "from": "Healing"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Life_Attunement",
+        "revision": 2363857
+      }
+    },
+    {
+      "trait": 2229,
+      "profession": "Revenant",
+      "name": "帝国分崩",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 240,
+          "gates": [
+            "healthAbove50"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 240,
+          "gates": [
+            "healthBelow50"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "healthBelow50",
+          "label": "生命低于 50%",
+          "description": "勾选：+240 治疗效果；取消：按生命高于 50% 预览，+240 威力。两种状态互斥"
+        }
+      ],
+      "source": {
+        "title": "Empire_Divided",
+        "revision": 3128934
+      }
+    },
+    {
+      "trait": 839,
+      "profession": "Necromancer",
+      "name": "灵魂参悟",
+      "rules": [
+        {
+          "target": "Toughness",
+          "amount": 20,
+          "perStack": "carapace"
+        }
+      ],
+      "controls": [
+        {
+          "key": "carapace",
+          "label": "死亡甲壳层数",
+          "description": "每层 +20 坚韧；选中致命力量后每层另加 +10 威力和症状伤害",
+          "max": 30
+        }
+      ],
+      "source": {
+        "title": "Soul_Comprehension",
+        "revision": 2768400
+      }
+    },
+    {
+      "trait": 1065,
+      "profession": "Ranger",
+      "name": "宠物威勇",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 300,
+          "gates": [
+            "soulbeastMerged"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Pet's_Prowess",
+        "revision": 3119168
+      }
+    },
+    {
+      "trait": 1704,
+      "profession": "Thief",
+      "name": "突袭特训",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 80
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "revealed"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "revealed",
+          "label": "处于现身状态",
+          "description": "无法潜行的现身效果期间，额外 +120 威力；不自动模拟触发"
+        }
+      ],
+      "source": {
+        "title": "Revealed_Training",
+        "revision": 3114082
+      }
+    },
+    {
+      "trait": 1931,
+      "profession": "Necromancer",
+      "name": "临终仪式",
+      "rules": [
+        {
+          "target": "Healing",
+          "amount": 150,
+          "gates": [
+            "healthAbove75"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 300,
+          "gates": [
+            "health50to75"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 450,
+          "gates": [
+            "healthBelow50"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "healthBelow75",
+          "label": "生命低于 75%",
+          "description": "终焉仪式：高于75%时 +150 治疗效果；低于75%但高于50%时 +300"
+        },
+        {
+          "key": "healthBelow50",
+          "label": "生命低于 50%",
+          "description": "终焉仪式：低于50%时 +450 治疗效果；同时勾选两个血线条件时，按较低生命区间预览"
+        }
+      ],
+      "source": {
+        "title": "Last_Rites",
+        "revision": 3028999
+      }
+    },
+    {
+      "trait": 2186,
+      "profession": "Necromancer",
+      "name": "炼金活力",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 240
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Alchemic_Vigor",
+        "revision": 2994741
+      }
+    },
+    {
+      "trait": 1683,
+      "profession": "Guardian",
+      "name": "正义本能",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 25,
+          "gates": [
+            "resolution"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "resolution",
+          "label": "拥有决心",
+          "description": "正义本能：决心期间额外 +25% 暴击率；不自动添加威能"
+        }
+      ],
+      "source": {
+        "title": "Righteous_Instincts",
+        "revision": 3073889
+      }
+    },
+    {
+      "trait": 1315,
+      "profession": "Warrior",
+      "name": "天降奇兵",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 25,
+          "gates": [
+            "targetDefiantOnly"
+          ]
+        },
+        {
+          "target": "critical",
+          "amount": 50,
+          "gates": [
+            "targetDisabled"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetDefiant",
+          "label": "目标拥有蔑视条",
+          "description": "联动明确对拥有蔑视条敌人生效的特性"
+        },
+        {
+          "key": "targetDisabled",
+          "label": "目标被控制",
+          "description": "目标受到昏迷、晕眩、击倒等控制；不包括单纯定身或残废"
+        }
+      ],
+      "source": {
+        "title": "Unsuspecting_Foe",
+        "revision": 2624432
+      }
+    },
+    {
+      "trait": 1342,
+      "profession": "Warrior",
+      "name": "狂怒爆发",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 5,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Furious_Burst",
+        "revision": 2786275
+      }
+    },
+    {
+      "trait": 2049,
+      "profession": "Warrior",
+      "name": "怒震山河",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "berserk"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Smash_Brawler",
+        "revision": 3040136
+      }
+    },
+    {
+      "trait": 536,
+      "profession": "Engineer",
+      "name": "流血追击",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Hematic_Focus",
+        "revision": 3092457
+      }
+    },
+    {
+      "trait": 1914,
+      "profession": "Engineer",
+      "name": "优质枪械",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "targetWithin450"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetWithin450",
+          "label": "与目标距离不超过 450",
+          "description": "优质枪械：在Wiki距离阈值内额外 +15% 暴击率"
+        }
+      ],
+      "source": {
+        "title": "High_Caliber",
+        "revision": 3092455
+      }
+    },
+    {
+      "trait": 1068,
+      "profession": "Ranger",
+      "name": "捕猎战术",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 10,
+          "anyGates": [
+            "targetFlanked",
+            "targetDefiant"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetFlanked",
+          "label": "从目标侧面或背后攻击",
+          "description": "只预览当前攻击方向，不自动模拟走位"
+        },
+        {
+          "key": "targetDefiant",
+          "label": "目标拥有蔑视条",
+          "description": "联动明确对拥有蔑视条敌人生效的特性"
+        }
+      ],
+      "source": {
+        "title": "Hunter's_Tactics",
+        "revision": 3135499
+      }
+    },
+    {
+      "trait": 1215,
+      "profession": "Thief",
+      "name": "出其不意",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 100,
+          "anyGates": [
+            "stealth",
+            "hiddenKiller"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "stealth",
+          "label": "处于潜行状态",
+          "description": "出其不意：潜行期间额外 +100% 暴击率"
+        },
+        {
+          "key": "hiddenKiller",
+          "label": "出其不意余效生效中",
+          "description": "现身后的4秒效果；不根据现身状态自动假定持续时间"
+        }
+      ],
+      "source": {
+        "title": "Hidden_Killer",
+        "revision": 2882668
+      }
+    },
+    {
+      "trait": 1281,
+      "profession": "Thief",
+      "name": "敏锐观察",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 10
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Keen_Observer",
+        "revision": 2817482
+      }
+    },
+    {
+      "trait": 2177,
+      "profession": "Elementalist",
+      "name": "超级元素",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 20,
+          "gates": [
+            "targetWeakness"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetWeakness",
+          "label": "目标处于虚弱状态",
+          "description": "超级元素：攻击虚弱目标时额外 +20% 暴击率"
+        }
+      ],
+      "source": {
+        "title": "Superior_Elements",
+        "revision": 3173262
+      }
+    },
+    {
+      "trait": 2031,
+      "profession": "Necromancer",
+      "name": "防御瓦解",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 2,
+          "perStack": "targetVulnerability"
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetVulnerability",
+          "label": "目标易伤层数",
+          "description": "防御瓦解每层 +2% 暴击率，最高25层；不增加精准",
+          "max": 25
+        }
+      ],
+      "source": {
+        "title": "Decimate_Defenses",
+        "revision": 2502283
+      }
+    },
+    {
+      "trait": 1719,
+      "profession": "Revenant",
+      "name": "迷雾翻腾",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 25,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Roiling_Mists",
+        "revision": 3013943
+      }
+    },
+    {
+      "trait": 2142,
+      "profession": "Revenant",
+      "name": "残暴冲力",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 10
+        },
+        {
+          "target": "critical",
+          "amount": 23,
+          "gates": [
+            "enduranceFull"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "enduranceFull",
+          "label": "耐力全满",
+          "description": "残暴冲力：耐力未满时 +10%，全满时合计 +33% 暴击率"
+        }
+      ],
+      "source": {
+        "title": "Brutal_Momentum",
+        "revision": 2840275
+      }
+    },
+    {
+      "trait": 692,
+      "profession": "Mesmer",
+      "name": "优越自尊",
+      "rules": [
+        {
+          "target": "criticalMultiplier",
+          "amount": 15
+        },
+        {
+          "target": "criticalMultiplier",
+          "amount": 10,
+          "anyGates": [
+            "targetDisabled",
+            "targetHealthBelow50"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetDisabled",
+          "label": "目标被控制",
+          "description": "目标受到昏迷、晕眩、击倒等控制；不包括单纯定身或残废"
+        },
+        {
+          "key": "targetHealthBelow50",
+          "label": "目标生命低于 50%",
+          "description": "优越自尊：低血量或被控制只触发一次额外10%暴击伤害倍率"
+        }
+      ],
+      "source": {
+        "title": "Superiority_Complex",
+        "revision": 3212700
+      }
+    },
+    {
+      "trait": 2009,
+      "profession": "Mesmer",
+      "name": "危机时刻",
+      "rules": [
+        {
+          "target": "criticalMultiplier",
+          "amount": 5,
+          "gates": [
+            "dangerTime"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "dangerTime",
+          "label": "危机时刻效果生效中",
+          "description": "施加迟缓后10秒内，玩家暴击伤害倍率 +5%；不模拟触发或独立分身属性"
+        }
+      ],
+      "source": {
+        "title": "Danger_Time",
+        "revision": 3128597
+      }
+    },
+    {
+      "trait": 2107,
+      "profession": "Warrior",
+      "name": "纯净打击",
+      "rules": [
+        {
+          "target": "criticalMultiplier",
+          "amount": 5
+        },
+        {
+          "target": "criticalMultiplier",
+          "amount": 5,
+          "gates": [
+            "targetBoonless"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetBoonless",
+          "label": "目标没有增益",
+          "description": "纯净打击：目标无增益时倍率由5%提高至10%"
+        }
+      ],
+      "source": {
+        "title": "Pure_Strike_(trait)",
+        "revision": 3135611
+      }
+    },
+    {
+      "trait": 1268,
+      "profession": "Thief",
+      "name": "双牙撕咬",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 7,
+          "anyGates": [
+            "targetFlanked",
+            "targetDefiant"
+          ]
+        },
+        {
+          "target": "criticalMultiplier",
+          "amount": 5
+        },
+        {
+          "target": "criticalMultiplier",
+          "amount": 2,
+          "gates": [
+            "healthAbove50"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetFlanked",
+          "label": "从目标侧面或背后攻击",
+          "description": "只预览当前攻击方向，不自动模拟走位"
+        },
+        {
+          "key": "targetDefiant",
+          "label": "目标拥有蔑视条",
+          "description": "联动明确对拥有蔑视条敌人生效的特性"
+        },
+        {
+          "key": "healthBelow50",
+          "label": "生命低于 50%",
+          "description": "取消时按自身生命高于50%预览；不代表目标生命"
+        }
+      ],
+      "source": {
+        "title": "Twin_Fangs",
+        "revision": 3065777
+      }
+    },
+    {
+      "trait": 893,
+      "profession": "Necromancer",
+      "name": "致命洞察",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 15
+        },
+        {
+          "target": "criticalMultiplier",
+          "amount": 10,
+          "gates": [
+            "playerShroud"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "signet-shroud",
+          "label": "处于帷幕状态",
+          "description": "与怨恨纹章共用预览；只影响已支持的玩家帷幕效果",
+          "excludeSpecializations": [
+            60
+          ]
+        }
+      ],
+      "source": {
+        "title": "Death_Perception",
+        "revision": 3128975
+      }
+    },
+    {
+      "trait": 2188,
+      "profession": "Necromancer",
+      "name": "恶毒腐化",
+      "rules": [
+        {
+          "target": "criticalMultiplier",
+          "amount": 12.5,
+          "gates": [
+            "targetTorment"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetTorment",
+          "label": "目标处于折磨状态",
+          "description": "按Wiki异常注记，恶毒腐化实际暴击伤害倍率为12.5%"
+        }
+      ],
+      "source": {
+        "title": "Wicked_Corruption",
+        "revision": 3128036
+      }
+    },
+    {
+      "trait": 1915,
+      "profession": "Mesmer",
+      "name": "幻象灵感",
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 5
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Illusionary_Inspiration",
+        "revision": 3100080
+      }
+    },
+    {
+      "trait": 1682,
+      "profession": "Guardian",
+      "name": "意志之力",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 300
+        },
+        {
+          "target": "outgoingHealing",
+          "amount": 1,
+          "scaleWith": "Vitality"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Force_of_Will",
+        "revision": 2628665
+      }
+    },
+    {
+      "trait": 1381,
+      "profession": "Warrior",
+      "name": "顽强专注",
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 15
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Stalwart_Focus",
+        "revision": 2791427
+      }
+    },
+    {
+      "trait": 1992,
+      "profession": "Ranger",
+      "name": "自然修护",
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 20
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Natural_Mender",
+        "revision": 3205682
+      }
+    },
+    {
+      "trait": 2058,
+      "profession": "Ranger",
+      "name": "萦绕之光",
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 20,
+          "gates": [
+            "celestialAvatar"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "celestialAvatar",
+          "label": "处于天界化身形态",
+          "description": "萦绕之光：天界化身形态期间，对盟友治疗额外 +20%"
+        }
+      ],
+      "source": {
+        "title": "Lingering_Light",
+        "revision": 3170339
+      }
+    },
+    {
+      "trait": 2272,
+      "profession": "Thief",
+      "name": "黑暗哨卫",
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 20
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Dark_Sentry",
+        "revision": 3154937
+      }
+    },
+    {
+      "trait": 789,
+      "profession": "Necromancer",
+      "name": "起死回生",
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 10
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Life_from_Death",
+        "revision": 2906377
+      }
+    },
+    {
+      "trait": 2182,
+      "profession": "Revenant",
+      "name": "公正反叛",
+      "rules": [
+        {
+          "target": "outgoingHealing",
+          "amount": 4,
+          "perStack": "kallasFervor"
+        }
+      ],
+      "controls": [
+        {
+          "key": "kallasFervor",
+          "label": "卡拉狂热层数",
+          "description": "公正反叛每层对盟友治疗 +4%，最多5层；不自动模拟触发",
+          "max": 5
+        }
+      ],
+      "source": {
+        "title": "Righteous_Rebel",
+        "revision": 3170015
+      }
+    },
+    {
+      "trait": 2353,
+      "profession": "Mesmer",
+      "name": "节奏爆发",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 4,
+          "from": "Power",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "Precision",
+          "amount": 4,
+          "from": "Precision",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "Toughness",
+          "amount": 4,
+          "from": "Toughness",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "Vitality",
+          "amount": 4,
+          "from": "Vitality",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "CritDamage",
+          "amount": 4,
+          "from": "CritDamage",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 4,
+          "from": "ConditionDamage",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "ConditionDuration",
+          "amount": 4,
+          "from": "ConditionDuration",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "BoonDuration",
+          "amount": 4,
+          "from": "BoonDuration",
+          "perStack": "activeInstruments"
+        },
+        {
+          "target": "Healing",
+          "amount": 4,
+          "from": "Healing",
+          "perStack": "activeInstruments"
+        }
+      ],
+      "controls": [
+        {
+          "key": "activeInstruments",
+          "label": "演奏中乐器数量",
+          "description": "每件乐器增加4%的可转换属性；最多4件，不自动模拟演奏时间",
+          "max": 4
+        }
+      ],
+      "source": {
+        "title": "Fortissimo",
+        "revision": 3161505
+      }
+    },
+    {
+      "trait": 214,
+      "profession": "Elementalist",
+      "name": "狂怒风暴",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 180,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Raging_Storm",
+        "revision": 2589553
+      }
+    },
+    {
+      "trait": 221,
+      "profession": "Elementalist",
+      "name": "和风疾速",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 5
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Zephyr's_Speed_(elementalist)",
+        "revision": 2630241
+      }
+    },
+    {
+      "trait": 223,
+      "profession": "Elementalist",
+      "name": "风使训练",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 150
+        },
+        {
+          "target": "CritDamage",
+          "amount": 150,
+          "gates": [
+            "air"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "air",
+          "label": "空气协调",
+          "description": "跟随当前协调，不独立保存"
+        }
+      ],
+      "source": {
+        "title": "Aeromancer's_Training",
+        "revision": 2839323
+      }
+    },
+    {
+      "trait": 232,
+      "profession": "Elementalist",
+      "name": "狂风巨作",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 7,
+          "from": "Precision"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Ferocious_Winds",
+        "revision": 2356258
+      }
+    },
+    {
+      "trait": 275,
+      "profession": "Elementalist",
+      "name": "岩石力量",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 10,
+          "from": "Toughness"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Strength_of_Stone",
+        "revision": 3115411
+      }
+    },
+    {
+      "trait": 296,
+      "profession": "Elementalist",
+      "name": "燃烧精准",
+      "rules": [
+        {
+          "target": "duration",
+          "amount": 20,
+          "effect": "Burning"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Burning_Precision",
+        "revision": 2622736
+      }
+    },
+    {
+      "trait": 320,
+      "profession": "Elementalist",
+      "name": "赐威烈焰",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 150,
+          "gates": [
+            "fire"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "fire",
+          "label": "火焰协调",
+          "description": "跟随当前协调，不独立保存"
+        }
+      ],
+      "source": {
+        "title": "Empowering_Flame",
+        "revision": 2607376
+      }
+    },
+    {
+      "trait": 325,
+      "profession": "Elementalist",
+      "name": "怒火焚身",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Burning_Rage",
+        "revision": 3114202
+      }
+    },
+    {
+      "trait": 413,
+      "profession": "Engineer",
+      "name": "聚合药剂",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 240
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Compounding_Chemicals",
+        "revision": 3026674
+      }
+    },
+    {
+      "trait": 519,
+      "profession": "Engineer",
+      "name": "增幅治疗",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 250,
+          "gates": [
+            "regeneration"
+          ]
+        },
+        {
+          "target": "Healing",
+          "amount": 250,
+          "gates": [
+            "regeneration"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "regeneration",
+          "label": "拥有再生",
+          "description": "再生期间联动已支持的特性属性"
+        }
+      ],
+      "source": {
+        "title": "Energy_Amplifier",
+        "revision": 2882047
+      }
+    },
+    {
+      "trait": 557,
+      "profession": "Guardian",
+      "name": "荣耀法杖",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 120
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Honorable_Staff",
+        "revision": 2926835
+      }
+    },
+    {
+      "trait": 566,
+      "profession": "Guardian",
+      "name": "强壮右臂",
+      "rules": [
+        {
+          "target": "Precision",
+          "amount": 80,
+          "afterConversion": true
+        },
+        {
+          "target": "Power",
+          "amount": 80,
+          "gates": [
+            "oneHand"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Right-Hand_Strength",
+        "revision": 2694778
+      }
+    },
+    {
+      "trait": 568,
+      "profession": "Guardian",
+      "name": "光耀力量",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 150,
+          "afterConversion": true
+        },
+        {
+          "target": "critical",
+          "amount": 10,
+          "gates": [
+            "targetBurning"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "targetBurning",
+          "label": "目标处于燃烧状态",
+          "description": "光耀力量：对燃烧目标额外 +10% 暴击率"
+        }
+      ],
+      "source": {
+        "title": "Radiant_Power",
+        "revision": 2369786
+      }
+    },
+    {
+      "trait": 580,
+      "profession": "Guardian",
+      "name": "顽强防御",
+      "rules": [
+        {
+          "target": "Toughness",
+          "amount": 240,
+          "gates": [
+            "weapon:Shield"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Stalwart_Defender",
+        "revision": 2258813
+      }
+    },
+    {
+      "trait": 620,
+      "profession": "Guardian",
+      "name": "美德之力",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 7,
+          "from": "Vitality"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Power_of_the_Virtuous",
+        "revision": 3168689
+      }
+    },
+    {
+      "trait": 753,
+      "profession": "Mesmer",
+      "name": "恶意巫术",
+      "rules": [
+        {
+          "target": "duration",
+          "amount": 25,
+          "effect": "Confusion"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Malicious_Sorcery",
+        "revision": 3175412
+      }
+    },
+    {
+      "trait": 1059,
+      "profession": "Ranger",
+      "name": "魔法萦绕",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 240
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Lingering_Magic",
+        "revision": 3048436
+      }
+    },
+    {
+      "trait": 1099,
+      "profession": "Ranger",
+      "name": "蜘蛛恐惧",
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 150
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Arachnophobia_(trait)",
+        "revision": 2959826
+      }
+    },
+    {
+      "trait": 1101,
+      "profession": "Ranger",
+      "name": "成双巧手",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 120
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 120,
+          "gates": [
+            "weapon:Torch,Dagger,Mace"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Ambidexterity",
+        "revision": 2944199
+      }
+    },
+    {
+      "trait": 1164,
+      "profession": "Thief",
+      "name": "致命野心",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 180
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Deadly_Ambition",
+        "revision": 2812058
+      }
+    },
+    {
+      "trait": 1192,
+      "profession": "Thief",
+      "name": "欺诈平衡",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "weapon:Sword"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Swindler's_Equilibrium",
+        "revision": 3021642
+      }
+    },
+    {
+      "trait": 1232,
+      "profession": "Thief",
+      "name": "准备就绪",
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 150
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Preparedness",
+        "revision": 2968943
+      }
+    },
+    {
+      "trait": 1245,
+      "profession": "Thief",
+      "name": "匕首训练",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 80
+        },
+        {
+          "target": "Power",
+          "amount": 80,
+          "gates": [
+            "weapon:Dagger"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Dagger_Training",
+        "revision": 2356173
+      }
+    },
+    {
+      "trait": 1272,
+      "profession": "Thief",
+      "name": "千锤百炼",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 10,
+          "from": "Precision"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Practiced_Tolerance",
+        "revision": 2363650
+      }
+    },
+    {
+      "trait": 1333,
+      "profession": "Warrior",
+      "name": "剑术大师",
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 120
+        },
+        {
+          "target": "ConditionDamage",
+          "amount": 120,
+          "gates": [
+            "weapon:Sword"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Blademaster",
+        "revision": 2655530
+      }
+    },
+    {
+      "trait": 1338,
+      "profession": "Warrior",
+      "name": "强力巨剑",
+      "rules": [
+        {
+          "target": "Power",
+          "amount": 120
+        },
+        {
+          "target": "Power",
+          "amount": 120,
+          "gates": [
+            "weapon:Greatsword"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Forceful_Greatsword",
+        "revision": 2849881
+      }
+    },
+    {
+      "trait": 1369,
+      "profession": "Warrior",
+      "name": "斧系专精",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 120
+        },
+        {
+          "target": "CritDamage",
+          "amount": 120,
+          "gates": [
+            "weapon:Axe"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Axe_Mastery",
+        "revision": 2590046
+      }
+    },
+    {
+      "trait": 1449,
+      "profession": "Warrior",
+      "name": "刚毅不屈",
+      "rules": [
+        {
+          "target": "Vitality",
+          "amount": 10,
+          "from": "Power"
+        },
+        {
+          "target": "CritDamage",
+          "amount": 10,
+          "from": "Power"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Great_Fortitude",
+        "revision": 2621156
+      }
+    },
+    {
+      "trait": 1455,
+      "profession": "Warrior",
+      "name": "创伤精准",
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 7,
+          "from": "Precision"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Wounding_Precision",
+        "revision": 2363890
+      }
+    },
+    {
+      "trait": 1470,
+      "profession": "Warrior",
+      "name": "活力战吼",
+      "rules": [
+        {
+          "target": "Healing",
+          "amount": 13,
+          "from": "Power"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Vigorous_Shouts",
+        "revision": 2956562
+      }
+    },
+    {
+      "trait": 1471,
+      "profession": "Warrior",
+      "name": "军号怒吼",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 120
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Roaring_Reveille",
+        "revision": 2590038
+      }
+    },
+    {
+      "trait": 1556,
+      "profession": "Guardian",
+      "name": "炽火狂热",
+      "rules": [
+        {
+          "target": "ConditionDamage",
+          "amount": 10,
+          "from": "Power"
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Kindled_Zeal",
+        "revision": 2054472
+      }
+    },
+    {
+      "trait": 1865,
+      "profession": "Mesmer",
+      "name": "混沌执念",
+      "rules": [
+        {
+          "target": "BoonDuration",
+          "amount": 250,
+          "gates": [
+            "regeneration"
+          ]
+        },
+        {
+          "target": "ConditionDuration",
+          "amount": 100,
+          "gates": [
+            "regeneration"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "regeneration",
+          "label": "拥有再生",
+          "description": "再生期间联动已支持的特性属性"
+        }
+      ],
+      "source": {
+        "title": "Chaotic_Persistence",
+        "revision": 3189915
+      }
+    },
+    {
+      "trait": 1927,
+      "profession": "Mesmer",
+      "name": "时间涌流",
+      "rules": [
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "alacrity"
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "key": "alacrity",
+          "label": "拥有敏捷",
+          "description": "时间涌流：敏捷期间额外 +15% 暴击率"
+        }
+      ],
+      "source": {
+        "title": "Flow_of_Time",
+        "revision": 3107767
+      }
+    },
+    {
+      "trait": 2193,
+      "profession": "Mesmer",
+      "name": "寂静强烈",
+      "rules": [
+        {
+          "target": "CritDamage",
+          "amount": 10,
+          "from": "Vitality"
+        },
+        {
+          "target": "critical",
+          "amount": 15,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Quiet_Intensity",
+        "revision": 2908846
+      }
+    },
+    {
+      "trait": 2207,
+      "profession": "Mesmer",
+      "name": "锐化悲伤",
+      "rules": [
+        {
+          "target": "ConditionDuration",
+          "amount": 150,
+          "gates": [
+            "fury"
+          ]
+        }
+      ],
+      "controls": [],
+      "source": {
+        "title": "Sharpening_Sorrow",
+        "revision": 2646212
+      }
+    }
+  ],
+  "traitWeaponReplacements": [
+    {
+      "trait": 801,
+      "profession": "Necromancer",
+      "before": 10709,
+      "after": 51647,
+      "source": {
+        "title": "Lingering_Curse",
+        "revision": 2630755
+      }
+    }
+  ],
   "modifierCoverage": {
     "professions": [
       "Mesmer",
@@ -1477,10 +4361,12 @@
       "Necromancer",
       "Revenant"
     ],
-    "rules": 302,
-    "targets": 204,
-    "traits": 45,
+    "rules": 613,
+    "targets": 506,
+    "traits": 186,
     "durationTraits": 11,
-    "guardedSkips": 281
+    "controlTraits": 2,
+    "attributeTraits": 128,
+    "guardedSkips": 10
   }
 }

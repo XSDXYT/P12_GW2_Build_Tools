@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "id": "ae09600a-494a-4a01-8f57-738df09b0c5a",
+  "name": "卡迪姆2.0 自闭 灾厄",
+  "description": "转载自SC：https://snowcrows.com/builds/raids/necromancer/kite-scourge-qadim-the-peerless?utm_source=chatgpt.com\n\n# 一、BD介绍\n- 如果你想避免给自己施加症状，可以使用 [怨恨纹章](gw2:skill/10622) 替换 [鲜血力量](gw2:skill/10544)，代价是损失一定的 DPS。\n- 在这种情况下，应该选择特性 [蓄意扰乱](gw2:trait/1883)，替换 [传播瘟疫](gw2:trait/2013)，因为此时你身上已经没有值得转移给敌人的症状了。\n- 选择特性 [腐化大师](gw2:trait/816) 可以显著提高伤害，但代价是放弃 [寄生蔓延](gw2:trait/812) 所提供的大部分自我治疗与生存能力，同时[鲜血力量](gw2:skill/10544)也会带来更多自身受到伤害的风险。\n- 不建议机制练习队伍采用这种配置。 因为一旦某些 Boss 机制处理失败，角色就很难重新稳定自己的生命值和战斗状态。\n- 如果你在晶塔机制位（Pylon）没有辅助队友为你提供 威能（Might），可以在手枪武器组搭配的第二把火炬上装备[超级力量法印](gw2:item/24562)，以提高整体 DPS。\n\n# 二、笔记\n\n## 1、能量塔与蔑视\n\n激活你的 能量干扰器，让能量塔与你的角色建立连接，防止它被无可匹敌的卡迪姆重新夺回，变为敌对状态。\n每个阶段开始时，根据需要使用以下技能，打破你负责的能量塔的蔑视条：\n\n- [冲锋陷阵](gw2:skill/10647)。\n- [重压崩溃](gw2:skill/44296) 手枪5。\n- [恶毒爆冲](gw2:skill/62511) 手枪3。\n- [炫耀之柱](gw2:skill/44428) F4。\n\n后续阶段的破蔑技巧\n在后续阶段，先选中能量塔作为目标，使用几次普通攻击链，促使你的血肉魔像向能量塔移动，然后再使用[冲锋陷阵](gw2:skill/10647)。\n如果魔像还停留在竞技场中央，你就使用冲锋，那么这次冲锋的部分甚至全部攻击都可能打空。\n\n## 2、生存与治疗\n\n- [寄生蔓延](gw2:trait/812)和 [召唤血魔](gw2:skill/10547)能够提供持续的被动治疗。\n- 只要你能够持续造成伤害，就可以依靠它们维持自身生命值。\n\n## 3、能量宝珠机制\n\n- 使用 [黄沙膨胀](gw2:skill/42917)，前往无可匹敌的卡迪姆投掷能量宝珠的位置，接住宝珠。\n- 接住宝珠后，与传送门互动，返回你负责的能量塔。\n\n## 4、40% / 30% 血量阶段\n\n- 当 Boss 的生命值降至 40% 或 30% 时，如果你负责的能量塔被摧毁，就移动到另一座能量塔附近。\n- 保持 流动干扰器处于激活状态，并继续攻击无可匹敌的卡迪姆，以持续施加一层 Erratic Energy（不稳定能量） 效果。\n- 这个效果会提高卡迪姆受到的所有伤害。\n- 当无可匹敌的卡迪姆冲向你负责的能量塔、准备将其摧毁时，向侧面闪避，以避免受到持续时间较长的 击倒（Knockdown） 效果。\n- 这套配置没有任何 昏迷解除（Stun Break） 技能，因此如果被这次攻击击中，可能会导致角色进入倒地状态。\n\n## 5、20% 以下阶段\n\n- 当无可匹敌的卡迪姆生命值低于 20% 时，回到大团，与其他队友抱团站位，继续正常输出。\n\n## 6、黄沙膨胀的使用限制\n\n- [黄沙膨胀](gw2:skill/42917)的最大施法距离只有 900 单位。\n- 这个距离不足以让你一次性跨越 Boss 在 80% / 60% 血量阶段 留下的整片火池。\n- 如果前往接取能量宝珠的路线被火池阻挡，你需要提前一些使用传送技能，然后通过跑步完成剩余路程。\n- 如果你所在的区域已经出现火池，就需要将传送门的位置稍微偏离能量宝珠的落点，以避开火池。\n\n## 7、核心要点\n\n7.1. 始终保持至少一个沙影\n\n- 使用 [显形沙影](gw2:skill/44946) F1，确保无可匹敌的卡迪姆身上始终有至少一个沙影能够影响到他。\n\n7.2. 鲜血力量与症状转移\n\n- 不要让[鲜血力量](gw2:skill/10544)积攒到两次充能。\n- 在使用 [沙漠之幕](gw2:skill/44663)F5 后使用鲜血力量。\n- 因为特性 [传播瘟疫](gw2:trait/2013)会将你身上的症状转移给敌人。\n\n7.3. 填充技能\n\n- 在其他主要输出技能冷却期间，使用 普通攻击（Auto Attacks） 和 [重压崩溃](gw2:skill/44296)填补输出空档。\n\n7.4. 技能冷却管理\n\n- [邪恶恩惠](gw2:skill/40813) F2 和 [沙漠之幕](gw2:skill/44663) F5 冷却结束后就使用。\n\n7.5. 利用熵能异常体恢复生命之力\n\n- 如果 熵能异常体 移动到你负责的能量塔附近并死亡，它应该能够为你补充一笔可观的 生命之力。\n- 这样一来，当你需要额外的生存保障时，就可以相对频繁地使用 [黄沙瀑布](gw2:skill/43448) F3。\n\n7.6. 沙影技能的作用范围\n\n- 所有 沙影技能 不仅会影响灾厄师自身周围的区域，也会影响当前已经召唤出来的沙影周围的区域。",
+  "descriptionStyle": {
+    "name": "迷雾金笺",
+    "css": "/* 迷雾金笺。用 .md-content 表示讲解正文；修改后导入或刷新模板文件夹。 */\n.md-content {\n  --md-accent: #e0c58e;\n  background: #142a31;\n  color: #e4eef0;\n  padding: 26px;\n  border: 1px solid #47616a;\n  border-radius: 8px;\n  font-family: \"Microsoft YaHei UI\", \"PingFang SC\", sans-serif;\n  font-size: 17px;\n  line-height: 1.95;\n}\nh1 {\n  color: #f2deaf;\n  font-size: 30px;\n  line-height: 1.5;\n  border-bottom: 2px solid #9b854f;\n  padding-bottom: 14px;\n  margin: 0 0 26px;\n}\nh2 {\n  color: #e0c58e;\n  font-size: 23px;\n  border-left: 4px solid #b99b60;\n  padding-left: 14px;\n  margin: 30px 0 14px;\n}\nh3 {\n  color: #e9d9b6;\n  font-size: 19px;\n  margin: 24px 0 10px;\n}\np {\n  margin: 12px 0;\n}\nstrong {\n  color: #ffdda0;\n  font-weight: 700;\n}\nblockquote {\n  background: #203a40;\n  color: #d0e5e3;\n  border-left: 3px solid #7eaaa5;\n  padding: 10px 18px;\n  margin: 20px 0;\n}\na {\n  color: #f1d69f;\n}\ncode {\n  background: #0d2028;\n  color: #d5e9e9;\n  padding: 2px 5px;\n  border-radius: 3px;\n}\npre {\n  background: #0d2028;\n  padding: 18px;\n  border: 1px solid #3a535d;\n}\ntable {\n  width: 100%;\n  border-collapse: collapse;\n  margin: 20px 0;\n}\nth {\n  background: #29434a;\n  color: #f1ddb8;\n  font-weight: 600;\n}\nth,\ntd {\n  padding: 10px 14px;\n  border: 1px solid #46616b;\n}\ntr:nth-child(even) {\n  background: #1c333b;\n}\nhr {\n  border: 0;\n  border-top: 1px solid #60706a;\n  margin: 28px 0;\n}\n.build-reference,\n.png-reference {\n  background: #36443c;\n  color: #ffe1a2;\n  border: 1px solid #8a815d;\n  border-radius: 4px;\n  padding: 1px 6px;\n}\n"
+  },
+  "encounters": [
+    {
+      "instance": "阿达西姆之钥",
+      "boss": "无可匹敌的卡迪姆",
+      "mode": "challenge"
+    }
+  ],
+  "profession": "Necromancer",
+  "equipment": {
+    "head": {
+      "statId": 1153,
+      "runeId": 67339,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "shoulders": {
+      "statId": 1153,
+      "runeId": 67339,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "chest": {
+      "statId": 1153,
+      "runeId": 67339,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "hands": {
+      "statId": 1153,
+      "runeId": 67339,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "legs": {
+      "statId": 1153,
+      "runeId": 67339,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "feet": {
+      "statId": 1153,
+      "runeId": 67339,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "back": {
+      "statId": 1130,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "accessory1": {
+      "statId": 1130,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "accessory2": {
+      "statId": 1130,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": ""
+    },
+    "amulet": {
+      "statId": 1130,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [],
+      "weapon": ""
+    },
+    "ring1": {
+      "statId": 1130,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "ring2": {
+      "statId": 1130,
+      "runeId": null,
+      "sigils": [
+        null,
+        null
+      ],
+      "infusions": [
+        null,
+        null,
+        null
+      ],
+      "weapon": ""
+    },
+    "weapon1": {
+      "statId": 1153,
+      "runeId": null,
+      "sigils": [
+        48911,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": "Scepter"
+    },
+    "offhand1": {
+      "statId": 1153,
+      "runeId": null,
+      "sigils": [
+        44944,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": "Torch"
+    },
+    "weapon2": {
+      "statId": 1153,
+      "runeId": null,
+      "sigils": [
+        48911,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": "Pistol"
+    },
+    "offhand2": {
+      "statId": 1153,
+      "runeId": null,
+      "sigils": [
+        24562,
+        null
+      ],
+      "infusions": [
+        null
+      ],
+      "weapon": "Torch"
+    }
+  },
+  "relic": 100153,
+  "food": 91848,
+  "utility": 43449,
+  "jadeBotCore": 96613,
+  "infusionLoadouts": {
+    "1": [
+      {
+        "id": 37130,
+        "count": 18
+      }
+    ],
+    "2": [
+      {
+        "id": 37130,
+        "count": 18
+      }
+    ]
+  },
+  "skills": [
+    10547,
+    10544,
+    42917,
+    10611,
+    10646
+  ],
+  "specs": [
+    {
+      "id": 50,
+      "traits": [
+        875,
+        894,
+        905
+      ]
+    },
+    {
+      "id": 39,
+      "traits": [
+        2013,
+        812,
+        801
+      ]
+    },
+    {
+      "id": 60,
+      "traits": [
+        2074,
+        2067,
+        2164
+      ]
+    }
+  ]
+}

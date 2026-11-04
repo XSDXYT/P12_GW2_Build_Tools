@@ -1,10 +1,11 @@
 import { readFile, writeFile, mkdir, rename } from "node:fs/promises";
 import { setTimeout as delay } from "node:timers/promises";
 import { load } from "cheerio";
+import { wikiArticlePath } from "./wiki-cache-paths.mjs";
 
 const root = new URL("../", import.meta.url);
 const file = (path) => new URL(path, root);
-const mirror = "https://wiki.wishingstar.top";
+const mirror = "https://wiki.guildwars2.com";
 const userAgent = "GW2-Build-Tools/0.3 (Wiki research; offline snapshots)";
 // Disambiguation targets verified from the articles' own visible links, then validated by game ID.
 const titleOverrides = {
@@ -298,10 +299,7 @@ if (!fetchOnly) {
     reviews: await json("data/wiki-reviews.json"),
     readArticle: async (title) => {
       try {
-        return await readFile(
-          file(`data/wiki-cache/articles/${encodeURIComponent(title)}.html`),
-          "utf8",
-        );
+        return await readFile(wikiArticlePath(title), "utf8");
       } catch {
         const original = Object.entries(manifest.entries.skills).find(
           ([, e]) => e.title === title,
@@ -315,6 +313,15 @@ if (!fetchOnly) {
       }
     },
   });
+  const { attachSupplementalWikiSkills } =
+    await import("./wiki-supplemental.mjs");
+  const supplemental = await attachSupplementalWikiSkills({
+    snapshot,
+    config: await json("data/wiki-supplemental.json"),
+    api: await json("data/wiki-branch-api.json"),
+    reviews: await json("data/wiki-reviews.json"),
+    readArticle: (title) => readFile(wikiArticlePath(title), "utf8"),
+  });
   const { attachTraitModifiers } = await import("./wiki-trait-modifiers.mjs");
   const traitModifiers = await attachTraitModifiers({
     snapshot,
@@ -322,11 +329,9 @@ if (!fetchOnly) {
     config: await json("data/wiki-trait-modifiers.json"),
     readHtml: (kind, id) =>
       readFile(
-        file(
-          kind === "articles"
-            ? `data/wiki-cache/articles/${encodeURIComponent(id)}.html`
-            : `data/wiki-cache/${kind}-${id}.html`,
-        ),
+        kind === "articles"
+          ? wikiArticlePath(id)
+          : file(`data/wiki-cache/${kind}-${id}.html`),
         "utf8",
       ),
   });
@@ -340,6 +345,7 @@ if (!fetchOnly) {
         coverage: snapshot.professionCoverage,
         branchCoverage: snapshot.branchCoverage,
         branches,
+        supplemental,
         traitModifiers,
         entries: Object.fromEntries(
           Object.entries(snapshot.entries).map(([k, es]) => [
@@ -371,6 +377,7 @@ if (!fetchOnly) {
   );
   if (
     snapshot.branchCoverage.skippedRows > 0 ||
+    snapshot.supplementalCoverage.skippedRows > 0 ||
     Object.values(snapshot.coverage).some((c) => c.skippedRows > 0)
   )
     throw Error(

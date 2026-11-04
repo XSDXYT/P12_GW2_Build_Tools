@@ -9,7 +9,7 @@ import mesmer from "./data/wiki/mesmer.json";
 import necromancer from "./data/wiki/necromancer.json";
 import revenant from "./data/wiki/revenant.json";
 import type { DetailKind, DetailFact, DetailContext } from "./game-details";
-import { projectSigilControl } from "./sigil-control";
+import { projectSigilControl, type ControlRule } from "./sigil-control";
 import { applyWikiModifiers, type WikiModifier } from "./wiki-modifiers";
 
 export type WikiRow = Omit<DetailFact, "modified" | "scaling">;
@@ -19,6 +19,9 @@ export type WikiEntry = {
   title: string;
   revision: number;
   identityVerified: boolean;
+  supplemental?: boolean;
+  actor?: "pet" | "mech";
+  controlRule?: ControlRule;
   description?: string;
   rows: WikiRow[];
   notes?: string[];
@@ -38,6 +41,7 @@ export type WikiEntry = {
     rows: WikiRow[];
     requiresTrait?: number;
     modifiers?: WikiModifier[];
+    controlRule?: ControlRule;
   }[];
 };
 const fragments = [
@@ -70,6 +74,20 @@ export const wikiSnapshot = {
     withheldRows: number;
   };
   mirror: string;
+  traitControlBonuses: {
+    trait: number;
+    profession: string;
+    name: string;
+    effects: string[];
+    bonus: number;
+  }[];
+  traitWeaponReplacements: {
+    trait: number;
+    profession: string;
+    before: number;
+    after: number;
+    source: { title: string; revision: number };
+  }[];
   specializationTraits: Record<number, number[]>;
   entries: Record<"traits" | "skills", Record<number, WikiEntry>>;
   coverage: Record<
@@ -101,6 +119,16 @@ export function wikiDetails(
     wikiSnapshot.entries[kind === "trait" ? "traits" : "skills"][id] ||
     (kind === "skill" ? branchEntries.get(id) : undefined);
   if (!entry) return;
+  const independentActor =
+    entry.actor === "pet" ||
+    entry.actor === "mech" ||
+    independentBranchSkills.has(id);
+  const detailContext = independentActor ? {} : context;
+  const controlTraits = independentActor
+    ? []
+    : (wikiSnapshot.traitControlBonuses || []).filter(
+        (t) => selectedTraits.has(t.trait) && t.profession === entry.profession,
+      );
   let rows = [...entry.rows];
   for (const variant of entry.variants || []) {
     if (
@@ -126,12 +154,19 @@ export function wikiDetails(
     }
   }
   facts = applyWikiModifiers(facts, entry.modifiers, selectedTraits);
-  facts = scaleWikiHealing(facts, context.healingPower);
+  facts = scaleWikiHealing(facts, detailContext.healingPower);
   if (kind === "skill")
-    facts = projectSigilControl(facts, id, entry, context.controlDurationBonus);
+    facts = projectSigilControl(
+      facts,
+      id,
+      entry,
+      detailContext.controlDurationBonus,
+      controlTraits,
+    );
   return {
     facts,
-    durationScalingExcluded: independentBranchSkills.has(id),
+    durationScalingExcluded:
+      independentActor || independentBranchSkills.has(id),
     reviewed: entry.identityVerified,
     ...(entry.description ? { description: entry.description } : {}),
     selectedTraitNotes: entry.selectedTraitNotes?.filter((t) =>
@@ -143,26 +178,32 @@ export function wikiDetails(
         (branch) =>
           !branch.requiresTrait || selectedTraits.has(branch.requiresTrait),
       )
-      .map((branch) => ({
-        label: branch.label,
-        facts: projectSigilControl(
-          scaleWikiHealing(
-            applyWikiModifiers(
-              branch.rows.map((row) => ({
-                ...row,
-                modified: false,
-              })),
-              branch.modifiers,
-              selectedTraits,
+      .map((branch) => {
+        const otherCaster =
+          /变形目标|召唤物|精魂攻击|元素雕文|小型元素雕文/.test(branch.label);
+        const branchContext = otherCaster ? {} : detailContext;
+        return {
+          label: branch.label,
+          facts: projectSigilControl(
+            scaleWikiHealing(
+              applyWikiModifiers(
+                branch.rows.map((row) => ({
+                  ...row,
+                  modified: false,
+                })),
+                branch.modifiers,
+                selectedTraits,
+              ),
+              branchContext.healingPower,
             ),
-            context.healingPower,
+            branch.id,
+            branch,
+            branchContext.controlDurationBonus,
+            otherCaster ? [] : controlTraits,
           ),
-          branch.id,
-          branch,
-          context.controlDurationBonus,
-        ),
-        sourceUrl: `${wikiSnapshot.mirror}/wiki/${encodeURIComponent(branch.title)}`,
-      })),
+          sourceUrl: `${wikiSnapshot.mirror}/wiki/${encodeURIComponent(branch.title)}`,
+        };
+      }),
     sourceUrl: entry.pageUnavailable
       ? undefined
       : `${wikiSnapshot.mirror}/wiki/${encodeURIComponent(entry.title)}`,
@@ -191,6 +232,7 @@ for (const parent of Object.values(wikiSnapshot.entries.skills)) {
         identityVerified: parent.identityVerified,
         rows: branch.rows,
         modifiers: branch.modifiers,
+        controlRule: branch.controlRule,
       });
   }
 }

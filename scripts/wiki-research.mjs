@@ -2,9 +2,10 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { setTimeout as delay } from "node:timers/promises";
 import { pathToFileURL } from "node:url";
 import { load } from "cheerio";
+import { wikiArticlePath } from "./wiki-cache-paths.mjs";
 const root = new URL("../", import.meta.url);
 const file = (p) => new URL(p, root);
-const mirror = "https://wiki.wishingstar.top";
+const mirror = "https://wiki.guildwars2.com";
 const headers = {
   "User-Agent": "GW2-Build-Tools/0.3 (Wiki research; offline snapshots)",
 };
@@ -61,13 +62,13 @@ export async function openResearch() {
     return body;
   }
   const read = async (title) => {
-    const path = `data/wiki-cache/articles/${encodeURIComponent(title)}.html`;
+    const path = wikiArticlePath(title);
     for (const p of [path, paths.get(title)].filter(Boolean))
       try {
-        return await readFile(file(p), "utf8");
+        return await readFile(p === path ? p : file(p), "utf8");
       } catch {}
     const html = await request(title);
-    await writeFile(file(path), html, "utf8");
+    await writeFile(path, html, "utf8");
     return html;
   };
   return { read, manifest };

@@ -17,6 +17,8 @@ export default defineConfig({
     "weapon-skills.spec.ts",
     "profession-mechanics.spec.ts",
     "trait-modifiers.spec.ts",
+    "wiki-resume.spec.ts",
+    "trait-attributes.spec.ts",
     "build-image.spec.ts",
     "markdown-style.spec.ts",
     "markdown-table.spec.ts",

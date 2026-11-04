@@ -4175,6 +4175,74 @@
           }
         ]
       },
+      "5810": {
+        "title": "Grenade_Barrage",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3031564,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.6",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "手雷数量",
+            "detail": "6",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "爆炸半径",
+            "detail": "120",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "爆炸",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/450630987A0566D4A7A491EDA4DCDF57D9396854/1770203.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5810",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
       "5811": {
         "title": "Personal_Battering_Ram",
         "profession": "Engineer",
@@ -4492,7 +4560,16 @@
                 "label": "蔑视伤害",
                 "detail": "100"
               }
-            ]
+            ],
+            "controlRule": {
+              "title": "Galvanic_Bomb",
+              "revision": 3205774,
+              "control": {
+                "label": "晕眩",
+                "seconds": 1
+              },
+              "defiance": 100
+            }
           },
           {
             "id": 76530,
@@ -4824,6 +4901,84 @@
           }
         ]
       },
+      "5824": {
+        "title": "Smoke_Bomb_(engineer_skill)",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2990788,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "目盲",
+            "detail": "3 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "引爆时间",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "间隔",
+            "detail": "2 秒",
+            "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "爆炸",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/450630987A0566D4A7A491EDA4DCDF57D9396854/1770203.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "烟雾",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5824",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
       "5825": {
         "title": "Slick_Shoes",
         "profession": "Engineer",
@@ -4953,6 +5108,350 @@
               }
             ],
             "traitName": "配件达人"
+          }
+        ]
+      },
+      "5827": {
+        "title": "Fragmentation_Shot",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2842793,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.4",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "流血",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "120",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物 (20% 几率)",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "weapon-base-duration-1878-5827",
+            "trait": 1878,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1878,
+              "title": "Chemical_Rounds",
+              "revision": 2655468
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "流血",
+                "factor": 1.33
+              }
+            ],
+            "traitName": "化学弹药"
+          }
+        ]
+      },
+      "5828": {
+        "title": "Poison_Dart_Volley",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2794142,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "8 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.0 · 5 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "中毒",
+            "detail": "7 秒 · -33% 治疗效能"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "weapon-base-duration-1878-5828",
+            "trait": 1878,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1878,
+              "title": "Chemical_Rounds",
+              "revision": 2655468
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "中毒",
+                "factor": 1.33
+              }
+            ],
+            "traitName": "化学弹药"
+          }
+        ]
+      },
+      "5829": {
+        "title": "Static_Shot",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2776280,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "10 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.4",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "目盲",
+            "detail": "3 秒"
+          },
+          {
+            "label": "困惑",
+            "detail": "5 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+            "stacks": 3
+          },
+          {
+            "label": "弹跳次数",
+            "detail": "4",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "weapon-base-duration-1878-5829",
+            "trait": 1878,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1878,
+              "title": "Chemical_Rounds",
+              "revision": 2655468
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "目盲",
+                "factor": 1.33
+              },
+              {
+                "type": "duration",
+                "label": "困惑",
+                "factor": 1.33
+              }
+            ],
+            "traitName": "化学弹药"
+          }
+        ]
+      },
+      "5830": {
+        "title": "Glue_Shot",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2810145,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "定身",
+            "detail": "1.5 秒"
+          },
+          {
+            "label": "致残",
+            "detail": "2 秒 · -50% 移动速度"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "4",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "粘液滩持续时间",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "爆炸",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "weapon-base-duration-1878-5830",
+            "trait": 1878,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1878,
+              "title": "Chemical_Rounds",
+              "revision": 2655468
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "定身",
+                "factor": 1.33
+              },
+              {
+                "type": "duration",
+                "label": "致残",
+                "factor": 1.33
+              }
+            ],
+            "traitName": "化学弹药"
+          }
+        ]
+      },
+      "5831": {
+        "title": "Blowtorch",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3128686,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "最大伤害",
+            "detail": "系数 ×2.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "最小伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "最高燃烧",
+            "detail": "4.5 秒 · 3 层",
+            "stacks": 3
+          },
+          {
+            "label": "最低燃烧",
+            "detail": "3 秒 · 3 层",
+            "stacks": 3
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "weapon-base-duration-1878-5831",
+            "trait": 1878,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1878,
+              "title": "Chemical_Rounds",
+              "revision": 2655468
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "最高燃烧",
+                "factor": 1.33
+              },
+              {
+                "type": "duration",
+                "label": "最低燃烧",
+                "factor": 1.33
+              }
+            ],
+            "traitName": "化学弹药"
           }
         ]
       },
@@ -5213,7 +5712,16 @@
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
-            ]
+            ],
+            "controlRule": {
+              "title": "Throw_Boulder",
+              "revision": 2932380,
+              "control": {
+                "label": "昏迷",
+                "seconds": 2
+              },
+              "defiance": 200
+            }
           },
           {
             "id": 14490,
@@ -6470,6 +6978,79 @@
           }
         ]
       },
+      "5867": {
+        "title": "Toss_Elixir_R",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2633464,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "90 秒"
+          },
+          {
+            "label": "每次脉冲复活",
+            "detail": "17%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "光明",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5867",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
       "5868": {
         "title": "Supply_Crate",
         "profession": "Engineer",
@@ -6592,7 +7173,16 @@
             "name": "水银偏好",
             "description": "控制敌人时减少进化的冷却时间。"
           }
-        ]
+        ],
+        "controlRule": {
+          "title": "Supply_Crate",
+          "revision": 3172741,
+          "control": {
+            "label": "昏迷",
+            "seconds": 2
+          },
+          "defiance": 200
+        }
       },
       "5904": {
         "title": "Tool_Kit",
@@ -7692,6 +8282,138 @@
           }
         ]
       },
+      "5966": {
+        "title": "Healing_Mist",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3186808,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "再生",
+            "detail": "10 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5966",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "5967": {
+        "title": "Toss_Elixir_B",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2767658,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "稳固",
+            "detail": "4 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+            "stacks": 3
+          },
+          {
+            "label": "激怒",
+            "detail": "10 秒 · +25% 暴击率",
+            "icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png"
+          },
+          {
+            "label": "威能",
+            "detail": "10 秒 · 5 层",
+            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+            "stacks": 5
+          },
+          {
+            "label": "决心",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/D104A6B9344A2E2096424A3C300E46BC2926E4D7/2440718.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5967",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
       "5968": {
         "title": "Elixir_R",
         "profession": "Engineer",
@@ -7767,6 +8489,893 @@
               }
             ],
             "traitName": "生长激素"
+          }
+        ]
+      },
+      "5969": {
+        "title": "Toss_Elixir_C",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2690120,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "16 秒"
+          },
+          {
+            "label": "症状转为增益",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5969",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "5970": {
+        "title": "Toss_Elixir_U",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2774084,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "奔驰疾速",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/E04392C3D8ED985125973AEB99D8460C483263F9/103458.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5970",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "5972": {
+        "title": "Toss_Elixir_S",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2689987,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "45 秒"
+          },
+          {
+            "label": "潜行",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/3BD4670638470439F3325B444FAF7D5FA620CCE5/62777.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5972",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "5973": {
+        "title": "Superspeed_(skill)",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2840079,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "奔驰疾速",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/E04392C3D8ED985125973AEB99D8460C483263F9/103458.png"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5973",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "5978": {
+        "title": "Toss_Elixir_H",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2690121,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "保护",
+            "detail": "2 秒 · -33% 受到的伤害",
+            "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png"
+          },
+          {
+            "label": "再生",
+            "detail": "4 秒"
+          },
+          {
+            "label": "活力",
+            "detail": "4 秒 · +50% 耐力回复速度",
+            "icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5978",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "5982": {
+        "title": "Launch_Personal_Battering_Ram",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2742959,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "致残",
+            "detail": "6 秒 · -50% 移动速度"
+          },
+          {
+            "label": "晕眩",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5982",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "5983": {
+        "title": "Rocket_Kick",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2372281,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "15 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "8 秒 · 2 层",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+            "stacks": 2
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "300",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5983",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "5999": {
+        "title": "Throw_Wrench",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3171242,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "易伤",
+            "detail": "5 秒 · 2 层 · +2% 受到的伤害, +2% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 2
+          },
+          {
+            "label": "致残",
+            "detail": "2 秒 · -50% 移动速度"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-5999",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6077": {
+        "title": "Toss_Elixir_C",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2690120,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "16 秒"
+          },
+          {
+            "label": "症状转为增益",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6077",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6089": {
+        "title": "Toss_Elixir_U",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2774084,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "奔驰疾速",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/E04392C3D8ED985125973AEB99D8460C483263F9/103458.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6089",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6090": {
+        "title": "Toss_Elixir_S",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2689987,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "45 秒"
+          },
+          {
+            "label": "潜行",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/3BD4670638470439F3325B444FAF7D5FA620CCE5/62777.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6090",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6091": {
+        "title": "Toss_Elixir_R",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2633464,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "90 秒"
+          },
+          {
+            "label": "每次脉冲复活",
+            "detail": "17%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "光明",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6091",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6092": {
+        "title": "Toss_Elixir_B",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2767658,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "稳固",
+            "detail": "4 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+            "stacks": 3
+          },
+          {
+            "label": "激怒",
+            "detail": "10 秒 · +25% 暴击率",
+            "icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png"
+          },
+          {
+            "label": "威能",
+            "detail": "10 秒 · 5 层",
+            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+            "stacks": 5
+          },
+          {
+            "label": "决心",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/D104A6B9344A2E2096424A3C300E46BC2926E4D7/2440718.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6092",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6159": {
+        "title": "Smoke_Vent",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3171398,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "15 秒"
+          },
+          {
+            "label": "目盲",
+            "detail": "5 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6159",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
           }
         ]
       },
@@ -7933,6 +9542,15 @@
             "description": "控制敌人时减少进化的冷却时间。"
           }
         ],
+        "controlRule": {
+          "title": "Throw_Mine",
+          "revision": 2750035,
+          "control": {
+            "label": "昏迷",
+            "seconds": 2
+          },
+          "defiance": 200
+        },
         "modifiers": [
           {
             "id": "gadgeteer-mine",
@@ -7955,6 +9573,1283 @@
               }
             ],
             "traitName": "配件达人"
+          }
+        ]
+      },
+      "6164": {
+        "title": "Mine_Field",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2673937,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "17 秒"
+          },
+          {
+            "label": "每个地雷的伤害",
+            "detail": "系数 ×0.77",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "致残",
+            "detail": "2.5 秒 · -50% 移动速度"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "爆炸半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "爆炸",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/450630987A0566D4A7A491EDA4DCDF57D9396854/1770203.png"
+          },
+          {
+            "label": "射程",
+            "detail": "360",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6164",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6172": {
+        "title": "Grenade_Barrage_(underwater)",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3031566,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.6",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "手雷数量",
+            "detail": "6",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "爆炸半径",
+            "detail": "120",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "爆炸",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/450630987A0566D4A7A491EDA4DCDF57D9396854/1770203.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6172",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6176": {
+        "title": "Regenerating_Mist",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3116309,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "18 秒"
+          },
+          {
+            "label": "再生",
+            "detail": "3 秒 · 2 层",
+            "stacks": 2
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "480",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "流水",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6176",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8500000000000001
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6177": {
+        "title": "Rocket",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3172772,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.25",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "爆炸",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/450630987A0566D4A7A491EDA4DCDF57D9396854/1770203.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,500",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6177",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6178": {
+        "title": "Surprise_Shot_(engineer_skill)",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2827714,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "8 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,000",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6178",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6179": {
+        "title": "Net_Attack",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2475067,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "38 秒"
+          },
+          {
+            "label": "定身",
+            "detail": "3 秒"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6179",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6180": {
+        "title": "Rumble",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2361721,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "38 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "稳固",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
+          },
+          {
+            "label": "组合技终结",
+            "detail": "爆炸",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6180",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6181": {
+        "title": "Throw_Napalm",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2362863,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.7",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "2 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "火焰",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6181",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "6182": {
+        "title": "Harpoon_(engineer_skill)",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2369087,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "8 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,000",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-6182",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12334": {
+        "title": "Confusing_Speech",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2124493,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "45 秒"
+          },
+          {
+            "label": "困惑",
+            "detail": "5 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+            "stacks": 3
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "360",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12334",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12335": {
+        "title": "Pain_Transference",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2126990,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "45 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12335",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12336": {
+        "title": "Vent_Radiation",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2129267,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "45 秒"
+          },
+          {
+            "label": "中毒",
+            "detail": "9 秒 · -33% 治疗效能"
+          },
+          {
+            "label": "射程",
+            "detail": "360",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12336",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12354": {
+        "title": "Invigorating_Roar",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2126221,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "50 秒"
+          },
+          {
+            "label": "活力",
+            "detail": "10 秒 · +50% 耐力回复速度",
+            "icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12354",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12355": {
+        "title": "Booby_Trap_(charr_skill)",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2341683,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "45 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.75",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "流血",
+            "detail": "10 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+            "stacks": 3
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "触发时间",
+            "detail": "20 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12355",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12357": {
+        "title": "Hidden_Pistols",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2197685,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "30 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.3",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "射击次数",
+            "detail": "8",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物 (20% 几率)",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12357",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12377": {
+        "title": "Blessing_of_Dwayna",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2633229,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "40 秒"
+          },
+          {
+            "label": "治疗",
+            "detail": "995 + 0.5 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 995,
+              "coefficient": 0.5
+            }
+          },
+          {
+            "label": "再生",
+            "detail": "3 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12377",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12378": {
+        "title": "Blessing_of_Kormir",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2124042,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "30 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12378",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12379": {
+        "title": "Blessing_of_Lyssa",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2124044,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "35 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12379",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12438": {
+        "title": "Eat_Wurm_Egg",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2125068,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "30 秒"
+          },
+          {
+            "label": "再生",
+            "detail": "6 秒"
+          },
+          {
+            "label": "活力",
+            "detail": "6 秒 · +50% 耐力回复速度",
+            "icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12438",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12439": {
+        "title": "Eat_Owl_Egg",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2185771,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "30 秒"
+          },
+          {
+            "label": "再生",
+            "detail": "6 秒"
+          },
+          {
+            "label": "迅捷",
+            "detail": "6 秒 · +33% 移动速度",
+            "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12439",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12462": {
+        "title": "Throw_Vine",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2872224,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "45 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "击倒",
+            "detail": "2 秒",
+            "icon": "https://render.guildwars2.com/file/7632087376D36B0D100F1B07BE53F154BC337D7C/2440716.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "200"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12462",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12463": {
+        "title": "Vine_Shield",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2206924,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "45 秒"
+          },
+          {
+            "label": "持续时间",
+            "detail": "2 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12463",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "12465": {
+        "title": "Leafy_Bandage",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2633228,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "40 秒"
+          },
+          {
+            "label": "治疗",
+            "detail": "1630 + 0.75 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 1630,
+              "coefficient": 0.75
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-12465",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
           }
         ]
       },
@@ -8099,6 +10994,378 @@
           }
         ]
       },
+      "21661": {
+        "title": "Static_Shock",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2969633,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "昏迷",
+            "detail": "2 秒",
+            "icon": "https://render.guildwars2.com/file/1999B9DB355005D2DD19F66DFFBAA6D466057508/522727.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "200"
+          },
+          {
+            "label": "射程",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "controlRule": {
+          "title": "Static_Shock",
+          "revision": 2969633,
+          "control": {
+            "label": "昏迷",
+            "seconds": 2
+          },
+          "defiance": 200
+        },
+        "modifiers": [
+          {
+            "id": "recharge-1872-21661",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "29505": {
+        "title": "Reconstruction_Field",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2665583,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "保护",
+            "detail": "2 秒 · -33% 受到的伤害",
+            "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "2 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "300",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "流水",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-29505",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "29515": {
+        "title": "Toss_Elixir_X_(underwater)",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2742961,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "120 秒"
+          },
+          {
+            "label": "已变形",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/395ED474E6F5E77D8036DD9222F95B66CCDC253C/103554.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-29515",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "29606": {
+        "title": "Invisible_Analysis",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2827737,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "激怒",
+            "detail": "5 秒 · +25% 暴击率",
+            "icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png"
+          },
+          {
+            "label": "易伤",
+            "detail": "8 秒 · 10 层 · +10% 受到的伤害, +10% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 10
+          },
+          {
+            "label": "现身",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/62BFF65D1CE99B1B2B0928152BCC596EAC0D372B/102887.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-29606",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "29665": {
+        "title": "Bypass_Coating",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2767683,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "奔驰疾速",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/E04392C3D8ED985125973AEB99D8460C483263F9/103458.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-29665",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "29716": {
+        "title": "Med_Pack_Drop",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2843582,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "50 秒"
+          },
+          {
+            "label": "治疗",
+            "detail": "1302 + 0.1 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 1302,
+              "coefficient": 0.1
+            }
+          },
+          {
+            "label": "症状移除",
+            "detail": "14",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "冲击次数",
+            "detail": "6",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "60 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-29716",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
       "29739": {
         "title": "Purge_Gyro",
         "profession": "Engineer",
@@ -8194,6 +11461,53 @@
               }
             ],
             "traitName": "机械加速"
+          }
+        ]
+      },
+      "29772": {
+        "title": "Bandage_Self",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2633219,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "17 秒"
+          },
+          {
+            "label": "治疗",
+            "detail": "4920 + 1 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 4920,
+              "coefficient": 1
+            }
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-29772",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
           }
         ]
       },
@@ -8307,6 +11621,71 @@
           }
         ]
       },
+      "30027": {
+        "title": "Defense_Field",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2609004,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "稳固",
+            "detail": "6 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+            "stacks": 3
+          },
+          {
+            "label": "格挡飞弹",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-30027",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
       "30101": {
         "title": "Bulwark_Gyro",
         "profession": "Engineer",
@@ -8417,6 +11796,168 @@
               }
             ],
             "traitName": "机械加速"
+          }
+        ]
+      },
+      "30262": {
+        "title": "Flashbang",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3090488,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.05",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "现身",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/62BFF65D1CE99B1B2B0928152BCC596EAC0D372B/102887.png"
+          },
+          {
+            "label": "目盲",
+            "detail": "3 秒"
+          },
+          {
+            "label": "晕眩",
+            "detail": "1.5 秒",
+            "icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "现身半径",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "爆炸",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/450630987A0566D4A7A491EDA4DCDF57D9396854/1770203.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "150"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "controlRule": {
+          "title": "Flashbang",
+          "revision": 3090488,
+          "control": {
+            "label": "晕眩",
+            "seconds": 1.5
+          },
+          "defiance": 150
+        },
+        "modifiers": [
+          {
+            "id": "recharge-1872-30262",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "30279": {
+        "title": "Chemical_Field",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2809397,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "中毒",
+            "detail": "8 秒 · -33% 治疗效能"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "4",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "300",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "中毒",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-30279",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
           }
         ]
       },
@@ -8576,6 +12117,194 @@
               }
             ],
             "traitName": "机械加速"
+          }
+        ]
+      },
+      "30588": {
+        "title": "Med_Pack_Drop_(underwater)",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2475097,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "60 秒"
+          },
+          {
+            "label": "治疗",
+            "detail": "1302 + 0.1 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 1302,
+              "coefficient": 0.1
+            }
+          },
+          {
+            "label": "症状移除",
+            "detail": "14",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "冲击次数",
+            "detail": "6",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "60 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-30588",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "30599": {
+        "title": "Orbital_Strike",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2633225,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "40 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.33",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "360",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/BA65F2F5A073EB4BCC79085916B978DC0B096A0B/2248876.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "爆炸",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,500",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-30599",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "30725": {
+        "title": "Toss_Elixir_X",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2999357,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "60 秒"
+          },
+          {
+            "label": "已变形",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/2F16BCE7E9345968585D43CD2AC1593118370FDF/103727.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-30725",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
           }
         ]
       },
@@ -9046,6 +12775,68 @@
           }
         ]
       },
+      "31167": {
+        "title": "Spare_Capacitor",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3171353,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "24 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.2 · 4 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "第一次脉冲 · 晕眩",
+            "detail": "2 秒"
+          },
+          {
+            "label": "脉冲",
+            "detail": "4",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "300",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "闪电",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-31167",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
       "31248": {
         "title": "Blast_Gyro",
         "profession": "Engineer",
@@ -9216,6 +13007,15 @@
             "description": "当你的威能达到或超过临界值时获得稳固。威能提供额外的威力。"
           }
         ],
+        "controlRule": {
+          "title": "Blast_Gyro",
+          "revision": 2776618,
+          "control": {
+            "label": "昏迷",
+            "seconds": 3
+          },
+          "defiance": 300
+        },
         "modifiers": [
           {
             "id": "gyro-radius-31248",
@@ -9425,6 +13225,87 @@
           }
         ]
       },
+      "41843": {
+        "title": "Prismatic_Singularity",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2690624,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "30 秒"
+          },
+          {
+            "label": "拉拽伤害",
+            "detail": "系数 ×0.1",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "爆炸伤害",
+            "detail": "系数 ×1.2",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "拉拽",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/D5F6EBC4630F0E10F3DDB7A6DBB63592CD4B00BC/2440717.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "热量高于50%时半径与拉拽距离提高",
+            "detail": "120"
+          },
+          {
+            "label": "爆炸半径",
+            "detail": "120",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "爆炸",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/450630987A0566D4A7A491EDA4DCDF57D9396854/1770203.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "150"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-41843",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
       "42009": {
         "title": "Prime_Light_Beam",
         "profession": "Engineer",
@@ -9574,6 +13455,64 @@
             "id": 2137,
             "name": "强化储存单元",
             "description": "增加热量上限。热量高于100%时，每隔一段时间获得威能。某些技能和特性提供更多的热能等级。"
+          }
+        ]
+      },
+      "42163": {
+        "title": "Blade_Burst",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2840040,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.8",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "热量高于50%时伤害提高",
+            "detail": "25%"
+          },
+          {
+            "label": "流血",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-42163",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
           }
         ]
       },
@@ -10087,6 +14026,58 @@
           }
         ]
       },
+      "43176": {
+        "title": "Flash_Spark",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3027438,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "目盲",
+            "detail": "3 秒"
+          },
+          {
+            "label": "热量高于50%时光明光环",
+            "detail": "4 秒 · -10% 受到的症状伤害"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-43176",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
       "43739": {
         "title": "Photon_Wall",
         "profession": "Engineer",
@@ -10118,6 +14109,57 @@
           {
             "label": "反射投射物",
             "detail": ""
+          }
+        ]
+      },
+      "43845": {
+        "title": "Cauterize",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3027126,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "30 秒"
+          },
+          {
+            "label": "热量阈值",
+            "detail": "50"
+          },
+          {
+            "label": "每个症状造成自身燃烧",
+            "detail": "3 秒"
+          },
+          {
+            "label": "症状移除",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "热量高于50%时额外移除症状",
+            "detail": "3"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-43845",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
           }
         ]
       },
@@ -10232,6 +14274,132 @@
             "id": 2137,
             "name": "强化储存单元",
             "description": "增加热量上限。热量高于100%时，每隔一段时间获得威能。某些技能和特性提供更多的热能等级。"
+          }
+        ]
+      },
+      "45709": {
+        "title": "Controlled_Analysis",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2828131,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "激怒",
+            "detail": "5 秒 · +20% 暴击率",
+            "icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png"
+          },
+          {
+            "label": "易伤",
+            "detail": "8 秒 · 10 层 · +10% 受到的伤害, +10% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 10
+          },
+          {
+            "label": "现身",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/62BFF65D1CE99B1B2B0928152BCC596EAC0D372B/102887.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-45709",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "45732": {
+        "title": "Particle_Accelerator",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2840072,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "8 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "热量高于50%时伤害提高",
+            "detail": "10%"
+          },
+          {
+            "label": "迅捷",
+            "detail": "3 秒 · +33% 移动速度",
+            "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png"
+          },
+          {
+            "label": "致残",
+            "detail": "3 秒 · -50% 移动速度"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "热量高于50%时投射物速度提高",
+            "detail": "100%"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,000",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-45732",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
           }
         ]
       },
@@ -10851,6 +15019,257 @@
           }
         ]
       },
+      "63121": {
+        "title": "Jade_Mortar",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3128117,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.2",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "6 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+            "stacks": 3
+          },
+          {
+            "label": "晕眩",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "100"
+          },
+          {
+            "label": "射程",
+            "detail": "1,500",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "controlRule": {
+          "title": "Jade_Mortar",
+          "revision": 3128117,
+          "control": {
+            "label": "晕眩",
+            "seconds": 1
+          },
+          "defiance": 100
+        },
+        "modifiers": [
+          {
+            "id": "recharge-1872-63121",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          },
+          {
+            "id": "recharge-2292-63121",
+            "trait": 2292,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2292,
+              "title": "Mech_Core:_Jade_Dynamo",
+              "revision": 2747476
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "机甲核心：翠玉融合"
+          }
+        ]
+      },
+      "63141": {
+        "title": "Barrier_Burst",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2882226,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "3.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "30 秒"
+          },
+          {
+            "label": "每次脉冲的屏障",
+            "detail": "454 + 0.575 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+            "healing": {
+              "base": 454,
+              "coefficient": 0.575
+            }
+          },
+          {
+            "label": "威能",
+            "detail": "20 秒 · 2 层",
+            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+            "stacks": 2
+          },
+          {
+            "label": "激怒",
+            "detail": "3 秒 · +25% 暴击率",
+            "icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "360",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-63141",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
+      "63188": {
+        "title": "Spark_Revolver",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2940541,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.112 · 12 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "穿透",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/F833590B593E0C2D4948DFFE9951B91655250052/1770207.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-63188",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          },
+          {
+            "id": "recharge-2292-63188",
+            "trait": 2292,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2292,
+              "title": "Mech_Core:_Jade_Dynamo",
+              "revision": 2747476
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "机甲核心：翠玉融合"
+          }
+        ]
+      },
       "63210": {
         "title": "Mech_Support:_Depth_Charges",
         "profession": "Engineer",
@@ -10952,6 +15371,92 @@
           }
         ]
       },
+      "63236": {
+        "title": "Sky_Circus",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3087934,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "30 秒"
+          },
+          {
+            "label": "投掷物伤害",
+            "detail": "系数 ×0.6",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "落地伤害",
+            "detail": "系数 ×1.2",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+          },
+          {
+            "label": "着陆后击退",
+            "detail": "100",
+            "icon": "https://render.guildwars2.com/file/B4087CEB5CC006172E0A09DADC5452807A0CA3F7/2440712.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "每个飞弹的目标",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "导弹爆炸半径",
+            "detail": "120",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "闪避",
+            "detail": "1 秒"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "232"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-63236",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          }
+        ]
+      },
       "63253": {
         "title": "Force_Signet",
         "profession": "Engineer",
@@ -11038,6 +15543,30 @@
             "id": 2298,
             "name": "机甲核心：翠玉驱动器",
             "description": "可以使用机甲命令天空马戏团。当你没有操纵机甲，或者修理机甲的时候，它将偶尔发射空袭弹幕提供支援。\n提升纹章技能的被动效果，冷却时被动奖励依然有效。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "j-drive-force-current-pve",
+            "trait": 2298,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2298,
+              "title": "Mech_Core:_J-Drive",
+              "revision": 2569160
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "斥力纹章",
+                "row": {
+                  "label": "斥力纹章",
+                  "detail": "+18% 伤害"
+                }
+              }
+            ],
+            "traitName": "机甲核心：翠玉驱动器"
           }
         ]
       },
@@ -11139,6 +15668,507 @@
               }
             ],
             "traitName": "机甲核心：翠玉驱动器"
+          }
+        ]
+      },
+      "63293": {
+        "title": "Crisis_Zone",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2932059,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "30 秒"
+          },
+          {
+            "label": "圣盾",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/DFB4D1B50AE4D6A275B349E15B179261EE3EB0AF/102854.png"
+          },
+          {
+            "label": "稳固",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png"
+          },
+          {
+            "label": "保护",
+            "detail": "6 秒 · -33% 受到的伤害",
+            "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png"
+          },
+          {
+            "label": "敏捷",
+            "detail": "6 秒 · +25% 技能冷却恢复速度",
+            "icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png"
+          },
+          {
+            "label": "症状移除",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-63293",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          },
+          {
+            "id": "recharge-2292-63293",
+            "trait": 2292,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2292,
+              "title": "Mech_Core:_Jade_Dynamo",
+              "revision": 2747476
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "机甲核心：翠玉融合"
+          }
+        ]
+      },
+      "63334": {
+        "title": "Rolling_Smash",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2598457,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.6",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "流血",
+            "detail": "8 秒 · 4 层",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+            "stacks": 4
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-63334",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          },
+          {
+            "id": "recharge-2292-63334",
+            "trait": 2292,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2292,
+              "title": "Mech_Core:_Jade_Dynamo",
+              "revision": 2747476
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "机甲核心：翠玉融合"
+          }
+        ]
+      },
+      "63345": {
+        "title": "Core_Reactor_Shot",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3087929,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "击飞",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B4087CEB5CC006172E0A09DADC5452807A0CA3F7/2440712.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "232"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-63345",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          },
+          {
+            "id": "recharge-2292-63345",
+            "trait": 2292,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2292,
+              "title": "Mech_Core:_Jade_Dynamo",
+              "revision": 2747476
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "机甲核心：翠玉融合"
+          }
+        ]
+      },
+      "63365": {
+        "title": "Explosive_Knuckle",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2569134,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "15 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.8",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "虚弱",
+            "detail": "5 秒 · -50% 耐力回复速度, +50% 非限定攻击失手几率",
+            "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "爆炸",
+            "detail": ""
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-63365",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          },
+          {
+            "id": "recharge-2292-63365",
+            "trait": 2292,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2292,
+              "title": "Mech_Core:_Jade_Dynamo",
+              "revision": 2747476
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "机甲核心：翠玉融合"
+          }
+        ]
+      },
+      "63367": {
+        "title": "Discharge_Array",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2747462,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "30 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.3",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "迟缓",
+            "detail": "2 秒",
+            "icon": "https://render.guildwars2.com/file/F60D1EF5271D7B9319610855676D320CD25F01C6/961397.png"
+          },
+          {
+            "label": "困惑",
+            "detail": "3 秒 · 2 层",
+            "icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+            "stacks": 2
+          },
+          {
+            "label": "燃烧",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+          },
+          {
+            "label": "打击次数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "间隔",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-63367",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
+          },
+          {
+            "id": "recharge-2292-63367",
+            "trait": 2292,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2292,
+              "title": "Mech_Core:_Jade_Dynamo",
+              "revision": 2747476
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "机甲核心：翠玉融合"
+          }
+        ]
+      },
+      "68280": {
+        "title": "Defense_Field_(underwater)",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2812532,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "稳固",
+            "detail": "6 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+            "stacks": 3
+          },
+          {
+            "label": "格挡飞弹",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-68280",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
           }
         ]
       },
@@ -11340,6 +16370,54 @@
               }
             ],
             "traitName": "机械加速"
+          }
+        ]
+      },
+      "76613": {
+        "title": "Symbiotic_Shielding",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3169694,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "屏障",
+            "detail": "2250 + 0.5 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+            "healing": {
+              "base": 2250,
+              "coefficient": 0.5
+            }
+          },
+          {
+            "label": "磁力光环",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/33D27C7FE0017F70749DE84576F56F381DDF0C30/2261524.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1872-76613",
+            "trait": 1872,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1872,
+              "title": "Mechanized_Deployment",
+              "revision": 3117851
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "机械部署"
           }
         ]
       },
@@ -12004,7 +17082,16 @@
             "name": "水银偏好",
             "description": "控制敌人时减少进化的冷却时间。"
           }
-        ]
+        ],
+        "controlRule": {
+          "title": "Solid_State",
+          "revision": 3205663,
+          "control": {
+            "label": "昏迷",
+            "seconds": 2
+          },
+          "defiance": 200
+        }
       },
       "77107": {
         "title": "Locked_(amalgam)",

@@ -24,6 +24,159 @@ const details = (id: number, traits: number[] = [], context = {}) =>
 const fact = (id: number, traits: number[], label: string, context = {}) =>
   details(id, traits, context).facts.find((f) => f.label === label);
 
+test("强力突破独立详情与父技能分支同源，稳固层数和计数冷却不随增益效果变化", () => {
+  const base = details(10238);
+  assert.equal(base.reviewed, true);
+  assert.equal(fact(10238, [], "稳固")?.detail, "3 秒 · 3 层");
+  assert.equal(
+    fact(10238, [], "稳固", { boonDuration: 100 })?.detail,
+    "6 秒 · 3 层",
+  );
+  assert.equal(
+    fact(10238, [], "计数冷却时间", { boonDuration: 100 })?.detail,
+    "30 秒",
+  );
+  assert.equal(fact(10238, [], "冷却时间")?.detail, "2 秒");
+  assert.equal(fact(10238, [], "最大计数")?.detail, "2");
+  const parent = wikiDetails(10237, "skill", new Set())!;
+  assert.deepEqual(
+    parent.branches?.find((b) => b.sourceUrl.endsWith("/Power_Break"))?.facts,
+    base.facts,
+  );
+  assert.equal(fact(10237, [], "稳固")?.detail, "5 秒 · 4 层");
+  assert.equal(base.unresolved.length, 0);
+});
+
+test("独立武器和腰带的Wiki基础冷却随合法已选特性变化，取消后恢复", () => {
+  for (const [id, trait, base, changed] of [
+    [9144, 557, "30 秒", "24 秒"],
+    [14366, 1333, "8 秒", "6.4 秒"],
+    [31167, 1872, "24 秒", "20.4 秒"],
+    [12509, 1698, "8 秒", "6.4 秒"],
+    [5515, 1676, "30 秒", "24 秒"],
+    [10334, 708, "10 秒", "8 秒"],
+    [63448, 891, "10 秒", "8.5 秒"],
+  ] as const) {
+    assert.equal(fact(id, [], "冷却时间")?.detail, base);
+    assert.equal(fact(id, [trait], "冷却时间")?.detail, changed);
+    assert.equal(fact(id, [], "冷却时间")?.detail, base);
+  }
+});
+
+test("醉生梦死与风暴之魂按控制类型与法印相加，控制替代不重复累计蔑视", () => {
+  assert.equal(fact(5671, [1502], "昏迷")?.detail, "2.66 秒");
+  assert.equal(
+    fact(5671, [1502], "昏迷", { controlDurationBonus: 30 })?.detail,
+    "3.26 秒",
+  );
+  assert.equal(
+    fact(5671, [1502], "蔑视伤害", { controlDurationBonus: 30 })?.detail,
+    "326",
+  );
+  assert.equal(fact(5638, [1502], "晕眩")?.detail, "2 秒");
+  assert.equal(
+    fact(5638, [1502], "晕眩", { controlDurationBonus: 30 })?.detail,
+    "2.6 秒",
+  );
+  assert.equal(
+    fact(12508, [1070], "晕眩", { controlDurationBonus: 30 })?.detail,
+    "3.6 秒",
+  );
+  assert.equal(
+    fact(12508, [1070], "昏迷", { controlDurationBonus: 30 })?.detail,
+    "3.6 秒",
+  );
+  assert.equal(
+    fact(12508, [1070], "蔑视伤害", { controlDurationBonus: 30 })?.detail,
+    "360",
+  );
+  assert.equal(
+    fact(12508, [1070], "蔑视伤害", { controlDurationBonus: 90 })?.detail,
+    "400",
+  );
+  assert.equal(
+    fact(5687, [1502], "蔑视伤害", { controlDurationBonus: 30 })?.detail,
+    "332",
+  );
+  assert.equal(
+    fact(44998, [1502], "蔑视伤害", { controlDurationBonus: 30 })?.detail,
+    "25",
+  );
+  assert.equal(fact(5671, [1070], "昏迷")?.detail, "2 秒"); // Other profession's trait cannot leak.
+  assert.equal(
+    fact(5690, [1502], "击倒", { controlDurationBonus: 30 })?.detail,
+    "2 秒",
+  );
+  assert.equal(
+    fact(5690, [1502], "蔑视伤害", { controlDurationBonus: 30 })?.detail,
+    "200",
+  );
+  for (const [id, entry] of Object.entries(wikiSnapshot.entries.skills).filter(
+    ([, e]) => e.actor,
+  ))
+    assert.deepEqual(
+      details(+id, [], {
+        healingPower: 9999,
+        boonDuration: 100,
+        controlDurationBonus: 30,
+      }).facts,
+      details(+id).facts,
+      entry.title,
+    );
+});
+
+test("控制时长属性区分昏迷与晕眩，法印切组和取消特性不留下加成", () => {
+  for (const [profession, id, stun, daze] of [
+    ["Ranger", 1070, 80, 80],
+    ["Elementalist", 1502, 63, 30],
+  ] as const) {
+    const b = createBuild(profession);
+    const t = catalog.traits.find((e) => e.id === id)!;
+    b.specs[0].id = t.specialization;
+    b.specs[0].traits[t.tier - 1] = id;
+    b.equipment.weapon1.weapon = profession === "Ranger" ? "Longbow" : "Staff";
+    b.equipment.weapon1.sigils[0] = 24639;
+    const result = calculateAttributes(b, catalog, attributes);
+    assert.equal(result.stunDurationBonus, stun);
+    assert.equal(result.dazeDurationBonus, daze);
+    assert.equal(result.controlDurationBonus, 30); // Equipment input stays separate; no double scaling.
+    assert.ok(result.stunDurationSources.some((s) => s.label === t.name));
+    assert.equal(
+      calculateAttributes(b, catalog, attributes, 2).stunDurationBonus,
+      stun - 30,
+    );
+    b.specs[0].traits[t.tier - 1] = null;
+    assert.equal(
+      calculateAttributes(b, catalog, attributes).stunDurationBonus,
+      30,
+    );
+  }
+});
+
+test("战斗中与魔宠触发保留条件，不把冷却缩短当成常驻；神器区域与命中燃烧分开", () => {
+  assert.equal(fact(78501, [2411], "冷却时间")?.detail, "10 秒");
+  assert.equal(fact(78501, [2411], "战斗中冷却时间")?.detail, "8 秒");
+  assert.equal(fact(78501, [2411], "战斗中冷却时间")?.trigger, "战斗中");
+  assert.equal(fact(78501, [], "战斗中冷却时间"), undefined);
+  assert.equal(fact(28134, [2379], "战斗中传奇切换冷却时间")?.detail, "6 秒");
+  assert.equal(fact(76643, [2437], "魔宠充能所需技能次数")?.detail, "2");
+  assert.equal(fact(76643, [2437], "武器技能冷却缩短")?.detail, "10%");
+  assert.equal(
+    fact(76643, [2437], "固定时长额外燃烧", { conditionDuration: 100 })?.detail,
+    "0.5 秒",
+  );
+  assert.equal(fact(77357, [2437], "武器技能冷却缩短")?.detail, "33%");
+  assert.equal(fact(77277, [], "区域燃烧")?.detail, "1 秒");
+  assert.equal(
+    fact(77277, [2431], "区域燃烧", { conditionDuration: 100 })?.detail,
+    "4 秒",
+  );
+  assert.equal(
+    fact(77277, [2431], "命中时燃烧", { conditionDuration: 100 })?.detail,
+    "3 秒",
+  );
+});
+
 test("工程药剂基础时长先增强再乘属性，额外增益不重复增强；器械屏障随治疗变化", () => {
   assert.equal(
     fact(5821, [473], "激怒", { boonDuration: 100 })?.detail,
@@ -46,7 +199,8 @@ test("工程药剂基础时长先增强再乘属性，额外增益不重复增�
   assert.equal(fact(6161, [1679], "额外地雷")?.detail, "1");
   assert.equal(fact(5936, [473], "命中次数")?.detail, "7");
   assert.equal(fact(5937, [473], "持续时间")?.detail, "5 秒");
-  assert.equal(fact(63253, [2298], "斥力纹章")?.detail, "+15% 伤害");
+  assert.equal(fact(63253, [2298], "斥力纹章")?.detail, "+18% 伤害");
+  assert.equal(fact(63253, [], "斥力纹章")?.detail, "+15% 伤害");
   assert.equal(fact(63113, [2298], "纹章被动")?.detail, "+12% 症状伤害");
   assert.equal(fact(56920, [1917], "半径")?.detail, "240");
   assert.equal(fact(30357, [1917], "半径")?.detail, "360");
@@ -153,7 +307,8 @@ test("唤灵师帷幕冷却、分技能增强、屏障和沙影目标分别计�
     fact(43148, [2080], "敏捷", { boonDuration: 100 })?.detail,
     "3 秒",
   );
-  assert.equal(fact(42297, [2112], "数量 冷却时间")?.detail, "15 秒");
+  assert.equal(fact(42297, [2112], "计数冷却时间")?.detail, "18.75 秒");
+  assert.equal(fact(42297, [], "计数冷却时间")?.detail, "15 秒");
   const medicine = fact(62655, [2220], "盟友增益目标");
   assert.equal(medicine?.detail, "4");
   assert.match(medicine!.recipient!, /落点范围/);

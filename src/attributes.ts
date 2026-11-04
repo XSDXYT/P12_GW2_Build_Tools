@@ -9,10 +9,14 @@ import {
   type Catalog,
   type Entity,
 } from "./domain";
-import { burningPrecision, chaoticPersistence } from "./game-rules";
 import { landPets, archetypeNames } from "./profession-mechanics";
 import { infusionName } from "./infusions";
 import wikiMetadata from "./data/wiki-details.json";
+import {
+  attributeRuleAmount,
+  previewCount,
+  type WikiAttributeDefinition,
+} from "./trait-attributes";
 import {
   signetRules,
   nonAttributeSignets,
@@ -108,6 +112,7 @@ export type PreviewControl = {
   label: string;
   description: string;
   max?: number;
+  excludeSpecializations?: number[];
 };
 export type Result = {
   primary: Totals;
@@ -115,12 +120,17 @@ export type Result = {
   criticalChance: number;
   criticalDamage: number;
   criticalSources: Contribution[];
+  criticalDamageSources: Contribution[];
   consumableHealingBonus: number;
   consumableHealingSources: Contribution[];
   outgoingHealingBonus: number;
   outgoingHealingSources: Contribution[];
   controlDurationBonus: number;
   controlDurationSources: Contribution[];
+  stunDurationBonus: number;
+  dazeDurationBonus: number;
+  stunDurationSources: Contribution[];
+  dazeDurationSources: Contribution[];
   guaranteedCritical: boolean;
   conditionDuration: number;
   boonDuration: number;
@@ -318,113 +328,8 @@ export function parseAttributeEffect(text: string): Effect {
   }
   return result;
 }
-type TraitRule = {
-  target?: Attribute;
-  from?: Attribute;
-  gate?: string;
-  extra?: boolean;
-  percentKey?: "critical" | "Burning" | "Confusion";
-  value?: number;
-  afterConversion?: boolean;
-};
-const traitRules: Record<number, TraitRule[]> = {
-  214: [{ target: "CritDamage", gate: "fury" }],
-  221: [{ percentKey: "critical" }],
-  223: [
-    { target: "CritDamage" },
-    { target: "CritDamage", gate: "air", extra: true },
-  ],
-  232: [{ target: "CritDamage", from: "Precision" }],
-  275: [{ target: "ConditionDamage", from: "Toughness" }],
-  296: [
-    { percentKey: "Burning", value: burningPrecision.burningDurationBonus },
-  ],
-  320: [{ target: "Power", gate: "fire" }],
-  325: [{ target: "ConditionDamage" }],
-  413: [{ target: "BoonDuration" }],
-  519: [
-    { target: "Power", gate: "regeneration" },
-    { target: "Healing", gate: "regeneration" },
-  ],
-  557: [{ target: "BoonDuration" }],
-  566: [
-    { target: "Precision", afterConversion: true },
-    { target: "Power", gate: "oneHand" },
-  ],
-  568: [
-    { target: "CritDamage", afterConversion: true },
-    { percentKey: "critical", gate: "targetBurning" },
-  ],
-  580: [{ target: "Toughness", gate: "weapon:Shield" }],
-  620: [{ target: "ConditionDamage", from: "Vitality" }],
-  753: [{ percentKey: "Confusion" }],
-  1059: [{ target: "BoonDuration" }],
-  1099: [{ target: "ConditionDuration" }],
-  1101: [
-    { target: "ConditionDamage" },
-    {
-      target: "ConditionDamage",
-      extra: true,
-      gate: "weapon:Torch,Dagger,Mace",
-    },
-  ],
-  1164: [{ target: "ConditionDamage" }],
-  1192: [
-    { target: "Power" },
-    { target: "Power", extra: true, gate: "weapon:Sword,Spear" },
-  ],
-  1232: [{ target: "ConditionDuration" }],
-  1245: [
-    { target: "Power" },
-    { target: "Power", extra: true, gate: "weapon:Dagger" },
-  ],
-  1272: [{ target: "CritDamage", from: "Precision" }],
-  1333: [
-    { target: "ConditionDuration" },
-    { target: "ConditionDamage", gate: "weapon:Sword" },
-  ],
-  1338: [
-    { target: "Power" },
-    { target: "Power", gate: "weapon:Greatsword,Spear" },
-  ],
-  1369: [
-    { target: "CritDamage" },
-    { target: "CritDamage", extra: true, gate: "weapon:Axe" },
-  ],
-  1449: [
-    { target: "Vitality", from: "Power" },
-    { target: "CritDamage", from: "Power" },
-  ],
-  1455: [{ target: "ConditionDuration", from: "Precision" }],
-  1470: [{ target: "Healing", from: "Power" }],
-  1471: [{ target: "BoonDuration" }],
-  1556: [{ target: "ConditionDamage", from: "Power" }],
-  1865: [
-    {
-      target: "BoonDuration",
-      gate: "regeneration",
-      value: chaoticPersistence.attributes!.BoonDuration,
-    },
-    {
-      target: "ConditionDuration",
-      gate: "regeneration",
-      value: chaoticPersistence.attributes!.ConditionDuration,
-    },
-  ],
-  1927: [{ percentKey: "critical", gate: "alacrity" }],
-  2193: [
-    { target: "CritDamage", from: "Vitality" },
-    { percentKey: "critical", gate: "fury" },
-  ],
-  2207: [{ target: "ConditionDuration", gate: "fury" }],
-};
-const gateLabels: Record<string, string> = {
-  regeneration: "拥有再生",
-  alacrity: "拥有敏捷",
-  fire: "火焰协调",
-  air: "空气协调",
-  targetBurning: "目标处于燃烧状态",
-};
+const wikiAttributeBonuses =
+  wikiMetadata.traitAttributeBonuses as WikiAttributeDefinition[];
 export function activeTraits(build: Build, catalog: Catalog): Entity[] {
   const ids = new Set<number>();
   build.specs.forEach((selection, line) => {
@@ -465,8 +370,19 @@ export function calculateAttributes(
   const conversions: Conversion[] = [];
   const deferred: { key: Attribute; amount: number; label: string }[] = [];
   const criticalSources: Contribution[] = [];
+  const criticalMultipliers = new Map<
+    number,
+    { label: string; amount: number }
+  >();
+  const traitHealing: {
+    label: string;
+    amount: number;
+    scaleWith?: Attribute;
+  }[] = [];
   const sigilHealingSources: Contribution[] = [];
   const controlDurationSources: Contribution[] = [];
+  const stunTraitSources: Contribution[] = [];
+  const dazeTraitSources: Contribution[] = [];
   let guaranteedCritical = false;
   const healingEffects: {
     effect: NonNullable<Effect["outgoingHealing"]>;
@@ -823,98 +739,115 @@ export function calculateAttributes(
       return weaponKeys.some((slot) =>
         key.slice(7).split(",").includes(build.equipment[slot].weapon),
       );
+    if (key === "might10") return previewCount(preview.might, 25) >= 10;
+    if (key === "healthAbove50") return !preview.flags.healthBelow50;
+    if (key === "healthAbove75")
+      return !preview.flags.healthBelow75 && !preview.flags.healthBelow50;
+    if (key === "health50to75")
+      return !!preview.flags.healthBelow75 && !preview.flags.healthBelow50;
+    if (key === "reaperShroud")
+      return (
+        build.profession === "Necromancer" &&
+        eliteSpec?.id === 34 &&
+        !!preview.flags["signet-shroud"]
+      );
+    if (key === "soulbeastMerged")
+      return (
+        build.profession === "Ranger" &&
+        eliteSpec?.id === 55 &&
+        !!preview.flags.soulbeastMerged
+      );
+    if (key === "berserk")
+      return (
+        build.profession === "Warrior" &&
+        eliteSpec?.id === 18 &&
+        !!preview.flags.berserk
+      );
+    if (key === "playerShroud")
+      return (
+        build.profession === "Necromancer" &&
+        eliteSpec?.id !== 60 &&
+        !!preview.flags["signet-shroud"]
+      );
+    if (key === "targetDefiantOnly")
+      return !!preview.flags.targetDefiant && !preview.flags.targetDisabled;
     return !!preview.flags[key];
   };
   for (const trait of traits) {
+    for (const rule of wikiMetadata.traitControlBonuses) {
+      if (rule.trait !== trait.id || rule.profession !== build.profession)
+        continue;
+      if (rule.effects.includes("昏迷"))
+        stunTraitSources.push({ label: trait.name, amount: rule.bonus });
+      if (rule.effects.includes("晕眩"))
+        dazeTraitSources.push({ label: trait.name, amount: rule.bonus });
+    }
     for (const rule of wikiMetadata.traitDurationBonuses) {
       if (rule.trait !== trait.id || (rule.gate && !gate(rule.gate))) continue;
       for (const effect of rule.effects)
         duration(effect, rule.bonus, trait.name);
     }
-    const rules = traitRules[trait.id];
-    if (!rules) {
-      if (nonAttributeSignetTraits[trait.id]) continue;
-      if (
-        trait.facts?.some(
-          (fact: any) =>
-            fact.type === "BuffConversion" ||
-            (fact.type === "AttributeAdjust" &&
-              primaryKeys.includes(fact.target) &&
-              (fact.target !== "Healing" || /2229321/.test(fact.icon || ""))) ||
-            (fact.type === "Percent" &&
-              /暴击率|暴击伤害|属性增加|持续时间/.test(fact.text || "")),
+    const reviewed = wikiAttributeBonuses.find(
+      (r) => r.trait === trait.id && r.profession === build.profession,
+    );
+    if (reviewed) {
+      for (const control of reviewed.controls)
+        if (
+          !control.excludeSpecializations?.includes(eliteSpec?.id ?? 0) &&
+          !controls.some((c) => c.key === control.key)
         )
-      )
-        warnings.push(`${trait.name}的属性或条件规则尚未计入`);
-      continue;
-    }
-    for (const rule of rules) {
-      if (
-        rule.gate &&
-        gateLabels[rule.gate] &&
-        !controls.some((c) => c.key === rule.gate)
-      )
-        controls.push({
-          key: rule.gate,
-          label: gateLabels[rule.gate],
-          description: trait.name,
-        });
-      if (rule.gate && !gate(rule.gate)) continue;
-      if (rule.from && rule.target) {
-        const fact = trait.facts?.find(
-          (f: any) =>
-            f.type === "BuffConversion" &&
-            f.source === rule.from &&
-            f.target === rule.target,
-        );
-        if (fact)
+          controls.push(control);
+      for (const rule of reviewed.rules) {
+        if (rule.gates?.some((key) => !gate(key))) continue;
+        if (rule.anyGates?.length && !rule.anyGates.some(gate)) continue;
+        const amount = attributeRuleAmount(rule, reviewed.controls, preview);
+        const label = `${trait.name}${rule.perStack ? ` · ${previewCount(preview.stacks[rule.perStack], reviewed.controls.find((c) => c.key === rule.perStack)?.max || 0)} 层` : rule.perMight ? " · 威能加成" : ""}`;
+        if (rule.target === "duration") {
+          duration(rule.effect!, amount, label);
+        } else if (rule.target === "criticalMultiplier") {
+          const entry = criticalMultipliers.get(trait.id) || {
+            label: trait.name,
+            amount: 0,
+          };
+          entry.amount += amount;
+          criticalMultipliers.set(trait.id, entry);
+        } else if (rule.target === "outgoingHealing") {
+          traitHealing.push({ label, amount, scaleWith: rule.scaleWith });
+        } else if (rule.from && rule.target !== "critical") {
           conversions.push({
             from: rule.from,
             to: rule.target,
-            percent: fact.percent,
-            label: trait.name,
+            percent: amount,
+            label,
           });
-        else warnings.push(`${trait.name}属性转换资料缺失`);
-        continue;
-      }
-      if (rule.percentKey) {
-        const fact = trait.facts?.find(
-          (f: any) =>
-            f.type === "Percent" &&
-            (rule.percentKey === "critical"
-              ? /暴击率/.test(f.text || "")
-              : /持续时间/.test(f.text || "")),
-        );
-        const amount = rule.value ?? fact?.percent;
-        if (!Number.isFinite(amount)) {
-          warnings.push(`${trait.name}百分比加成资料缺失`);
-          continue;
-        }
-        if (rule.percentKey === "critical") {
+        } else if (rule.target === "critical") {
           criticalBonus += amount;
-          criticalSources.push({ label: trait.name, amount });
-        } else duration(rule.percentKey, amount, trait.name);
-        continue;
+          if (amount) criticalSources.push({ label, amount });
+        } else if (rule.afterConversion) {
+          deferred.push({ key: rule.target, amount, label });
+        } else add(rule.target, amount, label);
       }
-      if (rule.target) {
-        const facts =
-          trait.facts?.filter(
-            (f: any) =>
-              f.type === "AttributeAdjust" && f.target === rule.target,
-          ) || [];
-        const fact = facts[rule.extra ? 1 : 0];
-        const value = rule.value ?? fact?.value;
-        if (Number.isFinite(value)) {
-          if (rule.afterConversion)
-            deferred.push({
-              key: rule.target,
-              amount: value,
-              label: trait.name,
-            });
-          else add(rule.target, value, trait.name);
-        } else warnings.push(`${trait.name}属性加成资料缺失`);
-      }
+      continue;
     }
+    // Actor-specific and single-skill bonuses are not global player attributes.
+    if ([222, 1011, 1016, 2279, 2291].includes(trait.id)) continue;
+    if (
+      wikiMetadata.traitControlBonuses.some((r) => r.trait === trait.id) ||
+      nonAttributeSignetTraits[trait.id]
+    )
+      continue;
+    if (
+      trait.facts?.some(
+        (fact: any) =>
+          fact.type === "BuffConversion" ||
+          (fact.type === "AttributeAdjust" &&
+            primaryKeys.includes(fact.target) &&
+            (fact.target !== "Healing" || /2229321/.test(fact.icon || ""))) ||
+          (fact.type === "Percent" &&
+            /暴击率|暴击伤害|属性增加|持续时间/.test(fact.text || "")),
+      )
+    )
+      warnings.push(`${trait.name}的属性或条件规则尚未计入`);
   }
   // Conversion outputs, signet passives and temporary Might are excluded from the pool.
   const pool = { ...totals };
@@ -988,8 +921,39 @@ export function calculateAttributes(
     ...consumableHealingSources,
     ...sigilHealingSources,
     ...mechanicHealingSources,
+    ...traitHealing.map(({ label, amount, scaleWith }) => ({
+      label: scaleWith
+        ? `${label} · ${attributeLabels[scaleWith]} × ${amount}% ÷ 100`
+        : label,
+      amount: scaleWith ? (totals[scaleWith] * amount) / 100 : amount,
+    })),
   ];
+  let criticalDamage = 150 + totals.CritDamage / 15;
+  const criticalDamageSources: Contribution[] = [
+    { label: "基础暴击伤害", amount: 150 },
+    { label: "暴击效果换算", amount: totals.CritDamage / 15 },
+  ];
+  for (const [, entry] of [...criticalMultipliers].sort(([a], [b]) => a - b)) {
+    const amount = (criticalDamage * entry.amount) / 100;
+    if (amount)
+      criticalDamageSources.push({
+        label: `${entry.label} · ×${1 + entry.amount / 100}`,
+        amount,
+      });
+    criticalDamage += amount;
+  }
+  const stunDurationSources = [...controlDurationSources, ...stunTraitSources];
+  const dazeDurationSources = [...controlDurationSources, ...dazeTraitSources];
+  const controlTotal = (rows: Contribution[]) =>
+    Math.min(
+      100,
+      rows.reduce((sum, row) => sum + row.amount, 0),
+    );
   return {
+    stunDurationBonus: controlTotal(stunDurationSources),
+    dazeDurationBonus: controlTotal(dazeDurationSources),
+    stunDurationSources,
+    dazeDurationSources,
     outgoingHealingBonus: outgoingHealingSources.reduce(
       (sum, source) => sum + source.amount,
       0,
@@ -1009,7 +973,8 @@ export function calculateAttributes(
     primary: totals,
     primarySources: sources,
     criticalChance: 5 + (totals.Precision - 1000) / 21 + criticalBonus,
-    criticalDamage: 150 + totals.CritDamage / 15,
+    criticalDamage,
+    criticalDamageSources,
     criticalSources,
     conditionDuration: generic,
     boonDuration: boon,

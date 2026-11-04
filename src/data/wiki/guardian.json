@@ -3485,6 +3485,224 @@
       }
     },
     "skills": {
+      "9080": {
+        "title": "Leap_of_Faith",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2989194,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "10 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "首次命中治疗",
+            "detail": "1750 + 0.2 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 1750,
+              "coefficient": 0.2
+            }
+          },
+          {
+            "label": "附加命中治疗",
+            "detail": "750 + 0.1 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 750,
+              "coefficient": 0.1
+            }
+          },
+          {
+            "label": "目盲",
+            "detail": "3 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "跳跃",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-653-9080",
+            "trait": 653,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 653,
+              "title": "Zealous_Blade",
+              "revision": 2572445
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "狂热利刃"
+          }
+        ]
+      },
+      "9081": {
+        "title": "Whirling_Wrath",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3128707,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "8 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.45 · 7 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "投射物伤害",
+            "detail": "系数 ×0.275",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "冲击次数",
+            "detail": "7",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "130",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "旋风",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-653-9081",
+            "trait": 653,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 653,
+              "title": "Zealous_Blade",
+              "revision": 2572445
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "狂热利刃"
+          }
+        ]
+      },
+      "9082": {
+        "title": "Shield_of_Wrath",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2989845,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "愤怒护盾",
+            "detail": "4 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/C2065BFF78BB134197076A2C7450013EE390E409/103634.png",
+            "stacks": 3
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "爆炸",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-633-9082",
+            "trait": 633,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 633,
+              "title": "Focus_Mastery",
+              "revision": 3073890
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "聚能专精"
+          }
+        ]
+      },
       "9083": {
         "title": "\"Receive_the_Light!\"",
         "profession": "Guardian",
@@ -3811,6 +4029,273 @@
           }
         ]
       },
+      "9086": {
+        "title": "Protector's_Strike",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2843762,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "3.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "15 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "保护",
+            "detail": "3 秒 · -33% 受到的伤害",
+            "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png"
+          },
+          {
+            "label": "圣盾",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/DFB4D1B50AE4D6A275B349E15B179261EE3EB0AF/102854.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1899-9086",
+            "trait": 1899,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1899,
+              "title": "Invigorated_Bulwark",
+              "revision": 2694781
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "活力壁垒"
+          }
+        ]
+      },
+      "9087": {
+        "title": "Shield_of_Judgment",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2843771,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "保护",
+            "detail": "4 秒 · -33% 受到的伤害",
+            "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png"
+          },
+          {
+            "label": "圣盾",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/DFB4D1B50AE4D6A275B349E15B179261EE3EB0AF/102854.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-580-9087",
+            "trait": 580,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 580,
+              "title": "Stalwart_Defender",
+              "revision": 2258813
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "顽强防御"
+          }
+        ]
+      },
+      "9088": {
+        "title": "Cleansing_Flame",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2967486,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "3.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "15 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×4.0 · 10 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "4 秒 · 2 层",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+            "stacks": 2
+          },
+          {
+            "label": "症状移除",
+            "detail": "1",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "移除自身的症状",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "10",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "射程",
+            "detail": "400",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-567-9088",
+            "trait": 567,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 567,
+              "title": "Radiant_Fire",
+              "revision": 2812753
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "光耀火焰"
+          }
+        ]
+      },
+      "9091": {
+        "title": "Shield_of_Absorption",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2843772,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "4 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "24 秒"
+          },
+          {
+            "label": "击退距离",
+            "detail": "320",
+            "icon": "https://render.guildwars2.com/file/400B7FD39724FBD700B94AB8AB52B5B9167646F4/2440715.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "护盾持续时间",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "300",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "光明",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "150"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-580-9091",
+            "trait": 580,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 580,
+              "title": "Stalwart_Defender",
+              "revision": 2258813
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.7999999999999999
+              }
+            ],
+            "traitName": "顽强防御"
+          }
+        ]
+      },
       "9093": {
         "title": "Bane_Signet",
         "profession": "Guardian",
@@ -3999,6 +4484,229 @@
             "id": 2101,
             "name": "解放之誓",
             "description": "当你使用治疗技能时，会向盟友施加急速。"
+          }
+        ]
+      },
+      "9104": {
+        "title": "Zealot's_Flame",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2845994,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "15 秒"
+          },
+          {
+            "label": "狂徒烈焰",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/3CB42772DD937ACF48EF5FE4615EF33F49035450/103231.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "3 秒 · 4 层",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+            "stacks": 4
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-567-9104",
+            "trait": 567,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 567,
+              "title": "Radiant_Fire",
+              "revision": 2812753
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "光耀火焰"
+          }
+        ]
+      },
+      "9111": {
+        "title": "Symbol_of_Faith",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2882234,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "8 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×3.25 · 5 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "治疗",
+            "detail": "527 + 0.5 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 527,
+              "coefficient": 0.5
+            }
+          },
+          {
+            "label": "再生",
+            "detail": "1 秒 · 5 层",
+            "stacks": 5
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "符印持续时间",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "符印半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "光明",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-1899-9111",
+            "trait": 1899,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 1899,
+              "title": "Invigorated_Bulwark",
+              "revision": 2694781
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "活力壁垒"
+          }
+        ]
+      },
+      "9112": {
+        "title": "Ray_of_Judgment",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2992881,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×4.05 · 6 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "治疗",
+            "detail": "975 + 0.2 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 975,
+              "coefficient": 0.2
+            }
+          },
+          {
+            "label": "目盲",
+            "detail": "3 秒"
+          },
+          {
+            "label": "症状移除",
+            "detail": "1",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "3.5 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "间隔",
+            "detail": "0.75 秒",
+            "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-633-9112",
+            "trait": 633,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 633,
+              "title": "Focus_Mastery",
+              "revision": 3073890
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "聚能专精"
           }
         ]
       },
@@ -4636,6 +5344,360 @@
             "id": 2105,
             "name": "泰然处之",
             "description": "当勇气技能处于冷却时，保留它的被动效果。当你控制、定身或迟缓的敌人时，给附近盟友提供增益。\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
+          }
+        ]
+      },
+      "9140": {
+        "title": "Holy_Strike",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2843747,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "8 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.8",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "治疗",
+            "detail": "221 + 0.25 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 221,
+              "coefficient": 0.25
+            }
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "4",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "组合终结技",
+            "detail": "爆炸",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-557-9140",
+            "trait": 557,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 557,
+              "title": "Honorable_Staff",
+              "revision": 2926835
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "荣耀法杖"
+          }
+        ]
+      },
+      "9143": {
+        "title": "Symbol_of_Swiftness",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3171271,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.5 · 5 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "迅捷",
+            "detail": "4 秒 · +33% 移动速度",
+            "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png"
+          },
+          {
+            "label": "奔驰疾速",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/E04392C3D8ED985125973AEB99D8460C483263F9/103458.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "符印持续时间",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "符印半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "光明",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-557-9143",
+            "trait": 557,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 557,
+              "title": "Honorable_Staff",
+              "revision": 2926835
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.7999999999999999
+              }
+            ],
+            "traitName": "荣耀法杖"
+          }
+        ]
+      },
+      "9144": {
+        "title": "Line_of_Warding",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2992903,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "30 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "10",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "光明",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-557-9144",
+            "trait": 557,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 557,
+              "title": "Honorable_Staff",
+              "revision": 2926835
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "荣耀法杖"
+          }
+        ]
+      },
+      "9146": {
+        "title": "Symbol_of_Resolution",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2989854,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "初始伤害",
+            "detail": "系数 ×0.8",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "符印伤害",
+            "detail": "系数 ×2.60 · 4 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "决心",
+            "detail": "1 秒 · 5 层",
+            "icon": "https://render.guildwars2.com/file/D104A6B9344A2E2096424A3C300E46BC2926E4D7/2440718.png",
+            "stacks": 5
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "符印持续时间",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "光明",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-653-9146",
+            "trait": 653,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 653,
+              "title": "Zealous_Blade",
+              "revision": 2572445
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.7999999999999999
+              }
+            ],
+            "traitName": "狂热利刃"
+          }
+        ]
+      },
+      "9147": {
+        "title": "Binding_Blade",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3211000,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "束缚之刃",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/B975D6E5B32392524C034114E2A2201097BFDA35/103274.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "利刃最长持续时间",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "最大束缚距离",
+            "detail": "750",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "旋风",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-653-9147",
+            "trait": 653,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 653,
+              "title": "Zealous_Blade",
+              "revision": 2572445
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "狂热利刃"
           }
         ]
       },
@@ -5945,6 +7007,150 @@
           }
         ]
       },
+      "9265": {
+        "title": "Empower",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3041741,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "2.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "最终治疗",
+            "detail": "1500 + 0.5 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 1500,
+              "coefficient": 0.5
+            }
+          },
+          {
+            "label": "治疗脉冲",
+            "detail": "496 + 0.17 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 496,
+              "coefficient": 0.17
+            }
+          },
+          {
+            "label": "威能",
+            "detail": "10 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+            "stacks": 3
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-557-9265",
+            "trait": 557,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 557,
+              "title": "Honorable_Staff",
+              "revision": 2926835
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "荣耀法杖"
+          }
+        ]
+      },
+      "13688": {
+        "title": "Lesser_Shield_of_Absorption",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2413773,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "24 秒"
+          },
+          {
+            "label": "治疗",
+            "detail": "1300 + 0.2 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 1300,
+              "coefficient": 0.2
+            }
+          },
+          {
+            "label": "击退距离",
+            "detail": "320",
+            "icon": "https://render.guildwars2.com/file/400B7FD39724FBD700B94AB8AB52B5B9167646F4/2440715.png"
+          },
+          {
+            "label": "护盾持续时间",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "光明",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          },
+          {
+            "label": "半径",
+            "detail": "300",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "150"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-580-13688",
+            "trait": 580,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 580,
+              "title": "Stalwart_Defender",
+              "revision": 2258813
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.7999999999999999
+              }
+            ],
+            "traitName": "顽强防御"
+          }
+        ]
+      },
       "21664": {
         "title": "Litany_of_Wrath",
         "profession": "Guardian",
@@ -6105,6 +7311,96 @@
             "id": 1835,
             "name": "侵略狂热",
             "description": "对残废的敌人造成额外打击伤害。正义的被动效果使敌人残废。"
+          }
+        ]
+      },
+      "29887": {
+        "title": "Spear_of_Justice",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3003150,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.8",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "正义",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/77931F01AE91A00998BD286BA2930DCE1A354318/103677.png"
+          },
+          {
+            "label": "燃烧 （被动）",
+            "detail": "2 秒"
+          },
+          {
+            "label": "燃烧 （主动）",
+            "detail": "2 秒"
+          },
+          {
+            "label": "致残",
+            "detail": "1.5 秒 · -50% 移动速度"
+          },
+          {
+            "label": "现身",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/62BFF65D1CE99B1B2B0928152BCC596EAC0D372B/102887.png"
+          },
+          {
+            "label": "触发所需攻击次数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "间隔",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png"
+          },
+          {
+            "label": "穿透",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/F833590B593E0C2D4948DFFE9951B91655250052/1770207.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/BA65F2F5A073EB4BCC79085916B978DC0B096A0B/2248876.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-620-29887",
+            "trait": 620,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 620,
+              "title": "Power_of_the_Virtuous",
+              "revision": 3168689
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "美德之力"
           }
         ]
       },
@@ -6295,6 +7591,227 @@
             "id": 1898,
             "name": "猎人感应",
             "description": "陷阱技能使用时给予圣盾。"
+          }
+        ]
+      },
+      "30029": {
+        "title": "Shield_of_Courage",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3128715,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "45 秒"
+          },
+          {
+            "label": "圣盾",
+            "detail": "20 秒",
+            "icon": "https://render.guildwars2.com/file/DFB4D1B50AE4D6A275B349E15B179261EE3EB0AF/102854.png"
+          },
+          {
+            "label": "勇气美德",
+            "detail": "周期性获得圣盾",
+            "icon": "https://render.guildwars2.com/file/1B55CBCB3E1165FD5D0C7BC3CBEEB65C5BD9D07C/103258.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "圣盾刷新",
+            "detail": "40 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-620-30029",
+            "trait": 620,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 620,
+              "title": "Power_of_the_Virtuous",
+              "revision": 3168689
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "美德之力"
+          }
+        ]
+      },
+      "30039": {
+        "title": "Shield_of_Courage",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3128715,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "45 秒"
+          },
+          {
+            "label": "圣盾",
+            "detail": "20 秒",
+            "icon": "https://render.guildwars2.com/file/DFB4D1B50AE4D6A275B349E15B179261EE3EB0AF/102854.png"
+          },
+          {
+            "label": "勇气美德",
+            "detail": "周期性获得圣盾",
+            "icon": "https://render.guildwars2.com/file/1B55CBCB3E1165FD5D0C7BC3CBEEB65C5BD9D07C/103258.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "圣盾刷新",
+            "detail": "40 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-620-30039",
+            "trait": 620,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 620,
+              "title": "Power_of_the_Virtuous",
+              "revision": 3168689
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "美德之力"
+          }
+        ]
+      },
+      "30225": {
+        "title": "Wings_of_Resolve",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3171277,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "治疗",
+            "detail": "3890 + 1.2 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 3890,
+              "coefficient": 1.2
+            }
+          },
+          {
+            "label": "决心美德",
+            "detail": "84 + 0.06 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/A054A5300BF26FBAA601611BDA07B6001830FF92/1012864.png",
+            "healing": {
+              "base": 84,
+              "coefficient": 0.06
+            }
+          },
+          {
+            "label": "症状移除",
+            "detail": ""
+          },
+          {
+            "label": "移除自身症状",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "跳跃",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "800",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-620-30225",
+            "trait": 620,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 620,
+              "title": "Power_of_the_Virtuous",
+              "revision": 3168689
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "美德之力"
           }
         ]
       },
@@ -6742,6 +8259,91 @@
             "id": 1908,
             "name": "猎人工事",
             "description": "格挡或者闪避攻击时移除症状，获得治疗。格挡和闪避触发效果的冷却时间分开计算。"
+          }
+        ]
+      },
+      "30783": {
+        "title": "Wings_of_Resolve",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3171277,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "治疗",
+            "detail": "3890 + 1.2 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 3890,
+              "coefficient": 1.2
+            }
+          },
+          {
+            "label": "决心美德",
+            "detail": "84 + 0.06 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/A054A5300BF26FBAA601611BDA07B6001830FF92/1012864.png",
+            "healing": {
+              "base": 84,
+              "coefficient": 0.06
+            }
+          },
+          {
+            "label": "症状移除",
+            "detail": ""
+          },
+          {
+            "label": "移除自身症状",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "跳跃",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "800",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-620-30783",
+            "trait": 620,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 620,
+              "title": "Power_of_the_Virtuous",
+              "revision": 3168689
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "美德之力"
           }
         ]
       },
@@ -7666,7 +9268,16 @@
             "name": "冰川之心",
             "description": "奋力锤击变为冰川猛击。当你控制，定身，或冰冻敌人时，获得治疗。\n\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽和恐惧。"
           }
-        ]
+        ],
+        "controlRule": {
+          "title": "Heel_Crack",
+          "revision": 2882559,
+          "control": {
+            "label": "昏迷",
+            "seconds": 2
+          },
+          "defiance": 200
+        }
       },
       "62561": {
         "title": "Heaven's_Palm",
@@ -8421,6 +10032,66 @@
           }
         ]
       },
+      "72104": {
+        "title": "Zealot's_Flame",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2845994,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "15 秒"
+          },
+          {
+            "label": "狂徒烈焰",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/3CB42772DD937ACF48EF5FE4615EF33F49035450/103231.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "3 秒 · 4 层",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+            "stacks": 4
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-567-72104",
+            "trait": 567,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 567,
+              "title": "Radiant_Fire",
+              "revision": 2812753
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "光耀火焰"
+          }
+        ]
+      },
       "76621": {
         "title": "Resolute_Stance",
         "profession": "Guardian",
@@ -8645,7 +10316,16 @@
             "name": "持久祝福",
             "description": "刷新圣辉者的祝福的持续时间，并在你退出光辉熔炉时触发它的治疗。"
           }
-        ]
+        ],
+        "controlRule": {
+          "title": "Daring_Advance",
+          "revision": 3208342,
+          "control": {
+            "label": "昏迷",
+            "seconds": 2
+          },
+          "defiance": 200
+        }
       },
       "76813": {
         "title": "Effulgent_Stance",
@@ -8830,7 +10510,16 @@
             "name": "微光姿态",
             "description": "姿态给受影响的盟友提供保护，给受影响的敌人施加目盲。"
           }
-        ]
+        ],
+        "controlRule": {
+          "title": "Piercing_Stance",
+          "revision": 3101998,
+          "control": {
+            "label": "晕眩",
+            "seconds": 1.5
+          },
+          "defiance": 150
+        }
       },
       "77300": {
         "title": "Valorous_Stance",

@@ -2,16 +2,15 @@
   "version": 1,
   "id": "4d6feaf8-4a80-4c82-86ad-a893d3ce2f97",
   "name": "戴莫斯 鬼手预告",
-  "description": "参考攻略，详细机制请阅读gw2 英文wiki，或者镜像wiki。\n# 一、装备\n- 只要坚韧不超过T，有一定的增益持续时间维持保护和再生buff，有一定的治疗效果能恢复血量即可。\n# 二、机制\n\n## 1、大招\n\n- 戴莫斯释放大招前会说一句：“站起来，快点！”\n- 他挥动武器在身旁绕圈，当他的手臂第四次到达腰部时，也就是绕了4圈，就会释放大招。\n- 需要用持续性格挡，无敌类技能，注意，[失真](gw2:skill/10192)和闪避没办法无视大招伤害。\n- 预告可利用格挡技能有很多：如下\n\n| 技能 | 效果 |\n| :---: | :---: |\n| 法杖3 | [裂隙结界](gw2:skill/29288) |\n| 盾牌5 | [水晶休眠](gw2:skill/28262) |\n| 巨龙姿态治疗技能第二段 | [圣光灌注](gw2:skill/27228) |\n\n- 大招结束后会有 debuff 每秒额外扣血，要预留技能回血。\n\n示例\n\n- 巨龙姿态，打开[圣光多面体](gw2:skill/27220)和[混沌多面体](gw2:skill/27760)获得再生和保护。\n- 法杖3格挡大招，受到debuff伤害，切到盾牌5，出鬼手时格挡鬼手伤害并触发[防御者古物](gw2:item/100934)回血，\n- 能量不够时，及时切半人马姿态\n- 血量压力非常大时，使用巨龙姿态的治疗技能第二段[圣光灌注](gw2:skill/27228)踩鬼手快速回血。\n\n## 2、鬼手\n\n- 鬼手每一波5只手\n- 可采用双排的方式减少受到的伤害。\n\n双排参考演示表\n\n| boss |   |   |   |   |\n| :---: | :---: | :---: | :---: | :---: |\n| 第二排 | 3 | 移动 | 3 | 移动 |\n| 第一排 | 2 | 等待下次鬼手 | 2 | 等待下次鬼手 |\n\n## 3、40血以下小怪\n\n40%血以下骄傲和贪婪会再次出现，靠近npc时爆炸，会对npc和玩家都造成伤害，要提醒队友大打小怪。\n\n## 4、眼泪\n\n会对玩家释放无法格挡的血石投射物，不会打破圣盾，但是会有伤害，提醒队友去踩眼泪。\n\n## 5、10%血下地\n\n- 下地后鬼手还站在远处。\n- 大团面朝戴莫斯，站左边，boss先砸右手，大团给稳固\n- 出黑水\n- 大团移动位置\n- boss砸左手，大团不用动\n- boss砸双手，大团稳固或圣盾，鬼手给自己稳固或者圣盾。\n- 打死戴莫斯。",
+  "description": "参考攻略，详细机制请阅读gw2 英文wiki，或者镜像wiki。\n# 一、装备\n- 只要坚韧不超过T，有一定的增益持续时间维持保护和再生buff，有一定的治疗效果能恢复血量即可。\n- 不要堆太多血量，戴莫斯大招后有百分比扣血，血量太多会导致治疗成本变高。\n# 二、机制\n\n## 1、大招\n\n- 戴莫斯释放大招前会说一句：“站起来，快点！”\n- 他挥动武器在身旁绕圈，当他的手臂第四次到达腿部时，也就是绕了4圈，就会释放大招。\n- 需要用持续性格挡，无敌类技能，注意，[失真](gw2:skill/10192)和闪避没办法无视大招伤害。\n- 预告可利用格挡技能有很多：如下\n\n| 技能 | 效果 |\n| :---: | :---: |\n| 法杖3 | [裂隙结界](gw2:skill/29288) |\n| 盾牌5 | [水晶休眠](gw2:skill/28262) |\n| 巨龙姿态治疗技能第二段 | [圣光灌注](gw2:skill/27228) |\n\n- 大招结束后受到持续10s的debuff，每秒减 7% 最大生命值的血量。共 70%。规划技能，给自己回血。\n\n## 2、鬼手\n\n- 鬼手每一波5只手\n- 可采用双排的方式减少受到的伤害。\n\n双排参考演示表\n\n| boss |   |   |   |   |\n| :---: | :---: | :---: | :---: | :---: |\n| 第二排 | 3 | 移动 | 3 | 移动 |\n| 第一排 | 2 | 等待下次鬼手 | 2 | 等待下次鬼手 |\n\n## 3、40血以下小怪\n\n40%血以下骄傲和贪婪会再次出现，靠近npc时爆炸，会对npc和玩家都造成伤害，要提醒队友大打小怪。\n\n## 4、眼泪\n\n会对玩家释放无法格挡的血石投射物，不会打破圣盾，但是会有伤害，提醒队友去踩眼泪。\n\n## 5、10%血下地\n\n- 下地后鬼手还站在远处。\n- 大团面朝戴莫斯，站左边，boss先砸右手，大团给稳固\n- 出黑水\n- 大团移动位置\n- boss砸左手，大团不用动\n- boss砸双手，大团稳固或圣盾，鬼手给自己稳固或者圣盾。\n- 打死戴莫斯。\n\n# 三、示例\n\n- 鬼手参考上方双排演示。\n- 进入战斗后，打开[圣光多面体](gw2:skill/27220)和[混沌多面体](gw2:skill/27760)，给自己圣盾和保护，同时触发多个减伤BD。\n- 法杖3[裂隙结界](gw2:skill/29288)格挡大招。\n- 切武器，切半人马姿态，用盾牌5[水晶休眠](gw2:skill/28262)格挡大招后的鬼手和debuff伤害，盾牌5结束后及时离开鬼手区域。使用[自然调和](gw2:skill/29082)恢复血量。\n- 切武器CD好之后，切到法杖，巨龙姿态。打开[圣光多面体](gw2:skill/27220)和[混沌多面体](gw2:skill/27760)。循环如此。\n- 若在巨龙姿态时血量压力巨大，可激活圣光多面体第二段[圣光灌注](gw2:skill/27228)，主动吃伤害回血。但要注意只有3S持续时间。",
+  "descriptionStyle": {
+    "name": "迷雾金笺",
+    "css": "/* 迷雾金笺。用 .md-content 表示讲解正文；修改后导入或刷新模板文件夹。 */\n.md-content {\n  --md-accent: #e0c58e;\n  background: #142a31;\n  color: #e4eef0;\n  padding: 26px;\n  border: 1px solid #47616a;\n  border-radius: 8px;\n  font-family: \"Microsoft YaHei UI\", \"PingFang SC\", sans-serif;\n  font-size: 17px;\n  line-height: 1.95;\n}\nh1 {\n  color: #f2deaf;\n  font-size: 30px;\n  line-height: 1.5;\n  border-bottom: 2px solid #9b854f;\n  padding-bottom: 14px;\n  margin: 0 0 26px;\n}\nh2 {\n  color: #e0c58e;\n  font-size: 23px;\n  border-left: 4px solid #b99b60;\n  padding-left: 14px;\n  margin: 30px 0 14px;\n}\nh3 {\n  color: #e9d9b6;\n  font-size: 19px;\n  margin: 24px 0 10px;\n}\np {\n  margin: 12px 0;\n}\nstrong {\n  color: #ffdda0;\n  font-weight: 700;\n}\nblockquote {\n  background: #203a40;\n  color: #d0e5e3;\n  border-left: 3px solid #7eaaa5;\n  padding: 10px 18px;\n  margin: 20px 0;\n}\na {\n  color: #f1d69f;\n}\ncode {\n  background: #0d2028;\n  color: #d5e9e9;\n  padding: 2px 5px;\n  border-radius: 3px;\n}\npre {\n  background: #0d2028;\n  padding: 18px;\n  border: 1px solid #3a535d;\n}\ntable {\n  width: 100%;\n  border-collapse: collapse;\n  margin: 20px 0;\n}\nth {\n  background: #29434a;\n  color: #f1ddb8;\n  font-weight: 600;\n}\nth,\ntd {\n  padding: 10px 14px;\n  border: 1px solid #46616b;\n}\ntr:nth-child(even) {\n  background: #1c333b;\n}\nhr {\n  border: 0;\n  border-top: 1px solid #60706a;\n  margin: 28px 0;\n}\n.build-reference,\n.png-reference {\n  background: #36443c;\n  color: #ffe1a2;\n  border: 1px solid #8a815d;\n  border-radius: 4px;\n  padding: 1px 6px;\n}\n"
+  },
   "tags": [
     "鬼手"
   ],
   "encounters": [
-    {
-      "instance": "忏悔者堡垒",
-      "boss": "戴莫斯",
-      "mode": "normal"
-    },
     {
       "instance": "忏悔者堡垒",
       "boss": "戴莫斯",
@@ -21,7 +20,7 @@
   "profession": "Revenant",
   "equipment": {
     "head": {
-      "statId": 1123,
+      "statId": 1363,
       "runeId": 24842,
       "sigils": [
         null,
@@ -33,7 +32,7 @@
       "weapon": ""
     },
     "shoulders": {
-      "statId": 1123,
+      "statId": 1363,
       "runeId": 24842,
       "sigils": [
         null,
@@ -45,7 +44,7 @@
       "weapon": ""
     },
     "chest": {
-      "statId": 1123,
+      "statId": 1363,
       "runeId": 24842,
       "sigils": [
         null,
@@ -57,7 +56,7 @@
       "weapon": ""
     },
     "hands": {
-      "statId": 1123,
+      "statId": 1363,
       "runeId": 24842,
       "sigils": [
         null,
@@ -69,7 +68,7 @@
       "weapon": ""
     },
     "legs": {
-      "statId": 1123,
+      "statId": 1363,
       "runeId": 24842,
       "sigils": [
         null,
@@ -81,7 +80,7 @@
       "weapon": ""
     },
     "feet": {
-      "statId": 1123,
+      "statId": 1363,
       "runeId": 24842,
       "sigils": [
         null,
@@ -93,7 +92,7 @@
       "weapon": ""
     },
     "back": {
-      "statId": 1037,
+      "statId": 656,
       "runeId": null,
       "sigils": [
         null,
@@ -106,7 +105,7 @@
       "weapon": ""
     },
     "accessory1": {
-      "statId": 1037,
+      "statId": 656,
       "runeId": null,
       "sigils": [
         null,
@@ -118,7 +117,7 @@
       "weapon": ""
     },
     "accessory2": {
-      "statId": 1037,
+      "statId": 656,
       "runeId": null,
       "sigils": [
         null,
@@ -130,7 +129,7 @@
       "weapon": ""
     },
     "amulet": {
-      "statId": 1037,
+      "statId": 656,
       "runeId": null,
       "sigils": [
         null,
@@ -140,7 +139,7 @@
       "weapon": ""
     },
     "ring1": {
-      "statId": 1037,
+      "statId": 656,
       "runeId": null,
       "sigils": [
         null,
@@ -154,7 +153,7 @@
       "weapon": ""
     },
     "ring2": {
-      "statId": 1037,
+      "statId": 656,
       "runeId": null,
       "sigils": [
         null,
@@ -168,7 +167,7 @@
       "weapon": ""
     },
     "weapon1": {
-      "statId": 1123,
+      "statId": 628,
       "runeId": null,
       "sigils": [
         74326,
@@ -191,7 +190,7 @@
       "weapon": ""
     },
     "weapon2": {
-      "statId": 1123,
+      "statId": 628,
       "runeId": null,
       "sigils": [
         74326,
@@ -203,7 +202,7 @@
       "weapon": "Scepter"
     },
     "offhand2": {
-      "statId": 1123,
+      "statId": 628,
       "runeId": null,
       "sigils": [
         72339,
@@ -236,7 +235,7 @@
     {
       "id": 9,
       "traits": [
-        1810,
+        1728,
         1782,
         1790
       ]

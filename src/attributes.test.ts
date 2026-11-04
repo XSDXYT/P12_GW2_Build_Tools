@@ -396,7 +396,20 @@ test("特性仅取有效职业与阶级，未知属性规则及缺少食物资�
   const spec = catalog.specs.find((s) => s.id === unknown.specialization)!;
   b.profession = spec.profession;
   selectTrait(b, unknown.id, spec.elite ? 2 : 0);
-  assert.ok(calc(b).warnings.some((w) => w.includes(unknown.name)));
+  // This previously unknown conversion is now reviewed; it must no longer warn.
+  assert.ok(!calc(b).warnings.some((w) => w.includes(unknown.name)));
+  const unsupported = structuredClone(catalog);
+  const synthetic = unsupported.traits.find((t) => t.id === 700)!;
+  synthetic.facts = [
+    { type: "BuffConversion", source: "Power", target: "Healing", percent: 99 },
+  ];
+  const draft = createBuild();
+  selectTrait(draft, synthetic.id);
+  assert.ok(
+    calculateAttributes(draft, unsupported, data).warnings.some((w) =>
+      w.includes(synthetic.name),
+    ),
+  );
 });
 
 test("叠层法印和贵族古物为条件预览；互斥法印不叠加", () => {

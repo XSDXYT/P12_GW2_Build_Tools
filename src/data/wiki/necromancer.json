@@ -3593,6 +3593,79 @@
           }
         ]
       },
+      "10532": {
+        "title": "Grasping_Dead",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2631630,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "10 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.8",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "流血",
+            "detail": "10 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+            "stacks": 3
+          },
+          {
+            "label": "致残",
+            "detail": "7 秒 · -50% 移动速度"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "weapon-base-duration-801-10532",
+            "trait": 801,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 801,
+              "title": "Lingering_Curse",
+              "revision": 2630755
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "流血",
+                "factor": 1.5
+              },
+              {
+                "type": "duration",
+                "label": "致残",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "诅咒萦绕"
+          }
+        ]
+      },
       "10533": {
         "title": "Summon_Bone_Fiend",
         "profession": "Necromancer",
@@ -4874,6 +4947,64 @@
                 "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
               }
             ]
+          }
+        ]
+      },
+      "10552": {
+        "title": "Putrid_Curse",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2631629,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "流血",
+            "detail": "4.5 秒",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png"
+          },
+          {
+            "label": "中毒",
+            "detail": "6 秒 · -33% 治疗效能"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "weapon-base-duration-801-10552",
+            "trait": 801,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 801,
+              "title": "Lingering_Curse",
+              "revision": 2630755
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "流血",
+                "factor": 1.5
+              },
+              {
+                "type": "duration",
+                "label": "中毒",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "诅咒萦绕"
           }
         ]
       },
@@ -7393,6 +7524,176 @@
           }
         ]
       },
+      "10698": {
+        "title": "Blood_Curse",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2631627,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.35",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "流血",
+            "detail": "4.5 秒",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "weapon-base-duration-801-10698",
+            "trait": 801,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 801,
+              "title": "Lingering_Curse",
+              "revision": 2630755
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "流血",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "诅咒萦绕"
+          }
+        ]
+      },
+      "10699": {
+        "title": "Rending_Curse",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2631628,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.35",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "流血",
+            "detail": "4.5 秒",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "weapon-base-duration-801-10699",
+            "trait": 801,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 801,
+              "title": "Lingering_Curse",
+              "revision": 2630755
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "流血",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "诅咒萦绕"
+          }
+        ]
+      },
+      "10709": {
+        "title": "Feast_of_Corruption",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2959884,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "10 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "每种症状折磨",
+            "detail": "4 秒"
+          },
+          {
+            "label": "增益转为症状",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "生命之力",
+            "detail": "8%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "每个症状提供生命之力",
+            "detail": "1%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "症状临界值",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "weapon-base-duration-801-10709",
+            "trait": 801,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 801,
+              "title": "Lingering_Curse",
+              "revision": 2630755
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "每种症状折磨",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "诅咒萦绕"
+          }
+        ]
+      },
       "21762": {
         "title": "Signet_of_Vampirism",
         "profession": "Necromancer",
@@ -8499,6 +8800,15 @@
             "description": "冰冻对敌人造成持续性伤害。"
           }
         ],
+        "controlRule": {
+          "title": "Executioner's_Scythe",
+          "revision": 3166168,
+          "control": {
+            "label": "昏迷",
+            "seconds": 1.5
+          },
+          "defiance": 150
+        },
         "modifiers": [
           {
             "id": "recharge-891-30557",
@@ -9227,6 +9537,15 @@
                 "detail": "150"
               }
             ],
+            "controlRule": {
+              "title": "Executioner's_Scythe",
+              "revision": 3166168,
+              "control": {
+                "label": "昏迷",
+                "seconds": 1.5
+              },
+              "defiance": 150
+            },
             "modifiers": [
               {
                 "id": "recharge-891-30557",
@@ -9772,7 +10091,7 @@
             "icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png"
           },
           {
-            "label": "数量 冷却时间",
+            "label": "计数冷却时间",
             "detail": "15 秒"
           },
           {
@@ -9962,6 +10281,25 @@
               }
             ],
             "traitName": "沙漠强化"
+          },
+          {
+            "id": "sand-savant-current-charge",
+            "trait": 2112,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2112,
+              "title": "Sand_Savant",
+              "revision": 2709385
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "计数冷却时间",
+                "factor": 1.25
+              }
+            ],
+            "traitName": "黄沙仆从"
           }
         ]
       },
@@ -11280,6 +11618,25 @@
               }
             ],
             "traitName": "沙漠强化"
+          },
+          {
+            "id": "sand-savant-current-charge",
+            "trait": 2112,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2112,
+              "title": "Sand_Savant",
+              "revision": 2709385
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "计数冷却时间",
+                "factor": 1.25
+              }
+            ],
+            "traitName": "黄沙仆从"
           }
         ]
       },
@@ -11296,6 +11653,363 @@
         "identityVerified": false,
         "revision": 3169200,
         "rows": []
+      },
+      "51647": {
+        "title": "Devouring_Darkness",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2932290,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "10 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.16",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "每种症状折磨",
+            "detail": "4 秒"
+          },
+          {
+            "label": "增益转为症状",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "生命之力",
+            "detail": "8%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "每个症状提供生命之力",
+            "detail": "1%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "每个敌人提供生命之力",
+            "detail": "2%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "症状临界值",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "360",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "weapon-base-duration-801-51647",
+            "trait": 801,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 801,
+              "title": "Lingering_Curse",
+              "revision": 2630755
+            },
+            "changes": [
+              {
+                "type": "duration",
+                "label": "每种症状折磨",
+                "factor": 1.5
+              }
+            ],
+            "traitName": "诅咒萦绕"
+          }
+        ]
+      },
+      "54870": {
+        "title": "Sandstorm_Shroud",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3029009,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "生命之力消耗",
+            "detail": "3,224",
+            "icon": "https://render.guildwars2.com/file/7F20920A42951A471352CE56CBD1F15257C10757/1770200.png"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×3.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "每次脉冲的屏障",
+            "detail": "325 + 0.3 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+            "healing": {
+              "base": 325,
+              "coefficient": 0.3
+            }
+          },
+          {
+            "label": "爆炸屏障",
+            "detail": "650 + 0.6 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+            "healing": {
+              "base": 650,
+              "coefficient": 0.6
+            }
+          },
+          {
+            "label": "折磨",
+            "detail": "5 秒 · 6 层",
+            "icon": "https://render.guildwars2.com/file/10BABF2708CA3575730AC662A2E72EC292565B08/598887.png",
+            "stacks": 6
+          },
+          {
+            "label": "保护",
+            "detail": "1.5 秒 · 3 层 · -33% 受到的伤害",
+            "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png",
+            "stacks": 3
+          },
+          {
+            "label": "保护",
+            "detail": "3 秒 · -33% 受到的伤害",
+            "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png"
+          },
+          {
+            "label": "增益转为症状",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "3.5 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "屏障半径",
+            "detail": "300",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-54870",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
+          }
+        ]
+      },
+      "62511": {
+        "title": "Vile_Blast",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2855293,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "中毒",
+            "detail": "6 秒 · 5 层 · -33% 治疗效能",
+            "stacks": 5
+          },
+          {
+            "label": "虚弱",
+            "detail": "5 秒 · -50% 耐力回复速度, +50% 非限定攻击失手几率",
+            "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png"
+          },
+          {
+            "label": "每个目标获得生命之力",
+            "detail": "4%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "昏迷",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/1999B9DB355005D2DD19F66DFFBAA6D466057508/522727.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "100"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "controlRule": {
+          "title": "Vile_Blast",
+          "revision": 2855293,
+          "control": {
+            "label": "昏迷",
+            "seconds": 1
+          },
+          "defiance": 100
+        },
+        "modifiers": [
+          {
+            "id": "recharge-2209-62511",
+            "trait": 2209,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2209,
+              "title": "Dark_Gunslinger",
+              "revision": 3128982
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.7999999999999999
+              }
+            ],
+            "traitName": "黑暗枪手"
+          }
+        ]
+      },
+      "62513": {
+        "title": "Weeping_Shots",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2734050,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "6 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.4 · 6 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "易伤",
+            "detail": "6 秒 · 6 层 · +6% 受到的伤害, +6% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 6
+          },
+          {
+            "label": "折磨",
+            "detail": "4 秒 · 6 层",
+            "icon": "https://render.guildwars2.com/file/10BABF2708CA3575730AC662A2E72EC292565B08/598887.png",
+            "stacks": 6
+          },
+          {
+            "label": "每发子弹获得生命之力",
+            "detail": "1.5%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "穿透",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/F833590B593E0C2D4948DFFE9951B91655250052/1770207.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物 (20% 几率)",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-2209-62513",
+            "trait": 2209,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2209,
+              "title": "Dark_Gunslinger",
+              "revision": 3128982
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.7999999999999999
+              }
+            ],
+            "traitName": "黑暗枪手"
+          }
+        ]
       },
       "62514": {
         "title": "Elixir_of_Bliss",
@@ -13628,6 +14342,86 @@
               }
             ],
             "traitName": "末日降临"
+          }
+        ]
+      },
+      "63448": {
+        "title": "Voracious_Dive",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2934092,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "10 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.4"
+          },
+          {
+            "label": "晕眩",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "5"
+          },
+          {
+            "label": "半径",
+            "detail": "180"
+          },
+          {
+            "label": "枯萎阈值",
+            "detail": "10"
+          },
+          {
+            "label": "高于枯萎阈值时",
+            "detail": ""
+          },
+          {
+            "label": "伤害提高",
+            "detail": "100%"
+          },
+          {
+            "label": "折磨",
+            "detail": "10 秒 · 5 层",
+            "stacks": 5
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "100"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-891-63448",
+            "trait": 891,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 891,
+              "title": "Sinister_Shroud",
+              "revision": 3117272
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "凶恶帷幕"
           }
         ]
       },

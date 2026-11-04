@@ -1,6 +1,39 @@
 import { load } from "cheerio";
 
 const terms = {
+  "Blocks Missiles": "阻挡投射物",
+  "Boon Copied": "复制增益",
+  "Burning per hit.": "每次命中燃烧",
+  "First Hit Might": "首次命中威能",
+  "First Hit Fury": "首次命中激怒",
+  "Additional Hit Might": "额外命中威能",
+  "Additional Hit Fury": "额外命中激怒",
+  "Maximum Burning": "最高燃烧",
+  "Minimum Burning": "最低燃烧",
+  "Torment per Condition": "每种症状折磨",
+  "Grants boons to allies.": "向盟友提供增益。",
+  "Grants additional boons to allies. Motivation cost per interval increased.":
+    "向盟友提供额外增益；每次间隔消耗更多士气。",
+  "Fire Aura": "火焰光环",
+  "Initial Strike Damage": "初始打击伤害",
+  "Secondary Explosion Damage": "次级爆炸伤害",
+  "Pass-Through Burning": "穿越时燃烧",
+  "Bleeding per hit.": "每次命中流血",
+  "Additional Burning": "额外燃烧",
+  "Additional Poison": "额外中毒",
+  "Virtue of Courage": "勇气美德",
+  "Gain aegis at a set interval.": "周期性获得圣盾",
+  "Initial Swiftness": "初始迅捷",
+  "Self Burning per Condition": "每个症状造成自身燃烧",
+  "Additional Conditions above 50% Heat": "热量高于50%时额外移除症状",
+  "Damage Increase above 50% Heat": "热量高于50%时伤害提高",
+  "Damage Increase Above 50% Heat": "热量高于50%时伤害提高",
+  "Velocity Increase Above 50% Heat": "热量高于50%时投射物速度提高",
+  "Light Aura above 50% Heat": "热量高于50%时光明光环",
+  "Radius and Pull Increase above 50% Heat": "热量高于50%时半径与拉拽距离提高",
+  Explosion: "爆炸",
+  "Pet swiftness": "宠物迅捷",
+  "Count Recharge": "计数冷却时间",
   "Number of Targets": "目标数",
   Radius: "半径",
   Range: "射程",
@@ -792,6 +825,8 @@ export function parseWikiPage(
     row.find(".sic").remove();
     const text = plain(row.text());
     if (!text) return;
+    if (/^When Consuming an? (?:Fire|Water|Ice|Air|Earth) Bullet$/.test(text))
+      return;
     const performance = {
       "Performance. Reciting this tale with the drums playing will grant you notes.":
         "战鼓正在演奏时，吟诵此传说可获得音符。",
@@ -836,6 +871,23 @@ export function parseWikiPage(
         row.find("sub").length)
     )
       baseLabel = stackMatch[2];
+    let rowCondition;
+    const distanceBleeding = baseLabel.match(
+      /^(?:\d+ )?Bleeding at (less than 300 distance|300-600 distance|600-900 distance|greater than 900)$/,
+    );
+    if (distanceBleeding) {
+      baseLabel = "Bleeding";
+      rowCondition = {
+        "less than 300 distance": "距离小于300时",
+        "300-600 distance": "距离300至600时",
+        "600-900 distance": "距离600至900时",
+        "greater than 900": "距离大于900时",
+      }[distanceBleeding[1]];
+    }
+    if (id === 12468 && /^(?:\d+ )?Attack from Behind$/.test(baseLabel)) {
+      baseLabel = "Poison";
+      rowCondition = "从侧面或背后攻击，或攻击拥有蔑视条的敌人时";
+    }
     let label = conversion
       ? `${localize(conversion[2], map)}转化为${localize(conversion[1], map)}的比例`
       : localize(baseLabel, map);
@@ -860,6 +912,16 @@ export function parseWikiPage(
     )
       label += ` · ${localize(boon, map)}`;
     const info = { label, detail: "" };
+    if (id === 76643 && baseLabel === "Bonus Burning") {
+      info.label = label = "固定时长额外燃烧";
+    }
+    if (rowCondition) info.trigger = rowCondition;
+    const bullet = plain(
+      $(node).closest("dl").children("dd").first().text(),
+    ).match(/^When Consuming an? (Fire|Water|Ice|Air|Earth) Bullet$/)?.[1];
+    if (bullet)
+      info.trigger = `消耗${{ Fire: "火焰", Water: "流水", Ice: "寒冰", Air: "空气", Earth: "大地" }[bullet]}子弹时`;
+    if (baseLabel === "Pet swiftness") info.recipient = "宠物";
     const matchingFact = english.facts.find((f) =>
       [f.text, f.status].some(
         (v) => normalized(v || "") === normalized(baseLabel),
@@ -1098,7 +1160,10 @@ export function parseWikiPage(
     ]) {
       const statIcon = stats.find(`a[href="/wiki/${href}"]`);
       if (!statIcon.length) continue;
-      let previous = statIcon[0].prev,
+      // Current MediaWiki wraps file links in a span; the numeric value is
+      // outside that wrapper. Older cached pages have a direct link instead.
+      const fileWrapper = statIcon.first().closest('[typeof="mw:File"]');
+      let previous = (fileWrapper[0] || statIcon[0]).prev,
         value = "";
       while (
         previous &&
@@ -1110,6 +1175,9 @@ export function parseWikiPage(
         previous = previous.prev;
       }
       value = plain(value);
+      value = /\d/.test(value)
+        ? value.replace(/[¼½¾]/g, "")
+        : { "¼": "0.25", "½": "0.5", "¾": "0.75" }[value] || value;
       if (/^[−-]?[\d.]+$/.test(value)) {
         rows.unshift({ label, detail: `${value}${unit}` });
         if (href === "Recharge")
@@ -1128,10 +1196,13 @@ export function parseWikiPage(
   let traitOverrides;
   const notes = [];
   const relatedSection = quote
-    .nextAll("h2")
-    .filter((_, e) => $(e).find("#Related_traits").length)
+    .nextAll("h2,.mw-heading2")
+    .filter(
+      (_, e) =>
+        $(e).is("#Related_traits") || $(e).find("#Related_traits").length,
+    )
     .first()
-    .nextUntil("h2");
+    .nextUntil("h2,.mw-heading2");
   const relatedTraits = [
     ...new Set(
       relatedSection
@@ -1152,10 +1223,10 @@ export function parseWikiPage(
   }
   if (kind === "trait" && id === 1866) {
     const mechanics = quote
-      .nextAll("h2")
-      .filter((_, e) => $(e).find("#Mechanics").length)
+      .nextAll("h2,.mw-heading2")
+      .filter((_, e) => $(e).is("#Mechanics") || $(e).find("#Mechanics").length)
       .first();
-    const section = mechanics.nextUntil("h2");
+    const section = mechanics.nextUntil("h2,.mw-heading2");
     const extra = [];
     const before = rows.length;
     section.find("dd").each((_, e) => add(e));
@@ -1172,10 +1243,10 @@ export function parseWikiPage(
   }
   if (kind === "skill" && id === 10232) {
     const section = quote
-      .nextAll("h2")
-      .filter((_, e) => $(e).find("#Mechanics").length)
+      .nextAll("h2,.mw-heading2")
+      .filter((_, e) => $(e).is("#Mechanics") || $(e).find("#Mechanics").length)
       .first()
-      .nextUntil("h2");
+      .nextUntil("h2,.mw-heading2");
     const note = section
       .find("li")
       .filter(
@@ -1226,7 +1297,7 @@ export async function createWikiSnapshot({
     mode: "pve",
     professions: manifest.professions || ["Mesmer"],
     generatedAt: new Date().toISOString(),
-    mirror: "https://wiki.wishingstar.top",
+    mirror: "https://wiki.guildwars2.com",
     specializationTraits: Object.fromEntries(
       catalog.specs
         .filter((s) =>

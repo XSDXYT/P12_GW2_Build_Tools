@@ -1,6 +1,6 @@
 {
   "name": "p12-gw2-build-tools",
-  "version": "0.6.12",
+  "version": "0.6.13",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "tsx --test src/domain.test.ts src/attributes.test.ts src/game-details.test.ts src/trait-modifiers.test.ts src/build-image.test.ts src/markdown-style.test.ts src/markdown-table.test.ts src/library.test.ts src/build-description.test.ts src/collection.test.ts scripts/catalog-transforms.test.mjs scripts/data-source-policy.test.mjs scripts/wiki-details.test.mjs scripts/pages-scope.test.mjs src/consumables.test.ts scripts/consumable-wiki.test.mjs src/weapon-skills.test.ts src/effect-durations.test.ts src/profession-mechanics.test.ts src/infusions.test.ts",
+    "test": "tsx --test src/domain.test.ts src/attributes.test.ts src/trait-attributes.test.ts src/game-details.test.ts src/trait-modifiers.test.ts src/build-image.test.ts src/markdown-style.test.ts src/markdown-table.test.ts src/library.test.ts src/build-description.test.ts src/collection.test.ts scripts/catalog-transforms.test.mjs scripts/data-source-policy.test.mjs scripts/wiki-details.test.mjs scripts/wiki-trait-attributes.test.mjs scripts/pages-scope.test.mjs src/consumables.test.ts scripts/consumable-wiki.test.mjs src/weapon-skills.test.ts src/effect-durations.test.ts src/profession-mechanics.test.ts src/infusions.test.ts",
     "data:mechanics": "node scripts/sync-profession-mechanics.mjs",
     "data:mechanics:check": "tsx scripts/check-profession-mechanics.ts",
     "data:structure": "node scripts/sync-data-structure.mjs",

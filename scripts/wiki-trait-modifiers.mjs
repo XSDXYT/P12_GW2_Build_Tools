@@ -1,12 +1,32 @@
 import { load } from "cheerio";
+import { wikiContent } from "./wiki-dom.mjs";
+import {
+  attachTraitAttributes,
+  attachWeaponReplacements,
+} from "./wiki-trait-attributes.mjs";
 
 const plain = (s) => s.replace(/\s+/g, " ").trim();
-function currentEvidence(html) {
+export function currentEvidence(html) {
   const $ = load(html),
     q = $(".infobox").first().nextAll("blockquote").first();
-  const current = q
-    .add(q.nextUntil("h2:has(#Version_history),h2:has(#History)"))
-    .clone();
+  const current = q.length
+    ? q
+        .add(
+          q.nextUntil(
+            "h2:has(#Version_history),h2:has(#History),h2#Version_history,h2#History,.mw-heading2:has(#Version_history),.mw-heading2:has(#History)",
+          ),
+        )
+        .clone()
+    : wikiContent($).clone();
+  const history = current
+    .children("h2,.mw-heading2")
+    .filter(
+      (_, e) =>
+        $(e).is("#Version_history,#History") ||
+        $(e).find("#Version_history,#History").length,
+    )
+    .first();
+  if (history.length) history.nextAll().add(history).remove();
   current
     .find(
       'script,style,[style*="display:none"],[style*="display: none"],.gamemode:not(.pve)',
@@ -17,10 +37,14 @@ function currentEvidence(html) {
 /** Only explicit current Wiki before/after tables; no API ordering or guessed percentages. */
 export function rechargeTableRows(html) {
   const $ = load(html),
-    content = $(".mw-parser-output").first().clone();
+    content = wikiContent($).clone();
   const history = content
-    .children("h2")
-    .filter((_, e) => $(e).find("#Version_history,#History").length)
+    .children("h2,.mw-heading2")
+    .filter(
+      (_, e) =>
+        $(e).is("#Version_history,#History") ||
+        $(e).find("#Version_history,#History").length,
+    )
     .first();
   if (history.length) history.nextAll().add(history).remove();
   content
@@ -95,6 +119,7 @@ export async function attachTraitModifiers({
     rules: [],
     skipped: [],
     durations: [],
+    controls: [],
     professions: config.professions,
   };
   const targets = [];
@@ -166,15 +191,17 @@ export async function attachTraitModifiers({
         });
       for (const target of matches) {
         const cooldown = target.entry.rows.filter(
-          (r) => r.label === "冷却时间",
+          (r) =>
+            ["冷却时间", "计数冷却时间"].includes(r.label) &&
+            r.detail === `${row.before} 秒`,
         );
-        if (
-          cooldown.length !== 1 ||
-          cooldown[0].detail !== `${row.before} 秒` ||
-          target.entry.rows.some((r) =>
-            /充能|弹药|最大计数|计数冷却|数量 冷却/.test(r.label),
-          )
-        ) {
+        const hasAmmo = target.entry.rows.some((r) =>
+          /充能|弹药|最大计数|计数冷却|数量 冷却/.test(r.label),
+        );
+        const ammoRecharge = target.entry.rows.filter(
+          (r) => r.label === "计数冷却时间",
+        );
+        if (cooldown.length !== 1 || (hasAmmo && ammoRecharge.length !== 1)) {
           audit.skipped.push({
             trait: +traitId,
             target: target.id,
@@ -196,7 +223,7 @@ export async function attachTraitModifiers({
           changes: [
             {
               type: "number",
-              label: "冷却时间",
+              label: cooldown[0].label,
               factor: row.after / row.before,
             },
           ],
@@ -311,6 +338,45 @@ export async function attachTraitModifiers({
     }
   }
   audit.skipped.push(...(config.reviewedExclusions || []));
+  snapshot.traitControlBonuses = [];
+  for (const definition of config.controlBonuses || []) {
+    const page = snapshot.entries.traits[definition.trait];
+    if (!page || !config.professions.includes(page.profession))
+      throw Error(`Unknown control-duration trait: ${definition.trait}`);
+    const html = await source("traits", definition.trait, definition.revision);
+    if (
+      !currentEvidence(html).includes(definition.evidence) ||
+      !page.rows.some(
+        (r) =>
+          r.label === definition.guard.label &&
+          r.detail === definition.guard.detail,
+      )
+    )
+      throw Error(`Control-duration evidence changed: ${definition.trait}`);
+    if (
+      !definition.effects.length ||
+      definition.effects.some((e) => !["昏迷", "晕眩"].includes(e)) ||
+      !Number.isFinite(definition.bonus) ||
+      definition.bonus <= 0 ||
+      definition.bonus > 100
+    )
+      throw Error(`Invalid control-duration bonus: ${definition.trait}`);
+    for (const extra of definition.evidenceSources || []) {
+      const html = await source(extra.kind, extra.id, extra.revision);
+      if (!currentEvidence(html).includes(extra.evidence))
+        throw Error(`Control stacking evidence changed: ${definition.trait}`);
+    }
+    const rule = {
+      trait: definition.trait,
+      profession: page.profession,
+      name: catalog.traits.find((t) => t.id === definition.trait).name,
+      effects: definition.effects,
+      bonus: definition.bonus,
+      source: { title: page.title, revision: definition.revision },
+    };
+    snapshot.traitControlBonuses.push(rule);
+    audit.controls.push(rule);
+  }
   snapshot.traitDurationBonuses = [];
   for (const definition of config.durationBonuses || []) {
     const page = snapshot.entries.traits[definition.trait];
@@ -367,13 +433,34 @@ export async function attachTraitModifiers({
     snapshot.traitDurationBonuses.push(rule);
     audit.durations.push(rule);
   }
+  audit.attributes = await attachTraitAttributes({
+    snapshot,
+    config,
+    catalog,
+    source,
+    evidence: currentEvidence,
+  });
+  audit.weaponReplacements = await attachWeaponReplacements({
+    snapshot,
+    config,
+    source,
+    evidence: currentEvidence,
+  });
   snapshot.modifierCoverage = {
     professions: config.professions,
     rules: audit.rules.length,
     targets: new Set(audit.rules.map((r) => `${r.target}/${r.title}`)).size,
-    traits: new Set([...audit.rules, ...audit.durations].map((r) => r.trait))
-      .size,
+    traits: new Set(
+      [
+        ...audit.rules,
+        ...audit.durations,
+        ...audit.controls,
+        ...audit.attributes,
+      ].map((r) => r.trait),
+    ).size,
     durationTraits: audit.durations.length,
+    controlTraits: audit.controls.length,
+    attributeTraits: audit.attributes.length,
     guardedSkips: audit.skipped.length,
   };
   return audit;

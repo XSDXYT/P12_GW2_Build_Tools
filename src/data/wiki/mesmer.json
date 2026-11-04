@@ -3296,6 +3296,133 @@
       }
     },
     "skills": {
+      "10173": {
+        "title": "Illusionary_Leap",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3170665,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.003",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "致残",
+            "detail": "1 秒 · -50% 移动速度"
+          },
+          {
+            "label": "易伤",
+            "detail": "5 秒 · 2 层 · +2% 受到的伤害, +2% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 2
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-708-10173",
+            "trait": 708,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 708,
+              "title": "Fencer's_Finesse",
+              "revision": 3154896
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.7999999999999999
+              }
+            ],
+            "traitName": "灵活剑客"
+          }
+        ]
+      },
+      "10174": {
+        "title": "Phantasmal_Swordsman",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3151125,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "15 秒"
+          },
+          {
+            "label": "幻影伤害",
+            "detail": "系数 ×0.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "利剑打击伤害",
+            "detail": "系数 ×0.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "威能",
+            "detail": "10 秒 · 8 层",
+            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+            "stacks": 8
+          },
+          {
+            "label": "利剑打击距离",
+            "detail": "130",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "跳跃",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-708-10174",
+            "trait": 708,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 708,
+              "title": "Fencer's_Finesse",
+              "revision": 3154896
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "灵活剑客"
+          }
+        ]
+      },
       "10176": {
         "title": "Ether_Feast",
         "profession": "Mesmer",
@@ -3503,6 +3630,72 @@
             "id": 2009,
             "name": "危机时刻",
             "description": "施加迟缓后，你与分身的暴击伤害在一段时间内提高。"
+          }
+        ]
+      },
+      "10186": {
+        "title": "Temporal_Curtain",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2937051,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "初始迅捷",
+            "detail": "12 秒 · +33% 移动速度"
+          },
+          {
+            "label": "迅捷",
+            "detail": "1 秒 · +33% 移动速度",
+            "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png"
+          },
+          {
+            "label": "致残",
+            "detail": "5 秒 · -50% 移动速度"
+          },
+          {
+            "label": "持续时间",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "光明",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-751-10186",
+            "trait": 751,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 751,
+              "title": "Warden's_Feedback",
+              "revision": 2683731
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "聚能反馈"
           }
         ]
       },
@@ -4731,6 +4924,15 @@
             "description": "迷神手鼓在一段延迟后释放出额外的快速声波。对你控制的敌人造成伤害。"
           }
         ],
+        "controlRule": {
+          "title": "Signet_of_Domination",
+          "revision": 3171622,
+          "control": {
+            "label": "昏迷",
+            "seconds": 2
+          },
+          "defiance": 200
+        },
         "modifiers": [
           {
             "id": "blurred-inscriptions-distortion",
@@ -5207,6 +5409,50 @@
             "name": "灵能回应",
             "description": "格挡或闪避一次攻击将储存灵刃。闪避储存灵刃。"
           }
+        ],
+        "branches": [
+          {
+            "id": 10238,
+            "title": "Power_Break",
+            "revision": 2810308,
+            "label": "强力突破",
+            "rows": [
+              {
+                "label": "冷却时间",
+                "detail": "2 秒"
+              },
+              {
+                "label": "稳固",
+                "detail": "3 秒 · 3 层",
+                "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                "stacks": 3
+              },
+              {
+                "label": "目标数",
+                "detail": "5",
+                "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+              },
+              {
+                "label": "最大计数",
+                "detail": "2",
+                "icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png"
+              },
+              {
+                "label": "计数冷却时间",
+                "detail": "30 秒",
+                "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png"
+              },
+              {
+                "label": "半径",
+                "detail": "600",
+                "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              },
+              {
+                "label": "解除昏迷",
+                "detail": ""
+              }
+            ]
+          }
         ]
       },
       "10244": {
@@ -5431,6 +5677,141 @@
           }
         ]
       },
+      "10251": {
+        "title": "Phantasmal_Mariner",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3151131,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "10 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.7 · 7 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "最后一击伤害",
+            "detail": "系数 ×0.4",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "闪避打击伤害",
+            "detail": "系数 ×0.8",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "闪避",
+            "detail": "1.25 秒"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-708-10251",
+            "trait": 708,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 708,
+              "title": "Fencer's_Finesse",
+              "revision": 3154896
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "灵活剑客"
+          }
+        ]
+      },
+      "10255": {
+        "title": "Vortex",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2837686,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "40 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×3.6 · 9 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "9",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "8 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "初始拉拽半径",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "幻光",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-708-10255",
+            "trait": 708,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 708,
+              "title": "Fencer's_Finesse",
+              "revision": 3154896
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "灵活剑客"
+          }
+        ]
+      },
       "10267": {
         "title": "Phantasmal_Disenchanter",
         "profession": "Mesmer",
@@ -5562,6 +5943,118 @@
             "id": 2374,
             "name": "浑然一体",
             "description": "当你使用幻影技能时获得一个音符。"
+          }
+        ]
+      },
+      "10280": {
+        "title": "Illusionary_Riposte",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2807427,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "2.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "闪避",
+            "detail": "0.5 秒",
+            "icon": "https://render.guildwars2.com/file/9F19DB1D3E1629390F2360F2D866651BBC0F6155/1938788.png"
+          },
+          {
+            "label": "格挡持续时间",
+            "detail": "2.5 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-708-10280",
+            "trait": 708,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 708,
+              "title": "Fencer's_Finesse",
+              "revision": 3154896
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.7999999999999999
+              }
+            ],
+            "traitName": "灵活剑客"
+          }
+        ]
+      },
+      "10282": {
+        "title": "Phantasmal_Warden",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3151126,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.656 · 12 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "易伤",
+            "detail": "5 秒 · 12 层 · +12% 受到的伤害, +12% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 12
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-751-10282",
+            "trait": 751,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 751,
+              "title": "Warden's_Feedback",
+              "revision": 2683731
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "聚能反馈"
           }
         ]
       },
@@ -5730,6 +6223,15 @@
             "description": "如果分身数量足够，粉碎技能将施加幻象斗篷。获得幻象斗篷时，减少心灵粉碎和挫败之吼的冷却时间。"
           }
         ],
+        "controlRule": {
+          "title": "Diversion",
+          "revision": 3069398,
+          "control": {
+            "label": "晕眩",
+            "seconds": 1
+          },
+          "defiance": 100
+        },
         "modifiers": [
           {
             "id": "recharge-731-10287",
@@ -5901,6 +6403,184 @@
             "id": 2009,
             "name": "危机时刻",
             "description": "施加迟缓后，你与分身的暴击伤害在一段时间内提高。"
+          }
+        ]
+      },
+      "10318": {
+        "title": "Feigned_Surge",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2837650,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "8 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.4",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "组合终结技",
+            "detail": "跳跃",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-708-10318",
+            "trait": 708,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 708,
+              "title": "Fencer's_Finesse",
+              "revision": 3154896
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "灵活剑客"
+          }
+        ]
+      },
+      "10325": {
+        "title": "Slipstream",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3123388,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.55",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "奔驰疾速",
+            "detail": "8 秒",
+            "icon": "https://render.guildwars2.com/file/E04392C3D8ED985125973AEB99D8460C483263F9/103458.png"
+          },
+          {
+            "label": "定身",
+            "detail": "3 秒"
+          },
+          {
+            "label": "持续时间",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-708-10325",
+            "trait": 708,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 708,
+              "title": "Fencer's_Finesse",
+              "revision": 3154896
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "灵活剑客"
+          }
+        ]
+      },
+      "10334": {
+        "title": "Blurred_Frenzy",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2932003,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "10 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×4.5 · 8 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "模糊",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/D0969802A76808ACD65A56A6D54F2A40E355F7C3/103284.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "130",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-708-10334",
+            "trait": 708,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 708,
+              "title": "Fencer's_Finesse",
+              "revision": 3154896
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "灵活剑客"
           }
         ]
       },
@@ -7119,7 +7799,16 @@
             "name": "善始善终",
             "description": "法池消失时治疗予盟友。"
           }
-        ]
+        ],
+        "controlRule": {
+          "title": "Well_of_Senility",
+          "revision": 3097215,
+          "control": {
+            "label": "晕眩",
+            "seconds": 2
+          },
+          "defiance": 200
+        }
       },
       "30305": {
         "title": "Well_of_Eternity",
@@ -7844,7 +8533,16 @@
             "name": "自欺欺人",
             "description": "如果你激活了任意分身，使用诡计技能会创造一个分身。"
           }
-        ]
+        ],
+        "controlRule": {
+          "title": "Mirage_Advance",
+          "revision": 2882551,
+          "control": {
+            "label": "晕眩",
+            "seconds": 2
+          },
+          "defiance": 200
+        }
       },
       "43064": {
         "title": "Sand_through_Glass",
@@ -8885,6 +9583,68 @@
             "id": 2211,
             "name": "灵能回应",
             "description": "格挡或闪避一次攻击将储存灵刃。闪避储存灵刃。"
+          }
+        ]
+      },
+      "62568": {
+        "title": "Blade_Leap",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3087149,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "致残",
+            "detail": "3 秒 · -50% 移动速度"
+          },
+          {
+            "label": "持续时间",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "跳跃",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-708-62568",
+            "trait": 708,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 708,
+              "title": "Fencer's_Finesse",
+              "revision": 3154896
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.7999999999999999
+              }
+            ],
+            "traitName": "灵活剑客"
           }
         ]
       },

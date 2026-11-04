@@ -2,6 +2,15 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { parseWikiPage, createWikiSnapshot } from "./wiki-details.mjs";
 import { attachWikiBranches } from "./wiki-branches.mjs";
+import { attachSupplementalWikiSkills } from "./wiki-supplemental.mjs";
+import { wikiArticlePath } from "./wiki-cache-paths.mjs";
+
+test("Wiki 标题编码保留为真实文件名，不把冒号变成Windows数据流", () => {
+  assert.ok(
+    wikiArticlePath("Etching:_Derecho").endsWith("Etching%3A_Derecho.html"),
+  );
+  assert.ok(wikiArticlePath("A/B").endsWith("A%2FB.html"));
+});
 import {
   rechargeTableRows,
   attachTraitModifiers,
@@ -16,6 +25,71 @@ test("冷却对照只读取当前 PvE 或共用行，排除竞争模式、历史
   assert.deepEqual(
     rechargeTableRows(html).map((r) => r.title),
     ["Shared", "PvE"],
+  );
+  const modern = html.replace(
+    '<h2><span id="Version_history">History</span></h2>',
+    '<div class="mw-heading mw-heading2"><h2 id="Version_history">History</h2></div>',
+  );
+  assert.deepEqual(
+    rechargeTableRows(modern).map((r) => r.title),
+    ["Shared", "PvE"],
+  );
+  const withBadge = `<div class="mw-parser-output"><a>Expansion badge</a></div><div id="mw-content-text">${modern}</div>`;
+  assert.deepEqual(
+    rechargeTableRows(withBadge).map((r) => r.title),
+    ["Shared", "PvE"],
+  );
+});
+
+test("独立武器和机制Wiki页要求精确ID、版本和职业，不覆盖现有已核实页", async () => {
+  const make = () => ({
+    snapshot: { professions: ["Mesmer"], entries: { skills: {}, traits: {} } },
+    config: {
+      pages: [
+        { title: "Example", ids: [42], revision: 12345, profession: "Mesmer" },
+      ],
+    },
+    api: {
+      en: {
+        42: { id: 42, name: "Example", professions: ["Mesmer"], facts: [] },
+      },
+      zh: { 42: { id: 42, name: "测试技能", facts: [] } },
+    },
+    readArticle: async () =>
+      page("<dd>Radius: 600</dd>")
+        .replace("infobox trait", "infobox skill")
+        .replace('data-type="trait"', 'data-type="skill"'),
+  });
+  const item = make();
+  const audit = await attachSupplementalWikiSkills(item);
+  assert.equal(audit.pages.length, 1);
+  assert.deepEqual(item.snapshot.entries.skills[42].rows, [
+    { label: "半径", detail: "600" },
+  ]);
+  assert.equal(item.snapshot.entries.skills[42].identityVerified, true);
+  const wrongId = make();
+  wrongId.config.pages[0].ids = [43];
+  wrongId.api.en[43] = { ...wrongId.api.en[42], id: 43 };
+  wrongId.api.zh[43] = { ...wrongId.api.zh[42], id: 43 };
+  await assert.rejects(
+    () => attachSupplementalWikiSkills(wrongId),
+    /identity mismatch/,
+  );
+  const wrongRevision = make();
+  wrongRevision.config.pages[0].revision = 54321;
+  await assert.rejects(
+    () => attachSupplementalWikiSkills(wrongRevision),
+    /revision/,
+  );
+  const wrongProfession = make();
+  wrongProfession.api.en[42].professions = ["Ranger"];
+  await assert.rejects(
+    () => attachSupplementalWikiSkills(wrongProfession),
+    /profession mismatch/,
+  );
+  await assert.rejects(
+    () => attachSupplementalWikiSkills(item),
+    /duplicates verified/,
   );
 });
 
@@ -101,6 +175,26 @@ test("数值修正绑定来源版本、证据与目标基础行，不从不一�
   const ammoAudit = await attachTraitModifiers(ammunition);
   assert.equal(ammoAudit.rules.length, 0);
   assert.equal(ammoAudit.skipped.length, 1);
+  const explicitAmmo = make();
+  explicitAmmo.config.rules = [];
+  explicitAmmo.snapshot.entries.skills[7].rows = [
+    { label: "冷却时间", detail: "2 秒" },
+    { label: "计数冷却时间", detail: "30 秒" },
+    { label: "最大计数", detail: "2" },
+  ];
+  const explicit = await attachTraitModifiers(explicitAmmo);
+  assert.equal(explicit.rules.length, 1);
+  assert.equal(
+    explicitAmmo.snapshot.entries.skills[7].modifiers[0].changes[0].label,
+    "计数冷却时间",
+  );
+  const ambiguousAmmo = make();
+  ambiguousAmmo.config.rules = [];
+  ambiguousAmmo.snapshot.entries.skills[7].rows.push({
+    label: "计数冷却时间",
+    detail: "30 秒",
+  });
+  assert.equal((await attachTraitModifiers(ambiguousAmmo)).rules.length, 0);
 });
 
 test("通用时长绑定Wiki PvE证据和基础行；辅助技能证据不能来自竞争模式或历史", async () => {
@@ -325,6 +419,26 @@ test("Wiki 所需增益展示名称，不把示例威能属性当奖励", () => 
   assert.deepEqual(result.rows, [{ label: "所需增益", detail: "威能" }]);
 });
 
+test("Wiki 子弹分组保留触发条件，宠物迅捷与不同距离的流血不混为玩家常驻效果", () => {
+  const html = page("").replace(
+    "<dl></dl>",
+    "<dl><dd>When Consuming an Ice Bullet</dd><dd><sub>2</sub> Might (6s): 60 Power</dd></dl><dl><dd>Pet swiftness (10s): +33% Movement Speed</dd><dd><sub>3</sub> Bleeding at 600-900 distance (5s): 330 Damage</dd></dl>",
+  );
+  const parsed = parseWikiPage(html, context);
+  assert.equal(parsed.skipped.length, 0);
+  assert.equal(
+    parsed.rows.find((r) => r.label === "威能")?.trigger,
+    "消耗寒冰子弹时",
+  );
+  assert.equal(
+    parsed.rows.find((r) => r.label === "宠物迅捷")?.recipient,
+    "宠物",
+  );
+  const bleeding = parsed.rows.find((r) => r.label === "流血");
+  assert.equal(bleeding?.trigger, "距离600至900时");
+  assert.equal(bleeding?.stacks, 3);
+});
+
 test("Wiki 症状百分比不携带默认伤害样例，虹吸伤害采用威力公式", () => {
   const result = parseWikiPage(
     page(
@@ -375,6 +489,41 @@ test("Wiki 页头资源按 PvE 分支读取，维持消耗不冒充冷却秒数"
         c.wiki === 30,
     ),
   );
+});
+
+test("Wiki 当前文件图标包装保留冷却，强力突破只读取PvE稳固与计数冷却", () => {
+  const html = page(
+    '<dd><sub>3</sub> Stability (3s): Cannot be knocked down.</dd><dd><div class="gamemode pve wvw">Count Recharge: 30 seconds</div></dd><dd><div class="gamemode pvp">Count Recharge: 45 seconds</div></dd>',
+  )
+    .replace("infobox trait", "infobox skill")
+    .replace('data-type="trait"', 'data-type="skill"')
+    .replace(
+      "<blockquote>",
+      '<blockquote><div class="statistics">2 <span typeof="mw:File"><a href="/wiki/Recharge"><img alt="Recharge"></a></span></div>',
+    );
+  const parsed = parseWikiPage(html, {
+    ...context,
+    kind: "skill",
+    english: {
+      name: "Power Break",
+      facts: [{ text: "Count Recharge", type: "Time" }],
+    },
+    chinese: {
+      name: "强力突破",
+      facts: [{ text: "计数冷却时间", type: "Time" }],
+    },
+  });
+  assert.equal(parsed.rows.find((r) => r.label === "冷却时间")?.detail, "2 秒");
+  assert.equal(
+    parsed.rows.find((r) => r.label === "稳固")?.detail,
+    "3 秒 · 3 层",
+  );
+  assert.equal(
+    parsed.rows.find((r) => r.label === "计数冷却时间")?.detail,
+    "30 秒",
+  );
+  assert.equal(parsed.skipped.length, 0);
+  assert.equal(parsed.rows.filter((r) => r.label === "计数冷却时间").length, 1);
 });
 
 test("Wiki 页面更新后必须重新核对绑定旧版本的中文语义修正", async () => {

@@ -55,7 +55,12 @@ function usePreview(build: Build, catalog: Catalog) {
     const value = owner === key ? storedPreview : emptyPreview();
     const linked: Preview = {
       ...value,
-      flags: { ...value.flags, soulbeastMerged: mechanicPreview.transformed },
+      flags: {
+        ...value.flags,
+        soulbeastMerged:
+          build.profession === "Ranger" && mechanicPreview.transformed,
+        berserk: build.profession === "Warrior" && mechanicPreview.berserk,
+      },
       stacks: { ...value.stacks, activePet: mechanicPreview.activePet },
     };
     return build.profession === "Elementalist"

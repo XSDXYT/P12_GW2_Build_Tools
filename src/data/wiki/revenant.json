@@ -1013,7 +1013,7 @@
         "title": "Versed_in_Stone",
         "profession": "Revenant",
         "identityVerified": true,
-        "revision": 3170052,
+        "revision": 3216458,
         "rows": [
           {
             "label": "伤害降低",
@@ -5961,6 +5961,38 @@
             "name": "神圣礼赠",
             "description": "其它特长的第三个次要特性效果增强。当你使用宇宙智慧时获得威能和额外的增益，效果取决于你装备的传奇。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "enhanced-embodiment-qualified",
+            "trait": 2379,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2379,
+              "title": "Enhanced_Embodiment",
+              "revision": 3206181
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "战斗中传奇切换冷却时间",
+                  "detail": "6 秒",
+                  "trigger": "战斗中"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "宇宙智慧持续时间延长",
+                  "detail": "1 秒",
+                  "trigger": "宇宙智慧生效时切换传奇"
+                }
+              }
+            ],
+            "traitName": "强化化身"
+          }
         ]
       },
       "28195": {
@@ -6067,6 +6099,38 @@
             "id": 2440,
             "name": "神圣礼赠",
             "description": "其它特长的第三个次要特性效果增强。当你使用宇宙智慧时获得威能和额外的增益，效果取决于你装备的传奇。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "enhanced-embodiment-qualified",
+            "trait": 2379,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2379,
+              "title": "Enhanced_Embodiment",
+              "revision": 3206181
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "战斗中传奇切换冷却时间",
+                  "detail": "6 秒",
+                  "trigger": "战斗中"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "宇宙智慧持续时间延长",
+                  "detail": "1 秒",
+                  "trigger": "宇宙智慧生效时切换传奇"
+                }
+              }
+            ],
+            "traitName": "强化化身"
           }
         ]
       },
@@ -6672,6 +6736,38 @@
             "name": "神圣礼赠",
             "description": "其它特长的第三个次要特性效果增强。当你使用宇宙智慧时获得威能和额外的增益，效果取决于你装备的传奇。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "enhanced-embodiment-qualified",
+            "trait": 2379,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2379,
+              "title": "Enhanced_Embodiment",
+              "revision": 3206181
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "战斗中传奇切换冷却时间",
+                  "detail": "6 秒",
+                  "trigger": "战斗中"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "宇宙智慧持续时间延长",
+                  "detail": "1 秒",
+                  "trigger": "宇宙智慧生效时切换传奇"
+                }
+              }
+            ],
+            "traitName": "强化化身"
+          }
         ]
       },
       "28427": {
@@ -6823,6 +6919,38 @@
             "id": 2440,
             "name": "神圣礼赠",
             "description": "其它特长的第三个次要特性效果增强。当你使用宇宙智慧时获得威能和额外的增益，效果取决于你装备的传奇。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "enhanced-embodiment-qualified",
+            "trait": 2379,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2379,
+              "title": "Enhanced_Embodiment",
+              "revision": 3206181
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "战斗中传奇切换冷却时间",
+                  "detail": "6 秒",
+                  "trigger": "战斗中"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "宇宙智慧持续时间延长",
+                  "detail": "1 秒",
+                  "trigger": "宇宙智慧生效时切换传奇"
+                }
+              }
+            ],
+            "traitName": "强化化身"
           }
         ]
       },
@@ -9493,7 +9621,16 @@
             "name": "星岬特赦",
             "description": "传奇同盟能力获得一个额外增益。如果激活能量结合或同盟战术，附近盟友同时获得两个奖励，效果更强。\n库泽克能力提供再生。\n勒克桑能力提供威能。"
           }
-        ]
+        ],
+        "controlRule": {
+          "title": "Reaver's_Rage",
+          "revision": 3158853,
+          "control": {
+            "label": "晕眩",
+            "seconds": 1.5
+          },
+          "defiance": 150
+        }
       },
       "62891": {
         "title": "Legendary_Alliance_Stance",
@@ -10024,6 +10161,38 @@
             "name": "神圣礼赠",
             "description": "其它特长的第三个次要特性效果增强。当你使用宇宙智慧时获得威能和额外的增益，效果取决于你装备的传奇。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "enhanced-embodiment-qualified",
+            "trait": 2379,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2379,
+              "title": "Enhanced_Embodiment",
+              "revision": 3206181
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "战斗中传奇切换冷却时间",
+                  "detail": "6 秒",
+                  "trigger": "战斗中"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "宇宙智慧持续时间延长",
+                  "detail": "1 秒",
+                  "trigger": "宇宙智慧生效时切换传奇"
+                }
+              }
+            ],
+            "traitName": "强化化身"
+          }
         ]
       },
       "76968": {
@@ -10242,7 +10411,16 @@
             "name": "迷雾之火",
             "description": "当你控制敌人时施加症状。使用宇宙智慧时发动一次额外的打击，伤害并燃烧敌人。"
           }
-        ]
+        ],
+        "controlRule": {
+          "title": "Twin_Moon_Sweep",
+          "revision": 3170434,
+          "control": {
+            "label": "昏迷",
+            "seconds": 1
+          },
+          "defiance": 100
+        }
       },
       "77043": {
         "title": "Shielding_Hands",
@@ -10802,6 +10980,38 @@
             "name": "动能洞察",
             "description": "释放潜力技能的冷却时间减少，增加这些技能的效果，等同于两点额外的亲和，直至五点最大值。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "kinetic-insight-qualified",
+            "trait": 2411,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2411,
+              "title": "Kinetic_Insight",
+              "revision": 3127313
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "战斗中冷却时间",
+                  "detail": "8 秒",
+                  "trigger": "战斗中"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "生效亲和点数",
+                  "detail": "当前亲和点数 +2（最高5点）",
+                  "trigger": "释放潜能时"
+                }
+              }
+            ],
+            "traitName": "动能洞察"
+          }
         ]
       },
       "78615": {
@@ -10913,6 +11123,47 @@
             "id": 2429,
             "name": "迷雾之火",
             "description": "当你控制敌人时施加症状。使用宇宙智慧时发动一次额外的打击，伤害并燃烧敌人。"
+          }
+        ],
+        "controlRule": {
+          "title": "Release_Potential:_Mesmer",
+          "revision": 3206179,
+          "control": {
+            "label": "晕眩",
+            "seconds": 2
+          },
+          "defiance": 200
+        },
+        "modifiers": [
+          {
+            "id": "kinetic-insight-qualified",
+            "trait": 2411,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2411,
+              "title": "Kinetic_Insight",
+              "revision": 3127313
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "战斗中冷却时间",
+                  "detail": "8 秒",
+                  "trigger": "战斗中"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "生效亲和点数",
+                  "detail": "当前亲和点数 +2（最高5点）",
+                  "trigger": "释放潜能时"
+                }
+              }
+            ],
+            "traitName": "动能洞察"
           }
         ]
       },
@@ -11034,6 +11285,38 @@
             "name": "动能洞察",
             "description": "释放潜力技能的冷却时间减少，增加这些技能的效果，等同于两点额外的亲和，直至五点最大值。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "kinetic-insight-qualified",
+            "trait": 2411,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2411,
+              "title": "Kinetic_Insight",
+              "revision": 3127313
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "战斗中冷却时间",
+                  "detail": "8 秒",
+                  "trigger": "战斗中"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "生效亲和点数",
+                  "detail": "当前亲和点数 +2（最高5点）",
+                  "trigger": "释放潜能时"
+                }
+              }
+            ],
+            "traitName": "动能洞察"
+          }
         ]
       },
       "78845": {
@@ -11130,6 +11413,38 @@
             "id": 2411,
             "name": "动能洞察",
             "description": "释放潜力技能的冷却时间减少，增加这些技能的效果，等同于两点额外的亲和，直至五点最大值。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "kinetic-insight-qualified",
+            "trait": 2411,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 2411,
+              "title": "Kinetic_Insight",
+              "revision": 3127313
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "战斗中冷却时间",
+                  "detail": "8 秒",
+                  "trigger": "战斗中"
+                }
+              },
+              {
+                "type": "append",
+                "row": {
+                  "label": "生效亲和点数",
+                  "detail": "当前亲和点数 +2（最高5点）",
+                  "trigger": "释放潜能时"
+                }
+              }
+            ],
+            "traitName": "动能洞察"
           }
         ]
       },

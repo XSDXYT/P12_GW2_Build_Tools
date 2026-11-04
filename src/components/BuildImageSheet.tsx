@@ -381,9 +381,18 @@ function ImageSheet({
                       ["症状持续时间", Math.min(100, result.conditionDuration)],
                       ["增益持续时间", Math.min(100, result.boonDuration)],
                       ["对盟友治疗加成", result.outgoingHealingBonus],
-                      ...(result.controlDurationBonus
-                        ? [["昏迷与晕眩时长加成", result.controlDurationBonus]]
-                        : []),
+                      ...(result.stunDurationBonus === result.dazeDurationBonus
+                        ? result.stunDurationBonus
+                          ? [["昏迷与晕眩时长加成", result.stunDurationBonus]]
+                          : []
+                        : [
+                            ...(result.stunDurationBonus
+                              ? [["昏迷时长加成", result.stunDurationBonus]]
+                              : []),
+                            ...(result.dazeDurationBonus
+                              ? [["晕眩时长加成", result.dazeDurationBonus]]
+                              : []),
+                          ]),
                       ...Object.entries(result.conditions)
                         .filter(
                           ([, value]) =>

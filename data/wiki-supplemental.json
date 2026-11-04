@@ -1,0 +1,2281 @@
+{
+  "schema": 1,
+  "pages": [
+    {
+      "title": "Convergence_(elementalist_skill)",
+      "revision": 3169773,
+      "profession": "Elementalist",
+      "ids": [
+        5646
+      ]
+    },
+    {
+      "title": "Shocking_Aura",
+      "revision": 3122800,
+      "profession": "Elementalist",
+      "ids": [
+        5527
+      ]
+    },
+    {
+      "title": "Transmute_Lightning",
+      "revision": 3021323,
+      "profession": "Elementalist",
+      "ids": [
+        51662
+      ]
+    },
+    {
+      "title": "Ride_the_Lightning",
+      "revision": 3021324,
+      "profession": "Elementalist",
+      "ids": [
+        5529
+      ]
+    },
+    {
+      "title": "Updraft",
+      "revision": 3012678,
+      "profession": "Elementalist",
+      "ids": [
+        5687
+      ]
+    },
+    {
+      "title": "Dazing_Discharge",
+      "revision": 2885405,
+      "profession": "Elementalist",
+      "ids": [
+        71966
+      ]
+    },
+    {
+      "title": "Aerial_Agility",
+      "revision": 2951982,
+      "profession": "Elementalist",
+      "ids": [
+        71857
+      ]
+    },
+    {
+      "title": "Lightning_Strike",
+      "revision": 3021328,
+      "profession": "Elementalist",
+      "ids": [
+        5561
+      ]
+    },
+    {
+      "title": "Blinding_Flash",
+      "revision": 2655412,
+      "profession": "Elementalist",
+      "ids": [
+        5694
+      ]
+    },
+    {
+      "title": "Polaric_Leap",
+      "revision": 3114133,
+      "profession": "Elementalist",
+      "ids": [
+        44998
+      ]
+    },
+    {
+      "title": "Quantum_Strike",
+      "revision": 2767632,
+      "profession": "Elementalist",
+      "ids": [
+        43803
+      ]
+    },
+    {
+      "title": "Gale",
+      "revision": 2398965,
+      "profession": "Elementalist",
+      "ids": [
+        5562
+      ]
+    },
+    {
+      "title": "Cyclone",
+      "revision": 2932392,
+      "profession": "Elementalist",
+      "ids": [
+        30008
+      ]
+    },
+    {
+      "title": "Lightning_Orb",
+      "revision": 3036044,
+      "profession": "Elementalist",
+      "ids": [
+        30795
+      ]
+    },
+    {
+      "title": "Hurricane_of_Pain",
+      "revision": 3128178,
+      "profession": "Elementalist",
+      "ids": [
+        62812
+      ]
+    },
+    {
+      "title": "Crescent_Wind",
+      "revision": 3062430,
+      "profession": "Elementalist",
+      "ids": [
+        62887
+      ]
+    },
+    {
+      "title": "Shock_Blast",
+      "revision": 2990432,
+      "profession": "Elementalist",
+      "ids": [
+        62716
+      ]
+    },
+    {
+      "title": "Lightning_Surge",
+      "revision": 3021321,
+      "profession": "Elementalist",
+      "ids": [
+        5552
+      ]
+    },
+    {
+      "title": "Gust",
+      "revision": 2971800,
+      "profession": "Elementalist",
+      "ids": [
+        5553
+      ]
+    },
+    {
+      "title": "Windborne_Speed",
+      "revision": 2715749,
+      "profession": "Elementalist",
+      "ids": [
+        5682
+      ]
+    },
+    {
+      "title": "Static_Field",
+      "revision": 2839747,
+      "profession": "Elementalist",
+      "ids": [
+        5671
+      ]
+    },
+    {
+      "title": "Fulgor",
+      "revision": 3111871,
+      "profession": "Elementalist",
+      "ids": [
+        73091
+      ]
+    },
+    {
+      "title": "Energize",
+      "revision": 3076760,
+      "profession": "Elementalist",
+      "ids": [
+        73037
+      ]
+    },
+    {
+      "title": "Twister",
+      "revision": 3021113,
+      "profession": "Elementalist",
+      "ids": [
+        72998
+      ]
+    },
+    {
+      "title": "Etching:_Derecho",
+      "revision": 3167864,
+      "profession": "Elementalist",
+      "ids": [
+        72915
+      ]
+    },
+    {
+      "title": "Air_Bubble",
+      "revision": 2837726,
+      "profession": "Elementalist",
+      "ids": [
+        5648
+      ]
+    },
+    {
+      "title": "Lightning_Cage",
+      "revision": 2837739,
+      "profession": "Elementalist",
+      "ids": [
+        5650
+      ]
+    },
+    {
+      "title": "Ring_of_Earth",
+      "revision": 3169774,
+      "profession": "Elementalist",
+      "ids": [
+        5525
+      ]
+    },
+    {
+      "title": "Earthen_Rush",
+      "revision": 3169775,
+      "profession": "Elementalist",
+      "ids": [
+        5559
+      ]
+    },
+    {
+      "title": "Earthquake",
+      "revision": 2584623,
+      "profession": "Elementalist",
+      "ids": [
+        5690
+      ]
+    },
+    {
+      "title": "Churning_Earth",
+      "revision": 2881990,
+      "profession": "Elementalist",
+      "ids": [
+        5522
+      ]
+    },
+    {
+      "title": "Shattering_Stone",
+      "revision": 2938208,
+      "profession": "Elementalist",
+      "ids": [
+        72032
+      ]
+    },
+    {
+      "title": "Boulder_Blast",
+      "revision": 3154824,
+      "profession": "Elementalist",
+      "ids": [
+        71842
+      ]
+    },
+    {
+      "title": "Rock_Barrier",
+      "revision": 3019055,
+      "profession": "Elementalist",
+      "ids": [
+        5695
+      ]
+    },
+    {
+      "title": "Dust_Devil",
+      "revision": 2618581,
+      "profession": "Elementalist",
+      "ids": [
+        5696
+      ]
+    },
+    {
+      "title": "Earthen_Vortex",
+      "revision": 2928933,
+      "profession": "Elementalist",
+      "ids": [
+        40709
+      ]
+    },
+    {
+      "title": "Rust_Frenzy",
+      "revision": 3191199,
+      "profession": "Elementalist",
+      "ids": [
+        40139
+      ]
+    },
+    {
+      "title": "Magnetic_Wave",
+      "revision": 2360613,
+      "profession": "Elementalist",
+      "ids": [
+        5555
+      ]
+    },
+    {
+      "title": "Obsidian_Flesh",
+      "revision": 3104432,
+      "profession": "Elementalist",
+      "ids": [
+        5521
+      ]
+    },
+    {
+      "title": "Sand_Squall",
+      "revision": 2439098,
+      "profession": "Elementalist",
+      "ids": [
+        29453
+      ]
+    },
+    {
+      "title": "Dust_Storm",
+      "revision": 2938136,
+      "profession": "Elementalist",
+      "ids": [
+        30336
+      ]
+    },
+    {
+      "title": "Whirling_Stones",
+      "revision": 3186704,
+      "profession": "Elementalist",
+      "ids": [
+        62976
+      ]
+    },
+    {
+      "title": "Rocky_Loop",
+      "revision": 3062431,
+      "profession": "Elementalist",
+      "ids": [
+        62975
+      ]
+    },
+    {
+      "title": "Immutable_Stone",
+      "revision": 2693035,
+      "profession": "Elementalist",
+      "ids": [
+        62992
+      ]
+    },
+    {
+      "title": "Ground_Pound",
+      "revision": 3186705,
+      "profession": "Elementalist",
+      "ids": [
+        62778
+      ]
+    },
+    {
+      "title": "Eruption",
+      "revision": 2842800,
+      "profession": "Elementalist",
+      "ids": [
+        5528
+      ]
+    },
+    {
+      "title": "Magnetic_Aura",
+      "revision": 2630312,
+      "profession": "Elementalist",
+      "ids": [
+        5685
+      ]
+    },
+    {
+      "title": "Transmute_Earth",
+      "revision": 2655402,
+      "profession": "Elementalist",
+      "ids": [
+        51684
+      ]
+    },
+    {
+      "title": "Unsteady_Ground",
+      "revision": 2839748,
+      "profession": "Elementalist",
+      "ids": [
+        5683
+      ]
+    },
+    {
+      "title": "Shock_Wave",
+      "revision": 2584593,
+      "profession": "Elementalist",
+      "ids": [
+        5686
+      ]
+    },
+    {
+      "title": "Earthen_Spear",
+      "revision": 3169706,
+      "profession": "Elementalist",
+      "ids": [
+        72905
+      ]
+    },
+    {
+      "title": "Harden",
+      "revision": 3021065,
+      "profession": "Elementalist",
+      "ids": [
+        73019
+      ]
+    },
+    {
+      "title": "Fissure",
+      "revision": 3169672,
+      "profession": "Elementalist",
+      "ids": [
+        73010
+      ]
+    },
+    {
+      "title": "Etching:_Haboob",
+      "revision": 3040138,
+      "profession": "Elementalist",
+      "ids": [
+        72900
+      ]
+    },
+    {
+      "title": "Rock_Spray",
+      "revision": 2837747,
+      "profession": "Elementalist",
+      "ids": [
+        5658
+      ]
+    },
+    {
+      "title": "Magnetic_Current",
+      "revision": 2837741,
+      "profession": "Elementalist",
+      "ids": [
+        5662
+      ]
+    },
+    {
+      "title": "Rock_Anchor",
+      "revision": 2837745,
+      "profession": "Elementalist",
+      "ids": [
+        5659
+      ]
+    },
+    {
+      "title": "Murky_Water",
+      "revision": 2837743,
+      "profession": "Elementalist",
+      "ids": [
+        5661
+      ]
+    },
+    {
+      "title": "Drake's_Breath",
+      "revision": 3169766,
+      "profession": "Elementalist",
+      "ids": [
+        5496
+      ]
+    },
+    {
+      "title": "Burning_Speed",
+      "revision": 3169768,
+      "profession": "Elementalist",
+      "ids": [
+        5644
+      ]
+    },
+    {
+      "title": "Ring_of_Fire_(elementalist_skill)",
+      "revision": 3110825,
+      "profession": "Elementalist",
+      "ids": [
+        5691
+      ]
+    },
+    {
+      "title": "Fire_Grab",
+      "revision": 3020999,
+      "profession": "Elementalist",
+      "ids": [
+        5557
+      ]
+    },
+    {
+      "title": "Raging_Ricochet",
+      "revision": 3128177,
+      "profession": "Elementalist",
+      "ids": [
+        71828
+      ]
+    },
+    {
+      "title": "Searing_Salvo",
+      "revision": 2885413,
+      "profession": "Elementalist",
+      "ids": [
+        71940
+      ]
+    },
+    {
+      "title": "Dragon's_Tooth",
+      "revision": 3021011,
+      "profession": "Elementalist",
+      "ids": [
+        5692
+      ]
+    },
+    {
+      "title": "Phoenix",
+      "revision": 3021012,
+      "profession": "Elementalist",
+      "ids": [
+        5675
+      ]
+    },
+    {
+      "title": "Flame_Uprising",
+      "revision": 3195944,
+      "profession": "Elementalist",
+      "ids": [
+        45313
+      ]
+    },
+    {
+      "title": "Cauterizing_Strike",
+      "revision": 3169705,
+      "profession": "Elementalist",
+      "ids": [
+        44451
+      ]
+    },
+    {
+      "title": "Flamewall",
+      "revision": 3021001,
+      "profession": "Elementalist",
+      "ids": [
+        5497
+      ]
+    },
+    {
+      "title": "Fire_Shield",
+      "revision": 2367383,
+      "profession": "Elementalist",
+      "ids": [
+        5678
+      ]
+    },
+    {
+      "title": "Transmute_Fire",
+      "revision": 2645492,
+      "profession": "Elementalist",
+      "ids": [
+        51711
+      ]
+    },
+    {
+      "title": "Wildfire",
+      "revision": 2958386,
+      "profession": "Elementalist",
+      "ids": [
+        29533
+      ]
+    },
+    {
+      "title": "Lava_Font",
+      "revision": 2634855,
+      "profession": "Elementalist",
+      "ids": [
+        5548
+      ]
+    },
+    {
+      "title": "Burning_Retreat",
+      "revision": 3020991,
+      "profession": "Elementalist",
+      "ids": [
+        5680
+      ]
+    },
+    {
+      "title": "Meteor",
+      "revision": 3128182,
+      "profession": "Elementalist",
+      "ids": [
+        72988
+      ]
+    },
+    {
+      "title": "Etching:_Volcano",
+      "revision": 3021050,
+      "profession": "Elementalist",
+      "ids": [
+        73054
+      ]
+    },
+    {
+      "title": "Holy_Strike",
+      "revision": 2843747,
+      "profession": "Guardian",
+      "ids": [
+        9140
+      ]
+    },
+    {
+      "title": "Symbol_of_Swiftness",
+      "revision": 3171271,
+      "profession": "Guardian",
+      "ids": [
+        9143
+      ]
+    },
+    {
+      "title": "Empower",
+      "revision": 3041741,
+      "profession": "Guardian",
+      "ids": [
+        9265
+      ]
+    },
+    {
+      "title": "Line_of_Warding",
+      "revision": 2992903,
+      "profession": "Guardian",
+      "ids": [
+        9144
+      ]
+    },
+    {
+      "title": "Zealot's_Flame",
+      "revision": 2845994,
+      "profession": "Guardian",
+      "ids": [
+        9104,
+        72104
+      ]
+    },
+    {
+      "title": "Cleansing_Flame",
+      "revision": 2967486,
+      "profession": "Guardian",
+      "ids": [
+        9088
+      ]
+    },
+    {
+      "title": "Shield_of_Judgment",
+      "revision": 2843771,
+      "profession": "Guardian",
+      "ids": [
+        9087
+      ]
+    },
+    {
+      "title": "Shield_of_Absorption",
+      "revision": 2843772,
+      "profession": "Guardian",
+      "ids": [
+        9091
+      ]
+    },
+    {
+      "title": "Lesser_Shield_of_Absorption",
+      "revision": 2413773,
+      "profession": "Guardian",
+      "ids": [
+        13688
+      ]
+    },
+    {
+      "title": "Spear_of_Justice",
+      "revision": 3003150,
+      "profession": "Guardian",
+      "ids": [
+        29887
+      ]
+    },
+    {
+      "title": "Wings_of_Resolve",
+      "revision": 3171277,
+      "profession": "Guardian",
+      "ids": [
+        30783,
+        30225
+      ]
+    },
+    {
+      "title": "Shield_of_Courage",
+      "revision": 3128715,
+      "profession": "Guardian",
+      "ids": [
+        30039,
+        30029
+      ]
+    },
+    {
+      "title": "Ray_of_Judgment",
+      "revision": 2992881,
+      "profession": "Guardian",
+      "ids": [
+        9112
+      ]
+    },
+    {
+      "title": "Shield_of_Wrath",
+      "revision": 2989845,
+      "profession": "Guardian",
+      "ids": [
+        9082
+      ]
+    },
+    {
+      "title": "Whirling_Wrath",
+      "revision": 3128707,
+      "profession": "Guardian",
+      "ids": [
+        9081
+      ]
+    },
+    {
+      "title": "Leap_of_Faith",
+      "revision": 2989194,
+      "profession": "Guardian",
+      "ids": [
+        9080
+      ]
+    },
+    {
+      "title": "Symbol_of_Resolution",
+      "revision": 2989854,
+      "profession": "Guardian",
+      "ids": [
+        9146
+      ]
+    },
+    {
+      "title": "Binding_Blade",
+      "revision": 3211000,
+      "profession": "Guardian",
+      "ids": [
+        9147
+      ]
+    },
+    {
+      "title": "Blurred_Frenzy",
+      "revision": 2932003,
+      "profession": "Mesmer",
+      "ids": [
+        10334
+      ]
+    },
+    {
+      "title": "Blade_Leap",
+      "revision": 3087149,
+      "profession": "Mesmer",
+      "ids": [
+        62568
+      ]
+    },
+    {
+      "title": "Illusionary_Leap",
+      "revision": 3170665,
+      "profession": "Mesmer",
+      "ids": [
+        10173
+      ]
+    },
+    {
+      "title": "Illusionary_Riposte",
+      "revision": 2807427,
+      "profession": "Mesmer",
+      "ids": [
+        10280
+      ]
+    },
+    {
+      "title": "Phantasmal_Swordsman",
+      "revision": 3151125,
+      "profession": "Mesmer",
+      "ids": [
+        10174
+      ]
+    },
+    {
+      "title": "Feigned_Surge",
+      "revision": 2837650,
+      "profession": "Mesmer",
+      "ids": [
+        10318
+      ]
+    },
+    {
+      "title": "Phantasmal_Mariner",
+      "revision": 3151131,
+      "profession": "Mesmer",
+      "ids": [
+        10251
+      ]
+    },
+    {
+      "title": "Slipstream",
+      "revision": 3123388,
+      "profession": "Mesmer",
+      "ids": [
+        10325
+      ]
+    },
+    {
+      "title": "Vortex",
+      "revision": 2837686,
+      "profession": "Mesmer",
+      "ids": [
+        10255
+      ]
+    },
+    {
+      "title": "Temporal_Curtain",
+      "revision": 2937051,
+      "profession": "Mesmer",
+      "ids": [
+        10186
+      ]
+    },
+    {
+      "title": "Phantasmal_Warden",
+      "revision": 3151126,
+      "profession": "Mesmer",
+      "ids": [
+        10282
+      ]
+    },
+    {
+      "title": "Sandstorm_Shroud",
+      "revision": 3029009,
+      "profession": "Necromancer",
+      "ids": [
+        54870
+      ]
+    },
+    {
+      "title": "Voracious_Dive",
+      "revision": 2934092,
+      "profession": "Necromancer",
+      "ids": [
+        63448
+      ]
+    },
+    {
+      "title": "Splitblade",
+      "revision": 2739616,
+      "profession": "Ranger",
+      "ids": [
+        12480
+      ]
+    },
+    {
+      "title": "Winter's_Bite",
+      "revision": 2969568,
+      "profession": "Ranger",
+      "ids": [
+        12490
+      ]
+    },
+    {
+      "title": "Path_of_Scars",
+      "revision": 2742946,
+      "profession": "Ranger",
+      "ids": [
+        12638
+      ]
+    },
+    {
+      "title": "Whirling_Defense",
+      "revision": 3168800,
+      "profession": "Ranger",
+      "ids": [
+        12639
+      ]
+    },
+    {
+      "title": "Double_Arc",
+      "revision": 2786646,
+      "profession": "Ranger",
+      "ids": [
+        43536
+      ]
+    },
+    {
+      "title": "Instinctive_Engage",
+      "revision": 2941760,
+      "profession": "Ranger",
+      "ids": [
+        46123
+      ]
+    },
+    {
+      "title": "Stalker's_Strike",
+      "revision": 2756370,
+      "profession": "Ranger",
+      "ids": [
+        12478
+      ]
+    },
+    {
+      "title": "Crippling_Talon",
+      "revision": 2677139,
+      "profession": "Ranger",
+      "ids": [
+        12477
+      ]
+    },
+    {
+      "title": "Throw_Torch",
+      "revision": 2990403,
+      "profession": "Ranger",
+      "ids": [
+        12635
+      ]
+    },
+    {
+      "title": "Bonfire",
+      "revision": 2990410,
+      "profession": "Ranger",
+      "ids": [
+        12504
+      ]
+    },
+    {
+      "title": "Savage_Leap",
+      "revision": 3169288,
+      "profession": "Warrior",
+      "ids": [
+        14366
+      ]
+    },
+    {
+      "title": "Rend",
+      "revision": 3201799,
+      "profession": "Warrior",
+      "ids": [
+        80247
+      ]
+    },
+    {
+      "title": "Impale_(warrior_sword_skill)",
+      "revision": 2862642,
+      "profession": "Warrior",
+      "ids": [
+        14498
+      ]
+    },
+    {
+      "title": "Rip",
+      "revision": 2788617,
+      "profession": "Warrior",
+      "ids": [
+        14501
+      ]
+    },
+    {
+      "title": "Riposte",
+      "revision": 3031544,
+      "profession": "Warrior",
+      "ids": [
+        14400
+      ]
+    },
+    {
+      "title": "Hundred_Blades",
+      "revision": 2989709,
+      "profession": "Warrior",
+      "ids": [
+        14554
+      ]
+    },
+    {
+      "title": "Whirlwind_Attack",
+      "revision": 2677107,
+      "profession": "Warrior",
+      "ids": [
+        14447
+      ]
+    },
+    {
+      "title": "Bladetrail",
+      "revision": 3095171,
+      "profession": "Warrior",
+      "ids": [
+        14510
+      ]
+    },
+    {
+      "title": "Rush",
+      "revision": 2811886,
+      "profession": "Warrior",
+      "ids": [
+        14446
+      ]
+    },
+    {
+      "title": "Mariner's_Frenzy",
+      "revision": 2837662,
+      "profession": "Warrior",
+      "ids": [
+        14440
+      ]
+    },
+    {
+      "title": "Barbed_Pull",
+      "revision": 2837636,
+      "profession": "Warrior",
+      "ids": [
+        14448
+      ]
+    },
+    {
+      "title": "Parry",
+      "revision": 2837664,
+      "profession": "Warrior",
+      "ids": [
+        14441
+      ]
+    },
+    {
+      "title": "Tsunami_Slash",
+      "revision": 2837683,
+      "profession": "Warrior",
+      "ids": [
+        14480
+      ]
+    },
+    {
+      "title": "Cyclone_Axe",
+      "revision": 2989694,
+      "profession": "Warrior",
+      "ids": [
+        14421
+      ]
+    },
+    {
+      "title": "Throw_Axe",
+      "revision": 2989695,
+      "profession": "Warrior",
+      "ids": [
+        14398
+      ]
+    },
+    {
+      "title": "Dual_Strike",
+      "revision": 2359003,
+      "profession": "Warrior",
+      "ids": [
+        14418
+      ]
+    },
+    {
+      "title": "Whirling_Axe",
+      "revision": 2806800,
+      "profession": "Warrior",
+      "ids": [
+        14399
+      ]
+    },
+    {
+      "title": "Cone_of_Cold",
+      "revision": 3021127,
+      "profession": "Elementalist",
+      "ids": [
+        5537
+      ]
+    },
+    {
+      "title": "Frozen_Burst",
+      "revision": 3021128,
+      "profession": "Elementalist",
+      "ids": [
+        5487
+      ]
+    },
+    {
+      "title": "Frost_Aura",
+      "revision": 2884215,
+      "profession": "Elementalist",
+      "ids": [
+        5520
+      ]
+    },
+    {
+      "title": "Transmute_Frost",
+      "revision": 2990413,
+      "profession": "Elementalist",
+      "ids": [
+        51646
+      ]
+    },
+    {
+      "title": "Cleansing_Wave",
+      "revision": 2932241,
+      "profession": "Elementalist",
+      "ids": [
+        5558
+      ]
+    },
+    {
+      "title": "Frigid_Flurry",
+      "revision": 2938200,
+      "profession": "Elementalist",
+      "ids": [
+        72028
+      ]
+    },
+    {
+      "title": "Frozen_Fusillade",
+      "revision": 2885424,
+      "profession": "Elementalist",
+      "ids": [
+        71935
+      ]
+    },
+    {
+      "title": "Shatterstone",
+      "revision": 3021137,
+      "profession": "Elementalist",
+      "ids": [
+        5538
+      ]
+    },
+    {
+      "title": "Water_Trident",
+      "revision": 2932158,
+      "profession": "Elementalist",
+      "ids": [
+        5510
+      ]
+    },
+    {
+      "title": "Riptide",
+      "revision": 3161278,
+      "profession": "Elementalist",
+      "ids": [
+        44405
+      ]
+    },
+    {
+      "title": "Aqua_Siphon",
+      "revision": 2767631,
+      "profession": "Elementalist",
+      "ids": [
+        41167
+      ]
+    },
+    {
+      "title": "Freezing_Gust",
+      "revision": 3021131,
+      "profession": "Elementalist",
+      "ids": [
+        5556
+      ]
+    },
+    {
+      "title": "Comet",
+      "revision": 3021132,
+      "profession": "Elementalist",
+      "ids": [
+        5490
+      ]
+    },
+    {
+      "title": "Tidal_Surge",
+      "revision": 2932391,
+      "profession": "Elementalist",
+      "ids": [
+        30864
+      ]
+    },
+    {
+      "title": "Water_Globe",
+      "revision": 2932135,
+      "profession": "Elementalist",
+      "ids": [
+        30446
+      ]
+    },
+    {
+      "title": "Rain_of_Blows",
+      "revision": 2990426,
+      "profession": "Elementalist",
+      "ids": [
+        62958
+      ]
+    },
+    {
+      "title": "Icy_Coil",
+      "revision": 3062429,
+      "profession": "Elementalist",
+      "ids": [
+        62834
+      ]
+    },
+    {
+      "title": "Crashing_Font",
+      "revision": 3128193,
+      "profession": "Elementalist",
+      "ids": [
+        62948
+      ]
+    },
+    {
+      "title": "Cleansing_Typhoon",
+      "revision": 2990428,
+      "profession": "Elementalist",
+      "ids": [
+        62843
+      ]
+    },
+    {
+      "title": "Ice_Spike",
+      "revision": 3021134,
+      "profession": "Elementalist",
+      "ids": [
+        5550
+      ]
+    },
+    {
+      "title": "Geyser",
+      "revision": 2655389,
+      "profession": "Elementalist",
+      "ids": [
+        5681
+      ]
+    },
+    {
+      "title": "Frozen_Ground",
+      "revision": 2994713,
+      "profession": "Elementalist",
+      "ids": [
+        5515
+      ]
+    },
+    {
+      "title": "Healing_Rain",
+      "revision": 3205711,
+      "profession": "Elementalist",
+      "ids": [
+        5551
+      ]
+    },
+    {
+      "title": "Ice_Beam",
+      "revision": 3021069,
+      "profession": "Elementalist",
+      "ids": [
+        73061
+      ]
+    },
+    {
+      "title": "Ripple",
+      "revision": 3021099,
+      "profession": "Elementalist",
+      "ids": [
+        72967
+      ]
+    },
+    {
+      "title": "Undertow",
+      "revision": 3021114,
+      "profession": "Elementalist",
+      "ids": [
+        73148
+      ]
+    },
+    {
+      "title": "Etching:_Jökulhlaup",
+      "revision": 3021049,
+      "profession": "Elementalist",
+      "ids": [
+        72982
+      ]
+    },
+    {
+      "title": "Ice_Globe",
+      "revision": 2837735,
+      "profession": "Elementalist",
+      "ids": [
+        5605
+      ]
+    },
+    {
+      "title": "Ice_Wall",
+      "revision": 2837737,
+      "profession": "Elementalist",
+      "ids": [
+        5606
+      ]
+    },
+    {
+      "title": "Undercurrent",
+      "revision": 2837751,
+      "profession": "Elementalist",
+      "ids": [
+        5748
+      ]
+    },
+    {
+      "title": "Tidal_Wave",
+      "revision": 2837750,
+      "profession": "Elementalist",
+      "ids": [
+        5607
+      ]
+    },
+    {
+      "title": "Rapid_Fire",
+      "revision": 3013942,
+      "profession": "Ranger",
+      "ids": [
+        12509
+      ]
+    },
+    {
+      "title": "Hunter's_Shot",
+      "revision": 2630328,
+      "profession": "Ranger",
+      "ids": [
+        12573
+      ]
+    },
+    {
+      "title": "Point-Blank_Shot",
+      "revision": 2971806,
+      "profession": "Ranger",
+      "ids": [
+        12511
+      ]
+    },
+    {
+      "title": "Barrage",
+      "revision": 3119591,
+      "profession": "Ranger",
+      "ids": [
+        12469
+      ]
+    },
+    {
+      "title": "Coral_Shot",
+      "revision": 2837694,
+      "profession": "Ranger",
+      "ids": [
+        12529
+      ]
+    },
+    {
+      "title": "Feeding_Frenzy_(ranger_skill)",
+      "revision": 2837700,
+      "profession": "Ranger",
+      "ids": [
+        12528
+      ]
+    },
+    {
+      "title": "Mercy_Shot",
+      "revision": 2837708,
+      "profession": "Ranger",
+      "ids": [
+        12527
+      ]
+    },
+    {
+      "title": "Ink_Blast",
+      "revision": 2837702,
+      "profession": "Ranger",
+      "ids": [
+        12530
+      ]
+    },
+    {
+      "title": "Bandage_Self",
+      "revision": 2633219,
+      "profession": "Engineer",
+      "ids": [
+        29772
+      ]
+    },
+    {
+      "title": "Blessing_of_Dwayna",
+      "revision": 2633229,
+      "profession": "Engineer",
+      "ids": [
+        12377
+      ]
+    },
+    {
+      "title": "Leafy_Bandage",
+      "revision": 2633228,
+      "profession": "Engineer",
+      "ids": [
+        12465
+      ]
+    },
+    {
+      "title": "Regenerating_Mist",
+      "revision": 3116309,
+      "profession": "Engineer",
+      "ids": [
+        6176
+      ]
+    },
+    {
+      "title": "Static_Shock",
+      "revision": 2969633,
+      "profession": "Engineer",
+      "ids": [
+        21661
+      ]
+    },
+    {
+      "title": "Toss_Elixir_H",
+      "revision": 2690121,
+      "profession": "Engineer",
+      "ids": [
+        5978
+      ]
+    },
+    {
+      "title": "Med_Pack_Drop",
+      "revision": 2843582,
+      "profession": "Engineer",
+      "ids": [
+        29716
+      ]
+    },
+    {
+      "title": "Orbital_Strike",
+      "revision": 2633225,
+      "profession": "Engineer",
+      "ids": [
+        30599
+      ]
+    },
+    {
+      "title": "Toss_Elixir_X",
+      "revision": 2999357,
+      "profession": "Engineer",
+      "ids": [
+        30725
+      ]
+    },
+    {
+      "title": "Blessing_of_Kormir",
+      "revision": 2124042,
+      "profession": "Engineer",
+      "ids": [
+        12378
+      ]
+    },
+    {
+      "title": "Blessing_of_Lyssa",
+      "revision": 2124044,
+      "profession": "Engineer",
+      "ids": [
+        12379
+      ]
+    },
+    {
+      "title": "Booby_Trap_(charr_skill)",
+      "revision": 2341683,
+      "profession": "Engineer",
+      "ids": [
+        12355
+      ]
+    },
+    {
+      "title": "Confusing_Speech",
+      "revision": 2124493,
+      "profession": "Engineer",
+      "ids": [
+        12334
+      ]
+    },
+    {
+      "title": "Eat_Owl_Egg",
+      "revision": 2185771,
+      "profession": "Engineer",
+      "ids": [
+        12439
+      ]
+    },
+    {
+      "title": "Eat_Wurm_Egg",
+      "revision": 2125068,
+      "profession": "Engineer",
+      "ids": [
+        12438
+      ]
+    },
+    {
+      "title": "Flashbang",
+      "revision": 3090488,
+      "profession": "Engineer",
+      "ids": [
+        30262
+      ]
+    },
+    {
+      "title": "Grenade_Barrage",
+      "revision": 3031564,
+      "profession": "Engineer",
+      "ids": [
+        5810
+      ]
+    },
+    {
+      "title": "Grenade_Barrage_(underwater)",
+      "revision": 3031566,
+      "profession": "Engineer",
+      "ids": [
+        6172
+      ]
+    },
+    {
+      "title": "Harpoon_(engineer_skill)",
+      "revision": 2369087,
+      "profession": "Engineer",
+      "ids": [
+        6182
+      ]
+    },
+    {
+      "title": "Healing_Mist",
+      "revision": 3186808,
+      "profession": "Engineer",
+      "ids": [
+        5966
+      ]
+    },
+    {
+      "title": "Hidden_Pistols",
+      "revision": 2197685,
+      "profession": "Engineer",
+      "ids": [
+        12357
+      ]
+    },
+    {
+      "title": "Invigorating_Roar",
+      "revision": 2126221,
+      "profession": "Engineer",
+      "ids": [
+        12354
+      ]
+    },
+    {
+      "title": "Launch_Personal_Battering_Ram",
+      "revision": 2742959,
+      "profession": "Engineer",
+      "ids": [
+        5982
+      ]
+    },
+    {
+      "title": "Med_Pack_Drop_(underwater)",
+      "revision": 2475097,
+      "profession": "Engineer",
+      "ids": [
+        30588
+      ]
+    },
+    {
+      "title": "Pain_Transference",
+      "revision": 2126990,
+      "profession": "Engineer",
+      "ids": [
+        12335
+      ]
+    },
+    {
+      "title": "Rocket",
+      "revision": 3172772,
+      "profession": "Engineer",
+      "ids": [
+        6177
+      ]
+    },
+    {
+      "title": "Rocket_Kick",
+      "revision": 2372281,
+      "profession": "Engineer",
+      "ids": [
+        5983
+      ]
+    },
+    {
+      "title": "Rumble",
+      "revision": 2361721,
+      "profession": "Engineer",
+      "ids": [
+        6180
+      ]
+    },
+    {
+      "title": "Smoke_Vent",
+      "revision": 3171398,
+      "profession": "Engineer",
+      "ids": [
+        6159
+      ]
+    },
+    {
+      "title": "Superspeed_(skill)",
+      "revision": 2840079,
+      "profession": "Engineer",
+      "ids": [
+        5973
+      ]
+    },
+    {
+      "title": "Surprise_Shot_(engineer_skill)",
+      "revision": 2827714,
+      "profession": "Engineer",
+      "ids": [
+        6178
+      ]
+    },
+    {
+      "title": "Throw_Napalm",
+      "revision": 2362863,
+      "profession": "Engineer",
+      "ids": [
+        6181
+      ]
+    },
+    {
+      "title": "Throw_Vine",
+      "revision": 2872224,
+      "profession": "Engineer",
+      "ids": [
+        12462
+      ]
+    },
+    {
+      "title": "Throw_Wrench",
+      "revision": 3171242,
+      "profession": "Engineer",
+      "ids": [
+        5999
+      ]
+    },
+    {
+      "title": "Toss_Elixir_B",
+      "revision": 2767658,
+      "profession": "Engineer",
+      "ids": [
+        5967,
+        6092
+      ]
+    },
+    {
+      "title": "Toss_Elixir_C",
+      "revision": 2690120,
+      "profession": "Engineer",
+      "ids": [
+        5969,
+        6077
+      ]
+    },
+    {
+      "title": "Toss_Elixir_R",
+      "revision": 2633464,
+      "profession": "Engineer",
+      "ids": [
+        5867,
+        6091
+      ]
+    },
+    {
+      "title": "Toss_Elixir_U",
+      "revision": 2774084,
+      "profession": "Engineer",
+      "ids": [
+        5970,
+        6089
+      ]
+    },
+    {
+      "title": "Toss_Elixir_X_(underwater)",
+      "revision": 2742961,
+      "profession": "Engineer",
+      "ids": [
+        29515
+      ]
+    },
+    {
+      "title": "Vent_Radiation",
+      "revision": 2129267,
+      "profession": "Engineer",
+      "ids": [
+        12336
+      ]
+    },
+    {
+      "title": "Vine_Shield",
+      "revision": 2206924,
+      "profession": "Engineer",
+      "ids": [
+        12463
+      ]
+    },
+    {
+      "title": "Reconstruction_Field",
+      "revision": 2665583,
+      "profession": "Engineer",
+      "ids": [
+        29505
+      ]
+    },
+    {
+      "title": "Bypass_Coating",
+      "revision": 2767683,
+      "profession": "Engineer",
+      "ids": [
+        29665
+      ]
+    },
+    {
+      "title": "Chemical_Field",
+      "revision": 2809397,
+      "profession": "Engineer",
+      "ids": [
+        30279
+      ]
+    },
+    {
+      "title": "Defense_Field",
+      "revision": 2609004,
+      "profession": "Engineer",
+      "ids": [
+        30027
+      ]
+    },
+    {
+      "title": "Defense_Field_(underwater)",
+      "revision": 2812532,
+      "profession": "Engineer",
+      "ids": [
+        68280
+      ]
+    },
+    {
+      "title": "Spare_Capacitor",
+      "revision": 3171353,
+      "profession": "Engineer",
+      "ids": [
+        31167
+      ]
+    },
+    {
+      "title": "Cauterize",
+      "revision": 3027126,
+      "profession": "Engineer",
+      "ids": [
+        43845
+      ]
+    },
+    {
+      "title": "Blade_Burst",
+      "revision": 2840040,
+      "profession": "Engineer",
+      "ids": [
+        42163
+      ]
+    },
+    {
+      "title": "Flash_Spark",
+      "revision": 3027438,
+      "profession": "Engineer",
+      "ids": [
+        43176
+      ]
+    },
+    {
+      "title": "Particle_Accelerator",
+      "revision": 2840072,
+      "profession": "Engineer",
+      "ids": [
+        45732
+      ]
+    },
+    {
+      "title": "Prismatic_Singularity",
+      "revision": 2690624,
+      "profession": "Engineer",
+      "ids": [
+        41843
+      ]
+    },
+    {
+      "title": "Explosive_Knuckle",
+      "revision": 2569134,
+      "profession": "Engineer",
+      "ids": [
+        63365
+      ]
+    },
+    {
+      "title": "Rolling_Smash",
+      "revision": 2598457,
+      "profession": "Engineer",
+      "ids": [
+        63334
+      ]
+    },
+    {
+      "title": "Spark_Revolver",
+      "revision": 2940541,
+      "profession": "Engineer",
+      "ids": [
+        63188
+      ]
+    },
+    {
+      "title": "Core_Reactor_Shot",
+      "revision": 3087929,
+      "profession": "Engineer",
+      "ids": [
+        63345
+      ]
+    },
+    {
+      "title": "Crisis_Zone",
+      "revision": 2932059,
+      "profession": "Engineer",
+      "ids": [
+        63293
+      ]
+    },
+    {
+      "title": "Discharge_Array",
+      "revision": 2747462,
+      "profession": "Engineer",
+      "ids": [
+        63367
+      ]
+    },
+    {
+      "title": "Barrier_Burst",
+      "revision": 2882226,
+      "profession": "Engineer",
+      "ids": [
+        63141
+      ]
+    },
+    {
+      "title": "Jade_Mortar",
+      "revision": 3128117,
+      "profession": "Engineer",
+      "ids": [
+        63121
+      ]
+    },
+    {
+      "title": "Sky_Circus",
+      "revision": 3087934,
+      "profession": "Engineer",
+      "ids": [
+        63236
+      ]
+    },
+    {
+      "title": "Symbiotic_Shielding",
+      "revision": 3169694,
+      "profession": "Engineer",
+      "ids": [
+        76613
+      ]
+    },
+    {
+      "title": "Controlled_Analysis",
+      "revision": 2828131,
+      "profession": "Engineer",
+      "ids": [
+        45709
+      ]
+    },
+    {
+      "title": "Invisible_Analysis",
+      "revision": 2827737,
+      "profession": "Engineer",
+      "ids": [
+        29606
+      ]
+    },
+    {
+      "title": "Symbol_of_Faith",
+      "revision": 2882234,
+      "profession": "Guardian",
+      "ids": [
+        9111
+      ]
+    },
+    {
+      "title": "Protector's_Strike",
+      "revision": 2843762,
+      "profession": "Guardian",
+      "ids": [
+        9086
+      ]
+    },
+    {
+      "title": "Poison_Volley",
+      "revision": 3181886,
+      "profession": "Ranger",
+      "ids": [
+        12468
+      ]
+    },
+    {
+      "title": "Quick_Shot",
+      "revision": 2680231,
+      "profession": "Ranger",
+      "ids": [
+        12517
+      ]
+    },
+    {
+      "title": "Crippling_Shot",
+      "revision": 2840346,
+      "profession": "Ranger",
+      "ids": [
+        12507
+      ]
+    },
+    {
+      "title": "Concussion_Shot",
+      "revision": 2967013,
+      "profession": "Ranger",
+      "ids": [
+        12508
+      ],
+      "controlAlternatives": [
+        "昏迷",
+        "晕眩"
+      ],
+      "controlEvidence": "Stun them if you hit from behind or from the side or if your foe is defiant."
+    },
+    {
+      "title": "Calcify",
+      "revision": 3110841,
+      "profession": "Elementalist",
+      "ids": [
+        77226
+      ]
+    },
+    {
+      "title": "Splash",
+      "revision": 3107876,
+      "profession": "Elementalist",
+      "ids": [
+        77225
+      ]
+    },
+    {
+      "title": "Zap_(skill)",
+      "revision": 3178258,
+      "profession": "Elementalist",
+      "ids": [
+        77370
+      ]
+    },
+    {
+      "title": "Buoyant_Deluge",
+      "revision": 3078973,
+      "profession": "Elementalist",
+      "ids": [
+        77357
+      ]
+    },
+    {
+      "title": "Seismic_Impact",
+      "revision": 3078974,
+      "profession": "Elementalist",
+      "ids": [
+        76681
+      ]
+    },
+    {
+      "title": "Weeping_Shots",
+      "ids": [
+        62513
+      ],
+      "revision": 2734050,
+      "profession": "Necromancer"
+    },
+    {
+      "title": "Vile_Blast",
+      "ids": [
+        62511
+      ],
+      "revision": 2855293,
+      "profession": "Necromancer"
+    },
+    {
+      "title": "Swirling_Winds",
+      "ids": [
+        5530
+      ],
+      "revision": 2666082,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Wind_Storm",
+      "ids": [
+        62947
+      ],
+      "revision": 2990431,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Electrocute",
+      "ids": [
+        5655
+      ],
+      "revision": 3021363,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Air_Pocket",
+      "ids": [
+        5652
+      ],
+      "revision": 3140029,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Surging_Flames",
+      "ids": [
+        62884
+      ],
+      "revision": 3021007,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Heat_Sync",
+      "ids": [
+        29548
+      ],
+      "revision": 2938148,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Flame_Wheel",
+      "ids": [
+        62758
+      ],
+      "revision": 3062428,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Triple_Sear",
+      "ids": [
+        62807
+      ],
+      "revision": 3186702,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Molten_End",
+      "ids": [
+        62910
+      ],
+      "revision": 3186703,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Meteor_Shower",
+      "ids": [
+        5501
+      ],
+      "revision": 3020993,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Blazing_Barrage",
+      "ids": [
+        73080
+      ],
+      "revision": 3169665,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Seethe",
+      "ids": [
+        73137
+      ],
+      "revision": 3170021,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Heat_Wave",
+      "ids": [
+        5600
+      ],
+      "revision": 3085526,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Mine_Field",
+      "ids": [
+        6164
+      ],
+      "revision": 2673937,
+      "profession": "Engineer"
+    },
+    {
+      "title": "Net_Attack",
+      "ids": [
+        6179
+      ],
+      "revision": 2475067,
+      "profession": "Engineer"
+    },
+    {
+      "title": "Toss_Elixir_S",
+      "ids": [
+        5972
+      ],
+      "revision": 2689987,
+      "profession": "Engineer"
+    },
+    {
+      "title": "Toss_Elixir_S",
+      "ids": [
+        6090
+      ],
+      "revision": 2689987,
+      "profession": "Engineer"
+    },
+    {
+      "title": "Glue_Shot",
+      "ids": [
+        5830
+      ],
+      "revision": 2810145,
+      "profession": "Engineer"
+    },
+    {
+      "title": "Grasping_Dead",
+      "ids": [
+        10532
+      ],
+      "revision": 2631630,
+      "profession": "Necromancer"
+    },
+    {
+      "title": "Blowtorch",
+      "ids": [
+        5831
+      ],
+      "revision": 3128686,
+      "profession": "Engineer"
+    },
+    {
+      "title": "Putrid_Curse",
+      "ids": [
+        10552
+      ],
+      "revision": 2631629,
+      "profession": "Necromancer"
+    },
+    {
+      "title": "Blood_Curse",
+      "ids": [
+        10698
+      ],
+      "revision": 2631627,
+      "profession": "Necromancer"
+    },
+    {
+      "title": "Rending_Curse",
+      "ids": [
+        10699
+      ],
+      "revision": 2631628,
+      "profession": "Necromancer"
+    },
+    {
+      "title": "Feast_of_Corruption",
+      "ids": [
+        10709
+      ],
+      "revision": 2959884,
+      "profession": "Necromancer"
+    },
+    {
+      "title": "Devouring_Darkness",
+      "ids": [
+        51647
+      ],
+      "revision": 2932290,
+      "profession": "Necromancer"
+    },
+    {
+      "title": "Flame_Burst",
+      "ids": [
+        5679
+      ],
+      "revision": 3020994,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Boil",
+      "ids": [
+        5597
+      ],
+      "revision": 3021062,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Steam_(elementalist_skill)",
+      "ids": [
+        5566
+      ],
+      "revision": 3021125,
+      "profession": "Elementalist"
+    },
+    {
+      "title": "Chant_of_Freedom",
+      "ids": [
+        77155
+      ],
+      "revision": 3081466,
+      "profession": "Warrior"
+    },
+    {
+      "title": "Smoke_Bomb_(engineer_skill)",
+      "ids": [
+        5824
+      ],
+      "revision": 2990788,
+      "profession": "Engineer"
+    },
+    {
+      "title": "Fragmentation_Shot",
+      "ids": [
+        5827
+      ],
+      "revision": 2842793,
+      "profession": "Engineer"
+    },
+    {
+      "title": "Poison_Dart_Volley",
+      "ids": [
+        5828
+      ],
+      "revision": 2794142,
+      "profession": "Engineer"
+    },
+    {
+      "title": "Static_Shot",
+      "ids": [
+        5829
+      ],
+      "revision": 2776280,
+      "profession": "Engineer"
+    }
+  ]
+}

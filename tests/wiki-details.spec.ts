@@ -279,7 +279,10 @@ for (const item of [
     slot: 1,
     skill: 31322,
     name: "结盟雕文",
-    groups: ["非天界化身形态", "天界化身形态"],
+    groups: [
+      ["非天界化身形态", "Glyph_of_Alignment_(non-celestial)"],
+      ["天界化身形态", "Glyph_of_Alignment_(Celestial_Avatar)"],
+    ],
     count: 2,
   },
   {
@@ -287,7 +290,10 @@ for (const item of [
     slot: 1,
     skill: 5734,
     name: "风暴雕文",
-    groups: ["火焰协调", "空气协调"],
+    groups: [
+      ["火焰协调", "Firestorm_(Glyph_of_Storms_skill)"],
+      ["空气协调", "Lightning_Storm_(Glyph_of_Storms_skill)"],
+    ],
     count: 4,
   },
   {
@@ -295,7 +301,7 @@ for (const item of [
     slot: 0,
     skill: 10547,
     name: "召唤血魔",
-    groups: ["召唤物指令"],
+    groups: [["召唤物指令", "Taste_of_Death"]],
     count: 1,
   },
 ] as const) {
@@ -329,7 +335,7 @@ for (const item of [
     const card = page.getByRole("dialog", { name: item.name, exact: true });
     const branches = card.locator(".game-tooltip-branch");
     await expect(branches).toHaveCount(item.count);
-    for (const group of item.groups) {
+    for (const [group, title] of item.groups) {
       const branch = branches
         .filter({
           has: page
@@ -342,7 +348,7 @@ for (const item of [
       await expect(branch.locator("li").first()).toBeVisible();
       await expect(
         branch.getByRole("link", { name: "分支 Wiki 来源 ↗" }),
-      ).toHaveAttribute("href", /^https:\/\/wiki.wishingstar.top\/wiki\//);
+      ).toHaveAttribute("href", `https://wiki.guildwars2.com/wiki/${title}`);
     }
     await expect(card).not.toContainText(/待核对|效果记录|\[sic\]/);
     expect(

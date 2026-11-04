@@ -242,7 +242,10 @@ test("幻术特性使用Wiki补齐基础效果并保留中文说明和来源入�
   await expect(card).toContainText("3 秒");
   await expect(
     card.getByRole("link", { name: "Wiki PvE 来源 ↗" }),
-  ).toHaveAttribute("href", /wiki\.wishingstar\.top\/wiki\/Duelist/);
+  ).toHaveAttribute(
+    "href",
+    "https://wiki.guildwars2.com/wiki/Duelist's_Discipline",
+  );
   await expect(card).not.toContainText(/待核对|语义未完整核对|暂无效果资料/);
   await expect(
     card.getByRole("link", { name: "在中文维基查看 ↗" }),

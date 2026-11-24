@@ -140,7 +140,7 @@
           {
             "id": 1974,
             "name": "死亡占卜",
-            "description": "战吼虹吸敌人的生命值。处于近战距离时，对敌人产生的效果增加。"
+            "description": "<c=@abilitytype>战吼</c>虹吸敌人的生命值。除了第一个命中的敌人，生命虹吸的治疗量减少。"
           },
           {
             "id": 1932,
@@ -390,11 +390,16 @@
         "title": "Target_the_Weak",
         "profession": "Necromancer",
         "identityVerified": true,
-        "revision": 3006426,
+        "revision": 3217403,
         "rows": [
           {
             "label": "暴击率提升",
-            "detail": "2%",
+            "detail": "4%",
+            "icon": "https://render.guildwars2.com/file/C2CEA567E0C43C199C782809544721AA12A6DF0A/2229323.png"
+          },
+          {
+            "label": "最大暴击率增加",
+            "detail": "20%",
             "icon": "https://render.guildwars2.com/file/C2CEA567E0C43C199C782809544721AA12A6DF0A/2229323.png"
           },
           {
@@ -1250,7 +1255,7 @@
           {
             "id": 2167,
             "name": "沙砾碾磨",
-            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           },
           {
             "id": 2194,
@@ -1825,7 +1830,7 @@
           {
             "id": 2167,
             "name": "沙砾碾磨",
-            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           },
           {
             "id": 2384,
@@ -2207,31 +2212,30 @@
         "title": "Augury_of_Death",
         "profession": "Necromancer",
         "identityVerified": true,
-        "revision": 3171098,
+        "revision": 3217442,
         "rows": [
           {
             "label": "生命虹吸伤害",
-            "detail": "172 + 0.0125 × 威力",
+            "detail": "750 + 0.01 × 威力",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
-            "label": "生命虹吸治疗",
-            "detail": "156 + 0.025 × 治疗效果",
+            "label": "初次生命虹吸治疗",
+            "detail": "750 + 0.05 × 治疗效果",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
             "healing": {
-              "base": 156,
-              "coefficient": 0.025
+              "base": 750,
+              "coefficient": 0.05
             }
           },
           {
-            "label": "伤害提升",
-            "detail": "100%",
-            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
-          },
-          {
-            "label": "每个目标提升治疗",
-            "detail": "100%",
-            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png"
+            "label": "附加命中治疗",
+            "detail": "250 + 0.025 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+            "healing": {
+              "base": 250,
+              "coefficient": 0.025
+            }
           }
         ]
       },
@@ -2467,12 +2471,12 @@
           {
             "id": 2167,
             "name": "沙砾碾磨",
-            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           },
           {
             "id": 2080,
             "name": "沙漠强化",
-            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           },
           {
             "id": 909,
@@ -2576,7 +2580,7 @@
         "title": "Desert_Empowerment",
         "profession": "Necromancer",
         "identityVerified": true,
-        "revision": 3029008,
+        "revision": 3217877,
         "rows": [
           {
             "label": "屏障",
@@ -2589,7 +2593,7 @@
           },
           {
             "label": "敏捷",
-            "detail": "1.5 秒 · +25% 技能冷却恢复速度",
+            "detail": "2 秒 · +25% 技能冷却恢复速度",
             "icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png"
           },
           {
@@ -2611,7 +2615,7 @@
           {
             "id": 2167,
             "name": "沙砾碾磨",
-            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           },
           {
             "id": 2059,
@@ -2811,11 +2815,11 @@
         "title": "Abrasive_Grit",
         "profession": "Necromancer",
         "identityVerified": true,
-        "revision": 3029309,
+        "revision": 3217874,
         "rows": [
           {
             "label": "威能",
-            "detail": "6 秒 · 2 层",
+            "detail": "8 秒 · 2 层",
             "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
             "stacks": 2
           },
@@ -2850,7 +2854,7 @@
           {
             "id": 2080,
             "name": "沙漠强化",
-            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           }
         ]
       },
@@ -2896,7 +2900,7 @@
           {
             "id": 2218,
             "name": "层叠腐化",
-            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
+            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。<c=@reminder>仅能在战斗时获得层数，离开战斗后层数消失。</c>"
           }
         ]
       },
@@ -3133,7 +3137,7 @@
           {
             "id": 2218,
             "name": "层叠腐化",
-            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
+            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。<c=@reminder>仅能在战斗时获得层数，离开战斗后层数消失。</c>"
           }
         ]
       },
@@ -3178,7 +3182,7 @@
         "title": "Cascading_Corruption",
         "profession": "Necromancer",
         "identityVerified": true,
-        "revision": 3188970,
+        "revision": 3217987,
         "rows": [
           {
             "label": "层叠腐化",
@@ -3187,7 +3191,7 @@
           },
           {
             "label": "熔毁",
-            "detail": "10 秒 · +10% 伤害, +10% 症状伤害",
+            "detail": "10 秒 · +10% 伤害, +7% 症状伤害",
             "icon": "https://render.guildwars2.com/file/03291423C8D1BE039F100726B40BC218F021EFEF/3790487.png"
           },
           {
@@ -3472,11 +3476,11 @@
         "title": "Spirit's_Strength",
         "profession": "Necromancer",
         "identityVerified": true,
-        "revision": 3078792,
+        "revision": 3217992,
         "rows": [
           {
             "label": "效果提升",
-            "detail": "50%",
+            "detail": "33%",
             "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
           }
         ]
@@ -3590,6 +3594,48 @@
             "id": 1932,
             "name": "瘟疫增益",
             "description": "对自己施加增益或者移除敌人增益时，获得生命之力。"
+          }
+        ]
+      },
+      "10528": {
+        "title": "Ghastly_Claws",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217391,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "6 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×4.6 · 8 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "每层易伤的伤害加成",
+            "detail": "1%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "对于低生命值敌人的奖励伤害",
+            "detail": "20%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "生命之力",
+            "detail": "12%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -3763,7 +3809,7 @@
           {
             "id": 2421,
             "name": "灵魂之力",
-            "description": "你召唤的生物造成更多伤害，治疗效果提升。灵魂和仆从视作生物。"
+            "description": "你召唤的生物造成更多伤害，治疗效果提升。<c=@reminder>灵魂和仆从视作生物。</c>"
           }
         ],
         "branches": [
@@ -3871,7 +3917,7 @@
           {
             "id": 2421,
             "name": "灵魂之力",
-            "description": "你召唤的生物造成更多伤害，治疗效果提升。灵魂和仆从视作生物。"
+            "description": "你召唤的生物造成更多伤害，治疗效果提升。<c=@reminder>灵魂和仆从视作生物。</c>"
           }
         ],
         "branches": [
@@ -4354,7 +4400,7 @@
           {
             "id": 2421,
             "name": "灵魂之力",
-            "description": "你召唤的生物造成更多伤害，治疗效果提升。灵魂和仆从视作生物。"
+            "description": "你召唤的生物造成更多伤害，治疗效果提升。<c=@reminder>灵魂和仆从视作生物。</c>"
           }
         ],
         "branches": [
@@ -5065,6 +5111,106 @@
             "id": 905,
             "name": "德姆火焰",
             "description": "帷幕状态的技能1会对目标施加燃烧。"
+          }
+        ]
+      },
+      "10557": {
+        "title": "Locust_Swarm",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3218046,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "24 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.25",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "每次命中治疗",
+            "detail": "69 + 0.05 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 69,
+              "coefficient": 0.05
+            }
+          },
+          {
+            "label": "迅捷",
+            "detail": "15 秒 · +33% 移动速度",
+            "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png"
+          },
+          {
+            "label": "每一击生命之力",
+            "detail": "0.5%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "冲击次数",
+            "detail": "6",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "持续时间",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          }
+        ]
+      },
+      "10561": {
+        "title": "Rending_Claws",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217384,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.4 · 2 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "生命临界值",
+            "detail": "50%",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "易伤",
+            "detail": "7 秒 · 2 层 · +2% 受到的伤害, +2% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 2
+          },
+          {
+            "label": "冷却时间减少",
+            "detail": "0.5 秒",
+            "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -7622,6 +7768,52 @@
           }
         ]
       },
+      "10701": {
+        "title": "Unholy_Feast",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3218011,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "10 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "生命临界值",
+            "detail": "50%",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "致残",
+            "detail": "5 秒 · -50% 移动速度"
+          },
+          {
+            "label": "增益移除",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          }
+        ]
+      },
       "10709": {
         "title": "Feast_of_Corruption",
         "profession": "Necromancer",
@@ -7698,7 +7890,7 @@
         "title": "Signet_of_Vampirism",
         "profession": "Necromancer",
         "identityVerified": true,
-        "revision": 2855400,
+        "revision": 3217530,
         "rows": [
           {
             "label": "施法时间",
@@ -7715,15 +7907,16 @@
           },
           {
             "label": "生命虹吸激活时伤害",
-            "detail": "247 + 0.084 × 威力",
+            "detail": "698 + 0.168 × 威力",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
-            "label": "被动虹吸治疗",
-            "detail": "195 + 0.024 × 治疗效果",
+            "label": "被动生命虹吸治疗",
+            "detail": "195 + 0.022 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
             "healing": {
               "base": 195,
-              "coefficient": 0.024
+              "coefficient": 0.022
             }
           },
           {
@@ -7745,10 +7938,10 @@
             }
           },
           {
-            "label": "吸血印记",
-            "detail": "6 秒 · 25 层",
+            "label": "吸血纹章",
+            "detail": "15 秒 · 6 层",
             "icon": "https://render.guildwars2.com/file/F62121A2D713A4CD5FDA3E5C734408EF3306BED4/699529.png",
-            "stacks": 25
+            "stacks": 6
           },
           {
             "label": "被动虹吸目标",
@@ -7908,7 +8101,7 @@
           {
             "id": 1974,
             "name": "死亡占卜",
-            "description": "战吼虹吸敌人的生命值。处于近战距离时，对敌人产生的效果增加。"
+            "description": "<c=@abilitytype>战吼</c>虹吸敌人的生命值。除了第一个命中的敌人，生命虹吸的治疗量减少。"
           },
           {
             "id": 1932,
@@ -8118,7 +8311,7 @@
           {
             "id": 1974,
             "name": "死亡占卜",
-            "description": "战吼虹吸敌人的生命值。处于近战距离时，对敌人产生的效果增加。"
+            "description": "<c=@abilitytype>战吼</c>虹吸敌人的生命值。除了第一个命中的敌人，生命虹吸的治疗量减少。"
           },
           {
             "id": 2031,
@@ -8347,7 +8540,7 @@
           {
             "id": 1974,
             "name": "死亡占卜",
-            "description": "战吼虹吸敌人的生命值。处于近战距离时，对敌人产生的效果增加。"
+            "description": "<c=@abilitytype>战吼</c>虹吸敌人的生命值。除了第一个命中的敌人，生命虹吸的治疗量减少。"
           },
           {
             "id": 2020,
@@ -8554,7 +8747,7 @@
           {
             "id": 1974,
             "name": "死亡占卜",
-            "description": "战吼虹吸敌人的生命值。处于近战距离时，对敌人产生的效果增加。"
+            "description": "<c=@abilitytype>战吼</c>虹吸敌人的生命值。除了第一个命中的敌人，生命虹吸的治疗量减少。"
           }
         ]
       },
@@ -8924,7 +9117,7 @@
           {
             "id": 1974,
             "name": "死亡占卜",
-            "description": "战吼虹吸敌人的生命值。处于近战距离时，对敌人产生的效果增加。"
+            "description": "<c=@abilitytype>战吼</c>虹吸敌人的生命值。除了第一个命中的敌人，生命虹吸的治疗量减少。"
           },
           {
             "id": 2020,
@@ -9040,7 +9233,7 @@
           {
             "id": 1974,
             "name": "死亡占卜",
-            "description": "战吼虹吸敌人的生命值。处于近战距离时，对敌人产生的效果增加。"
+            "description": "<c=@abilitytype>战吼</c>虹吸敌人的生命值。除了第一个命中的敌人，生命虹吸的治疗量减少。"
           }
         ]
       },
@@ -10006,7 +10199,7 @@
           {
             "id": 2167,
             "name": "沙砾碾磨",
-            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           },
           {
             "id": 2102,
@@ -10026,7 +10219,7 @@
           {
             "id": 2080,
             "name": "沙漠强化",
-            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           }
         ],
         "modifiers": [
@@ -10038,14 +10231,14 @@
               "kind": "traits",
               "id": 2080,
               "title": "Desert_Empowerment",
-              "revision": 3029008
+              "revision": 3217877
             },
             "changes": [
               {
                 "type": "append",
                 "row": {
                   "label": "敏捷",
-                  "detail": "1.5 秒",
+                  "detail": "2 秒",
                   "recipient": "获得屏障的目标",
                   "trigger": "此技能授予屏障时"
                 }
@@ -10178,7 +10371,7 @@
           {
             "id": 2080,
             "name": "沙漠强化",
-            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           }
         ],
         "modifiers": [
@@ -10190,7 +10383,7 @@
               "kind": "traits",
               "id": 2080,
               "title": "Desert_Empowerment",
-              "revision": 3029008
+              "revision": 3217877
             },
             "changes": [
               {
@@ -10267,14 +10460,14 @@
               "kind": "traits",
               "id": 2080,
               "title": "Desert_Empowerment",
-              "revision": 3029008
+              "revision": 3217877
             },
             "changes": [
               {
                 "type": "append",
                 "row": {
                   "label": "敏捷",
-                  "detail": "1.5 秒",
+                  "detail": "2 秒",
                   "recipient": "获得屏障的目标",
                   "trigger": "此技能授予屏障时"
                 }
@@ -10504,7 +10697,7 @@
           {
             "id": 2167,
             "name": "沙砾碾磨",
-            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           },
           {
             "id": 2102,
@@ -10524,7 +10717,7 @@
           {
             "id": 2080,
             "name": "沙漠强化",
-            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           }
         ],
         "modifiers": [
@@ -10536,14 +10729,14 @@
               "kind": "traits",
               "id": 2080,
               "title": "Desert_Empowerment",
-              "revision": 3029008
+              "revision": 3217877
             },
             "changes": [
               {
                 "type": "append",
                 "row": {
                   "label": "敏捷",
-                  "detail": "1.5 秒",
+                  "detail": "2 秒",
                   "recipient": "获得屏障的目标",
                   "trigger": "此技能授予屏障时"
                 }
@@ -10783,7 +10976,7 @@
           {
             "id": 2167,
             "name": "沙砾碾磨",
-            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           },
           {
             "id": 2102,
@@ -10803,7 +10996,7 @@
           {
             "id": 2080,
             "name": "沙漠强化",
-            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           }
         ],
         "modifiers": [
@@ -10815,14 +11008,14 @@
               "kind": "traits",
               "id": 2080,
               "title": "Desert_Empowerment",
-              "revision": 3029008
+              "revision": 3217877
             },
             "changes": [
               {
                 "type": "append",
                 "row": {
                   "label": "敏捷",
-                  "detail": "1.5 秒",
+                  "detail": "2 秒",
                   "recipient": "获得屏障的目标",
                   "trigger": "此技能授予屏障时"
                 }
@@ -10882,7 +11075,7 @@
           {
             "id": 2167,
             "name": "沙砾碾磨",
-            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           },
           {
             "id": 2112,
@@ -10892,7 +11085,7 @@
           {
             "id": 2080,
             "name": "沙漠强化",
-            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           }
         ],
         "modifiers": [
@@ -10952,14 +11145,14 @@
               "kind": "traits",
               "id": 2080,
               "title": "Desert_Empowerment",
-              "revision": 3029008
+              "revision": 3217877
             },
             "changes": [
               {
                 "type": "append",
                 "row": {
                   "label": "敏捷",
-                  "detail": "1.5 秒",
+                  "detail": "2 秒",
                   "recipient": "获得屏障的目标",
                   "trigger": "此技能授予屏障时"
                 }
@@ -11294,7 +11487,7 @@
           {
             "id": 2167,
             "name": "沙砾碾磨",
-            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "为附近盟友提供屏障。屏障移除他们症状的同时施加威能。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           },
           {
             "id": 2123,
@@ -11314,7 +11507,7 @@
           {
             "id": 2080,
             "name": "沙漠强化",
-            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           }
         ],
         "modifiers": [
@@ -11374,14 +11567,14 @@
               "kind": "traits",
               "id": 2080,
               "title": "Desert_Empowerment",
-              "revision": 3029008
+              "revision": 3217877
             },
             "changes": [
               {
                 "type": "append",
                 "row": {
                   "label": "敏捷",
-                  "detail": "1.5 秒",
+                  "detail": "2 秒",
                   "recipient": "获得屏障的目标",
                   "trigger": "此技能授予屏障时"
                 }
@@ -11515,7 +11708,7 @@
           {
             "id": 2080,
             "name": "沙漠强化",
-            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。\n只有灾厄师技能和特性提供的屏障才有此效果。"
+            "description": "召唤沙影将给你附近盟友施加屏障。当你施加屏障时，会给受影响目标施加增益。<br><c=@reminder>只有灾厄师技能和特性提供的屏障才有此效果。</c>"
           }
         ],
         "modifiers": [
@@ -11527,7 +11720,7 @@
               "kind": "traits",
               "id": 2080,
               "title": "Desert_Empowerment",
-              "revision": 3029008
+              "revision": 3217877
             },
             "changes": [
               {
@@ -11604,14 +11797,14 @@
               "kind": "traits",
               "id": 2080,
               "title": "Desert_Empowerment",
-              "revision": 3029008
+              "revision": 3217877
             },
             "changes": [
               {
                 "type": "append",
                 "row": {
                   "label": "敏捷",
-                  "detail": "1.5 秒",
+                  "detail": "2 秒",
                   "recipient": "获得屏障的目标",
                   "trigger": "此技能授予屏障时"
                 }
@@ -11847,6 +12040,54 @@
               }
             ],
             "traitName": "凶恶帷幕"
+          }
+        ]
+      },
+      "55050": {
+        "title": "Soul_Grasp",
+        "profession": "Necromancer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3218007,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "每个目标的生命之力",
+            "detail": "系数 ×2.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "易伤",
+            "detail": "6 秒 · 8 层 · +8% 受到的伤害, +8% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 8
+          },
+          {
+            "label": "生命之力",
+            "detail": "8%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           }
         ]
       },
@@ -12137,7 +12378,7 @@
           {
             "id": 2218,
             "name": "层叠腐化",
-            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
+            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。<c=@reminder>仅能在战斗时获得层数，离开战斗后层数消失。</c>"
           }
         ],
         "modifiers": [
@@ -12302,7 +12543,7 @@
           {
             "id": 2218,
             "name": "层叠腐化",
-            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
+            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。<c=@reminder>仅能在战斗时获得层数，离开战斗后层数消失。</c>"
           }
         ],
         "modifiers": [
@@ -12762,7 +13003,7 @@
           {
             "id": 2218,
             "name": "层叠腐化",
-            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
+            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。<c=@reminder>仅能在战斗时获得层数，离开战斗后层数消失。</c>"
           },
           {
             "id": 2194,
@@ -13649,7 +13890,7 @@
           {
             "id": 2218,
             "name": "层叠腐化",
-            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
+            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。<c=@reminder>仅能在战斗时获得层数，离开战斗后层数消失。</c>"
           }
         ],
         "modifiers": [
@@ -13843,7 +14084,7 @@
           {
             "id": 2218,
             "name": "层叠腐化",
-            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
+            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。<c=@reminder>仅能在战斗时获得层数，离开战斗后层数消失。</c>"
           }
         ],
         "modifiers": [
@@ -13990,7 +14231,7 @@
           {
             "id": 2218,
             "name": "层叠腐化",
-            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
+            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。<c=@reminder>仅能在战斗时获得层数，离开战斗后层数消失。</c>"
           }
         ],
         "modifiers": [
@@ -14184,7 +14425,7 @@
           {
             "id": 2218,
             "name": "层叠腐化",
-            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。仅能在战斗时获得层数，离开战斗后层数消失。"
+            "description": "当你吞噬瘟疫时，获得层叠腐化。层数达到阈值后，引爆暗蚀能量并增加造成的伤害，持续一段时间。<c=@reminder>仅能在战斗时获得层数，离开战斗后层数消失。</c>"
           }
         ],
         "modifiers": [
@@ -14429,34 +14670,34 @@
         "title": "Summon_Spirits",
         "profession": "Necromancer",
         "identityVerified": true,
-        "revision": 3151044,
+        "revision": 3217996,
         "rows": [
           {
             "label": "冷却时间",
             "detail": "20 秒"
           },
           {
-            "label": "苦痛灵 · 伤害",
-            "detail": "500 · 4 次命中"
+            "label": "伤害",
+            "detail": "系数 ×2.4 · 4 次命中"
           },
           {
-            "label": "苦痛灵 · 对受控制目标伤害提高",
+            "label": "最大伤害提升",
             "detail": "20%"
           },
           {
-            "label": "苦痛灵 · 目标每个症状提高伤害",
-            "detail": "2%"
+            "label": "目标每个症状提高伤害",
+            "detail": "4%"
           },
           {
-            "label": "流浪灵 · 伤害",
-            "detail": "450"
+            "label": "伤害",
+            "detail": "系数 ×1.5"
           },
           {
-            "label": "流浪灵 · 晕眩",
+            "label": "晕眩",
             "detail": "2 秒"
           },
           {
-            "label": "庇护灵 · 持续时间",
+            "label": "持续时间",
             "detail": "4 秒"
           },
           {
@@ -14647,7 +14888,7 @@
           {
             "id": 2421,
             "name": "灵魂之力",
-            "description": "你召唤的生物造成更多伤害，治疗效果提升。灵魂和仆从视作生物。"
+            "description": "你召唤的生物造成更多伤害，治疗效果提升。<c=@reminder>灵魂和仆从视作生物。</c>"
           },
           {
             "id": 2333,
@@ -14831,7 +15072,7 @@
         "title": "Anguish",
         "profession": "Necromancer",
         "identityVerified": true,
-        "revision": 3081424,
+        "revision": 3218005,
         "rows": [
           {
             "label": "施法时间",
@@ -14855,7 +15096,7 @@
             "stacks": 8
           },
           {
-            "label": "祭祀攻击 · 痛苦联结",
+            "label": "祭祀攻击 · 目标受到你的召唤生物伤害提高",
             "detail": "10 秒"
           },
           {
@@ -14867,12 +15108,12 @@
             "detail": "系数 ×3.5 · 7 次命中"
           },
           {
-            "label": "苦痛灵攻击 · 对受控制目标伤害提高",
+            "label": "苦痛灵攻击 · 最大伤害提升",
             "detail": "20%"
           },
           {
             "label": "苦痛灵攻击 · 目标每个症状提高伤害",
-            "detail": "2%"
+            "detail": "4%"
           },
           {
             "label": "射程",
@@ -14949,7 +15190,7 @@
           {
             "id": 2421,
             "name": "灵魂之力",
-            "description": "你召唤的生物造成更多伤害，治疗效果提升。灵魂和仆从视作生物。"
+            "description": "你召唤的生物造成更多伤害，治疗效果提升。<c=@reminder>灵魂和仆从视作生物。</c>"
           },
           {
             "id": 2333,
@@ -15216,7 +15457,7 @@
           {
             "id": 2421,
             "name": "灵魂之力",
-            "description": "你召唤的生物造成更多伤害，治疗效果提升。灵魂和仆从视作生物。"
+            "description": "你召唤的生物造成更多伤害，治疗效果提升。<c=@reminder>灵魂和仆从视作生物。</c>"
           },
           {
             "id": 2333,
@@ -15527,7 +15768,7 @@
           {
             "id": 76864,
             "title": "Anguish",
-            "revision": 3081424,
+            "revision": 3218005,
             "label": "苦痛灵魂",
             "rows": [
               {
@@ -15552,7 +15793,7 @@
                 "stacks": 8
               },
               {
-                "label": "祭祀攻击 · 痛苦联结",
+                "label": "祭祀攻击 · 目标受到你的召唤生物伤害提高",
                 "detail": "10 秒"
               },
               {
@@ -15564,12 +15805,12 @@
                 "detail": "系数 ×3.5 · 7 次命中"
               },
               {
-                "label": "苦痛灵攻击 · 对受控制目标伤害提高",
+                "label": "苦痛灵攻击 · 最大伤害提升",
                 "detail": "20%"
               },
               {
                 "label": "苦痛灵攻击 · 目标每个症状提高伤害",
-                "detail": "2%"
+                "detail": "4%"
               },
               {
                 "label": "射程",
@@ -15775,7 +16016,7 @@
           {
             "id": 76607,
             "title": "Summon_Spirits",
-            "revision": 3151044,
+            "revision": 3217996,
             "label": "灵魂召集",
             "rows": [
               {
@@ -15783,27 +16024,27 @@
                 "detail": "20 秒"
               },
               {
-                "label": "苦痛灵 · 伤害",
-                "detail": "500 · 4 次命中"
+                "label": "伤害",
+                "detail": "系数 ×2.4 · 4 次命中"
               },
               {
-                "label": "苦痛灵 · 对受控制目标伤害提高",
+                "label": "最大伤害提升",
                 "detail": "20%"
               },
               {
-                "label": "苦痛灵 · 目标每个症状提高伤害",
-                "detail": "2%"
+                "label": "目标每个症状提高伤害",
+                "detail": "4%"
               },
               {
-                "label": "流浪灵 · 伤害",
-                "detail": "450"
+                "label": "伤害",
+                "detail": "系数 ×1.5"
               },
               {
-                "label": "流浪灵 · 晕眩",
+                "label": "晕眩",
                 "detail": "2 秒"
               },
               {
-                "label": "庇护灵 · 持续时间",
+                "label": "持续时间",
                 "detail": "4 秒"
               },
               {

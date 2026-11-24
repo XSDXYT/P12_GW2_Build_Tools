@@ -670,12 +670,12 @@
         "title": "Grenadier",
         "profession": "Engineer",
         "identityVerified": true,
-        "revision": 2990846,
+        "revision": 3218268,
         "rows": [
           {
-            "label": "半径增加",
-            "detail": "60",
-            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+            "label": "伤害提升",
+            "detail": "5%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           }
         ]
       },
@@ -746,11 +746,16 @@
         "title": "Modified_Ammunition",
         "profession": "Engineer",
         "identityVerified": true,
-        "revision": 3094919,
+        "revision": 3218272,
         "rows": [
           {
             "label": "伤害提升",
-            "detail": "1%",
+            "detail": "2%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "最大伤害提升",
+            "detail": "10%",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           }
         ]
@@ -3289,11 +3294,11 @@
         "title": "Double_Helix",
         "profession": "Engineer",
         "identityVerified": true,
-        "revision": 3161507,
+        "revision": 3218284,
         "rows": [
           {
             "label": "效果提升",
-            "detail": "100%",
+            "detail": "50%",
             "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
           }
         ]
@@ -3799,7 +3804,7 @@
           {
             "id": 514,
             "name": "投弹专家",
-            "description": "提升手雷的爆炸半径。使用治疗技能时施展次级手雷弹幕。"
+            "description": "提升<c=@abilitytype>爆炸</c>的伤害。使用治疗技能时施展次级手雷弹幕。"
           },
           {
             "id": 517,
@@ -3816,7 +3821,7 @@
           {
             "id": 5882,
             "title": "Grenade",
-            "revision": 3123237,
+            "revision": 3218247,
             "label": "普通手雷",
             "rows": [
               {
@@ -3840,7 +3845,7 @@
               },
               {
                 "label": "爆炸半径",
-                "detail": "120",
+                "detail": "180",
                 "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
               },
               {
@@ -3853,34 +3858,12 @@
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
-            ],
-            "modifiers": [
-              {
-                "id": "grenadier-radius",
-                "trait": 514,
-                "priority": 0,
-                "source": {
-                  "kind": "traits",
-                  "id": 514,
-                  "title": "Grenadier",
-                  "revision": 2990846
-                },
-                "changes": [
-                  {
-                    "type": "number",
-                    "label": "爆炸半径",
-                    "factor": 1,
-                    "add": 60
-                  }
-                ],
-                "traitName": "投弹专家"
-              }
             ]
           },
           {
             "id": 5807,
             "title": "Shrapnel_Grenade",
-            "revision": 3128690,
+            "revision": 3218249,
             "label": "破片手雷",
             "rows": [
               {
@@ -3913,7 +3896,7 @@
               },
               {
                 "label": "爆炸半径",
-                "detail": "120",
+                "detail": "180",
                 "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
               },
               {
@@ -3926,34 +3909,12 @@
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
-            ],
-            "modifiers": [
-              {
-                "id": "grenadier-radius",
-                "trait": 514,
-                "priority": 0,
-                "source": {
-                  "kind": "traits",
-                  "id": 514,
-                  "title": "Grenadier",
-                  "revision": 2990846
-                },
-                "changes": [
-                  {
-                    "type": "number",
-                    "label": "爆炸半径",
-                    "factor": 1,
-                    "add": 60
-                  }
-                ],
-                "traitName": "投弹专家"
-              }
             ]
           },
           {
             "id": 5808,
             "title": "Flash_Grenade",
-            "revision": 2777029,
+            "revision": 3218253,
             "label": "闪光手雷",
             "rows": [
               {
@@ -3985,7 +3946,7 @@
               },
               {
                 "label": "爆炸半径",
-                "detail": "120",
+                "detail": "180",
                 "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
               },
               {
@@ -3998,34 +3959,12 @@
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
-            ],
-            "modifiers": [
-              {
-                "id": "grenadier-radius",
-                "trait": 514,
-                "priority": 0,
-                "source": {
-                  "kind": "traits",
-                  "id": 514,
-                  "title": "Grenadier",
-                  "revision": 2990846
-                },
-                "changes": [
-                  {
-                    "type": "number",
-                    "label": "爆炸半径",
-                    "factor": 1,
-                    "add": 60
-                  }
-                ],
-                "traitName": "投弹专家"
-              }
             ]
           },
           {
             "id": 5809,
             "title": "Freeze_Grenade",
-            "revision": 2840067,
+            "revision": 3218254,
             "label": "冰冻手雷",
             "rows": [
               {
@@ -4058,7 +3997,7 @@
               },
               {
                 "label": "爆炸半径",
-                "detail": "120",
+                "detail": "180",
                 "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
               },
               {
@@ -4071,34 +4010,12 @@
                 "detail": "900",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
-            ],
-            "modifiers": [
-              {
-                "id": "grenadier-radius",
-                "trait": 514,
-                "priority": 0,
-                "source": {
-                  "kind": "traits",
-                  "id": 514,
-                  "title": "Grenadier",
-                  "revision": 2990846
-                },
-                "changes": [
-                  {
-                    "type": "number",
-                    "label": "爆炸半径",
-                    "factor": 1,
-                    "add": 60
-                  }
-                ],
-                "traitName": "投弹专家"
-              }
             ]
           },
           {
             "id": 5806,
             "title": "Poison_Grenade",
-            "revision": 2969635,
+            "revision": 3218256,
             "label": "毒气手雷",
             "rows": [
               {
@@ -4131,7 +4048,7 @@
               },
               {
                 "label": "半径",
-                "detail": "120",
+                "detail": "180",
                 "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
               },
               {
@@ -4149,28 +4066,6 @@
                 "detail": "",
                 "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
               }
-            ],
-            "modifiers": [
-              {
-                "id": "grenadier-radius",
-                "trait": 514,
-                "priority": 0,
-                "source": {
-                  "kind": "traits",
-                  "id": 514,
-                  "title": "Grenadier",
-                  "revision": 2990846
-                },
-                "changes": [
-                  {
-                    "type": "number",
-                    "label": "半径",
-                    "factor": 1,
-                    "add": 60
-                  }
-                ],
-                "traitName": "投弹专家"
-              }
             ]
           }
         ]
@@ -4180,7 +4075,7 @@
         "profession": "Engineer",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 3031564,
+        "revision": 3218258,
         "rows": [
           {
             "label": "施法时间",
@@ -4207,7 +4102,7 @@
           },
           {
             "label": "爆炸半径",
-            "detail": "120",
+            "detail": "180",
             "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
           },
           {
@@ -5459,7 +5354,7 @@
         "title": "Elixir_X",
         "profession": "Engineer",
         "identityVerified": true,
-        "revision": 2882042,
+        "revision": 3218276,
         "rows": [
           {
             "label": "施法时间",
@@ -5467,7 +5362,7 @@
           },
           {
             "label": "冷却时间",
-            "detail": "75 秒"
+            "detail": "60 秒"
           },
           {
             "label": "飓风形态",
@@ -6150,7 +6045,7 @@
           {
             "id": 514,
             "name": "投弹专家",
-            "description": "提升手雷的爆炸半径。使用治疗技能时施展次级手雷弹幕。"
+            "description": "提升<c=@abilitytype>爆炸</c>的伤害。使用治疗技能时施展次级手雷弹幕。"
           },
           {
             "id": 518,
@@ -6519,7 +6414,7 @@
           {
             "id": 514,
             "name": "投弹专家",
-            "description": "提升手雷的爆炸半径。使用治疗技能时施展次级手雷弹幕。"
+            "description": "提升<c=@abilitytype>爆炸</c>的伤害。使用治疗技能时施展次级手雷弹幕。"
           },
           {
             "id": 518,
@@ -8623,7 +8518,7 @@
         "profession": "Engineer",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 2689987,
+        "revision": 3218238,
         "rows": [
           {
             "label": "施法时间",
@@ -8631,17 +8526,12 @@
           },
           {
             "label": "冷却时间",
-            "detail": "45 秒"
+            "detail": "30 秒"
           },
           {
             "label": "潜行",
             "detail": "5 秒",
             "icon": "https://render.guildwars2.com/file/3BD4670638470439F3325B444FAF7D5FA620CCE5/62777.png"
-          },
-          {
-            "label": "无法格挡",
-            "detail": "",
-            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           },
           {
             "label": "目标数",
@@ -8657,11 +8547,16 @@
             "label": "射程",
             "detail": "900",
             "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           }
         ],
         "modifiers": [
           {
-            "id": "recharge-1872-5972",
+            "id": "mechanized-deployment-balance-20261110",
             "trait": 1872,
             "priority": 0,
             "source": {
@@ -8863,7 +8758,7 @@
         "profession": "Engineer",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 2372281,
+        "revision": 3218235,
         "rows": [
           {
             "label": "施法时间",
@@ -8871,7 +8766,7 @@
           },
           {
             "label": "冷却时间",
-            "detail": "15 秒"
+            "detail": "20 秒"
           },
           {
             "label": "伤害",
@@ -8890,6 +8785,14 @@
             "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
           },
           {
+            "label": "闪避",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
+          },
+          {
             "label": "射程",
             "detail": "300",
             "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
@@ -8897,7 +8800,7 @@
         ],
         "modifiers": [
           {
-            "id": "recharge-1872-5983",
+            "id": "mechanized-deployment-balance-20261110",
             "trait": 1872,
             "priority": 0,
             "source": {
@@ -8982,6 +8885,82 @@
               }
             ],
             "traitName": "机械部署"
+          }
+        ]
+      },
+      "6003": {
+        "title": "Rifle_Burst",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2956314,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.6",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "穿透",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/F833590B593E0C2D4948DFFE9951B91655250052/1770207.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物 (20% 几率)",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "6004": {
+        "title": "Net_Shot",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217493,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "9 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.25",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "定身",
+            "detail": "4 秒"
+          },
+          {
+            "label": "易伤",
+            "detail": "8 秒 · 8 层 · +8% 受到的伤害, +8% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 8
+          },
+          {
+            "label": "火箭爆裂就绪",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/C7595DEF03CB2EFEFB5FD1DE9599166524725E4E/103938.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -9092,69 +9071,6 @@
         "modifiers": [
           {
             "id": "recharge-1872-6089",
-            "trait": 1872,
-            "priority": 0,
-            "source": {
-              "kind": "traits",
-              "id": 1872,
-              "title": "Mechanized_Deployment",
-              "revision": 3117851
-            },
-            "changes": [
-              {
-                "type": "number",
-                "label": "冷却时间",
-                "factor": 0.85
-              }
-            ],
-            "traitName": "机械部署"
-          }
-        ]
-      },
-      "6090": {
-        "title": "Toss_Elixir_S",
-        "profession": "Engineer",
-        "identityVerified": true,
-        "supplemental": true,
-        "revision": 2689987,
-        "rows": [
-          {
-            "label": "施法时间",
-            "detail": "0.5 秒"
-          },
-          {
-            "label": "冷却时间",
-            "detail": "45 秒"
-          },
-          {
-            "label": "潜行",
-            "detail": "5 秒",
-            "icon": "https://render.guildwars2.com/file/3BD4670638470439F3325B444FAF7D5FA620CCE5/62777.png"
-          },
-          {
-            "label": "无法格挡",
-            "detail": "",
-            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
-          },
-          {
-            "label": "目标数",
-            "detail": "5",
-            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
-          },
-          {
-            "label": "半径",
-            "detail": "180",
-            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
-          },
-          {
-            "label": "射程",
-            "detail": "900",
-            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
-          }
-        ],
-        "modifiers": [
-          {
-            "id": "recharge-1872-6090",
             "trait": 1872,
             "priority": 0,
             "source": {
@@ -9324,6 +9240,59 @@
               }
             ],
             "traitName": "机械部署"
+          }
+        ]
+      },
+      "6154": {
+        "title": "Overcharged_Shot",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217495,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "14 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "火箭爆裂就绪",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/C7595DEF03CB2EFEFB5FD1DE9599166524725E4E/103938.png"
+          },
+          {
+            "label": "症状移除",
+            "detail": ""
+          },
+          {
+            "label": "症状移除",
+            "detail": ""
+          },
+          {
+            "label": "症状移除",
+            "detail": ""
+          },
+          {
+            "label": "击飞距离",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/B4087CEB5CC006172E0A09DADC5452807A0CA3F7/2440712.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "332"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -10925,7 +10894,7 @@
           {
             "id": 514,
             "name": "投弹专家",
-            "description": "提升手雷的爆炸半径。使用治疗技能时施展次级手雷弹幕。"
+            "description": "提升<c=@abilitytype>爆炸</c>的伤害。使用治疗技能时施展次级手雷弹幕。"
           },
           {
             "id": 518,
@@ -12033,7 +12002,7 @@
           {
             "id": 514,
             "name": "投弹专家",
-            "description": "提升手雷的爆炸半径。使用治疗技能时施展次级手雷弹幕。"
+            "description": "提升<c=@abilitytype>爆炸</c>的伤害。使用治疗技能时施展次级手雷弹幕。"
           },
           {
             "id": 518,
@@ -13138,7 +13107,7 @@
           {
             "id": 514,
             "name": "投弹专家",
-            "description": "提升手雷的爆炸半径。使用治疗技能时施展次级手雷弹幕。"
+            "description": "提升<c=@abilitytype>爆炸</c>的伤害。使用治疗技能时施展次级手雷弹幕。"
           },
           {
             "id": 516,
@@ -14167,7 +14136,7 @@
         "title": "Hard_Light_Arena",
         "profession": "Engineer",
         "identityVerified": true,
-        "revision": 3122736,
+        "revision": 3218282,
         "rows": [
           {
             "label": "施法时间",
@@ -14175,7 +14144,7 @@
           },
           {
             "label": "冷却时间",
-            "detail": "35 秒"
+            "detail": "30 秒"
           },
           {
             "label": "热量超过 50% 时提供屏障",
@@ -14621,7 +14590,7 @@
           {
             "id": 514,
             "name": "投弹专家",
-            "description": "提升手雷的爆炸半径。使用治疗技能时施展次级手雷弹幕。"
+            "description": "提升<c=@abilitytype>爆炸</c>的伤害。使用治疗技能时施展次级手雷弹幕。"
           },
           {
             "id": 518,
@@ -16689,7 +16658,7 @@
           {
             "id": 514,
             "name": "投弹专家",
-            "description": "提升手雷的爆炸半径。使用治疗技能时施展次级手雷弹幕。"
+            "description": "提升<c=@abilitytype>爆炸</c>的伤害。使用治疗技能时施展次级手雷弹幕。"
           },
           {
             "id": 518,
@@ -17170,6 +17139,44 @@
         "identityVerified": true,
         "revision": 3077152,
         "rows": []
+      },
+      "81385": {
+        "title": "Rocket_Burst",
+        "profession": "Engineer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3220169,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.95 · 3 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "爆炸",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/450630987A0566D4A7A491EDA4DCDF57D9396854/1770203.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
       }
     }
   }

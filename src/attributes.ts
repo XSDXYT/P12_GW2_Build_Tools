@@ -380,6 +380,7 @@ export function calculateAttributes(
     scaleWith?: Attribute;
   }[] = [];
   const sigilHealingSources: Contribution[] = [];
+  const signetHealingSources: Contribution[] = [];
   const controlDurationSources: Contribution[] = [];
   const stunTraitSources: Contribution[] = [];
   const dazeTraitSources: Contribution[] = [];
@@ -708,18 +709,24 @@ export function calculateAttributes(
         key,
         label: `${skill.name}正在冷却`,
         description: modifierTrait
-          ? `${modifierTrait.name}：${passiveMultiplier !== 1 ? `被动效果提高 ${Math.round((passiveMultiplier - 1) * 100)}%，` : ""}${retainPassive ? "冷却期间仍生效" : "冷却期间失去被动属性"}`
-          : "冷却期间失去被动属性；未勾选时按技能就绪计算",
+          ? `${modifierTrait.name}：${passiveMultiplier !== 1 ? `被动效果提高 ${Math.round((passiveMultiplier - 1) * 100)}%，` : ""}${retainPassive ? "冷却期间仍生效" : "冷却期间失去被动效果"}`
+          : "冷却期间失去被动效果，未勾选时按技能就绪计算",
       });
       if (
         (!preview.flags[key] || retainPassive) &&
         !(suppression && preview.flags[suppression.key])
-      )
-        deferred.push({
-          key: signet.target,
-          amount: Math.round(signet.amount * passiveMultiplier),
-          label: `${skill.name} · 被动${modifierTrait ? `（${modifierTrait.name}）` : ""}`,
-        });
+      ) {
+        const amount = signet.amount * passiveMultiplier;
+        const label = `${skill.name} · 被动${modifierTrait ? `（${modifierTrait.name}）` : ""}`;
+        if (signet.target === "outgoingHealing")
+          signetHealingSources.push({ label, amount });
+        else
+          deferred.push({
+            key: signet.target,
+            amount: Math.round(amount),
+            label,
+          });
+      }
       continue;
     }
     if (nonAttributeSignets[id]) continue;
@@ -921,6 +928,7 @@ export function calculateAttributes(
     ...consumableHealingSources,
     ...sigilHealingSources,
     ...mechanicHealingSources,
+    ...signetHealingSources,
     ...traitHealing.map(({ label, amount, scaleWith }) => ({
       label: scaleWith
         ? `${label} · ${attributeLabels[scaleWith]} × ${amount}% ÷ 100`

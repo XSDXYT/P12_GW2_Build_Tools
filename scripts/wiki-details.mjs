@@ -39,6 +39,11 @@ const terms = {
   Range: "射程",
   "Conditions Removed": "症状移除",
   "Boons Removed": "增益移除",
+  "Maximum Damage Increase": "最大伤害提升",
+  "Strike Damage per Blade Spent": "每把消耗灵刃的打击伤害",
+  "First Hit Burning": "首次命中燃烧",
+  "Additional Hit Burning": "额外命中燃烧",
+  "Bonus Damage per Vulnerability Stack": "每层易伤额外伤害",
   "Recharge Time Reduced": "冷却时间缩短",
   "Recharge Time": "冷却时间",
   "Maximum Effect Duration": "效果最长持续时间",
@@ -845,6 +850,14 @@ export function parseWikiPage(
       rows.push({ label: "演奏联动", detail: performance });
       return;
     }
+    if (text === "Boon Removed") {
+      const boonLink = row.find('a[href^="/wiki/"]').first().attr("href");
+      const name = terms[boonLink?.slice(6)];
+      if (name) {
+        rows.push({ label: "可移除的增益", detail: name });
+        return;
+      }
+    }
     const split = text.indexOf(":");
     const lhs = split < 0 ? text : text.slice(0, split).trim();
     const rhs =
@@ -884,7 +897,13 @@ export function parseWikiPage(
         "greater than 900": "距离大于900时",
       }[distanceBleeding[1]];
     }
-    if (id === 12468 && /^(?:\d+ )?Attack from Behind$/.test(baseLabel)) {
+    if (id === 12468 && /^(?:\d+ )?Enhanced Poison$/.test(baseLabel)) {
+      baseLabel = "Poison";
+      rowCondition = "目标移动受限、受到控制或拥有蔑视条时";
+    } else if (
+      id === 12468 &&
+      /^(?:\d+ )?Attack from Behind$/.test(baseLabel)
+    ) {
       baseLabel = "Poison";
       rowCondition = "从侧面或背后攻击，或攻击拥有蔑视条的敌人时";
     }
@@ -961,7 +980,9 @@ export function parseWikiPage(
       if (
         (intensity.has(baseLabel) ||
           intensity.has(boon) ||
-          /(?:Stability|Vulnerability|Might|Bleeding)$/.test(baseLabel) ||
+          /(?:Stability|Vulnerability|Might|Bleeding|Burning)$/.test(
+            baseLabel,
+          ) ||
           /^Adrenaline Stage/.test(baseLabel) ||
           row.find("sub").length) &&
         count

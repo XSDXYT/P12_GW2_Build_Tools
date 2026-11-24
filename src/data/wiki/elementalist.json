@@ -533,7 +533,7 @@
         "title": "Elemental_Attunement",
         "profession": "Elementalist",
         "identityVerified": true,
-        "revision": 3113696,
+        "revision": 3218190,
         "rows": [
           {
             "label": "火焰协调 · 威能",
@@ -573,6 +573,7 @@
           2090,
           2382
         ],
+        "description": "切换到不同元素时，延长该协调提供的增益，并将其施加给附近盟友。",
         "selectedTraitNotes": [
           {
             "id": 334,
@@ -1708,7 +1709,7 @@
           {
             "id": 264,
             "name": "元素协调",
-            "description": "切换协调时给附近盟友提供增益。\n注意：切换至同一种元素的协调时无法触发该效果。"
+            "description": "切换到不同元素时，延长该协调提供的增益，并将其施加给附近盟友。"
           },
           {
             "id": 1673,
@@ -2225,11 +2226,11 @@
         "title": "Transcendent_Tempest",
         "profession": "Elementalist",
         "identityVerified": true,
-        "revision": 3128201,
+        "revision": 3218197,
         "rows": [
           {
             "label": "超验风暴",
-            "detail": "7 秒 · +25% 伤害, +20% 症状伤害",
+            "detail": "7 秒 · +25% 伤害, +25% 症状伤害",
             "icon": "https://render.guildwars2.com/file/0C79A761B446E53CAB6DA4B320D12D656B5E1151/2207773.png"
           },
           {
@@ -2311,7 +2312,7 @@
         "title": "Tempestuous_Aria",
         "profession": "Elementalist",
         "identityVerified": true,
-        "revision": 2810667,
+        "revision": 3218196,
         "rows": [
           {
             "label": "威能",
@@ -2321,7 +2322,7 @@
           },
           {
             "label": "暴风咏叹",
-            "detail": "5 秒 · +10% 伤害, +5% 症状伤害",
+            "detail": "5 秒 · +10% 伤害, +7% 症状伤害",
             "icon": "https://render.guildwars2.com/file/0C2A72B848A7FBB596DE6096B4C45814D3266EEB/1029946.png"
           },
           {
@@ -2421,7 +2422,7 @@
           {
             "id": 264,
             "name": "元素协调",
-            "description": "切换协调时给附近盟友提供增益。\n注意：切换至同一种元素的协调时无法触发该效果。"
+            "description": "切换到不同元素时，延长该协调提供的增益，并将其施加给附近盟友。"
           },
           {
             "id": 1673,
@@ -2935,7 +2936,7 @@
           {
             "id": 264,
             "name": "元素协调",
-            "description": "切换协调时给附近盟友提供增益。\n注意：切换至同一种元素的协调时无法触发该效果。"
+            "description": "切换到不同元素时，延长该协调提供的增益，并将其施加给附近盟友。"
           },
           {
             "id": 2165,
@@ -2989,11 +2990,11 @@
         "title": "Elements_of_Rage",
         "profession": "Elementalist",
         "identityVerified": true,
-        "revision": 3178805,
+        "revision": 3218201,
         "rows": [
           {
             "label": "愤怒元素",
-            "detail": "8 秒 · +15% 伤害, +10% 症状伤害",
+            "detail": "8 秒 · +12% 伤害, +7% 症状伤害",
             "icon": "https://render.guildwars2.com/file/4269910A34FB0FB861DAE2A13229D594523B0BA0/1769921.png"
           }
         ]
@@ -3070,7 +3071,7 @@
           {
             "id": 264,
             "name": "元素协调",
-            "description": "切换协调时给附近盟友提供增益。\n注意：切换至同一种元素的协调时无法触发该效果。"
+            "description": "切换到不同元素时，延长该协调提供的增益，并将其施加给附近盟友。"
           },
           {
             "id": 2061,
@@ -3553,7 +3554,7 @@
         "title": "Familiar's_Focus",
         "profession": "Elementalist",
         "identityVerified": true,
-        "revision": 3170926,
+        "revision": 3218217,
         "rows": [
           {
             "label": "魔宠威勇",
@@ -3567,7 +3568,7 @@
           },
           {
             "label": "魔宠威勇",
-            "detail": "+10% 伤害",
+            "detail": "+12% 伤害",
             "icon": "https://render.guildwars2.com/file/18964AD8371C1FB3160A7779D0AA0120B9FFABBB/3679942.png"
           },
           {
@@ -3837,7 +3838,7 @@
         "title": "Specialized_Elements",
         "profession": "Elementalist",
         "identityVerified": true,
-        "revision": 3205721,
+        "revision": 3218220,
         "rows": [
           {
             "label": "充能魔宠的技能次数",
@@ -3851,7 +3852,7 @@
           },
           {
             "label": "强化技能充能",
-            "detail": "33%",
+            "detail": "20%",
             "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png"
           }
         ]
@@ -4025,12 +4026,56 @@
           }
         ]
       },
+      "5491": {
+        "title": "Fireball",
+        "profession": "Elementalist",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217601,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.4",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
       "5492": {
         "title": "Fire_Attunement",
         "profession": "Elementalist",
         "identityVerified": true,
-        "revision": 3207764,
-        "rows": [],
+        "revision": 3218186,
+        "rows": [
+          {
+            "label": "威能",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png"
+          }
+        ],
         "relatedTraits": [
           320,
           318,
@@ -4090,7 +4135,7 @@
           {
             "id": 264,
             "name": "元素协调",
-            "description": "切换协调时给附近盟友提供增益。\n注意：切换至同一种元素的协调时无法触发该效果。"
+            "description": "切换到不同元素时，延长该协调提供的增益，并将其施加给附近盟友。"
           },
           {
             "id": 2004,
@@ -4142,14 +4187,45 @@
             "name": "特长元素",
             "description": "你无法离开你选择的协调。你的魔宠的基础技能充能更快，激活基础技能后少量减少武器技能的冷却时间。激活魔宠的强化技能后减少武器技能的冷却时间，并像你进入该协调时一样触发特性。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "elemental-attunement-5492",
+            "trait": 264,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 264,
+              "title": "Elemental_Attunement",
+              "revision": 3218190
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "威能",
+                "row": {
+                  "label": "威能",
+                  "detail": "15 秒",
+                  "recipient": "自身与附近盟友（最多5名，半径240）",
+                  "trigger": "切换至不同元素时"
+                }
+              }
+            ],
+            "traitName": "元素协调"
+          }
         ]
       },
       "5493": {
         "title": "Water_Attunement",
         "profession": "Elementalist",
         "identityVerified": true,
-        "revision": 3207765,
-        "rows": [],
+        "revision": 3218184,
+        "rows": [
+          {
+            "label": "再生",
+            "detail": "3 秒"
+          }
+        ],
         "relatedTraits": [
           350,
           363,
@@ -4198,7 +4274,7 @@
           {
             "id": 264,
             "name": "元素协调",
-            "description": "切换协调时给附近盟友提供增益。\n注意：切换至同一种元素的协调时无法触发该效果。"
+            "description": "切换到不同元素时，延长该协调提供的增益，并将其施加给附近盟友。"
           },
           {
             "id": 2004,
@@ -4255,14 +4331,46 @@
             "name": "特长元素",
             "description": "你无法离开你选择的协调。你的魔宠的基础技能充能更快，激活基础技能后少量减少武器技能的冷却时间。激活魔宠的强化技能后减少武器技能的冷却时间，并像你进入该协调时一样触发特性。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "elemental-attunement-5493",
+            "trait": 264,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 264,
+              "title": "Elemental_Attunement",
+              "revision": 3218190
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "再生",
+                "row": {
+                  "label": "再生",
+                  "detail": "5 秒",
+                  "recipient": "自身与附近盟友（最多5名，半径240）",
+                  "trigger": "切换至不同元素时"
+                }
+              }
+            ],
+            "traitName": "元素协调"
+          }
         ]
       },
       "5494": {
         "title": "Air_Attunement",
         "profession": "Elementalist",
         "identityVerified": true,
-        "revision": 3207766,
-        "rows": [],
+        "revision": 3218182,
+        "rows": [
+          {
+            "label": "迅捷",
+            "detail": "5 秒 · +33% 移动速度",
+            "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png"
+          }
+        ],
         "relatedTraits": [
           221,
           224,
@@ -4322,7 +4430,7 @@
           {
             "id": 264,
             "name": "元素协调",
-            "description": "切换协调时给附近盟友提供增益。\n注意：切换至同一种元素的协调时无法触发该效果。"
+            "description": "切换到不同元素时，延长该协调提供的增益，并将其施加给附近盟友。"
           },
           {
             "id": 2004,
@@ -4374,14 +4482,46 @@
             "name": "特长元素",
             "description": "你无法离开你选择的协调。你的魔宠的基础技能充能更快，激活基础技能后少量减少武器技能的冷却时间。激活魔宠的强化技能后减少武器技能的冷却时间，并像你进入该协调时一样触发特性。"
           }
+        ],
+        "modifiers": [
+          {
+            "id": "elemental-attunement-5494",
+            "trait": 264,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 264,
+              "title": "Elemental_Attunement",
+              "revision": 3218190
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "迅捷",
+                "row": {
+                  "label": "迅捷",
+                  "detail": "8 秒 · +33% 移动速度",
+                  "recipient": "自身与附近盟友（最多5名，半径240）",
+                  "trigger": "切换至不同元素时"
+                }
+              }
+            ],
+            "traitName": "元素协调"
+          }
         ]
       },
       "5495": {
         "title": "Earth_Attunement",
         "profession": "Elementalist",
         "identityVerified": true,
-        "revision": 3207767,
-        "rows": [],
+        "revision": 3218179,
+        "rows": [
+          {
+            "label": "保护",
+            "detail": "3 秒 · -33% 受到的伤害",
+            "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png"
+          }
+        ],
         "relatedTraits": [
           278,
           279,
@@ -4435,7 +4575,7 @@
           {
             "id": 264,
             "name": "元素协调",
-            "description": "切换协调时给附近盟友提供增益。\n注意：切换至同一种元素的协调时无法触发该效果。"
+            "description": "切换到不同元素时，延长该协调提供的增益，并将其施加给附近盟友。"
           },
           {
             "id": 2004,
@@ -4486,6 +4626,32 @@
             "id": 2437,
             "name": "特长元素",
             "description": "你无法离开你选择的协调。你的魔宠的基础技能充能更快，激活基础技能后少量减少武器技能的冷却时间。激活魔宠的强化技能后减少武器技能的冷却时间，并像你进入该协调时一样触发特性。"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "elemental-attunement-5495",
+            "trait": 264,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 264,
+              "title": "Elemental_Attunement",
+              "revision": 3218190
+            },
+            "changes": [
+              {
+                "type": "replace",
+                "label": "保护",
+                "row": {
+                  "label": "保护",
+                  "detail": "5 秒 · -33% 受到的伤害",
+                  "recipient": "自身与附近盟友（最多5名，半径240）",
+                  "trigger": "切换至不同元素时"
+                }
+              }
+            ],
+            "traitName": "元素协调"
           }
         ]
       },
@@ -4621,7 +4787,7 @@
         "profession": "Elementalist",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 3020993,
+        "revision": 3218065,
         "rows": [
           {
             "label": "施法时间",
@@ -4633,7 +4799,7 @@
           },
           {
             "label": "伤害",
-            "detail": "系数 ×1.6",
+            "detail": "系数 ×2.0",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
@@ -5707,6 +5873,67 @@
           }
         ]
       },
+      "5518": {
+        "title": "Chain_Lightning",
+        "profession": "Elementalist",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217604,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.8",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "弹跳次数",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "5519": {
+        "title": "Stoning",
+        "profession": "Elementalist",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217667,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.2",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "虚弱",
+            "detail": "3 秒 · -50% 耐力回复速度, +50% 非限定攻击失手几率",
+            "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
       "5520": {
         "title": "Frost_Aura",
         "profession": "Elementalist",
@@ -6017,7 +6244,7 @@
         "profession": "Elementalist",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 2842800,
+        "revision": 3218059,
         "rows": [
           {
             "label": "施法时间",
@@ -7809,68 +8036,6 @@
           }
         ]
       },
-      "5552": {
-        "title": "Lightning_Surge",
-        "profession": "Elementalist",
-        "identityVerified": true,
-        "supplemental": true,
-        "revision": 3021321,
-        "rows": [
-          {
-            "label": "施法时间",
-            "detail": "1 秒"
-          },
-          {
-            "label": "冷却时间",
-            "detail": "10 秒"
-          },
-          {
-            "label": "伤害",
-            "detail": "系数 ×1.8",
-            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
-          },
-          {
-            "label": "目盲",
-            "detail": "5 秒"
-          },
-          {
-            "label": "目标数",
-            "detail": "5",
-            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
-          },
-          {
-            "label": "半径",
-            "detail": "180",
-            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
-          },
-          {
-            "label": "射程",
-            "detail": "1,200",
-            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
-          }
-        ],
-        "modifiers": [
-          {
-            "id": "recharge-223-5552",
-            "trait": 223,
-            "priority": 0,
-            "source": {
-              "kind": "traits",
-              "id": 223,
-              "title": "Aeromancer's_Training",
-              "revision": 2839323
-            },
-            "changes": [
-              {
-                "type": "number",
-                "label": "冷却时间",
-                "factor": 0.8
-              }
-            ],
-            "traitName": "风使训练"
-          }
-        ]
-      },
       "5553": {
         "title": "Gust",
         "profession": "Elementalist",
@@ -8978,7 +9143,7 @@
         "title": "Signet_of_Water",
         "profession": "Elementalist",
         "identityVerified": true,
-        "revision": 3021356,
+        "revision": 3218056,
         "rows": [
           {
             "label": "施法时间",
@@ -8989,43 +9154,28 @@
             "detail": "20 秒"
           },
           {
-            "label": "伤害",
-            "detail": "系数 ×0.5",
-            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
-          },
-          {
             "label": "治疗",
-            "detail": "1940 + 1.3 × 治疗效果",
+            "detail": "2708 + 1.3 × 治疗效果",
             "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
             "healing": {
-              "base": 1940,
+              "base": 2708,
               "coefficient": 1.3
             }
           },
           {
-            "label": "复活加成",
-            "detail": "5%",
-            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
-          },
-          {
-            "label": "冰冻",
-            "detail": "3 秒 · -66% 技能冷却恢复速度, -66% 移动速度",
-            "icon": "https://render.guildwars2.com/file/28C4EC547A3516AF0242E826772DA43A5EAC3DF3/102839.png"
-          },
-          {
             "label": "流水纹章",
-            "detail": "缩短受到的症状持续时间",
+            "detail": "+10% 增加对其他人的治疗",
             "icon": "https://render.guildwars2.com/file/950EABEE51A5B7E116609A2C4869B2BDF3760ED1/103351.png"
           },
           {
             "label": "症状移除",
-            "detail": "3",
+            "detail": "4",
             "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           },
           {
-            "label": "症状持续时间减少",
-            "detail": "20%",
-            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+            "label": "增加对其他人的治疗",
+            "detail": "10%",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png"
           },
           {
             "label": "目标数",
@@ -11552,74 +11702,6 @@
           }
         ]
       },
-      "5679": {
-        "title": "Flame_Burst",
-        "profession": "Elementalist",
-        "identityVerified": true,
-        "supplemental": true,
-        "revision": 3020994,
-        "rows": [
-          {
-            "label": "施法时间",
-            "detail": "0.5 秒"
-          },
-          {
-            "label": "冷却时间",
-            "detail": "10 秒"
-          },
-          {
-            "label": "伤害",
-            "detail": "系数 ×1.0",
-            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
-          },
-          {
-            "label": "燃烧",
-            "detail": "6 秒 · 3 层",
-            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
-            "stacks": 3
-          },
-          {
-            "label": "目盲",
-            "detail": "3 秒"
-          },
-          {
-            "label": "目标数",
-            "detail": "5",
-            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
-          },
-          {
-            "label": "半径",
-            "detail": "240",
-            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
-          },
-          {
-            "label": "射程",
-            "detail": "1,200",
-            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
-          }
-        ],
-        "modifiers": [
-          {
-            "id": "recharge-319-5679",
-            "trait": 319,
-            "priority": 0,
-            "source": {
-              "kind": "traits",
-              "id": 319,
-              "title": "Pyromancer's_Training",
-              "revision": 3128164
-            },
-            "changes": [
-              {
-                "type": "number",
-                "label": "冷却时间",
-                "factor": 0.8
-              }
-            ],
-            "traitName": "火使训练"
-          }
-        ]
-      },
       "5680": {
         "title": "Burning_Retreat",
         "profession": "Elementalist",
@@ -11891,73 +11973,6 @@
         "modifiers": [
           {
             "id": "recharge-280-5685",
-            "trait": 280,
-            "priority": 0,
-            "source": {
-              "kind": "traits",
-              "id": 280,
-              "title": "Geomancer's_Training",
-              "revision": 2631693
-            },
-            "changes": [
-              {
-                "type": "number",
-                "label": "冷却时间",
-                "factor": 0.8
-              }
-            ],
-            "traitName": "地使训练"
-          }
-        ]
-      },
-      "5686": {
-        "title": "Shock_Wave",
-        "profession": "Elementalist",
-        "identityVerified": true,
-        "supplemental": true,
-        "revision": 2584593,
-        "rows": [
-          {
-            "label": "施法时间",
-            "detail": "0.75 秒"
-          },
-          {
-            "label": "冷却时间",
-            "detail": "25 秒"
-          },
-          {
-            "label": "伤害",
-            "detail": "系数 ×2.5",
-            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
-          },
-          {
-            "label": "流血",
-            "detail": "20 秒",
-            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png"
-          },
-          {
-            "label": "定身",
-            "detail": "2 秒"
-          },
-          {
-            "label": "目标数",
-            "detail": "5",
-            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
-          },
-          {
-            "label": "组合技终结",
-            "detail": "物理投射物",
-            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
-          },
-          {
-            "label": "射程",
-            "detail": "1,200",
-            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
-          }
-        ],
-        "modifiers": [
-          {
-            "id": "recharge-280-5686",
             "trait": 280,
             "priority": 0,
             "source": {
@@ -12941,7 +12956,7 @@
         "profession": "Elementalist",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 2958386,
+        "revision": 3218067,
         "rows": [
           {
             "label": "施法时间",
@@ -12958,7 +12973,7 @@
           },
           {
             "label": "燃烧",
-            "detail": "3 秒",
+            "detail": "2.5 秒",
             "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
           },
           {
@@ -13113,7 +13128,7 @@
           {
             "id": 1891,
             "name": "暴风咏叹",
-            "description": "使用战吼使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
+            "description": "使用<c=@abilitytype>战吼</c>使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
           }
         ]
       },
@@ -13277,7 +13292,7 @@
           {
             "id": 1891,
             "name": "暴风咏叹",
-            "description": "使用战吼使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
+            "description": "使用<c=@abilitytype>战吼</c>使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
           },
           {
             "id": 2015,
@@ -13407,7 +13422,7 @@
           {
             "id": 1891,
             "name": "暴风咏叹",
-            "description": "使用战吼使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
+            "description": "使用<c=@abilitytype>战吼</c>使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
           },
           {
             "id": 2015,
@@ -13554,7 +13569,7 @@
           {
             "id": 1891,
             "name": "暴风咏叹",
-            "description": "使用战吼使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
+            "description": "使用<c=@abilitytype>战吼</c>使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
           }
         ]
       },
@@ -13563,7 +13578,7 @@
         "profession": "Elementalist",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 2938136,
+        "revision": 3218069,
         "rows": [
           {
             "label": "施法时间",
@@ -13767,7 +13782,7 @@
           {
             "id": 1891,
             "name": "暴风咏叹",
-            "description": "使用战吼使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
+            "description": "使用<c=@abilitytype>战吼</c>使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
           },
           {
             "id": 2015,
@@ -13981,7 +13996,7 @@
           {
             "id": 1891,
             "name": "暴风咏叹",
-            "description": "使用战吼使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
+            "description": "使用<c=@abilitytype>战吼</c>使盟友获得威能。向盟友施加一个光环会在短时间内增加你的造成伤害。"
           },
           {
             "id": 2015,
@@ -18655,6 +18670,106 @@
           }
         ]
       },
+      "72906": {
+        "title": "Shale_Storm",
+        "profession": "Elementalist",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3218209,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "18 秒"
+          },
+          {
+            "label": "页岩风暴",
+            "detail": "5 秒"
+          },
+          {
+            "label": "冷却时间 降低",
+            "detail": "100%"
+          },
+          {
+            "label": "持续时间",
+            "detail": "3 秒"
+          },
+          {
+            "label": "半径",
+            "detail": "240"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.0"
+          },
+          {
+            "label": "目盲",
+            "detail": "3 秒"
+          },
+          {
+            "label": "致残",
+            "detail": "5 秒 · -50% 移动速度"
+          },
+          {
+            "label": "目标数",
+            "detail": "5"
+          },
+          {
+            "label": "半径",
+            "detail": "180"
+          }
+        ]
+      },
+      "72914": {
+        "title": "Fiery_Impact",
+        "profession": "Elementalist",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3218204,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "15 秒"
+          },
+          {
+            "label": "炽焰冲击",
+            "detail": "5 秒"
+          },
+          {
+            "label": "稳固",
+            "detail": "4 秒"
+          },
+          {
+            "label": "冷却时间 降低",
+            "detail": "100%"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.25"
+          },
+          {
+            "label": "燃烧",
+            "detail": "5 秒"
+          },
+          {
+            "label": "流血",
+            "detail": "6 秒 · 3 层",
+            "stacks": 3
+          },
+          {
+            "label": "目标数",
+            "detail": "5"
+          },
+          {
+            "label": "半径",
+            "detail": "180"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "爆炸",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          }
+        ]
+      },
       "72915": {
         "title": "Etching:_Derecho",
         "profession": "Elementalist",
@@ -19454,6 +19569,48 @@
               }
             ],
             "traitName": "风使训练"
+          }
+        ]
+      },
+      "73104": {
+        "title": "Galvanize",
+        "profession": "Elementalist",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3218203,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "意气风发",
+            "detail": "5 秒"
+          },
+          {
+            "label": "威能",
+            "detail": "6 秒 · 3 层",
+            "stacks": 3
+          },
+          {
+            "label": "奔驰疾速",
+            "detail": "3 秒"
+          },
+          {
+            "label": "冷却时间 降低",
+            "detail": "100%"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×3.1"
+          },
+          {
+            "label": "目标数",
+            "detail": "5"
+          },
+          {
+            "label": "半径",
+            "detail": "180"
           }
         ]
       },
@@ -20303,7 +20460,7 @@
               "kind": "traits",
               "id": 2437,
               "title": "Specialized_Elements",
-              "revision": 3205721
+              "revision": 3218220
             },
             "changes": [
               {
@@ -20387,14 +20544,14 @@
               "kind": "traits",
               "id": 2437,
               "title": "Specialized_Elements",
-              "revision": 3205721
+              "revision": 3218220
             },
             "changes": [
               {
                 "type": "append",
                 "row": {
                   "label": "武器技能冷却缩短",
-                  "detail": "33%",
+                  "detail": "20%",
                   "trigger": "激活该强化魔宠技能时"
                 }
               },
@@ -21057,7 +21214,7 @@
               "kind": "traits",
               "id": 2437,
               "title": "Specialized_Elements",
-              "revision": 3205721
+              "revision": 3218220
             },
             "changes": [
               {
@@ -21140,7 +21297,7 @@
               "kind": "traits",
               "id": 2437,
               "title": "Specialized_Elements",
-              "revision": 3205721
+              "revision": 3218220
             },
             "changes": [
               {
@@ -21316,14 +21473,14 @@
               "kind": "traits",
               "id": 2437,
               "title": "Specialized_Elements",
-              "revision": 3205721
+              "revision": 3218220
             },
             "changes": [
               {
                 "type": "append",
                 "row": {
                   "label": "武器技能冷却缩短",
-                  "detail": "33%",
+                  "detail": "20%",
                   "trigger": "激活该强化魔宠技能时"
                 }
               },
@@ -21388,7 +21545,7 @@
               "kind": "traits",
               "id": 2437,
               "title": "Specialized_Elements",
-              "revision": 3205721
+              "revision": 3218220
             },
             "changes": [
               {
@@ -21473,6 +21630,212 @@
             "id": 2170,
             "name": "加固元素",
             "description": "激活姿态时获得保护。使用精英技能时，激活次级岩石共振。"
+          }
+        ]
+      },
+      "81423": {
+        "title": "Fire_Blast",
+        "profession": "Elementalist",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217557,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "10 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.75",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "6 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+            "stacks": 3
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-319-81423",
+            "trait": 319,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 319,
+              "title": "Pyromancer's_Training",
+              "revision": 3128164
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "火使训练"
+          }
+        ]
+      },
+      "81440": {
+        "title": "Lightning_Surge",
+        "profession": "Elementalist",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217665,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "10 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.75",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "目盲",
+            "detail": "3 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-223-81440",
+            "trait": 223,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 223,
+              "title": "Aeromancer's_Training",
+              "revision": 2839323
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "风使训练"
+          }
+        ]
+      },
+      "81444": {
+        "title": "Shock_Wave",
+        "profession": "Elementalist",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3218062,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "25 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "定身",
+            "detail": "2 秒"
+          },
+          {
+            "label": "晕眩",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "100"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "controlRule": {
+          "title": "Shock_Wave",
+          "revision": 3218062,
+          "control": {
+            "label": "晕眩",
+            "seconds": 1
+          },
+          "defiance": 100
+        },
+        "modifiers": [
+          {
+            "id": "recharge-280-81444",
+            "trait": 280,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 280,
+              "title": "Geomancer's_Training",
+              "revision": 2631693
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.8
+              }
+            ],
+            "traitName": "地使训练"
           }
         ]
       }

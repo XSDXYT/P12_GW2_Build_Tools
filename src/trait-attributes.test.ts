@@ -103,7 +103,7 @@ test("Wiki直接属性与转换不从API混合facts回退；九项来源合计�
   }
 });
 
-test("守护：狂热利刃基础威力在转换后，巨剑部分在转换前；急速三属性可取消", () => {
+test("守护：狂热利刃区分转换先后，急速灌注提供盟友治疗倍率", () => {
   const b = build(653);
   b.utility = 48917;
   assert.equal(calc(b).primary.ConditionDamage, 60);
@@ -111,9 +111,9 @@ test("守护：狂热利刃基础威力在转换后，巨剑部分在转换前�
   assert.equal(calc(b).primary.ConditionDamage, 64); // Reads the conditional 120, excludes the baseline 120.
   const g = build(2148),
     p = { ...emptyPreview(), flags: { quickness: true } };
-  for (const k of ["ConditionDamage", "Healing", "Vitality"] as const)
-    assert.equal(contribution(g, k, 2148, p), 250);
-  assert.equal(contribution(g, "Vitality", 2148), 0);
+  assert.deepEqual(calc(g, p).primary, calc(g).primary);
+  assert.equal(calc(g, p).outgoingHealingBonus, 10);
+  assert.equal(calc(g).outgoingHealingBonus, 0);
 });
 
 test("战士：激怒症伤和流血暴击独立；威能额外威力不进入属性转换", () => {
@@ -247,7 +247,14 @@ test("唤灵：甲壳每层20坚韧与10威力/症伤，合法层数0–30；症
     ...emptyPreview(),
     stacks: { targetConditions: 99 },
   });
-  assert.ok(c.criticalSources.some((s) => s.amount === 28));
+  assert.ok(c.criticalSources.some((s) => s.amount === 20));
+  assert.equal(
+    criticalContribution(build(810), 810, {
+      ...emptyPreview(),
+      stacks: { targetConditions: 2 },
+    }),
+    8,
+  );
   assert.equal(contribution(build(810), "ConditionDamage", 810), 153); // Furious Demise adds 180 precision first.
 });
 
@@ -300,37 +307,30 @@ test("额外核实：现身额外威力、终焉仪式三种互斥血线与宠�
   );
 });
 
-test("魂武：生命调谐120治疗参与自身7%转换；帝国分裂血线预览互斥", () => {
+test("魂武：生命调谐120治疗参与自身7%转换，迎难而上跟随耐力", () => {
   const b = build(1821);
   assert.equal(contribution(b, "Healing", 1821), 120);
   assert.equal(contribution(b, "BoonDuration", 1821), 8);
   const e = build(2229),
-    hi = calc(e),
-    lo = calc(e, { ...emptyPreview(), flags: { healthBelow50: true } });
-  assert.equal(hi.primary.Power - lo.primary.Power, 240);
-  assert.equal(lo.primary.Healing - hi.primary.Healing, 240);
+    full = calc(e),
+    below = calc(e, { ...emptyPreview(), flags: { enduranceBelowFull: true } });
+  assert.deepEqual(full.primary, below.primary);
+  assert.equal(full.outgoingHealingBonus, 0);
+  assert.equal(below.outgoingHealingBonus, 10);
   assert.equal(contribution(build(1770), "Power", 1770), 130);
 });
 
 test("新增属性实时进入技能治疗/增益与症状时长详情；条件不写入版本1或分享", () => {
-  const b = build(2148),
+  const b = build(1931),
     original = structuredClone(b),
     hash = encodeShare(b),
-    p = { ...emptyPreview(), flags: { quickness: true } };
+    p = { ...emptyPreview(), flags: { healthBelow50: true } };
   const r = calc(b, p),
     base = calc(b);
   const details = (hp: number) =>
-    gameDetails(
-      {
-        id: catalog.skills.find(
-          (s) => s.professions?.includes("Guardian") && s.type === "Heal",
-        )!.id,
-        name: "治疗技能",
-      },
-      "skill",
-      new Set(),
-      { healingPower: hp },
-    );
+    gameDetails({ id: 10527, name: "鲜血法池" }, "skill", new Set(), {
+      healingPower: hp,
+    });
   const healed = details(r.primary.Healing).facts.find((f) => f.scaling),
     unbuffed = details(base.primary.Healing).facts.find(
       (f) => f.label === healed?.label,
@@ -406,7 +406,7 @@ test("本轮恢复的武器、腰带与圣咏仅降低Wiki对应冷却；首次/
     ).facts.find((f) => f.label === label)!;
   for (const [id, trait, base, changed] of [
     [5530, 223, "30 秒", "24 秒"],
-    [5679, 319, "10 秒", "8 秒"],
+    [81423, 319, "10 秒", "8 秒"],
     [5597, 319, "8 秒", "6.4 秒"],
     [5566, 319, "10 秒", "8 秒"],
     [5824, 1872, "20 秒", "17 秒"],
@@ -503,22 +503,27 @@ test("工程激怒与距离门槛独立，机甲翠玉加农炮不增加玩家�
   assert.equal(criticalContribution(build(2279), 2279, p), 0);
 });
 
-test("游侠和盗贼侧背面或蔑视条件只加一次；敏锐观察面板只含常驻暴击率", () => {
-  for (const [id, amount] of [
-    [1068, 10],
-    [1268, 7],
-  ]) {
+test("游侠和盗贼只在触发后的效果期间获得暴击率，敏锐观察只计常驻部分", () => {
+  for (const [id, key, amount] of [
+    [1068, "huntersTacticsActive", 10],
+    [1268, "twinFangsActive", 7],
+  ] as const) {
     const b = build(id);
     assert.equal(criticalContribution(b, id), 0);
-    for (const flags of [
-      { targetFlanked: true, targetDefiant: false },
-      { targetFlanked: false, targetDefiant: true },
-      { targetFlanked: true, targetDefiant: true },
-    ])
-      assert.equal(
-        criticalContribution(b, id, { ...emptyPreview(), flags }),
-        amount,
-      );
+    assert.equal(
+      criticalContribution(b, id, {
+        ...emptyPreview(),
+        flags: { targetFlanked: true, targetDefiant: true },
+      }),
+      0,
+    );
+    assert.equal(
+      criticalContribution(b, id, {
+        ...emptyPreview(),
+        flags: { [key]: true },
+      }),
+      amount,
+    );
   }
   const b = build(1281);
   assert.equal(criticalContribution(b, 1281), 10);

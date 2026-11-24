@@ -44,6 +44,9 @@ const gates = new Set([
   "hiddenKiller",
   "dangerTime",
   "enduranceFull",
+  "enduranceBelowFull",
+  "huntersTacticsActive",
+  "twinFangsActive",
   "celestialAvatar",
   "playerShroud",
 ]);

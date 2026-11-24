@@ -165,7 +165,7 @@ test("战斗中与魔宠触发保留条件，不把冷却缩短当成常驻；�
     fact(76643, [2437], "固定时长额外燃烧", { conditionDuration: 100 })?.detail,
     "0.5 秒",
   );
-  assert.equal(fact(77357, [2437], "武器技能冷却缩短")?.detail, "33%");
+  assert.equal(fact(77357, [2437], "武器技能冷却缩短")?.detail, "20%");
   assert.equal(fact(77277, [], "区域燃烧")?.detail, "1 秒");
   assert.equal(
     fact(77277, [2431], "区域燃烧", { conditionDuration: 100 })?.detail,
@@ -305,7 +305,7 @@ test("唤灵师帷幕冷却、分技能增强、屏障和沙影目标分别计�
   assert.equal(fact(42297, [2112], "同时存在的沙影")?.detail, "1");
   assert.equal(
     fact(43148, [2080], "敏捷", { boonDuration: 100 })?.detail,
-    "3 秒",
+    "4 秒",
   );
   assert.equal(fact(42297, [2112], "计数冷却时间")?.detail, "18.75 秒");
   assert.equal(fact(42297, [], "计数冷却时间")?.detail, "15 秒");
@@ -323,10 +323,10 @@ test("魂武五种真正本质、能量融合与指令组合独立投影，取�
     [51675, "稳固", "4 秒 · 3 层"],
   ] as const)
     assert.equal(fact(id, [1806], label)?.detail, value);
-  assert.equal(fact(62757, [2255], "耐力获取")?.detail, "40");
-  assert.equal(fact(62757, [2243], "能量消耗")?.detail, "0");
-  assert.match(fact(62757, [2243], "获得能量")!.trigger!, /战斗中/);
-  assert.equal(fact(62757, [2259], "冷却时间")?.detail, "10 秒");
+  assert.equal(fact(62757, [2228], "耐力获取")?.detail, "40");
+  assert.equal(fact(62757, [2248], "能量消耗")?.detail, "0");
+  assert.match(fact(62757, [2248], "获得能量")!.trigger!, /战斗中/);
+  assert.equal(fact(62757, [2258], "冷却时间")?.detail, "10 秒");
   assert.equal(fact(45537, [2182], "半径")?.detail, "360");
   assert.equal(fact(45537, [2182], "持续时间")?.detail, "6 秒");
   assert.equal(fact(45537, [2182], "保护"), undefined);

@@ -54,7 +54,7 @@ const cases = [
   },
   {
     profession: "Revenant",
-    trait: 2259,
+    trait: 2258,
     skill: 62757,
     base: "冷却时间：20 秒",
     changed: "冷却时间：10 秒",

@@ -7,7 +7,7 @@ type ProfessionSignets = {
       Record<
         number,
         {
-          target: Attribute;
+          target: Attribute | "outgoingHealing";
           amount: number;
           suppression?: {
             key: string;
@@ -58,6 +58,7 @@ export const signetRules: Readonly<
   Elementalist: {
     passives: {
       5542: { target: "Precision", amount: 180 },
+      5570: { target: "outgoingHealing", amount: 10 },
     },
     passiveTrait: { traitId: 287, multiplier: 1, retainOnCooldown: true },
     // Signet of Earth (5571) reduces strike damage; it no longer grants Toughness.
@@ -135,7 +136,6 @@ export const nonAttributeSignets: Readonly<Partial<Record<number, string>>> = {
   13064: "先攻资源",
   13060: "移动速度",
   5503: "施法时治疗生命值",
-  5570: "受到症状持续时间减免",
   5572: "移动速度",
   5571: "受到打击伤害减免，不是旧版坚韧",
   21750: "召唤幻象时治疗生命值",

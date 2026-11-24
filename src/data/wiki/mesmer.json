@@ -149,7 +149,7 @@
         "title": "Shaper_of_Chaos",
         "profession": "Mesmer",
         "identityVerified": true,
-        "revision": 3208964,
+        "revision": 3219820,
         "rows": []
       },
       "673": {
@@ -548,7 +548,7 @@
           {
             "id": 1890,
             "name": "时空幻映",
-            "description": "幻影在第一次粉碎后会变成分身，然后重新召唤幻影，并再次攻击。重新召唤的幻影造成一定百分比的本体伤害。\n（重新召唤的幻影暂时受到晕眩。）"
+            "description": "<c=@abilitytype>幻影</c>在第一次粉碎后会变成分身，然后重新召唤幻影，并再次攻击。重新召唤的幻影造成一定百分比的本体伤害。<br><c=@reminder>（重新召唤的幻影暂时受到晕眩。）</c>"
           },
           {
             "id": 2441,
@@ -817,7 +817,7 @@
           {
             "id": 1890,
             "name": "时空幻映",
-            "description": "幻影在第一次粉碎后会变成分身，然后重新召唤幻影，并再次攻击。重新召唤的幻影造成一定百分比的本体伤害。\n（重新召唤的幻影暂时受到晕眩。）"
+            "description": "<c=@abilitytype>幻影</c>在第一次粉碎后会变成分身，然后重新召唤幻影，并再次攻击。重新召唤的幻影造成一定百分比的本体伤害。<br><c=@reminder>（重新召唤的幻影暂时受到晕眩。）</c>"
           },
           {
             "id": 704,
@@ -984,23 +984,10 @@
         ]
       },
       "744": {
-        "title": "Sympathetic_Visage",
+        "title": "Focal_Feedback",
         "profession": "Mesmer",
         "identityVerified": true,
-        "revision": 3107761,
-        "rows": [
-          {
-            "label": "症状转移",
-            "detail": "1",
-            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
-          }
-        ]
-      },
-      "751": {
-        "title": "Warden's_Feedback",
-        "profession": "Mesmer",
-        "identityVerified": true,
-        "revision": 2683731,
+        "revision": 3219972,
         "rows": [
           {
             "label": "冷却减少",
@@ -1010,6 +997,29 @@
           {
             "label": "反射投射物",
             "detail": ""
+          }
+        ]
+      },
+      "751": {
+        "title": "Sympathetic_Visage",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "revision": 3219969,
+        "rows": [
+          {
+            "label": "症状移除",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "360",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
           }
         ]
       },
@@ -1475,35 +1485,36 @@
         "title": "Chronophantasma",
         "profession": "Mesmer",
         "identityVerified": true,
-        "revision": 3130610,
+        "revision": 3219980,
         "rows": [
           {
             "label": "百分比",
-            "detail": "105%",
+            "detail": "100%",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "重新召唤幻影症状持续时间",
+            "detail": "50%",
             "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
           },
           {
             "label": "晕眩",
             "detail": "0.25 秒",
-            "icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png"
-          },
-          {
-            "label": "蔑视伤害",
-            "detail": "100"
+            "recipient": "重新召唤的幻影"
           }
         ],
         "relatedTraits": [
           700,
           692,
           686,
-          744,
+          751,
           1915,
           1869,
           723,
           729,
           733
         ],
-        "description": "幻影第一次即将变成分身时，改为重新召唤自身并再次攻击。重新召唤的幻影造成原伤害的一定比例，并会短暂晕眩。",
+        "description": "幻影第一次即将变成分身时，会重新召唤并再攻击一次。重新召唤的幻影会短暂晕眩，其打击伤害和症状持续时间按原效果的指定比例计算。",
         "selectedTraitNotes": [
           {
             "id": 700,
@@ -1521,9 +1532,9 @@
             "description": "强化巨剑技能。镜像飞刃弹跳次数增加，幻影狂战额外召唤一名狂战士，造成的伤害减少。"
           },
           {
-            "id": 744,
+            "id": 751,
             "name": "同情容貌",
-            "description": "召唤的幻影会承担你的症状。"
+            "description": "当你使用<c=@abilitytype>幻影</c>技能时，移除盟友的症状。"
           },
           {
             "id": 1915,
@@ -1639,7 +1650,7 @@
           {
             "id": 1890,
             "name": "时空幻映",
-            "description": "幻影第一次即将变成分身时，改为重新召唤自身并再次攻击。重新召唤的幻影造成原伤害的一定比例，并会短暂晕眩。"
+            "description": "幻影第一次即将变成分身时，会重新召唤并再攻击一次。重新召唤的幻影会短暂晕眩，其打击伤害和症状持续时间按原效果的指定比例计算。"
           },
           {
             "id": 704,
@@ -3301,7 +3312,7 @@
         "profession": "Mesmer",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 3170665,
+        "revision": 3219799,
         "rows": [
           {
             "label": "施法时间",
@@ -3317,8 +3328,8 @@
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
-            "label": "致残",
-            "detail": "1 秒 · -50% 移动速度"
+            "label": "定身",
+            "detail": "1.5 秒"
           },
           {
             "label": "易伤",
@@ -3679,14 +3690,14 @@
         ],
         "modifiers": [
           {
-            "id": "recharge-751-10186",
-            "trait": 751,
+            "id": "recharge-744-10186",
+            "trait": 744,
             "priority": 0,
             "source": {
               "kind": "traits",
-              "id": 751,
-              "title": "Warden's_Feedback",
-              "revision": 2683731
+              "id": 744,
+              "title": "Focal_Feedback",
+              "revision": 3219972
             },
             "changes": [
               {
@@ -3695,7 +3706,28 @@
                 "factor": 0.8
               }
             ],
-            "traitName": "聚能反馈"
+            "traitName": "焦点反馈"
+          },
+          {
+            "id": "focal-feedback-effects",
+            "trait": 744,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 744,
+              "title": "Focal_Feedback",
+              "revision": 3219972
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "反射投射物",
+                  "detail": ""
+                }
+              }
+            ],
+            "traitName": "焦点反馈"
           }
         ]
       },
@@ -5813,10 +5845,10 @@
         ]
       },
       "10267": {
-        "title": "Phantasmal_Disenchanter",
+        "title": "Phantasmal_Warden",
         "profession": "Mesmer",
         "identityVerified": true,
-        "revision": 3151134,
+        "revision": 3220518,
         "rows": [
           {
             "label": "施法时间",
@@ -5827,39 +5859,25 @@
             "detail": "20 秒"
           },
           {
-            "label": "无增益伤害",
-            "detail": "系数 ×1.0",
-            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+            "label": "伤害",
+            "detail": "系数 ×1.104 · 8 次命中"
           },
           {
-            "label": "增益伤害",
-            "detail": "系数 ×0.4",
-            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
-          },
-          {
-            "label": "增益移除",
-            "detail": "5",
-            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
-          },
-          {
-            "label": "弹跳次数",
-            "detail": "4",
-            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+            "label": "易伤",
+            "detail": "5 秒 · 8 层 · +8% 受到的伤害, +8% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 8
           },
           {
             "label": "射程",
-            "detail": "900",
+            "detail": "1,200",
             "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
-          },
-          {
-            "label": "无法格挡",
-            "detail": "",
-            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           }
         ],
         "relatedTraits": [
+          1941,
           701,
-          744,
+          751,
           1915,
           1869,
           723,
@@ -5873,16 +5891,22 @@
           2205,
           2374
         ],
+        "description": "召唤幻影守望者，在施法者所在位置向附近目标投掷斧头，并形成阻挡投射物的屏障。",
         "selectedTraitNotes": [
+          {
+            "id": 1941,
+            "name": "脆弱躯体",
+            "description": "目标身上每有一层易伤，你对其造成的打击伤害就更高。"
+          },
           {
             "id": 701,
             "name": "幻影之怒",
             "description": "你的幻影获得激怒。"
           },
           {
-            "id": 744,
+            "id": 751,
             "name": "同情容貌",
-            "description": "召唤的幻影会承担你的症状。"
+            "description": "当你使用<c=@abilitytype>幻影</c>技能时，移除盟友的症状。"
           },
           {
             "id": 1915,
@@ -5932,7 +5956,7 @@
           {
             "id": 1890,
             "name": "时空幻映",
-            "description": "幻影第一次即将变成分身时，改为重新召唤自身并再次攻击。重新召唤的幻影造成原伤害的一定比例，并会短暂晕眩。"
+            "description": "幻影第一次即将变成分身时，会重新召唤并再攻击一次。重新召唤的幻影会短暂晕眩，其打击伤害和症状持续时间按原效果的指定比例计算。"
           },
           {
             "id": 2205,
@@ -6005,11 +6029,11 @@
         ]
       },
       "10282": {
-        "title": "Phantasmal_Warden",
+        "title": "Phantasmal_Disenchanter",
         "profession": "Mesmer",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 3151126,
+        "revision": 3219835,
         "rows": [
           {
             "label": "施法时间",
@@ -6020,32 +6044,51 @@
             "detail": "20 秒"
           },
           {
-            "label": "伤害",
-            "detail": "系数 ×1.656 · 12 次命中",
+            "label": "无增益伤害",
+            "detail": "系数 ×1.0",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
-            "label": "易伤",
-            "detail": "5 秒 · 12 层 · +12% 受到的伤害, +12% 受到的症状伤害",
-            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
-            "stacks": 12
+            "label": "增益伤害",
+            "detail": "系数 ×0.4",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "初始增益移除",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "增益移除",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "弹跳次数",
+            "detail": "4",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           },
           {
             "label": "射程",
-            "detail": "1,200",
+            "detail": "900",
             "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           }
         ],
         "modifiers": [
           {
-            "id": "recharge-751-10282",
-            "trait": 751,
+            "id": "recharge-744-10282",
+            "trait": 744,
             "priority": 0,
             "source": {
               "kind": "traits",
-              "id": 751,
-              "title": "Warden's_Feedback",
-              "revision": 2683731
+              "id": 744,
+              "title": "Focal_Feedback",
+              "revision": 3219972
             },
             "changes": [
               {
@@ -6054,7 +6097,28 @@
                 "factor": 0.8
               }
             ],
-            "traitName": "聚能反馈"
+            "traitName": "焦点反馈"
+          },
+          {
+            "id": "focal-feedback-effects",
+            "trait": 744,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 744,
+              "title": "Focal_Feedback",
+              "revision": 3219972
+            },
+            "changes": [
+              {
+                "type": "append",
+                "row": {
+                  "label": "转移增益",
+                  "detail": "将幻影除魔从敌人移除的增益转移给自己"
+                }
+              }
+            ],
+            "traitName": "焦点反馈"
           }
         ]
       },
@@ -6584,6 +6648,25 @@
           }
         ]
       },
+      "10337": {
+        "title": "Swap",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219802,
+        "rows": [
+          {
+            "label": "组合技终结",
+            "detail": "跳跃",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
       "10341": {
         "title": "Phantasmal_Defender",
         "profession": "Mesmer",
@@ -6638,7 +6721,7 @@
           681,
           701,
           692,
-          744,
+          751,
           1915,
           1869,
           723,
@@ -6669,9 +6752,9 @@
             "description": "暴击造成更大伤害。对于无法行动，或者生命值低于临界值的敌人，伤害进一步增加。\n无法行动的敌人包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
           },
           {
-            "id": 744,
+            "id": 751,
             "name": "同情容貌",
-            "description": "召唤的幻影会承担你的症状。"
+            "description": "当你使用<c=@abilitytype>幻影</c>技能时，移除盟友的症状。"
           },
           {
             "id": 1915,
@@ -6721,7 +6804,7 @@
           {
             "id": 1890,
             "name": "时空幻映",
-            "description": "幻影第一次即将变成分身时，改为重新召唤自身并再次攻击。重新召唤的幻影造成原伤害的一定比例，并会短暂晕眩。"
+            "description": "幻影第一次即将变成分身时，会重新召唤并再攻击一次。重新召唤的幻影会短暂晕眩，其打击伤害和症状持续时间按原效果的指定比例计算。"
           },
           {
             "id": 2205,
@@ -6732,6 +6815,25 @@
             "id": 2374,
             "name": "浑然一体",
             "description": "当你使用幻影技能时获得一个音符。"
+          }
+        ]
+      },
+      "10363": {
+        "title": "Into_the_Void",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2807429,
+        "rows": [
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
           }
         ]
       },
@@ -9739,6 +9841,68 @@
           }
         ]
       },
+      "62586": {
+        "title": "Bladesong_Harmony",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219986,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "每把消耗灵刃的打击伤害",
+            "detail": "系数 ×0.7"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "穿透",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/F833590B593E0C2D4948DFFE9951B91655250052/1770207.png"
+          },
+          {
+            "label": "利刃",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/D6CAECEA0FD5FADE04DD6970384ADC5DE309C506/2229322.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "modifiers": [
+          {
+            "id": "recharge-731-62586",
+            "trait": 731,
+            "priority": 0,
+            "source": {
+              "kind": "traits",
+              "id": 731,
+              "title": "Master_of_Misdirection",
+              "revision": 3073784
+            },
+            "changes": [
+              {
+                "type": "number",
+                "label": "冷却时间",
+                "factor": 0.85
+              }
+            ],
+            "traitName": "误导大师"
+          }
+        ]
+      },
       "62597": {
         "title": "Bladeturn_Requiem",
         "profession": "Mesmer",
@@ -10314,7 +10478,7 @@
         "title": "Bladesong_Harmony",
         "profession": "Mesmer",
         "identityVerified": true,
-        "revision": 3173322,
+        "revision": 3219986,
         "rows": [
           {
             "label": "施法时间",
@@ -10354,6 +10518,7 @@
           687,
           693,
           680,
+          671,
           1687,
           1866,
           721,
@@ -10380,6 +10545,11 @@
             "id": 680,
             "name": "精神折磨",
             "description": "提升粉碎技能伤害。如果敌人没有在施放技能，此伤害翻倍。"
+          },
+          {
+            "id": 671,
+            "name": "混乱塑造",
+            "description": "当你使用粉碎技能1时，如果你已经拥有混乱光环，引爆混乱光环，给自己施加增益，给敌人施加症状。"
           },
           {
             "id": 1687,
@@ -11664,7 +11834,7 @@
           {
             "id": 671,
             "name": "混乱塑造",
-            "description": "当你给自己施加混乱光环时，如果你已经拥有混乱光环，引爆混乱光环，给自己施加增益，给敌人施加症状。"
+            "description": "当你使用粉碎技能1时，如果你已经拥有混乱光环，引爆混乱光环，给自己施加增益，给敌人施加症状。"
           },
           {
             "id": 1852,
@@ -12267,6 +12437,74 @@
         "identityVerified": false,
         "revision": 3173326,
         "rows": []
+      },
+      "81467": {
+        "title": "Disenchant",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219816,
+        "rows": [
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.17",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "伤害提升",
+            "detail": "20%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "增益移除",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "射程",
+            "detail": "130",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          }
+        ]
+      },
+      "81481": {
+        "title": "Disenchant",
+        "profession": "Mesmer",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219816,
+        "rows": [
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.17",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "伤害提升",
+            "detail": "20%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "增益移除",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "射程",
+            "detail": "130",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          }
+        ]
       }
     }
   }

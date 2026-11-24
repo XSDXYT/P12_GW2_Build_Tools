@@ -61,6 +61,40 @@ test("幻术步枪3展示成像分离；独立PvE详情排除竞争模式并支�
   assert.equal(d.facts.find((f) => f.label === "目盲")?.detail, "5 秒");
   assert.equal(d.facts.find((f) => f.label === "伤害")?.detail, "系数 ×1.81");
 });
+test("11月技改：元素法杖新技能、幻术聚能器与工程步枪后续按精确ID显示", () => {
+  const elementalist = createBuild("Elementalist");
+  elementalist.equipment.weapon1.weapon = "Staff";
+  assert.equal(
+    weaponSkillSlots(elementalist, catalog, 1, "Fire")[2]?.id,
+    81423,
+  );
+  assert.equal(weaponSkillSlots(elementalist, catalog, 1, "Air")[1]?.id, 81440);
+  assert.equal(
+    weaponSkillSlots(elementalist, catalog, 1, "Earth")[4]?.id,
+    81444,
+  );
+
+  const mesmer = createBuild("Mesmer");
+  mesmer.equipment.weapon1.weapon = "Sword";
+  mesmer.equipment.offhand1.weapon = "Focus";
+  const mesmerSkills = weaponSkillSlots(mesmer, catalog, 1);
+  assert.equal(mesmerSkills[4]?.id, 10282);
+  assert.equal(mesmerSkills[4]?.name, "幻影除魔");
+  assert.equal(skill(10267).type, "Utility");
+  assert.deepEqual(
+    followingSkills(mesmerSkills[2]!, catalog, mesmer).map((s) => s.skill.id),
+    [10337, 81481],
+  );
+
+  const engineer = createBuild("Engineer");
+  engineer.equipment.weapon1.weapon = "Rifle";
+  const rifle = weaponSkillSlots(engineer, catalog, 1)[0]!;
+  assert.equal(rifle.id, 6003);
+  assert.deepEqual(
+    followingSkills(rifle, catalog, engineer).map((s) => s.skill.id),
+    [68079, 81385],
+  );
+});
 test("盗贼长矛使用陆地两条完整三段链，潜袭及神射手变种独立条件", () => {
   const b = createBuild("Thief");
   b.equipment.weapon1.weapon = "Spear";

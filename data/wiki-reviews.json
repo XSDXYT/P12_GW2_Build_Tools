@@ -13,6 +13,64 @@
             "action": "allow"
           }
         ]
+      },
+      "1890": {
+        "revision": 3219980,
+        "rows": [
+          {
+            "text": "Defiance Break: 100[sic]",
+            "notes": [
+              "25"
+            ],
+            "action": "omit"
+          },
+          {
+            "text": "Daze: 0.25 seconds",
+            "notes": [],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "晕眩",
+                "detail": "0.25 秒",
+                "recipient": "重新召唤的幻影"
+              }
+            ]
+          }
+        ]
+      },
+      "2063": {
+        "revision": 3220105,
+        "rows": [
+          {
+            "text": "2 Self Ashes of the Just (10s): Your next strike burns with justice.",
+            "notes": [],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "正义余烬",
+                "detail": "10 秒 · 2 层",
+                "recipient": "自身",
+                "stacks": 2
+              }
+            ]
+          }
+        ]
+      },
+      "2105": {
+        "revision": 3220057,
+        "rows": [
+          {
+            "text": "Ashes of the Just: Your next strike burns with justice.",
+            "notes": [],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "正义余烬",
+                "detail": "下一次命中施加燃烧"
+              }
+            ]
+          }
+        ]
       }
     },
     "skills": {
@@ -52,6 +110,52 @@
           }
         ]
       },
+      "6154": {
+        "revision": 3217495,
+        "rows": [
+          {
+            "text": "Defiance Break: 232[sic]",
+            "notes": [
+              "332"
+            ],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "蔑视伤害",
+                "detail": "332"
+              }
+            ]
+          }
+        ]
+      },
+      "10267": {
+        "revision": 3220518,
+        "rows": [
+          {
+            "text": "Damage (12x): 1,668 (1.104)?",
+            "notes": [],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "伤害",
+                "detail": "系数 ×1.104 · 8 次命中"
+              }
+            ]
+          }
+        ]
+      },
+      "10528": {
+        "revision": 3217391,
+        "rows": [
+          {
+            "text": "Bonus damage per vulnerability stack: 1%[sic]",
+            "notes": [
+              "should be title case"
+            ],
+            "action": "allow"
+          }
+        ]
+      },
       "10647": {
         "revision": 2812692,
         "rows": [
@@ -83,7 +187,7 @@
         ]
       },
       "12508": {
-        "revision": 2967013,
+        "revision": 3217714,
         "rows": [
           {
             "text": "Defiance Break: 400[sic]",
@@ -370,6 +474,38 @@
               {
                 "label": "怒气等级 3 · 蔑视伤害",
                 "detail": "200"
+              }
+            ]
+          }
+        ]
+      },
+      "40624": {
+        "revision": 3217477,
+        "rows": [
+          {
+            "text": "5 Bleeding (3s): 330 Damage[sic]",
+            "notes": [
+              "5 seconds"
+            ],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "流血",
+                "detail": "5 秒 · 5 层",
+                "stacks": 5
+              }
+            ]
+          },
+          {
+            "text": "Number of Targets: 3[sic]",
+            "notes": [
+              "5"
+            ],
+            "action": "replace",
+            "rows": [
+              {
+                "label": "目标数",
+                "detail": "5"
               }
             ]
           }

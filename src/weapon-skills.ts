@@ -13,6 +13,8 @@ export type SkillStage = { skill: Entity; label: string };
 // These two edges are missing from the API. Identity and order are confirmed
 // by the Wiki's spear skill list and the individual API-linked articles.
 const extraChains: Record<number, number> = { 72896: 73076, 73063: 72904 };
+// Current Wiki identifies these flips, but the API does not expose their edges.
+const balanceFlips: Record<number, number> = { 6003: 81385, 10337: 81481 };
 
 export function mergeSkillCatalog(catalog: Catalog, skills: Entity[]): Catalog {
   const ids = new Set(catalog.skills.map((s) => s.id));
@@ -42,7 +44,11 @@ export function followingSkills(
   function visit(skill: Entity, depth: number) {
     if (depth > 20) return;
     const next = skill.next_chain || extraChains[skill.id];
-    for (const id of [...new Set([next, skill.flip_skill].filter(Boolean))]) {
+    const balanceFlip =
+      skill.id === 10337 && specs.includes(73) ? 81467 : balanceFlips[skill.id];
+    for (const id of [
+      ...new Set([next, skill.flip_skill, balanceFlip].filter(Boolean)),
+    ]) {
       if (seen.has(id)) continue;
       seen.add(id);
       const target = byId.get(id);

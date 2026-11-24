@@ -731,7 +731,7 @@ test("石刻纹章仅保留冷却被动而不增强，移除或错误阶级后�
   assert.equal(calc(b, 1, p).primary.Precision, 1000);
 });
 
-test("火焰纹章精准不进入特性或扳手转换，非属性纹章不误加坚韧治疗或时长", () => {
+test("火焰纹章精准不进入转换，流水纹章提供盟友治疗倍率", () => {
   const b = createBuild("Elementalist");
   b.skills = [5503, 5542, 5571, 5570, null];
   selectTrait(b, 232);
@@ -745,7 +745,15 @@ test("火焰纹章精准不进入特性或扳手转换，非属性纹章不误�
   assert.equal(r.primary.CritDamage, calc(baseline).primary.CritDamage);
   assert.equal(r.primary.Toughness, 1000);
   assert.equal(r.primary.Healing, 0);
-  assert.equal(r.conditionDuration, 0); // Water reduces incoming duration, not outgoing duration.
+  assert.equal(r.conditionDuration, 0);
+  assert.equal(r.outgoingHealingBonus, 10);
+  const cooling = {
+    ...emptyPreview(),
+    flags: { "signet-cooldown-5570": true },
+  };
+  assert.equal(calc(b, 1, cooling).outgoingHealingBonus, 10);
+  b.specs.find((s) => s.traits.includes(287))!.traits[2] = null;
+  assert.equal(calc(b, 1, cooling).outgoingHealingBonus, 0);
   b.skills[3] = 5572; // Air is movement speed, not an attribute grant.
   assert.equal(calc(b).primary.Precision, 1180);
   assert.equal(
@@ -914,7 +922,7 @@ test("战士纹章与专精固定数值、职业槽位去重及纯预览保存�
   assert.equal(calc(b, 1, p).primary.CritDamage, 0);
 });
 
-test("九职业43项纹章全部分类：13项直接属性与30项非属性，不重复或遗漏", () => {
+test("九职业43项纹章全部分类，14项参与面板计算，不重复或遗漏", () => {
   const signets = catalog.skills.filter((s) =>
     s.categories?.includes("Signet"),
   );
@@ -923,8 +931,8 @@ test("九职业43项纹章全部分类：13项直接属性与30项非属性，�
   );
   const nonAttributeIds = Object.keys(nonAttributeSignets).map(Number);
   assert.equal(signets.length, 43);
-  assert.equal(attributeIds.length, 13);
-  assert.equal(nonAttributeIds.length, 30);
+  assert.equal(attributeIds.length, 14);
+  assert.equal(nonAttributeIds.length, 29);
   assert.equal(new Set([...attributeIds, ...nonAttributeIds]).size, 43);
   assert.deepEqual(
     [...attributeIds, ...nonAttributeIds].sort((a, b) => a - b),

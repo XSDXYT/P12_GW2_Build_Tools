@@ -138,14 +138,6 @@
       ]
     },
     {
-      "title": "Lightning_Surge",
-      "revision": 3021321,
-      "profession": "Elementalist",
-      "ids": [
-        5552
-      ]
-    },
-    {
       "title": "Gust",
       "revision": 2971800,
       "profession": "Elementalist",
@@ -323,7 +315,7 @@
     },
     {
       "title": "Dust_Storm",
-      "revision": 2938136,
+      "revision": 3218069,
       "profession": "Elementalist",
       "ids": [
         30336
@@ -363,7 +355,7 @@
     },
     {
       "title": "Eruption",
-      "revision": 2842800,
+      "revision": 3218059,
       "profession": "Elementalist",
       "ids": [
         5528
@@ -391,14 +383,6 @@
       "profession": "Elementalist",
       "ids": [
         5683
-      ]
-    },
-    {
-      "title": "Shock_Wave",
-      "revision": 2584593,
-      "profession": "Elementalist",
-      "ids": [
-        5686
       ]
     },
     {
@@ -571,7 +555,7 @@
     },
     {
       "title": "Wildfire",
-      "revision": 2958386,
+      "revision": 3218067,
       "profession": "Elementalist",
       "ids": [
         29533
@@ -627,7 +611,7 @@
     },
     {
       "title": "Empower",
-      "revision": 3041741,
+      "revision": 3219199,
       "profession": "Guardian",
       "ids": [
         9265
@@ -774,7 +758,7 @@
     },
     {
       "title": "Illusionary_Leap",
-      "revision": 3170665,
+      "revision": 3219799,
       "profession": "Mesmer",
       "ids": [
         10173
@@ -837,8 +821,8 @@
       ]
     },
     {
-      "title": "Phantasmal_Warden",
-      "revision": 3151126,
+      "title": "Phantasmal_Disenchanter",
+      "revision": 3219835,
       "profession": "Mesmer",
       "ids": [
         10282
@@ -1518,7 +1502,7 @@
     },
     {
       "title": "Grenade_Barrage",
-      "revision": 3031564,
+      "revision": 3218258,
       "profession": "Engineer",
       "ids": [
         5810
@@ -1598,7 +1582,7 @@
     },
     {
       "title": "Rocket_Kick",
-      "revision": 2372281,
+      "revision": 3218235,
       "profession": "Engineer",
       "ids": [
         5983
@@ -1922,7 +1906,7 @@
     },
     {
       "title": "Poison_Volley",
-      "revision": 3181886,
+      "revision": 3217708,
       "profession": "Ranger",
       "ids": [
         12468
@@ -1930,7 +1914,7 @@
     },
     {
       "title": "Quick_Shot",
-      "revision": 2680231,
+      "revision": 3217710,
       "profession": "Ranger",
       "ids": [
         12517
@@ -1938,7 +1922,7 @@
     },
     {
       "title": "Crippling_Shot",
-      "revision": 2840346,
+      "revision": 3217712,
       "profession": "Ranger",
       "ids": [
         12507
@@ -1946,7 +1930,7 @@
     },
     {
       "title": "Concussion_Shot",
-      "revision": 2967013,
+      "revision": 3217714,
       "profession": "Ranger",
       "ids": [
         12508
@@ -2090,7 +2074,7 @@
       "ids": [
         5501
       ],
-      "revision": 3020993,
+      "revision": 3218065,
       "profession": "Elementalist"
     },
     {
@@ -2138,15 +2122,7 @@
       "ids": [
         5972
       ],
-      "revision": 2689987,
-      "profession": "Engineer"
-    },
-    {
-      "title": "Toss_Elixir_S",
-      "ids": [
-        6090
-      ],
-      "revision": 2689987,
+      "revision": 3218238,
       "profession": "Engineer"
     },
     {
@@ -2214,14 +2190,6 @@
       "profession": "Necromancer"
     },
     {
-      "title": "Flame_Burst",
-      "ids": [
-        5679
-      ],
-      "revision": 3020994,
-      "profession": "Elementalist"
-    },
-    {
       "title": "Boil",
       "ids": [
         5597
@@ -2276,6 +2244,474 @@
       ],
       "revision": 2776280,
       "profession": "Engineer"
+    },
+    {
+      "title": "Alliance_Tactics",
+      "revision": 3158842,
+      "profession": "Revenant",
+      "ids": [
+        62729
+      ]
+    },
+    {
+      "title": "Beguiling_Haze",
+      "revision": 3218387,
+      "profession": "Revenant",
+      "ids": [
+        76805,
+        76917,
+        77159
+      ]
+    },
+    {
+      "title": "Bladesong_Harmony",
+      "revision": 3219986,
+      "profession": "Mesmer",
+      "ids": [
+        62586
+      ]
+    },
+    {
+      "title": "Blazing_Edge",
+      "revision": 3219197,
+      "profession": "Guardian",
+      "ids": [
+        45402
+      ]
+    },
+    {
+      "title": "Bleeding_Edge",
+      "revision": 3219194,
+      "profession": "Guardian",
+      "ids": [
+        44602
+      ]
+    },
+    {
+      "title": "Call_of_Valor",
+      "revision": 3220011,
+      "profession": "Warrior",
+      "ids": [
+        14394
+      ]
+    },
+    {
+      "title": "Chains_of_Light",
+      "revision": 3219190,
+      "profession": "Guardian",
+      "ids": [
+        9099
+      ]
+    },
+    {
+      "title": "Chain_Lightning",
+      "revision": 3217604,
+      "profession": "Elementalist",
+      "ids": [
+        5518
+      ]
+    },
+    {
+      "title": "Clarified_Conclusion",
+      "revision": 3220081,
+      "profession": "Guardian",
+      "ids": [
+        44248
+      ]
+    },
+    {
+      "title": "Coalescence_of_Ruin",
+      "revision": 3218298,
+      "profession": "Revenant",
+      "ids": [
+        28253
+      ]
+    },
+    {
+      "title": "Core_Cleave",
+      "revision": 3219192,
+      "profession": "Guardian",
+      "ids": [
+        45047
+      ]
+    },
+    {
+      "title": "Crossfire",
+      "revision": 3217706,
+      "profession": "Ranger",
+      "ids": [
+        12470
+      ]
+    },
+    {
+      "title": "Disenchant",
+      "revision": 3219816,
+      "profession": "Mesmer",
+      "ids": [
+        81481,
+        81467
+      ]
+    },
+    {
+      "title": "Echo_of_Truth",
+      "revision": 2737395,
+      "profession": "Guardian",
+      "ids": [
+        42360
+      ]
+    },
+    {
+      "title": "Energy_Expulsion",
+      "revision": 3218322,
+      "profession": "Revenant",
+      "ids": [
+        29114
+      ]
+    },
+    {
+      "title": "Fan_of_Fire",
+      "revision": 3219995,
+      "profession": "Warrior",
+      "ids": [
+        14519
+      ]
+    },
+    {
+      "title": "Fiery_Impact",
+      "revision": 3218204,
+      "profession": "Elementalist",
+      "ids": [
+        72914
+      ]
+    },
+    {
+      "title": "Fireball",
+      "revision": 3217601,
+      "profession": "Elementalist",
+      "ids": [
+        5491
+      ]
+    },
+    {
+      "title": "Fire_Blast",
+      "revision": 3217557,
+      "profession": "Elementalist",
+      "ids": [
+        81423
+      ]
+    },
+    {
+      "title": "Flame_Rush",
+      "revision": 2737397,
+      "profession": "Guardian",
+      "ids": [
+        45082
+      ]
+    },
+    {
+      "title": "Flame_Surge",
+      "revision": 3220076,
+      "profession": "Guardian",
+      "ids": [
+        42924
+      ]
+    },
+    {
+      "title": "Forged_Surfer_Dash",
+      "revision": 3217484,
+      "profession": "Thief",
+      "ids": [
+        76633
+      ]
+    },
+    {
+      "title": "Frigid_Blitz",
+      "revision": 3218294,
+      "profession": "Revenant",
+      "ids": [
+        28029
+      ]
+    },
+    {
+      "title": "Galvanize",
+      "revision": 3218203,
+      "profession": "Elementalist",
+      "ids": [
+        73104
+      ]
+    },
+    {
+      "title": "Ghastly_Claws",
+      "revision": 3217391,
+      "profession": "Necromancer",
+      "ids": [
+        10528
+      ]
+    },
+    {
+      "title": "Into_the_Void",
+      "revision": 2807429,
+      "profession": "Mesmer",
+      "ids": [
+        10363
+      ]
+    },
+    {
+      "title": "Lightning_Surge",
+      "revision": 3217665,
+      "profession": "Elementalist",
+      "ids": [
+        81440
+      ]
+    },
+    {
+      "title": "Locust_Swarm",
+      "revision": 3218046,
+      "profession": "Necromancer",
+      "ids": [
+        10557
+      ]
+    },
+    {
+      "title": "Malicious_Death's_Judgment",
+      "revision": 3219739,
+      "profession": "Thief",
+      "ids": [
+        44087
+      ]
+    },
+    {
+      "title": "Metal_Legion_Guitar",
+      "revision": 3219746,
+      "profession": "Thief",
+      "ids": [
+        76591
+      ]
+    },
+    {
+      "title": "Natural_Harmony",
+      "revision": 3218317,
+      "profession": "Revenant",
+      "ids": [
+        29082
+      ]
+    },
+    {
+      "title": "Net_Shot",
+      "revision": 3217493,
+      "profession": "Engineer",
+      "ids": [
+        6004
+      ]
+    },
+    {
+      "title": "Opening_Passage",
+      "revision": 2737391,
+      "profession": "Guardian",
+      "ids": [
+        42864
+      ]
+    },
+    {
+      "title": "Orb_of_Wrath",
+      "revision": 3219189,
+      "profession": "Guardian",
+      "ids": [
+        9098
+      ]
+    },
+    {
+      "title": "Overcharged_Shot",
+      "revision": 3217495,
+      "profession": "Engineer",
+      "ids": [
+        6154
+      ]
+    },
+    {
+      "title": "Overwhelming_Celerity",
+      "revision": 3220078,
+      "profession": "Guardian",
+      "ids": [
+        41988
+      ]
+    },
+    {
+      "title": "Pin_Down",
+      "revision": 3220001,
+      "profession": "Warrior",
+      "ids": [
+        14504
+      ]
+    },
+    {
+      "title": "Portent_of_Freedom",
+      "revision": 2934494,
+      "profession": "Guardian",
+      "ids": [
+        40114
+      ]
+    },
+    {
+      "title": "Potent_Haste",
+      "revision": 3220029,
+      "profession": "Guardian",
+      "ids": [
+        42983
+      ]
+    },
+    {
+      "title": "Purifying_Essence",
+      "revision": 3218319,
+      "profession": "Revenant",
+      "ids": [
+        29197
+      ]
+    },
+    {
+      "title": "Rejuvenating_Respite",
+      "revision": 3220074,
+      "profession": "Guardian",
+      "ids": [
+        42960
+      ]
+    },
+    {
+      "title": "Rending_Claws",
+      "revision": 3217384,
+      "profession": "Necromancer",
+      "ids": [
+        10561
+      ]
+    },
+    {
+      "title": "Restoring_Reprieve",
+      "revision": 2737390,
+      "profession": "Guardian",
+      "ids": [
+        41475
+      ]
+    },
+    {
+      "title": "Rifle_Burst",
+      "revision": 2956314,
+      "profession": "Engineer",
+      "ids": [
+        6003
+      ]
+    },
+    {
+      "title": "Rocket_Burst",
+      "revision": 3220169,
+      "profession": "Engineer",
+      "ids": [
+        81385
+      ]
+    },
+    {
+      "title": "Searing_Slash_(firebrand)",
+      "revision": 3219195,
+      "profession": "Guardian",
+      "ids": [
+        43826
+      ]
+    },
+    {
+      "title": "Shale_Storm",
+      "revision": 3218209,
+      "profession": "Elementalist",
+      "ids": [
+        72906
+      ]
+    },
+    {
+      "title": "Shock_Wave",
+      "revision": 3218062,
+      "profession": "Elementalist",
+      "ids": [
+        81444
+      ]
+    },
+    {
+      "title": "Smoldering_Arrow",
+      "revision": 3219999,
+      "profession": "Warrior",
+      "ids": [
+        14505
+      ]
+    },
+    {
+      "title": "Soul_Grasp",
+      "revision": 3218007,
+      "profession": "Necromancer",
+      "ids": [
+        55050
+      ]
+    },
+    {
+      "title": "Stoning",
+      "revision": 3217667,
+      "profession": "Elementalist",
+      "ids": [
+        5519
+      ]
+    },
+    {
+      "title": "Swap",
+      "revision": 3219802,
+      "profession": "Mesmer",
+      "ids": [
+        10337
+      ]
+    },
+    {
+      "title": "Symbol_of_Vengeance",
+      "revision": 3217477,
+      "profession": "Guardian",
+      "ids": [
+        40624
+      ]
+    },
+    {
+      "title": "Three-Round_Burst",
+      "revision": 3217754,
+      "profession": "Thief",
+      "ids": [
+        44695
+      ]
+    },
+    {
+      "title": "Unhindered_Delivery",
+      "revision": 3220085,
+      "profession": "Guardian",
+      "ids": [
+        41328
+      ]
+    },
+    {
+      "title": "Unholy_Feast",
+      "revision": 3218011,
+      "profession": "Necromancer",
+      "ids": [
+        10701
+      ]
+    },
+    {
+      "title": "Unleashed_Savage_Shock_Wave",
+      "revision": 3217858,
+      "profession": "Ranger",
+      "ids": [
+        63131
+      ],
+      "actor": "pet"
+    },
+    {
+      "title": "Voice_of_Truth",
+      "revision": 3220083,
+      "profession": "Guardian",
+      "ids": [
+        44008
+      ]
     }
   ]
 }

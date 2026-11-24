@@ -410,8 +410,12 @@ export function mechanicSlots(
     if (spec === 52) slots.push(slot(2, 29371));
     else if (spec === 63)
       slots.push(slot(2, 44076), slot(3, 42836), slot(4, 45537));
-    else if (spec === 69) slots.push(slot(2, 62757));
-    else if (spec === 79) {
+    else if (spec === 69) {
+      slots.push(slot(2, 62757));
+      if (legend === 62749) slots.push(slot(3, 81410));
+      if (traits.has(2257)) slots.push(slot(4, 81369));
+      else if (traits.has(2238)) slots.push(slot(4, 81450));
+    } else if (spec === 79) {
       const potential: Record<number, number> = {
         76610: 78661,
         28494: 78615,

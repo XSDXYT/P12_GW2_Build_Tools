@@ -343,7 +343,7 @@
         {
           "kind": "skills",
           "id": 62617,
-          "revision": 3173322,
+          "revision": 3219986,
           "guards": []
         },
         {
@@ -654,109 +654,6 @@
       ]
     },
     {
-      "id": "grenadier-radius",
-      "trait": 514,
-      "revision": 2990846,
-      "evidence": "Radius Increase: 60",
-      "targets": [
-        {
-          "kind": "skills",
-          "id": 5882,
-          "revision": 3123237,
-          "guards": [
-            {
-              "label": "爆炸半径",
-              "detail": "120"
-            }
-          ],
-          "changes": [
-            {
-              "type": "number",
-              "label": "爆炸半径",
-              "factor": 1,
-              "add": 60
-            }
-          ]
-        },
-        {
-          "kind": "skills",
-          "id": 5807,
-          "revision": 3128690,
-          "guards": [
-            {
-              "label": "爆炸半径",
-              "detail": "120"
-            }
-          ],
-          "changes": [
-            {
-              "type": "number",
-              "label": "爆炸半径",
-              "factor": 1,
-              "add": 60
-            }
-          ]
-        },
-        {
-          "kind": "skills",
-          "id": 5808,
-          "revision": 2777029,
-          "guards": [
-            {
-              "label": "爆炸半径",
-              "detail": "120"
-            }
-          ],
-          "changes": [
-            {
-              "type": "number",
-              "label": "爆炸半径",
-              "factor": 1,
-              "add": 60
-            }
-          ]
-        },
-        {
-          "kind": "skills",
-          "id": 5809,
-          "revision": 2840067,
-          "guards": [
-            {
-              "label": "爆炸半径",
-              "detail": "120"
-            }
-          ],
-          "changes": [
-            {
-              "type": "number",
-              "label": "爆炸半径",
-              "factor": 1,
-              "add": 60
-            }
-          ]
-        },
-        {
-          "kind": "skills",
-          "id": 5806,
-          "revision": 2969635,
-          "guards": [
-            {
-              "label": "半径",
-              "detail": "120"
-            }
-          ],
-          "changes": [
-            {
-              "type": "number",
-              "label": "半径",
-              "factor": 1,
-              "add": 60
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "hgh-base-durations",
       "trait": 473,
       "revision": 3163406,
@@ -810,7 +707,7 @@
         {
           "kind": "skills",
           "id": 5832,
-          "revision": 2882042,
+          "revision": 3218276,
           "guards": [
             {
               "label": "飓风形态",
@@ -1005,7 +902,7 @@
         {
           "kind": "skills",
           "id": 5832,
-          "revision": 2882042,
+          "revision": 3218276,
           "guards": [],
           "changes": [
             {
@@ -2043,7 +1940,7 @@
         {
           "kind": "skills",
           "id": 43390,
-          "revision": 3179818,
+          "revision": 3219736,
           "guards": [],
           "changes": [
             {
@@ -2197,7 +2094,7 @@
         {
           "kind": "skills",
           "id": 43390,
-          "revision": 3179818,
+          "revision": 3219736,
           "guards": [],
           "changes": [
             {
@@ -2869,7 +2766,7 @@
     {
       "id": "desert-empowerment",
       "trait": 2080,
-      "revision": 3029008,
+      "revision": 3217877,
       "evidence": "Barrier: 572 (1.0)",
       "targets": [
         {
@@ -3157,8 +3054,8 @@
     {
       "id": "desert-empowerment-alacrity",
       "trait": 2080,
-      "revision": 3029008,
-      "evidence": "Alacrity (1½s)",
+      "revision": 3217877,
+      "evidence": "Alacrity (2s)",
       "targets": [
         {
           "kind": "skills",
@@ -3170,7 +3067,7 @@
               "type": "append",
               "row": {
                 "label": "敏捷",
-                "detail": "1.5 秒",
+                "detail": "2 秒",
                 "recipient": "获得屏障的目标",
                 "trigger": "此技能授予屏障时"
               }
@@ -3187,7 +3084,7 @@
               "type": "append",
               "row": {
                 "label": "敏捷",
-                "detail": "1.5 秒",
+                "detail": "2 秒",
                 "recipient": "获得屏障的目标",
                 "trigger": "此技能授予屏障时"
               }
@@ -3204,7 +3101,7 @@
               "type": "append",
               "row": {
                 "label": "敏捷",
-                "detail": "1.5 秒",
+                "detail": "2 秒",
                 "recipient": "获得屏障的目标",
                 "trigger": "此技能授予屏障时"
               }
@@ -3221,7 +3118,7 @@
               "type": "append",
               "row": {
                 "label": "敏捷",
-                "detail": "1.5 秒",
+                "detail": "2 秒",
                 "recipient": "获得屏障的目标",
                 "trigger": "此技能授予屏障时"
               }
@@ -3238,7 +3135,7 @@
               "type": "append",
               "row": {
                 "label": "敏捷",
-                "detail": "1.5 秒",
+                "detail": "2 秒",
                 "recipient": "获得屏障的目标",
                 "trigger": "此技能授予屏障时"
               }
@@ -3255,7 +3152,7 @@
               "type": "append",
               "row": {
                 "label": "敏捷",
-                "detail": "1.5 秒",
+                "detail": "2 秒",
                 "recipient": "获得屏障的目标",
                 "trigger": "此技能授予屏障时"
               }
@@ -3272,7 +3169,7 @@
               "type": "append",
               "row": {
                 "label": "敏捷",
-                "detail": "1.5 秒",
+                "detail": "2 秒",
                 "recipient": "获得屏障的目标",
                 "trigger": "此技能授予屏障时"
               }
@@ -3876,8 +3773,8 @@
     },
     {
       "id": "arboreum",
-      "trait": 2255,
-      "revision": 2786641,
+      "trait": 2228,
+      "revision": 3218344,
       "evidence": "Endurance Gained: 40",
       "targets": [
         {
@@ -3964,8 +3861,8 @@
     },
     {
       "id": "angsiyans-trust",
-      "trait": 2243,
-      "revision": 2857036,
+      "trait": 2248,
+      "revision": 3218342,
       "evidence": "no longer has an energy cost",
       "targets": [
         {
@@ -4030,8 +3927,8 @@
     },
     {
       "id": "reavers-curse",
-      "trait": 2259,
-      "revision": 3206177,
+      "trait": 2258,
+      "revision": 3218340,
       "evidence": "Recharge Reduced: 50%",
       "targets": [
         {
@@ -4429,7 +4326,7 @@
         {
           "kind": "skills",
           "id": 78661,
-          "revision": 3104124,
+          "revision": 3219649,
           "guards": [
             {
               "label": "冷却时间",
@@ -4440,7 +4337,7 @@
         {
           "kind": "skills",
           "id": 78845,
-          "revision": 3206178,
+          "revision": 3219647,
           "guards": [
             {
               "label": "冷却时间",
@@ -4549,7 +4446,7 @@
     {
       "id": "specialized-elements-basic-qualified",
       "trait": 2437,
-      "revision": 3205721,
+      "revision": 3218220,
       "evidence": "Basic Skill Recharge: 10%",
       "targets": [
         {
@@ -4598,7 +4495,7 @@
         {
           "kind": "traits",
           "id": 2437,
-          "revision": 3205721,
+          "revision": 3218220,
           "evidence": "Skills to Charge Familiar: 2"
         }
       ]
@@ -4606,8 +4503,8 @@
     {
       "id": "specialized-elements-empowered-qualified",
       "trait": 2437,
-      "revision": 3205721,
-      "evidence": "Empowered Skill Recharge: 33%",
+      "revision": 3218220,
+      "evidence": "Empowered Skill Recharge: 20%",
       "targets": [
         {
           "kind": "skills",
@@ -4627,7 +4524,7 @@
           "type": "append",
           "row": {
             "label": "武器技能冷却缩短",
-            "detail": "33%",
+            "detail": "20%",
             "trigger": "激活该强化魔宠技能时"
           }
         },
@@ -5012,6 +4909,261 @@
           "factor": 1.33
         }
       ]
+    },
+    {
+      "id": "eclipse-31406",
+      "trait": 2055,
+      "revision": 3217869,
+      "evidence": "3 Poison (6s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 31406,
+          "revision": 3205684,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "中毒",
+            "detail": "6 秒 · 3 层",
+            "stacks": 3,
+            "trigger": "种子绽放时"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eclipse-31503",
+      "trait": 2055,
+      "revision": 3217869,
+      "evidence": "Burning (4s)",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 31503,
+          "revision": 3098786,
+          "guards": []
+        }
+      ],
+      "changes": [
+        {
+          "type": "append",
+          "row": {
+            "label": "燃烧",
+            "detail": "4 秒",
+            "trigger": "引导期间"
+          }
+        }
+      ]
+    },
+    {
+      "id": "focal-feedback-effects",
+      "trait": 744,
+      "revision": 3219972,
+      "evidence": "Temporal Curtain additionally reflects projectiles. Boons removed by Phantasmal Disenchanter are transferred to you instead.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 10186,
+          "revision": 2937051,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "反射投射物",
+                "detail": ""
+              }
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 10282,
+          "revision": 3219835,
+          "guards": [],
+          "changes": [
+            {
+              "type": "append",
+              "row": {
+                "label": "转移增益",
+                "detail": "将幻影除魔从敌人移除的增益转移给自己"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mechanized-deployment-balance-20261110",
+      "trait": 1872,
+      "revision": 3117851,
+      "evidence": "Recharge Reduced: 15%",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5983,
+          "revision": 3218235,
+          "guards": [
+            {
+              "label": "冷却时间",
+              "detail": "20 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "冷却时间",
+              "factor": 0.85
+            }
+          ]
+        },
+        {
+          "kind": "skills",
+          "id": 5972,
+          "revision": 3218238,
+          "guards": [
+            {
+              "label": "冷却时间",
+              "detail": "30 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "number",
+              "label": "冷却时间",
+              "factor": 0.85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elemental-attunement-5492",
+      "trait": 264,
+      "revision": 3218190,
+      "evidence": "Grant a boon to nearby allies when changing attunements.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5492,
+          "revision": 3218186,
+          "guards": [
+            {
+              "label": "威能",
+              "detail": "10 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "威能",
+              "row": {
+                "label": "威能",
+                "detail": "15 秒",
+                "recipient": "自身与附近盟友（最多5名，半径240）",
+                "trigger": "切换至不同元素时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elemental-attunement-5493",
+      "trait": 264,
+      "revision": 3218190,
+      "evidence": "Grant a boon to nearby allies when changing attunements.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5493,
+          "revision": 3218184,
+          "guards": [
+            {
+              "label": "再生",
+              "detail": "3 秒"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "再生",
+              "row": {
+                "label": "再生",
+                "detail": "5 秒",
+                "recipient": "自身与附近盟友（最多5名，半径240）",
+                "trigger": "切换至不同元素时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elemental-attunement-5494",
+      "trait": 264,
+      "revision": 3218190,
+      "evidence": "Grant a boon to nearby allies when changing attunements.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5494,
+          "revision": 3218182,
+          "guards": [
+            {
+              "label": "迅捷",
+              "detail": "5 秒 · +33% 移动速度"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "迅捷",
+              "row": {
+                "label": "迅捷",
+                "detail": "8 秒 · +33% 移动速度",
+                "recipient": "自身与附近盟友（最多5名，半径240）",
+                "trigger": "切换至不同元素时"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elemental-attunement-5495",
+      "trait": 264,
+      "revision": 3218190,
+      "evidence": "Grant a boon to nearby allies when changing attunements.",
+      "targets": [
+        {
+          "kind": "skills",
+          "id": 5495,
+          "revision": 3218179,
+          "guards": [
+            {
+              "label": "保护",
+              "detail": "3 秒 · -33% 受到的伤害"
+            }
+          ],
+          "changes": [
+            {
+              "type": "replace",
+              "label": "保护",
+              "row": {
+                "label": "保护",
+                "detail": "5 秒 · -33% 受到的伤害",
+                "recipient": "自身与附近盟友（最多5名，半径240）",
+                "trigger": "切换至不同元素时"
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "durationBonuses": [
@@ -5162,6 +5314,19 @@
         "detail": "25%"
       },
       "gate": "fury"
+    },
+    {
+      "trait": 2075,
+      "revision": 3220035,
+      "evidence": "Duration Increase: 20%",
+      "guard": {
+        "label": "持续时间延长",
+        "detail": "20%"
+      },
+      "effects": [
+        "Bleeding"
+      ],
+      "bonus": 20
     }
   ],
   "reviewedExclusions": [
@@ -5369,42 +5534,20 @@
     },
     {
       "trait": 2148,
-      "revision": 2739984,
+      "revision": 3220052,
       "evidence": [
-        "“ Imbued Haste Gain increased attributes while affected by quickness. Condition Damage: +250 Healing Power: +250 Vitality: +250 — In-game description"
+        "“ Imbued Haste Gain bonuses while affected by quickness. Condition Damage Increase: 10% Damage Reduced: 10% Healing Increase to Others: 10%"
       ],
       "guards": [
         {
-          "label": "症状伤害",
-          "detail": "+250"
-        },
-        {
-          "label": "治疗效果",
-          "detail": "+250"
-        },
-        {
-          "label": "体力",
-          "detail": "+250"
+          "label": "增加对其他人的治疗",
+          "detail": "10%"
         }
       ],
       "rules": [
         {
-          "target": "ConditionDamage",
-          "amount": 250,
-          "gates": [
-            "quickness"
-          ]
-        },
-        {
-          "target": "Healing",
-          "amount": 250,
-          "gates": [
-            "quickness"
-          ]
-        },
-        {
-          "target": "Vitality",
-          "amount": 250,
+          "target": "outgoingHealing",
+          "amount": 10,
           "gates": [
             "quickness"
           ]
@@ -6043,9 +6186,9 @@
     },
     {
       "trait": 2160,
-      "revision": 2946176,
+      "revision": 3219741,
       "evidence": [
-        "“ Premeditation Deal increased strike damage for each unique boon you have; concentration is increased. Bonus Damage per Boon: 1% Concentration: +180 — In-game description"
+        "“ Premeditation Deal increased strike damage for each unique boon you have; concentration is increased. Bonus Damage per Boon: 2% Maximum Damage Increase: 10% Concentration: +180"
       ],
       "guards": [
         {
@@ -6300,14 +6443,22 @@
     },
     {
       "trait": 810,
-      "revision": 3006426,
+      "revision": 3217403,
       "evidence": [
-        "“ Target the Weak Increases critical-hit chance for each condition on the foe. Gain condition damage based on your precision. Critical Chance Increase: 2% Gain Condition Damage Based on a Percentage of Precision: 13% — In-game description"
+        "“ Target the Weak Increases critical-hit chance for each condition on the foe. Gain condition damage based on your precision. Critical Chance Increase: 4% Maximum Critical Chance Increase: 20% Gain Condition Damage Based on a Percentage of Precision: 13%"
       ],
       "guards": [
         {
           "label": "精准转化为症状伤害的比例",
           "detail": "13%"
+        },
+        {
+          "label": "暴击率提升",
+          "detail": "4%"
+        },
+        {
+          "label": "最大暴击率增加",
+          "detail": "20%"
         }
       ],
       "rules": [
@@ -6318,7 +6469,7 @@
         },
         {
           "target": "critical",
-          "amount": 2,
+          "amount": 4,
           "perStack": "targetConditions"
         }
       ],
@@ -6326,8 +6477,8 @@
         {
           "key": "targetConditions",
           "label": "目标症状种类数",
-          "description": "每种不同症状 +2% 暴击率；同一症状的层数不重复计算",
-          "max": 14
+          "description": "每种不同症状增加 4% 暴击率，最多计 5 种",
+          "max": 5
         }
       ]
     },
@@ -6657,9 +6808,9 @@
     },
     {
       "trait": 1788,
-      "revision": 2946172,
+      "revision": 3218325,
       "evidence": [
-        "“ Reinforced Potency Gain concentration and deal increased strike damage for each active boon you have. Bonus Damage per Boon: 1% Concentration: +240 — In-game description"
+        "“ Reinforced Potency Gain concentration and deal increased strike damage for each active boon you have. Bonus Damage per Boon: 2% Maximum Damage Increase: 10% Concentration: +240"
       ],
       "guards": [
         {
@@ -6726,41 +6877,30 @@
     },
     {
       "trait": 2229,
-      "revision": 3128934,
+      "revision": 3218350,
       "evidence": [
-        "“ Empire Divided Gain increased power while above the health threshold. Gain increased healing power while below it. Health Threshold: 50% Power: +240 Healing Power: +240 — In-game description"
+        "“ Rise to the Occasion Your strike damage and outgoing healing are increased when your endurance is not full. Damage Increase: 10% Healing Increase to Others: 10%"
       ],
       "guards": [
         {
-          "label": "威力",
-          "detail": "+240"
-        },
-        {
-          "label": "治疗效果",
-          "detail": "+240"
+          "label": "增加对其他人的治疗",
+          "detail": "10%"
         }
       ],
       "rules": [
         {
-          "target": "Power",
-          "amount": 240,
+          "target": "outgoingHealing",
+          "amount": 10,
           "gates": [
-            "healthAbove50"
-          ]
-        },
-        {
-          "target": "Healing",
-          "amount": 240,
-          "gates": [
-            "healthBelow50"
+            "enduranceBelowFull"
           ]
         }
       ],
       "controls": [
         {
-          "key": "healthBelow50",
-          "label": "生命低于 50%",
-          "description": "勾选：+240 治疗效果；取消：按生命高于 50% 预览，+240 威力。两种状态互斥"
+          "key": "enduranceBelowFull",
+          "label": "耐力未满",
+          "description": "迎难而上生效，对盟友治疗加成 +10%"
         }
       ]
     },
@@ -7148,9 +7288,9 @@
     },
     {
       "trait": 1068,
-      "revision": 3135499,
+      "revision": 3217721,
       "evidence": [
-        "“ Hunter's Tactics You deal more damage and have an increased chance to critically strike while attacking from behind or the side or when striking a defiant foe. Damage Increase: 10% Critical Chance Increase: 10% — In-game description"
+        "“ Hunter's Tactics When striking a defiant[sic] foe from behind or the side, gain increased strike damage and critical-strike chance for a duration. Damage Increase: 10% Hunter's Tactics (8s): Damage and critical-strike chance are increased. Critical Chance Increase: 10%"
       ],
       "guards": [
         {
@@ -7166,22 +7306,16 @@
         {
           "target": "critical",
           "amount": 10,
-          "anyGates": [
-            "targetFlanked",
-            "targetDefiant"
+          "gates": [
+            "huntersTacticsActive"
           ]
         }
       ],
       "controls": [
         {
-          "key": "targetFlanked",
-          "label": "从目标侧面或背后攻击",
-          "description": "只预览当前攻击方向，不自动模拟走位"
-        },
-        {
-          "key": "targetDefiant",
-          "label": "目标拥有蔑视条",
-          "description": "联动明确对拥有蔑视条敌人生效的特性"
+          "key": "huntersTacticsActive",
+          "label": "捕猎战术效果生效中",
+          "description": "预览触发后 8 秒内的暴击率奖励"
         }
       ]
     },
@@ -7521,9 +7655,9 @@
     },
     {
       "trait": 1268,
-      "revision": 3065777,
+      "revision": 3219678,
       "evidence": [
-        "“ Twin Fangs Deal increased critical damage, which is further increased when your health is above the threshold. Gain bonus critical-hit chance when hitting a foe from behind or the side or when they are defiant. Health Threshold: 50% High Health Critical Damage Increase: 2% Critical Damage Increase: 5% Critical Chance Increase: 7% — In-game description",
+        "“ Twin Fangs Deal increased critical damage, which is further increased while your health is above the threshold. Gain bonus critical-hit chance for a duration after hitting a foe from behind or the side or when they are defiant. Health Threshold: 50% Twin Fangs (8s): +7% Critical Chance Critical Damage Increase: 5% High-Health Critical Damage Increase: 2% Critical Chance Increase: 7%",
         "The damage modifiers stack additively with each other, but multiplicatively with other damage modifiers."
       ],
       "guards": [
@@ -7532,7 +7666,7 @@
           "detail": "50%"
         },
         {
-          "label": "高生命值时暴击伤害提高",
+          "label": "高生命值时暴击伤害增加",
           "detail": "2%"
         },
         {
@@ -7548,9 +7682,8 @@
         {
           "target": "critical",
           "amount": 7,
-          "anyGates": [
-            "targetFlanked",
-            "targetDefiant"
+          "gates": [
+            "twinFangsActive"
           ]
         },
         {
@@ -7567,14 +7700,9 @@
       ],
       "controls": [
         {
-          "key": "targetFlanked",
-          "label": "从目标侧面或背后攻击",
-          "description": "只预览当前攻击方向，不自动模拟走位"
-        },
-        {
-          "key": "targetDefiant",
-          "label": "目标拥有蔑视条",
-          "description": "联动明确对拥有蔑视条敌人生效的特性"
+          "key": "twinFangsActive",
+          "label": "双牙撕咬效果生效中",
+          "description": "预览触发后 8 秒内的暴击率奖励"
         },
         {
           "key": "healthBelow50",

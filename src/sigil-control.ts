@@ -104,7 +104,7 @@ export const sigilControlRules: Record<number, ControlRule> = {
   },
   "76582": {
     title: "Metal_Legion_Guitar",
-    revision: 3128646,
+    revision: 3219746,
     defiance: 200,
     control: {
       label: "昏迷",

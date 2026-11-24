@@ -216,7 +216,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           }
         ]
       },
@@ -273,7 +273,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -327,7 +327,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           }
         ]
       },
@@ -392,7 +392,7 @@
           {
             "id": 2195,
             "name": "凤凰协议",
-            "description": "触发决心效果时获得增益，但你不再拥有治疗。修正了决心的持续时间。激活流动决心时获得增益。"
+            "description": "触发决心效果时，给盟友施加增益，但你不再拥有治疗。修正了决心的持续时间。激活流动决心时获得增益。"
           }
         ]
       },
@@ -446,7 +446,6 @@
         "relatedTraits": [
           635,
           622,
-          2179,
           2191
         ],
         "selectedTraitNotes": [
@@ -459,11 +458,6 @@
             "id": 622,
             "name": "愤怒侵染",
             "description": "美德技能1的被动效果更频繁地触发，燃烧一片区域。"
-          },
-          {
-            "id": 2179,
-            "name": "急速烈焰",
-            "description": "当正义技能冷却时，维持被动效果。对一个盟友施加急速将同样施加正义余烬。"
           },
           {
             "id": 2191,
@@ -575,7 +569,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -610,7 +604,6 @@
           621,
           635,
           622,
-          2179,
           2191
         ],
         "selectedTraitNotes": [
@@ -627,7 +620,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 635,
@@ -638,11 +631,6 @@
             "id": 622,
             "name": "愤怒侵染",
             "description": "美德技能1的被动效果更频繁地触发，燃烧一片区域。"
-          },
-          {
-            "id": 2179,
-            "name": "急速烈焰",
-            "description": "当正义技能冷却时，维持被动效果。对一个盟友施加急速将同样施加正义余烬。"
           },
           {
             "id": 2191,
@@ -783,7 +771,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 624,
@@ -798,7 +786,7 @@
           {
             "id": 2076,
             "name": "稳健急速",
-            "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加急速。"
           }
         ]
       },
@@ -835,7 +823,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 582,
@@ -1043,7 +1031,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 582,
@@ -1124,7 +1112,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 563,
@@ -1159,7 +1147,7 @@
           {
             "id": 2195,
             "name": "凤凰协议",
-            "description": "触发决心效果时获得增益，但你不再拥有治疗。修正了决心的持续时间。激活流动决心时获得增益。"
+            "description": "触发决心效果时，给盟友施加增益，但你不再拥有治疗。修正了决心的持续时间。激活流动决心时获得增益。"
           }
         ]
       },
@@ -1263,11 +1251,16 @@
         "title": "Inspired_Virtue",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 3172164,
+        "revision": 3219843,
         "rows": [
           {
             "label": "每个增益的伤害加成",
-            "detail": "0.5%",
+            "detail": "1.5%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "最大伤害提升",
+            "detail": "7.5%",
             "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           },
           {
@@ -1298,6 +1291,7 @@
         ],
         "relatedTraits": [
           585,
+          2086,
           563,
           1925,
           577,
@@ -1316,11 +1310,9 @@
           612,
           1898,
           1963,
-          2101,
           2062,
           2076,
           2116,
-          2105,
           2222,
           2197,
           2210,
@@ -1334,6 +1326,11 @@
             "id": 585,
             "name": "无私治疗",
             "description": "为盟友施加增益时治疗自己。"
+          },
+          {
+            "id": 2086,
+            "name": "稳固堡垒",
+            "description": "保护的效果增强。"
           },
           {
             "id": 563,
@@ -1426,11 +1423,6 @@
             "description": "控制敌人时获得稳固。对于被控制、暴露或者有蔑视条的敌人，造成额外打击伤害。\n控制效果包括昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽和恐惧。"
           },
           {
-            "id": 2101,
-            "name": "解放之誓",
-            "description": "当你使用治疗技能时，会向盟友施加急速。"
-          },
-          {
             "id": 2062,
             "name": "敏捷学者",
             "description": "装备美德技能时，获得急速。每三次圣书 技能会给予你书页。\n取消圣书时，层数就会重置。\n每隔一段时间，只能获得一次急速"
@@ -1438,17 +1430,12 @@
           {
             "id": 2076,
             "name": "稳健急速",
-            "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加急速。"
           },
           {
             "id": 2116,
             "name": "传奇学识",
             "description": "圣书技能将从远古吟游诗人在边缘的涂鸦中获得奖励。"
-          },
-          {
-            "id": 2105,
-            "name": "泰然处之",
-            "description": "当勇气技能处于冷却时，保留它的被动效果。当你控制、定身或迟缓的敌人时，给附近盟友提供增益。\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
           },
           {
             "id": 2222,
@@ -1473,7 +1460,7 @@
           {
             "id": 2195,
             "name": "凤凰协议",
-            "description": "触发决心效果时获得增益，但你不再拥有治疗。修正了决心的持续时间。激活流动决心时获得增益。"
+            "description": "触发决心效果时，给盟友施加增益，但你不再拥有治疗。修正了决心的持续时间。激活流动决心时获得增益。"
           },
           {
             "id": 2410,
@@ -1519,21 +1506,16 @@
         "title": "Unscathed_Contender",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 3128713,
+        "revision": 3220506,
         "rows": [
           {
-            "label": "圣盾提升伤害",
-            "detail": "5%",
-            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
-          },
-          {
-            "label": "超过生命值阈值时提升伤害",
-            "detail": "5%",
+            "label": "伤害提升",
+            "detail": "12%",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
             "label": "生命临界值",
-            "detail": "90%",
+            "detail": "75%",
             "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
           }
         ],
@@ -1652,7 +1634,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 624,
@@ -1672,7 +1654,7 @@
           {
             "id": 2076,
             "name": "稳健急速",
-            "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加急速。"
           }
         ]
       },
@@ -1746,7 +1728,6 @@
         "relatedTraits": [
           635,
           622,
-          2179,
           2191
         ],
         "selectedTraitNotes": [
@@ -1759,11 +1740,6 @@
             "id": 622,
             "name": "愤怒侵染",
             "description": "美德技能1的被动效果更频繁地触发，燃烧一片区域。"
-          },
-          {
-            "id": 2179,
-            "name": "急速烈焰",
-            "description": "当正义技能冷却时，维持被动效果。对一个盟友施加急速将同样施加正义余烬。"
           },
           {
             "id": 2191,
@@ -1886,7 +1862,7 @@
         "title": "Zealot's_Resolution",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 3095135,
+        "revision": 3219844,
         "rows": [
           {
             "label": "生命临界值",
@@ -2015,7 +1991,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 563,
@@ -2055,7 +2031,7 @@
           {
             "id": 2195,
             "name": "凤凰协议",
-            "description": "触发决心效果时获得增益，但你不再拥有治疗。修正了决心的持续时间。激活流动决心时获得增益。"
+            "description": "触发决心效果时，给盟友施加增益，但你不再拥有治疗。修正了决心的持续时间。激活流动决心时获得增益。"
           }
         ]
       },
@@ -2118,7 +2094,6 @@
         "relatedTraits": [
           635,
           622,
-          2179,
           2191
         ],
         "selectedTraitNotes": [
@@ -2131,11 +2106,6 @@
             "id": 622,
             "name": "愤怒侵染",
             "description": "美德技能1的被动效果更频繁地触发，燃烧一片区域。"
-          },
-          {
-            "id": 2179,
-            "name": "急速烈焰",
-            "description": "当正义技能冷却时，维持被动效果。对一个盟友施加急速将同样施加正义余烬。"
           },
           {
             "id": 2191,
@@ -2439,7 +2409,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           }
         ]
       },
@@ -2544,8 +2514,7 @@
         "relatedTraits": [
           585,
           621,
-          2148,
-          2179
+          2148
         ],
         "selectedTraitNotes": [
           {
@@ -2556,35 +2525,52 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 2148,
             "name": "急速灌注",
-            "description": "受到急速影响时你的属性会增加。"
-          },
-          {
-            "id": 2179,
-            "name": "急速烈焰",
-            "description": "当正义技能冷却时，维持被动效果。对一个盟友施加急速将同样施加正义余烬。"
+            "description": "受到急速影响时获得奖励。"
           }
         ]
       },
       "2063": {
-        "title": "Weighty_Terms",
+        "title": "Fervid_Conviction",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 3005202,
+        "revision": 3220105,
         "rows": [
           {
-            "label": "迟缓",
-            "detail": "1.5 秒",
-            "icon": "https://render.guildwars2.com/file/F60D1EF5271D7B9319610855676D320CD25F01C6/961397.png"
+            "label": "燃烧",
+            "detail": "2 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
           },
           {
-            "label": "书页",
-            "detail": "2",
-            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+            "label": "正义余烬",
+            "detail": "10 秒 · 2 层",
+            "recipient": "自身",
+            "stacks": 2
+          },
+          {
+            "label": "正义余烬",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/EC05420EAE5445A7069409B54D4502ED36BDF10A/1770477.png"
+          }
+        ],
+        "relatedTraits": [
+          2105,
+          2062
+        ],
+        "selectedTraitNotes": [
+          {
+            "id": 2105,
+            "name": "正义烈焰",
+            "description": "当<c=@abilitytype>正义</c>技能冷却时，维持被动效果。提升正义余烬的燃烧效果。"
+          },
+          {
+            "id": 2062,
+            "name": "敏捷学者",
+            "description": "装备美德技能时，获得急速。每三次圣书 技能会给予你书页。\n取消圣书时，层数就会重置。\n每隔一段时间，只能获得一次急速"
           }
         ]
       },
@@ -2599,17 +2585,17 @@
         "title": "Unrelenting_Criticism",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 3208959,
+        "revision": 3220035,
         "rows": [
           {
-            "label": "命中触发几率",
-            "detail": "100%",
-            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+            "label": "伤害提升",
+            "detail": "5%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
-            "label": "流血",
-            "detail": "4.5 秒",
-            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png"
+            "label": "持续时间延长",
+            "detail": "20%",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
           }
         ]
       },
@@ -2617,27 +2603,30 @@
         "title": "Stalwart_Speed",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 2956343,
+        "revision": 3220050,
         "rows": [
           {
-            "label": "内置冷却",
-            "detail": "7 秒"
+            "label": "急速",
+            "detail": "4.5 秒",
+            "icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png"
           },
           {
-            "label": "急速",
-            "detail": "2 秒",
-            "icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png"
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
           }
         ],
         "relatedTraits": [
           585,
           621,
           2148,
-          2179,
-          582,
-          1684,
-          625,
-          612
+          2105,
+          2062
         ],
         "selectedTraitNotes": [
           {
@@ -2648,50 +2637,35 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 2148,
             "name": "急速灌注",
-            "description": "受到急速影响时你的属性会增加。"
+            "description": "受到急速影响时获得奖励。"
           },
           {
-            "id": 2179,
-            "name": "急速烈焰",
-            "description": "当正义技能冷却时，维持被动效果。对一个盟友施加急速将同样施加正义余烬。"
+            "id": 2105,
+            "name": "正义烈焰",
+            "description": "当<c=@abilitytype>正义</c>技能冷却时，维持被动效果。提升正义余烬的燃烧效果。"
           },
           {
-            "id": 582,
-            "name": "无畏防御",
-            "description": "在低于一定生命值时被攻击会获得圣盾。"
-          },
-          {
-            "id": 1684,
-            "name": "群体防御",
-            "description": "格挡攻击时，盟友获得圣盾。"
-          },
-          {
-            "id": 625,
-            "name": "潜在决心",
-            "description": "受到控制时获得决心和圣盾。\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
-          },
-          {
-            "id": 612,
-            "name": "不屈勇气",
-            "description": "激活勇气美德时解除昏迷，并使附近盟友获得稳固。勇气美德的被动效果将出现得更频繁。"
+            "id": 2062,
+            "name": "敏捷学者",
+            "description": "装备美德技能时，获得急速。每三次圣书 技能会给予你书页。\n取消圣书时，层数就会重置。\n每隔一段时间，只能获得一次急速"
           }
         ]
       },
       "2086": {
-        "title": "Archivist_of_Whispers",
+        "title": "Bastion",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 3005200,
+        "revision": 3219366,
         "rows": [
           {
-            "label": "额外次数",
-            "detail": "3",
-            "icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png"
+            "label": "效果提升",
+            "detail": "20%",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
           }
         ]
       },
@@ -2699,117 +2673,89 @@
         "title": "Purity_of_Word",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 3005199,
+        "revision": 3219370,
         "rows": [
           {
             "label": "间隔",
-            "detail": "8 秒",
+            "detail": "6 秒",
             "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png"
           }
-        ]
+        ],
+        "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
       },
       "2101": {
-        "title": "Liberator's_Vow",
+        "title": "Revelation",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 2739985,
+        "revision": 3219357,
         "rows": [
           {
-            "label": "内置冷却",
-            "detail": "7 秒"
-          },
-          {
-            "label": "急速",
-            "detail": "2 秒",
-            "icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png"
-          },
-          {
-            "label": "盟友目标数量",
-            "detail": "5",
-            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
-          },
-          {
-            "label": "半径",
-            "detail": "360",
-            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
-          }
-        ],
-        "relatedTraits": [
-          585,
-          621,
-          2148,
-          2179
-        ],
-        "selectedTraitNotes": [
-          {
-            "id": 585,
-            "name": "无私治疗",
-            "description": "为盟友施加增益时治疗自己。"
-          },
-          {
-            "id": 621,
-            "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
-          },
-          {
-            "id": 2148,
-            "name": "急速灌注",
-            "description": "受到急速影响时你的属性会增加。"
-          },
-          {
-            "id": 2179,
-            "name": "急速烈焰",
-            "description": "当正义技能冷却时，维持被动效果。对一个盟友施加急速将同样施加正义余烬。"
+            "label": "书页",
+            "detail": "1",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           }
         ]
       },
       "2105": {
-        "title": "Stoic_Demeanor",
+        "title": "Righteous_Flames",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 2932526,
+        "revision": 3220057,
         "rows": [
           {
-            "label": "内置冷却",
-            "detail": "1 秒"
+            "label": "正义余烬",
+            "detail": "下一次命中施加燃烧"
           },
           {
-            "label": "抗性",
-            "detail": "2 秒",
-            "icon": "https://render.guildwars2.com/file/50BAC1B8E10CFAB9E749A5D910D4A9DCF29EBB7C/961398.png"
-          },
-          {
-            "label": "威能",
-            "detail": "10 秒 · 3 层",
-            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
-            "stacks": 3
-          },
-          {
-            "label": "半径",
-            "detail": "300",
-            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+            "label": "燃烧",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
           }
         ],
         "relatedTraits": [
-          585,
-          621,
-          2063
+          634,
+          577,
+          567,
+          1686,
+          2062,
+          2063,
+          2076
         ],
         "selectedTraitNotes": [
           {
-            "id": 585,
-            "name": "无私治疗",
-            "description": "为盟友施加增益时治疗自己。"
+            "id": 634,
+            "name": "炽热之怒",
+            "description": "你攻击燃烧的敌人时造成的打击伤害提升。"
           },
           {
-            "id": 621,
-            "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "id": 577,
+            "name": "心灵之火",
+            "description": "攻击的敌人身上燃烧层数达到临界值时，攻击时获得激怒。"
+          },
+          {
+            "id": 567,
+            "name": "光耀火焰",
+            "description": "加强狂徒烈焰。你造成的燃烧拥有更长的持续时间，你的火炬技能获得更少的冷却时间。"
+          },
+          {
+            "id": 1686,
+            "name": "怒火横肆",
+            "description": "提升你造成的燃烧伤害。美德技能1被动效果施加的燃烧持续时间延长。"
+          },
+          {
+            "id": 2062,
+            "name": "敏捷学者",
+            "description": "装备美德技能时，获得急速。每三次圣书 技能会给予你书页。\n取消圣书时，层数就会重置。\n每隔一段时间，只能获得一次急速"
           },
           {
             "id": 2063,
-            "name": "沉言重词",
-            "description": "咒语 技能的最终充能会减速附近敌人并给予书页。"
+            "name": "炽热誓言",
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加正义余烬。"
+          },
+          {
+            "id": 2076,
+            "name": "稳健急速",
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加急速。"
           }
         ]
       },
@@ -2848,7 +2794,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           }
         ]
       },
@@ -2856,32 +2802,29 @@
         "title": "Imbued_Haste",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 2739984,
+        "revision": 3220052,
         "rows": [
           {
-            "label": "症状伤害",
-            "detail": "+250"
+            "label": "提升症状伤害",
+            "detail": "10%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
-            "label": "治疗效果",
-            "detail": "+250"
+            "label": "伤害降低",
+            "detail": "10%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
-            "label": "体力",
-            "detail": "+250"
+            "label": "增加对其他人的治疗",
+            "detail": "10%",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png"
           }
         ],
         "relatedTraits": [
-          2101,
           2062,
           2076
         ],
         "selectedTraitNotes": [
-          {
-            "id": 2101,
-            "name": "解放之誓",
-            "description": "当你使用治疗技能时，会向盟友施加急速。"
-          },
           {
             "id": 2062,
             "name": "敏捷学者",
@@ -2890,88 +2833,59 @@
           {
             "id": 2076,
             "name": "稳健急速",
-            "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加急速。"
           }
         ]
       },
       "2159": {
-        "title": "Loremaster",
+        "title": "Deliverance",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 3005203,
+        "revision": 3219187,
         "rows": [
           {
-            "label": "间隔",
-            "detail": "5 秒",
-            "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png"
+            "label": "治疗",
+            "detail": "285 + 0.1 × 治疗效果",
+            "healing": {
+              "base": 285,
+              "coefficient": 0.1
+            }
+          },
+          {
+            "label": "永恒绿洲",
+            "detail": "800 + 0.8 × 治疗效果 · 8 秒",
+            "icon": "https://render.guildwars2.com/file/D5CC944BBECFA431913EFADA0E9FB6CA644F1FDC/1770483.png",
+            "healing": {
+              "base": 800,
+              "coefficient": 0.8
+            }
           }
         ]
       },
       "2179": {
-        "title": "Quickfire",
+        "title": "Stoic_Demeanor",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 3153611,
+        "revision": 3220862,
         "rows": [
           {
             "label": "内置冷却",
-            "detail": "7 秒"
+            "detail": "0.25 秒"
           },
           {
-            "label": "正义余烬",
-            "detail": "10 秒",
-            "icon": "https://render.guildwars2.com/file/EC05420EAE5445A7069409B54D4502ED36BDF10A/1770477.png"
-          },
-          {
-            "label": "燃烧",
-            "detail": "2 秒",
-            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+            "label": "冷却时间减少",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png"
           }
         ],
         "relatedTraits": [
-          634,
-          577,
-          567,
-          1686,
-          2101,
-          2062,
-          2076
+          585
         ],
         "selectedTraitNotes": [
           {
-            "id": 634,
-            "name": "炽热之怒",
-            "description": "你攻击燃烧的敌人时造成的打击伤害提升。"
-          },
-          {
-            "id": 577,
-            "name": "心灵之火",
-            "description": "攻击的敌人身上燃烧层数达到临界值时，攻击时获得激怒。"
-          },
-          {
-            "id": 567,
-            "name": "光耀火焰",
-            "description": "加强狂徒烈焰。你造成的燃烧拥有更长的持续时间，你的火炬技能获得更少的冷却时间。"
-          },
-          {
-            "id": 1686,
-            "name": "怒火横肆",
-            "description": "提升你造成的燃烧伤害。美德技能1被动效果施加的燃烧持续时间延长。"
-          },
-          {
-            "id": 2101,
-            "name": "解放之誓",
-            "description": "当你使用治疗技能时，会向盟友施加急速。"
-          },
-          {
-            "id": 2062,
-            "name": "敏捷学者",
-            "description": "装备美德技能时，获得急速。每三次圣书 技能会给予你书页。\n取消圣书时，层数就会重置。\n每隔一段时间，只能获得一次急速"
-          },
-          {
-            "id": 2076,
-            "name": "稳健急速",
-            "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
+            "id": 585,
+            "name": "无私治疗",
+            "description": "为盟友施加增益时治疗自己。"
           }
         ]
       },
@@ -3062,7 +2976,7 @@
         "title": "Phoenix_Protocol",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 2934562,
+        "revision": 3219845,
         "rows": [
           {
             "label": "触发时再生",
@@ -3075,6 +2989,11 @@
           {
             "label": "激活时敏捷",
             "detail": "5 秒 · +25% 技能冷却恢复速度"
+          },
+          {
+            "label": "半径",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
           }
         ]
       },
@@ -3235,7 +3154,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           }
         ]
       },
@@ -3310,7 +3229,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           }
         ]
       },
@@ -3436,11 +3355,11 @@
         "title": "Empowered_Armaments",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 3128122,
+        "revision": 3220070,
         "rows": [
           {
             "label": "强化军械",
-            "detail": "6 秒 · +10% 伤害",
+            "detail": "6 秒 · +13% 伤害",
             "icon": "https://render.guildwars2.com/file/37424E9DD0A3ADC61DD56BB180C96201DB61099C/3679960.png"
           },
           {
@@ -3765,8 +3684,7 @@
           581,
           654,
           553,
-          1682,
-          2101
+          1682
         ],
         "selectedTraitNotes": [
           {
@@ -3793,11 +3711,6 @@
             "id": 1682,
             "name": "意志之力",
             "description": "提升体力，根据你的体力提升治疗效果。"
-          },
-          {
-            "id": 2101,
-            "name": "解放之誓",
-            "description": "当你使用治疗技能时，会向盟友施加急速。"
           }
         ]
       },
@@ -3900,7 +3813,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 624,
@@ -3915,7 +3828,7 @@
           {
             "id": 2076,
             "name": "稳健急速",
-            "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加急速。"
           }
         ]
       },
@@ -4020,7 +3933,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -4339,7 +4252,7 @@
           587,
           1983,
           1963,
-          2105
+          2179
         ],
         "selectedTraitNotes": [
           {
@@ -4363,9 +4276,9 @@
             "description": "控制敌人时获得稳固。对于被控制、暴露或者有蔑视条的敌人，造成额外打击伤害。\n控制效果包括昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽和恐惧。"
           },
           {
-            "id": 2105,
+            "id": 2179,
             "name": "泰然处之",
-            "description": "当勇气技能处于冷却时，保留它的被动效果。当你控制、定身或迟缓的敌人时，给附近盟友提供增益。\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
+            "description": "当<c=@abilitytype>勇气</c>技能处于冷却时，维持被动效果。当你控制、定身或迟缓的敌人时，减少一部分牢固连结的冷却时间。<br><c=@reminder>控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。</c>"
           }
         ],
         "modifiers": [
@@ -4390,6 +4303,76 @@
               }
             ],
             "traitName": "完美铭刻"
+          }
+        ]
+      },
+      "9098": {
+        "title": "Orb_of_Wrath",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219189,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.6",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "9099": {
+        "title": "Chains_of_Light",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219190,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "15 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.25",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "定身",
+            "detail": "5 秒"
+          },
+          {
+            "label": "易伤",
+            "detail": "6 秒 · 5 层 · +5% 受到的伤害, +5% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 5
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -4431,8 +4414,7 @@
           654,
           1682,
           1896,
-          1908,
-          2101
+          1908
         ],
         "selectedTraitNotes": [
           {
@@ -4479,11 +4461,6 @@
             "id": 1908,
             "name": "猎人工事",
             "description": "格挡或者闪避攻击时移除症状，获得治疗。格挡和闪避触发效果的冷却时间分开计算。"
-          },
-          {
-            "id": 2101,
-            "name": "解放之誓",
-            "description": "当你使用治疗技能时，会向盟友施加急速。"
           }
         ]
       },
@@ -4805,7 +4782,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -4830,7 +4807,7 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
           },
           {
             "id": 2197,
@@ -4957,7 +4934,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 624,
@@ -4987,7 +4964,7 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
           },
           {
             "id": 2197,
@@ -5087,7 +5064,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -5117,7 +5094,7 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
           },
           {
             "id": 2197,
@@ -5206,7 +5183,7 @@
           587,
           1983,
           1963,
-          2105
+          2179
         ],
         "selectedTraitNotes": [
           {
@@ -5230,9 +5207,9 @@
             "description": "控制敌人时获得稳固。对于被控制、暴露或者有蔑视条的敌人，造成额外打击伤害。\n控制效果包括昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽和恐惧。"
           },
           {
-            "id": 2105,
+            "id": 2179,
             "name": "泰然处之",
-            "description": "当勇气技能处于冷却时，保留它的被动效果。当你控制、定身或迟缓的敌人时，给附近盟友提供增益。\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
+            "description": "当<c=@abilitytype>勇气</c>技能处于冷却时，维持被动效果。当你控制、定身或迟缓的敌人时，减少一部分牢固连结的冷却时间。<br><c=@reminder>控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。</c>"
           }
         ]
       },
@@ -5307,7 +5284,7 @@
           587,
           1983,
           1963,
-          2105
+          2179
         ],
         "selectedTraitNotes": [
           {
@@ -5341,9 +5318,9 @@
             "description": "控制敌人时获得稳固。对于被控制、暴露或者有蔑视条的敌人，造成额外打击伤害。\n控制效果包括昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽和恐惧。"
           },
           {
-            "id": 2105,
+            "id": 2179,
             "name": "泰然处之",
-            "description": "当勇气技能处于冷却时，保留它的被动效果。当你控制、定身或迟缓的敌人时，给附近盟友提供增益。\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
+            "description": "当<c=@abilitytype>勇气</c>技能处于冷却时，维持被动效果。当你控制、定身或迟缓的敌人时，减少一部分牢固连结的冷却时间。<br><c=@reminder>控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。</c>"
           }
         ]
       },
@@ -5786,7 +5763,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -5865,7 +5842,7 @@
           1686,
           579,
           587,
-          2105
+          2179
         ],
         "selectedTraitNotes": [
           {
@@ -5899,9 +5876,9 @@
             "description": "奋力锤击变为冰川猛击。当你控制，定身，或冰冻敌人时，获得治疗。\n\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽和恐惧。"
           },
           {
-            "id": 2105,
+            "id": 2179,
             "name": "泰然处之",
-            "description": "当勇气技能处于冷却时，保留它的被动效果。当你控制、定身或迟缓的敌人时，给附近盟友提供增益。\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
+            "description": "当<c=@abilitytype>勇气</c>技能处于冷却时，维持被动效果。当你控制、定身或迟缓的敌人时，减少一部分牢固连结的冷却时间。<br><c=@reminder>控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。</c>"
           }
         ],
         "modifiers": [
@@ -5982,7 +5959,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           }
         ]
       },
@@ -6055,7 +6032,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -6065,7 +6042,7 @@
           {
             "id": 2076,
             "name": "稳健急速",
-            "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加急速。"
           }
         ]
       },
@@ -6155,8 +6132,7 @@
           579,
           581,
           654,
-          1682,
-          2101
+          1682
         ],
         "selectedTraitNotes": [
           {
@@ -6183,11 +6159,6 @@
             "id": 1682,
             "name": "意志之力",
             "description": "提升体力，根据你的体力提升治疗效果。"
-          },
-          {
-            "id": 2101,
-            "name": "解放之誓",
-            "description": "当你使用治疗技能时，会向盟友施加急速。"
           }
         ],
         "modifiers": [
@@ -6539,7 +6510,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           }
         ]
       },
@@ -6643,8 +6614,12 @@
         "title": "Smite_Condition",
         "profession": "Guardian",
         "identityVerified": true,
-        "revision": 2843953,
+        "revision": 3219202,
         "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
           {
             "label": "冷却时间",
             "detail": "16 秒"
@@ -6656,7 +6631,7 @@
           },
           {
             "label": "有症状的伤害",
-            "detail": "系数 ×1.9",
+            "detail": "系数 ×2.75",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
@@ -6988,7 +6963,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 617,
@@ -7003,7 +6978,7 @@
           {
             "id": 2076,
             "name": "稳健急速",
-            "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加急速。"
           }
         ]
       },
@@ -7012,7 +6987,7 @@
         "profession": "Guardian",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 3041741,
+        "revision": 3219199,
         "rows": [
           {
             "label": "施法时间",
@@ -7042,9 +7017,9 @@
           },
           {
             "label": "威能",
-            "detail": "10 秒 · 3 层",
+            "detail": "12 秒 · 4 层",
             "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
-            "stacks": 3
+            "stacks": 4
           },
           {
             "label": "目标数",
@@ -7185,8 +7160,7 @@
           581,
           586,
           654,
-          1682,
-          2101
+          1682
         ],
         "selectedTraitNotes": [
           {
@@ -7213,11 +7187,6 @@
             "id": 1682,
             "name": "意志之力",
             "description": "提升体力，根据你的体力提升治疗效果。"
-          },
-          {
-            "id": 2101,
-            "name": "解放之誓",
-            "description": "当你使用治疗技能时，会向盟友施加急速。"
           }
         ]
       },
@@ -7300,7 +7269,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 1898,
@@ -7450,8 +7419,7 @@
           553,
           621,
           2037,
-          2148,
-          2179
+          2148
         ],
         "selectedTraitNotes": [
           {
@@ -7472,7 +7440,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 2037,
@@ -7482,12 +7450,7 @@
           {
             "id": 2148,
             "name": "急速灌注",
-            "description": "受到急速影响时你的属性会增加。"
-          },
-          {
-            "id": 2179,
-            "name": "急速烈焰",
-            "description": "当正义技能冷却时，维持被动效果。对一个盟友施加急速将同样施加正义余烬。"
+            "description": "受到急速影响时获得奖励。"
           }
         ]
       },
@@ -7585,7 +7548,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 1898,
@@ -7888,7 +7851,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 587,
@@ -7971,7 +7934,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 1898,
@@ -8112,7 +8075,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -8127,7 +8090,7 @@
           {
             "id": 2076,
             "name": "稳健急速",
-            "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加急速。"
           }
         ]
       },
@@ -8238,7 +8201,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 624,
@@ -8430,7 +8393,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 587,
@@ -8451,6 +8414,113 @@
             "id": 1963,
             "name": "重击之光",
             "description": "控制敌人时获得稳固。对于被控制、暴露或者有蔑视条的敌人，造成额外打击伤害。\n控制效果包括昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽和恐惧。"
+          }
+        ]
+      },
+      "40114": {
+        "title": "Portent_of_Freedom",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2934494,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "稳固",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png"
+          },
+          {
+            "label": "决心",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/D104A6B9344A2E2096424A3C300E46BC2926E4D7/2440718.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "充能时间",
+            "detail": "25 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "40624": {
+        "title": "Symbol_of_Vengeance",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217477,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "8 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×3.0 · 5 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "激怒",
+            "detail": "1.5 秒 · +25% 暴击率",
+            "icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png"
+          },
+          {
+            "label": "致残",
+            "detail": "2 秒 · -50% 移动速度"
+          },
+          {
+            "label": "流血",
+            "detail": "5 秒 · 5 层",
+            "stacks": 5
+          },
+          {
+            "label": "晕眩",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5"
+          },
+          {
+            "label": "符印持续时间",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "光明",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
           }
         ]
       },
@@ -8481,7 +8551,65 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
+          }
+        ]
+      },
+      "41328": {
+        "title": "Unhindered_Delivery",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3220085,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "决心",
+            "detail": "8 秒",
+            "icon": "https://render.guildwars2.com/file/D104A6B9344A2E2096424A3C300E46BC2926E4D7/2440718.png"
+          },
+          {
+            "label": "稳固",
+            "detail": "8 秒 · 5 层",
+            "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+            "stacks": 5
+          },
+          {
+            "label": "迅捷",
+            "detail": "5 秒 · +33% 移动速度",
+            "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "书页",
+            "detail": "1",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "充能时间",
+            "detail": "25 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -8491,6 +8619,58 @@
         "identityVerified": true,
         "revision": 2558607,
         "rows": []
+      },
+      "41475": {
+        "title": "Restoring_Reprieve",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2737390,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "自我治疗",
+            "detail": "1478 + 0.54 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 1478,
+              "coefficient": 0.54
+            }
+          },
+          {
+            "label": "保护",
+            "detail": "2 秒 · -33% 受到的伤害",
+            "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png"
+          },
+          {
+            "label": "决心",
+            "detail": "2 秒",
+            "icon": "https://render.guildwars2.com/file/D104A6B9344A2E2096424A3C300E46BC2926E4D7/2440718.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "充能恢复",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
       },
       "41714": {
         "title": "Mantra_of_Solace",
@@ -8516,8 +8696,7 @@
           574,
           581,
           654,
-          2089,
-          2101
+          2089
         ],
         "selectedTraitNotes": [
           {
@@ -8538,12 +8717,7 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
-          },
-          {
-            "id": 2101,
-            "name": "解放之誓",
-            "description": "当你使用治疗技能时，会向盟友施加急速。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
           }
         ]
       },
@@ -8573,9 +8747,7 @@
           620,
           554,
           2089,
-          2086,
-          2062,
-          2159
+          2062
         ],
         "selectedTraitNotes": [
           {
@@ -8591,7 +8763,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -8621,22 +8793,61 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
-          },
-          {
-            "id": 2086,
-            "name": "密语档案",
-            "description": "你的美德将获得额外的书页。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
           },
           {
             "id": 2062,
             "name": "敏捷学者",
             "description": "装备美德技能时，获得急速。每三次圣书 技能会给予你书页。\n取消圣书时，层数就会重置。\n每隔一段时间，只能获得一次急速"
+          }
+        ]
+      },
+      "41988": {
+        "title": "Overwhelming_Celerity",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3220078,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
           },
           {
-            "id": 2159,
-            "name": "博学之士",
-            "description": "当决心技能处于冷却时，保留它的被动效果。会让你更快生成书页。"
+            "label": "急速",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png"
+          },
+          {
+            "label": "威能",
+            "detail": "10 秒 · 8 层",
+            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+            "stacks": 8
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "书页",
+            "detail": "1",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "充能恢复",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -8672,10 +8883,9 @@
           620,
           612,
           2089,
-          2086,
           2062,
           2076,
-          2105
+          2179
         ],
         "selectedTraitNotes": [
           {
@@ -8721,7 +8931,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 624,
@@ -8751,12 +8961,7 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
-          },
-          {
-            "id": 2086,
-            "name": "密语档案",
-            "description": "你的美德将获得额外的书页。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
           },
           {
             "id": 2062,
@@ -8766,12 +8971,63 @@
           {
             "id": 2076,
             "name": "稳健急速",
-            "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加急速。"
           },
           {
-            "id": 2105,
+            "id": 2179,
             "name": "泰然处之",
-            "description": "当勇气技能处于冷却时，保留它的被动效果。当你控制、定身或迟缓的敌人时，给附近盟友提供增益。\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
+            "description": "当<c=@abilitytype>勇气</c>技能处于冷却时，维持被动效果。当你控制、定身或迟缓的敌人时，减少一部分牢固连结的冷却时间。<br><c=@reminder>控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。</c>"
+          }
+        ]
+      },
+      "42360": {
+        "title": "Echo_of_Truth",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2737395,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.7",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "致残",
+            "detail": "4 秒 · -50% 移动速度"
+          },
+          {
+            "label": "虚弱",
+            "detail": "4 秒 · -50% 耐力回复速度, +50% 非限定攻击失手几率",
+            "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png"
+          },
+          {
+            "label": "目盲",
+            "detail": "4 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "充能恢复",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -8807,10 +9063,9 @@
           620,
           612,
           2089,
-          2086,
           2062,
           2076,
-          2105
+          2179
         ],
         "selectedTraitNotes": [
           {
@@ -8856,7 +9111,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 624,
@@ -8886,12 +9141,7 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
-          },
-          {
-            "id": 2086,
-            "name": "密语档案",
-            "description": "你的美德将获得额外的书页。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
           },
           {
             "id": 2062,
@@ -8901,12 +9151,204 @@
           {
             "id": 2076,
             "name": "稳健急速",
-            "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
+            "description": "当你通过敏捷学者获得书页时，给附近盟友施加急速。"
           },
           {
-            "id": 2105,
+            "id": 2179,
             "name": "泰然处之",
-            "description": "当勇气技能处于冷却时，保留它的被动效果。当你控制、定身或迟缓的敌人时，给附近盟友提供增益。\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
+            "description": "当<c=@abilitytype>勇气</c>技能处于冷却时，维持被动效果。当你控制、定身或迟缓的敌人时，减少一部分牢固连结的冷却时间。<br><c=@reminder>控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。</c>"
+          }
+        ]
+      },
+      "42864": {
+        "title": "Opening_Passage",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2737391,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "再生",
+            "detail": "5 秒"
+          },
+          {
+            "label": "症状移除",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "充能恢复",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "42924": {
+        "title": "Flame_Surge",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3220076,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.7",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "12 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+            "stacks": 3
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "书页",
+            "detail": "1",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "充能恢复",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "42960": {
+        "title": "Rejuvenating_Respite",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3220074,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "自我治疗",
+            "detail": "3128 + 0.81 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 3128,
+              "coefficient": 0.81
+            }
+          },
+          {
+            "label": "圣盾",
+            "detail": "2 秒",
+            "icon": "https://render.guildwars2.com/file/DFB4D1B50AE4D6A275B349E15B179261EE3EB0AF/102854.png"
+          },
+          {
+            "label": "保护",
+            "detail": "3 秒 · -33% 受到的伤害",
+            "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png"
+          },
+          {
+            "label": "决心",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/D104A6B9344A2E2096424A3C300E46BC2926E4D7/2440718.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "书页",
+            "detail": "1",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "充能恢复",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "42983": {
+        "title": "Potent_Haste",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3220029,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "急速",
+            "detail": "2.5 秒",
+            "icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png"
+          },
+          {
+            "label": "威能",
+            "detail": "10 秒 · 5 层",
+            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+            "stacks": 5
+          },
+          {
+            "label": "充能恢复",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -8937,7 +9379,103 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
+          }
+        ]
+      },
+      "43826": {
+        "title": "Searing_Slash_(firebrand)",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219195,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.4 · 2 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "2 秒 · 2 层",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+            "stacks": 2
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "130",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "44008": {
+        "title": "Voice_of_Truth",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3220083,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.7",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "易伤",
+            "detail": "8 秒 · 5 层 · +5% 受到的伤害, +5% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 5
+          },
+          {
+            "label": "定身",
+            "detail": "2 秒"
+          },
+          {
+            "label": "虚弱",
+            "detail": "8 秒 · -50% 耐力回复速度, +50% 非限定攻击失手几率",
+            "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png"
+          },
+          {
+            "label": "目盲",
+            "detail": "8 秒"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "书页",
+            "detail": "1",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "充能恢复",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -8968,7 +9506,54 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
+          }
+        ]
+      },
+      "44248": {
+        "title": "Clarified_Conclusion",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3220081,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "再生",
+            "detail": "10 秒"
+          },
+          {
+            "label": "症状转为增益",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "盟友目标数量",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "书页",
+            "detail": "1",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "充能恢复",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -9003,7 +9588,6 @@
           620,
           622,
           2089,
-          2086,
           2062
         ],
         "selectedTraitNotes": [
@@ -9050,7 +9634,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -9075,17 +9659,169 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
-          },
-          {
-            "id": 2086,
-            "name": "密语档案",
-            "description": "你的美德将获得额外的书页。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
           },
           {
             "id": 2062,
             "name": "敏捷学者",
             "description": "装备美德技能时，获得急速。每三次圣书 技能会给予你书页。\n取消圣书时，层数就会重置。\n每隔一段时间，只能获得一次急速"
+          }
+        ]
+      },
+      "44602": {
+        "title": "Bleeding_Edge",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219194,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.72 · 2 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "流血",
+            "detail": "2.5 秒 · 2 层",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+            "stacks": 2
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "130",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "45047": {
+        "title": "Core_Cleave",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219192,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.72 · 2 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "流血",
+            "detail": "2.5 秒 · 2 层",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+            "stacks": 2
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "射程",
+            "detail": "130",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "45082": {
+        "title": "Flame_Rush",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 2737397,
+        "rows": [
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.7",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "12 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "充能恢复",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "450",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "45402": {
+        "title": "Blazing_Edge",
+        "profession": "Guardian",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219197,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "12 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.8",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+          },
+          {
+            "label": "拉拽",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/D5F6EBC4630F0E10F3DDB7A6DBB63592CD4B00BC/2440717.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "150"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -9116,7 +9852,7 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
           }
         ]
       },
@@ -9147,7 +9883,7 @@
           {
             "id": 2089,
             "name": "纯洁言词",
-            "description": "获得伊伦娜知识，发起一次猛烈的冲锋以清除腐化并让你的美德表现为神秘圣书。可以使用咒语。\n使用圣书技能会消耗记录。记录每隔一段时间就会生成。"
+            "description": "解锁圣书与咒语。初始拥有 8 页书页，使用圣书技能会消耗书页，每 6 秒恢复 1 页。"
           }
         ]
       },
@@ -9216,7 +9952,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           }
         ]
       },
@@ -9506,7 +10242,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -9556,7 +10292,7 @@
           {
             "id": 2195,
             "name": "凤凰协议",
-            "description": "触发决心效果时获得增益，但你不再拥有治疗。修正了决心的持续时间。激活流动决心时获得增益。"
+            "description": "触发决心效果时，给盟友施加增益，但你不再拥有治疗。修正了决心的持续时间。激活流动决心时获得增益。"
           }
         ]
       },
@@ -9774,7 +10510,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 624,
@@ -9962,7 +10698,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -10299,7 +11035,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 587,
@@ -10587,7 +11323,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 2410,
@@ -10683,7 +11419,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 624,
@@ -10824,7 +11560,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 624,
@@ -10987,7 +11723,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,
@@ -11166,7 +11902,7 @@
           {
             "id": 621,
             "name": "美德启发",
-            "description": "美德激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
+            "description": "<c=@abilitytype>美德</c>激活时给附近盟友提供增益。根据你拥有的增益提升打击伤害。"
           },
           {
             "id": 604,

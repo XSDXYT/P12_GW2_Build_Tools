@@ -519,11 +519,11 @@
     },
     "5832": {
       "profession": "Engineer",
-      "revision": 2882042,
+      "revision": 3218276,
       "sources": [
         {
           "title": "Elixir_X",
-          "revision": 2882042
+          "revision": 3218276
         },
         {
           "title": "Rampage",
@@ -2148,35 +2148,35 @@
       "ids": [
         5882
       ],
-      "revision": 3123237
+      "revision": 3218247
     },
     "Shrapnel_Grenade": {
       "id": 5807,
       "ids": [
         5807
       ],
-      "revision": 3128690
+      "revision": 3218249
     },
     "Flash_Grenade": {
       "id": 5808,
       "ids": [
         5808
       ],
-      "revision": 2777029
+      "revision": 3218253
     },
     "Freeze_Grenade": {
       "id": 5809,
       "ids": [
         5809
       ],
-      "revision": 2840067
+      "revision": 3218254
     },
     "Poison_Grenade": {
       "id": 5806,
       "ids": [
         5806
       ],
-      "revision": 2969635
+      "revision": 3218256
     },
     "Bomb": {
       "id": 5842,
@@ -2779,7 +2779,7 @@
       "ids": [
         76864
       ],
-      "revision": 3081424
+      "revision": 3218005
     },
     "Wanderlust": {
       "id": 76741,
@@ -2802,7 +2802,7 @@
         76607,
         77191
       ],
-      "revision": 3151044
+      "revision": 3217996
     },
     "Whirlpool": {
       "id": 5602,

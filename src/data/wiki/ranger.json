@@ -328,7 +328,7 @@
           {
             "id": 2055,
             "name": "日蚀",
-            "description": "你的天界化身技能大幅度强化。打击敌人后获得更多星界之力。"
+            "description": "你的<c=@abilitytype>天界化身</c>技能大幅度强化。打击敌人后获得更多星界之力。"
           }
         ]
       },
@@ -389,17 +389,11 @@
           }
         ],
         "relatedTraits": [
-          2143,
           1010,
           2055,
           2297
         ],
         "selectedTraitNotes": [
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
-          },
           {
             "id": 1010,
             "name": "先发制人",
@@ -408,7 +402,7 @@
           {
             "id": 2055,
             "name": "日蚀",
-            "description": "你的天界化身技能大幅度强化。打击敌人后获得更多星界之力。"
+            "description": "你的<c=@abilitytype>天界化身</c>技能大幅度强化。打击敌人后获得更多星界之力。"
           },
           {
             "id": 2297,
@@ -430,7 +424,6 @@
         ],
         "relatedTraits": [
           996,
-          2143,
           1010,
           1015
         ],
@@ -439,11 +432,6 @@
             "id": 996,
             "name": "猎食突袭",
             "description": "你和宠物对被控制，拥有蔑视条，或受到移动阻碍的敌人造成的打击伤害提升。\n相关症状：昏迷、嘲讽、晕眩、残废、恐惧、定身和冰冻。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           },
           {
             "id": 1010,
@@ -479,8 +467,7 @@
           1009,
           1001,
           1011,
-          1015,
-          2143
+          1015
         ],
         "selectedTraitNotes": [
           {
@@ -502,11 +489,6 @@
             "id": 1015,
             "name": "赶尽杀绝",
             "description": "获得激怒时也会重置先发制人效果。先发制人造成的伤害提升。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -1004,11 +986,16 @@
         "title": "Bountiful_Hunter",
         "profession": "Ranger",
         "identityVerified": true,
-        "revision": 2946174,
+        "revision": 3217704,
         "rows": [
           {
             "label": "每个增益的伤害",
-            "detail": "1%",
+            "detail": "2%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "最大伤害提升",
+            "detail": "10%",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           }
         ]
@@ -1086,7 +1073,7 @@
         "title": "Hunter's_Tactics",
         "profession": "Ranger",
         "identityVerified": true,
-        "revision": 3135499,
+        "revision": 3217721,
         "rows": [
           {
             "label": "伤害提升",
@@ -1094,11 +1081,17 @@
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
+            "label": "捕猎战术",
+            "detail": "8 秒",
+            "icon": "https://render.guildwars2.com/file/44D4631FB427F09BE5B300BE0F537E6F2126BA0B/1012653.png"
+          },
+          {
             "label": "暴击率提升",
             "detail": "10%",
             "icon": "https://render.guildwars2.com/file/C2CEA567E0C43C199C782809544721AA12A6DF0A/2229323.png"
           }
-        ]
+        ],
+        "description": "从侧面或背面击中敌人，或击中拥有蔑视条的敌人后，短时间内提高打击伤害和暴击率。"
       },
       "1069": {
         "title": "Sharpened_Edges",
@@ -1708,7 +1701,6 @@
         ],
         "relatedTraits": [
           2161,
-          2143,
           2055,
           2297
         ],
@@ -1719,14 +1711,9 @@
             "description": "当你对敌人施加中毒时，你会窃取他们的一些生命值。"
           },
           {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
-          },
-          {
             "id": 2055,
             "name": "日蚀",
-            "description": "你的天界化身技能大幅度强化。打击敌人后获得更多星界之力。"
+            "description": "你的<c=@abilitytype>天界化身</c>技能大幅度强化。打击敌人后获得更多星界之力。"
           },
           {
             "id": 2297,
@@ -1739,11 +1726,22 @@
         "title": "Hidden_Barbs",
         "profession": "Ranger",
         "identityVerified": true,
-        "revision": 3128898,
+        "revision": 3217719,
         "rows": [
           {
-            "label": "症状伤害 提高",
-            "detail": "20%"
+            "label": "伤害提升",
+            "detail": "20%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "每支箭矢的目标",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "穿透",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/F833590B593E0C2D4948DFFE9951B91655250052/1770207.png"
           }
         ],
         "relatedTraits": [
@@ -1986,7 +1984,7 @@
         "title": "Light_on_your_Feet",
         "profession": "Ranger",
         "identityVerified": true,
-        "revision": 3171118,
+        "revision": 3217735,
         "rows": [
           {
             "label": "伤害提升",
@@ -1994,28 +1992,19 @@
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
-            "label": "闪避时",
-            "detail": "6 秒"
+            "label": "灵巧作战",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/4D37A694088038DA9266F6107C9604AD9CBC2752/1012649.png"
           },
           {
-            "label": "每支箭矢的目标",
-            "detail": "5",
-            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
-          },
-          {
-            "label": "冷却减少",
-            "detail": "20%",
-            "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png"
+            "label": "战斗冲动",
+            "detail": "1.5 秒 · +66% 移动速度",
+            "icon": "https://render.guildwars2.com/file/9F0D0FECE9A1E50857A3EE7A0DC5BCB738B105F5/1228466.png"
           },
           {
             "label": "持续时间延长",
             "detail": "10%",
             "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
-          },
-          {
-            "label": "穿透",
-            "detail": "",
-            "icon": "https://render.guildwars2.com/file/F833590B593E0C2D4948DFFE9951B91655250052/1770207.png"
           }
         ]
       },
@@ -2023,11 +2012,11 @@
         "title": "Blood_Moon",
         "profession": "Ranger",
         "identityVerified": true,
-        "revision": 3171078,
+        "revision": 3217861,
         "rows": [
           {
             "label": "流血",
-            "detail": "4 秒 · 2 层",
+            "detail": "3 秒 · 2 层",
             "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
             "stacks": 2
           }
@@ -2216,7 +2205,7 @@
         "title": "Eclipse_(trait)",
         "profession": "Ranger",
         "identityVerified": true,
-        "revision": 2932514,
+        "revision": 3217869,
         "rows": [
           {
             "label": "每点伤害额外的星界之力",
@@ -2230,7 +2219,8 @@
           },
           {
             "label": "中毒",
-            "detail": "8 秒 · -33% 治疗效能"
+            "detail": "6 秒 · 3 层 · -33% 治疗效能",
+            "stacks": 3
           },
           {
             "label": "定身",
@@ -2243,7 +2233,7 @@
           },
           {
             "label": "燃烧",
-            "detail": "5 秒",
+            "detail": "4 秒",
             "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
           }
         ]
@@ -2252,11 +2242,11 @@
         "title": "Natural_Balance",
         "profession": "Ranger",
         "identityVerified": true,
-        "revision": 3189024,
+        "revision": 3217864,
         "rows": [
           {
             "label": "自然平衡",
-            "detail": "10 秒 · +5% 症状伤害, +10% 症状持续时间",
+            "detail": "10 秒 · +15% 症状伤害, +10% 症状持续时间",
             "icon": "https://render.guildwars2.com/file/5F953BAC2C7EB3340B4EAA9A7D9633320BAB29A6/1128535.png"
           }
         ]
@@ -2600,22 +2590,11 @@
         ]
       },
       "2143": {
-        "title": "Oppressive_Superiority",
+        "title": "Apex_Predator",
         "profession": "Ranger",
         "identityVerified": true,
-        "revision": 2562333,
-        "rows": [
-          {
-            "label": "伤害提升",
-            "detail": "10%",
-            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
-          },
-          {
-            "label": "持续时间延长",
-            "detail": "10%",
-            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
-          }
-        ]
+        "revision": 3217685,
+        "rows": []
       },
       "2151": {
         "title": "Elevated_Bond",
@@ -3303,7 +3282,7 @@
         "profession": "Ranger",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 3181886,
+        "revision": 3217708,
         "rows": [
           {
             "label": "施法时间",
@@ -3311,7 +3290,7 @@
           },
           {
             "label": "冷却时间",
-            "detail": "8 秒"
+            "detail": "6 秒"
           },
           {
             "label": "伤害",
@@ -3320,13 +3299,13 @@
           },
           {
             "label": "中毒",
-            "detail": "5 秒 · 5 层 · -33% 治疗效能",
+            "detail": "7 秒 · 5 层 · -33% 治疗效能",
             "stacks": 5
           },
           {
             "label": "中毒",
-            "detail": "7 秒 · 5 层 · -33% 治疗效能",
-            "trigger": "从侧面或背后攻击，或攻击拥有蔑视条的敌人时",
+            "detail": "9 秒 · 5 层 · -33% 治疗效能",
+            "trigger": "目标移动受限、受到控制或拥有蔑视条时",
             "stacks": 5
           },
           {
@@ -3343,27 +3322,6 @@
             "label": "射程",
             "detail": "900",
             "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
-          }
-        ],
-        "modifiers": [
-          {
-            "id": "recharge-1912-12468",
-            "trait": 1912,
-            "priority": 0,
-            "source": {
-              "kind": "traits",
-              "id": 1912,
-              "title": "Light_on_your_Feet",
-              "revision": 3171118
-            },
-            "changes": [
-              {
-                "type": "number",
-                "label": "冷却时间",
-                "factor": 0.8
-              }
-            ],
-            "traitName": "灵巧作战"
           }
         ]
       },
@@ -3430,6 +3388,35 @@
           }
         ]
       },
+      "12470": {
+        "title": "Crossfire",
+        "profession": "Ranger",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217706,
+        "rows": [
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "流血",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物 (20% 几率)",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
       "12476": {
         "title": "Spike_Trap",
         "profession": "Ranger",
@@ -3490,7 +3477,6 @@
           1047,
           1935,
           2127,
-          2143,
           2297,
           2263,
           2396
@@ -3509,7 +3495,7 @@
           {
             "id": 1846,
             "name": "隐匿倒钩",
-            "description": "强化你造成的流血效果。"
+            "description": "强化你造成的流血效果。短弓技能穿透。"
           },
           {
             "id": 1047,
@@ -3525,11 +3511,6 @@
             "id": 2127,
             "name": "狂暴双体",
             "description": "控制敌人可以在短时间内增加你的伤害和症状伤害。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           },
           {
             "id": 2297,
@@ -4145,8 +4126,7 @@
         "relatedTraits": [
           1021,
           996,
-          1935,
-          2143
+          1935
         ],
         "selectedTraitNotes": [
           {
@@ -4163,11 +4143,6 @@
             "id": 1935,
             "name": "血月",
             "description": "当你定身或者控制敌人时施加流血。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -4227,8 +4202,7 @@
         ],
         "relatedTraits": [
           996,
-          1075,
-          2143
+          1075
         ],
         "selectedTraitNotes": [
           {
@@ -4240,11 +4214,6 @@
             "id": 1075,
             "name": "陷阱专长",
             "description": "陷阱施加的症状和增益持续时间增加。攻击型陷阱会施加残废。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ],
         "modifiers": [
@@ -4341,8 +4310,7 @@
           1062,
           1056,
           1038,
-          2156,
-          2143
+          2156
         ],
         "selectedTraitNotes": [
           {
@@ -4384,11 +4352,6 @@
             "id": 2156,
             "name": "暴怒之力",
             "description": "你拥有激怒增益时将造成更多的打击伤害。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -4592,8 +4555,7 @@
         "relatedTraits": [
           1075,
           1701,
-          2161,
-          2143
+          2161
         ],
         "selectedTraitNotes": [
           {
@@ -4610,11 +4572,6 @@
             "id": 2161,
             "name": "狡诈掠食",
             "description": "当你对敌人施加中毒时，你会窃取他们的一些生命值。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ],
         "modifiers": [
@@ -4768,8 +4725,7 @@
         "relatedTraits": [
           1062,
           1056,
-          1038,
-          2143
+          1038
         ],
         "selectedTraitNotes": [
           {
@@ -4786,11 +4742,6 @@
             "id": 1038,
             "name": "自然之仇",
             "description": "精魂当他们抖动身躯完毕后再次猛击。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -4854,19 +4805,13 @@
           }
         ],
         "relatedTraits": [
-          1075,
-          2143
+          1075
         ],
         "selectedTraitNotes": [
           {
             "id": 1075,
             "name": "陷阱专长",
             "description": "陷阱施加的症状和增益持续时间增加。攻击型陷阱会施加残废。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ],
         "modifiers": [
@@ -4981,8 +4926,7 @@
         "relatedTraits": [
           996,
           1699,
-          1935,
-          2143
+          1935
         ],
         "selectedTraitNotes": [
           {
@@ -4999,11 +4943,6 @@
             "id": 1935,
             "name": "血月",
             "description": "当你定身或者控制敌人时施加流血。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -5170,11 +5109,11 @@
         "profession": "Ranger",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 2840346,
+        "revision": 3217712,
         "rows": [
           {
             "label": "冷却时间",
-            "detail": "12 秒"
+            "detail": "10 秒"
           },
           {
             "label": "伤害",
@@ -5183,8 +5122,9 @@
           },
           {
             "label": "流血",
-            "detail": "15 秒",
-            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png"
+            "detail": "7.5 秒 · 2 层",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+            "stacks": 2
           },
           {
             "label": "致残",
@@ -5192,7 +5132,7 @@
           },
           {
             "label": "定身",
-            "detail": "1.5 秒"
+            "detail": "2 秒"
           },
           {
             "label": "组合技终结",
@@ -5204,27 +5144,6 @@
             "detail": "900",
             "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
-        ],
-        "modifiers": [
-          {
-            "id": "recharge-1912-12507",
-            "trait": 1912,
-            "priority": 0,
-            "source": {
-              "kind": "traits",
-              "id": 1912,
-              "title": "Light_on_your_Feet",
-              "revision": 3171118
-            },
-            "changes": [
-              {
-                "type": "number",
-                "label": "冷却时间",
-                "factor": 0.7999999999999999
-              }
-            ],
-            "traitName": "灵巧作战"
-          }
         ]
       },
       "12508": {
@@ -5232,7 +5151,7 @@
         "profession": "Ranger",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 2967013,
+        "revision": 3217714,
         "rows": [
           {
             "label": "施法时间",
@@ -5240,7 +5159,7 @@
           },
           {
             "label": "冷却时间",
-            "detail": "20 秒"
+            "detail": "16 秒"
           },
           {
             "label": "伤害",
@@ -5274,7 +5193,7 @@
         ],
         "controlRule": {
           "title": "Concussion_Shot",
-          "revision": 2967013,
+          "revision": 3217714,
           "control": {
             "label": "昏迷",
             "seconds": 2
@@ -5286,28 +5205,7 @@
             }
           ],
           "defiance": 200
-        },
-        "modifiers": [
-          {
-            "id": "recharge-1912-12508",
-            "trait": 1912,
-            "priority": 0,
-            "source": {
-              "kind": "traits",
-              "id": 1912,
-              "title": "Light_on_your_Feet",
-              "revision": 3171118
-            },
-            "changes": [
-              {
-                "type": "number",
-                "label": "冷却时间",
-                "factor": 0.8
-              }
-            ],
-            "traitName": "灵巧作战"
-          }
-        ]
+        }
       },
       "12509": {
         "title": "Rapid_Fire",
@@ -5439,7 +5337,7 @@
         "title": "\"Strength_of_the_Pack!\"",
         "profession": "Ranger",
         "identityVerified": true,
-        "revision": 3022752,
+        "revision": 3217700,
         "rows": [
           {
             "label": "施法时间",
@@ -5448,6 +5346,11 @@
           {
             "label": "冷却时间",
             "detail": "60 秒"
+          },
+          {
+            "label": "宠物伤害增加",
+            "detail": "25%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
             "label": "群攻之力",
@@ -5534,7 +5437,7 @@
         "profession": "Ranger",
         "identityVerified": true,
         "supplemental": true,
-        "revision": 2680231,
+        "revision": 3217710,
         "rows": [
           {
             "label": "施法时间",
@@ -5542,7 +5445,7 @@
           },
           {
             "label": "冷却时间",
-            "detail": "8 秒"
+            "detail": "6 秒"
           },
           {
             "label": "伤害",
@@ -5567,27 +5470,6 @@
             "label": "射程",
             "detail": "900",
             "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
-          }
-        ],
-        "modifiers": [
-          {
-            "id": "recharge-1912-12517",
-            "trait": 1912,
-            "priority": 0,
-            "source": {
-              "kind": "traits",
-              "id": 1912,
-              "title": "Light_on_your_Feet",
-              "revision": 3171118
-            },
-            "changes": [
-              {
-                "type": "number",
-                "label": "冷却时间",
-                "factor": 0.8
-              }
-            ],
-            "traitName": "灵巧作战"
           }
         ]
       },
@@ -5902,24 +5784,18 @@
         ],
         "relatedTraits": [
           1846,
-          1699,
-          2143
+          1699
         ],
         "selectedTraitNotes": [
           {
             "id": 1846,
             "name": "隐匿倒钩",
-            "description": "强化你造成的流血效果。"
+            "description": "强化你造成的流血效果。短弓技能穿透。"
           },
           {
             "id": 1699,
             "name": "荒野知识",
             "description": "生存技能提供激怒，移除症状。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -6226,8 +6102,7 @@
           996,
           1846,
           1699,
-          1935,
-          2143
+          1935
         ],
         "selectedTraitNotes": [
           {
@@ -6238,7 +6113,7 @@
           {
             "id": 1846,
             "name": "隐匿倒钩",
-            "description": "强化你造成的流血效果。"
+            "description": "强化你造成的流血效果。短弓技能穿透。"
           },
           {
             "id": 1699,
@@ -6249,11 +6124,6 @@
             "id": 1935,
             "name": "血月",
             "description": "当你定身或者控制敌人时施加流血。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -7709,6 +7579,31 @@
                 "detail": "1,200",
                 "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
               }
+            ],
+            "modifiers": [
+              {
+                "id": "eclipse-31406",
+                "trait": 2055,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 2055,
+                  "title": "Eclipse_(trait)",
+                  "revision": 3217869
+                },
+                "changes": [
+                  {
+                    "type": "append",
+                    "row": {
+                      "label": "中毒",
+                      "detail": "6 秒 · 3 层",
+                      "stacks": 3,
+                      "trigger": "种子绽放时"
+                    }
+                  }
+                ],
+                "traitName": "日蚀"
+              }
             ]
           },
           {
@@ -7887,6 +7782,30 @@
                 "label": "半径",
                 "detail": "360",
                 "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+              }
+            ],
+            "modifiers": [
+              {
+                "id": "eclipse-31503",
+                "trait": 2055,
+                "priority": 0,
+                "source": {
+                  "kind": "traits",
+                  "id": 2055,
+                  "title": "Eclipse_(trait)",
+                  "revision": 3217869
+                },
+                "changes": [
+                  {
+                    "type": "append",
+                    "row": {
+                      "label": "燃烧",
+                      "detail": "4 秒",
+                      "trigger": "引导期间"
+                    }
+                  }
+                ],
+                "traitName": "日蚀"
               }
             ]
           },
@@ -8542,8 +8461,7 @@
           1062,
           1056,
           2161,
-          2128,
-          2143
+          2128
         ],
         "selectedTraitNotes": [
           {
@@ -8570,11 +8488,6 @@
             "id": 2128,
             "name": "群体领袖",
             "description": "姿态技能的效果可以影响周围的盟友，持续时间延长。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -8638,8 +8551,7 @@
           1945,
           1066,
           2071,
-          2161,
-          2143
+          2161
         ],
         "selectedTraitNotes": [
           {
@@ -8655,7 +8567,7 @@
           {
             "id": 1846,
             "name": "隐匿倒钩",
-            "description": "强化你造成的流血效果。"
+            "description": "强化你造成的流血效果。短弓技能穿透。"
           },
           {
             "id": 1094,
@@ -8706,11 +8618,6 @@
             "id": 2161,
             "name": "狡诈掠食",
             "description": "当你对敌人施加中毒时，你会窃取他们的一些生命值。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -8887,19 +8794,13 @@
           }
         ],
         "relatedTraits": [
-          1846,
-          2143
+          1846
         ],
         "selectedTraitNotes": [
           {
             "id": 1846,
             "name": "隐匿倒钩",
-            "description": "强化你造成的流血效果。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
+            "description": "强化你造成的流血效果。短弓技能穿透。"
           }
         ]
       },
@@ -9782,8 +9683,7 @@
           1945,
           1066,
           2071,
-          2127,
-          2143
+          2127
         ],
         "selectedTraitNotes": [
           {
@@ -9855,11 +9755,6 @@
             "id": 2127,
             "name": "狂暴双体",
             "description": "控制敌人可以在短时间内增加你的伤害和症状伤害。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -10082,19 +9977,13 @@
           }
         ],
         "relatedTraits": [
-          996,
-          2143
+          996
         ],
         "selectedTraitNotes": [
           {
             "id": 996,
             "name": "猎食突袭",
             "description": "你和宠物对被控制，拥有蔑视条，或受到移动阻碍的敌人造成的打击伤害提升。\n相关症状：昏迷、嘲讽、晕眩、残废、恐惧、定身和冰冻。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -10575,19 +10464,13 @@
           }
         ],
         "relatedTraits": [
-          1001,
-          2143
+          1001
         ],
         "selectedTraitNotes": [
           {
             "id": 1001,
             "name": "野狼之歌",
             "description": "犬类的野兽技能施加易伤，揭露附近敌人。你对易伤的敌人造成更大打击伤害。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -10693,19 +10576,13 @@
           }
         ],
         "relatedTraits": [
-          1846,
-          2143
+          1846
         ],
         "selectedTraitNotes": [
           {
             "id": 1846,
             "name": "隐匿倒钩",
-            "description": "强化你造成的流血效果。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
+            "description": "强化你造成的流血效果。短弓技能穿透。"
           }
         ]
       },
@@ -11391,6 +11268,64 @@
           }
         ]
       },
+      "63131": {
+        "title": "Unleashed_Savage_Shock_Wave",
+        "profession": "Ranger",
+        "identityVerified": true,
+        "supplemental": true,
+        "actor": "pet",
+        "revision": 3217858,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "15 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.96",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "最大伤害提升",
+            "detail": "20%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "每个症状提升的伤害",
+            "detail": "4%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "第一次打击的半径",
+            "detail": "120",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "第二次打击的半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "第三次打击的半径",
+            "detail": "360",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "120",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
       "63147": {
         "title": "Unleash_Ranger",
         "profession": "Ranger",
@@ -11702,11 +11637,11 @@
         "title": "Venomous_Outburst",
         "profession": "Ranger",
         "identityVerified": true,
-        "revision": 2794143,
+        "revision": 3217871,
         "rows": [
           {
             "label": "冷却时间",
-            "detail": "10 秒"
+            "detail": "13 秒"
           },
           {
             "label": "伤害",
@@ -11843,11 +11778,11 @@
         "title": "Rending_Vines",
         "profession": "Ranger",
         "identityVerified": true,
-        "revision": 2783964,
+        "revision": 3217873,
         "rows": [
           {
             "label": "冷却时间",
-            "detail": "10 秒"
+            "detail": "13 秒"
           },
           {
             "label": "伤害",
@@ -12111,8 +12046,7 @@
         ],
         "relatedTraits": [
           1701,
-          2161,
-          2143
+          2161
         ],
         "selectedTraitNotes": [
           {
@@ -12124,11 +12058,6 @@
             "id": 2161,
             "name": "狡诈掠食",
             "description": "当你对敌人施加中毒时，你会窃取他们的一些生命值。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -12504,19 +12433,13 @@
           }
         ],
         "relatedTraits": [
-          996,
-          2143
+          996
         ],
         "selectedTraitNotes": [
           {
             "id": 996,
             "name": "猎食突袭",
             "description": "你和宠物对被控制，拥有蔑视条，或受到移动阻碍的敌人造成的打击伤害提升。\n相关症状：昏迷、嘲讽、晕眩、残废、恐惧、定身和冰冻。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -13165,19 +13088,13 @@
           }
         ],
         "relatedTraits": [
-          996,
-          2143
+          996
         ],
         "selectedTraitNotes": [
           {
             "id": 996,
             "name": "猎食突袭",
             "description": "你和宠物对被控制，拥有蔑视条，或受到移动阻碍的敌人造成的打击伤害提升。\n相关症状：昏迷、嘲讽、晕眩、残废、恐惧、定身和冰冻。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
           }
         ]
       },
@@ -13223,19 +13140,13 @@
           }
         ],
         "relatedTraits": [
-          1846,
-          2143
+          1846
         ],
         "selectedTraitNotes": [
           {
             "id": 1846,
             "name": "隐匿倒钩",
-            "description": "强化你造成的流血效果。"
-          },
-          {
-            "id": 2143,
-            "name": "压迫优势",
-            "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
+            "description": "强化你造成的流血效果。短弓技能穿透。"
           }
         ]
       },

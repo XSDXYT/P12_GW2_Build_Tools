@@ -2,19 +2,41 @@
   "entries": {
     "traits": {
       "1112": {
-        "title": "Instant_Reflexes",
+        "title": "Opportune_Opening",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 2679142,
+        "revision": 3219699,
         "rows": [
           {
-            "label": "内置冷却",
-            "detail": "30 秒"
+            "label": "伤害提升",
+            "detail": "5%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
-            "label": "快速反应",
-            "detail": "2 秒",
-            "icon": "https://render.guildwars2.com/file/E80BD3449E33470B1ECA0FF242CC6B031B459514/1012714.png"
+            "label": "致残",
+            "detail": "3 秒 · -50% 移动速度"
+          }
+        ],
+        "relatedTraits": [
+          1169,
+          1292,
+          1240
+        ],
+        "selectedTraitNotes": [
+          {
+            "id": 1169,
+            "name": "扳回劣势",
+            "description": "顺手牵羊时施加易伤。使用潜袭命中目标时施加症状。"
+          },
+          {
+            "id": 1292,
+            "name": "惊惧打击",
+            "description": "定身敌人的同时让对方中毒。攻击独特症状数量超过阈值的敌人时施加定身。"
+          },
+          {
+            "id": 1240,
+            "name": "灵敏出击",
+            "description": "进入战斗后的第一次打击施加易伤，给你提供威能。当你使用暗影疾步或者移动技能后，该能力刷新。"
           }
         ]
       },
@@ -726,26 +748,40 @@
         "title": "Feline_Grace",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 2590115,
+        "revision": 3219694,
         "rows": [
           {
-            "label": "内置冷却",
-            "detail": "1 秒"
-          },
-          {
-            "label": "活力",
-            "detail": "5 秒 · +50% 耐力回复速度",
-            "icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png"
+            "label": "迅捷",
+            "detail": "5 秒 · +33% 移动速度",
+            "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png"
           }
         ],
         "relatedTraits": [
-          2160
+          1703,
+          2160,
+          1163,
+          2111
         ],
         "selectedTraitNotes": [
+          {
+            "id": 1703,
+            "name": "永不止步",
+            "description": "当你有迅捷效果时，获得耐力，移除一个妨碍移动的症状。"
+          },
           {
             "id": 2160,
             "name": "提前布局",
             "description": "每获得一个不同的增益，都会造成更大打击伤害；提升增益效果。"
+          },
+          {
+            "id": 1163,
+            "name": "致命快感",
+            "description": "当你顺手牵羊时，你和所有附近的盟友获得激怒、威能、迅捷，持续10秒。"
+          },
+          {
+            "id": 2111,
+            "name": "七级邪恶",
+            "description": "增加最大恶意叠层数。恶意达到最大层数后，恢复先攻值，获得增益。"
           }
         ]
       },
@@ -783,48 +819,72 @@
         ]
       },
       "1238": {
-        "title": "Assassin's_Reward",
+        "title": "Sharp_Initiation",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 3081538,
+        "revision": 3220033,
         "rows": [
           {
-            "label": "治疗",
-            "detail": "151 + 0.085 × 治疗效果",
-            "healing": {
-              "base": 151,
-              "coefficient": 0.085
-            }
+            "label": "伤害",
+            "detail": "系数 ×1.25",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          }
+        ],
+        "relatedTraits": [
+          1240
+        ],
+        "selectedTraitNotes": [
+          {
+            "id": 1240,
+            "name": "灵敏出击",
+            "description": "进入战斗后的第一次打击施加易伤，给你提供威能。当你使用暗影疾步或者移动技能后，该能力刷新。"
           }
         ]
       },
       "1240": {
-        "title": "Expeditious_Dodger",
+        "title": "Deft_Initiation",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 2301012,
+        "revision": 3219681,
         "rows": [
           {
-            "label": "迅捷",
-            "detail": "6 秒 · +33% 移动速度",
-            "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png"
+            "label": "威能",
+            "detail": "10 秒 · 2 层",
+            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+            "stacks": 2
+          },
+          {
+            "label": "易伤",
+            "detail": "8 秒 · 3 层 · +3% 受到的伤害, +3% 受到的症状伤害",
+            "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+            "stacks": 3
           }
         ]
       },
       "1241": {
-        "title": "Guarded_Initiation",
+        "title": "Assassin's_Reward",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 2836549,
+        "revision": 3219721,
         "rows": [
           {
-            "label": "内置冷却",
-            "detail": "5 秒"
-          },
+            "label": "治疗",
+            "detail": "394 + 0.05 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+            "healing": {
+              "base": 394,
+              "coefficient": 0.05
+            }
+          }
+        ],
+        "relatedTraits": [
+          1240
+        ],
+        "selectedTraitNotes": [
           {
-            "label": "抗性",
-            "detail": "2 秒",
-            "icon": "https://render.guildwars2.com/file/50BAC1B8E10CFAB9E749A5D910D4A9DCF29EBB7C/961398.png"
+            "id": 1240,
+            "name": "灵敏出击",
+            "description": "进入战斗后的第一次打击施加易伤，给你提供威能。当你使用暗影疾步或者移动技能后，该能力刷新。"
           }
         ]
       },
@@ -869,11 +929,16 @@
         "title": "Exposed_Weakness",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 2989634,
+        "revision": 3219673,
         "rows": [
           {
             "label": "每个独特症状增加伤害",
-            "detail": "2%",
+            "detail": "4%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "最大伤害提升",
+            "detail": "20%",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           }
         ],
@@ -971,7 +1036,7 @@
         "title": "Twin_Fangs",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 3065777,
+        "revision": 3219678,
         "rows": [
           {
             "label": "生命临界值",
@@ -979,8 +1044,9 @@
             "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
           },
           {
-            "label": "高生命值时暴击伤害提高",
-            "detail": "2%"
+            "label": "双牙撕咬",
+            "detail": "8 秒 · +7% 暴击率",
+            "icon": "https://render.guildwars2.com/file/02B7C80EE8BECD4CA7935FD980D9D555BF776001/1012728.png"
           },
           {
             "label": "暴击伤害提升",
@@ -988,11 +1054,17 @@
             "icon": "https://render.guildwars2.com/file/0658D833944E69E62E08EB18A0B5407F722125BC/2229320.png"
           },
           {
+            "label": "高生命值时暴击伤害增加",
+            "detail": "2%",
+            "icon": "https://render.guildwars2.com/file/0658D833944E69E62E08EB18A0B5407F722125BC/2229320.png"
+          },
+          {
             "label": "暴击率提升",
             "detail": "7%",
             "icon": "https://render.guildwars2.com/file/C2CEA567E0C43C199C782809544721AA12A6DF0A/2229323.png"
           }
-        ]
+        ],
+        "description": "提高暴击伤害，生命值高于阈值时进一步提高。从侧面或背面击中敌人，或击中拥有蔑视条的敌人后，短时间内提高暴击率。"
       },
       "1269": {
         "title": "Executioner",
@@ -1262,16 +1334,19 @@
         ]
       },
       "1289": {
-        "title": "Pumping_Up",
+        "title": "Endurance_Training",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 2840226,
+        "revision": 3219709,
         "rows": [
           {
-            "label": "威能",
-            "detail": "20 秒 · 3 层",
-            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
-            "stacks": 3
+            "label": "内置冷却",
+            "detail": "1 秒"
+          },
+          {
+            "label": "活力",
+            "detail": "5 秒 · +50% 耐力回复速度",
+            "icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png"
           }
         ]
       },
@@ -1279,12 +1354,12 @@
         "title": "Hard_to_Catch",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 2631015,
+        "revision": 3219727,
         "rows": [
           {
-            "label": "耐力获取",
-            "detail": "8",
-            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+            "label": "抗性",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/50BAC1B8E10CFAB9E749A5D910D4A9DCF29EBB7C/961398.png"
           }
         ]
       },
@@ -1714,7 +1789,7 @@
         "title": "Don't_Stop",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 3206107,
+        "revision": 3219733,
         "rows": [
           {
             "label": "症状移除",
@@ -1734,21 +1809,21 @@
             "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           },
           {
-            "label": "持续时间减少",
-            "detail": "80%",
-            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+            "label": "耐力获取",
+            "detail": "8",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           }
         ],
         "relatedTraits": [
-          1240,
+          1234,
           1163,
           2111
         ],
         "selectedTraitNotes": [
           {
-            "id": 1240,
-            "name": "迅捷闪避",
-            "description": "闪避后获得迅捷。"
+            "id": 1234,
+            "name": "猫之优雅",
+            "description": "你获得的迅捷效果提升。当你使用暗影疾步或者移动技能后，获得迅捷。"
           },
           {
             "id": 1163,
@@ -2234,7 +2309,7 @@
           {
             "id": 1703,
             "name": "永不止步",
-            "description": "当你有迅捷效果时，移动阻碍类症状持续时间缩短。当你获得迅捷时，移除一个移动阻碍类症状。"
+            "description": "当你有迅捷效果时，获得耐力，移除一个妨碍移动的症状。"
           },
           {
             "id": 1232,
@@ -2345,11 +2420,16 @@
         "title": "Premeditation",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 2946176,
+        "revision": 3219741,
         "rows": [
           {
             "label": "每个增益的伤害加成",
-            "detail": "1%",
+            "detail": "2%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "最大伤害提升",
+            "detail": "10%",
             "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           },
           {
@@ -3230,7 +3310,7 @@
           {
             "id": 1290,
             "name": "逃脱大师",
-            "description": "使用暗影疾步时，获得耐力。"
+            "description": "使用顺手牵羊时获得抗性。"
           },
           {
             "id": 1242,
@@ -3449,7 +3529,6 @@
         "relatedTraits": [
           1160,
           1234,
-          1241,
           1192,
           1242,
           1295,
@@ -3468,12 +3547,7 @@
           {
             "id": 1234,
             "name": "猫之优雅",
-            "description": "闪避成功将使你获得活力。"
-          },
-          {
-            "id": 1241,
-            "name": "谨慎出击",
-            "description": "移动技能施加抗性。"
+            "description": "你获得的迅捷效果提升。当你使用暗影疾步或者移动技能后，获得迅捷。"
           },
           {
             "id": 1192,
@@ -3785,7 +3859,6 @@
         ],
         "relatedTraits": [
           1234,
-          1241,
           1192,
           1242,
           1295,
@@ -3800,12 +3873,7 @@
           {
             "id": 1234,
             "name": "猫之优雅",
-            "description": "闪避成功将使你获得活力。"
-          },
-          {
-            "id": 1241,
-            "name": "谨慎出击",
-            "description": "移动技能施加抗性。"
+            "description": "你获得的迅捷效果提升。当你使用暗影疾步或者移动技能后，获得迅捷。"
           },
           {
             "id": 1192,
@@ -4423,7 +4491,7 @@
           {
             "id": 1703,
             "name": "永不止步",
-            "description": "当你有迅捷效果时，移动阻碍类症状持续时间缩短。当你获得迅捷时，移除一个移动阻碍类症状。"
+            "description": "当你有迅捷效果时，获得耐力，移除一个妨碍移动的症状。"
           },
           {
             "id": 2078,
@@ -4548,7 +4616,7 @@
           {
             "id": 1290,
             "name": "逃脱大师",
-            "description": "使用暗影疾步时，获得耐力。"
+            "description": "使用顺手牵羊时获得抗性。"
           },
           {
             "id": 1242,
@@ -4798,7 +4866,7 @@
           {
             "id": 1703,
             "name": "永不止步",
-            "description": "当你有迅捷效果时，移动阻碍类症状持续时间缩短。当你获得迅捷时，移除一个移动阻碍类症状。"
+            "description": "当你有迅捷效果时，获得耐力，移除一个妨碍移动的症状。"
           },
           {
             "id": 1286,
@@ -4853,17 +4921,11 @@
           }
         ],
         "relatedTraits": [
-          1112,
           2078,
           2172,
           2337
         ],
         "selectedTraitNotes": [
-          {
-            "id": 1112,
-            "name": "快速反应",
-            "description": "使用精英技能时，获得闪避。"
-          },
           {
             "id": 2078,
             "name": "报应",
@@ -4937,7 +4999,6 @@
         ],
         "relatedTraits": [
           1257,
-          1112,
           1234,
           1192,
           1295,
@@ -4955,14 +5016,9 @@
             "description": "你的目标每受到一个独特症状影响，都将提升你对其造成的打击伤害。"
           },
           {
-            "id": 1112,
-            "name": "快速反应",
-            "description": "使用精英技能时，获得闪避。"
-          },
-          {
             "id": 1234,
             "name": "猫之优雅",
-            "description": "闪避成功将使你获得活力。"
+            "description": "你获得的迅捷效果提升。当你使用暗影疾步或者移动技能后，获得迅捷。"
           },
           {
             "id": 1192,
@@ -5339,7 +5395,6 @@
         ],
         "relatedTraits": [
           1130,
-          1112,
           1190,
           1975,
           2078,
@@ -5351,11 +5406,6 @@
             "id": 1130,
             "name": "猛毒榨取",
             "description": "毒液技能汲取被击中目标的生命值。进入或退出潜行会堆积蜘蛛毒液的层数。\n每次打击只能汲取一次生命值"
-          },
-          {
-            "id": 1112,
-            "name": "快速反应",
-            "description": "使用精英技能时，获得闪避。"
           },
           {
             "id": 1190,
@@ -5517,7 +5567,6 @@
           }
         ],
         "relatedTraits": [
-          1112,
           1234,
           1192,
           1295,
@@ -5528,14 +5577,9 @@
         ],
         "selectedTraitNotes": [
           {
-            "id": 1112,
-            "name": "快速反应",
-            "description": "使用精英技能时，获得闪避。"
-          },
-          {
             "id": 1234,
             "name": "猫之优雅",
-            "description": "闪避成功将使你获得活力。"
+            "description": "你获得的迅捷效果提升。当你使用暗影疾步或者移动技能后，获得迅捷。"
           },
           {
             "id": 1192,
@@ -6225,7 +6269,7 @@
         "title": "Deadeye's_Mark",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 3179818,
+        "revision": 3219736,
         "rows": [
           {
             "label": "冷却时间",
@@ -6266,6 +6310,7 @@
           1297,
           1134,
           1192,
+          1290,
           1137,
           1163,
           1277,
@@ -6321,6 +6366,11 @@
             "id": 1192,
             "name": "欺诈平衡",
             "description": "获得威力，且在使用剑类或水下长矛武器时获得额外威力。使用剑类或水下长矛武器成功闪避攻击时，充能顺手牵羊。"
+          },
+          {
+            "id": 1290,
+            "name": "逃脱大师",
+            "description": "使用顺手牵羊时获得抗性。"
           },
           {
             "id": 1137,
@@ -6441,6 +6491,101 @@
           }
         ]
       },
+      "44087": {
+        "title": "Malicious_Death's_Judgment",
+        "profession": "Thief",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219739,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.67",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "对未标记敌人的伤害",
+            "detail": "系数 ×1.32",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "每层的伤害奖励",
+            "detail": "10%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "现身",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/62BFF65D1CE99B1B2B0928152BCC596EAC0D372B/102887.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,500",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "44695": {
+        "title": "Three-Round_Burst",
+        "profession": "Thief",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217754,
+        "rows": [
+          {
+            "label": "先攻值消耗",
+            "detail": "4"
+          },
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.55 · 3 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "威能",
+            "detail": "6 秒 · 3 层",
+            "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+            "stacks": 3
+          },
+          {
+            "label": "穿透",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/F833590B593E0C2D4948DFFE9951B91655250052/1770207.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物 (20% 几率)",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,500",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
       "45088": {
         "title": "Malicious_Restoration",
         "profession": "Thief",
@@ -6546,7 +6691,6 @@
           1130,
           1300,
           1135,
-          1112,
           2136,
           2078,
           2172
@@ -6586,11 +6730,6 @@
             "id": 1135,
             "name": "暗影再生",
             "description": "进入或退出潜行会获得先攻值。"
-          },
-          {
-            "id": 1112,
-            "name": "快速反应",
-            "description": "使用精英技能时，获得闪避。"
           },
           {
             "id": 2136,
@@ -6798,7 +6937,7 @@
           {
             "id": 1290,
             "name": "逃脱大师",
-            "description": "使用暗影疾步时，获得耐力。"
+            "description": "使用顺手牵羊时获得抗性。"
           },
           {
             "id": 1242,
@@ -6948,7 +7087,6 @@
           }
         ],
         "relatedTraits": [
-          1112,
           1290,
           1242,
           1190,
@@ -6956,14 +7094,9 @@
         ],
         "selectedTraitNotes": [
           {
-            "id": 1112,
-            "name": "快速反应",
-            "description": "使用精英技能时，获得闪避。"
-          },
-          {
             "id": 1290,
             "name": "逃脱大师",
-            "description": "使用暗影疾步时，获得耐力。"
+            "description": "使用顺手牵羊时获得抗性。"
           },
           {
             "id": 1242,
@@ -7130,7 +7263,7 @@
           {
             "id": 1290,
             "name": "逃脱大师",
-            "description": "使用暗影疾步时，获得耐力。"
+            "description": "使用顺手牵羊时获得抗性。"
           },
           {
             "id": 1242,
@@ -7294,7 +7427,7 @@
           {
             "id": 1290,
             "name": "逃脱大师",
-            "description": "使用暗影疾步时，获得耐力。"
+            "description": "使用顺手牵羊时获得抗性。"
           },
           {
             "id": 1242,
@@ -7424,7 +7557,7 @@
           {
             "id": 1290,
             "name": "逃脱大师",
-            "description": "使用暗影疾步时，获得耐力。"
+            "description": "使用顺手牵羊时获得抗性。"
           },
           {
             "id": 1242,
@@ -7593,7 +7726,7 @@
           {
             "id": 1290,
             "name": "逃脱大师",
-            "description": "使用暗影疾步时，获得耐力。"
+            "description": "使用顺手牵羊时获得抗性。"
           },
           {
             "id": 1242,
@@ -7709,7 +7842,6 @@
         "relatedTraits": [
           1257,
           1167,
-          1241,
           1242,
           2423,
           2346,
@@ -7729,11 +7861,6 @@
             "id": 1167,
             "name": "灵感一现",
             "description": "使用两次顺手牵羊。顺手牵羊时，减少所有装备的通用技能的冷却时间。如果你是缚影者，对敌人使用虹吸时获得更多暗影之力。\n只有当通用技能栏位全满，并且至少有一个激活的通用技能处于冷却时，才能激活冷却效果。不影响未激活的序列技能。"
-          },
-          {
-            "id": 1241,
-            "name": "谨慎出击",
-            "description": "移动技能施加抗性。"
           },
           {
             "id": 1242,
@@ -7781,7 +7908,7 @@
         "title": "Metal_Legion_Guitar",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 3128646,
+        "revision": 3219746,
         "rows": [
           {
             "label": "施法时间",
@@ -7799,9 +7926,9 @@
           },
           {
             "label": "金属军团吉他",
-            "detail": "10 秒 · 3 层",
+            "detail": "10 秒 · 2 层",
             "icon": "https://render.guildwars2.com/file/9524D56A509B1E4E23C831AC3B41252271024E73/3713070.png",
-            "stacks": 3
+            "stacks": 2
           },
           {
             "label": "困惑",
@@ -7904,7 +8031,79 @@
         ],
         "controlRule": {
           "title": "Metal_Legion_Guitar",
-          "revision": 3128646,
+          "revision": 3219746,
+          "control": {
+            "label": "昏迷",
+            "seconds": 2
+          },
+          "defiance": 200
+        }
+      },
+      "76591": {
+        "title": "Metal_Legion_Guitar",
+        "profession": "Thief",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219746,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "2 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.8",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "最终猛砸",
+            "detail": "系数 ×2.5",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "金属军团吉他",
+            "detail": "10 秒 · 2 层",
+            "icon": "https://render.guildwars2.com/file/9524D56A509B1E4E23C831AC3B41252271024E73/3713070.png",
+            "stacks": 2
+          },
+          {
+            "label": "困惑",
+            "detail": "8 秒",
+            "icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png"
+          },
+          {
+            "label": "昏迷",
+            "detail": "2 秒",
+            "icon": "https://render.guildwars2.com/file/1999B9DB355005D2DD19F66DFFBAA6D466057508/522727.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "4",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "间隔",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "200"
+          }
+        ],
+        "controlRule": {
+          "title": "Metal_Legion_Guitar",
+          "revision": 3219746,
           "control": {
             "label": "昏迷",
             "seconds": 2
@@ -7975,7 +8174,6 @@
         "relatedTraits": [
           1167,
           1234,
-          1241,
           1192,
           1242,
           1295,
@@ -7996,12 +8194,7 @@
           {
             "id": 1234,
             "name": "猫之优雅",
-            "description": "闪避成功将使你获得活力。"
-          },
-          {
-            "id": 1241,
-            "name": "谨慎出击",
-            "description": "移动技能施加抗性。"
+            "description": "你获得的迅捷效果提升。当你使用暗影疾步或者移动技能后，获得迅捷。"
           },
           {
             "id": 1192,
@@ -8052,6 +8245,64 @@
             "id": 2337,
             "name": "喜鹊防御",
             "description": "当你使用治疗技能或精英技能时获得屏障。此特性的冷却时间针对治疗技能和精英技能分别独立计算。"
+          }
+        ]
+      },
+      "76633": {
+        "title": "Forged_Surfer_Dash",
+        "profession": "Thief",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3217484,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×2.4",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "额外的炸弹伤害",
+            "detail": "系数 ×1.2",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "3.5 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+          },
+          {
+            "label": "塑形者冲刺弹",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/D0B941DA2CC221B9AB17090E035C485E0EF26128/3713067.png"
+          },
+          {
+            "label": "燃烧",
+            "detail": "6 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "最大炸弹",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "半径",
+            "detail": "120",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "射程",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -8118,7 +8369,6 @@
         "relatedTraits": [
           1167,
           1234,
-          1241,
           1192,
           1242,
           1295,
@@ -8139,12 +8389,7 @@
           {
             "id": 1234,
             "name": "猫之优雅",
-            "description": "闪避成功将使你获得活力。"
-          },
-          {
-            "id": 1241,
-            "name": "谨慎出击",
-            "description": "移动技能施加抗性。"
+            "description": "你获得的迅捷效果提升。当你使用暗影疾步或者移动技能后，获得迅捷。"
           },
           {
             "id": 1192,
@@ -8347,7 +8592,6 @@
           1167,
           1300,
           1234,
-          1241,
           1192,
           1242,
           1295,
@@ -8373,12 +8617,7 @@
           {
             "id": 1234,
             "name": "猫之优雅",
-            "description": "闪避成功将使你获得活力。"
-          },
-          {
-            "id": 1241,
-            "name": "谨慎出击",
-            "description": "移动技能施加抗性。"
+            "description": "你获得的迅捷效果提升。当你使用暗影疾步或者移动技能后，获得迅捷。"
           },
           {
             "id": 1192,
@@ -8659,7 +8898,7 @@
           {
             "id": 1290,
             "name": "逃脱大师",
-            "description": "使用暗影疾步时，获得耐力。"
+            "description": "使用顺手牵羊时获得抗性。"
           },
           {
             "id": 1242,
@@ -8675,6 +8914,125 @@
             "id": 2400,
             "name": "恶棍之运",
             "description": "每次使用斯克鼠横扫时获得恶棍之运，你能够使用冷却中的双刃技能，不会触发回火。"
+          }
+        ]
+      },
+      "76816": {
+        "title": "Chak_Shield",
+        "profession": "Thief",
+        "identityVerified": true,
+        "revision": 3219751,
+        "rows": [
+          {
+            "label": "返还先攻值",
+            "detail": "100%",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.5 · 5 次命中",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "屏障",
+            "detail": "394 + 0.06 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+            "healing": {
+              "base": 394,
+              "coefficient": 0.06
+            }
+          },
+          {
+            "label": "查克虫护盾",
+            "detail": "10 秒",
+            "icon": "https://render.guildwars2.com/file/94C86D0BE526CA5C28C8A26ECF070976947F3FBD/3713065.png"
+          },
+          {
+            "label": "格挡飞弹",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "脉冲",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "护盾持续时间",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png"
+          },
+          {
+            "label": "间隔",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技区域",
+            "detail": "光明",
+            "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png"
+          }
+        ],
+        "relatedTraits": [
+          1167,
+          2423,
+          2346,
+          2431,
+          2350,
+          2362,
+          2393,
+          2337
+        ],
+        "selectedTraitNotes": [
+          {
+            "id": 1167,
+            "name": "灵感一现",
+            "description": "使用两次顺手牵羊。顺手牵羊时，减少所有装备的通用技能的冷却时间。如果你是缚影者，对敌人使用虹吸时获得更多暗影之力。\n只有当通用技能栏位全满，并且至少有一个激活的通用技能处于冷却时，才能激活冷却效果。不影响未激活的序列技能。"
+          },
+          {
+            "id": 2423,
+            "name": "切换手牌",
+            "description": "能够使用刷新圣器。当你刷新圣器或者使用圣器技能时，移除自身症状。"
+          },
+          {
+            "id": 2346,
+            "name": "丰产掠夺",
+            "description": "获得额外的圣器栏位。每次盗取时，你额外获得一件随机圣器。当你使用斯克鼠横扫时，可以额外使用一件圣器。"
+          },
+          {
+            "id": 2431,
+            "name": "谨慎托管",
+            "description": "你的圣器获得提升的效果。增益圣器的效果持续时间延长。"
+          },
+          {
+            "id": 2350,
+            "name": "振奋蜉蝣",
+            "description": "使用一件圣器后伤害提升，持续一段时间。"
+          },
+          {
+            "id": 2362,
+            "name": "进取贵族",
+            "description": "当你使用圣器时获得先攻值和屏障。当你拥有屏障时，受到的打击伤害和症状伤害减少。"
+          },
+          {
+            "id": 2393,
+            "name": "守财藏家",
+            "description": "使用圣器时给盟友施加增益。进攻圣器和防御圣器提供不同增益。通过喜鹊防御和进取贵族获得的屏障也将施加给盟友。"
+          },
+          {
+            "id": 2337,
+            "name": "喜鹊防御",
+            "description": "当你使用治疗技能或精英技能时获得屏障。此特性的冷却时间针对治疗技能和精英技能分别独立计算。"
           }
         ]
       },
@@ -8814,6 +9172,165 @@
           }
         ]
       },
+      "76895": {
+        "title": "Zephyrite_Sun_Crystal",
+        "profession": "Thief",
+        "identityVerified": true,
+        "revision": 3219780,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "1 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×1.0",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "风裔日相水晶",
+            "detail": "10 秒 · 2 层",
+            "icon": "https://render.guildwars2.com/file/239FA80668274B013C9ECE63DBF0730574FDA75D/3713072.png",
+            "stacks": 2
+          },
+          {
+            "label": "燃烧",
+            "detail": "4 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+          },
+          {
+            "label": "目盲",
+            "detail": "5 秒"
+          },
+          {
+            "label": "症状移除",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "使用技能后移除症状",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "240",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "闪避",
+            "detail": "1.25 秒"
+          },
+          {
+            "label": "射程",
+            "detail": "900",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "relatedTraits": [
+          1167,
+          1300,
+          1240,
+          1289,
+          1234,
+          1192,
+          1242,
+          1295,
+          2423,
+          2346,
+          2431,
+          2350,
+          2362,
+          2393,
+          2337
+        ],
+        "selectedTraitNotes": [
+          {
+            "id": 1167,
+            "name": "灵感一现",
+            "description": "使用两次顺手牵羊。顺手牵羊时，减少所有装备的通用技能的冷却时间。如果你是缚影者，对敌人使用虹吸时获得更多暗影之力。\n只有当通用技能栏位全满，并且至少有一个激活的通用技能处于冷却时，才能激活冷却效果。不影响未激活的序列技能。"
+          },
+          {
+            "id": 1300,
+            "name": "遁入暗影",
+            "description": "进入潜行后目盲附近敌人。目盲敌人时汲取对方生命值。"
+          },
+          {
+            "id": 1240,
+            "name": "灵敏出击",
+            "description": "进入战斗后的第一次打击施加易伤，给你提供威能。当你使用暗影疾步或者移动技能后，该能力刷新。"
+          },
+          {
+            "id": 1289,
+            "name": "耐力训练",
+            "description": "闪避成功将使你获得活力。"
+          },
+          {
+            "id": 1234,
+            "name": "猫之优雅",
+            "description": "你获得的迅捷效果提升。当你使用暗影疾步或者移动技能后，获得迅捷。"
+          },
+          {
+            "id": 1192,
+            "name": "欺诈平衡",
+            "description": "获得威力，且在使用剑类或水下长矛武器时获得额外威力。使用剑类或水下长矛武器成功闪避攻击时，充能顺手牵羊。"
+          },
+          {
+            "id": 1242,
+            "name": "流畅攻势",
+            "description": "当你暗影疾步或使用移动技能时，在一段时间内增加打击伤害。"
+          },
+          {
+            "id": 1295,
+            "name": "抢占先机",
+            "description": "闪避时获得先攻值，成功闪避攻击时获得先攻值和再生。\n成功闪避每隔一段时间只能触发一次该技能。"
+          },
+          {
+            "id": 2423,
+            "name": "切换手牌",
+            "description": "能够使用刷新圣器。当你刷新圣器或者使用圣器技能时，移除自身症状。"
+          },
+          {
+            "id": 2346,
+            "name": "丰产掠夺",
+            "description": "获得额外的圣器栏位。每次盗取时，你额外获得一件随机圣器。当你使用斯克鼠横扫时，可以额外使用一件圣器。"
+          },
+          {
+            "id": 2431,
+            "name": "谨慎托管",
+            "description": "你的圣器获得提升的效果。增益圣器的效果持续时间延长。"
+          },
+          {
+            "id": 2350,
+            "name": "振奋蜉蝣",
+            "description": "使用一件圣器后伤害提升，持续一段时间。"
+          },
+          {
+            "id": 2362,
+            "name": "进取贵族",
+            "description": "当你使用圣器时获得先攻值和屏障。当你拥有屏障时，受到的打击伤害和症状伤害减少。"
+          },
+          {
+            "id": 2393,
+            "name": "守财藏家",
+            "description": "使用圣器时给盟友施加增益。进攻圣器和防御圣器提供不同增益。通过喜鹊防御和进取贵族获得的屏障也将施加给盟友。"
+          },
+          {
+            "id": 2337,
+            "name": "喜鹊防御",
+            "description": "当你使用治疗技能或精英技能时获得屏障。此特性的冷却时间针对治疗技能和精英技能分别独立计算。"
+          }
+        ]
+      },
       "76900": {
         "title": "Summon_Kryptis_Turret_(underwater)",
         "profession": "Thief",
@@ -8907,7 +9424,7 @@
         "title": "Summon_Kryptis_Turret",
         "profession": "Thief",
         "identityVerified": true,
-        "revision": 3128650,
+        "revision": 3219753,
         "rows": [
           {
             "label": "施法时间",
@@ -8930,7 +9447,7 @@
           },
           {
             "label": "折磨",
-            "detail": "4 秒",
+            "detail": "2 秒",
             "icon": "https://render.guildwars2.com/file/10BABF2708CA3575730AC662A2E72EC292565B08/598887.png"
           },
           {
@@ -9149,17 +9666,11 @@
           }
         ],
         "relatedTraits": [
-          1112,
           1190,
           2337,
           2400
         ],
         "selectedTraitNotes": [
-          {
-            "id": 1112,
-            "name": "快速反应",
-            "description": "使用精英技能时，获得闪避。"
-          },
           {
             "id": 1190,
             "name": "超荷打击",

@@ -1626,226 +1626,22 @@
         "title": "Empowered",
         "profession": "Warrior",
         "identityVerified": true,
-        "revision": 2946173,
+        "revision": 3220003,
         "rows": [
           {
             "label": "伤害提升",
-            "detail": "1%",
+            "detail": "2%",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
-          }
-        ],
-        "relatedTraits": [
-          1447,
-          1451,
-          1338,
-          1440,
-          1342,
-          1334,
-          1350,
-          1488,
-          1379,
-          1380,
-          1375,
-          1708,
-          1480,
-          1474,
-          1471,
-          1482,
-          1667,
-          1711,
-          1416,
-          1484,
-          1417,
-          1317,
-          1657,
-          1993,
-          2042,
-          1928,
-          2307,
-          2153,
-          2097,
-          2237,
-          2242,
-          2261,
-          2239,
-          2245,
-          2369
-        ],
-        "selectedTraitNotes": [
-          {
-            "id": 1447,
-            "name": "英勇神行",
-            "description": "使用移动技能时获得增益和怒气。"
           },
           {
-            "id": 1451,
-            "name": "力量恢复",
-            "description": "使用治疗技能时获得威能。"
+            "label": "最大伤害提升",
+            "detail": "10%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
-            "id": 1338,
-            "name": "强力巨剑",
-            "description": "获得威力，暴击时有几率获得威能。使用巨剑或水下长矛时，这些奖励将加倍。巨剑和水下长矛技能的冷却时间缩短。"
-          },
-          {
-            "id": 1440,
-            "name": "反攻突袭",
-            "description": "控制住一个敌人时，将获得急速。而拥有急速效果时，移动速度增加。该速度可与其他增加的移动速度叠加。"
-          },
-          {
-            "id": 1342,
-            "name": "狂怒爆发",
-            "description": "当你切换武器时获得激怒。激怒会提升暴击率。"
-          },
-          {
-            "id": 1334,
-            "name": "优势打击",
-            "description": "定身或控制敌人时，获得激怒和怒气。"
-          },
-          {
-            "id": 1350,
-            "name": "坚毅皮肤",
-            "description": "使用治疗技能时，获得保护。"
-          },
-          {
-            "id": 1488,
-            "name": "顽强不屈",
-            "description": "缩短阻碍移动的症状持续时间，当你受到这些症状影响时获得再生。"
-          },
-          {
-            "id": 1379,
-            "name": "强韧翻滚",
-            "description": "闪避时，获得抗性。"
-          },
-          {
-            "id": 1380,
-            "name": "硬化护甲",
-            "description": "格挡攻击或被暴击后获得决心。当你拥有决心时，减少受到的伤害。"
-          },
-          {
-            "id": 1375,
-            "name": "稳如泰山",
-            "description": "姿态激活后给与活力和屏障，且它们的持续时间增加。"
-          },
-          {
-            "id": 1708,
-            "name": "顽强力量",
-            "description": "当控制住一个敌人时，将获得稳固。当拥有稳固时，造成的打击伤害增加。"
-          },
-          {
-            "id": 1480,
-            "name": "行军号令",
-            "description": "每隔一段时间获得士兵专注。使用爆发技能命中目标将耗尽士兵专注，让附近盟友获得威能。"
-          },
-          {
-            "id": 1474,
-            "name": "士兵安慰",
-            "description": "士兵专注治疗受影响的盟友并向他们施加保护。"
-          },
-          {
-            "id": 1471,
-            "name": "军号怒吼",
-            "description": "战号技能提供额外的增益。提升你的增益效果。"
-          },
-          {
-            "id": 1482,
-            "name": "强化盟友",
-            "description": "进入战斗时，每隔一段时间给予附近盟友和自己威能。"
-          },
-          {
-            "id": 1667,
-            "name": "武术节奏",
-            "description": "士兵专注向受影响的盟友施加增益，移除他们的症状。当你切换武器时，刷新士兵专注。"
-          },
-          {
-            "id": 1711,
-            "name": "方阵力量",
-            "description": "你使自己获得威能的同时，附近盟友也获得威能。"
-          },
-          {
-            "id": 1416,
-            "name": "眼疾手快",
-            "description": "战斗中切换武器时获得迅捷。"
-          },
-          {
-            "id": 1484,
-            "name": "双重战旗",
-            "description": "放下旗帜后为盟友施加决心。施加到旗帜的脉冲增益持续时间变长。"
-          },
-          {
-            "id": 1417,
-            "name": "通用威力",
-            "description": "切换武器时获得威能。缩短爆发的冷却时间。"
-          },
-          {
-            "id": 1317,
-            "name": "凝聚专注",
-            "description": "当你攻击低于一定生命值的敌人时，获得急速，同时冷却爆发技能。当你使用爆发技能时，根据消耗的怒气，提升输出的治疗。"
-          },
-          {
-            "id": 1657,
-            "name": "爆发专精",
-            "description": "爆发技能造成更多伤害，提供迅捷，恢复一部分怒气。"
-          },
-          {
-            "id": 1993,
-            "name": "侵略冲击",
-            "description": "在进入狂暴状态时获得速度爆发。"
-          },
-          {
-            "id": 2042,
-            "name": "炽热灵魂",
-            "description": "当你使用爆发技能命中敌人时，对附近盟友施加增益。"
-          },
-          {
-            "id": 1928,
-            "name": "鲜血狂吼",
-            "description": "进入狂暴模式时，造成的打击伤害增加。进入狂暴模式时，获得抗性。"
-          },
-          {
-            "id": 2307,
-            "name": "永恒战王",
-            "description": "进入狂暴模式后获得稳固和耐力。进入狂暴模式后触发的特性也会在退出狂暴时触发。你可以提前退出狂暴模式。"
-          },
-          {
-            "id": 2153,
-            "name": "守护反击",
-            "description": "在成功进行全力反击后获得保护。"
-          },
-          {
-            "id": 2097,
-            "name": "坚韧反击",
-            "description": "全力反击将施加抗性。"
-          },
-          {
-            "id": 2237,
-            "name": "心流如江",
-            "description": "给刃枪装填支援盟友的弹药，改变其属性。武器切换到刃枪时，给附近的盟友施加增益，获得积极心流。"
-          },
-          {
-            "id": 2242,
-            "name": "龙鳞防护",
-            "description": "当你进入巨龙扳机时获得增益。"
-          },
-          {
-            "id": 2261,
-            "name": "不朽巨龙",
-            "description": "巨龙劈砍根据你造成的伤害提供一部分治疗。当你把心流转化成充能时，给盟友施加保护。"
-          },
-          {
-            "id": 2239,
-            "name": "顽强巨龙",
-            "description": "巨龙劈砍变为无法格挡，无视目盲，并在击中后使敌人昏迷。当你把心流转化成充能时获得威能。"
-          },
-          {
-            "id": 2245,
-            "name": "果敢巨龙",
-            "description": "巨龙劈砍的最大充能等级降低，每次充能消耗更多心流，但是效果提升。当你使用巨龙劈砍时，给附近的盟友施加增益。"
-          },
-          {
-            "id": 2369,
-            "name": "狂热节奏",
-            "description": "使用吟唱将减少其它吟唱的冷却时间，给受影响的盟友施加增益。"
+            "label": "伤害提升",
+            "detail": "1.5%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           }
         ]
       },
@@ -1910,11 +1706,16 @@
         "title": "Destruction_of_the_Empowered",
         "profession": "Warrior",
         "identityVerified": true,
-        "revision": 2645199,
+        "revision": 3220005,
         "rows": [
           {
             "label": "伤害提升",
-            "detail": "3%",
+            "detail": "4%",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "最大伤害提升",
+            "detail": "20%",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           }
         ]
@@ -3690,7 +3491,7 @@
         "title": "Signet_of_Rage",
         "profession": "Warrior",
         "identityVerified": true,
-        "revision": 2994835,
+        "revision": 3220210,
         "rows": [
           {
             "label": "施法时间",
@@ -3698,7 +3499,7 @@
           },
           {
             "label": "冷却时间",
-            "detail": "40 秒"
+            "detail": "30 秒"
           },
           {
             "label": "盛怒纹章",
@@ -3707,24 +3508,34 @@
           },
           {
             "label": "威能",
-            "detail": "25 秒 · 5 层",
+            "detail": "10 秒 · 20 层",
             "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
-            "stacks": 5
+            "stacks": 20
           },
           {
             "label": "激怒",
-            "detail": "25 秒 · +25% 暴击率",
+            "detail": "10 秒 · +25% 暴击率",
             "icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png"
           },
           {
             "label": "迅捷",
-            "detail": "25 秒 · +33% 移动速度",
+            "detail": "10 秒 · +33% 移动速度",
             "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png"
           },
           {
-            "label": "怒气",
+            "label": "被动怒气",
             "detail": "2",
             "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png"
+          },
+          {
+            "label": "主动怒气",
+            "detail": "10",
+            "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png"
+          },
+          {
+            "label": "冷却减少",
+            "detail": "100%",
+            "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png"
           },
           {
             "label": "间隔",
@@ -3737,9 +3548,7 @@
           1454,
           1342,
           1344,
-          1343,
           1368,
-          1485,
           1481,
           1711,
           1413
@@ -3766,19 +3575,9 @@
             "description": "纹章使用后施加可堆叠的暴击效果增益。攻击生命值低于临界值的敌人将施展次级威能纹章。"
           },
           {
-            "id": 1343,
-            "name": "破甲打击",
-            "description": "拥有激怒时施加症状伤害。对于流血的敌人，提升暴击率。"
-          },
-          {
             "id": 1368,
             "name": "蔑视痛苦",
             "description": "使用精英技能时，获得次级痛苦忍耐。"
-          },
-          {
-            "id": 1485,
-            "name": "力量聚集",
-            "description": "每个你身上的增益都会使你的打击伤害提高。"
           },
           {
             "id": 1481,
@@ -4664,6 +4463,57 @@
             "id": 1375,
             "name": "稳如泰山",
             "description": "姿态激活后给与活力和屏障，且它们的持续时间增加。"
+          }
+        ]
+      },
+      "14394": {
+        "title": "Call_of_Valor",
+        "profession": "Warrior",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3220011,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "屏障",
+            "detail": "2580 + 1 × 治疗效果",
+            "icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+            "healing": {
+              "base": 2580,
+              "coefficient": 1
+            }
+          },
+          {
+            "label": "活力",
+            "detail": "10 秒 · +50% 耐力回复速度",
+            "icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png"
+          },
+          {
+            "label": "症状移除",
+            "detail": "3",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "半径",
+            "detail": "600",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "爆炸",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
           }
         ]
       },
@@ -7780,6 +7630,131 @@
           }
         ]
       },
+      "14504": {
+        "title": "Pin_Down",
+        "profession": "Warrior",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3220001,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.75 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "20 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.44",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "流血",
+            "detail": "12 秒 · 6 层",
+            "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+            "stacks": 6
+          },
+          {
+            "label": "定身",
+            "detail": "3 秒"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ]
+      },
+      "14505": {
+        "title": "Smoldering_Arrow",
+        "profession": "Warrior",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219999,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "0.5 秒"
+          },
+          {
+            "label": "伤害",
+            "detail": "系数 ×0.2",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "目盲",
+            "detail": "5 秒"
+          },
+          {
+            "label": "燃烧",
+            "detail": "3 秒",
+            "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png"
+          },
+          {
+            "label": "晕眩",
+            "detail": "1 秒",
+            "icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png"
+          },
+          {
+            "label": "目标数",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "最大数量",
+            "detail": "3"
+          },
+          {
+            "label": "计数冷却时间",
+            "detail": "16 秒",
+            "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png"
+          },
+          {
+            "label": "半径",
+            "detail": "180",
+            "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "爆炸",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/450630987A0566D4A7A491EDA4DCDF57D9396854/1770203.png"
+          },
+          {
+            "label": "组合技终结",
+            "detail": "物理投射物",
+            "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png"
+          },
+          {
+            "label": "蔑视伤害",
+            "detail": "100"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
+          }
+        ],
+        "controlRule": {
+          "title": "Smoldering_Arrow",
+          "revision": 3219999,
+          "control": {
+            "label": "晕眩",
+            "seconds": 1
+          },
+          "defiance": 100
+        }
+      },
       "14506": {
         "title": "Combustive_Shot",
         "profession": "Warrior",
@@ -8109,6 +8084,56 @@
             "id": 2130,
             "name": "洞察袭击",
             "description": "在控制敌人或移除增益时获得洞察。全力反击在击中后会重置所有爆发技能。\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
+          }
+        ]
+      },
+      "14519": {
+        "title": "Fan_of_Fire",
+        "profession": "Warrior",
+        "identityVerified": true,
+        "supplemental": true,
+        "revision": 3219995,
+        "rows": [
+          {
+            "label": "施法时间",
+            "detail": "0.25 秒"
+          },
+          {
+            "label": "冷却时间",
+            "detail": "5 秒"
+          },
+          {
+            "label": "第一击伤害",
+            "detail": "系数 ×0.88",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "额外打击伤害",
+            "detail": "系数 ×0.22",
+            "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
+          },
+          {
+            "label": "首次命中燃烧",
+            "detail": "5 秒"
+          },
+          {
+            "label": "额外命中燃烧",
+            "detail": "2 秒"
+          },
+          {
+            "label": "每支箭矢的目标",
+            "detail": "5",
+            "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "穿透",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/F833590B593E0C2D4948DFFE9951B91655250052/1770207.png"
+          },
+          {
+            "label": "射程",
+            "detail": "1,200",
+            "icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png"
           }
         ]
       },
@@ -12003,12 +12028,8 @@
         "title": "Imminent_Threat",
         "profession": "Warrior",
         "identityVerified": true,
-        "revision": 2932809,
+        "revision": 3220014,
         "rows": [
-          {
-            "label": "施法时间",
-            "detail": "0.25 秒"
-          },
           {
             "label": "冷却时间",
             "detail": "30 秒"
@@ -12032,14 +12053,20 @@
             }
           },
           {
-            "label": "嘲讽",
-            "detail": "1.5 秒",
-            "icon": "https://render.guildwars2.com/file/02EED459AD65FAF7DF32A260E479C625070841B9/1228472.png"
+            "label": "可移除的增益",
+            "detail": "急速"
           },
           {
-            "label": "决心",
-            "detail": "5 秒",
-            "icon": "https://render.guildwars2.com/file/D104A6B9344A2E2096424A3C300E46BC2926E4D7/2440718.png"
+            "label": "可移除的增益",
+            "detail": "敏捷"
+          },
+          {
+            "label": "可移除的增益",
+            "detail": "威能"
+          },
+          {
+            "label": "可移除的增益",
+            "detail": "激怒"
           },
           {
             "label": "怒气",
@@ -12053,8 +12080,12 @@
           },
           {
             "label": "半径",
-            "detail": "240",
+            "detail": "360",
             "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "解除昏迷",
+            "detail": ""
           }
         ]
       },
@@ -12560,24 +12591,24 @@
         "title": "Break_Enchantments",
         "profession": "Warrior",
         "identityVerified": true,
-        "revision": 2956583,
+        "revision": 3218014,
         "rows": [
           {
             "label": "施法时间",
-            "detail": "0.25 秒"
+            "detail": "0.5 秒"
           },
           {
             "label": "冷却时间",
-            "detail": "15 秒"
+            "detail": "1 秒"
           },
           {
             "label": "伤害",
-            "detail": "系数 ×1.5",
+            "detail": "系数 ×4.0",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
             "label": "伤害提升",
-            "detail": "300%",
+            "detail": "50%",
             "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png"
           },
           {
@@ -12589,6 +12620,16 @@
             "label": "目标数",
             "detail": "5",
             "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
+          },
+          {
+            "label": "最大计数",
+            "detail": "2",
+            "icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png"
+          },
+          {
+            "label": "计数冷却时间",
+            "detail": "15 秒",
+            "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png"
           },
           {
             "label": "半径",
@@ -12810,16 +12851,11 @@
         "title": "Sight_beyond_Sight",
         "profession": "Warrior",
         "identityVerified": true,
-        "revision": 2840183,
+        "revision": 3218073,
         "rows": [
           {
             "label": "冷却时间",
-            "detail": "1 秒"
-          },
-          {
-            "label": "超脱视界",
-            "detail": "5 秒",
-            "icon": "https://render.guildwars2.com/file/B52152CBC82E492696D90460090366D7EC31022C/1770666.png"
+            "detail": "20 秒"
           },
           {
             "label": "现身",
@@ -12827,8 +12863,20 @@
             "icon": "https://render.guildwars2.com/file/62BFF65D1CE99B1B2B0928152BCC596EAC0D372B/102887.png"
           },
           {
-            "label": "症状移除",
-            "detail": ""
+            "label": "可移除的增益",
+            "detail": "圣盾"
+          },
+          {
+            "label": "可移除的增益",
+            "detail": "保护"
+          },
+          {
+            "label": "可移除的增益",
+            "detail": "抗性"
+          },
+          {
+            "label": "可移除的增益",
+            "detail": "坚决"
           },
           {
             "label": "症状移除",
@@ -12841,19 +12889,14 @@
             "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png"
           },
           {
-            "label": "最大计数",
-            "detail": "2",
-            "icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png"
-          },
-          {
-            "label": "计数冷却时间",
-            "detail": "20 秒",
-            "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png"
-          },
-          {
             "label": "半径",
-            "detail": "600",
+            "detail": "360",
             "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png"
+          },
+          {
+            "label": "无法格挡",
+            "detail": "",
+            "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
           }
         ]
       },
@@ -13405,7 +13448,7 @@
         "title": "Featherfoot_Grace",
         "profession": "Warrior",
         "identityVerified": true,
-        "revision": 3095186,
+        "revision": 3220018,
         "rows": [
           {
             "label": "冷却时间",
@@ -13425,6 +13468,11 @@
             "label": "保护",
             "detail": "5 秒 · -33% 受到的伤害",
             "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png"
+          },
+          {
+            "label": "决心",
+            "detail": "5 秒",
+            "icon": "https://render.guildwars2.com/file/D104A6B9344A2E2096424A3C300E46BC2926E4D7/2440718.png"
           },
           {
             "label": "解除昏迷",

@@ -16,32 +16,44 @@ function build(id: number) {
   if (t.slot === "Major") b.specs[line].traits[t.tier - 1] = id;
   return b;
 }
-test("急速属性只在当前预览生效，下载与手机只读分享不携带条件", async ({
+test("急速灌注盟友治疗在当前预览生效，下载与手机分享不携带条件", async ({
   page,
   context,
 }) => {
   const b = build(2148);
   await loadBuild(page, b);
   await expect(page.locator('[data-value="Vitality"]')).toHaveText("1,000");
+  await expect(page.locator('[data-value="OutgoingHealing"]')).toHaveText(
+    "0.00%",
+  );
   await page.locator(".attribute-effects > summary").click();
   await page
     .getByRole("checkbox", { name: "预览拥有急速", exact: true })
     .check();
-  await expect(page.locator('[data-value="Vitality"]')).toHaveText("1,250");
-  await expect(page.locator('[data-value="Healing"]')).toHaveText("250");
+  await expect(page.locator('[data-value="Vitality"]')).toHaveText("1,000");
+  await expect(page.locator('[data-value="Healing"]')).toHaveText("0");
+  await expect(page.locator('[data-value="OutgoingHealing"]')).toHaveText(
+    "10.00%",
+  );
   const saved = await downloadBuild(page);
   expect(saved).toEqual(b);
   const readonly = await context.newPage();
   await readonly.setViewportSize({ width: 390, height: 844 });
   await readonly.goto("/#build=" + encodeShare(saved));
-  await expect(readonly.locator('[data-value="Vitality"]')).toHaveText("1,000");
+  await expect(readonly.locator('[data-value="OutgoingHealing"]')).toHaveText(
+    "0.00%",
+  );
   await readonly.locator(".attribute-effects > summary").click();
   await readonly
     .getByRole("checkbox", { name: "预览拥有急速", exact: true })
     .check();
-  await expect(readonly.locator('[data-value="Vitality"]')).toHaveText("1,250");
+  await expect(readonly.locator('[data-value="OutgoingHealing"]')).toHaveText(
+    "10.00%",
+  );
   await readonly.reload();
-  await expect(readonly.locator('[data-value="Vitality"]')).toHaveText("1,000");
+  await expect(readonly.locator('[data-value="OutgoingHealing"]')).toHaveText(
+    "0.00%",
+  );
   await readonly.close();
 });
 test("狂暴沿用职业机制开关，切换状态同步特性转换且不写入下载", async ({

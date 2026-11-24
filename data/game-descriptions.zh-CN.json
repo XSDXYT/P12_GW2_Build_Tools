@@ -409,12 +409,6 @@
         "englishName": "Streamlined Kits",
         "description": "装备工程师套件时发动一次攻击或施放一个法术，让你获得迅捷。"
       },
-      "514": {
-        "databaseId": 67,
-        "name": "投弹专家",
-        "englishName": "Grenadier",
-        "description": "提升手雷的爆炸半径。使用治疗技能时施展次级手雷弹幕。"
-      },
       "515": {
         "databaseId": 68,
         "name": "抑制凝血",
@@ -829,12 +823,6 @@
         "englishName": "Method of Madness",
         "description": "使用治疗时施展次级混乱风暴。"
       },
-      "671": {
-        "databaseId": 137,
-        "name": "混乱塑造",
-        "englishName": "Shaper of Chaos",
-        "description": "当你给自己施加混乱光环时，如果你已经拥有混乱光环，引爆混乱光环，给自己施加增益，给敌人施加症状。"
-      },
       "673": {
         "databaseId": 138,
         "name": "痛苦吉兆",
@@ -1032,18 +1020,6 @@
         "name": "自我回复",
         "englishName": "Ego Restoration",
         "description": "当你使用一个治疗技能时，制造一个分身。"
-      },
-      "744": {
-        "databaseId": 171,
-        "name": "同情容貌",
-        "englishName": "Sympathetic Visage",
-        "description": "召唤的幻影会承担你的症状。"
-      },
-      "751": {
-        "databaseId": 172,
-        "name": "聚能反馈",
-        "englishName": "Warden's Feedback",
-        "description": "聚能器武器技能可以反射投射物。缩短聚能器武器技能的冷却时间。"
       },
       "752": {
         "databaseId": 173,
@@ -1531,12 +1507,6 @@
         "englishName": "Primal Reflexes",
         "description": "成功闪避将获得活力。"
       },
-      "1068": {
-        "databaseId": 254,
-        "name": "捕猎战术",
-        "englishName": "Hunter's Tactics",
-        "description": "从背后或侧面击中敌人，或击中处于蔑视状态的敌人时造成更大伤害，暴击率提升。"
-      },
       "1069": {
         "databaseId": 255,
         "name": "尖锐刃锋",
@@ -1626,12 +1596,6 @@
         "name": "成双巧手",
         "englishName": "Ambidexterity",
         "description": "获得症状伤害。使用火炬、匕首或钉锤时症状伤害提升。缩短匕首和火炬技能冷却时间。"
-      },
-      "1112": {
-        "databaseId": 270,
-        "name": "快速反应",
-        "englishName": "Instant Reflexes",
-        "description": "使用精英技能时，获得闪避。"
       },
       "1130": {
         "databaseId": 271,
@@ -1765,35 +1729,11 @@
         "englishName": "Preparedness",
         "description": "最大先攻值提高3点。提升症状效果。"
       },
-      "1234": {
-        "databaseId": 293,
-        "name": "猫之优雅",
-        "englishName": "Feline Grace",
-        "description": "闪避成功将使你获得活力。"
-      },
       "1237": {
         "databaseId": 294,
         "name": "疼痛反应",
         "englishName": "Pain Response",
         "description": "闪避时移除一个伤害症状。"
-      },
-      "1238": {
-        "databaseId": 295,
-        "name": "刺客奖赏",
-        "englishName": "Assassin's Reward",
-        "description": "当你使用需要消耗先攻值的技能时，治疗自己。每消耗一点先攻值都会回复一些生命值。"
-      },
-      "1240": {
-        "databaseId": 296,
-        "name": "迅捷闪避",
-        "englishName": "Expeditious Dodger",
-        "description": "闪避后获得迅捷。"
-      },
-      "1241": {
-        "databaseId": 297,
-        "name": "谨慎出击",
-        "englishName": "Guarded Initiation",
-        "description": "移动技能施加抗性。"
       },
       "1242": {
         "databaseId": 298,
@@ -1824,12 +1764,6 @@
         "name": "威能纹章",
         "englishName": "Signets of Power",
         "description": "纹章提供先攻值。"
-      },
-      "1268": {
-        "databaseId": 303,
-        "name": "双牙撕咬",
-        "englishName": "Twin Fangs",
-        "description": "暴击伤害增加，且生命值高于临界值时，暴击伤害进一步增加。从背后或侧面击中敌人，或击中处于蔑视状态的敌人时，获得额外暴击率。"
       },
       "1269": {
         "databaseId": 304,
@@ -1890,18 +1824,6 @@
         "name": "技巧大师",
         "englishName": "Trickster",
         "description": "技巧移除症状。"
-      },
-      "1289": {
-        "databaseId": 314,
-        "name": "大幅增长",
-        "englishName": "Pumping Up",
-        "description": "闪避时获得威能。"
-      },
-      "1290": {
-        "databaseId": 315,
-        "name": "逃脱大师",
-        "englishName": "Hard to Catch",
-        "description": "使用暗影疾步时，获得耐力。"
       },
       "1291": {
         "databaseId": 316,
@@ -2497,12 +2419,6 @@
         "englishName": "Invigorating Precision",
         "description": "根据造成的暴击伤害治疗自身。当你拥有激怒效果时，治疗量提升。"
       },
-      "1703": {
-        "databaseId": 415,
-        "name": "永不止步",
-        "englishName": "Don't Stop",
-        "description": "当你有迅捷效果时，移动阻碍类症状持续时间缩短。当你获得迅捷时，移除一个移动阻碍类症状。"
-      },
       "1704": {
         "databaseId": 416,
         "name": "突袭特训",
@@ -3043,12 +2959,6 @@
         "englishName": "Vampiric Presence",
         "description": "你和附近的盟友攻击时汲取生命值。处于帷幕中时，该效果进一步加强。"
       },
-      "1846": {
-        "databaseId": 506,
-        "name": "隐匿倒钩",
-        "englishName": "Hidden Barbs",
-        "description": "强化你造成的流血效果。"
-      },
       "1848": {
         "databaseId": 507,
         "name": "德行化身",
@@ -3313,12 +3223,6 @@
         "englishName": "Soaring Devastation",
         "description": "决心之翼在落地时发动一次攻击。提升移动速度。"
       },
-      "1912": {
-        "databaseId": 551,
-        "name": "灵巧作战",
-        "englishName": "Light on your Feet",
-        "description": "闪避或使用游侠技能闪避后，提升伤害和症状持续时间。短弓技能能够穿透目标并减少冷却时间，强化从背后、侧面、或对于有蔑视条敌人的攻击。"
-      },
       "1913": {
         "databaseId": 552,
         "name": "幻觉回荡",
@@ -3582,12 +3486,6 @@
         "name": "系统震荡",
         "englishName": "System Shocker",
         "description": "控制敌人后，给附近盟友施加屏障。使用功能机型时晕眩敌人。\n控制包括昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽和恐惧。"
-      },
-      "1974": {
-        "databaseId": 596,
-        "name": "死亡占卜",
-        "englishName": "Augury of Death",
-        "description": "战吼虹吸敌人的生命值。处于近战距离时，对敌人产生的效果增加。"
       },
       "1975": {
         "databaseId": 597,
@@ -3973,12 +3871,6 @@
         "englishName": "Swift Scholar",
         "description": "装备美德技能时，获得急速。每三次圣书 技能会给予你书页。\n取消圣书时，层数就会重置。\n每隔一段时间，只能获得一次急速"
       },
-      "2063": {
-        "databaseId": 662,
-        "name": "沉言重词",
-        "englishName": "Weighty Terms",
-        "description": "咒语 技能的最终充能会减速附近敌人并给予书页。"
-      },
       "2064": {
         "databaseId": 663,
         "name": "光能爆破",
@@ -4033,18 +3925,6 @@
         "englishName": "Fell Beacon",
         "description": "你施加的燃烧造成的伤害增加。根据症状伤害获得症状效果。"
       },
-      "2075": {
-        "databaseId": 672,
-        "name": "无情之判",
-        "englishName": "Unrelenting Criticism",
-        "description": "利斧技能有几率施加流血。"
-      },
-      "2076": {
-        "databaseId": 673,
-        "name": "稳健急速",
-        "englishName": "Stalwart Speed",
-        "description": "当你获得圣盾或稳固时，你将获得急速。\n可以同时影响多个目标。"
-      },
       "2077": {
         "databaseId": 674,
         "name": "元素振兴",
@@ -4092,12 +3972,6 @@
         "name": "速度本质",
         "englishName": "Essence of Speed",
         "description": "获得急速可以增加你所受增益的持续时间。"
-      },
-      "2086": {
-        "databaseId": 682,
-        "name": "密语档案",
-        "englishName": "Archivist of Whispers",
-        "description": "你的美德将获得额外的书页。"
       },
       "2087": {
         "databaseId": 683,
@@ -4183,12 +4057,6 @@
         "englishName": "Lasting Legacy",
         "description": "你引发的卡拉狂热持续时间更长，效果更强大。每层卡拉狂热都能让英勇指挥提供更多威能。"
       },
-      "2101": {
-        "databaseId": 697,
-        "name": "解放之誓",
-        "englishName": "Liberator's Vow",
-        "description": "当你使用治疗技能时，会向盟友施加急速。"
-      },
       "2102": {
         "databaseId": 698,
         "name": "丰饶灰烬",
@@ -4200,12 +4068,6 @@
         "name": "水晶形态：风暴",
         "englishName": "Crystal Configuration: Storm",
         "description": "光子熔炉技能1发射爆炸投射物，生成额外的热量。"
-      },
-      "2105": {
-        "databaseId": 700,
-        "name": "泰然处之",
-        "englishName": "Stoic Demeanor",
-        "description": "当勇气技能处于冷却时，保留它的被动效果。当你控制、定身或迟缓的敌人时，给附近盟友提供增益。\n控制效果包括：昏迷、晕眩、击退、拉拽、击倒、下沉、上浮、击飞、嘲讽、恐惧。"
       },
       "2106": {
         "databaseId": 701,
@@ -4417,12 +4279,6 @@
         "englishName": "Brutal Momentum",
         "description": "暴击率增加。当你耐力全满时，暴击率进一步增加。当你获得激怒时，同时获得活力。"
       },
-      "2143": {
-        "databaseId": 736,
-        "name": "压迫优势",
-        "englishName": "Oppressive Superiority",
-        "description": "你对生命值比你低的敌人造成更多的打击伤害。对于此类敌人，你施加的症状将持续更长时间。"
-      },
       "2144": {
         "databaseId": 737,
         "name": "火炬精通",
@@ -4446,12 +4302,6 @@
         "name": "黄沙斗篷",
         "englishName": "Mantle of Sand",
         "description": "获得威力以制造沙影，使用生命之力来指挥它们。可以使用惩罚和暗影技能。\n原本影响帷幕技能的特性将继续影响暗影技能。"
-      },
-      "2148": {
-        "databaseId": 741,
-        "name": "急速灌注",
-        "englishName": "Imbued Haste",
-        "description": "受到急速影响时你的属性会增加。"
       },
       "2149": {
         "databaseId": 742,
@@ -4512,12 +4362,6 @@
         "name": "光子投影",
         "englishName": "Photon Projector",
         "description": "光子熔炉将取代工具带技能5。可以使用超越技能。"
-      },
-      "2159": {
-        "databaseId": 752,
-        "name": "博学之士",
-        "englishName": "Loremaster",
-        "description": "当决心技能处于冷却时，保留它的被动效果。会让你更快生成书页。"
       },
       "2160": {
         "databaseId": 753,
@@ -4627,12 +4471,6 @@
         "englishName": "Desert Distortion",
         "description": "失真粉碎的幻象将变成幻象之镜。不论何时，当你为自己施加了失真后，那在一小段时间内你将可以使用伏击技能。"
       },
-      "2179": {
-        "databaseId": 771,
-        "name": "急速烈焰",
-        "englishName": "Quickfire",
-        "description": "当正义技能冷却时，维持被动效果。对一个盟友施加急速将同样施加正义余烬。"
-      },
       "2180": {
         "databaseId": 772,
         "name": "大师坚韧",
@@ -4722,12 +4560,6 @@
         "name": "致命急速",
         "englishName": "Deathly Haste",
         "description": "当你进入先驱帷幕以及使用黑暗弹幕时，给附近的盟友施加增益。"
-      },
-      "2195": {
-        "databaseId": 786,
-        "name": "凤凰协议",
-        "englishName": "Phoenix Protocol",
-        "description": "触发决心效果时获得增益，但你不再拥有治疗。修正了决心的持续时间。激活流动决心时获得增益。"
       },
       "2196": {
         "databaseId": 787,
@@ -4915,18 +4747,6 @@
         "englishName": "Depth of Elements",
         "description": "当你打击敌人时会积累元素能量。能量将注入翠玉元晶的不同元素中，制造组合技区域并为区域内的盟友提供增益。\n能够使用增强能力。"
       },
-      "2228": {
-        "databaseId": 818,
-        "name": "救世宣道",
-        "englishName": "Redemptor's Sermon",
-        "description": "当你使用治疗技能时，治疗区域内的盟友，给他们施加保护。"
-      },
-      "2229": {
-        "databaseId": 819,
-        "name": "帝国分崩",
-        "englishName": "Empire Divided",
-        "description": "生命值高于临界值时，威力获得提升。低于临界值时，治疗效果提升。"
-      },
       "2230": {
         "databaseId": 820,
         "name": "硬化光环",
@@ -4938,12 +4758,6 @@
         "name": "元素典范",
         "englishName": "Elemental Epitome",
         "description": "当你使用组合技时，获得一个基于当前协调的光环。获得光环时也会获得元素赋能。每次间隔中，每种协调只能通过这种方法得到一次光环。"
-      },
-      "2232": {
-        "databaseId": 822,
-        "name": "帝国附庸",
-        "englishName": "Vassals of the Empire",
-        "description": "闪避现会在落地时对盟友施加增益并攻击敌人。"
       },
       "2233": {
         "databaseId": 823,
@@ -4975,12 +4789,6 @@
         "englishName": "River's Flow",
         "description": "给刃枪装填支援盟友的弹药，改变其属性。武器切换到刃枪时，给附近的盟友施加增益，获得积极心流。"
       },
-      "2238": {
-        "databaseId": 828,
-        "name": "风荷圣徒",
-        "englishName": "Saint of zu Heltzer",
-        "description": "闪避的影响范围扩大。落地后治疗区域内的盟友，而不是造成伤害。落地后治疗效果提高，持续一段时间。"
-      },
       "2239": {
         "databaseId": 829,
         "name": "顽强巨龙",
@@ -4999,12 +4807,6 @@
         "englishName": "Dragonscale Defense",
         "description": "当你进入巨龙扳机时获得增益。"
       },
-      "2243": {
-        "databaseId": 833,
-        "name": "帝皇之托",
-        "englishName": "Angsiyan's Trust",
-        "description": "能量结合不再需要能量消耗，并在战斗中使用时给予能量。"
-      },
       "2245": {
         "databaseId": 835,
         "name": "果敢巨龙",
@@ -5022,12 +4824,6 @@
         "name": "充能光环",
         "englishName": "Empowering Auras",
         "description": "当你获得光环时，造成的伤害提升。当这个能力触发时，所有叠层的持续时间将会刷新。"
-      },
-      "2248": {
-        "databaseId": 838,
-        "name": "星岬特赦",
-        "englishName": "Amnesty of Shing Jea",
-        "description": "传奇同盟能力获得一个额外增益。如果激活能量结合或同盟战术，附近盟友同时获得两个奖励，效果更强。\n库泽克能力提供再生。\n勒克桑能力提供威能。"
       },
       "2249": {
         "databaseId": 839,
@@ -5059,41 +4855,11 @@
         "englishName": "Unshakable Mountain",
         "description": "当你把一部分心流转化为充能后，给附近的盟友施加屏障。"
       },
-      "2254": {
-        "databaseId": 844,
-        "name": "不协平衡",
-        "englishName": "Balance in Discord",
-        "description": "当切换传奇姿态，或在传奇同盟姿态激活时使用同盟战术，将获得生命值和增益。"
-      },
-      "2255": {
-        "databaseId": 845,
-        "name": "林木之曲",
-        "englishName": "Song of Arboreum",
-        "description": "能量结合给予更多的耐力，并给予附近的盟友它的耐力和活力。"
-      },
       "2256": {
         "databaseId": 846,
         "name": "手枪精通",
         "englishName": "Pistol Proficiency",
         "description": "你可以使用手枪。"
-      },
-      "2257": {
-        "databaseId": 847,
-        "name": "死亡前兆",
-        "englishName": "Forerunner of Death",
-        "description": "闪避现在造成更大伤害，但影响范围缩小。命中后造成的打击伤害提升，持续一段时间。"
-      },
-      "2258": {
-        "databaseId": 848,
-        "name": "海兽之力",
-        "englishName": "Leviathan Strength",
-        "description": "当你的耐力没有全满时，造成更大伤害。"
-      },
-      "2259": {
-        "databaseId": 849,
-        "name": "掠夺诅咒",
-        "englishName": "Reaver's Curse",
-        "description": "能量结合的冷却时间降低，并且它将提升你的下一次闪避的效率。"
       },
       "2260": {
         "databaseId": 850,
@@ -6195,12 +5961,6 @@
         "englishName": "Glyph of Elemental Harmony",
         "description": "雕文治疗自己，并获得一个与当前协调对应的增益。"
       },
-      "5570": {
-        "databaseId": 84,
-        "name": "流水纹章",
-        "englishName": "Signet of Water",
-        "description": "被动效果：减少受到的症状持续时间。\n激活效果：使敌人受到伤害和冰冻，治疗并复活区域内的盟友。"
-      },
       "5571": {
         "databaseId": 85,
         "name": "大地纹章",
@@ -6711,12 +6471,6 @@
         "englishName": "Signet of Illusions",
         "description": "被动效果：每隔几秒制造一个分身。\n激活效果：冷却粉碎技能。"
       },
-      "10267": {
-        "databaseId": 545,
-        "name": "幻影除魔",
-        "englishName": "Phantasmal Disenchanter",
-        "description": "幻影召唤幻象，每次命中都会移除目标的一个增益。如果目标没有增益，那么造成更多伤害。"
-      },
       "10287": {
         "databaseId": 551,
         "name": "误导",
@@ -7023,12 +6777,6 @@
         "englishName": "Signet of Renewal",
         "description": "被动效果：你和你的宠物恢复生命值。\n激活效果：为你的宠物提供抗性和决心；同时宠物将把附近盟友身上的症状转移到自己身上。"
       },
-      "12516": {
-        "databaseId": 805,
-        "name": "\"群攻之力！\"",
-        "englishName": "\"Strength of the Pack!\"",
-        "description": "律令与宠物一起进入狂暴状态，获得稳固、激怒和迅捷。你攻击时，你和你的宠物均可获得威能。"
-      },
       "12537": {
         "databaseId": 818,
         "name": "锋开磨砺",
@@ -7251,12 +6999,6 @@
         "englishName": "Throw Bolas",
         "description": "体术投掷链锤，使你的敌人定身。"
       },
-      "14355": {
-        "databaseId": 1013,
-        "name": "盛怒纹章",
-        "englishName": "Signet of Rage",
-        "description": "被动效果：进入战斗时获得怒气。\n激活效果：获得激怒、威能和迅捷。"
-      },
       "14368": {
         "databaseId": 1025,
         "name": "孤注一掷",
@@ -7467,12 +7209,6 @@
         "englishName": "Signet of the Ether",
         "description": "被动效果：召唤幻象时获得治疗。\n激活效果：治疗自身，减少所有幻影技能的冷却时间。"
       },
-      "21762": {
-        "databaseId": 1198,
-        "name": "吸血纹章",
-        "englishName": "Signet of Vampirism",
-        "description": "被动效果：战斗中从附近敌人那里汲取生命值。\n激活效果：治疗自身并标记单个敌人。友方玩家可从该敌人身上虹吸生命。"
-      },
       "21773": {
         "databaseId": 1199,
         "name": "流水精魂",
@@ -7509,12 +7245,6 @@
         "englishName": "Facet of Strength",
         "description": "传奇巨龙·多面体在身边召唤力量多面体，每隔几秒为附近的盟友施加威能。"
       },
-      "26679": {
-        "databaseId": 1244,
-        "name": "强制束缚",
-        "englishName": "Forced Engagement",
-        "description": "传奇矮人向敌人投掷一条锁链，链接到敌人时使其减速并施加嘲讽。 受嘲讽的敌人对你造成的伤害降低。"
-      },
       "26821": {
         "databaseId": 1248,
         "name": "慰藉屏护",
@@ -7532,12 +7262,6 @@
         "name": "元素多面体",
         "englishName": "Facet of Elements",
         "description": "传奇巨龙·多面体在身边召唤元素多面体，每隔几秒为附近的盟友施加迅捷。"
-      },
-      "27025": {
-        "databaseId": 1252,
-        "name": "自然调和",
-        "englishName": "Natural Harmony",
-        "description": "传奇半人马聚集能量，注入石碑，增强其力量。短暂停留之后释放能量，治疗附近盟友。\n\n如果技能被强化，治疗效果将增强，受影响盟友会被施加耐力。"
       },
       "27107": {
         "databaseId": 1257,
@@ -7557,12 +7281,6 @@
         "englishName": "Pain Absorption",
         "description": "传奇恶魔向自己和附近的盟友施加抗性并吸收盟友的症状。每吸收一个症状，都能获得决心和额外的抗性。"
       },
-      "27356": {
-        "databaseId": 1263,
-        "name": "能量爆发",
-        "englishName": "Energy Expulsion",
-        "description": "传奇半人马 迫使能量从石碑中迸发， 击倒附近敌人，治疗附近盟友。\n\n如果技能被强化，给予石碑附近的盟友稳固。"
-      },
       "27372": {
         "databaseId": 1264,
         "name": "抚伤之石",
@@ -7574,12 +7292,6 @@
         "name": "驱逐附魔",
         "englishName": "Banish Enchantment",
         "description": "传奇恶魔对你的敌人造成伤害，施加冰冻，移除增益。"
-      },
-      "27715": {
-        "databaseId": 1269,
-        "name": "净化精华",
-        "englishName": "Purifying Essence",
-        "description": "传奇半人马为石碑附近的盟友净化症状，每移除一个症状时为盟友恢复少量生命值。\n\n如果技能被强化，将额外移除盟友症状。"
       },
       "27760": {
         "databaseId": 1271,
@@ -7670,12 +7382,6 @@
         "name": "稳固激发",
         "englishName": "Inspiring Reinforcement",
         "description": "传奇矮人创造一条石路，造出石路时伤害敌人并使其虚弱。石路将产生脉冲，使盟友获得稳固。"
-      },
-      "29148": {
-        "databaseId": 1322,
-        "name": "祥和投映",
-        "englishName": "Project Tranquility",
-        "description": "把文塔里石碑投射到世界之中。石碑每隔几秒对附近的盟友进行治疗。\n（当你离开有效范围时石碑消失。）"
       },
       "29209": {
         "databaseId": 1326,
@@ -8391,12 +8097,6 @@
         "englishName": "Wing Buffet",
         "description": "挥动强劲的双翼，向后击飞敌人。"
       },
-      "41919": {
-        "databaseId": 2117,
-        "name": "迫切威胁",
-        "englishName": "Imminent Threat",
-        "description": "冥想嘲讽附近的敌人，每个敌人都能使你获得怒气和屏障。"
-      },
       "42009": {
         "databaseId": 2120,
         "name": "巅峰射线",
@@ -8655,12 +8355,6 @@
         "englishName": "Photon Wall",
         "description": "超越在你面前出现一道防护屏障，为你和盟友格挡攻击。屏障受到的攻击反弹给敌人。如果你的热量等级超过临界值，该技能提供投射物反射。"
       },
-      "43745": {
-        "databaseId": 2202,
-        "name": "超脱视界",
-        "englishName": "Sight beyond Sight",
-        "description": "冥想揭露附近的敌人，使你的下一次攻击暴击。移除目盲和非伤害性症状。"
-      },
       "43788": {
         "databaseId": 2207,
         "name": "召唤闪电",
@@ -8828,12 +8522,6 @@
         "name": "弱化之风",
         "englishName": "Winds of Disenchantment",
         "description": "冥想制造平静区域，敌人受到的增益持续时间缩短，每隔一段时间失去增益。进入该区域的飞弹将被格挡。"
-      },
-      "45380": {
-        "databaseId": 2284,
-        "name": "羽步优雅",
-        "englishName": "Featherfoot Grace",
-        "description": "冥想获得奔驰疾速和抗性。"
       },
       "45425": {
         "databaseId": 3551,
@@ -10023,12 +9711,6 @@
         "englishName": "Tale of the Soulkeeper",
         "description": "传说用守魂者阿尔莫拉的传奇激励盟友，提供进攻性增益效果。"
       },
-      "76864": {
-        "databaseId": 4975,
-        "name": "苦痛灵魂",
-        "englishName": "Anguish",
-        "description": "帷幕，灵魂标记一个敌人，你召唤的生物对他造成更大伤害，然后召唤一个苦痛灵魂。苦痛灵魂发射大范围投射物，对于被群体控制的敌人造成更大伤害，敌人的每个症状也会增加伤害。"
-      },
       "76900": {
         "databaseId": 4980,
         "name": "召唤氪族炮台",
@@ -10298,12 +9980,6 @@
         "name": "雾灼迫击炮",
         "englishName": "Mistburn Mortar",
         "description": "进攻圣器发射宝珠，接触地面后爆炸，制造一个腐化区域，伤害敌人并施加症状。\n\n使用该技能后的一小段时间里，你的攻击额外对敌人施加燃烧。"
-      },
-      "77291": {
-        "databaseId": 5065,
-        "name": "角斗防御",
-        "englishName": "Gladiator's Defense",
-        "description": "解除昏迷，对距离你较近的敌人施加伤害和虚弱。如果该技能命中至少一个敌人，获得增益。如果该技能被用于解除昏迷，移除额外的能量。\n\n共振如果装备了传奇矮人姿态，解除昏迷所需的额外能量变少，向你附近的盟友施加增益。"
       },
       "77300": {
         "databaseId": 5066,
